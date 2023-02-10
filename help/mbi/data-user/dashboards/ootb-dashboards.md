@@ -2,9 +2,9 @@
 title: 包含的功能板
 description: 了解如何检查基本量度（如用户生命周期收入、重复购买次数等）的运行状况，从而为将来的探索奠定坚实的基础。
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
-source-git-commit: 3557e6370fae637cd74550b2806847bebe61d5d3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '973'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >某些功能板的可用性取决于您的数据集。
 
-如果您有任何疑问或希望将资源包添加到帐户，请提交 [支持票证](../../guide-overview.md) 来获取帮助。
+如果您有任何疑问或希望将资源包添加到帐户，请提交 [支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 来获取帮助。
 
 ## 执行概述
 

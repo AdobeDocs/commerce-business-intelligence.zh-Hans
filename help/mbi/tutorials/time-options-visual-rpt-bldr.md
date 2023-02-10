@@ -2,9 +2,9 @@
 title: 可视化Report Builder中的使用时间选项
 description: 了解如何分析报表中特定时间段的数据。
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1278'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 ## 比较不同时间范围中的相同量度 {#difftimerange}
 
-此示例使用一个名为的自定义维度 `Day number of the month`. 如果要创建此报表，并且您的Data warehouse中尚未包含此维度， [联系支持](../guide-overview.md) 以寻求帮助。
+此示例使用一个名为的自定义维度 `Day number of the month`. 如果要创建此报表，并且您的Data warehouse中尚未包含此维度， [联系支持](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 以寻求帮助。
 
 此类别中最常见的两个示例是(1)比较增长量度（年同比或月同比收入）和(2)更好地了解近期库存或物料销售趋势。
 
@@ -143,4 +143,3 @@ ht-degree: 0%
 
 由于客户的行为随时间而有所不同，因此在执行分析时可能会看到数据差异。 通过设置自定义时间选项，您可以快速创建复杂的分析，从而实现数据驱动的决策，从而将历史趋势考虑在内。
 
-查看我们的 [培训视频](https://support.magento.com/hc/en-us/articles/360016730071-Training-Video-Time-Options-in-the-Visual-Report-Builder) 以了解更多。

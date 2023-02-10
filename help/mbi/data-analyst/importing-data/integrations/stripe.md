@@ -2,9 +2,9 @@
 title: 连接条带
 description: 了解如何管理和跟踪您企业的付款和发票数据。
 exl-id: c038f2a9-b2bd-4e45-93f9-12d2e5077b31
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '175'
 ht-degree: 0%
 
 ---
@@ -46,4 +46,4 @@ ht-degree: 0%
 如果你更懂技术，那么 [[!DNL Stripe] API文档](https://stripe.com/docs/api) 可以作为有用资源，进一步了解 [!DNL Stripe] 与 [!DNL MBI].
 
 * [预期 [!DNL Stripe] 数据](../integrations/stripe-data.md)
-* [重新验证集成](https://support.magento.com/hc/en-us/articles/360016733151)
+* [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

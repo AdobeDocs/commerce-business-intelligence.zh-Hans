@@ -2,7 +2,7 @@
 title: 数据迁移服务
 description: 了解提交请求并开始迁移所需的一切。
 exl-id: 105cd003-98ef-4358-80b9-b3190c2c57b7
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 数据迁移
 
-迁移到新的数据库模式、服务器或报表数据库不必感到压力。 我们的 **[!DNL Magento Services - Analytics]** 团队提供迁移帮助 — 我们会竭尽所能，这样您就不必担心了。
+迁移到新的数据库模式、服务器或报表数据库不必感到压力。 我们的 **[!DNL Adobe Commerce Services - Analytics]** 团队提供迁移帮助 — 我们会竭尽所能，这样您就不必担心了。
 
 为确保迁移尽可能顺利，我们要求您在提交迁移请求时尽可能详细。 在本文中，您需要提交请求并开始迁移。 为我们全面了解您的需求，将确保您的项目的范围正确，并且评估结果准确。
 

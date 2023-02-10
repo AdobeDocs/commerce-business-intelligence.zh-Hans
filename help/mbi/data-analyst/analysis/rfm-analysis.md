@@ -140,7 +140,7 @@ ht-degree: 0%
 
 * 客户的回访间隔分数 `(R+F+M)`
 * [!UICONTROL Column type]: `Same table > Calculation`
-* [!UICONTROL Inputs]:- `Customer's recency score (by percentiles)`, `Customer's frequency score (by percentiles)`, `Customer's monetary score (by percentiles)`
+* [!UICONTROL Inputs]: – `Customer's recency score (by percentiles)`, `Customer's frequency score (by percentiles)`, `Customer's monetary score (by percentiles)`
 * [!UICONTROL Calculation]: `case when (A IS NULL or B IS NULL or C IS NULL) then null else A+B+C end`
 * 
 

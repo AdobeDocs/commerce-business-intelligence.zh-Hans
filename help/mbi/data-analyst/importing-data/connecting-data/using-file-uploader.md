@@ -2,9 +2,9 @@
 title: 使用文件加载器
 description: 了解如何将所有数据放入单个data warehouse。
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1392'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 ## 限制和要求 {#require}
 
 1. **文件上传唯一支持的格式是 `CSV` 或`comma separated values`**. 如果您在Excel中工作，则可以使用“另存为”功能将文件保存在 `.csv` 格式。
-1. **`CSV`必须使用`UTF-8 encoding`**. 大多数情况下，这不会是问题。 如果您在上传文件时遇到此错误， [请参阅此支持文章](https://support.magento.com/hc/en-us/articles/360016730591).
+1. **`CSV`必须使用`UTF-8 encoding`**. 大多数情况下，这不会是问题。 如果您在上传文件时遇到此错误， [请参阅此支持文章](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=en).
 1. **文件不能大于100MB**. 如果文件大于此大小，请将表分成多个块，并将它们另存为单个文件。 可在加载初始文件后使用附加数据。
 1. **所有表都必须具有`primary key`**. 表中至少需要有一列可用作 `primary key`，或表中每行的唯一标识符。 指定为 `primary key` can *从* 为空。 A `primary key` 可以像添加给每行指定数字的列一样简单，也可以是连接两列以创建唯一值的列(例如， `campaign name` 和 `date`)。
 

@@ -2,9 +2,9 @@
 title: 连接Mixpanel
 description: 了解如何分析用户如何导航和利用您的网站和应用程序。
 exl-id: e6a9f08f-1063-4d92-93e6-971280239fdb
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -59,4 +59,4 @@ ht-degree: 0%
 ### 相关
 
 * [预期 [!DNL Mixpanel] 数据](../integrations/mixpanel-data.md)
-* [重新验证集成](https://support.magento.com/hc/en-us/articles/360016733151)
+* [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

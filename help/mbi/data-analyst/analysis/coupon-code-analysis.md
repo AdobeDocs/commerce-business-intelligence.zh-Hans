@@ -2,9 +2,9 @@
 title: 优惠券性能
 description: 了解如何分析优惠券性能。
 exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1176'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `coupon\_code`
-   * [!UICONTROL Datatype]: `String`
+   * [!UICONTROL Datatype]:: `String`
    * [!UICONTROL Calculation]:在 `A` 表示为空 `No coupon` else `Coupon` end
 
 
@@ -44,7 +44,7 @@ ht-degree: 0%
       * `A`: `customer\_id`
       * `B`: `coupon\_code`
    * [!UICONTROL Datatype]:字符串
-   * [!UICONTROL Calculation]: `concat(A,' - ',B)`
+   * [!UICONTROL Calculation]:: `concat(A,' - ',B)`
 
 
 * **具有此优惠券的订单数**
@@ -80,20 +80,20 @@ ht-degree: 0%
       * [!UICONTROL Column type]: `Same Table => CALCULATION`
       * [!UICONTROL Inputs]:
          * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
-      * [!UICONTROL Datatype]: `String`
+      * [!UICONTROL Datatype]:: `String`
       * [!UICONTROL Calculation]: **A=“优惠券”，然后“优惠券客户”，其他“非优惠券客户”结束时的用例**
    * **具有优惠券的客户订单百分比**
       * [!UICONTROL Column type]: `Same Table => CALCULATION`
       * [!UICONTROL Inputs]:
          * `A`: `User's lifetime number of coupons used`
          * `B`: `User's lifetime number of orders`
-      * [!UICONTROL Datatype]: `Decimal`
+      * [!UICONTROL Datatype]:: `Decimal`
       * [!UICONTROL Calculation]: **A为null或B为null或B=0时，A/B结束**
    * **客户的优惠券使用情况**
       * [!UICONTROL Column type]: `Same Table => Calculation`
       * [!UICONTROL Inputs]:
          * `A`: `Percent of customer's orders with coupon`
-      * [!UICONTROL Datatype]: `String`
+      * [!UICONTROL Datatype]:: `String`
       * [!UICONTROL Calculation]: **当A=0时A为null，当A&lt;0.5时为“从不使用优惠券”，当A=0.5时为“大部分全价”，当A=1时为“仅优惠券”，当A>0.5时为“大部分优惠券”，当A=0.5时为“大部分未使用优惠券”时为“大部分全价”**
 
 
@@ -127,7 +127,7 @@ ht-degree: 0%
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
-   * [!UICONTROL Datatype]: `String`
+   * [!UICONTROL Datatype]:: `String`
    * [!UICONTROL Calculation]: **A=“优惠券”，然后“优惠券客户”，其他“非优惠券客户”结束时的用例**
 
 
@@ -136,7 +136,7 @@ ht-degree: 0%
    * [!UICONTROL Inputs]:
       * `A`: `User's lifetime number of coupons used`
       * `B`: `User's lifetime number of orders`
-   * [!UICONTROL Datatype]: `Decimal`
+   * [!UICONTROL Datatype]:: `Decimal`
    * [!UICONTROL Calculation]: **A为null或B为null或B=0时，A/B结束**
 
 
@@ -144,7 +144,7 @@ ht-degree: 0%
    * [!UICONTROL Column type]: `Same Table => Calculation`
    * [!UICONTROL Inputs]:
       * `A`: `Percent of customer's orders with coupon`
-   * [!UICONTROL Datatype]: `String`
+   * [!UICONTROL Datatype]:: `String`
    * [!UICONTROL Calculation]: **当A=0时A为null，当A&lt;0.5时为“从不使用优惠券”，当A=0.5时为“大部分全价”，当A=1时为“仅优惠券”，当A>0.5时为“大部分优惠券”，当A=0.5时为“大部分未使用优惠券”时为“大部分全价”**
 
 
@@ -512,4 +512,4 @@ ht-degree: 0%
 
 编译完所有报告后，您可以在功能板上根据需要组织报告。 最终结果可能与页面顶部的图像类似。
 
-如果您在构建此分析时遇到任何问题，或者只想与我们的专业服务团队接洽， [联系支持](../../guide-overview.md).
+如果您在构建此分析时遇到任何问题，或者只想与我们的专业服务团队接洽， [联系支持](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

@@ -2,9 +2,9 @@
 title: 定义客户集中度
 description: 了解如何设置功能板，以帮助您衡量总收入在客户群中的分配方式。
 exl-id: 6242019f-a6a5-48d3-b214-94acd7842e00
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
@@ -31,51 +31,51 @@ ht-degree: 0%
 
 * `Sales_flat_order/customer_entity` 表
 * （输入） `reference`
-* [!UICONTROL Column type]:- `Same table > Calculation`
-* [!UICONTROL Inputs]:- `entity_id`
+* [!UICONTROL Column type]: – `Same table > Calculation`
+* [!UICONTROL Inputs]: – `entity_id`
 * [!UICONTROL Calculation]:- **如果A为null，则结束1**
-* [!UICONTROL Datatype]:- `Integer`
+* [!UICONTROL Datatype]: – `Integer`
 
 * `Customer concentration` 表(这是您刚刚上传的文件，其中包含 `1`)
 * 客户数量
-* [!UICONTROL Column type]:- `Many to One > Count Distinct`
+* [!UICONTROL Column type]: – `Many to One > Count Distinct`
 * 路径 —  `sales_flat_order.(input) reference > Customer Concentration.Primary Key` 或 `customer_entity.(input)reference > Customer Concentration.Primary Key`
 * 选定列 —  `sales_flat_order.customer_email` 或 `customer_entity.entity_id`
 
 * `customer_entity` 表
 * 客户数量
-* [!UICONTROL Column type]:- `One to Many > JOINED_COLUMN`
+* [!UICONTROL Column type]: – `One to Many > JOINED_COLUMN`
 * 路径 —  `customer_entity.(input) reference > Customer Concentration. Primary Key`
 * 选定列 —  `Number of customers`
 
 * （输入） `Ranking by customer lifetime revenue`
-* [!UICONTROL Column type]:- `Same table > Event Number`
+* [!UICONTROL Column type]: – `Same table > Event Number`
 * 事件所有者 —  `Number of customers`
 * 事件排名 —  `Customer's lifetime revenue`
 
 * 客户的收入百分比
-* [!UICONTROL Column type]:- `Same table > Calculation`
-* [!UICONTROL Inputs]:- `(input) Ranking by customer lifetime revenue`, `Number of customers`
+* [!UICONTROL Column type]: – `Same table > Calculation`
+* [!UICONTROL Inputs]: – `(input) Ranking by customer lifetime revenue`, `Number of customers`
 * [!UICONTROL Calculation]:- **当A为空时，则为空(A/B)* 100结束&#x200B;**
-* [!UICONTROL Datatype]:- `Decimal`
+* [!UICONTROL Datatype]: – `Decimal`
 
 * `Sales_flat_order` 表
 * 客户数量
-* [!UICONTROL Column type]:- `One to Many > JOINED_COLUMN`
+* [!UICONTROL Column type]: – `One to Many > JOINED_COLUMN`
 * 路径 —  `sales_flat_order.(input) reference > Customer Concentration.Primary Key`
 * 选定列 —  `Number of customers`
 
 * （输入）按客户生命周期收入排名
-* [!UICONTROL Column type]:- `Same table > Event Number`
+* [!UICONTROL Column type]: – `Same table > Event Number`
 * 事件所有者 —  `Number of customers`
 * 事件排名 —  `Customer's lifetime revenue`
 * 过滤器 —  `Customer's order number = 1`
 
 * 客户的收入百分比
-* [!UICONTROL Column type]:- `Same table > Calculation`
-* [!UICONTROL Inputs]:- `(input) Ranking by customer lifetime revenue`, `Number of customers`
+* [!UICONTROL Column type]: – `Same table > Calculation`
+* [!UICONTROL Inputs]: – `(input) Ranking by customer lifetime revenue`, `Number of customers`
 * [!UICONTROL Calculation]:- **当A为空时，则为空(A/B)* 100结束&#x200B;**
-* [!UICONTROL Datatype]:- `Decimal`
+* [!UICONTROL Datatype]: - `Decimal`
 
 >[!NOTE]
 >
@@ -158,4 +158,4 @@ ht-degree: 0%
 
 编译完所有报告后，您可以在功能板上根据需要组织报告。 最终结果可能与上述示例仪表板类似。
 
-如果您在构建此分析时遇到任何问题，或者只想与我们的专业服务团队接洽， [联系支持](../../guide-overview.md).
+如果您在构建此分析时遇到任何问题，或者只想与我们的专业服务团队接洽， [联系支持](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

@@ -2,9 +2,9 @@
 title: 重置密码
 description: 了解如何重置用户的密码。
 exl-id: 4de90da3-9846-4c3a-a31e-8b379f207618
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '84'
+source-wordcount: '89'
 ht-degree: 0%
 
 ---
@@ -15,4 +15,4 @@ ht-degree: 0%
 
 此外，您还可以在 [!DNL MBI] 使用 **[!UICONTROL Personal Settings]** 页面。
 
-如果重置密码后仍被锁定在帐户外，请遵循 [这些提示](https://support.magento.com/hc/en-us/articles/360016503952) 帮助查明问题。
+如果重置密码后仍被锁定在帐户外，请遵循 [这些提示](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html?lang=en) 帮助查明问题。

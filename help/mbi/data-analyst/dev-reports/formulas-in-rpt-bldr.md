@@ -2,9 +2,9 @@
 title: Report Builder中的公式
 description: 了解如何在Report Builder中使用公式。
 exl-id: 7a0ad07a-5bcc-474f-95bc-ccc2b74073b2
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
@@ -63,4 +63,4 @@ ht-degree: 0%
 
 在上面的示例中，您是否注意到 `timestamp`, `groupings`, `perspectives`和 `filters` 是否从其输入量度中继承？ 请记住，可以利用公式来使用 `perspectives` 和 [独立时间选项](../../tutorials/time-options-visual-rpt-bldr.md){:target=&quot;_blank&quot;}，与量度可以一样。
 
-如果您对在 `Report Builder`, [联系支持](../../guide-overview.md).
+如果您对在 `Report Builder`, [联系支持](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

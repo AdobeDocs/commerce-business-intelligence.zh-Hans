@@ -2,9 +2,9 @@
 title: 激活 [!DNL MBI] 内部部署订阅帐户
 description: 了解如何激活 [!DNL MBI] 内部部署订阅帐户。
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '227'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 1. 创建 [!DNL MBI] 帐户。
 
-   - 转到 [https://account.magento.com/customer/account/login](https://account.magento.com/customer/account/login)
+   - 转到 [Adobe Commerce帐户登录](https://account.magento.com/customer/account/login)
 
    - 转到 **[!UICONTROL My Account** > **My [!DNL MBI] Instances]**.
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
    ![](../assets/create-account-2.png)
 
-   - 转到您的收件箱并验证您的电子邮件地址。 如果您没有收到电子邮件， [联系支持](../guide-overview.md).
+   - 转到您的收件箱并验证您的电子邮件地址。 如果您没有收到电子邮件， [联系支持](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
    - 创建密码。
 

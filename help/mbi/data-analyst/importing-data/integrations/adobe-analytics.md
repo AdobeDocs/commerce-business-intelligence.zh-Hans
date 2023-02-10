@@ -2,9 +2,9 @@
 title: Connect Adobe Analytics
 description: 了解如何将 [!DNL Adobe Analytics] 以及您所依赖的电子商务焦点 [!DNL MBI].
 exl-id: 824e1ee4-6b88-42f7-b265-29330dbc4407
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 更具体地说， [!DNL Adobe Analytics] 集成 [!DNL MBI] 为商户提供了开始组合其商务和Analytics数据集的功能。
 - 从现有的 [!DNL Adobe Analytics] 帐户 [!DNL MBI].
-- 从1个报表包中选择最多25个要复制到 [!DNL MBI] data warehouse。
+- 从一个报表包中选择最多25个要复制到 [!DNL MBI] data warehouse。
 - 使用所有标准 [!DNL MBI] 转换、连接和报告已复制内容的功能 [!DNL Adobe Analytics] 数据。
 
 ## 连接先决条件

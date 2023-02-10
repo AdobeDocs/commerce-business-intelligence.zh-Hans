@@ -2,9 +2,9 @@
 title: 重复顺序概率报表
 description: 了解并了解重复订单概率报表。
 exl-id: 2c88b85a-7320-44ca-87a5-5b91250348ea
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 在某些情况下，我们可以 `order-specific` 维度 `user-specific` 要添加为过滤器的维度 `Repeat Order Probability` 图表。 在这些情况下，我们将返回用户的首次订购或最新订购的订单属性（例如，用户的首次订购区域名称）。
 
-如果要创建此类新维度， [联系支持](../../guide-overview.md).
+如果要创建此类新维度， [联系支持](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ## 不同属性下订单重复概率的比较
 

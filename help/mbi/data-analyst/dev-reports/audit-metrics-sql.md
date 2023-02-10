@@ -2,9 +2,9 @@
 title: 使用SQLReport Builder
 description: 了解如何使用SQLReport Builder审核数据和量度，以便将结果与本地数据库中的数据进行比较。
 exl-id: d1d9e099-4138-43e6-aaec-6f15ebc5c4d4
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -46,4 +46,4 @@ ht-degree: 0%
 
 ### 还难过？
 
-如果您在审核数据后发现差异，请查看 [联系支持人员：数据差异](https://support.magento.com/hc/en-us/articles/360016505312) 支持文章，以了解有关下一步操作的更多信息。
+如果您在审核数据后发现差异，请查看 [联系支持人员：数据差异](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=en) 支持文章，以了解有关下一步操作的更多信息。

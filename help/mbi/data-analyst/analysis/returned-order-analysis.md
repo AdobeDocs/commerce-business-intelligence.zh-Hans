@@ -2,9 +2,9 @@
 title: 分析退货单
 description: 了解如何设置功能板，以详细分析商店的回报。
 exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -248,4 +248,4 @@ ht-degree: 0%
 
 编译完所有报告后，您可以在功能板上根据需要组织报告。 结果可能与上述示例仪表板类似。
 
-如果您在构建此分析时遇到任何问题，或者只想与专业服务团队接洽， [联系支持](../../guide-overview.md).
+如果您在构建此分析时遇到任何问题，或希望与专业服务团队接洽， [联系支持](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

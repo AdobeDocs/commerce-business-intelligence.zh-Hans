@@ -39,10 +39,10 @@ ht-degree: 0%
 
 * **sales\_order** 表
    * `INPUT` `created\_at` (yyyy-mm-dd 00):00:00)
-      * [!UICONTROL Column type]:- `Same table > Calculation`
-      * [!UICONTROL Inputs]:- `created\_at`
-      * [!UICONTROL Datatype]:- `Datetime`
-      * [!UICONTROL Calculation]:- ` case when A is null then null else to\_char(A, 'YYYY-MM-DD 00:00:00') end`
+      * [!UICONTROL Column type]: – `Same table > Calculation`
+      * [!UICONTROL Inputs]: – `created\_at`
+      * [!UICONTROL Datatype]: – `Datetime`
+      * [!UICONTROL Calculation]: - ` case when A is null then null else to\_char(A, 'YYYY-MM-DD 00:00:00') end`
 
 * **零售日历** 文件上传表
    * **当前日期**

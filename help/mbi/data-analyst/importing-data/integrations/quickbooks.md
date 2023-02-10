@@ -2,9 +2,9 @@
 title: Connect QuickBooks
 description: 了解您的企业财务如何与您的销售和营销数据并存，让您能够快速、轻松地监控您的开支、识别过度支出等。
 exl-id: e100c88c-af59-4185-b2a2-c8e77bfd7277
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '147'
 ht-degree: 0%
 
 ---
@@ -38,4 +38,4 @@ ht-degree: 0%
 ## 相关
 
 * [预期 [!DNL QuickBooks] 数据](../integrations/quickbooks-data.md)
-* [重新验证集成](https://support.magento.com/hc/en-us/articles/360016733151)
+* [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

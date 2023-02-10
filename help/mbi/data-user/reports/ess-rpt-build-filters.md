@@ -2,9 +2,9 @@
 title: 过滤器
 description: 了解如何使用过滤器。
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >一个报表最多可以有3,500个数据点。 要减少数据点数，请使用过滤器减少用于生成报表的数据量。
 
-MBI包含一系列过滤器，您可以使用“开箱即用”或根据需要进行修改。 您可以创建的过滤器数量没有限制。
+MBI包含一系列筛选器，您可以使用“开箱即用”(OOTB)或根据需要进行修改。 您可以创建的过滤器数量没有限制。
 
 ## 添加过滤器：
 

@@ -2,9 +2,9 @@
 title: 使用SQLReport Builder
 description: 了解使用SQLReport Builder的进出。
 exl-id: 3a485b00-c59d-4bc5-b78b-57e9e92dd9d6
-source-git-commit: 09b6983c3e06a1f18035542dfa3b9de9ac3ceb38
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1516'
+source-wordcount: '1501'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,15 @@ ht-degree: 0%
 >
 >需要 [管理员权限](../../administrator/user-management/user-management.md) 创建和编辑SQL图表。 `Standard` 用户可以在功能板上重新排列这些图表， `Read-only` 用户将拥有与传统图表相同的体验。 此外， `Read-only` 用户无权访问查询的文本。
 
-查看我们的 [培训视频](https://support.magento.com/hc/en-us/articles/360016730131) 以了解更多。
+查看我们的 [培训视频](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=en) 以了解更多。
 
 `SQL`，或结构化查询语言，是一种用于与数据库通信的编程语言。 在 [!DNL MBI], SQL用于查询或检索data warehouse中的数据。 查看功能板上的报表 — 在后台，每个报表都由SQL查询提供支持。
 
 您可以使用 [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) 要直接查询data warehouse，请查看结果，并将它们转换为图表。 您可以开始使用 `SQL Report Builder` 导航至 **[!UICONTROL Report Builder** > **SQL Report Builder]**.
 
-查看我们的 [培训视频](https://support.magento.com/hc/en-us/articles/360016730131-Training-Video-SQL-Report-Builder) 以了解更多。
+查看我们的 [培训视频](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=en) 以了解更多。
 
-的 `SQL Report Builder` 允许您直接查询data warehouse、查看结果，并快速将它们转换为图表。 使用SQL构建报告的最好部分是 [您无需等待更新周期，即可在列上进行迭代](https://support.magento.com/hc/en-us/articles/360016506212) 创建。 如果结果不太正确，您可以快速编辑并重新运行查询，直到这些内容符合您的预期。
+的 `SQL Report Builder` 允许您直接查询data warehouse、查看结果，并快速将它们转换为图表。 使用SQL构建报告的最好部分是，您无需等待更新周期，即可在您创建的列上进行迭代。 如果结果不太正确，您可以快速编辑并重新运行查询，直到这些内容符合您的预期。
 
 在本文中，我们将指导您使用 `SQL Report Builder`. 了解您的方法后，请查看我们的SQL以了解可视化教程，或尝试优化您编写的一些查询。
 
@@ -131,9 +131,9 @@ ht-degree: 0%
 
 大多数时间、结果差异都可归因于更新周期。 如果 [!DNL MBI] 正在将数据从数据库复制到Data warehouse的过程中，即使使用同一查询，您也可能会看到不同的结果。
 
-连接问题也可能导致差异。 导航到 `Connections` 通过单击 **[!DNL Manage Data** > **Connections]**)进行检查 — 有关数据库集成是否有错误？ 如果是，您可能需要 [重新验证集成](https://support.magento.com/hc/en-us/articles/360016733151-Reauthenticating-integrations) 让事情重新运行。
+连接问题也可能导致差异。 导航到 `Connections` 通过单击 **[!DNL Manage Data** > **Connections]**)进行检查 — 有关数据库集成是否有错误？ 如果是，您可能需要 [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en) 让事情重新运行。
 
-如果所有集成均已成功连接，并且您未在更新周期的中间，则可能会出现其他问题。 尝试使用 [数据差异疑难解答指南](https://support.magento.com/hc/en-us/sections/360003074492) 在我们的支持网站上，找出问题所在。
+如果所有集成均已成功连接，并且您未在更新周期的中间，则可能会出现其他问题。
 
 #### 删除SQL报表是否也会从我的Data warehouse中删除基础列？
 

@@ -2,16 +2,16 @@
 title: 在商务中存储数据
 description: 了解数据的生成方式、新行插入其中一个核心商务表的确切原因，以及购买或创建帐户等操作如何记录到商务数据库中。
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 0%
+source-wordcount: '960'
+ht-degree: 3%
 
 ---
 
-# 将数据存储在 [!DNL Magento]
+# 将数据存储在 [!DNL Adobe Commerce]
 
-商务平台记录并组织了数百个表中的各种有价值的商务数据。 在本主题中，您将了解如何生成该数据，以及具体导致在 [核心商务表](../data-warehouse-mgr/common-mage-tables.md)，以及购买或创建帐户等操作如何记录到商务数据库中。 要解释这些概念，请参阅以下示例：
+Adobe Commerce平台记录并组织了数百个表中各种有价值的商务数据。 在本主题中，您将了解如何生成该数据，以及具体导致在 [核心商务表](../data-warehouse-mgr/common-mage-tables.md)，以及购买或创建帐户等操作如何记录到商务数据库中。 要解释这些概念，请参阅以下示例：
 
 `Clothes4U` 是一家既在线又在实体店的服装零售商。 它使用网站后面的Magento Open Source来收集和组织数据。
 
@@ -23,22 +23,22 @@ ht-degree: 0%
 
 | **`entity\_id`** | **`entity\_type\_id`** | **`attribute\_set\_id`** | **`sku`** | **`created\_at`** |
 |---|---|---|---|---|
-| 205 | 4 | 8 | 裤子10 | 2016/09/22 09:15:43 |
-| 206 | 4 | 8 | 裤子11 | 2016/09/22 09:18:17 |
-| 207 | 4 | 12 | 衬衫6 | 2016/09/22 09:24:02 |
+| 205 | 4 | 8 | Pants10 | 2016/09/22 09:15:43 |
+| 206 | 4 | 8 | Pants11 | 2016/09/22 09:18:17 |
+| 207 | 4 | 12 | Shirts6 | 2016/09/22 09:24:02 |
 
 * `entity_id`  — 这是 `catalog_product_entity` 表，表示表的每一行必须具有不同的 `entity_id`. 每个 `entity_id` 此表中只能与一个产品关联，而每个产品只能与一个产品关联 `entity_id`
    * 上表的顶行， `entity_id` = 205，是为“回退贝尔底”创建的新行。 随处 `entity_id` = 205显示在商务平台中，它将引用产品“Throwback Bellbotts”
 * `entity_type_id`  — 商务具有多个类别的对象（如客户、地址和产品等），此列用于表示此特定行所属的类别。
-   * 这是 `catalog_product_entity` 表中，每行具有相同的实体类型：产品。 在Magento中， `entity_type_id` 对于产品，为4，这就是为什么创建的所有三个新产品都返回4作为此列的原因。
+   * 这是 `catalog_product_entity` 表中，每行具有相同的实体类型：产品。 在Adobe Commerce, `entity_type_id` 对于产品，为4，这就是为什么创建的所有三个新产品都返回4作为此列的原因。
 * `attribute_set_id`  — 属性集用于标识具有相同描述符的产品。
    * 表格的前两行是 `Throwback Bellbottoms` 和 `Straight Leg Jeans` 产品，都是裤子。 这些产品将具有相同的描述符（例如，名称、缝隙、腰围），因此具有相同的描述符 `attribute_set_id`. 第三项， `V-Neck T-Shirt` 有不同的 `attribute_set_id` 因为它没有与裤子相同的描述符；衬衫没有马甲或内裤。
-* `sku`  — 这些是用户在Magento中创建新产品时分配给每个产品的唯一值。
+* `sku`  — 这些是用户在Adobe Commerce中创建新产品时分配给每个产品的唯一值。
 * `created_at`  — 此列返回创建每个产品的时间戳
 
 ## `customer\_entity`
 
-新增三款产品后不久，新客户， `Sammy Customer`，访问次数 `Clothes4U`网站首次。 自 `Clothes4U` 不 [允许来宾订单](https://support.magento.com/hc/en-us/articles/360016729951-Common-Magento-Misconceptions), `Sammy Customer` 必须先在网站上创建帐户。 她输入凭据并单击提交，从而在 [`customer\_entity table`](../data-warehouse-mgr/cust-ent-table.md):
+新增三款产品后不久，新客户， `Sammy Customer`，访问次数 `Clothes4U`网站首次。 自 `Clothes4U` 不允许来宾订单， `Sammy Customer` 必须先在网站上创建帐户。 她输入凭据并单击提交，从而在 [`customer\_entity table`](../data-warehouse-mgr/cust-ent-table.md):
 
 | **`entity id`** | **`entity type id`** | **`email`** | **`created at`** |
 |---|---|---|---|

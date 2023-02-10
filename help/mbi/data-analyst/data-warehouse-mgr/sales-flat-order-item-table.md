@@ -2,16 +2,16 @@
 title: sales_order_item表
 description: 了解如何使用sales_order_item表。
 exl-id: 5c48e985-3ba2-414b-bd1f-555b3da763bd
-source-git-commit: c0892aa046c80f90561b4a178525ef9ed05b435a
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
 
 # `sales_order_item` 表
 
-的 `sales_order_item` 表(`sales_flat_order_item` on [!DNL Magento] 1)包含订单中购买的所有产品的记录。 每行表示一个唯一 `sku` 包含在订单中。 为特定 `sku` 通常由 `qty_ordered` 字段。
+的 `sales_order_item` 表(`sales_flat_order_item` M1 1)包含订单中购买的所有产品的记录。 每行表示一个唯一 `sku` 包含在订单中。 为特定 `sku` 通常由 `qty_ordered` 字段。
 
 ## 产品类型
 
@@ -82,7 +82,7 @@ ht-degree: 0%
 
 `sales_order_item`
 
-* 加入 `sales_order_item` 创建新列，以将父可配置或捆绑SKU的详细信息与简单产品相关联。 请注意，您需要 [联系支持](../../guide-overview.md) 如果是在Data warehouse管理器中构建，则可帮助配置这些计算。
+* 加入 `sales_order_item` 创建新列，以将父可配置或捆绑SKU的详细信息与简单产品相关联。 请注意，您需要 [联系支持](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 如果是在Data warehouse管理器中构建，则可帮助配置这些计算。
    * 路径： `sales_order_item.parent_item_id` （多个）=> `sales_order_item.item_id` (1)
 
 `store`

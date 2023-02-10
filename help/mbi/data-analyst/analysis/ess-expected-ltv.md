@@ -2,9 +2,9 @@
 title: 预期生命周期值(LTV)分析（基本）
 description: 了解如何创建分析以了解当前客户的生命周期值，以及预测生命周期值随更多订单而增加的情况。
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
@@ -44,8 +44,6 @@ ht-degree: 0%
 * 我们将在此处创建和添加所有报表。
 
 ## 生成报告
-
-* 如果您尚未注册，请签出 [此视频](https://fast.wistia.net/embed/iframe/24zz7wmjrt) 关于使用**[!UICONTROL Visual Report Builder] 来构建图表、表和标量值。
 
 >[!NOTE]
 >

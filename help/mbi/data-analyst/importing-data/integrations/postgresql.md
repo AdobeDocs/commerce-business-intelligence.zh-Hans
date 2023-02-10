@@ -2,9 +2,9 @@
 title: 通过SSH通道连接PostgreSQL
 description: 了解如何将PostgreSQL数据库连接到 [!DNL MBI] 通过SSH隧道。
 exl-id: da610988-21c1-4f5f-b4e2-e2deb175a2aa
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ ht-degree: 0%
 * `Username`:RJMetrics Postgres用户名（应为rjmetric）
 * `Password`:RJMetrics Postgres密码
 * `Port`:服务器上的PostgreSQL端口（默认为5432）
-* `Host`:127.0.0.1
+* `Host`: 127.0.0.1
 
 在 `SSH Connection`:
 
@@ -105,4 +105,4 @@ ht-degree: 0%
 
 ### 相关
 
-* [重新验证集成](https://support.magento.com/hc/en-us/articles/360016733151)
+* [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

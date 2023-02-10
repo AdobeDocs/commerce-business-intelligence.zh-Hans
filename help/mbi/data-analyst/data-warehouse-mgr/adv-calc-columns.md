@@ -2,10 +2,10 @@
 title: 高级计算列类型
 description: 了解大多数使用列案例的基础知识 — 但您可能希望计算列比Data warehouse管理器可以创建的计算列更加复杂。
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 0%
+source-wordcount: '912'
+ht-degree: 4%
 
 ---
 
@@ -159,7 +159,7 @@ A **时区转换** “计算”列将特定数据源的时间戳从其记录的�
 
 别担心。 这里没有列出它，并不意味着它不可能。 我们的Data warehouse分析员团队已经为您提供了帮助。
 
-要定义新的计算列，请 [提交支持票证](../../guide-overview.md) 包含您想要构建的内容的详细信息。
+要定义新的计算列，请 [提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 包含您想要构建的内容的详细信息。
 
 ## 相关文档
 

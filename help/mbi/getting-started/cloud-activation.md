@@ -2,9 +2,9 @@
 title: 激活 [!DNL MBI] 云入门订阅帐户
 description: 了解如何激活 [!DNL MBI] 云入门项目。
 exl-id: 172439ee-fa1d-4872-b6a9-c61a212a7cbe
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 1. 创建 [!DNL MBI] 帐户。
 
-   - 转到 [https://account.magento.com/customer/account/login](https://account.magento.com/customer/account/login)
+   - 转到 [Adobe Commerce帐户登录](https://account.magento.com/customer/account/login)
 
    - 转到 **[!UICONTROL My Account** > **My [!DNL MBI] Instances]**.
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 1. 创建专用 [!DNL MBI] 用户。
 
-   - 在 [https://accounts.magento.com](https://accounts.magento.com).
+   - 在 [Adobe Commerce帐户](https://accounts.magento.com).
 
    - _为什么是新用户？_ [!DNL MBI] 需要将用户添加到项目中以持续获取要传输到帐户的新数据 [!DNL MBI] data warehouse。 此用户将用作该连接。 将此用户添加到项目的步骤4中将会介绍。
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 1. 添加新 [!DNL MBI] `Public key` 到 [!DNL MBI] 用户在步骤5中创建。
 
-   - 转到 [https://accounts.magento.cloud/](https://accounts.magento.cloud/). 使用您的帐户登录信息登录新 [!DNL MBI] 用户已创建。 然后转到 `Account Settings` 选项卡。
+   - 转到 [您的cloud Adobe Commerce帐户](https://accounts.magento.cloud/). 使用您的帐户登录信息登录新 [!DNL MBI] 用户已创建。 然后转到 `Account Settings` 选项卡。
 
    - 向下滚动页面并展开下拉菜单 `SSH` 键。 然后，单击 **[!UICONTROL Add a public key]**.
 

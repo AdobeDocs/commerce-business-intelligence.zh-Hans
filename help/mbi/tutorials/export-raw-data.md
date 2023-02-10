@@ -2,16 +2,16 @@
 title: 导出原始数据
 description: 了解如何从 [!DNL MBI] data warehouse，以详细了解功能板的动力。
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
 
 # 导出原始数据
 
-使用原始数据导出，您可以从 [!DNL MBI] data warehouse，以详细了解功能板的动力。 此外，原始数据导出还可以帮助您 [精确数据差异](https://support.magento.com/hc/en-us/articles/360016730631).
+使用原始数据导出，您可以从 [!DNL MBI] data warehouse，以详细了解功能板的动力。 此外，原始数据导出还可以帮助您 [精确数据差异](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=en).
 
 原始数据导出允许访问通过取消相关量度的标准化和预聚合生成的其他列和维度。 例如， `User's first order date` 是一个维度，您可以为 [!DNL MBI]，但它可能在数据库中不可用。
 

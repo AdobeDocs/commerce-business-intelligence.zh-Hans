@@ -2,9 +2,9 @@
 title: 添加/编辑新用户
 description: 了解如何添加新 [!DNL MBI] 用户和如何更新您的用户名或密码。
 exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,8 @@ ht-degree: 0%
    >要查看、添加或更改您帐户的账单信息，您必须 `Billing` 权限。 [权限是按用户进行设置的](../../administrator/user-management/user-management.md) 创建用户帐户时。 如果您需要 `Billing` 权限，请联系您帐户的管理员。
 
 1. 单击 **[!UICONTROL Save]**.
-1. 新用户将收到一封包含登录和密码详细信息的电子邮件。
+
+新用户将收到一封包含登录和密码详细信息的电子邮件。
 
 >[!NOTE]
 >
@@ -37,4 +38,4 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->每个帐户都有合同数量的许可证或座位。 如果你达到了极限，或者想知道更多， [提交支持票证](../../guide-overview.md).
+>每个帐户都有合同数量的许可证或座位。 如果你达到了极限，或者想知道更多， [提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

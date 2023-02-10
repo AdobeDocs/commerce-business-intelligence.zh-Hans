@@ -2,9 +2,9 @@
 title: 连接Google电子商务
 description: 了解您最有价值的反向链接渠道。
 exl-id: c80f52f3-894a-4084-8c0e-aee618ed77f5
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 0%
 ## 相关：
 
 * [预期 [!DNL Google ECommerce] 数据](../integrations/google-ecommerce-data.md)
-* [重新验证集成](https://support.magento.com/hc/en-us/articles/360016733151)
+* [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [设置 [!DNL Google ECommerce] 跟踪](https://support.google.com/analytics/answer/1009612?hl=en)
 * [发现最有价值的客户获取来源和渠道](../../analysis/most-value-source-channel.md)
 * [提高广告活动的ROI](../../analysis/roi-ad-camp.md)

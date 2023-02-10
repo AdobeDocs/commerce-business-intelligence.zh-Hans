@@ -2,9 +2,9 @@
 title: 预期的Salesforce数据
 description: 了解Salesforce数据中受支持和不受支持的对象。
 exl-id: 6625349f-2ec0-402d-8635-889a1f29811c
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '164'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >每个表的结构（列）取决于对象中包含的字段。
 
-要获取组织可用的对象列表，请参阅 [!DNL Salesforce] [获取对象列表文档](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_describeGlobal.htm). 在有对象列表后，请检查 [实体关系图(ERD)部分](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_erd_majors.htm) of [!DNL Salesforce] 文档以了解实体如何彼此关联。
+要获取组织可用的对象列表，请参阅 [!DNL Salesforce] [获取对象列表文档](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_describeGlobal.htm). 在有对象列表后，请检查 [实体关系图(ERD)部分](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_erd_knowledge.htm) of [!DNL Salesforce] 文档以了解实体如何彼此关联。
 
 ## 不支持的对象
 
@@ -48,4 +48,4 @@ ht-degree: 0%
 ## 相关：
 
 * [连接 [!DNL Salesforce]](../integrations/salesforce.md)
-* [重新验证集成](https://support.magento.com/hc/en-us/articles/360016733151)
+* [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

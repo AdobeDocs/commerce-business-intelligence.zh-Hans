@@ -5,9 +5,9 @@ breadcrumb-title: 指南概述
 seo-title: MBI User Guide
 seo-description: Describes how to use the MBI features used to gain insights from Adobe Commerce or Magento Open Source data.
 exl-id: f62c7a98-1b4c-4abb-9692-50ce0f3ee1fb
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -38,11 +38,11 @@ ht-degree: 0%
 
 ### 服务策略
 
-查看 [客户支持团队提供哪些服务的列表](https://support.magento.com/hc/en-us/articles/360016730811).
+查看 [客户支持团队提供哪些服务的列表](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ### 提交支持票证
 
-需要有关构建高级计算列的帮助？ 遇到缺陷或连接问题？ 如果您需要与我们的支持团队联系，我们会要求您使用 [支持票证准则](https://support.magento.com/hc/en-us/articles/360016730351). 这些准则概述了解决该问题所需的信息Adobe。
+需要有关构建高级计算列的帮助？ 遇到缺陷或连接问题？ 如果您需要与我们的支持团队联系，我们会要求您使用 [支持票证准则] (https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en)。 这些准则概述了解决该问题所需的信息Adobe。
 
 ## 可用文档
 

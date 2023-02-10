@@ -2,9 +2,9 @@
 title: Zendesk的服务台报告
 description: 了解您最有价值的反向链接渠道。
 exl-id: b6142ef2-2be8-401f-ac35-f86fc68d204e
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此设置仅适用于位于 `Pro` 规划和使用新架构。 你在 [新架构](https://support.magento.com/hc/en-us/articles/360016503052-New-Architecture-FAQ) 如果您 `Data Warehouse Views` 选择 `Manage Data` 中。
+>此设置仅适用于位于 `Pro` 规划和使用新架构。 如果您具有 `Data Warehouse Views` 选择 `Manage Data` 中。
 
 整合您的 [!DNL Zendesk] 通过事务型数据库获取数据是更好地了解客户如何与您的销售或客户成功团队进行交互以及利用您的支持平台的客户类型的绝佳方式。 在本文中，我们将演示如何设置功能板以获取有关您的 [!DNL Zendesk] 性能和关联。
 
@@ -196,7 +196,7 @@ ht-degree: 0%
 
       * `Calculation` - `to_char(A,'D')||'. '||to_char(A,'Day')`
 
-      *`Datatype` - `String`
+      *`Datatype` – `String`
 
 
 * **`customer_entity`** 表
@@ -221,7 +221,7 @@ ht-degree: 0%
 
       * `Calculation` - `case when A>0 then 'Yes' else 'No' end`
 
-      * `Datatype` - `String`
+      * `Datatype` – `String`
 
 * **`[Zendesk] Tickets`** 表
    * 选择定义： `Joined Column`

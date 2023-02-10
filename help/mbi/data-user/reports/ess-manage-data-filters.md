@@ -2,9 +2,9 @@
 title: 为量度创建过滤器集
 description: 了解如何创建保存的过滤器集并将其应用于量度。
 exl-id: 6ef8b67c-bebd-45eb-bca7-95832ec34fc8
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 如果您在 [!DNL MBI] 需要以类似方式过滤的过滤器（例如，过滤掉测试订单），您可以创建保存的过滤器集并将其应用于量度。 这样可节省您的时间，因为在创建或编辑量度时，您无需添加单个过滤器。
 
-查看我们的 [培训视频](https://support.magento.com/hc/en-us/articles/360016730151) 以了解更多。
+查看我们的 [培训视频](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=en) 以了解更多。
 
 >[!NOTE]
 >

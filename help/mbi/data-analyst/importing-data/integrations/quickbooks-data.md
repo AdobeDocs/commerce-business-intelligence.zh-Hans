@@ -2,9 +2,9 @@
 title: 预期QuickBooks数据
 description: 了解如何轻松跟踪相关数据字段以进行分析。
 exl-id: a60996bd-e3d1-497d-abce-f02ef1444f1a
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '966'
 ht-degree: 0%
 
 ---
@@ -62,4 +62,4 @@ ht-degree: 0%
 ## 相关：
 
 * [连接 [!DNL QuickBooks]](../integrations/quickbooks.md)
-* [重新验证集成](https://support.magento.com/hc/en-us/articles/360016733151-Reauthenticating-integrations)
+* [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

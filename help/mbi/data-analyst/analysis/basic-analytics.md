@@ -2,9 +2,9 @@
 title: 了解并构建基本分析
 description: 了解如何了解和构建分析的基础知识。
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '3142'
+source-wordcount: '3153'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 **你接受客人的命令吗？**
 
-*如果是，此表可能不包含您的所有客户。 联系我们的 [支持团队](https://support.magento.com/hc/en-us/articles/360016503692) 以确保客户分析包含所有客户。*
+*如果是，此表可能不包含您的所有客户。 联系我们的 [支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 以确保客户分析包含所有客户。*
 
 *不确定你是否接受客人的命令？ 请参阅 [本主题](../data-warehouse-mgr/guest-orders.md) 了解更多！*
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 * **[!UICONTROL Created_at]**:创建或下单的日期。
 * **[!UICONTROL Customer_email]**:下订单的客户的电子邮件地址。 这也可以是客户的唯一标识符。
 * **[!UICONTROL Customer's lifetime number of orders]**:在 `Customers` 表。
-* **[!UICONTROL Customer's order number]**:与订单关联的客户顺序编号。 例如，如果您要查看的行是客户的首次订单，则此列为“1”；但是，如果这是客户的第15次订单，则此列将显示此订单的“15”。 如果您的 `Customers` 桌子，问我们 [支持团队](https://support.magento.com/hc/en-us/articles/360016503692) 来帮助您构建它。
+* **[!UICONTROL Customer's order number]**:与订单关联的客户顺序编号。 例如，如果您要查看的行是客户的首次订单，则此列为“1”；但是，如果这是客户的第15次订单，则此列将显示此订单的“15”。 如果您的 `Customers` 桌子，问我们 [支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 来帮助您构建它。
 * **[!UICONTROL Customer's order number (previous-current)]**:中两个值的串联 **[!UICONTROL Customer's order number]** 列。 在下面的示例报表中使用它来显示任意两个订单之间经过的时间。 例如，客户的第一次订购日期与其第二次订购日期之间的时间通过此计算表示为“1-2”。
 * **[!UICONTROL Coupon_code]**:显示每次订购时使用的优惠券。
 * **[!UICONTROL Seconds since previous order]**:客户订单之间的时间（以秒为单位）。
@@ -86,7 +86,7 @@ ht-degree: 0%
 
 ## 营销支出表
 
-在分析营销支出时，您可以 [!DNL Facebook], [!DNL Google AdWords]，或其他来源。 如果您有多个营销支出来源，请联系我们的 [服务团队](https://business.adobe.com/products/magento/fully-managed-service.html) ，以获取有关为营销活动设置统一表格的帮助。
+在分析营销支出时，您可以 [!DNL Facebook], [!DNL Google AdWords]，或其他来源。 如果您有多个营销支出来源，请联系我们的 [Managed Services团队](https://business.adobe.com/products/magento/fully-managed-service.html) ，以获取有关为营销活动设置统一表格的帮助。
 
 **Dimension**
 
@@ -535,7 +535,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您可以将公式命名为“ROI”，并隐藏所有量度。 此外，您还可以调整量度中的过滤器，以分析替代来源和媒介。 另外，请查看 [本文](../analysis/roi-ad-camp.md) 有关CAC、LTV和ROI的更多详细信息。
+>您可以将公式命名为“ROI”，并隐藏所有量度。 此外，您还可以调整量度中的过滤器，以分析替代来源和媒介。 另外，请查看 [本主题](../analysis/roi-ad-camp.md) 有关CAC、LTV和ROI的更多详细信息。
 
 ![ROI 1](../../assets/ROI_1.png)<!--{: width="929"}-->
 

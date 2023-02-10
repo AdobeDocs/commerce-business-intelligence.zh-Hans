@@ -2,9 +2,9 @@
 title: 数据和更新信息
 description: 了解如何检查更新周期的状态。
 exl-id: a4a2e487-b826-4888-baf0-9d246a8ff153
-source-git-commit: 09b6983c3e06a1f18035542dfa3b9de9ac3ceb38
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -38,8 +38,8 @@ ht-degree: 0%
 
 ## 为什么[!DNL Google ECommerce]数据与我的数据库不同？ {#ecommdatabase}
 
-之间的差异 [!DNL Google Analytics] 数据库的出现有多种原因。 未正确启用跟踪、隐身访问用户以及点击事件无法正常工作只是少数示例。 如果你的收入和订单看起来不太对， [使用本文](https://support.magento.com/hc/en-us/articles/360016505232) 来诊断问题。
+之间的差异 [!DNL Google Analytics] 数据库的出现有多种原因。 未正确启用跟踪、隐身访问用户以及点击事件无法正常工作只是少数示例。 如果你的收入和订单看起来不太对， [使用本文](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=en) 来诊断问题。
 
 ## 如何排查数据差异？ {#datadiscrepancy}
 
-我们知道，看到不一致的数据可能是令人沮丧的体验。 尝试使用我们的 [数据差异核对清单](https://support.magento.com/hc/en-us/articles/360016731271) 或 [数据导出教程](https://support.magento.com/hc/en-us/articles/360016730631) 来诊断问题。 如果你仍然被难住， [联系支持](../../guide-overview.md).
+我们知道，看到不一致的数据可能是令人沮丧的体验。 尝试使用我们的 [数据差异核对清单](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html?lang=en) 或 [数据导出教程](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=en) 来诊断问题。 如果你仍然被难住， [联系支持](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

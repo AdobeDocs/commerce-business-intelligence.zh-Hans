@@ -2,9 +2,9 @@
 title: 删除或重新激活用户
 description: 了解如何删除 [!DNL MBI] 用户。
 exl-id: 0590275d-3329-40fb-8be1-4a700438338d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
@@ -24,5 +24,5 @@ ht-degree: 0%
 如果您只需要将该用户的功能板推送到其他用户帐户，请执行以下操作：
 
 1. 使用已删除用户的电子邮件地址创建新 [!DNL MBI] 用户。
-1. [通知支持人员](../../guide-overview.md) 创建用户后。 支持人员会将功能板转移到您的帐户中。
+1. [通知支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 创建用户后。 支持人员会将功能板转移到您的帐户中。
 1. 在“支持”通知您转移后，您可以再次删除用户。

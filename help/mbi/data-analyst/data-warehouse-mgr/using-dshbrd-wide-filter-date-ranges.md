@@ -2,9 +2,9 @@
 title: 功能板范围过滤
 description: 了解如何在特定功能板上批量编辑所有报表。
 exl-id: 379d0027-8a7a-4062-a66a-4f06c37b806c
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->整个过程中会启用或禁用存储过滤器 [!DNL MBI] 帐户。 如果功能板包含不受过滤器影响的报表（例如未基于任何商务数据构建的报表），则在应用商店过滤器时，这些报表不会更新。 您可以 [联系支持](../../guide-overview.md) 如果您认为报表应根据存储区选择进行更新，或者您认为帐户存储区过滤器被错误地禁用。
+>整个过程中会启用或禁用存储过滤器 [!DNL MBI] 帐户。 如果功能板包含不受过滤器影响的报表（例如未基于任何商务数据构建的报表），则在应用商店过滤器时，这些报表不会更新。 您可以 [联系支持](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 如果您认为报表应根据存储区选择进行更新，或者您认为帐户存储区过滤器被错误地禁用。
 
 从 `Store Filter`，则当您在功能板之间导航时，过滤器会保留您的选择。 通过保留您的选择，您可以在选择之前随时随地查看所选存储的数据 `All Stores`.
 

@@ -2,9 +2,9 @@
 title: 导入Bing广告支出数据
 description: 了解如何将Bing广告支出数据导入 [!DNL MBI] 进行分析。
 exl-id: c8dec4b4-74ce-41b2-a77d-403fe44e2816
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '157'
 ht-degree: 0%
 
 ---
@@ -24,4 +24,4 @@ ht-degree: 0%
 1. 在 `Save As` 对话框中，单击要保存导出文件的文件夹。
 1. 在 `File name` 框中，选择文件导出的名称。
 1. 单击 **[!UICONTROL Save]**.
-1. 下载文件后，  [联系支持](../../../guide-overview.md)，我们将代表您执行首次上传，并设置必要的后端维度。
+1. 下载文件后，  [联系支持](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en)，我们将代表您执行首次上传，并设置必要的后端维度。

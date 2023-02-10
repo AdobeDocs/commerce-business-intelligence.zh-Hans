@@ -2,9 +2,9 @@
 title: 审核Zendesk数据
 description: 了解导出Zendesk数据的步骤。
 exl-id: 3c8dcc72-3623-4c4e-a941-f431a97571e0
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 启用数据导出
 
-当前并未为所有人启用数据导出 [!DNL Zendesk] 帐户。 要激活此功能，请 [提交支持票证](../../../guide-overview.md)，提及 [!DNL Zendesk] 子域名。
+当前并未为所有人启用数据导出 [!DNL Zendesk] 帐户。 要激活此功能，请 [提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en)，提及 [!DNL Zendesk] 子域名。
 
 >[!NOTE]
 >
@@ -36,6 +36,6 @@ ht-degree: 0%
 
    此下载链接至少有三天有效。
 
-此过程会生成一个XML文件，其中包含当前存储在您当前 [!DNL Zendesk] 帐户，包括票证数据（含注释）、用户数据和帐户数据。 此时，您可以 [提交支持票证](../../../guide-overview.md) （请务必附加此文件！） 以便我们更仔细地查看您的数据。 如果文件过大，请将其与 [!DNL MBI] 团队通过 [!DNL Dropbox] 或 [!DNL Google Drive].
+此过程会生成一个XML文件，其中包含当前存储在您当前 [!DNL Zendesk] 帐户，包括票证数据（含注释）、用户数据和帐户数据。 此时，您可以 [提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) （请务必附加此文件！） 以便我们更仔细地查看您的数据。 如果文件过大，请将其与 [!DNL MBI] 团队通过 [!DNL Dropbox] 或 [!DNL Google Drive].
 
-有关 [!DNL Zendesk] 文件导出，请参阅 [[!DNL Zendesk] 导出文档](https://support.zendesk.com/entries/23002207-Exporting-data-to-a-CSV-or-XML-file-Plus-and-Enterprise-).
+有关 [!DNL Zendesk] 文件导出，请参阅 [[!DNL Zendesk] 导出文档](https://support.zendesk.com/hc/en-us/articles/4408886165402-Exporting-data-to-a-JSON-CSV-or-XML-file).

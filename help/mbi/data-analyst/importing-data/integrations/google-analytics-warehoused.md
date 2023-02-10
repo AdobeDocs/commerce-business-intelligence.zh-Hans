@@ -2,9 +2,9 @@
 title: 连接Google Analytics仓库
 description: 了解如何跟踪访客使用网站的方式、哪些内容很有吸引力、访客在哪些地方退出等。
 exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused] 是 `Premium` 集成。 [联系支持人员](../../../guide-overview.md) 如果您有兴趣将此集成添加到订阅中。
+>[!DNL Google Analytics Warehoused] 是 `Premium` 集成。 [联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 如果您有兴趣将此集成添加到订阅中。
 
 1. 转到 `Connections` 页面下 **[!UICONTROL Admin** > **Integrations]**.
 1. 单击 **[!UICONTROL Add a Add Integration]**，位于屏幕右侧。
@@ -61,8 +61,7 @@ ht-degree: 0%
 
 ## 相关文档
 
-* [重新验证集成](https://support.magento.com/hc/en-us/articles/360016733151)
+* [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [连接 [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [分析网站活动和客户转化率](../../analysis/web-act-cust-conversion.md)
 * [使用跟踪用户获取数据 [!DNL Google Analytics] cookie](../../analysis/google-track-user-acq.md)
-* [使用跟踪用户设备和浏览器数据 [!DNL Google Analytics] cookie](https://support.magento.com/hc/en-us/articles/360016732911)

@@ -2,9 +2,9 @@
 title: 用于分段和过滤的推荐数据Dimension
 description: 了解分段和过滤的最佳实践。
 exl-id: 66391bce-bdeb-4e9d-8089-1c796e00d91e
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 按上述维度对量度进行分段的第一步是确保跟踪数据库中的此数据。 如果未跟踪此数据，请与您的技术团队会面，并找到开始跟踪此数据的方法。
 
-确认在您的数据库中跟踪数据后， [联系我们的支持团队](../guide-overview.md) 将维度推送到 [!DNL MBI] 量度和图表，或仅使用我们的字段管理工具在 [!DNL MBI].
+确认在您的数据库中跟踪数据后， [联系我们的支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 将维度推送到 [!DNL MBI] 量度和图表，或仅使用我们的字段管理工具在 [!DNL MBI].
 
 ## 相关
 

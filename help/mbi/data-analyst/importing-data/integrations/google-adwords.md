@@ -2,9 +2,9 @@
 title: 连接Google Adwords
 description: 了解如何通过将广告成本与从您的营销活动获得的用户的客户生命周期价值(CLV)相结合来衡量营销活动ROI。
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -53,10 +53,9 @@ ht-degree: 0%
 
 ## 相关
 
-* [重新验证集成](https://support.magento.com/hc/en-us/articles/360016733151)
+* [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [通过跟踪订单反向链接来源 [!DNL Google ECommerce]](../integrations/google-ecommerce.md)
 * [跟踪数据库中的用户反向链接源](../../analysis/google-track-user-acq.md)
-* [跟踪数据库中的用户设备、浏览器和操作系统数据](https://support.magento.com/hc/en-us/articles/360016732911)
 * [发现最有价值的客户获取来源和渠道](../../analysis/most-value-source-channel.md)
 * [提高广告活动的ROI](../../analysis/roi-ad-camp.md)
 * [如何 [!DNL Google Analytics] UTM归因工作？](../../analysis/utm-attributes.md)

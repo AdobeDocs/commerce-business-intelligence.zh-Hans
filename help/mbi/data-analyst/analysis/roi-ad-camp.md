@@ -2,9 +2,9 @@
 title: 提高广告活动的ROI
 description: 了解一些评估营销活动效果的不同方法。
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1294'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ MBI让您轻松 [结合广告成本数据和收入数据](../../data-analyst/imp
 >
 >我们将假定所有促销活动成本都专门用于生成特定产品的购买。 假设所有成本都花在了产生购买上，则最终的ROI将考虑最坏的情况（每次购买的最高成本），因此您可以确保实际ROI高于此计算。 示例：假设您在一个促销活动上花费了20美元，该促销活动产生了10个新用户和10次购买，则您的每次购买实际成本为$1，但根据我们假定所有购买新用户的成本都为$2，则每次购买的成本为$2。)*
 
-在开始之前， [提交支持票证](../../guide-overview.md) 将以下维度连接到行项目表(`sales\_flat\_order\_item, order\_item`):
+在开始之前， [提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 将以下维度连接到行项目表(`sales\_flat\_order\_item, order\_item`):
 
 * 订单的来源（如果您仅在用户级别跟踪反向链接来源，则加入用户的来源）
 * 订购的促销活动（如果您仅在用户级别跟踪反向链接来源，则加入用户的促销活动）

@@ -2,9 +2,9 @@
 title: 更改量度的操作表
 description: 了解如何更改量度用于执行其操作的数据表。
 exl-id: c7a074ca-31f4-43e5-85d9-b64dca95dc23
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,6 @@ ht-degree: 0%
 
    ![](../../assets/change-metrics-2.png)
 
-1. 如果新表中没有匹配列，则可以 **在数据表中创建它** 或 [联系支持](../../guide-overview.md) 如果它是由 [!DNL MBI])，或者只是 **从量度中删除维度**. 要删除不再需要的维度，只需返回到量度的编辑器，并选择要删除的维度 `Dimensions`.
+1. 如果新表中没有匹配列，则可以 **在数据表中创建它** 或 [联系支持](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 如果它是由 [!DNL MBI])，或者只是 **从量度中删除维度**. 要删除不再需要的维度，只需返回到量度的编辑器，并选择要删除的维度 `Dimensions`.
 
    ![](../../assets/change-metrics-3.png)

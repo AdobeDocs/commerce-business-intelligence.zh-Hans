@@ -2,9 +2,9 @@
 title: 通过SSH隧道连接MySQL
 description: 了解如何通过SSH隧道连接MySQL。
 exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '664'
 ht-degree: 0%
 
 ---
@@ -120,4 +120,4 @@ ht-degree: 0%
 
 ## 相关：
 
-* [重新验证集成](https://support.magento.com/hc/en-us/articles/360016733151)
+* [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

@@ -2,9 +2,9 @@
 title: 创建定性同类群组分析
 description: 了解什么是定性同类群组，为什么您可能有兴趣构建此分析，以及如何在中创建此分析 [!DNL MBI].
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '858'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 创建 `qualitative cohort` 报表 `Report Builder` 我们的分析团队创建一些 [高级计算列](../data-warehouse-mgr/creating-calculated-columns.md) 在必要的表格上。
 
-要构建这些库，请提交 [支持票证](../../guide-overview.md) （并参考本文！） 以下是我们需要了解的：
+要构建这些库，请提交 [支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) （并参考本文！） 以下是我们需要了解的：
 
 * 的 `metric` 您想要使用及其使用的表格(例如： `Revenue`，基于 `orders` 表)。
 

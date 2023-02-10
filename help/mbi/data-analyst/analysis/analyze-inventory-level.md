@@ -2,16 +2,16 @@
 title: 分析库存水平
 description: 了解如何分析库存水平。
 exl-id: 620156c5-7bea-4b36-84c7-e0cb4b5cc8be
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
 
 # 分析库存水平
 
-本主题演示了如何设置功能板，以便提供对当前库存的分析。 本主题包含有关旧架构或新架构上客户端的说明。 如果您没有 **[!UICONTROL Data Warehouse Views]** 选项 **[!UICONTROL Manage Data]** 菜单)。 如果您使用的是旧版架构，请提交 [新支持请求](../../guide-overview.md) 主题 **[!UICONTROL INVENTORY ANALYSIS]** 在 _计算列_ 下面的说明。
+本主题演示了如何设置功能板，以便提供对当前库存的分析。 本主题包含有关旧架构或新架构上客户端的说明。 如果您没有 **[!UICONTROL Data Warehouse Views]** 选项 **[!UICONTROL Manage Data]** 菜单)。 如果您使用的是旧版架构，请提交 [新支持请求](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 主题 **[!UICONTROL INVENTORY ANALYSIS]** 在 _计算列_ 下面的说明。
 
 ## 要跟踪的列：
 
@@ -240,4 +240,4 @@ ht-degree: 0%
       [!UICONTROL Chart type]: `Table`
 
 
-如果您在构建此分析时遇到任何问题，或者只想与我们的专业服务团队接洽， [联系支持](../../guide-overview.md).
+如果您在构建此分析时遇到任何问题，或者只想与我们的专业服务团队接洽， [联系支持](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

@@ -2,9 +2,9 @@
 title: 优化SQL查询
 description: 了解如何优化SQL查询。
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 SQLReport Builder允许您在任何给定时间查询和迭代这些查询。 当您需要修改查询，而无需等待更新周期完成，然后再实现您创建的列或报表，则需要进行更新时，此功能非常有用。
 
-在执行查询之前， [[!DNL MBI] 估计成本](https://support.magento.com/hc/en-us/articles/360016730391). 成本考虑执行查询所需的时间长度和资源数。 如果该成本被认为过高或返回的行数超过我们的限制，则不会运行查询。 我们为data warehouse添加了一个推荐列表，以便您查询，这将确保您编写尽可能简化的查询。
+在执行查询之前， [[!DNL MBI] 估计成本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=en). 成本考虑执行查询所需的时间长度和资源数。 如果该成本被认为过高或返回的行数超过我们的限制，则不会运行查询。 我们为data warehouse添加了一个推荐列表，以便您查询，这将确保您编写尽可能简化的查询。
 
 ## 使用“选择”或“选择所有列”
 

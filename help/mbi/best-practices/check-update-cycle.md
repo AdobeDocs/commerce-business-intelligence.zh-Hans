@@ -2,9 +2,9 @@
 title: 检查更新周期状态
 description: 了解如何检查更新周期状态。
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 为什么我应检查更新周期状态？
 
-在审核 [!DNL MBI] 帐户。 如果您看到 [不符合预期的结果](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)，例如 [!DNL MBI] 与您在电子商务平台或 [[!DNL Google] 电子商务收入](https://support.magento.com/hc/en-us/articles/360016505232) 您可以检查最后一个数据点，以查看更新完成后是否将解决该问题。
+在审核 [!DNL MBI] 帐户。 如果您看到 [不符合预期的结果](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)，例如 [!DNL MBI] 与您在电子商务平台或 [[!DNL Google] 电子商务收入](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=en) 您可以检查最后一个数据点，以查看更新完成后是否将解决该问题。
 
 ## [!UICONTROL Read-Only] 和 [!UICONTROL Standard]**用户
 

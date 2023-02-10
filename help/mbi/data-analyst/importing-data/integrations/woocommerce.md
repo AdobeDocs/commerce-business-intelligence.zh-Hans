@@ -2,9 +2,9 @@
 title: Connect WoodCommerce
 description: 了解如何了解您的业务表现，或查找最有价值的客户获取来源和渠道。
 exl-id: 26ac24e0-087b-4958-873c-2facab22ffb2
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '108'
 ht-degree: 0%
 
 ---
@@ -23,5 +23,5 @@ ht-degree: 0%
 
 ## 相关：
 
-* [重新验证集成](https://support.magento.com/hc/en-us/articles/360016733151)
+* [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [用于分段和过滤的推荐数据维度](../../../best-practices/segment-filter.md)

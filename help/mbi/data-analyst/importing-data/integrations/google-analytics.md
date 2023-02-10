@@ -2,9 +2,9 @@
 title: 连接Google Analytics
 description: 了解如何将Google Analytics与 [!DNL MBI].
 exl-id: 10e813f1-0306-4bdd-8222-e6364ac624de
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
@@ -51,8 +51,7 @@ ht-degree: 0%
 
 ## 相关：
 
-* [重新验证集成](https://support.magento.com/hc/en-us/articles/360016733151)
+* [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [连接 [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [分析网站活动和客户转化率](../../analysis/web-act-cust-conversion.md)
 * [使用跟踪用户获取数据 [!DNL Google Analytics] cookie](../../analysis/google-track-user-acq.md)
-* [使用跟踪用户设备和浏览器数据 [!DNL Google Analytics] cookie](https://support.magento.com/hc/en-us/articles/360016732911)

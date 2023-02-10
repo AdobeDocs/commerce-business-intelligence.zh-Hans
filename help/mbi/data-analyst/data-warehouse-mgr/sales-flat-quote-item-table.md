@@ -2,16 +2,16 @@
 title: quote_item表
 description: 了解如何使用quote_item表。
 exl-id: dad36e88-5986-4b52-8a0e-ac084fabb275
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
 
 # quote_item表
 
-的 `quote_item` 表(`sales_flat_quote_item` on [!DNL Magento] 1)包含有关添加到购物车的每个项目的记录，无论该购物车是被放弃还是被转换为购买。 每行表示一个购物车项目。 由于此表的潜在大小，我们建议您在满足某些标准（例如，如果有任何未转换的购物车超过60天）时定期删除记录。
+的 `quote_item` 表(`sales_flat_quote_item` （在M1）1)包含有关添加到购物车的每件物品的记录，无论该购物车是被放弃还是被转换为购买。 每行表示一个购物车项目。 由于此表的潜在大小，我们建议您在满足某些标准（例如，如果有任何未转换的购物车超过60天）时定期删除记录。
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 `quote_item`
 
-* 加入 `quote_item` 创建新列，以将父可配置或捆绑SKU的详细信息与简单产品相关联。 请注意，您需要 [联系支持](../../guide-overview.md) 如果是在Data warehouse管理器中构建，则可帮助配置这些计算。
+* 加入 `quote_item` 创建新列，以将父可配置或捆绑SKU的详细信息与简单产品相关联。 请注意，您需要 [联系支持](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 如果是在Data warehouse管理器中构建，则可帮助配置这些计算。
    * 路径： `quote_item.parent_item_id` （多个）=> `quote_item.item_id` (1)
 
 `store`

@@ -2,10 +2,10 @@
 title: Google Analytics — 跟踪用户客户获取源数据概述
 description: 了解如何按用户获取源对数据进行分段。
 exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 0%
+source-wordcount: '837'
+ht-degree: 1%
 
 ---
 
@@ -93,7 +93,6 @@ ht-degree: 0%
 
 ### 相关
 
-* **[跟踪数据库中的用户设备、浏览器和操作系统数据](https://support.magento.com/hc/en-us/articles/360016732911)**
 * **[发现最有价值的客户获取来源和渠道](../analysis/most-value-source-channel.md)**
 * **[连接 [!DNL Google Adwords] 帐户](../importing-data/integrations/google-adwords.md)**
 * **[提高广告活动的ROI](../analysis/roi-ad-camp.md)**

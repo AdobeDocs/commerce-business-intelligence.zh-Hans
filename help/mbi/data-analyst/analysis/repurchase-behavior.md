@@ -2,10 +2,10 @@
 title: 分析客户再购买行为
 description: 了解如何分析客户回购行为。
 exl-id: 62666d08-5240-4f19-bf8e-e5b2d79a25c4
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 0%
+source-wordcount: '876'
+ht-degree: 1%
 
 ---
 
@@ -46,9 +46,9 @@ ht-degree: 0%
 
 | **产品名称** | **重复顺序概率** | **订单的平均生命周期数** | **平均存留期收入** | **下一订单的中间时间** |
 |-----|-----|-----|-----|-----|
-| 单杯咖啡冲泡器 | 94.98% | 7.92 | US$549.82 | 57.01天 |
-| 咖啡胶囊 | 93.82% | 8.68 | US$479.98 | 63.48天 |
-| 咖啡豆 | 41.92% | 6.07 | US$99.82 | 27.31天 |
+| 单杯咖啡冲泡器 | 94.98% | 7.92 | $549.82 | 57.01天 |
+| 咖啡胶囊 | 93.82% | 8.68 | $479.98 | 63.48天 |
+| 咖啡豆 | 41.92% | 6.07 | $99.82 | 27.31天 |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -80,4 +80,4 @@ ht-degree: 0%
 
 确定发生流失的原因后，即可使用分析构建 `reactivation` 营销活动。 使用此数据，您可以识别不活跃的用户、自上次访问以来已经过的时间、上次购买的时间等。 这样，您就可以做出可操作的决策，以吸引客户回来。
 
-要获得分析帮助， [联系支持](../../guide-overview.md).
+要获得分析帮助， [联系支持](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

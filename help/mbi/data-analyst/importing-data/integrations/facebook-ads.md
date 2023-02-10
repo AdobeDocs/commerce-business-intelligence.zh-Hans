@@ -2,9 +2,9 @@
 title: 连接Facebook Ads
 description: 了解如何分析广告支出数据并查看您的资金是否得到有效使用。
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---
@@ -52,11 +52,11 @@ ht-degree: 0%
 
 ## 接下来是什么？ {#next}
 
-确保跟踪 [!DNL Facebook] 营销活动 [!DNL Google Analytics] 根据 [教程](https://www.facebook.com/business/google-analytics). 这将确保 `utm\_campaign` 字段 [!DNL Google Analytics] 正确填充了 [!DNL Facebook] 营销活动。
+确保跟踪 [!DNL Facebook] 营销活动 [!DNL Google Analytics]. 这将确保 `utm\_campaign` 字段 [!DNL Google Analytics] 正确填充了 [!DNL Facebook] 营销活动。
 
 ## 相关
 
-* [重新验证集成](https://support.magento.com/hc/en-us/articles/360016733151)
+* [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [连接 [!DNL Google Adwords] 帐户](../integrations/google-ecommerce.md)
 * [通过跟踪订单反向链接来源 [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [跟踪数据库中的用户反向链接源](../../analysis/google-track-user-acq.md)

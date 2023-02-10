@@ -2,9 +2,9 @@
 title: 重复概率衰减与流失分析
 description: 了解并了解订单之间的时间间隔以及客户预期流失的时间。
 exl-id: ea26052d-ac74-43b7-a4a6-977800d4c719
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '970'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 如果您提供多个产品，您可能会想知道购买特定产品的客户在一段时间内的行为与其他客户有所不同。 想知道更多吗？ 查看本教程，了解客户同类群的生命周期购买行为（基于他们购买的特定产品）。
 
-此最佳实践由 [!DNL MBI] 数据分析服务(DAS)。 我们期待回答您的任何特定业务问题！ [联系支持人员](../../guide-overview.md) 以了解更多信息。
+此最佳实践由 [!DNL MBI] 数据分析服务(DAS)。 我们期待回答您的任何特定业务问题！ [联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 以了解更多信息。
 
 ### 相关
 

@@ -2,9 +2,9 @@
 title: 缩短更新周期
 description: 了解如何缩短更新周期。
 exl-id: 0b211e2d-770f-480d-a7fb-8d10e3e7272e
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
@@ -41,4 +41,4 @@ ht-degree: 0%
 
 ## 包装
 
-如果即使在实施这些建议后更新时间仍显缓慢， [联系我们的支持团队](../guide-overview.md).
+如果即使在实施这些建议后更新时间仍显缓慢， [联系我们的支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

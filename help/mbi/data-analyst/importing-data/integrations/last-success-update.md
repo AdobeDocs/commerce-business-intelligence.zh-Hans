@@ -2,9 +2,9 @@
 title: 了解数据库和SQL编辑器之间的结果
 description: 了解数据库和SQL编辑器之间的结果。
 exl-id: f31f3eef-791a-4984-901e-bc10554031bd
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
@@ -29,4 +29,4 @@ ht-degree: 0%
 要检查 *特定表*，我们建议创建快速 [SQL报告](../../dev-reports/sql-rpt-bldr.md) 执行 `MAX(timestamp)` 在您帐户中最重要的表格上。 将此时间戳与 `Last Data Point` 将指示问题是影响整个帐户还是表的子集。 我们建议对三到四个常用的重要表执行此操作。
 
 - 如果 `MAX(timestamp)` 值比 `Last Data Point Received`，这表示部分表受到影响，但整个帐户的更新周期是稳定的。
-- 如果 `MAX(timestamp)` 值等于或早于 `Last Data Point Received`，则表示帐户的更新周期受到影响。 在这种情况下， [提交支持票证](../../../guide-overview.md).
+- 如果 `MAX(timestamp)` 值等于或早于 `Last Data Point Received`，则表示帐户的更新周期受到影响。 在这种情况下， [提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

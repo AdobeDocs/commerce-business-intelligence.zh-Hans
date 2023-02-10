@@ -2,9 +2,9 @@
 title: 连接数据
 description: 了解如何浏览可在Data warehouse管理器中同步的表。
 exl-id: 94beba8b-6a86-4af9-87fb-96b1cf8f8fa2
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -60,6 +60,6 @@ ht-degree: 0%
 * [整合表](../../../best-practices/consolidating-your-tables.md)
 * [限制对数据库的访问](../../../administrator/account-management/restrict-db-access.md)
 
-**没有看到您想要的集成？** 必须激活某些集成才能在您的帐户中显示这些集成。 如果你在找什么，例如， [!DNL Facebook]  — 但没有列出， [提交支持票证](../../../guide-overview.md).
+**没有看到您想要的集成？** 必须激活某些集成才能在您的帐户中显示这些集成。 如果你在找什么，例如， [!DNL Facebook]  — 但没有列出， [提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 **如果您看到集成的错误状态**，不要惊慌 — 请查看 [疑难解答部分](https://support.magento.com/hc/en-us/sections/360003078151) 来获取帮助。
