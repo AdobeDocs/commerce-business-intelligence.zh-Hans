@@ -1,23 +1,23 @@
 ---
-title: Zendesk的服务台报告
-description: 了解您最有价值的反向链接渠道。
+title: Zendesk技术支持报告
+description: 了解您最宝贵的推荐渠道。
 exl-id: b6142ef2-2be8-401f-ac35-f86fc68d204e
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
 
-# 适用于 [!DNL Zendesk]
+# 技术支持报告 [!DNL Zendesk]
 
 >[!NOTE]
 >
->此设置仅适用于位于 `Pro` 规划和使用新架构。 如果您具有 `Data Warehouse Views` 选择 `Manage Data` 中。
+>这仅适用于位于以下位置的客户端： `Pro` 规划并使用新架构。 如果您拥有以下优势，那么您将使用新架构： `Data Warehouse Views` 部分在选择后可用 `Manage Data` 从主工具栏中。
 
-整合您的 [!DNL Zendesk] 通过事务型数据库获取数据是更好地了解客户如何与您的销售或客户成功团队进行交互以及利用您的支持平台的客户类型的绝佳方式。 在本文中，我们将演示如何设置功能板以获取有关您的 [!DNL Zendesk] 性能和关联。
+整合您的 [!DNL Zendesk] 使用事务型数据库的数据是更好地了解客户如何与销售或客户成功团队进行交互的绝佳方法。 它还有助于您了解哪些类型的客户在使用您的支持平台。 本文演示了如何设置功能板以获取有关您的产品的精细报表。 [!DNL Zendesk] 性能，以及您的事务型客户的关系。
 
-开始之前，您需要连接 [[!DNL Zendesk]](../integrations/zendesk.md). 此分析包含 [高级计算列](../../data-warehouse-mgr/adv-calc-columns.md).
+在开始之前，您想要连接 [[!DNL Zendesk]](../integrations/zendesk.md). 此分析包含 [高级计算列](../../data-warehouse-mgr/adv-calc-columns.md).
 
 <!-- Getting Started -->
 
@@ -80,9 +80,9 @@ ht-degree: 0%
 
       * `Input columns` - `role`, `email`
 
-      * `SQL Calculation` `- case when `A` is not `null` and `A!=`end-user` then `Yes` when `B` 不是 `null` 和 `B` 点赞 `%@magento.com` then `Yes` else `No` end
+      * `SQL Calculation` `- case when `A` is not `null` and `答！=`end-user` 则 `Yes` 时间 `B` 不是 `null` 和 `B` 点赞 `%@magento.com` 则 `Yes` else `No` 结束
 
-      * 替换 `@magento.com` 与域
+      * Replace `@magento.com` 使用您的域
 
       * `Datatype` - `String`
 
@@ -92,8 +92,8 @@ ht-degree: 0%
    * [!UICONTROL Many]: `[Zendesk] audits_~_events.author_id8`
    * [!UICONTROL One]: `[Zendesk] users.id`
 
-   * 选择 [!UICONTROL table]: `[Zendesk] users`
-   * 选择 [!UICONTROL column]: `User is agent? (Yes/No)`
+   * 选择 [!UICONTROL table]： `[Zendesk] users`
+   * 选择 [!UICONTROL column]： `User is agent? (Yes/No)`
    * [!UICONTROL Path]: `[Zendesk] audits_~_events.author_id = [!DNL Zendesk] users.id`
 
 * **`Author is agent? (Yes/No)`**
@@ -104,7 +104,7 @@ ht-degree: 0%
    * [!UICONTROL Many]: `[Zendesk] audits_~_events._id_of_parent`
    * [!UICONTROL One]: `[Zendesk] audits._id`
 
-   * 选择 [!UICONTROL table]: `[Zendesk] audits_~_events`
+   * 选择 [!UICONTROL table]： `[Zendesk] audits_~_events`
    * [!UICONTROL Path]: `[Zendesk] audits_~_events._id_of_parent = [Zendesk] audits._id`
    * [!UICONTROL Filter]:
    * `field_name` = `status`
@@ -112,7 +112,7 @@ ht-degree: 0%
    * `value` = `solved`
 
    * 选择定义： `Exists`
-   * 选择 [!UICONTROL table]: `[Zendesk] audits_~_events`
+   * 选择 [!UICONTROL table]： `[Zendesk] audits_~_events`
    * [!UICONTROL Path]: `[Zendesk] audits_~_events._id_of_parent = [Zendesk] audits._id`
    * [!UICONTROL Filter]: `Author is agent? (Yes/No)`
    * `type` = `Comment`
@@ -127,13 +127,13 @@ ht-degree: 0%
    * [!UICONTROL Many]: `[Zendesk] tickets.requester_id`
    * [!UICONTROL One]: `[Zendesk] users.id`
 
-   * 选择 [!UICONTROL table]: `[Zendesk] users`
-   * 选择 [!UICONTROL column]: `email`
+   * 选择 [!UICONTROL table]： `[Zendesk] users`
+   * 选择 [!UICONTROL column]： `email`
    * [!UICONTROL Path]: `[Zendesk] tickets.requester_id = [Zendesk] users.id`
 
    * 选择定义： `Joined Column`
-   * 选择 [!UICONTROL table]: `[Zendesk] users`
-   * 选择 [!UICONTROL column]: `role`
+   * 选择 [!UICONTROL table]： `[Zendesk] users`
+   * 选择 [!UICONTROL column]： `role`
    * [!UICONTROL Path]: `[Zendesk] tickets.requester_id = [Zendesk] users.id`
 
    * 选择定义： `Max`
@@ -141,15 +141,15 @@ ht-degree: 0%
    * [!UICONTROL Many]: `[Zendesk] audits.ticket_id`
    * [!UICONTROL One]: `[Zendesk] tickets.id`
 
-   * 选择 [!UICONTROL table]: `[Zendesk] audits`
-   * 选择 [!UICONTROL column]: `created_at`
+   * 选择 [!UICONTROL table]： `[Zendesk] audits`
+   * 选择 [!UICONTROL column]： `created_at`
    * [!UICONTROL Path]: `[Zendesk] audits.ticket_id = [Zendesk] tickets.id`
    * [!UICONTROL Filter]:
-   * `status` 更改为 `solved = 1`
+   * `status` 已更改为 `solved = 1`
 
    * 选择定义： `Min`
-   * 选择 [!UICONTROL table]: `[Zendesk] audits`
-   * 选择 [!UICONTROL column]: `created_at`
+   * 选择 [!UICONTROL table]： `[Zendesk] audits`
+   * 选择 [!UICONTROL column]： `created_at`
    * [!UICONTROL Path]: `[Zendesk] audits.ticket_id = [Zendesk] tickets.id`
    * [!UICONTROL Filter]:
    * `Is agent comment? = 1`
@@ -180,7 +180,7 @@ ht-degree: 0%
 
 * **`Ticket created_at (hour of day)`**
    * 
-      * `Column type`  — “同一表>计算”
+      * `Column type`  — “相同表>计算”
 
       * `Input columns` - `created_at`
 
@@ -190,7 +190,7 @@ ht-degree: 0%
 
 * **`Ticket created_at (day of week)`**
    * 
-      * `Column type`  — “同一表>计算”
+      * `Column type`  — “相同表>计算”
 
       * `Input columns` - `created_at`
 
@@ -205,9 +205,9 @@ ht-degree: 0%
    * [!UICONTROL Many]: `[Zendesk] tickets.email`
    * 
 
-      [!UICONTROL One]: `customer_entity.email`
+      [！UICONTROL One]: `customer_entity.email`
 
-   * 选择 [!UICONTROL table]: `[Zendesk] tickets`
+   * 选择 [!UICONTROL table]： `[Zendesk] tickets`
    * [!UICONTROL Path]: `[Zendesk] tickets.email = customer_entity.email`
    * [!UICONTROL Filter]:
    * `Tickets we count`
@@ -215,7 +215,7 @@ ht-degree: 0%
 * **`User's lifetime number of support tickets requested`**
 * **`Has user filed a support ticket? (Yes/No)`**
    * 
-      * `Column type`  — “同一表>计算”
+      * `Column type`  — “相同表>计算”
 
       * `Input columns` - `User's lifetime number of support tickets requested`
 
@@ -225,8 +225,8 @@ ht-degree: 0%
 
 * **`[Zendesk] Tickets`** 表
    * 选择定义： `Joined Column`
-   * 选择 [!UICONTROL table]: `customer_entity`
-   * 选择 [!UICONTROL column]: `User's lifetime number of support tickets requested`
+   * 选择 [!UICONTROL table]： `customer_entity`
+   * 选择 [!UICONTROL column]： `User's lifetime number of support tickets requested`
    * [!UICONTROL Path]: `[Zendesk] tickets.email = customer_entity.email`
 
 * **`Requester's lifetime number of support tickets`**
@@ -239,60 +239,60 @@ ht-degree: 0%
 * 在 **`[Zendesk] tickets`** 表
 * 此量度执行 **计数**
 * 在 **`id`** 列
-* 由 **`created_at`** timestamp
+* 排序依据 **`created_at`** 时间戳
 * [!UICONTROL Filter]:
 
-* **[!DNL Zendesk]已解决的票证**
+* **[!DNL Zendesk]已解决票证**
    * `Tickets we count`
-   * 状态为 `closed, solved`
+   * 中的状态 `closed, solved`
 
 * 在 **`[Zendesk] tickets`** 表
 * 此量度执行 **计数**
 * 在 **`id`** 列
-* 由 **`created_at`** timestamp
+* 排序依据 **`created_at`** 时间戳
 * [!UICONTROL Filter]:
 
-* **[!DNL Zendesk]不同用户提交票证**
+* **[!DNL Zendesk]不同的用户提交票证**
    * `Tickets we count`
 
 * 在 **`[Zendesk] tickets`** 表
 * 此量度执行 **非重复计数**
 * 在 **`requester_id`** 列
-* 由 **`created_at`** timestamp
+* 排序依据 **`created_at`** 时间戳
 * [!UICONTROL Filter]:
 
-* **[!DNL Zendesk]平均票证/中间票证解决时间**
+* **[!DNL Zendesk]平均/中间票证解析时间**
    * `Tickets we count`
-   * 状态为 `closed, solved`
+   * 中的状态 `closed, solved`
 
 * 在 **`[Zendesk] tickets`** 表
 * 此量度执行 **平均值（或中间值）**
 * 在 **`Seconds to resolution`** 列
-* 由 **`created_at`** timestamp
+* 排序依据 **`created_at`** 时间戳
 * [!UICONTROL Filter]:
 
-* **[!DNL Zendesk]首次响应的平均/中间时间**
-   * 我们计入的票数
-   * 状态已关闭，已解决
+* **[!DNL Zendesk]首次响应的平均时间/中位数**
+   * 已计票的票证
+   * 状态为关闭，已解决
 
 * 在 **`[Zendesk] tickets`** 表
 * 此量度执行 **平均值（或中间值）**
 * 在 **`Seconds to first response`** 列
-* 由 **`created_at`** timestamp
+* 排序依据 **`created_at`** 时间戳
 * [!UICONTROL Filter]:
 
 >[!NOTE]
 >
->确保 [将所有新列作为量度的维度添加到](../../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) 生成新报告之前。
+>确保 [将所有新列作为维度添加到量度](../../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) 然后再生成新报告。
 
-### 报表
+### 报告
 
 * **[!UICONTROL New/Open/Pending tickets]**
    * [!UICONTROL Metric]: `New Tickets`
    * [!UICONTROL Filter]:
-   * 状态为 `new, open, pending`
+   * 中的状态 `new, open, pending`
 
-* 量度 `A`: `New tickets`
+* 量度 `A`： `New tickets`
 * `Time period`: `All time`
 * `Interval`: `None`
 * `Chart Type`: `Scalar`
@@ -300,9 +300,9 @@ ht-degree: 0%
 * **[!UICONTROL Closed/Solved tickets]**
    * [!UICONTROL Metric]: `New Tickets`
    * [!UICONTROL Filter]:
-   * 状态为 `solved, closed`
+   * 中的状态 `solved, closed`
 
-* 量度 `A`: `New tickets`
+* 量度 `A`： `New tickets`
 * `Time period`: `All time`
 * `Interval`: `None`
 * `Chart Type`: `Scalar`
@@ -310,7 +310,7 @@ ht-degree: 0%
 * **[!UICONTROL Average time to first response]**
    * [!UICONTROL Metric]: `Average time to first response`
 
-* 量度 `A`: `Average time to first response`
+* 量度 `A`： `Average time to first response`
 * `Time period`: `All time`
 * `Interval`: `None`
 * `Chart Type`: `Scalar`
@@ -318,9 +318,9 @@ ht-degree: 0%
 * **[!UICONTROL Average time to resolution]**
    * [!UICONTROL Metric]: `Average time to resolution`
    * [!UICONTROL Filter]:
-   * 状态为 `solved, closed`
+   * 中的状态 `solved, closed`
 
-* 量度 `A`: `Average time to resolution`
+* 量度 `A`： `Average time to resolution`
 * `Time period`: `All time`
 * `Interval`: `None`
 * `Chart Type`: `Scalar`
@@ -328,7 +328,7 @@ ht-degree: 0%
 * **[!UICONTROL Tickets by status]**
    * [!UICONTROL Metric]: `New Tickets`
 
-* 量度 `A`: `New tickets`
+* 量度 `A`： `New tickets`
 * `Time period`: `All time`
 * `Interval`: `Monthly`
 * `Group by`: `status`
@@ -339,8 +339,8 @@ ht-degree: 0%
 
    * [!UICONTROL Metric]: `New Tickets`
 
-* 量度 `A`: `New tickets`
-* 量度 `B`: `Solved tickets`
+* 量度 `A`： `New tickets`
+* 量度 `B`： `Solved tickets`
 * `Time period`: `All time`
 * `Interval`: `Monthly`
 * `Chart Type`: `Line`
@@ -348,7 +348,7 @@ ht-degree: 0%
 * **[!UICONTROL Time to first response]**
    * [!UICONTROL Metric]: `Average time to first response`
 
-* 量度 `A`: `Average time to first response`
+* 量度 `A`： `Average time to first response`
 * `Time period`: `All time`
 * `Interval`: `Monthly`
 * `Chart Type`: `Column`
@@ -356,9 +356,9 @@ ht-degree: 0%
 * **[!UICONTROL Time to resolution]**
    * [!UICONTROL Metric]: `Average time to resolution`
    * [!UICONTROL Filter]:
-   * 状态为 `solved, closed`
+   * 中的状态 `solved, closed`
 
-* 量度 `A`: `Average time to resolution`
+* 量度 `A`： `Average time to resolution`
 * `Time period`: `All time`
 * `Interval`: `Monthly`
 * `Chart Type`: `Column`
@@ -366,7 +366,7 @@ ht-degree: 0%
 * **[!UICONTROL Distinct users filing tickets]**
    * [!UICONTROL Metric]: `Distinct users filing tickets`
 
-* 量度 `A`: `Distinct users filing tickets`
+* 量度 `A`： `Distinct users filing tickets`
 * `Time period`: `All time`
 * `Interval`: `Monthly`
 * `Chart Type`: `Column`
@@ -374,7 +374,7 @@ ht-degree: 0%
 * **[!UICONTROL Peak ticket days]**
    * [!UICONTROL Metric]: `New Tickets`
 
-* 量度 `A`: `New tickets`
+* 量度 `A`： `New tickets`
 * `Time period`: `All time`
 * `Interval`: `None`
 * `Group by`: `Ticket created_at (day of week)`
@@ -385,7 +385,7 @@ ht-degree: 0%
 
    * `Show top/bottom`: `Top 100% sorted by created_at (hour of the day)`
 
-* 量度 `A`: `New tickets`
+* 量度 `A`： `New tickets`
 * `Time period`: `All time`
 * `Interval`: `None`
 * `Group by`: `Ticket created_at (hour of the day)`
@@ -394,7 +394,7 @@ ht-degree: 0%
 * **[!UICONTROL Avg LTV of users who have and have not filed tickets]**
    * [!UICONTROL Metric]: `Average lifetime revenue`
 
-* 量度 `A`: `Average lifetime revenue`
+* 量度 `A`： `Average lifetime revenue`
 * `Time period`: `All time`
 * `Interval`: `Monthly`
 * `Group by`: `User has filed a support ticket?`
@@ -403,9 +403,9 @@ ht-degree: 0%
 * **[!UICONTROL Number of new users who have and have not filed tickets]**
    * 
 
-      [!UICONTROL量度]: Users
+      [！UICONTROL量度]: Users
 
-* 量度 `A`: `New users`
+* 量度 `A`： `New users`
 * `Time period`: `All time`
 * `Interval`: `Monthly`
 * `Group by`: `User has filed a support ticket?`

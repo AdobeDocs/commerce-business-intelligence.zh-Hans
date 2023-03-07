@@ -1,15 +1,15 @@
 ---
-title: Connect WoodCommerce
-description: 了解如何了解您的业务表现，或查找最有价值的客户获取来源和渠道。
+title: 连接WooCommerce
+description: 了解如何查看您的业务表现或找到您最有价值的客户获取来源和渠道。
 exl-id: 26ac24e0-087b-4958-873c-2facab22ffb2
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '101'
 ht-degree: 0%
 
 ---
 
-# 连接 [!DNL WooCommerce]
+# Connect [!DNL WooCommerce]
 
 >[!NOTE]
 >
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 ![](../../../assets/WooCommerce-Logo.jpg)
 
-想要了解您的业务表现如何，或查找最有价值的客户获取来源和渠道？ 连接 [!DNL WooCommerce] 数据到 [!DNL MBI] 将允许您回答这些问题等。
+想要了解您的业务表现或找到您最有价值的客户获取来源和渠道？ 正在连接 [!DNL WooCommerce] 数据到 [!DNL MBI] 允许您回答这些问题等。
 
-的 [!DNL WooCommerce] 数据库基于 `MySQL`，您可以将其连接到 [!DNL MBI] 通过 [直接连接](../integrations/mysql-via-a-direct-connection.md), [`cPanel`](../integrations/mysql-via-cpanel.md)或 [通过 `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md). 我们关心您的数据，因此我们建议使用SSH方法，因为这种方法最安全。
+此 [!DNL WooCommerce] 数据库基于 `MySQL`，您可以将其连接到 [!DNL MBI] 通过 [直接连接](../integrations/mysql-via-a-direct-connection.md)， [`cPanel`](../integrations/mysql-via-cpanel.md)，或 [通过 `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md). Adobe建议使用SSH方法，因为它是最安全的。
 
 ## 相关：
 
 * [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
-* [用于分段和过滤的推荐数据维度](../../../best-practices/segment-filter.md)
+* [分段和筛选的建议数据维度](../../../best-practices/segment-filter.md)

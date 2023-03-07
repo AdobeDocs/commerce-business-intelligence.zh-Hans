@@ -1,32 +1,32 @@
 ---
-title: 限制量度访问
-description: 了解如何使用量度访问和限制。
+title: 限制指标访问
+description: 了解如何使用指标访问和限制。
 exl-id: 88f5ca7a-8073-4968-9685-95f141b2a87f
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 0%
 
 ---
 
-# 管理量度用户
+# 管理指标用户
 
-除了设置用户权限级别之外，您还可以根据用户限制对量度的访问。 例如，如果您希望会计部门有权访问与收入相关的量度，但不能访问用户获取量度，则可以限制对这些量度的访问。
+除了设置用户权限级别之外，您还可以按用户限制对量度的访问。 例如，如果您希望会计部门可以访问与收入相关的指标，但不能访问用户获取指标，则可以限制对这些指标的访问。
 
-在这类情况下，我们建议将该用户的帐户设置为 **[[!UICONTROL Standard]](../../administrator/user-management/user-management.md)**. **[!UICONTROL Standard]** 应为不需要创建或更改量度、计算列、集成或用户，但确实需要访问Data warehouse中数据的用户授予权限。 如果要完全限制对数据的访问，请使用 **[!UICONTROL Read Only]** 权限。
+在这种情况下，Adobe建议将该用户帐户设置为 **[[!UICONTROL Standard]](../../administrator/user-management/user-management.md)**. **[!UICONTROL Standard]** 应该向不需要创建或更改量度、计算列、集成或用户的用户授予权限，但是他们确实需要访问Data warehouse中的数据。 如果要完全限制对数据的访问，请使用 **[!UICONTROL Read Only]** 权限。
 
-设置权限级别后，您可以选择 **[!UICONTROL Standard]** 用户可以通过执行以下操作来访问：
+设置权限级别后，您可以选择指标 **[!UICONTROL Standard]** 用户可通过以下方式访问：
 
 1. 转到 **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**.
 1. 选择所需的用户帐户。
-1. 的 **[!UICONTROL Metrics]** 选项卡将显示可用量度的列表。 检查您希望用户有权访问的量度；取消选择用户无权访问的用户。
-1. [!DNL MBI] 自动保存更改。 如果更改成功， [!DNL MBI] 显示 **[!UICONTROL Saved!]** 的双曲余切值。
+1. 此 **[!UICONTROL Metrics]** 选项卡显示可用度量的列表。 选中您希望用户有权访问的指标；取消选择用户不应有权访问的指标。
+1. [!DNL MBI] 自动保存更改。 如果更改成功， [!DNL MBI] 显示 **[!UICONTROL Saved!]** 页面顶部的。
 
 >[!NOTE]
 >
->具有 **[!UICONTROL Standard]** 权限除了可通过以下方式访问data warehouse中的所有量度之外，还可以通过数据导出来访问 [!DNL Google Analytics].
+>所有用户具有 **[!UICONTROL Standard]** 除了来自的所有量度之外，权限还可以通过“数据导出”访问Data warehouse中的所有数据 [!DNL Google Analytics].
 
-您还可以通过编辑量度和 **[!UICONTROL Standard]** 在 **[[!UICONTROL User Rights]](../../data-user/reports/ess-manage-data-metrics.md)** 中。
+您还可以通过编辑量度和 **[!UICONTROL Standard]** 在中选择用户 **[[!UICONTROL User Rights]](../../data-user/reports/ess-manage-data-metrics.md)** 部分。
 
 >[!NOTE]
 >

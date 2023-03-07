@@ -1,10 +1,10 @@
 ---
-title: 预期的Facebook广告数据
-description: 了解我们建议您同步到您的data warehouse的表的简要概述
+title: 预期的Facebook Ads数据
+description: 了解建议同步到Data warehouse的表的简要概述
 exl-id: 0c8b907b-1a98-470b-bb2c-55327e88e502
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -13,51 +13,51 @@ ht-degree: 0%
 
 ![](../../../assets/Facebook_Logo.png)
 
-在 [已连接 [!DNL Facebook Ads] 帐户](../integrations/facebook-ads.md)，则可以使用 [data warehouse管理器](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) 以轻松跟踪相关数据字段进行分析。
+在您拥有 [已连接 [!DNL Facebook Ads] 帐户](../integrations/facebook-ads.md)，您可以使用 [data warehouse管理器](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) 以轻松跟踪相关数据字段以供分析。
 
-在本文中，我们简要概述了我们建议您同步到您的data warehouse的表。 这不是一个完整列表，因为有许多子表。 我们只强调核心表格。
+本文简要概述了Adobe建议您同步到Data warehouse的表。 这不是一个完整的列表，因为有相当多的子表。 它仅突出显示核心表。
 
-## 核心广告促销活动表
+## 核心广告营销活动表
 
-这些表包含有关核心广告营销活动组件的数据。
+这些表包含有关核心广告促销活动组件的数据。
 
-### [`facebook _campaigns_ (account-id)`](https://developers.facebook.com/docs/reference/ads-api/adcampaign/)
+### [`facebook _campaigns_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign-group)
 
-此表是 [!DNL Facebook Ads] 帐户。 列包括 `campaign id`, `name`, `status (active/paused)`, `objective`.
+此表是中促销活动的核心表 [!DNL Facebook Ads] 帐户。 列包括 `campaign id`， `name`， `status (active/paused)`， `objective`.
 
 ### [`facebook _adsets_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign)
 
-此表记录是 [!DNL Facebook Ads] 在 [!DNL Facebook Ads] 帐户。 列包括广告 `Campaign id/name` 广告集属于的预算、竞价类型、计划和受众定位信息。
+此表记录是以下项目的核心表： [!DNL Facebook Ads] 在中设置 [!DNL Facebook Ads] 帐户。 列包括广告 `Campaign id/name` 广告集属于、预算、竞价类型、计划和受众定位信息。
 
-### [`facebook _ads_ (account-id)`](https://developers.facebook.com/docs/reference/ads-api/adgroup/)
+### [`facebook _ads_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/adgroup)
 
-此表记录 [!DNL Facebook Ads] 帐户。 列包括广告信息，包括广告集及其所属的广告促销活动、广告竞价、广告定位以及对广告所使用的特定创意（图像/文本）的引用。
+此表记录了 [!DNL Facebook Ads] 帐户。 列包括广告信息，包括广告集及其所属的广告营销活动、广告投标、广告定位以及广告使用的特定创意（图像/文本）引用。
 
-### [`facebook _adcreative_ (account-id)`](https://developers.facebook.com/docs/reference/ads-api/adcreative/)
+### [`facebook _adcreative_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-creative)
 
-此表记录了 [!DNL Facebook Ads]. 这些URL包括创作名称、描述和相关的图像URL（如果适用）。
+此表记录以下项目中使用的创意： [!DNL Facebook Ads]. 创意内容包括创意名称、描述以及适用的相关图像URL。
 
-## 分段促销活动表
+## 分段营销活动表
 
-下表包含每天每个促销活动/集/广告组合的条目，按年龄、性别和国家/地区等维度进行分段。
+下表包含每天每个促销活动/集/广告组合的条目，并按维度（如年龄、性别和国家/地区）分段。
 
 ### `facebook _ads insights_ (account-id)`
 
-此表包括每天每个促销活动/集/广告组合的条目，以及包括展示次数、点击次数、成本、cpc、cpp、cpp、ctr、访问、社交访问和支出在内的统计信息。
+此表包括每天每个促销活动/集/广告组合的条目，以及包括展示次数、点击次数、成本、cpc、cpm、cpp、ctr、覆盖率、社交范围和支出在内的统计数据。
 
 ### `facebook _ads insights_ (account-id)_~\_actions`
 
-这是 `facebook_ads_insights_{account_id}` 表。 它包含根据不同营销活动执行的操作的转化数据。
+这是 `facebook_ads_insights_{account_id}` 表格。 它包括根据不同营销活动发生的操作的转化数据。
 
 ### `facebook _ads insights country_ (account-id)`
 
-此表包含与 `facebook_ads_insights_{account_id}` 按国家/地区对其进行表格和细分。
+此表包含的信息与 `facebook_ads_insights_{account_id}` 表格并按国家/地区进行细分。
 
 ### `facebook ads insights age and gender (account-id)`
 
-此表包含与 `facebook_ads_insights_{account_id}` 按年龄和性别对表格进行划分。
+此表包含的信息与 `facebook_ads_insights_{account_id}` 表格和按年龄和性别分列。
 
 ## 相关
 
-* [连接 [!DNL Facebook Ads]](../integrations/facebook-ads.md)
+* [正在连接 [!DNL Facebook Ads]](../integrations/facebook-ads.md)
 * [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

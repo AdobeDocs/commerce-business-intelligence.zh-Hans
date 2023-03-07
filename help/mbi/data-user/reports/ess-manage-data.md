@@ -2,22 +2,22 @@
 title: 管理数据
 description: 了解如何使用管理数据。
 exl-id: 6274eda4-d3ff-47b6-81d9-06ad4f150ef7
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '50'
+source-wordcount: '48'
 ht-degree: 0%
 
 ---
 
 # 管理数据
 
-通过“管理数据”，您可以访问各种工具来管理集成、报表和图表数据、功能板和导出。
+通过“管理数据”，可以访问各种用于管理集成、报告和图表数据、功能板和导出的工具。
 
-## 访问 `Manage Data`:
+## 要访问 `Manage Data`：
 
 1. 在菜单中，单击 **[!DNL Manage Data]**.
 
-1. 在侧栏中，在以下标题下选择您想要的主题：
+1. 在侧栏中，选择以下标题下需要的主题：
 
    * `Data Sources`
    * `Manage Data`

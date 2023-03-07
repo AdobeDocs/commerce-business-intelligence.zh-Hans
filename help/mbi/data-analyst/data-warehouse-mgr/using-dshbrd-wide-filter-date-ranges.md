@@ -1,54 +1,54 @@
 ---
-title: 功能板范围过滤
-description: 了解如何在特定功能板上批量编辑所有报表。
+title: 功能板范围筛选
+description: 了解如何在特定仪表板上批量编辑所有报告。
 exl-id: 379d0027-8a7a-4062-a66a-4f06c37b806c
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---
 
-# 功能板范围过滤
+# 功能板范围筛选
 
-通过功能板范围的过滤，您可以在特定功能板上批量编辑所有报表。 您可以快速查看不同时间段或不同商店的相同分析。 您可以轻松比较每家商店上一年、月或周的绩效。 此外，您还可以更新整个功能板，以适应新启动的营销活动。
+通过功能板范围的筛选，您可以对特定功能板上的所有报告进行批量编辑。 您可以快速查看不同时间段或不同商店的相同分析。 您可以轻松地比较每个商店去年、月或周的性能。 此外，您可以更新整个仪表板以适应新启动的活动。
 
 ## 日期过滤器
 
-要更改功能板上报表的日期范围或间隔，请单击右上角的日历图标(![日历](../../assets/calendar-button.png))。
+要更改功能板上报告的日期范围或时间间隔，请单击右上角的日历图标(![日历](../../assets/calendar-button.png))。
 
-您可以选择使用 `Fixed Date Range` 或各种预先计算的 `Moving Date Ranges`:
+您可以选择使用查看数据 `Fixed Date Range` 或各种预先计算的 `Moving Date Ranges`：
 
 ![移动日期范围](../../assets/moving_date_ranges.png)
 
-的 `Last Full...` 移动范围选项表示最近完全完成的范围，而 `This...` 将是当前正在进行的范围。 例如，如果当前为6月，则 `Last Full Month` is _5月1日 — 5月31日_，而 `This Month` is _6月1日 — 现在_.
+此 `Last Full...` 移动范围选项表示最近完全完成的范围，而 `This...` 是当前正在进行的范围。 例如，如果现在是六月， `Last Full Month` 是 _5月1日 — 5月31日_，而 `This Month` 是 _6月1日至现在_.
 
-或者创建您自己的 `Custom Moving Range`\:
+或者创建您自己的 `Custom Moving Range`\：
 
 ![自定义移动范围](../../assets/custom-moving-range.png)
 
-也选择更改间隔。 选择默认按钮(![时间间隔默认值](../../assets/time_interval_default.png))表示仅更改日期范围：
+选择以更改间隔。 选择默认按钮(![时间间隔默认值](../../assets/time_interval_default.png))表示只有日期范围会更改：
 
 ![时间间隔](../../assets/time_interval.png)
 
-要将所有报表恢复到其初始日期范围和间隔，请单击 **[!UICONTROL Restore Defaults]** 或单击 **[!UICONTROL Cancel]**.
+要将所有报告恢复到其初始日期范围和时间间隔，请单击 **[!UICONTROL Restore Defaults]** 或单击 **[!UICONTROL Cancel]**.
 
-当您为功能板指定日期过滤器时，该过滤器仅应用于该功能板。 导航到其他功能板时，不会应用此功能板。
-
->[!NOTE]
->
->此时， `Cohort Reports` 和 `SQL Reports` 在功能板级别应用更改时，不会包含在内。
-
-## 存储过滤器
-
-要分析特定商店的执行情况，请单击右上角的商店图标(![存储过滤器](../../assets/store-filter.png))。 默认情况下， `Store Filter` 设置为 `All Stores`，显示所有 [商店查看次数](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html) 可在您的商务网站中找到。
+为功能板指定日期过滤器时，该过滤器仅应用于该功能板。 当您导航到其他功能板时，不会应用此功能。
 
 >[!NOTE]
 >
->整个过程中会启用或禁用存储过滤器 [!DNL MBI] 帐户。 如果功能板包含不受过滤器影响的报表（例如未基于任何商务数据构建的报表），则在应用商店过滤器时，这些报表不会更新。 您可以 [联系支持](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 如果您认为报表应根据存储区选择进行更新，或者您认为帐户存储区过滤器被错误地禁用。
+>目前， `Cohort Reports` 和 `SQL Reports` 在功能板级别应用更改时不包含。
 
-从 `Store Filter`，则当您在功能板之间导航时，过滤器会保留您的选择。 通过保留您的选择，您可以在选择之前随时随地查看所选存储的数据 `All Stores`.
+## 存储筛选器
 
-## 共享功能板的过滤器
+要分析特定商店的执行情况，请单击右上角的商店图标(![商店筛选条件](../../assets/store-filter.png))。 默认情况下， `Store Filter` 设置为 `All Stores`，其中显示来自所有 [商店视图](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html) 在您的Commerce网站中提供。
 
-对于共享功能板，如果一个用户配置了日期过滤器，则有权访问该功能板的其他用户将会看到所应用的同一过滤器。 但是，在这种情况下，存储过滤器不适用。 如果功能板所有者配置存储过滤器并共享功能板，则配置的存储过滤器将不会保留给其他用户。 用户必须 [编辑访问](../../data-user/dashboards/share-dashboard-with-users.md) 功能板，以调整功能板过滤器。
+>[!NOTE]
+>
+>商店筛选器已针对整个网站启用或禁用 [!DNL MBI] 帐户。 如果仪表板包含不受过滤器影响的报表（例如未基于任何Commerce数据构建的报告），则这些报表在应用商店过滤器时不会更新。 您可以 [联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 如果您认为报表应基于存储选择进行更新，或者如果您认为您的帐户存储过滤器被错误地禁用。
+
+当您从中选择商店时 `Store Filter`，则当您在功能板之间导航时，过滤器会保留您的选择。 保留您的选择允许您查看所选存储中任何位置的数据，直到您选择为止 `All Stores`.
+
+## 共享功能板的筛选器
+
+对于共享功能板，如果一位用户配置日期过滤器，则具有该功能板访问权限的其他用户会看到应用了该同一过滤器。 但是，存储过滤器不适用于这种情况。 如果功能板所有者配置商店筛选条件并共享功能板，则配置的商店筛选条件不会保留给其他用户。 用户必须具有 [编辑访问权限](../../data-user/dashboards/share-dashboard-with-users.md) ，以调整功能板筛选器。

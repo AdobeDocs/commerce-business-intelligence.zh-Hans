@@ -1,10 +1,10 @@
 ---
 title: 生成[!DNL Google ECommerce]维度
-description: 了解如何构建维度，以将您的电子商务数据与订单和客户数据关联起来。
+description: 了解如何构建将电子商务数据与订单和客户数据关联的维度。
 exl-id: f8a557ae-01d7-4886-8a1c-c0f245c7bc49
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '988'
 ht-degree: 0%
 
 ---
@@ -15,118 +15,118 @@ ht-degree: 0%
 >
 >需要 [管理员权限](../../administrator/user-management/user-management.md).
 
-现在你完成了 [连接[!DNL Google ECommerce]帐户](../../data-analyst/importing-data/integrations/google-ecommerce.md)，您在 [!DNL MBI]? 在本文中，我们将指导您完成构建维度，以将您的电子商务数据与订单和客户数据相关联。
+现在您已完成 [连接您的[!DNL Google ECommerce]帐户](../../data-analyst/importing-data/integrations/google-ecommerce.md)，您可以在中处理这些数据 [!DNL MBI]？ 本文将指导您构建可将电子商务数据与订单和客户数据关联的维度。
 
-我们涵盖的维度将使您能够构建分析， [回答有关营销渠道和营销活动的重要问题](../../data-analyst/analysis/most-value-source-channel.md). 每个来源的收入占收入的百分比是多少？ 与从以下网站获得的Facebook客户相比，其生命周期价值如何 [!DNL Google]?
+所涵盖的维度使您能够构建分析 [回答有关营销渠道和营销活动的重要问题](../../data-analyst/analysis/most-value-source-channel.md). 每个来源占收入的百分比是多少？ facebook客户获得的生命周期值与来自的客户相比 [!DNL Google]？
 
 ## 先决条件和概述
 
-要在本文中创建维度，您需要 [!DNL Google ECommerce] 表格，a `orders` 表和 `customers` 表。 那些桌子一定是 [同步到您的data warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md) 之后才能构建维度。 同步的表将显示在 `Synced Tables` 部分 `Data Warehouse Manager`.
+要创建本文中的维度，您需要 [!DNL Google ECommerce] 表，一 `orders` 表格和 `customers` 表格。 这些表必须 [已同步到您的Data warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md) 在生成维度之前。 已同步的表显示在 `Synced Tables` 部分 `Data Warehouse Manager`.
 
-如果您需要刷新，请快速查看正在同步的表和列：
+如果需要刷新程序，可以快速查看同步表和列：
 
 ![](../../assets/Syncing_New_Columns.gif)
 
-从创建连接后 `orders` 表格 [!DNL Google eCommerce] 表格中，我们将创建下面列表中的前三个维度。 接下来，我们使用这些维度在 `customers` 表。 最后，我们将这些列与 `orders` 表。
+从创建连接后 `orders` 表 [!DNL Google eCommerce] 表格中，创建下面列表中的前三个维度。 接下来，使用这些维度在 `customers` 表格。 最后，将这些列联结到 `orders` 表格。
 
-以下是我们涵盖的维度：
+下面是所涉及的维度：
 
 * **订单表**
 
-* Order&#39;s [!DNL Google Analytics] 来源
-* Order&#39;s [!DNL Google Analytics] 媒体
-* Order&#39;s [!DNL Google Analytics]营销活动
-* 客户的首次订购 [!DNL Google Analytics] 来源
-* 客户的首次订购 [!DNL Google Analytics] 媒体
-* 客户的首次订购 [!DNL Google Analytics] 营销活动
+* 订单的 [!DNL Google Analytics] 源
+* 订单的 [!DNL Google Analytics] 中
+* 订单的 [!DNL Google Analytics]营销策划
+* 客户的首份订单 [!DNL Google Analytics] 源
+* 客户的首份订单 [!DNL Google Analytics] 中
+* 客户的首份订单 [!DNL Google Analytics] 营销活动
 
-* **客户表**
+* **Customers表**
 
-* 客户的首次订购 [!DNL Google Analytics] 来源
-* 客户的首次订购 [!DNL Google Analytics] 媒体
-* 客户的首次订购 [!DNL Google Analytics] 营销活动
+* 客户的首份订单 [!DNL Google Analytics] 源
+* 客户的首份订单 [!DNL Google Analytics] 中
+* 客户的首份订单 [!DNL Google Analytics] 营销活动
 
 ## 构建维度
 
-要创建维度，请打开 [data warehouse管理器](../data-warehouse-mgr/tour-dwm.md) 单击 **[!UICONTROL Data]** > **[!UICONTROL Data Warehouse]**.
+要创建尺寸，请打开 [data warehouse管理器](../data-warehouse-mgr/tour-dwm.md) 通过单击 **[!UICONTROL Data]** > **[!UICONTROL Data Warehouse]**.
 
 ### 订单表，第1轮
 
-在本例中，我们构建 **Order&#39;s [!DNL Google Analytics] 来源** 维度。
+此示例构建 **订单的 [!DNL Google Analytics] 来源** 维度。
 
-1. 在Data warehouse的表列表中，单击该表(在本例中为 `orders`)。
+1. 从Data warehouse中的表列表中，单击表(在本例中， `orders`)，其中包含您的订单信息。
 1. 单击 **[!UICONTROL Create a Column]**.
 1. 命名列。
-1. 选择 `Joined Column` 从 [定义下拉列表](../data-warehouse-mgr/calc-column-types.md). 在本例中，我们使用 [一对一关系](../data-warehouse-mgr/table-relationships.md)，与 `eCommerce.transactionID` 列到 `orders` 表。
-1. 接下来，我们需要定义路径，或正在使用的表和列如何连接。 单击 `Select a table and column` 下拉列表。
-1. 我们需要的路径不可用，因此我们需要创建一个新路径。 单击 **[!UICONTROL Create new Path]**.
-1. 在显示的窗口中，将 `Many` 侧向 `orders.order\_id`，或 `orders` 包含订单ID的表。
+1. 选择 `Joined Column` 从 [定义下拉列表](../data-warehouse-mgr/calc-column-types.md). 此示例适用于 [一对一关系](../data-warehouse-mgr/table-relationships.md)，匹配 `eCommerce.transactionID` 一行中的任意一列 `orders` 表格。
+1. 接下来，您需要定义路径，或者定义所使用的表和列的连接方式。 单击 `Select a table and column` 下拉菜单。
+1. 您需要的路径不可用，因此您需要创建一个新路径。 单击 **[!UICONTROL Create new Path]**.
+1. 在显示的窗口中，设置 `Many` 侧到 `orders.order\_id`，或中的列 `orders` 包含订单ID的表。
 1. 在 `One` 侧，查找 `Google ECommerce` 表，然后将列设置为 `transactionID`.
 
    ![](../../assets/google-ecommerce-table.png)
 
-1. 单击 **[!UICONTROL Save]** 创建路径。
-1. 添加路径后，单击 **[!UICONTROL Select table and column]** 再次下拉。
-1. 找到 `ECommerce` 表格，然后单击 `Source` 列。 这会将订单与源信息绑定。
+1. 单击 **[!UICONTROL Save]** 以创建路径。
+1. 添加路径后，单击 **[!UICONTROL Select table and column]** 再次下拉菜单。
+1. 找到 `ECommerce` 表，然后单击 `Source` 列。 这会将订单与源信息绑定。
 1. 返回表模式后，单击 **[!UICONTROL Save]** 再次创建维度。
 
-以下是整个过程：
+下面我们来看看整个过程：
 
 ![](../../assets/help_center.gif)
 
-接下来，尝试创建 **Order&#39;s [!DNL Google Analytics] 媒体** 和 `campaign`. 这些维度不会有太大变化，请尝试一下。 但如果你卡住了，你可以查 [本文的结尾](#stuck) 看看有什么不同。
+接下来，尝试创建 **订单的 [!DNL Google Analytics] 中** 和 `campaign`. 这些维度变化不大，所以试试看。 但如果你被卡住了，你可以去看看了 [本文结尾](#stuck) 看看有什么不同。
 
-### 客户表 {#customers}
+### Customers表 {#customers}
 
-在本例中，我们构建 **客户的首次订购 [!DNL Google Analytics] 来源** 维度。
+此示例构建 **客户的首份订单 [!DNL Google Analytics] 源** 维度。
 
-1. 在Data warehouse的表列表中，单击该表(在本例中为 `customers`)，其中包含您的客户信息。
+1. 从Data warehouse中的表列表中，单击表(在本例中， `customers`)，其中包含您的客户信息。
 1. 单击 **[!UICONTROL Create a Column]**.
 1. 命名列。
-1. 在本例中，我们选择 `is MAX` 定义 [定义下拉列表](../../data-analyst/data-warehouse-mgr/calc-column-types.md). 的 `is MIN` 如果应用到只具有一个可能值的文本列，则也可以使用定义。 重要的部分是确保设置正确的过滤器，我们稍后会这样做。
-1. 单击 **[!UICONTROL Select a table and column]** 下拉菜单，然后选择 `orders` 表格，然后 `Order's [!DNL Google Analytics] source` 列。
+1. 对于此示例，请选择 `is MAX` 定义 [定义下拉列表](../../data-analyst/data-warehouse-mgr/calc-column-types.md). 此 `is MIN` 定义也可以应用到只有一个可能值的文本列。 重要的部分是确保设置正确的过滤器，您稍后可以这样做。
+1. 单击 **[!UICONTROL Select a table and column]** 下拉菜单并选择 `orders` 表，然后 `Order's [!DNL Google Analytics] source` 列。
 1. 单击 **[!UICONTROL Save]**.
 1. 返回表模式后，单击 `Options` 下拉列表，然后 `Filters`.
-1. 单击 **[!UICONTROL Add Filter Set]** ，然后选择 `Orders we count` 设置。 我们只希望将包含在计数过滤器集中的订单中的订单包含在内，因此选择此过滤器集很重要。
-1. 单击 **[!UICONTROL Add Filter]**. 我们想找到顾客的首笔订单 [!DNL Google Analytics] 来源，因此我们需要添加过滤器：
+1. 单击 **[!UICONTROL Add Filter Set]** 然后选择 `Orders we count` 设置。 您只希望将您盘点筛选集的订单中包含的订单包括在内，因此选择此筛选集非常重要。
+1. 单击 **[!UICONTROL Add Filter]**. 您要查找客户的第一张订单 [!DNL Google Analytics] 源，因此您需要添加过滤器：
 
-   _orders.客户的订单编号= 1
+   _orders.客户的订单号= 1
 
    _
-1. 单击 **[!UICONTROL Save]** 创建维度。
+1. 单击 **[!UICONTROL Save]** 创建尺寸。
 
-接下来，尝试创建 **客户的首次订购 [!DNL Google Analytics] 媒体** 和 `campaign`. 这些维度不会有太大变化，请尝试一下。 但如果你卡住了，你可以查 [本文的结尾](#stuck) 看看有什么不同。
+接下来，尝试创建 **客户的首份订单 [!DNL Google Analytics] 中** 和 `campaign`. 这些维度变化不大，所以试试看。 但如果你被卡住了，你可以去看看了 [本文结尾](#stuck) 看看有什么不同。
 
-### 附加：订单表，第2轮
+### 附加练习：订单表，第2轮
 
-如果需要，您可以停止在此处，但此部分将 **客户的首次订购 [!DNL Google Analytics] 维度** 我们在 [最后部分](#customers) 到 `orders` 表。 通过在此部分中创建维度，可分析基于 `orders` 表 —  `Revenue`, `Number of orders`, `Distinct buyers`、等 — 使用 [!DNL Google Analytics] 客户首次订单的属性。
+如果需要，可以在此处停止，但本节通过提供 **客户的首份订单 [!DNL Google Analytics] 维度** 您已在 [最后一节](#customers) 到 `orders` 表格。 在此部分中创建维度可让您分析以下内容的基础上构建的所有量度： `orders` 表 —  `Revenue`， `Number of orders`， `Distinct buyers`，等等 — 使用 [!DNL Google Analytics] 客户第一笔订单的属性。
 
-在本例中，我们加入 `Customer's first order's [!DNL Google Analytics] source` 维度 `orders` 表。
+此示例将 `Customer's first order's [!DNL Google Analytics] source` 维度到 `orders` 表格。
 
-1. 在Data warehouse的表列表中，单击该表(在本例中为 `orders`)。
+1. 从Data warehouse中的表列表中，单击表(在本例中， `orders`)，其中包含您的订单信息。
 1. 单击 **[!UICONTROL Create a Column]**.
 1. 命名列。
-1. 选择 `Joined Column` 从定义下拉列表中。 这会将您在上一部分中创建的客户维度与 `orders` 表。
-1. 单击 **[!UICONTROL Select a table and column]** 下拉菜单，然后选择 `customers` 表格和 `Customer's first order's [!DNL Google Analytics] source` 列。
-1. 如果路径没有自动填充，请选择最能连接客户和订单表的路径。
-1. 单击 **[!UICONTROL Save]** 创建维度。
+1. 选择 `Joined Column` 从“定义”下拉菜单中。 这会将您在上一节中创建的客户维加入 `orders` 表格。
+1. 单击 **[!UICONTROL Select a table and column]** 下拉列表，然后选择 `customers` 表格和 `Customer's first order's [!DNL Google Analytics] source` 列。
+1. 如果路径未自动填充，请选择最能连接customers和orders表的路径。
+1. 单击 **[!UICONTROL Save]** 创建尺寸。
 
-以下是整个过程：
+下面我们来看看整个过程：
 
 ![](../../assets/help_center2.gif)
 
-最后，加入 `Customer's first order's` 媒介和 `campaign` 维度 `orders` 表。 试试看，正如我们之前提到的，请看 [文章的结尾](#stuck) 如果你需要帮助。
+加入 `Customer's first order's` 中和 `campaign` 的维度 `orders` 表格。 连接维度，如果遇到问题，则检出 [文章的结尾](#stuck) 如果你需要帮助。
 
-### 包装
+### 总结
 
-我们完成了维度的创建，这意味着我们现在可以创建功能强大的分析来跟踪各种渠道和营销活动的效果。 我们知道你急切地想开始，但请记住 **新列只有在下次更新完成后才可用**.
+您完成了维度的创建，这意味着您现在可以创建强大的分析来跟踪各种渠道和营销活动的性能。 请记住 **新列将只有在下次更新完成后才可用**.
 
-我们在本文中介绍了一些比较流行的维度，但天空是极限 — 尝试创建您自己的维度，或者如果您希望帮助探索其他选项，可以随意地ping我们。 
+本文中介绍了一些更受欢迎的维度，但天空才是极限 — 请尝试创建自己的维度，或者如果您想在探索其他选项方面获得帮助，可以随时向我们发出提醒。 
 
-### 我卡住了！ 有什么不同？ {#stuck}
+### 我被卡住了！ 有什么不同呢？ {#stuck}
 
-**`Orders`表#1:** 创建 `Order's [!DNL Google Analytics]` 媒介和 `campaign` 维度中，差异将是在步骤12中选择的列。 在本例中，该列为 `Source`.
+**`Orders`表#1：** 创建 `Order's [!DNL Google Analytics]` 中和 `campaign` 维中，差异是在步骤12中选择的列。 在此示例中，列为 `Source`.
 
-**`Customers`表：** 创建 `Customer's first order's [!DNL Google Analytics]` 媒介和 `campaign` 维度中，不同之处在于步骤5中选择的列。 在本例中，该列为 `Order's [!DNL Google Analytics]` 来源。
+**`Customers`表：** 创建 `Customer's first order's [!DNL Google Analytics]` 中和 `campaign` 维中，差异在于步骤5中选择的列。 在此示例中，列为 `Order's [!DNL Google Analytics]` 源。
 
-**`Orders`表#2:** 加入 `Customer's first order's [!DNL Google Analytics]` 媒介和 `campaign` 列 `orders` 表格中，不同之处在于步骤5中选择的列。 在本例中，该列为 `Customer's first order's [!DNL Google Analytics]` 来源。
+**`Orders`表#2：** 加入 `Customer's first order's [!DNL Google Analytics]` 中和 `campaign` 列到 `orders` 表，其差异为在第5步中选择的列。 在此示例中，列为 `Customer's first order's [!DNL Google Analytics]` 源。

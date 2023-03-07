@@ -1,10 +1,10 @@
 ---
-title: 免费装运阈值
-description: 了解如何设置功能板以跟踪免费送货阈值的性能。
+title: 免费配送阈值
+description: 了解如何设置一个仪表板来跟踪免费配送阈值的性能。
 exl-id: a90ad89b-96d3-41f4-bfc4-f8c223957113
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->本文包含针对使用原始架构和新架构的客户端的说明。 如果在从主工具栏中选择“管理数据”后，“Data warehouse视图”部分可用，则您将处于新架构中。
+>本文包含有关使用原始架构和新架构的客户端的说明。 如果您在主工具栏中选择“管理数据”后有“Data warehouse视图”部分可用，则表示您使用的是新架构。
 
-在本文中，我们演示了如何设置仪表板，以跟踪免费送货阈值的性能。 下面显示的仪表板是A/B测试两个不同免费送货阈值的绝佳方法。 例如，您的公司可能不确定您应该以50美元还是100美元提供免费送货服务。 您应该对客户的两个随机子集执行A/B测试，并在 [!DNL MBI].
+本文演示了如何设置功能板来跟踪免费配送阈值的性能。 此仪表板（如下所示）是A/B测试两个免费运输阈值的好方法。 例如，贵公司可能不确定您应以$50还是$100的价格提供免运费。 您应该对客户的两个随机子集执行A/B测试，并在中执行分析 [!DNL MBI].
 
-在开始之前，您需要确定两个不同的时间段，其中您对商店的免费装运阈值具有不同的值。
+在开始使用之前，您需要确定两个单独的时间段，在这些时间段中，您商店的免费配送阈值具有不同的值。
 
 ![](../../assets/free_shipping_threshold.png)
 
@@ -25,26 +25,26 @@ ht-degree: 0%
 
 ## 计算列
 
-如果您位于原始架构上(例如，如果您没有 `Data Warehouse Views` 选项 `Manage Data` 菜单)，则需要联系我们的支持团队以构建以下列。 在新架构上，可以通过 `Manage Data > Data Warehouse` 页面。 详细说明如下。
+如果您使用的是原始架构(例如，如果您没有 `Data Warehouse Views` 下的选项 `Manage Data` 菜单)，您希望联系支持团队以构建以下列。 在新架构上，这些列可以从 `Manage Data > Data Warehouse` 页面。 详细说明如下。
 
 * **`sales_flat_order`** 表
-   * 此计算会创建相对于典型购物车大小的分段。 此值可以从以下增量中进行：包括、5、10、50、100
+   * 此计算会创建存储段，其增量相对于您的典型购物车大小。 这可以从增量开始，包括5、10、50、100
 
-* **`Order subtotal (buckets)`** 原始架构：将由分析师创建，作为 `[FREE SHIPPING ANALYSIS]` 票
+* **`Order subtotal (buckets)`** 原始架构：由分析师创建，作为您的一部分， `[FREE SHIPPING ANALYSIS]` 票证
 * **`Order subtotal (buckets)`** 新架构：
-   * 如上所述，此计算会创建相对于典型购物车大小的分段。 如果您有本机小计列，例如 `base_subtotal`，可用作此新列的基础。 如果没有，则可以是从收入中排除运费和折扣的计算列。
+   * 如上所述，此计算会创建存储段，存储段以相对于您的典型购物车大小的增量递增。 如果您有本机小计列，例如 `base_subtotal`，可用作此新列的基础。 如果没有，则它可以是计算列，不包含收入中的运费和折扣。
    >[!NOTE]
    >
-   >“存储段”的大小取决于您作为客户端的适当内容。 你可以从 `average order value` 并创建一定数量的存储段，这些存储段小于或大于该数量。 查看下面的计算时，您将看到如何轻松复制部分查询、编辑查询以及创建其他存储段。 此示例以50为增量完成。
+   >“存储桶”的大小取决于适合您作为客户端的情况。 你可以从你的开始 `average order value` 并创建一些小于或大于该数量的存储段。 在查看下面的计算时，您会看到如何轻松复制部分查询、编辑查询以及创建其他存储段。 示例以50为增量完成。
 
-   * `Column type - Same table, Column definition - Calculation, Column Inputs-` `base_subtotal`或 `calculated column`, `Datatype`: `Integer`
-   * [!UICONTROL Calculation]: `case when A >= 0 and A<=200 then 0 - 200`
-何时 `A< 200` 和 `A <= 250` then `201 - 250`
-when `A<251` 和 `A<= 300` then `251 - 300`
-when `A<301` 和 `A<= 350` then `301 - 350`
-when `A<351` 和 `A<=400` then `351 - 400`
-when `A<401` 和 `A<=450` then `401 - 450`
-else &#39;over 450&#39;结束
+   * `Column type - Same table, Column definition - Calculation, Column Inputs-` `base_subtotal`，或 `calculated column`， `Datatype`： `Integer`
+   * [!UICONTROL Calculation]： `case when A >= 0 and A<=200 then 0 - 200`
+时间 `A< 200` 和 `A <= 250` 则 `201 - 250`
+时间 `A<251` 和 `A<= 300` 则 `251 - 300`
+时间 `A<301` 和 `A<= 350` 则 `301 - 350`
+时间 `A<351` 和 `A<=400` 则 `351 - 400`
+时间 `A<401` 和 `A<=450` 则 `401 - 450`
+否则“超过450”结束
 
 
 
@@ -54,14 +54,14 @@ else &#39;over 450&#39;结束
 
 >[!NOTE]
 >
->确保 [将所有新列作为量度的维度添加到](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 生成新报告之前。
+>确保 [将所有新列作为维度添加到量度](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 然后再生成新报告。
 
-## 报表
+## 报告
 
 * **发运规则A的平均订单值**
    * [!UICONTROL Metric]: `Average order value`
 
-* 量度 `A`: `Average Order Value`
+* 量度 `A`： `Average Order Value`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
 * 
    [!UICONTROL Interval]: `None`
@@ -69,14 +69,14 @@ else &#39;over 450&#39;结束
 
    [!UICONTROL Chart Type]: `Scalar`
 
-* **按装运规则A的小计时段划分的订单数**
+* **按发运规则A的分段小计列出的订单数**
    * [!UICONTROL Metric]: `Number of orders`
 
    >[!NOTE]
    >
-   >您可以通过显示顶部 `X` `sorted by` `Order subtotal` （分段） `Show top/bottom`.
+   >你可以通过显示顶部来截断尾端 `X` `sorted by` `Order subtotal` （桶） `Show top/bottom`.
 
-* 量度 `A`: `Number of orders`
+* 量度 `A`： `Number of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
 * 
    [!UICONTROL Interval]: `None`
@@ -85,19 +85,19 @@ else &#39;over 450&#39;结束
 
    [!UICONTROL Chart Type]: `Column`
 
-* **按小计和发运规则A列出的订单百分比**
+* **按小计和装运规则A的订单百分比**
    * [!UICONTROL Metric]: `Number of orders`
 
    * [!UICONTROL Metric]: `Number of orders`
    * 
-      [!UICONTROL组依据]: `Independent`
+      [！UICONTROL分组依据]: `Independent`
    * [!UICONTROL Formula]: `(A / B)`
    * 
 
       [!UICONTROL Format]: `%`
 
-* 量度 `A`: `Number of orders by subtotal (hide)`
-* 量度 `B`: `Total number of orders (hide)`
+* 量度 `A`： `Number of orders by subtotal (hide)`
+* 量度 `B`： `Total number of orders (hide)`
 * [!UICONTROL Formula]: `% of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
 * 
@@ -116,15 +116,15 @@ else &#39;over 450&#39;结束
    * [!UICONTROL Metric]: `Number of orders`
    * 
 
-      [!UICONTROL组依据]: `Independent`
+      [！UICONTROL分组依据]: `Independent`
 
    * [!UICONTROL Formula]: `1- (A / B)`
    * 
 
       [!UICONTROL Format]: `%`
 
-* 量度 `A`: `Number of orders by subtotal`
-* 量度 `B`: `Total number of orders (hide)`
+* 量度 `A`： `Number of orders by subtotal`
+* 量度 `B`： `Total number of orders (hide)`
 * [!UICONTROL Formula]: `% of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
 * 
@@ -135,6 +135,6 @@ else &#39;over 450&#39;结束
    [!UICONTROL Chart Type]: `Line`
 
 
-对发运规则B的上述步骤和报表以及发运规则B的时间段重复执行上述步骤和报表。
+对发运规则B和时间段，重复上述步骤和报告。
 
-编译完所有报告后，您可以在功能板上根据需要组织报告。 最终结果可能与本页顶部的图像类似。
+在编译所有报告后，您可以根据需要将报告组织在功能板上。 结果可能类似于此页面顶部的图像。

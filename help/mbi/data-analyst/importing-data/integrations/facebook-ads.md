@@ -1,15 +1,15 @@
 ---
 title: 连接Facebook Ads
-description: 了解如何分析广告支出数据并查看您的资金是否得到有效使用。
+description: 了解如何分析您的广告支出数据，并查看您的资金是否得到了有效使用。
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '316'
 ht-degree: 0%
 
 ---
 
-# 连接 [!DNL Facebook Ads]
+# Connect [!DNL Facebook Ads]
 
 >[!NOTE]
 >
@@ -17,50 +17,50 @@ ht-degree: 0%
 
 ![](../../../assets/Facebook_Logo.png)
 
-你做了调查，制作了广告，在 [!DNL Facebook]. 现在，该分析您的广告支出数据并查看您的资金是否得到有效使用了。 使用您的广告支出数据，您可以 [通过将广告成本与客户生命周期价值(CLV)相结合来衡量促销活动ROI](../../../data-analyst/analysis/roi-ad-camp.md) 从您的营销活动获得的用户数量。
+你做了调查，做了广告，在网站上发起了促销活动 [!DNL Facebook]. 现在该分析您的广告支出数据了，看看您的资金是否得到了有效使用。 使用您的广告支出数据，您可以 [通过将您的广告成本和客户存留期价值(CLV)结合起来衡量促销活动ROI](../../../data-analyst/analysis/roi-ad-camp.md) 从您的营销活动获得的用户的数量。
 
-将Facebook广告数据连接到 [!DNL MBI] 是一个简单的三步流程：
+将您的Facebook广告数据连接到 [!DNL MBI] 是一个简单的三步过程：
 
-1. [添加 [!DNL Facebook] 作为 [!DNL MBI]](#stepone)
-1. [允许 [!DNL MBI] 访问 [!DNL Facebook Ads] 数据](#steptwo)
+1. [添加 [!DNL Facebook] 作为中的数据源 [!DNL MBI]](#stepone)
+1. [允许 [!DNL MBI] 访问您的 [!DNL Facebook Ads] 数据](#steptwo)
 1. [选择 [!DNL Facebook Ads] 用于提取数据的帐户](#stepthree)
 
-## 添加 [!DNL Facebook] 作为 [!DNL MBI] {#stepone}
+## 添加 [!DNL Facebook] 作为中的数据源 [!DNL MBI] {#stepone}
 
-1. 添加 [!DNL Facebook] 集成到您的帐户，导航到 `Connections` 页面下 **[!UICONTROL Manage Data** > **Integrations]**.
-1. 单击 **[!UICONTROL Add Integration]**，位于数据上方屏幕右侧 `Sources` 表。
-1. 单击 [!DNL Facebook] 图标。 这将显示 [!DNL Facebook] 授权页面。
+1. 添加 [!DNL Facebook] 集成到您的帐户，导航到 `Connections` 页面位于 **[!UICONTROL Manage Data** > **Integrations]**.
+1. 单击 **[!UICONTROL Add Integration]**，位于屏幕右侧的数据上方 `Sources` 表格。
+1. 单击 [!DNL Facebook] 图标。 这会显示 [!DNL Facebook] 授权页面。
 1. 单击 **[!UICONTROL Authorize]**.
 
-## 允许 [!DNL MBI] 访问 [!DNL Facebook Ads] 数据 {#steptwo}
+## 允许 [!DNL MBI] 访问您的 [!DNL Facebook Ads] 数据 {#steptwo}
 
-单击 **[!DNL Facebook Authorize]**，将显示一个小弹出窗口：
+单击后 **[!DNL Facebook Authorize]**，将显示一个小型弹出窗口：
 
 ![](../../../assets/Facebook_Access_Popup.png)
 
-您将执行一系列步骤以允许 [!DNL MBI] 要从您的公共配置文件访问数据， [!DNL Facebook Ads] 和相关统计资料。 单击 **[!UICONTROL OK]** 继续执行这些步骤。
+您需要执行一系列步骤以允许 [!DNL MBI] 要从公共个人资料访问数据，请执行以下操作： [!DNL Facebook Ads] 相关数据。 单击 **[!UICONTROL OK]** 执行这些步骤以继续。
 
 ## 选择 [!DNL Facebook Ads] 用于提取数据的帐户 {#stepthree}
 
-1. 验证完成后，系统将提示您选择 [!DNL Facebook Ads] 要从中提取数据的帐户。 单击 `Connect` 列。
+1. 身份验证完成后，系统将提示您选择 [!DNL Facebook Ads] 要从中提取数据的帐户。 通过单击 `Connect` 列。
 
    ![](../../../assets/Facebook_Ad_Accounts.png)
 
 1. 单击 **[!UICONTROL Save Connections]**.
 
-   如果连接成功，则 *连接成功！* 消息将显示在页面顶部。
+   如果连接成功， *连接成功！* 消息将显示在页面顶部。
 
-## 接下来是什么？ {#next}
+## 接下来呢？ {#next}
 
-确保跟踪 [!DNL Facebook] 营销活动 [!DNL Google Analytics]. 这将确保 `utm\_campaign` 字段 [!DNL Google Analytics] 正确填充了 [!DNL Facebook] 营销活动。
+确保您正在跟踪 [!DNL Facebook] 中的营销活动 [!DNL Google Analytics]. 这可确保 `utm\_campaign` 中的字段 [!DNL Google Analytics] 已为正确填充 [!DNL Facebook] 营销活动。
 
 ## 相关
 
 * [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
-* [连接 [!DNL Google Adwords] 帐户](../integrations/google-ecommerce.md)
-* [通过跟踪订单反向链接来源 [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
+* [连接您的 [!DNL Google Adwords] 帐户](../integrations/google-ecommerce.md)
+* [通过以下方式跟踪订单反向链接来源： [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [跟踪数据库中的用户反向链接源](../../analysis/google-track-user-acq.md)
 * [跟踪数据库中的用户设备、浏览器和操作系统数据](../../analysis/track-usr-dev-browser.md)
-* [发现最有价值的客户获取来源和渠道](../../analysis/most-value-source-channel.md)
-* [提高广告活动的ROI](../../analysis/roi-ad-camp.md)
+* [了解您最有价值的客户获取来源和渠道](../../analysis/most-value-source-channel.md)
+* [提高广告促销活动的ROI](../../analysis/roi-ad-camp.md)
 * [如何 [!DNL Google Analytics] UTM归因工作？](../../analysis/utm-attributes.md)

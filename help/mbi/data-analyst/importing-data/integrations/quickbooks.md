@@ -1,15 +1,15 @@
 ---
-title: Connect QuickBooks
-description: 了解您的企业财务如何与您的销售和营销数据并存，让您能够快速、轻松地监控您的开支、识别过度支出等。
+title: 连接QuickBooks
+description: 了解您的企业财务现在如何与销售和营销数据并存，让您能够快速、轻松地监控支出、识别超支情况等。
 exl-id: e100c88c-af59-4185-b2a2-c8e77bfd7277
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '146'
 ht-degree: 0%
 
 ---
 
-# 连接 [!DNL QuickBooks]
+# Connect [!DNL QuickBooks]
 
 >[!NOTE]
 >
@@ -17,23 +17,23 @@ ht-degree: 0%
 
 ![](../../../assets/Quickbooks.png)
 
-使用 [!DNL QuickBooks] 整合后，您的业务财务现在可以与您的销售和营销数据共存，从而让您能够快速、轻松地监控您的开支、识别过度支出等。
+使用 [!DNL QuickBooks] 集成，您的业务财务现在可以与销售和营销数据并存，从而让您快速、轻松地了解支出、识别超支情况等。
 
-## 添加 [!DNL QuickBooks] 作为 [!DNL MBI]
+## 添加 [!DNL QuickBooks] 作为中的数据源 [!DNL MBI]
 
-1. 转到 `Integrations` 页面下 **[!UICONTROL Manage Data** > **Data Sources]**.
-1. 单击 **[!UICONTROL Add Integration]**，位于屏幕右侧，位于 `Data Sources` 表。
+1. 转到 `Integrations` 页面位于 **[!UICONTROL Manage Data** > **Data Sources]**.
+1. 单击 **[!UICONTROL Add Integration]**，位于屏幕右侧上方的 `Data Sources` 表格。
 1. 单击 `QuickBooks` 图标。
 1. 单击 **[!UICONTROL Connect to Quickbooks]**.
 
-## 授予 [!DNL MBI] 访问 [!DNL QuickBooks] 数据
+## 授权 [!DNL MBI] 访问您的 [!DNL QuickBooks] 数据
 
-单击 **[!UICONTROL Connect to Quickbooks]**，登录到 [!DNL Intuit] 帐户并授权连接：
+单击后 **[!UICONTROL Connect to Quickbooks]**，登录 [!DNL Intuit] 帐户并授权连接：
 
 ![](../../../assets/QuickBooks_App_Store_1.jpg)
 
-1. 在 `Search for a company` 下拉列表，选择您的公司。
-1. 单击 **[!UICONTROL Next]**. 系统会将您重定向到 [!DNL MBI] 和 *连接成功！* 消息将显示在屏幕顶部。
+1. 在 `Search for a company` 在下拉列表中，选择您的公司。
+1. 单击 **[!UICONTROL Next]**. 您将被重定向到 [!DNL MBI] 和 *连接成功！* 消息显示在屏幕顶部。
 
 ## 相关
 

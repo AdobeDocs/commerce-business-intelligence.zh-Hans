@@ -1,15 +1,15 @@
 ---
 title: 预期Google Analytics仓库数据
-description: 了解如何与Google Analytics仓库数据进行交互。
+description: 了解如何与您的Google Analytics存储数据交互。
 exl-id: 2b1305cd-5f34-43d9-b77f-a4f5b1d82c66
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---
 
-# 预期 [!DNL Google Analytics] 仓库数据
+# 预期 [!DNL Google Analytics] 仓储数据
 
 >[!NOTE]
 >
@@ -17,47 +17,47 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有些信息是经我们朋友的许可，在 [[!DNL Stitch]](https://www.stitchdata.com/docs/integrations/saas/google-analytics).
+>在您朋友的允许下使用了一些信息： [[!DNL Stitch]](https://www.stitchdata.com/docs/integrations/saas/google-analytics).
 
-[!DNL Google Analytics Warehoused] 集成 [!DNL MBI] 利用 [!DNL Google Analytics] [核心报表API](https://developers.google.com/analytics/devguides/reporting/core/v3/).
+[!DNL Google Analytics Warehoused] 集成 [!DNL MBI] 使用 [!DNL Google Analytics] [核心报表API](https://developers.google.com/analytics/devguides/reporting/core/v3/).
 
 >[!NOTE]
 >
->要避免出现意外或无意义的结果，请确认您使用的任何维度均为 [与量度兼容](https://developers.google.com/analytics/devguides/reporting/core/dimsmets) 在 `Report Builder`.
+>为避免出现意外或无意义的结果，请确认您使用的任何维度都是 [与一个或多个量度兼容](https://ga-dev-tools.google/dimensions-metrics-explorer/) 您可在 `Report Builder`.
 
-一个表 — 称为 `report`  — 将在您的Data warehouse中创建。
+单个表 — 称为 `report`  — 在您的Data warehouse中创建。
 
-此表的架构将由您在设置过程中选择的量度和Dimension以及另外两列组成： `start-date` 和 `end-date`.
+此表的方案由您在设置过程中选择的指标和Dimension以及另外两个列组成： `start-date` 和 `end-date`.
 
-例如，如果您在设置过程中选择了以下量度和Dimension:
+例如，如果您在设置期间选择了以下指标和Dimension：
 
 * `Metrics`: `ga:users`
 * `Dimensions`: `ga:month`
 
-该表将类似于以下示例。
+该表将类似于下面的示例。
 
 | **列名称** | **描述** |
 |-----|-----|
 | `\_id` | 此列是 `primary key`. |
-| `\_rjm\_record\_hash` | [!DNL MBI] 唯一标识符。 此列由 [!DNL MBI]. |
-| `\_updated\_at` | 此列包含数据行上次更新的时间。 此列由 [!DNL MBI]. |
-| `start-date` | 行用于哪一天的标识。 |
-| `end-date` | 行用于哪一天的标识。 |
-| `month` | 所选维度：会话月份，一个01到12之间的两位数整数。 |
-| `users` | 选定量度：请求的时间段内的用户总数。 |
+| `\_rjm\_record\_hash` | [!DNL MBI] 唯一标识符。 此列的创建者 [!DNL MBI]. |
+| `\_updated\_at` | 此列包含上次更新数据行的时间。 此列的创建者 [!DNL MBI]. |
+| `start-date` | 行用于哪天的标识。 |
+| `end-date` | 行用于哪天的标识。 |
+| `month` | 选定的维度：会话的月份，一个从01到12的两位整数。 |
+| `users` | 所选量度：所请求的时段内的用户总数。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## 提醒：Google Analytics仓库与实时集成之间的差异
+## 提醒：Google Analytics仓库和实时集成之间的区别
 
-主要区别在于存储了一个集成([!DNL Google Analytics Warehoused])，而另一个则不是([!DNL Google Analytics Live])。 对于 [!DNL Google Analytics Warehoused]，这允许对 [!DNL Google Analytics] 数据，并让您能够 [!DNL Google Analytics] 和其他数据源，以创建有洞察力的报表。
+主要区别在于存储了一个集成([!DNL Google Analytics Warehoused])，而另一个不是([!DNL Google Analytics Live])。 在以下情况下 [!DNL Google Analytics Warehoused]，这允许对您的 [!DNL Google Analytics] 数据，并让您能够合并 [!DNL Google Analytics] 和其他数据源，以创建富有洞察力的报表。
 
-让我们看看 [!DNL Google Analytics] 广告营销活动，以展示从操作角度可以执行的操作。 假设您有多个不同名称的第4季度广告营销活动。 营销活动是特定营销计划的结果。 利用仓库数据，我们可以创建一个新列，以查找相关促销活动名称并返回 `Operation Dumbo`.
+查看 [!DNL Google Analytics] 广告营销活动，以从操作角度说明可执行的操作。 假设您在第4季度有多个名称不同的广告营销活动。 这些营销活动是特定营销计划的成果。 使用仓库数据，您可以创建一个列，以查找有问题的促销活动名称并返回第4季度计划名称 `Operation Dumbo`.
 
-组合方面允许 [!DNL Google Analytics] 要连接到其他数据以进行分析的数据。 例如， `Total Time On Site By Ad Campaign` 数据 [!DNL Google Analytics] 加入到 `Total Spent Per Campaign` 数据 [!DNL Facebook Ads] 全面了解您的参与度花费。
+组合方面允许 [!DNL Google Analytics] 要与其他数据结合以执行分析的数据。 例如， take `Total Time On Site By Ad Campaign` 数据来源 [!DNL Google Analytics] 并加入进来 `Total Spent Per Campaign` 数据来源 [!DNL Facebook Ads] 以全面了解参与成本是多少。
 
-使用 [!DNL Google Analytics Live] 另一方面， [!DNL Google Analytics] 图表就像一个小接收器，不会存储在您的 [!DNL MBI] data warehouse。
+使用 [!DNL Google Analytics Live] 另一方面，集成，每 [!DNL Google Analytics] 图表就像一个小容器，不会存储在 [!DNL MBI] data warehouse。
 
 ## 相关：
 
-* [连接 [!DNL Google Analytics Warehoused]](../integrations/google-analytics-warehoused.md)
+* [正在连接 [!DNL Google Analytics Warehoused]](../integrations/google-analytics-warehoused.md)

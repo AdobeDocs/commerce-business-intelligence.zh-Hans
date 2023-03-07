@@ -2,65 +2,65 @@
 title: Report Builder中的公式
 description: 了解如何在Report Builder中使用公式。
 exl-id: 7a0ad07a-5bcc-474f-95bc-ccc2b74073b2
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
 
 # 中的公式 `Report Builder`
 
-在 [`Report Builder`](../../tutorials/using-visual-report-builder.md)，您可以使用 [定义量度](../../data-user/reports/ess-manage-data-metrics.md) 在您的帐户中。 通过将这些量度组合到公式中，可从数据中获得更多分析。 在本文中，我们将深入探讨如何在 `Report Builder`  — 让我们跳进去！
+在 [`Report Builder`](../../tutorials/using-visual-report-builder.md)，您可以使用来创建功能强大的可视化图表， [定义的量度](../../data-user/reports/ess-manage-data-metrics.md) 在您的帐户中。 在公式中组合这些量度，可让您从数据获取更多见解。 本文深入探讨公式在CJA中的 `Report Builder`  — 让我们跳进去！
 
-## 什么是 `formula`? {#what}
+## 什么是 `formula`？ {#what}
 
-在 `Report Builder`, a `formula` 只是基于某些数学逻辑的一个或多个量度的组合。 典型示例如下所示：
+在 `Report Builder`， a `formula` 只是基于某种数学逻辑的一个或多个量度的组合。 典型示例如下所示：
 
 ![](../../assets/formula-example.png)
 
-在本例中，我们使用 `Number of orders metric (A)` 和 `Distinct buyers metric (B)`，我们的目标是回答以下问题：我的买家每月的平均订单数是多少？ 公式的参数为：
+在此示例中，您使用 `Number of orders metric (A)` 和 `Distinct buyers metric (B)`，目标是回答以下问题：我的买家每个月平均订购次数是多少？ 公式的参数为：
 
-* `Definition`:在此，对输入量度应用数学。 在本例中，将订单数除以不同购买者数量将告诉我们平均订单数。 因此，定义为(A/B)。
+* `Definition`：在此，对输入量度应用数学。 在本例中，订单数除以不同的买方数可以得出平均订单数。 因此，定义为(A/B)。
 
-* `Format`:您的公式是返回数字、时间段还是货币金额？ 公式定义旁有一个下拉列表，您可以使用它指定返回的格式。 在这种情况下，它是一个数字。
+* `Format`：您的公式是返回数字、时段还是货币金额？ 公式定义旁边是一个下拉列表，您可以使用它指定返回的格式。 在这种情况下，它是一个数字。
 
-* `Miscellaneous`:公式的时间戳、分组、透视图和过滤器都由其输入量度继承。 这里没什么可做的！
+* `Miscellaneous`：公式的时间戳、分组、透视和过滤器均由其输入指标继承。 这里无事可做！
 
-## 如何使用 `formulas` 在我的报告里？ {#how}
+## 如何使用 `formulas` 我的报告里吗？ {#how}
 
-现在，我们已经介绍了基础知识，接下来我们来看一下一些示例。
+既然您已介绍了基础知识，请查看一些示例。
 
-### 示例：我想知道，我的收入中有多少百分比可以归因于第一次订购。
+### 示例：我想了解我的收入的哪个百分比可归因于首次订单。
 
-![使用公式查找归因于首次订购的收入百分比](../../assets/first_time_orders.gif)
+![使用公式来查找首次订单的收入百分比](../../assets/first_time_orders.gif)
 
-在本例中，我们使用 `Revenue` 和 `Revenue (first time orders)` 量度。 通过将 `Revenue (first time orders)(B)` 量度 `Revenue metric (A)` 并将返回格式设置为 `Percent`，我们可以找到可归因于首次订购的收入百分比。
+在此示例中，您使用了 `Revenue` 和 `Revenue (first time orders)` 量度。 通过将 `Revenue (first time orders)(B)` 量度依据 `Revenue metric (A)` 并将返回格式设置为 `Percent`，您可以找到首次订购可归因的收入百分比。
 
-### 示例：我想知道，在提供和不提供 `promo code`.
+### 示例：我想知道在提供和不提供 `promo code`.
 
-![使用公式查找包含和不包含促销代码的每订单平均收入](../../assets/promo_code.gif)
+![使用公式来查找包含和不包含促销代码的每订单平均收入](../../assets/promo_code.gif)
 
-在本例中，我们使用 `Revenue` 和 `Number of orders` 量度。 这个问题的答案包括两个步骤： `Revenue (A)` 按 `Number of orders (B)` 并将返回格式设置为 `Currency`. 接下来，我们仅允许公式结果(`Avg. Revenue per order`)显示结果并按 `Promo code`.
+在此示例中，您使用了 `Revenue` 和 `Number of orders` 量度。 这个问题的答案包括两个步骤 — 分隔 `Revenue (A)` 按 `Number of orders (B)` 并将返回格式设置为 `Currency`. 接下来，您仅允许公式结果(`Avg. Revenue per order`)，显示结果并按其分组 `Promo code`.
 
-### 示例：我想了解新客户UTM源的分布情况。
+### 示例：我想了解新客户的UTM源的分布。
 
-![使用公式查找新客户UTM源的分布](../../assets/distro.gif)
+![使用公式查找新客户的UTM源的分配](../../assets/distro.gif)
 
-要找到此问题的答案，需要执行以下步骤：
+找到此问题的答案需要几个步骤：
 
-1. 首先，我们在 `New Customers` 量度，然后按 `utm_source - all`. 这是量度 `A`或 `New Customers (grouped)`.
+1. 首先，您添加了 `New Customers` 量度，然后按以下项分组 `utm_source - all`. 这是量度 `A`，或 `New Customers (grouped)`.
 
-1. 接下来，我们复制了 `New Customers (grouped)` 量度并将其设置为使用独立维度。 量度 `B` - `New customers (ungrouped)`  — 显示新客户的总数。
+1. 接下来，您已复制 `New Customers (grouped)` 量度并将其设置为使用独立维度。 量度 `B` - `New customers (ungrouped)`  — 显示新客户的总数。
 
-1. 隐藏两个量度后，我们会将公式定义设置为 `A/B`. 这将 `New customers (grouped)` 按 `New Customers (ungrouped)`.
+1. 隐藏这两个量度后，可将公式定义设置为 `A/B`. 这将 `New customers (grouped)` 按 `New Customers (ungrouped)`.
 
-1. 接下来，我们将结果格式设置为 `Percent`.
+1. 接下来，将结果格式设置为 `Percent`.
 
-在本例中，我们使用 `Stacked Columns` 透视图，以按月显示结果。 这样，我们便可以每月比较新客户的分布情况。
+在此示例中，您使用了 `Stacked Columns` 透视图，按月显示结果。 这样，我们就可以逐月比较新客户的分布。
 
-## 包装 {#wrapup}
+## 总结 {#wrapup}
 
-在上面的示例中，您是否注意到 `timestamp`, `groupings`, `perspectives`和 `filters` 是否从其输入量度中继承？ 请记住，可以利用公式来使用 `perspectives` 和 [独立时间选项](../../tutorials/time-options-visual-rpt-bldr.md){:target=&quot;_blank&quot;}，与量度可以一样。
+您是否注意到上述示例中公式的 `timestamp`， `groupings`， `perspectives`、和 `filters` 是否从其输入指标继承？ 请记住，公式可用于 `perspectives` 和 [独立时间选项](../../tutorials/time-options-visual-rpt-bldr.md){： target=&quot;_blank&quot;}，就像量度一样。
 
-如果您对在 `Report Builder`, [联系支持](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+如果您对于在中使用公式还有其他任何疑问， `Report Builder`， [联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

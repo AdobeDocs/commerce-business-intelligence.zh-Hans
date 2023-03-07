@@ -1,27 +1,27 @@
 ---
 title: 预期Google Analytics数据
-description: 了解如何与Google Analytics量度进行交互。
+description: 了解如何与您的Google Analytics量度交互。
 exl-id: db9fdaaa-47a9-4095-b1f8-9b6c74c25b7c
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---
 
 # 预期 [!DNL Google Analytics] 数据
 
-在您连接了 [!DNL Google Analytics] 集成时，您可以与 [!DNL Google Analytics] 量度 *在`Visual Report Builder`*. 当您输入 `Visual Report Builder`，如果单击 **[!UICONTROL Add a Metric]**, [!DNL Google Analytics] 配置文件将显示在紧靠您data warehouse中量度下方的下拉菜单中。
+在您连接 [!DNL Google Analytics] 集成，您可与 [!DNL Google Analytics] 量度 *立即在`Visual Report Builder`*. 当您输入 `Visual Report Builder`，如果您单击 **[!UICONTROL Add a Metric]**，中的一系列量度 [!DNL Google Analytics] 配置文件显示在紧靠Data warehouse中指标下方的下拉菜单中。
 
-的 [!DNL Google Analytics] 集成 *live*  — 这意味着 `Report Builder` 请求数据 [!DNL Google Analytics] *立即* 在向报表中添加量度时。 这还意味着您可以访问的量度会完全按照 [!DNL Google Analytics]，并且这些值不是 *仓库* 在 [!DNL MBI] 帐户 — 仅在报表中以可视方式显示。
+此 [!DNL Google Analytics] 集成 *实时*  — 这意味着 `Report Builder` 请求数据来源 [!DNL Google Analytics] *立即* 向报表中添加量度时。 它还意味着您可以访问的量度的定义方式与中的完全相同 [!DNL Google Analytics]，并且这些值不是 *仓库* 在您的 [!DNL MBI] 帐户 — 仅在您的报表中直观显示。
 
-[!DNL Google Analytics] 集成 [!DNL MBI] 利用 [!DNL Google Analytics] [核心报表API](https://developers.google.com/analytics/devguides/reporting/core/v3/)，并支持以下量度和维度。
+[!DNL Google Analytics] 中的集成 [!DNL MBI] 使用 [!DNL Google Analytics] [核心报表API](https://developers.google.com/analytics/devguides/reporting/core/v3/)，并支持以下量度和维度。
 
 >[!NOTE]
 >
->为避免出现意外或无意义的结果，请确认您使用的任何维度与您在 `Report Builder`. 您可以检查 [此处](https://developers.google.com/analytics/devguides/reporting/core/dimsmets).
+>为避免产生意外或无意义的结果，请确认您使用的任何维度与您在中使用的一个或多个量度兼容 `Report Builder`. 您可以检查 [此处](https://ga-dev-tools.google/dimensions-metrics-explorer/).
 
-## 支持的量度
+## 支持的指标
 
 | [!DNL MBI] 显示名称 | [!DNL Google Analytics] 名称/公式 |
 | --- | --- |
@@ -73,11 +73,11 @@ ht-degree: 0%
 | `All Goals Conversion Rate` | `ga:goalConversionRateAll` |
 | `Total Goal Value` | `ga:goal1ValueAll` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 支持的Dimension
 
-| [!DNL MBI] 显示名称 | [!DNL Google Analytics] 名称/公式 | 可群体？ |
+| [!DNL MBI] 显示名称 | [!DNL Google Analytics] 名称/公式 | 可分组？ |
 | --- | --- | --- |
 | `Ad Content` | `ga:adContent` | `Yes` |
 | `Ad Group` | `ga:adGroup` | `Yes` |
@@ -142,4 +142,4 @@ ht-degree: 0%
 | `Custom (User Defined) Value` | `ga:userDefinedValue` | `Yes` |
 | `Year` | `ga:year` | `No` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

@@ -2,9 +2,9 @@
 title: 激活您的 [!DNL MBI] 用于内部部署订阅的帐户
 description: 了解如何激活您的 [!DNL MBI] 用于内部部署订阅的帐户。
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
-source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
    ![](../assets/create-account-4.png)
 
-   - 创建帐户后，您可以选择将用户添加到新帐户。 现在可以添加技术管理员以执行以下步骤。
+   - 创建帐户后，您可以将用户添加到新帐户。 现在可以添加技术管理员以执行以下步骤。
 
    ![](../assets/create-account-5.png)
 

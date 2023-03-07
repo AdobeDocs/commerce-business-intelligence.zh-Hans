@@ -1,15 +1,15 @@
 ---
 title: 连接Google Analytics
-description: 了解如何将Google Analytics与 [!DNL MBI].
+description: 了解如何连接Google Analytics [!DNL MBI].
 exl-id: 10e813f1-0306-4bdd-8222-e6364ac624de
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
 
-# 连接 [!DNL Google Analytics]
+# Connect [!DNL Google Analytics]
 
 >[!NOTE]
 >
@@ -17,41 +17,41 @@ ht-degree: 0%
 
 ![](../../../assets/google-analytics-logo.png)
 
-[!DNL Google Analytics] 是互联网上使用最广泛的Web分析服务。 实施 [!DNL Google Analytics] 通过网站上的，您可以跟踪访客如何使用您的网站、哪些内容很有吸引力、访客在哪里退出等。 在 [!DNL MBI]与其他数据一起，将提高网站的整体健康性和可用性。
+[!DNL Google Analytics] 是Internet上使用最广泛的Web分析服务。 实施 [!DNL Google Analytics] 允许您跟踪访客如何使用您的网站、哪些内容有吸引力、访客的退出位置等。 在中分析这些指标 [!DNL MBI]与其他数据一起使用可提高网站的整体运行状况和可用性。
 
-让我们从进入 [!DNL Google Analytics] 凭据 [!DNL MBI]:
+通过输入您的 [!DNL Google Analytics] 凭据进入 [!DNL MBI]：
 
 1. 转到 **[!UICONTROL Manage Data** > **Integrations]** 页面。
 1. 单击 **[!UICONTROL Add Integration]**，位于屏幕右侧。
-1. 单击 [!DNL Google Analytics] 图标。 这将打开 [!DNL Google Analytics] 凭据页面。
-1. 输入 [!DNL Google Analytics] 凭据。 授权过程完成后，您将被重定向回 [!DNL MBI].
-1. 将显示配置文件ID列表。 检查要连接的用户档案 [!DNL MBI]. 如果您有多个用户档案，并且需要一些帮助来确定哪个是用户档案，请参阅连接多个 [!DNL Google Analytics] 用户档案部分。
+1. 单击 [!DNL Google Analytics] 图标。 这将打开 [!DNL Google Analytics] “身份证明”页。
+1. 输入您的 [!DNL Google Analytics] 凭据。 授权过程完成后，您将被重定向回 [!DNL MBI].
+1. 此时将显示配置文件ID列表。 检查要连接的配置文件 [!DNL MBI]. 如果您有多个配置文件，并且需要一些帮助来识别哪个配置文件是哪个，请参阅连接多个 [!DNL Google Analytics] 配置文件部分。
 
    ![](../../../assets/list-profile-id.png)<!--{: width="600px"}-->
 
-1. 更改将自动保存，因此单击 **返回连接** 等你完成。
+1. 更改会自动保存，因此请单击 **返回连接** 等你完事了。
 
 ## 连接多个 [!DNL Google Analytics] 用户档案
 
-您可能有多个网站连接到一个网站 [!DNL Google Analytics] 帐户，由其自己标识 [!DNL Google Analytics] 配置文件ID。 在这种情况下，您可以选择在 [!DNL MBI]. 只需检查要在用户档案选择步骤中包含的用户档案ID即可。
+您可能已将多个网站连接到一个 [!DNL Google Analytics] 帐户，由其自身标识 [!DNL Google Analytics] 配置文件ID。 在这种情况下，您可以选择将您的所有配置文件ID包含在 [!DNL MBI]. 检查要在用户档案选择步骤中包含的用户档案ID。
 
-确定特定网站的 [!DNL Google Analytics] 配置文件ID:
+识别特定网站的 [!DNL Google Analytics] 配置文件ID：
 
 1. 登录 [!DNL Google Analytics]
-1. 转到特定网站的 [!DNL Google Analytics] 仪表板
-1. 查看URL — 配置文件ID对应于以下8个数字 `p` 在行末：
+1. 前往特定网站的 [!DNL Google Analytics] 仪表板
+1. 查看URL — 配置文件ID对应于以下八个数字 `p` 行末：
 
    `www.google.com/analytics/web/#home/a11345062w43527078p**XXXXXXXX**/`
 
-## 断开连接 [!DNL Google Analytics] 从 [!DNL MBI] {#disconnect}
+## 断开连接 [!DNL Google Analytics] 起始日期 [!DNL MBI] {#disconnect}
 
-1. 访问 [!DNL Google Analytics] [帐户设置](https://www.google.com/accounts/) 页面。
-1. 在 `Security` ，然后单击 **[!UICONTROL edit]** 下一页 `Authorizing` 应用程序和站点。
-1. 单击 **[!UICONTROL revoke access]** 下一页 [!DNL MBI].
+1. 访问您的 [!DNL Google Analytics] [帐户设置](https://accounts.google.com/) 页面。
+1. 在 `Security` 部分，然后单击 **[!UICONTROL edit]** 旁边 `Authorizing` 应用程序和站点。
+1. 单击 **[!UICONTROL revoke access]** 旁边 [!DNL MBI].
 
 ## 相关：
 
 * [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
-* [连接 [!DNL Google Adwords]](../integrations/google-adwords.md)
+* [正在连接 [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [分析网站活动和客户转化率](../../analysis/web-act-cust-conversion.md)
-* [使用跟踪用户获取数据 [!DNL Google Analytics] cookie](../../analysis/google-track-user-acq.md)
+* [使用跟踪用户获取数据 [!DNL Google Analytics] Cookie](../../analysis/google-track-user-acq.md)

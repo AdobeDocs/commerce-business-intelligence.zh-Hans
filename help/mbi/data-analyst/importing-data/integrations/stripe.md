@@ -1,10 +1,10 @@
 ---
 title: 连接条带
-description: 了解如何管理和跟踪您企业的付款和发票数据。
+description: 了解如何管理和跟踪企业的付款和发票数据。
 exl-id: c038f2a9-b2bd-4e45-93f9-12d2e5077b31
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---
@@ -17,33 +17,33 @@ ht-degree: 0%
 
 ![](../../../assets/stripe-logo.png)
 
-[!DNL Stripe] 允许您管理和跟踪业务的付款和发票数据。 连接 [!DNL Stripe] 帐户 [!DNL MBI] 是一个简单的两步流程：
+[!DNL Stripe] 允许您管理和跟踪企业的付款和发票数据。 正在连接 [!DNL Stripe] 目标帐户 [!DNL MBI] 是一个简单的两步过程：
 
-1. [添加 [!DNL Stripe] 作为 [!DNL MBI]](#stepone)
-1. [允许 [!DNL MBI] 访问 [!DNL Stripe] 数据](#steptwo)
+1. [添加 [!DNL Stripe] 作为中的数据源 [!DNL MBI]](#stepone)
+1. [允许 [!DNL MBI] 访问您的 [!DNL Stripe] 数据](#steptwo)
 
 ## 添加 [!DNL Stripe] 作为数据源 {#stepone}
 
-1. 转到 `Connections` 页面下 **[!UICONTROL Admin** > **Connections]**.
-1. 单击 **[!UICONTROL Add a Data Source]**，位于屏幕右侧，位于 `Data Sources` 表。
-1. 单击 [!DNL Stripe] 图标。 这将显示 `[!DNL Stripe] authorization` 页面。
+1. 转到 `Connections` 页面位于 **[!UICONTROL Admin** > **Connections]**.
+1. 单击 **[!UICONTROL Add a Data Source]**，位于屏幕右侧上方的 `Data Sources` 表格。
+1. 单击 [!DNL Stripe] 图标。 这会显示 `[!DNL Stripe] authorization` 页面。
 1. 单击 **[!UICONTROL Connect with Stripe]**.
 
-## 允许 [!DNL MBI] 访问 [!DNL Stripe] 数据 {#steptwo}
+## 允许 [!DNL MBI] 访问您的 [!DNL Stripe] 数据 {#steptwo}
 
-单击 **[!UICONTROL Connect with Stripe]**，则会显示访问请求页面。
+单击后 **[!UICONTROL Connect with Stripe]**，则会显示访问请求页面。
 
 1. 单击 **[!UICONTROL Sign in with Stripe to Continue]**.
 
-1. 输入您的凭据并单击 **[!UICONTROL Sign in to your account]**.
+1. 输入您的凭据，然后单击 **[!UICONTROL Sign in to your account]**.
 
 1. 单击后，将验证您的凭据，并将您定向回 [!DNL MBI].
 
-1. 如果连接成功，则 *连接成功！* 消息将显示在屏幕顶部。
+1. 如果连接成功， *连接成功！* 消息显示在屏幕顶部。
 
 ## 相关：
 
-如果你更懂技术，那么 [[!DNL Stripe] API文档](https://stripe.com/docs/api) 可以作为有用资源，进一步了解 [!DNL Stripe] 与 [!DNL MBI].
+如果你更懂技术，那么 [[!DNL Stripe] API文档](https://stripe.com/docs/api) 可以成为详细了解如何操作的有用资源 [!DNL Stripe] 与集成 [!DNL MBI].
 
 * [预期 [!DNL Stripe] 数据](../integrations/stripe-data.md)
 * [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
