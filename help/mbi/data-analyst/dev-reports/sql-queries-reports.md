@@ -155,4 +155,11 @@ ht-degree: 0%
 
 ## MBI元素
 
-|**`SQL Clause`**|**`Metric`**|**`Filter`**|**`Report group by`**|**`Report time frame`**|**`Path`**|**`Calculated column inputs`**|**`Source table`**| |—|—|—|—|—|—|—|—|—| |`SELECT`X-|X-|-|X-| |`FROM`|-|-|-|-|-|X| |`WHERE`X和X |`WHERE` （含时间元素）|-|-|-|X|-|-|-| |`JOIN...ON`X和X |`GROUP BY`X轴线
+|**`SQL Clause`**|**`Metric`**|**`Filter`**|**`Report group by`**|**`Report time frame`**|**`Path`**|**`Calculated column inputs`**|**`Source table`**| 
+|--|--|--|--|--|--|--|--|
+|`SELECT`|X|-|X|-|-|X|-|
+|`FROM`|-|-|-|-|-|-|X|
+|`WHERE`|-|X|-|-|-|-|-|
+|`WHERE` （含时间元素）|-|-|-|X|-|-|-|
+|`JOIN...ON`|-|X|-|-|X|X|-|
+|`GROUP BY`|-|-|X|-|-|-|-|
