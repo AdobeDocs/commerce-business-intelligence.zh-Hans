@@ -2,20 +2,16 @@
 title: MBI Essentials与Pro
 description: 了解MBI Essentials与MBI Pro有何不同。
 exl-id: 624a6285-8497-43d9-a56d-8ae503e0e2dd
-source-git-commit: f358f11586e4b7c44e9192584ea0fdeff5526287
+source-git-commit: 23177d8235987354e17cca72d753b5c4afa0dcc9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '86'
+ht-degree: 4%
 
 ---
 
 # [!DNL MBI Essentials] vs [!DNL MBI Pro]
 
->[!NOTE]
->
->这是的存档文档 [!DNL MBI].
-
-下表介绍了Essentials和Pro中包含的内容。
+下表介绍了旧版 `Essentials` 帐户与当前MBI帐户的比较。 Adobe不再提供 `Essentials`.
 
 |  | **`MBI Essentials`** | **`MBI Pro`** |
 |-----|-----|-----|
