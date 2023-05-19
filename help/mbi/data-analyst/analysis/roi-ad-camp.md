@@ -1,138 +1,138 @@
 ---
-title: 提高广告促销活动的ROI
-description: 了解评估营销活动性能的几种不同方法。
+title: 提高廣告促銷活動的ROI
+description: 瞭解評估行銷活動績效的幾種不同方法。
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '1237'
 ht-degree: 0%
 
 ---
 
-# 广告营销活动和ROI
+# Advertising Campaigns和ROI
 
-MBI让您能够轻松 [将广告成本数据与收入数据相结合](../../data-analyst/importing-data/integrations/google-adwords.md) 从您的数据库中。 这有助于您确定哪些营销活动具有最高的ROI。 本文探讨了评估营销活动性能的几种不同方法。
+[!DNL Adobe Commerce Intelligence] 讓您輕鬆進行 [結合廣告成本資料和收入資料](../../data-analyst/importing-data/integrations/google-adwords.md) 從您的資料庫。 這可協助您識別哪些行銷活動具有最高的投資報酬率(ROI)。 本主題探討評估行銷活動績效的幾個不同方法。
 
-## 先决条件
+## 必要條件
 
-* 导入您的广告成本数据：
-   * [连接您的 [!DNL Google AdWords] 到 [!DNL MBI]](../importing-data/integrations/google-adwords.md)：这将同步您的 [!DNL Adwords] 支出 [!DNL MBI]
-   * [上传其他广告成本数据](../importing-data/connecting-data/import-offline-ad-data.md)：对于没有直接连接器的通道，建议执行此操作 [!DNL MBI]
-   * 如果从多个来源导入成本数据，则可以 [合并](../../best-practices/consolidating-your-tables.md) 中的数据 [!DNL MBI]. 简单 [提交支持服务单](../../guide-overview.md).
-* [跟踪用户获取渠道数据](../analysis/google-track-user-acq.md)
+* 匯入您的廣告成本資料：
+   * [連線您的 [!DNL Google AdWords] 至 [!DNL Commerce Intelligence]](../importing-data/integrations/google-adwords.md)：這會同步您的 [!DNL Adwords] 支出 [!DNL Commerce Intelligence]
+   * [上傳其他廣告成本資料](../importing-data/connecting-data/import-offline-ad-data.md)：建議將此用於沒有直接聯結器的頻道 [!DNL Commerce Intelligence]
+   * 如果您從多個來源匯入成本資料，您可以 [consolidate](../../best-practices/consolidating-your-tables.md) 中的資料 [!DNL Commerce Intelligence]. 簡單 [提交支援票證](../../guide-overview.md#Submitting-a-Support-Ticket).
+* [追蹤使用者贏取管道資料](../analysis/google-track-user-acq.md)
 
-## 用户获取促销活动
+## 使用者贏取行銷活動
 
-针对用户获取的促销活动可以从多个角度进行衡量，包括：
+以贏取使用者為目標的行銷活動可從多個角度進行測量，包括：
 
-1. 获得营销活动的新用户数
-1. 从注册到购买营销活动的转化率
-1. 基于平均用户生命周期值(LTV)的促销活动ROI
+1. 從行銷活動取得的新使用者人數
+1. 從註冊到購買行銷活動的轉換率
+1. 根據平均使用者期限值(LTV)的促銷活動ROI
 
-有关上述分析(1)和(2)的详情，请参阅以下主题的独立教程： [识别您的主要营销渠道](../analysis/most-value-source-channel.md). 在这里，您可以探索分析(3)来衡量一段时间内的促销活动ROI。 这可回答从特定营销活动获得的用户是否产生了足够的生命周期收入来覆盖收购成本。
+上述分析(1)和(2)會在單獨的教學課程中探討，主題為 [識別您的主要行銷管道](../analysis/most-value-source-channel.md). 在這裡，您可以探索分析(3)來測量一段時間內的行銷活動ROI。 此引數可回答使用者從特定行銷活動取得的收入，是否足以支付取得成本。
 
 >[!NOTE]
 >
->此示例假定所有促销活动成本都专门用于获取新用户。 实际上，您的促销活动成本还与获得未转化访问次数、回头客等共用。 假设所有成本都用于获取新的注册用户，则生成的ROI将考虑最坏的情况（每次获取的最高成本）。 您可以确保您的实际ROI高于您的计算。
+>此範例假設所有行銷活動成本都專門用於取得新使用者。 實際上，您的行銷活動成本也會與獲得未轉換的造訪、重複購買者等共用。 假設所有成本都用於取得新的註冊使用者，則產生的ROI會考慮最壞的情況（每次取得成本最高）。 您可以確定您的實際ROI高於您的計算。
 >
->示例：假设您在一个产生10个新用户和10个重复购买者的营销活动上花费了$20，则每个新用户的实际成本为$1。 但是，假设所有成本都花在了收购新用户上，那么每次收购的成本是2美元。)
+>範例：假設您在產生10個新使用者和10個重複購買者的行銷活動上花費$20，則您每個新使用者的實際成本為$1。 但是，假設所有成本都花在收購新使用者上，則每次收購的成本為2美元。
 
-**1. 首先创建一个按促销活动划分广告成本的图表：**
+**1. 首先，請建立可依促銷活動劃分廣告成本的圖表：**
 
-1. 创建 [!UICONTROL Metric] 你花的时间总和
-1. 转到 [!UICONTROL Data > Metrics]
-1. 选择 `Add New Metric` 并选择 [!DNL `Adwords...`] 正在录制 [!DNL AdWords] 成本数据。
-1. 在指标编辑器中，为您的指标提供一个名称(例如， [!UICONTROL AdWord Cost])
-1. 使用下拉菜单执行 **总和** 在 `adCost` 中的列 [!DNL Adwords...] 表（更改），排序依据： `date` 列。
+1. 建立 [!UICONTROL Metric] 總和就是您在一段時間內的花費
+1. 前往 [!UICONTROL Data > Metrics]
+1. 選取 `Add New Metric` 並選取 [!DNL `Adwords...`] 正在錄製您的 [!DNL AdWords] 成本資料。
+1. 在量度編輯器中，為您的量度命名(例如， [!UICONTROL AdWord Cost])
+1. 使用下拉式清單，執行 **總和** 於 `adCost` 中的欄 [!DNL Adwords...] 表格（變更），排序依據： `date` 欄。
    ![](../../assets/success-add-new-metric.png)<!--="500" height="303"}-->
-1. 单击 `Back to Metric List` 转到顶部的任何仪表板。
+1. 按一下 `Back to Metric List` 前往頂端的任何儀表板。
 
-1. 创建按营销活动划分区段开支的报表
-1. 在任意功能板中，单击 [!UICONTROL Add Report > Create report]
-1. 选择 [!UICONTROL Adword Cost] 您刚刚创建的量度
-1. 设置 [!UICONTROL Time period] 到 `All-time`、和 [!UICONTROL Interval] 到 `None`
-1. 在 `Group by` 选项卡，添加 `campaign` 作为 [!UICONTROL grouping field]，然后单击 `Add All` 在盒子里。
-1. 此报表可显示您的所有时间 [!DNL AdWords] 按营销活动列出的成本
+1. 建立行銷活動所花費的區段報表
+1. 在任何控制面板中，按一下 [!UICONTROL Add Report > Create report]
+1. 選取 [!UICONTROL Adword Cost] 您剛才建立的量度
+1. 設定 [!UICONTROL Time period] 至 `All-time`、和 [!UICONTROL Interval] 至 `None`
+1. 在 `Group by` 標籤，新增 `campaign` 作為 [!UICONTROL grouping field]，然後按一下 `Add All` 在方塊中。
+1. 此報表顯示您的所有時間 [!DNL AdWords] 成本（依行銷活動）
 
-**2. 创建一个按营销活动计数新用户的报表：**
+**2. 建立可依行銷活動計算新使用者的報表：**
 
-1. 在任意功能板中，单击 **[!UICONTROL Add Report > Create report]**
-1. 选择 `New users` 用于计算一段时间内新注册用户数的量度
-1. 设置 [!UICONTROL Time period] 到 `All-time`、和 [!UICONTROL Interval] 到 `None`
-1. 在 `Group by` 选项卡，添加 `campaign` 作为 `grouping field`，然后单击 **`Add All`** 在框中
-1. 此报表按营销活动显示您的所有时间注册用户
+1. 在任何控制面板中，按一下 **[!UICONTROL Add Report > Create report]**
+1. 選取 `New users` 計算一段時間內新註冊使用者人數的量度
+1. 設定 [!UICONTROL Time period] 至 `All-time`、和 [!UICONTROL Interval] 至 `None`
+1. 在 `Group by` 標籤，新增 `campaign` 作為 `grouping field`，然後按一下 **`Add All`** 在方塊中
+1. 此報表依行銷活動顯示您所有時間的註冊使用者
 
-**3. 创建一个报表，按营销活动对平均用户LTV进行分段：**
+**3. 建立報表，依行銷活動對平均使用者LTV進行分段：**
 
-1. 在任意功能板中，单击 **[!UICONTROL Add Report > Create report]**
-1. 选择 `Average lifetime revenue` 计算平均用户生命周期收入的量度
-1. 设置 [!UICONTROL Time period] 到 `All-time`、和 [!UICONTROL Interval] 到 `None`
-1. 在 `Group by` 选项卡，添加 `campaign` 或 `utm\_campaign` 作为 [!UICONTROL grouping field]，然后单击 `Add All` 在框中
-1. 此报表可按营销活动显示您的平均用户生命周期收入
+1. 在任何控制面板中，按一下 **[!UICONTROL Add Report > Create report]**
+1. 選取 `Average lifetime revenue` 計算平均使用者期限收入的量度
+1. 設定 [!UICONTROL Time period] 至 `All-time`、和 [!UICONTROL Interval] 至 `None`
+1. 在 `Group by` 標籤，新增 `campaign` 或 `utm\_campaign` 作為 [!UICONTROL grouping field]，然後按一下 `Add All` 在方塊中
+1. 此報表顯示依行銷活動的平均使用者期限收入
 
-**最后，通过将以下三个分析汇总到一个报表中来计算促销活动ROI：**
+**最後，將這三項分析整合在一份報表中，以計算行銷活動ROI：**
 
-1. 在任意功能板中，单击 **[!UICONTROL Add Report > Create new report]**
-1. 将添加为输入，然后使用上面使用的三个量度。 每个用户档案都分配有一个字母(例如，\[`A`\]， \[`B`\]和\[`C`\])
-1. [!UICONTROL Cost]：添加AdWords成本量度 — 这是变量\[A\]。 按营销活动可返回成本。
-1. [!UICONTROL Users]：添加指标“新用户” — 这是变量\[B\]。 这将返回按营销活动划分的用户数。
-1. [!UICONTROL LTV]：添加量度平均生命周期收入 — 这是变量\[`C`\]。 这将按营销活动返回LTV。
+1. 在任何控制面板中，按一下 **[!UICONTROL Add Report > Create new report]**
+1. 新增作為輸入，使用上述三個量度。 每個檔案都會指派一個字母(例如，\[`A`\]， \[`B`\]和\[`C`\])
+1. [!UICONTROL Cost]：新增量度AdWords成本 — 此為變數\[A\]。 依行銷活動傳回成本。
+1. [!UICONTROL Users]：新增量度新使用者 — 這是變數\[B\]。 這會傳回行銷活動的使用者人數。
+1. [!UICONTROL LTV]：新增量度平均期限收入 — 此為變數\[`C`\]。 這會依行銷活動傳回LTV。
 
-1. 单击“图表”一字旁边的隐藏图标，以便集中在该表中
-1. 现在使用 `Add Formula` 要组合这些量度，请执行以下操作：
-1. [!UICONTROL ROI]：输入公式 `(\[C\]-\[A\]/\[B\])/(\[A\]/\[B\])`，如果\[`A`\]表示 `Ad Cost by Campaigns`， \[`B`\]表示 `New users by campaigns`，和\[`C`\] `LTV by campaigns`. 这会返回以下比率：（平均用户LTV — 每次购置的平均成本）/（每次购置的平均成本）
-1. [!UICONTROL Avg Return per User]：输入公式 **\[`C`\]-(\[`A`\]/\[`B`\])**. 这将返回通过计算（平均用户LTV） — （每次购买的平均成本）得出的用户的平均利润。
-1. [!UICONTROL CPA]：输入公式 **`\[A\]/\[B\]`**. 这将返回每次客户获取的实际营销活动成本。
-1. 要从中包含的其他潜在量度 [!DNL AdWords] 数据包括  `Impressions` 和 `adClicks` (起始日期 [!DNL AdWords] data)，以及总计 `number of orders` 通过特定营销活动制作。
-1. 在用户注册或首次购买后30天和90天根据LTV计算ROI可能也很有趣。
+1. 按一下「圖表」一字旁邊的隱藏圖示，即可將焦點放在表格上
+1. 現在使用 `Add Formula` 若要結合這些量度，如下所示：
+1. [!UICONTROL ROI]：輸入公式 `(\[C\]-\[A\]/\[B\])/(\[A\]/\[B\])`，若為\[`A`\]表示 `Ad Cost by Campaigns`， \[`B`\]表示 `New users by campaigns`，和\[`C`\] `LTV by campaigns`. 這會傳回（平均使用者LTV — 每次收購的平均成本） / （每次收購的平均成本）的比率
+1. [!UICONTROL Avg Return per User]：輸入公式 **\[`C`\]-(\[`A`\]/\[`B`\])**. 透過計算（平均使用者LTV） — （每次收購的平均成本），這會傳回使用者的平均利潤。
+1. [!UICONTROL CPA]：輸入公式 **`\[A\]/\[B\]`**. 這會傳回實際促銷活動的每次贏取成本。
+1. 要納入的其他潛在量度 [!DNL AdWords] 資料包含的總和  `Impressions` 和 `adClicks` (從 [!DNL AdWords] 資料)，以及總計 `number of orders` 透過特定行銷活動建立。
+1. 根據使用者註冊或首次購買後30天和90天的LTV來計算ROI，也可能會很有趣。
 
-1. 您可以随时单击并拖动量度和公式，以重新排序报表中的列
-1. 命名报告并确保另存为表。
+1. 您可以隨時按一下並拖曳量度和公式，以重新排序報表的欄
+1. 為報表命名，並請務必儲存為表格。
 
-## 产品营销活动
+## 產品行銷活動
 
-您是否运行特定于产品的广告？ 如果是这样，您可以通过计算特定产品的收入/成本来衡量这些促销活动的ROI。
+您執行產品專屬廣告嗎？ 若是如此，您可以計算特定產品的收入/成本，以評估這些促銷活動的ROI。
 
 >[!NOTE]
 >
->此示例假设所有促销活动成本都专门用于生成特定产品的购买。 假设所有成本都花在生成购买上，则生成的ROI将考虑最坏的情况（每次购买的最高成本）。 您可以确保实际ROI高于此计算。 示例：假设您在一个产生10个新用户和10次购买的营销活动上花费了$20，则每次购买的实际成本为$1。 假设所有成本都花在了获取新用户上，则每次购买的成本为2美元。)*
+>此範例假設所有行銷活動成本都專門用於產生特定產品的購買。 假設所有成本都花在產生購買上，則產生的ROI會考慮最壞的情況（最高每次購買成本）。 您可以確定您的實際ROI高於此計算。 範例：假設您在產生10個新使用者和10次購買的行銷活動上花費$20，您的每次購買實際成本為$1。 假設所有成本都是為了取得新使用者，則每次購買的成本為$2。
 
-开始之前， [提交支持服务单](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 要将以下维度联接到行项目表(`sales\_flat\_order\_item, order\_item`)：
+開始之前， [提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 若要將下列維度聯結至行專案表格(`sales\_flat\_order\_item, order\_item`)：
 
-* 订单的来源（如果您仅在用户级别跟踪反向链接来源，则加入用户的来源）
-* 订单的促销活动（如果您仅在用户级别跟踪反向链接来源，则加入用户的促销活动）
-* 订单媒介（如果您仅在用户级别跟踪反向链接来源，则加入用户的媒介）
+* 訂單的來源（如果您只追蹤使用者層級的轉介來源，則加入使用者的來源）
+* 訂單的行銷活動（如果您只追蹤使用者層級的轉介來源，則加入使用者的行銷活動）
+* 訂單媒體（如果您只追蹤使用者層級的轉介來源，則加入使用者的媒體）
 
-**1. 现在，首先创建一个图表，该图表返回特定产品的每个促销活动的收入：**
+**1. 現在先建立圖表，傳回特定產品的每個行銷活動的收入：**
 
-1. 在任意功能板中，单击 **[!UICONTROL Add Report > Create new report]**
-1. 选择 `Revenue by items` 计算行项目级别收入的量度
-1. 设置 [!UICONTROL Time period] 到 `All-time`、和 [!UICONTROL Interval] 到 `None`
-1. 在 `Filter by` 选项卡，添加 `product name 'IN'` 产品 `A`，产品 `B`，产品 `C`， ... ”并包含营销活动以逗号分隔的所有目标产品名称(例如， `product name 'IN' yellow t-shirt`， `red t-shirt, blue t-shirt`)
-1. 在 `Group by` 选项卡，添加 `order's campaign` 或 `order's utm\_campaign` 作为 `grouping` 字段，然后单击 **[!UICONTROL Add All]** 在框中
-1. 此报表按营销活动显示特定产品的收入
+1. 在任何控制面板中，按一下 **[!UICONTROL Add Report > Create new report]**
+1. 選取 `Revenue by items` 計算明細行專案層級收入的量度
+1. 設定 [!UICONTROL Time period] 至 `All-time`、和 [!UICONTROL Interval] 至 `None`
+1. 在 `Filter by` 標籤，新增 `product name 'IN'` 產品 `A`，產品 `B`，產品 `C`， ...」，並包含以逗號分隔之促銷活動鎖定的所有產品名稱(例如， `product name 'IN' yellow t-shirt`， `red t-shirt, blue t-shirt`)
+1. 在 `Group by` 標籤，新增 `order's campaign` 或 `order's utm\_campaign` 作為 `grouping` 欄位，然後按一下 **[!UICONTROL Add All]** 在方塊中
+1. 此報表依行銷活動顯示特定產品的收入
 
-**2. 要计算ROI，请再次将指标合并到一个报表中：**
+**2. 若要計算ROI，請再次將量度合併到一個報表中：**
 
-1. 在任意功能板中，单击 **[!UICONTROL Add Report > Create new report]**
-1. 添加 `Revenue by items` 量度，按照上述特定产品营销活动报表中的过滤器和分组说明进行筛选，然后单击 **[!UICONTROL Hide]** 在量度的标量值下方
-1. 现在添加 [!DNL AdWords Cost] 量度，按照过滤器中的说明进行分组 `Ad cost by campaigns` 您在中探索的报告 `User acquisition campaigns` 部分，然后单击 **[!UICONTROL Hide]** 在量度的标量值下方
-1. 设置好这些量度后，添加公式：
-1. [!UICONTROL ROI]：输入公式 `\[A\]/\[B\]`，如果 `\[A\]` 表示 `Revenue per campaign for specific product(s)` 和 `\[B\]` 表示 `Ad cost by campaigns`. 这会返回（特定产品的收入）/（促销活动成本）的比率
-1. [!UICONTROL Return]：输入公式 `\[A\]-\[B\]`. 通过计算（平均用户LTV） — （每次客户获取的平均成本），这会返回用户的平均利润
-1. （可选） [!UICONTROL Revenue]：取消隐藏 `Revenue by items` 量度以查看每个营销活动的特定产品的收入
-1. （可选） [!UICONTROL Cost]：取消隐藏 `AdWords Cost` 用于查看营销活动成本的量度
+1. 在任何控制面板中，按一下 **[!UICONTROL Add Report > Create new report]**
+1. 新增 `Revenue by items` 量度，依照上述特定產品報表之行銷活動中的篩選器和說明分組，然後按一下 **[!UICONTROL Hide]** 在量度的純量值下方
+1. 現在新增 [!DNL AdWords Cost] 量度，依照篩選條件進行，並按來自 `Ad cost by campaigns` 報告您探索的內容： `User acquisition campaigns` 區段，然後按一下 **[!UICONTROL Hide]** 在量度的純量值下方
+1. 備妥這些量度後，即可新增公式：
+1. [!UICONTROL ROI]：輸入公式 `\[A\]/\[B\]`，若為 `\[A\]` 表示 `Revenue per campaign for specific product(s)` 和 `\[B\]` 表示 `Ad cost by campaigns`. 這會傳回（特定產品的收入） / （促銷活動成本）的比率
+1. [!UICONTROL Return]：輸入公式 `\[A\]-\[B\]`. 這會透過計算（平均使用者LTV） — （每次收購的平均成本）傳回使用者的平均利潤
+1. （可選） [!UICONTROL Revenue]：取消隱藏 `Revenue by items` 量度以瞭解每個行銷活動的特定產品收入
+1. （可選） [!UICONTROL Cost]：取消隱藏 `AdWords Cost` 檢視行銷活動成本的量度
 
-1. 为报表命名，并确保将其另存为表
+1. 為報表命名，並請務必將其儲存為表格
 
-**3. 对每个广告的产品或产品组重复上述步骤1和2。**
+**3. 對每個廣告產品或產品群組重複上述步驟1和2。**
 
-## 相关文档
+## 相關檔案
 
-* [通过以下方式跟踪订单反向链接来源： [!DNL Google Analytics] 电子商务](../importing-data/integrations/google-ecommerce.md)
-* [跟踪数据库中的用户反向链接源](../analysis/google-track-user-acq.md)
-* [跟踪数据库中的用户设备、浏览器和操作系统数据](../analysis/track-usr-dev-browser.md)
-* [了解您最有价值的客户获取来源和渠道](../analysis/most-value-source-channel.md)
-* [连接您的 [!DNL Google Adwords] 帐户](../importing-data/integrations/google-adwords.md)
-* [如何 [!DNL Google Analytics] UTM归因工作？](../analysis/utm-attributes.md)
-* [在中进行UTM标记的五个最佳实践 [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)
+* [透過以下方式追蹤訂單反向連結來源： [!DNL Google Analytics] 電子商務](../importing-data/integrations/google-ecommerce.md)
+* [追蹤資料庫中的使用者反向連結來源](../analysis/google-track-user-acq.md)
+* [追蹤資料庫中的使用者裝置、瀏覽器和作業系統資料](../analysis/track-usr-dev-browser.md)
+* [探索您最有價值的贏取來源和管道](../analysis/most-value-source-channel.md)
+* [連線您的 [!DNL Google Adwords] 帳戶](../importing-data/integrations/google-adwords.md)
+* [如何 [!DNL Google Analytics] UTM歸因是否有效？](../analysis/utm-attributes.md)
+* [在中進行UTM標籤的五個最佳做法 [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)

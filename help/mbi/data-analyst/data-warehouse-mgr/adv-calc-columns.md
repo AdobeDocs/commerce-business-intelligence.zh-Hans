@@ -1,39 +1,39 @@
 ---
-title: 高级计算列类型
-description: 了解大多数使用列案例的基础知识 — 但您可能希望计算列比Data warehouse管理器可创建的要复杂一些。
+title: 進階計算欄型別
+description: 瞭解大多數使用欄案例的基本知識 — 但您可能希望計算欄比Data Warehouse管理員可建立的要複雜一些。
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '898'
 ht-degree: 4%
 
 ---
 
-# 高级计算列类型
+# 進階計算欄型別
 
-您可能尝试创建的许多分析都涉及使用 **新建列** 您希望 `group by` 或 `filter by`. 此 [创建计算列](../data-warehouse-mgr/creating-calculated-columns.md) 本教程介绍了大多数用例的基础知识，但您可能希望计算列比Data warehouse管理器可以创建的列更复杂。
+您可能想要建立的許多分析都涉及使用 **新欄** 您想要的 `group by` 或 `filter by`. 此 [建立計算欄](../data-warehouse-mgr/creating-calculated-columns.md) 教學課程涵蓋大部分使用案例的基本知識，但您可能會想要讓計算欄比Data Warehouse管理員可建立的要複雜一些。
 {： #top}
 
-这些类型的列可由Data warehouse分析员的Adobe团队创建。 要定义新的计算列，请提供以下信息：
+這些型別的欄可由Data Warehouse分析師的Adobe團隊建立。 若要定義新的計算欄，請提供下列資訊：
 
-1. 此 **`definition`** （包括输入、公式或格式）
-1. 此 **`table`** 您希望在其上创建列
-1. 任意 **`example data points`** 描述列应包含的内容
+1. 此 **`definition`** （包括輸入、公式或格式設定）
+1. 此 **`table`** 要在其上建立欄的位置
+1. 任何 **`example data points`** 說明欄應包含的內容
 
-以下是用户通常认为有用的高级计算列的一些常见示例：
+以下是進階計算欄的一些常見範例，使用者經常會發現這些範例很實用：
 
-* [按顺序订购（或排名）事件](#compareevents)
-* [查找两个事件之间的时间](#twoevents)
-* [比较序列事件值](#sequence)
-* [转换货币](#currency)
-* [转换时区](#timezone)
-* [其他内容](#else)
+* [依序訂購（或排名）事件](#compareevents)
+* [尋找兩個事件之間的時間](#twoevents)
+* [比較循序事件值](#sequence)
+* [轉換貨幣](#currency)
+* [轉換時區](#timezone)
+* [其他內容](#else)
 
-## 我正在尝试按顺序排列活动 {#compareevents}
+## 我正在嘗試依序排序事件 {#compareevents}
 
-这称为 **事件编号** 计算列。 这意味着您正在尝试查找特定事件所有者（如客户或用户）发生事件的顺序。
+這稱為 **事件編號** 計算欄。 這表示您正嘗試尋找特定事件擁有者（例如客戶或使用者）發生事件的順序。
 
-示例如下：
+範例如下：
 
 | **`event\_id`** | **`owner\_id`** | **`timestamp`** | **`Owner's event number`** |
 |-----|-----|-----|-----|
@@ -45,25 +45,25 @@ ht-degree: 4%
 
 {style="table-layout:auto"}
 
-事件数计算列可用于观察数据中首次事件、重复事件或第n个事件之间的行为差异。
+事件編號計算欄可用來觀察資料中首次事件、重複事件或第n個事件之間的行為差異。
 
-要查看客户订单编号列的实际操作情况吗？ 单击图像可查看它在报表中用作分组依据维度。
+想要檢視實際運作中的客戶訂單編號欄位嗎？ 按一下影像，可檢視在報表中做為分組依據維度使用。
 
-![使用事件编号计算列对按客户的订单编号进行分组。](../../assets/EventNumber.gif)<!--{: style="max-width: 500px;"}-->
+![使用事件編號計算欄至「依客戶訂單編號分組」。](../../assets/EventNumber.gif)<!--{: style="max-width: 500px;"}-->
 
-要创建此类型的计算列，您需要知道：
+若要建立此型別的計算欄，您需要知道：
 
-* 要在其上创建此列的表
-* 标识事件所有者的字段(`owner\_id` 在此示例中)
-* 要按其排序事件的字段(`timestamp` 在此示例中)
+* 您要建立此欄的表格
+* 識別事件擁有者的欄位(`owner\_id` 在此範例中)
+* 您要排序事件的欄位(`timestamp` 在此範例中)
 
-[返回页首](#top)
+[返回頁首](#top)
 
-## 我试着找出两件事之间的时间。 {#twoevents}
+## 我正在嘗試尋找兩個事件之間的時間。 {#twoevents}
 
-这称为 `date difference` 计算列。 这意味着您正在尝试根据事件时间戳查找属于单条记录的两个事件之间的时间。
+這稱為 `date difference` 計算欄。 這表示您正嘗試根據事件時間戳記，尋找屬於單一記錄之兩個事件之間的時間。
 
-示例如下：
+範例如下：
 
 | `id` | `timestamp\_1` | `timestamp\_2` | `Seconds between timestamp\_2 and timestamp\_1` |
 |-----|-----|-----|-----|
@@ -72,50 +72,50 @@ ht-degree: 4%
 
 {style="table-layout:auto"}
 
-日期差异计算列可用于创建计算两个事件之间的平均时间或中间时间的量度。 单击以下图像以查看 `Average time to first order` 量度在报表中使用。
+日期差異計算欄可用來建立量度，以計算兩個事件之間的平均或中間時間。 按一下以下影像，檢視 `Average time to first order` 量度用於報表中。
 
-![使用日期差异计算列计算平均第一订单时间。](../../assets/DateDifference.gif)<!--{: style="max-width: 500px;"}-->
+![使用日期差異計算欄來計算平均第一筆訂購時間。](../../assets/DateDifference.gif)<!--{: style="max-width: 500px;"}-->
 
-要创建此类型的计算列，您需要知道：
+若要建立此型別的計算欄，您需要知道：
 
-* 要在其上创建此列的表
-* 您希望了解两者之间差异的两个时间戳
+* 您要建立此欄的表格
+* 您想知道兩者之間差異的兩個時間戳記
 
-[返回页首](#top)
+[返回頁首](#top)
 
-## 我正在尝试比较顺序事件值。 {#sequence}
+## 我正在嘗試比較循序事件值。 {#sequence}
 
-这称为 **顺序事件比较**. 这意味着您正在尝试查找某个值（货币、数字、时间戳）与所有者上一个事件的相应值之间的差值。
+這稱為 **循序事件比較**. 這表示您正嘗試尋找某個值（貨幣、數字、時間戳記）與擁有者上一個事件的對應值之間的差值。
 
-示例如下：
+範例如下：
 
 | **`event\_id`** | **`owner\_id`** | **`timestamp`** | **`Seconds since owner's previous event`** |
 |-----|-----|-----|-----|
-| 1 | `A` | 2015-01-01 00:00:00 | 空 |
-| 2 | `B` | 2015-01-01 00:30:00 | 空 |
+| 1 | `A` | 2015-01-01 00:00:00 | NULL |
+| 2 | `B` | 2015-01-01 00:30:00 | NULL |
 | 3 | `A` | 2015-01-01 02:00:00 | 7720 |
 | 4 | `A` | 2015-01-02 13:00:00 | 126000 |
 | 5 | `B` | 2015-01-03 13:00:00 | 217800 |
 
 {style="table-layout:auto"}
 
-顺序事件比较可用于查找每个顺序事件之间的平均时间或中间时间。 单击以下图像查看 **订单之间的平均时间和中间时间** 量度正在起作用。
+循序事件比較可用來找出每個循序事件之間的平均或中間時間。 按一下下方影像以檢視 **訂單之間的平均和中位時間** 量度運作中。
 
-=![使用连续事件比较计算列计算订单之间的平均和中位时间。](../../assets/SeqEventComp.gif)<!--{: style="max-width: 500px;"}-->
+=![使用循序事件比較計算欄來計算訂單之間的平均和中位時間。](../../assets/SeqEventComp.gif)<!--{: style="max-width: 500px;"}-->
 
-要创建此类型的计算列，您需要知道：
+若要建立此型別的計算欄，您需要知道：
 
-* 要在其上创建此列的表
-* 标识事件所有者的字段(`owner\_id` 在此示例中)
-* 要查看每个连续事件之间差异的值字段(`timestamp` 在此示例中)
+* 您要建立此欄的表格
+* 識別事件擁有者的欄位(`owner\_id` 在此範例中)
+* 您想要檢視每個循序事件(`timestamp` 在此範例中)
 
-[返回页首](#top)
+[返回頁首](#top)
 
-## 我正在尝试兑换货币。 {#currency}
+## 我正在嘗試轉換貨幣。 {#currency}
 
-A **货币换算** 计算列根据事件时的汇率将交易记录金额从记录的币种折换为报告币种。
+A **貨幣轉換** 「計算」欄會根據事件時的匯率，將交易金額從記錄的幣別轉換為報表幣別。
 
-示例如下：
+範例如下：
 
 | **`id`** | **`timestamp`** | **`transaction\_value\_EUR`** | **`transaction\_value\_USD`** |
 |-----|-----|-----|-----|
@@ -124,20 +124,20 @@ A **货币换算** 计算列根据事件时的汇率将交易记录金额从记�
 
 {style="table-layout:auto"}
 
-要创建此类型的计算列，您需要知道：
+若要建立此型別的計算欄，您需要知道：
 
-* 要在其上创建此列的表
-* 要转换的交易记录金额列
-* 指示记录数据的货币（通常是ISO代码）的列
-* 首选报表货币
+* 您要建立此欄的表格
+* 您要轉換的交易金額欄
+* 指出記錄資料時所用的貨幣（通常是ISO代碼）的欄
+* 偏好的報表貨幣
 
-[返回页首](#top)
+[返回頁首](#top)
 
-## 我正在尝试转换时区。 {#timezone}
+## 我正在嘗試轉換時區。 {#timezone}
 
-A **时区转换** 计算列将特定数据源的时间戳从其记录的时区转换为报表时区。
+A **時區轉換** 計算欄會將特定資料來源的時間戳記從記錄的時區轉換為報表時區。
 
-示例如下：
+範例如下：
 
 | **`id`** | **`timestamp\_UTC`** | **`timestamp\_ET`** |
 |-----|-----|-----|
@@ -146,23 +146,23 @@ A **时区转换** 计算列将特定数据源的时间戳从其记录的时区�
 
 {style="table-layout:auto"}
 
-要创建此类型的计算列，您需要知道：
+若要建立此型別的計算欄，您需要知道：
 
-* 要在其上创建此列的表
-* 要转换的时间戳列
-* 记录数据时区
-* 首选报表时区
+* 您要建立此欄的表格
+* 您要轉換的時間戳記欄
+* 記錄資料的時區
+* 偏好的報告時區
 
-[返回页首](#top)
+[返回頁首](#top)
 
-## 我正在尝试做这里没有列出的事情。 {#else}
+## 我正在嘗試做這裡未列出的事情。 {#else}
 
-别担心。 这里没有列出它并不意味着它不可能。 data warehouse分析员的Adobe团队可以提供帮助。
+不用擔心。 並未列於此處並不表示不可能。 Data Warehouse分析師的Adobe團隊可提供協助。
 
-要定义新的计算列， [提交支持服务单](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 其中包含您希望构建的确切内容的详细信息。
+若要定義新的計算欄， [提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 提供您想要建置的確切內容的詳細資訊。
 
-## 相关文档
+## 相關檔案
 
-* [创建计算列](../data-warehouse-mgr/creating-calculated-columns.md)
-* [计算列类型](../data-warehouse-mgr/calc-column-types.md)
-* [构建 [!DNL Google ECommerce] 包含订单和客户数据的维度](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
+* [建立計算欄](../data-warehouse-mgr/creating-calculated-columns.md)
+* [計算欄型別](../data-warehouse-mgr/calc-column-types.md)
+* [建置 [!DNL Google ECommerce] 包含訂單和客戶資料的維度](../data-warehouse-mgr/bldg-google-ecomm-dim.md)

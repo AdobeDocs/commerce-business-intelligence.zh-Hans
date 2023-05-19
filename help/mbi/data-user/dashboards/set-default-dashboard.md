@@ -1,26 +1,26 @@
 ---
-title: 设置默认仪表板
-description: 了解如何设置默认仪表板。
+title: 設定預設儀表板
+description: 瞭解如何設定預設儀表板。
 exl-id: a3fc64e3-b527-4c2c-848d-c0962cd20ff3
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 0%
 
 ---
 
-# 设置默认仪表板
+# 設定預設儀表板
 
-默认仪表板是您在打开时看到的第一个仪表板 [!DNL MBI].
+預設儀表板是您在開啟時看到的第一個儀表板 [!DNL Commerce Intelligence].
 
-1. 在功能板中，单击 **[!UICONTROL Dashboard Options]** 位于屏幕顶部。
+1. 在控制面板中，按一下 **[!UICONTROL Dashboard Options]** 位於熒幕頂端。
 
-1. 单击 **[!UICONTROL Make Default]** 在下拉菜单中。
+1. 按一下 **[!UICONTROL Make Default]** 在下拉式清單中。
 
-1. 显示确认提示时，单击 **[!UICONTROL Yes]** 以更改默认仪表板。
+1. 當確認提示顯示時，按一下 **[!UICONTROL Yes]** 以變更預設儀表板。
 
-现在，这是您的新默认信息板。
+現在這是您的新預設儀表板。
 
-示例：
+範例：
 
-![默认仪表板](../../assets/default_dashboard.gif)
+![預設儀表板](../../assets/default_dashboard.gif)

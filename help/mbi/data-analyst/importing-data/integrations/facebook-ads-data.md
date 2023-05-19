@@ -1,63 +1,61 @@
 ---
-title: 预期的Facebook Ads数据
-description: 了解建议同步到Data warehouse的表的简要概述
+title: 預期的Facebook Ads資料
+description: 瞭解建議同步至Data Warehouse之表格的簡短概觀
 exl-id: 0c8b907b-1a98-470b-bb2c-55327e88e502
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '329'
 ht-degree: 0%
 
 ---
 
-# 预期 [!DNL Facebook Ads] 数据
+# 預期 [!DNL Facebook Ads] 資料
 
-![](../../../assets/Facebook_Logo.png)
+在您擁有 [已連線您的 [!DNL Facebook Ads] 帳戶](../integrations/facebook-ads.md)，您可以使用 [Data Warehouse管理員](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) 以輕鬆追蹤相關資料欄位以供分析。
 
-在您拥有 [已连接 [!DNL Facebook Ads] 帐户](../integrations/facebook-ads.md)，您可以使用 [data warehouse管理器](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) 以轻松跟踪相关数据字段以供分析。
+本主題提供表格Adobe的簡短概觀，建議您同步至您的Data Warehouse。 這只會反白標示核心表格，因為有許多子表格。
 
-本文简要概述了Adobe建议您同步到Data warehouse的表。 这不是一个完整的列表，因为有相当多的子表。 它仅突出显示核心表。
+## 核心廣告行銷活動表格
 
-## 核心广告营销活动表
-
-这些表包含有关核心广告促销活动组件的数据。
+這些表格包含核心廣告行銷活動元件的相關資料。
 
 ### [`facebook _campaigns_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign-group)
 
-此表是中促销活动的核心表 [!DNL Facebook Ads] 帐户。 列包括 `campaign id`， `name`， `status (active/paused)`， `objective`.
+此表格為中行銷活動的核心表格 [!DNL Facebook Ads] 帳戶。 欄包括 `campaign id`， `name`， `status (active/paused)`， `objective`.
 
 ### [`facebook _adsets_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign)
 
-此表记录是以下项目的核心表： [!DNL Facebook Ads] 在中设置 [!DNL Facebook Ads] 帐户。 列包括广告 `Campaign id/name` 广告集属于、预算、竞价类型、计划和受众定位信息。
+此表格記錄是以下專案的核心表格： [!DNL Facebook Ads] 在中設定 [!DNL Facebook Ads] 帳戶。 欄包含廣告 `Campaign id/name` 「廣告集」屬於、預算、競標型別、排程和對象鎖定目標資訊。
 
 ### [`facebook _ads_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/adgroup)
 
-此表记录了 [!DNL Facebook Ads] 帐户。 列包括广告信息，包括广告集及其所属的广告营销活动、广告投标、广告定位以及广告使用的特定创意（图像/文本）引用。
+此表格會將所有廣告記錄在 [!DNL Facebook Ads] 帳戶。 欄包含廣告資訊，包括廣告集及其所屬的廣告行銷活動、廣告投標、廣告目標定位，以及廣告使用的特定創意（影像/文字）參考。
 
 ### [`facebook _adcreative_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-creative)
 
-此表记录以下项目中使用的创意： [!DNL Facebook Ads]. 创意内容包括创意名称、描述以及适用的相关图像URL。
+此表格會記錄下列專案所使用的創意： [!DNL Facebook Ads]. 創意內容包括創意名稱、說明，以及適用的相關影像URL。
 
-## 分段营销活动表
+## 區段行銷活動表格
 
-下表包含每天每个促销活动/集/广告组合的条目，并按维度（如年龄、性别和国家/地区）分段。
+下表包含每個每日行銷活動/集合/廣告組合的專案，並按年齡、性別和國家/地區等維度分段。
 
 ### `facebook _ads insights_ (account-id)`
 
-此表包括每天每个促销活动/集/广告组合的条目，以及包括展示次数、点击次数、成本、cpc、cpm、cpp、ctr、覆盖率、社交范围和支出在内的统计数据。
+此表包括每天每個行銷活動/集合/廣告組合的專案，以及包括曝光數、點按數、成本、cpc、cpm、cpp、ctr、觸及率、社交觸及率和支出在內的統計資料。
 
 ### `facebook _ads insights_ (account-id)_~\_actions`
 
-这是 `facebook_ads_insights_{account_id}` 表格。 它包括根据不同营销活动发生的操作的转化数据。
+這是 `facebook_ads_insights_{account_id}` 表格。 其中包含根據不同行銷活動所發生動作的轉換資料。
 
 ### `facebook _ads insights country_ (account-id)`
 
-此表包含的信息与 `facebook_ads_insights_{account_id}` 表格并按国家/地区进行细分。
+此表格包含的資訊與 `facebook_ads_insights_{account_id}` 表格和區段（依國家區分）。
 
 ### `facebook ads insights age and gender (account-id)`
 
-此表包含的信息与 `facebook_ads_insights_{account_id}` 表格和按年龄和性别分列。
+此表格包含的資訊與 `facebook_ads_insights_{account_id}` 表格並按年齡和性別進行細分。
 
-## 相关
+## 相關
 
-* [正在连接 [!DNL Facebook Ads]](../integrations/facebook-ads.md)
-* [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [正在連線 [!DNL Facebook Ads]](../integrations/facebook-ads.md)
+* [重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

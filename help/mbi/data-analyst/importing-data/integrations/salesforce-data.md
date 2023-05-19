@@ -1,32 +1,32 @@
 ---
-title: 预期Salesforce数据
-description: 了解Salesforce数据中支持和不受支持的对象。
+title: 預期Salesforce資料
+description: 瞭解Salesforce資料中支援和不支援的物件。
 exl-id: 6625349f-2ec0-402d-8635-889a1f29811c
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
 
-# 预期 [!DNL Salesforce] 数据
+# 預期 [!DNL Salesforce] 資料
 
-[在 [!DNL Salesforce] 设置完成](../integrations/salesforce.md)，每个可查询项的表 [对象](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm)  — 已命名 `sf_/\{sobject-name}`  — 在您的Data warehouse中创建。
+晚於 [[!DNL Salesforce] 設定](../integrations/salesforce.md) 完整，每個可查詢專案都有一個表格 [物件](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm)  — 已命名 `sf_/\{sobject-name}`  — 在您的Data Warehouse中建立。
 
 >[!NOTE]
 >
->每个表的结构（列）取决于对象中包含的字段。
+>每個表格的結構（欄）取決於物件中包含的欄位。
 
-要获取您的组织可用的对象列表，请参阅 [!DNL Salesforce] [获取对象列表文档](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_describeGlobal.htm). 拥有对象列表后，请检出 [实体关系图(ERD)部分](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_erd_knowledge.htm) 之 [!DNL Salesforce] 文档，以了解实体如何相互关联。
+若要取得貴組織可用的物件清單，請參閱 [!DNL Salesforce] [取得物件清單檔案](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_describeGlobal.htm). 擁有物件清單後，請出庫 [實體關係圖(ERD)區段](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_erd_knowledge.htm) 之 [!DNL Salesforce] 說明檔案以瞭解實體如何相互關聯。
 
-## 不支持的对象
+## 不支援的物件
 
-目前， [!DNL Salesforce] 当前不会在其API中公开以下对象：
+目前， [!DNL Salesforce] 目前不會在其API中公開下列物件：
 
 * `Announcement`
 * `Attachment`
 * `ContentDocumentLink`
-* `External objects` - [什么是外部对象？](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_external_objects.htm)
+* `External objects` - [什麼是外部物件？](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_external_objects.htm)
 * `CollaborationGroupRecord`
 * `ContentDocument`
 * `ContentDocumentLink`
@@ -45,7 +45,7 @@ ht-degree: 0%
 * `UserProfileFeed`
 * `Vote`
 
-## 相关：
+## 相關：
 
-* [正在连接 [!DNL Salesforce]](../integrations/salesforce.md)
-* [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [正在連線 [!DNL Salesforce]](../integrations/salesforce.md)
+* [重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

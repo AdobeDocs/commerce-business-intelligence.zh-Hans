@@ -1,28 +1,28 @@
 ---
-title: 在组织范围内共享功能板
-description: 了解如何确保每个用户都有权访问 [!DNL MBI].
+title: 在整個組織內共用儀表板
+description: 瞭解如何確保每位使用者都可存取中的基本商業儀表板 [!DNL Commerce Intelligence].
 exl-id: 5afa8c3c-1673-4350-babf-3e4657292871
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 0%
 
 ---
 
-# 在组织范围内共享功能板
+# 在整個組織內共用儀表板
 
-很容易确保每个用户都有权访问 [!DNL MBI]. 通用功能板共享通过提供单一的“真相来源”，帮助贵组织提高协作和透明度。
+確保每位使用者都能輕鬆存取中的基本商務儀表板 [!DNL Adobe Commerce Intelligence]. 通用控制面板共用提供單一「信任來源」，可促進整個組織的共同作業和透明化。
 
-1. 要向同事显示您的洞察，请单击 **[!UICONTROL Share this Dashboard]** 来访问Advertising Cloud的帮助。
+1. 若要向同事展示您的深入分析，請按一下 **[!UICONTROL Share this Dashboard]** 在熒幕上方。
 
-1. 将显示用户列表。 列表中的第一个用户将是您的组织。 单击其名称旁边的复选框。
+1. 將會顯示使用者清單。 清單中的第一個使用者將是您的組織。 按一下名稱旁的核取方塊。
 
-1. 设置 `Permissions` 您希望其他用户拥有 —  `View`, `Edit`或 `None`.
+1. 設定層級 `Permissions` 您希望其他使用者擁有 —  `View`， `Edit`，或 `None`.
 
-1. 单击 **[!UICONTROL Save Changes]**.
+1. 按一下 **[!UICONTROL Save Changes]**.
 
-   如果 `Permissions` 已设置为 `View` 或 `Edit` 用户搜索功能板时，您的功能板将显示在搜索结果中。
+   若 `Permissions` 已設為 `View` 或 `Edit` 且使用者搜尋您的儀表板，您的儀表板會出現在搜尋結果中。
 
-示例：
+範例：
 
-![共享功能板](../../assets/share.gif)<!--{: width="675" height="311"}-->
+![共用儀表板](../../assets/share.gif)<!--{: width="675" height="311"}-->

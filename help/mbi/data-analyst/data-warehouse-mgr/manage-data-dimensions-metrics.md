@@ -1,83 +1,83 @@
 ---
-title: 管理数据维度
-description: 了解维度是什么，它可用于根据量度过滤或划分图表。
+title: 管理資料維度
+description: 瞭解維度是什麼，且可用於根據量度篩選或劃分圖表。
 exl-id: 143a4b1e-2e6f-438a-90e6-bdda13b39cb9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '412'
 ht-degree: 0%
 
 ---
 
-# 管理数据维度
+# 管理資料維度
 
 >[!NOTE]
 >
->需要 [管理员权限](../../administrator/user-management/user-management.md).
+>需要 [管理員許可權](../../administrator/user-management/user-management.md).
 
-维度是同一表中作为量度的字段，可用于根据该量度过滤或划分图表。 例如，收入量度可能包含城市、州/省、国家/地区、订单状态、优惠券代码和其他类型的维度。
+維度是與量度位於相同表格中的欄位，可用來根據該量度篩選或劃分圖表。 例如，收入量度可能包含城市、州、國家/地區、訂單狀態、抵用券代碼和其他型別的維度。
 
-## 将维度添加到多个量度
+## 將維度新增至多個量度
 
-要一次将一个或多个维度添加到多个量度，请执行以下操作：
+若要一次新增一或多個維度至多個量度：
 
-1. 在主导航栏上，转到 **[!UICONTROL Manage Data > Metrics]**.
+1. 前往 **[!UICONTROL Manage Data > Metrics]**.
 
-1. 在页面顶部，单击 **[!UICONTROL Add Dimensions To Metric(s)]**.
+1. 按一下 **[!UICONTROL Add Dimensions To Metric(s)]**.
 
-1. 选择包含维度的表。
+1. 選擇包含維度的表格。
 
-1. 在 `Choose Metric(s) to Add Dimensions` 列中，选择要将维度添加到的量度。 一旦选定， `Choose Dimensions to Add` 列显示在右侧。 选中要添加到所选量度的维度。
+1. 在 `Choose Metric(s) to Add Dimensions` 欄中，選取您要新增維度的量度。 選取後， `Choose Dimensions to Add` 欄會顯示在右側。 勾選您要新增至所選量度的維度。
 
    ![](../../assets/Add_Dimensions.png)
 
-1. 如果要按报表中的任何数据维度进行分段或分组，请确保指出它们是 _可分组_.
+1. 如果您想要依報表上的任何資料維度來劃分或分組，請務必指出這些維度是 _可分組_.
 
-1. 单击 **[!UICONTROL Add]**.
+1. 按一下 **[!UICONTROL Add]**.
 
-## 从多个量度中删除维度
+## 從多個量度中刪除維度
 
-要从多个量度中删除一个或多个维度，请执行以下操作：
+若要從多個量度中刪除一或多個維度：
 
-1. 在主导航栏上，转到 **[!UICONTROL Data > Metrics]**.
+1. 前往 **[!UICONTROL Data > Metrics]**.
 
-1. 在页面顶部，单击 **[!UICONTROL Remove Dimensions From Metric(s)]**.
+1. 按一下 **[!UICONTROL Remove Dimensions From Metric(s)]**.
 
-1. 选择包含维度的表。
+1. 選擇包含維度的表格。
 
-1. 在左侧选择要删除维度的量度，并在右侧选择要删除的维度。
+1. 在左側選取您要移除的量度，並在右側選取您要移除的維度。
 
-1. 单击 **[!UICONTROL Remove]**.
+1. 按一下 **[!UICONTROL Remove]**.
 
-1. 如果维在报表中使用，您会看到警告和使用维的图表列表。 单击 **[!UICONTROL Delete]** 删除选中的维及其所有从属项，包括报表。
+1. 如果維度已在報表中使用，則會顯示警告與正在使用維度的圖表清單。 按一下 **[!UICONTROL Delete]** 刪除已核取的維度及其所有相依項，包括報表。
 
-## 管理量度中的维度
+## 管理量度中的維度
 
-**要在量度中添加维度，请执行以下操作：**
+**若要在量度中新增維度：**
 
-1. 在主导航栏上，转到 **[!UICONTROL Data > Metrics]**.
+1. 前往 **[!UICONTROL Data > Metrics]**.
 
-1. 单击 **[!UICONTROL Edit]** 在需要新维度的量度上。
+1. 按一下 **[!UICONTROL Edit]** 在您想要新維度的量度上。
 
-1. 在 `Dimensions` 部分，使用 `Add a dimension` 下拉菜单以选择要添加的维度。
-
->[!NOTE]
->
->必须已在中跟踪您要过滤或分组的任何维度 [!DNL MBI]. 如果找不到所需的维度，您可能需要开始通过 [data warehouse](../data-warehouse-mgr/tour-dwm.md) 页面。
-
-
-**要从量度中删除维度，请执行以下操作：**
-
-1. 在主导航栏上，转到 **[!UICONTROL Manage Data > Metrics]**.
-
-1. 单击 **[!UICONTROL Edit]** 在需要新维度的量度上。
-
-1. 在 `Dimensions` 部分，选中要删除的维度旁边的“删除”列中的复选框。
+1. 在 `Dimensions` 區段，使用 `Add a dimension` 下拉式清單，以選取要新增的維度。
 
 >[!NOTE]
 >
->即使删除某个维度后，它仍作为Data warehouse中表上的列存在。 您可以将其添加回任何量度，并使用这些维度构建新量度。 从删除与维度对应的数据列 [!DNL MBI]，只需通过 [data warehouse](../data-warehouse-mgr/tour-dwm.md) 页面。
+>您想要篩選或分組依據的任何維度都必須已在下列位置進行追蹤： [!DNL Commerce Intelligence]. 如果您找不到所需的維度，您可能需要開始透過以下方式追蹤資料庫中的新資料欄： [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) 頁面。
 
-## 相关文档
 
-* [分段和过滤的最佳实践](../../best-practices/segment-filter.md)
+**若要從量度刪除維度：**
+
+1. 前往 **[!UICONTROL Manage Data > Metrics]**.
+
+1. 按一下 **[!UICONTROL Edit]** 在您想要新維度的量度上。
+
+1. 在 `Dimensions` 區段中，選取您要移除之維度旁邊「刪除」欄中的核取方塊。
+
+>[!NOTE]
+>
+>即使在刪除維度後，它仍會作為欄存在於您的Data Warehouse的表格中。 您可以將其新增回任何量度，並使用這些維度建立新量度。 若要移除維度對應的資料欄，請執行下列動作 [!DNL Commerce Intelligence]，只要取消追蹤資料欄，透過 [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) 頁面。
+
+## 相關檔案
+
+* [細分和篩選的最佳實務](../../best-practices/segment-filter.md)

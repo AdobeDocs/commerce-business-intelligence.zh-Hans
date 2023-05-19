@@ -1,18 +1,18 @@
 ---
-title: 激活 [!DNL MBI] 帐户
-description: 了解要联系谁来激活 [!DNL MBI] 帐户。
+title: 啟用您的 [!DNL Commerce Intelligence] 帳戶
+description: 瞭解要聯絡誰以啟用您的 [!DNL Commerce Intelligence] 帳戶。
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
-source-git-commit: 434539f1c0cc5455db7f1998347fa65eb8a6d39f
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '32'
+source-wordcount: '36'
 ht-degree: 0%
 
 ---
 
-# 激活 [!DNL MBI] 帐户
+# 啟用您的 [!DNL Commerce Intelligence] 帳戶
 
-激活 [!DNL MBI] （内部部署或） `Cloud Pro` 订阅后，请联系您的Adobe客户成功经理。
+啟動 [!DNL Commerce Intelligence] 適用於內部部署或 `Cloud Pro` 訂閱， [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 >[!NOTE]
 >
->Adobe不再支持新 `Cloud Starter` 订阅。
+>Adobe不再支援新功能 `Cloud Starter` 訂閱。

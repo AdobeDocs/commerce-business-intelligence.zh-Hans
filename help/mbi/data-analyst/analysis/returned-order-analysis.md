@@ -1,36 +1,36 @@
 ---
-title: 分析退货单
-description: 了解如何设置功能板，以详细分析商店的回报。
+title: 分析退回的訂單
+description: 瞭解如何設定控制面板，提供商店回報的詳細分析。
 exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
 
-# 退货单
+# 退回的訂單
 
-在本文中，了解如何设置功能板，以提供对商店回报的详细分析。
+此主題示範如何設定控制面板，提供商店回報的詳細分析。
 
 ![](../../assets/detailed-returns-dboard.png)
 
-开始之前，您必须是 [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 客户，并应确保您的公司正在使用 `enterprise\_rma` 表。
+開始之前，您必須是 [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 客戶，並應確定貴公司使用 `enterprise\_rma` 傳回資料表。
 
-此分析包含 [高级计算列](../data-warehouse-mgr/adv-calc-columns.md).
+此分析包含 [進階計算欄](../data-warehouse-mgr/adv-calc-columns.md).
 
-## 快速入门
+## 快速入門
 
-要跟踪的列
+要追蹤的欄
 
-* **`enterprise_rma`** 或 **`rma`** 表
+* **`enterprise_rma`** 或 **`rma`** 表格
 * **`entity_id`**
 * **`status`**
 * **`order_id`**
 * **`customer_id`**
 * **`date_requested`**
 
-* **`enterprise_rma_item_entity`** 或 **`rma_item_entity`** 表
+* **`enterprise_rma_item_entity`** 或 **`rma_item_entity`** 表格
 * **`entity_id`**
 * **`rma_entity_id`**
 * **`qty_returned`**
@@ -39,25 +39,25 @@ ht-degree: 0%
 * **`product_name`**
 * **`product_sku`**
 
-要创建的筛选器集
+要建立的篩選器集
 
-* **`enterprise_rma`** 表
-* 过滤器集名称： `Returns we count`
-* 过滤器集逻辑：
-   * 占位符 — 在此处输入自定义逻辑
+* **`enterprise_rma`** 表格
+* 篩選器集名稱： `Returns we count`
+* 篩選器集邏輯：
+   * 預留位置 — 在這裡輸入您的自訂邏輯
 
-* **`enterprise_rma_item_entity`** 表
-* 过滤器集名称： `Returns items we count`
-* 过滤器集逻辑：
-   * 占位符 — 在此处输入自定义逻辑
+* **`enterprise_rma_item_entity`** 表格
+* 篩選器集名稱： `Returns items we count`
+* 篩選器集邏輯：
+   * 預留位置 — 在這裡輸入您的自訂邏輯
 
-### 计算列
+### 計算欄
 
-要创建的列
+要建立的欄
 
-* **`enterprise_rma`** 表
+* **`enterprise_rma`** 表格
 * **`Order's created at`**
-* 选择定义： `Joined Column`
+* 選取定義： `Joined Column`
 * [!UICONTROL Create Path]:
 * 
    [!UICONTROL Many]: `enterprise_rma.order_id`
@@ -65,21 +65,21 @@ ht-degree: 0%
 
    [!UICONTROL One]: `sales_flat_order.entity_id`
 
-* 选择 [!UICONTROL table]: `sales_flat_order`
-* 选择 [!UICONTROL column]: `created_at`
+* 選取 [!UICONTROL table]： `sales_flat_order`
+* 選取 [!UICONTROL column]： `created_at`
    * `enterprise_rma.order_id = sales_flat_order.entity_id`
 
 * **`Customer's order number`**
-* 选择定义： `Joined Column`
-* 选择 [!UICONTROL table]: `sales_flat_order`
-* 选择 [!UICONTROL column]: `Customer's order number`
+* 選取定義： `Joined Column`
+* 選取 [!UICONTROL table]： `sales_flat_order`
+* 選取 [!UICONTROL column]： `Customer's order number`
    * `enterprise_rma.order_id = sales_flat_order.entity_id`
 
-* **`Time between order's created_at and date_requested`** 由分析师创建，作为 `[RETURNS ANALYSIS]` 票
+* **`Time between order's created_at and date_requested`** 由分析師建立，作為您的一部分 `[RETURNS ANALYSIS]` 票證
 
-* **`enterprise_rma_item_entity`** 表
+* **`enterprise_rma_item_entity`** 表格
 * **`return_date_requested`**
-* 选择定义： `Joined Column`
+* 選取定義： `Joined Column`
 * [!UICONTROL Create Path]:
    * 
       [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
@@ -87,75 +87,75 @@ ht-degree: 0%
 
       [!UICONTROL One]: `enterprise_rma.entity_id`
 
-* 选择 [!UICONTROL table]: `enterprise_rma`
-* 选择 [!UICONTROL column]: `date_requested`
+* 選取 [!UICONTROL table]： `enterprise_rma`
+* 選取 [!UICONTROL column]： `date_requested`
    * `enterprise_rma_item_entity.rma_entity_id = enterprise_rma.entity_id`
 
-* **`Return item total value (qty_returned * price)`** 由分析师创建，作为 `[RETURNS ANALYSIS]` 票
+* **`Return item total value (qty_returned * price)`** 由分析師建立，作為您的一部分 `[RETURNS ANALYSIS]` 票證
 
-* **`sales_flat_order`** 表
+* **`sales_flat_order`** 表格
 * **`Order contains a return? (1=yes/0=No)`**
-* 选择定义： `Exists`
-* 选择 [!UICONTROL table]: `enterprise_rma`
+* 選取定義： `Exists`
+* 選取 [!UICONTROL table]： `enterprise_rma`
    * `enterprise_rma.order_id = sales_flat_order.entity_id`
 
-* **`Customer's previous order number`** 由分析师创建，作为 `[RETURNS ANALYSIS]` 票
-* **`Customer's previous order contains return? (1=yes/0=no)`** 由分析师创建，作为 `[RETURNS ANALYSIS]` 票
+* **`Customer's previous order number`** 由分析師建立，作為您的一部分 `[RETURNS ANALYSIS]` 票證
+* **`Customer's previous order contains return? (1=yes/0=no)`** 由分析師建立，作為您的一部分 `[RETURNS ANALYSIS]` 票證
 
 >[!NOTE]
 >
->如果您有兴趣仅分析工作时间（秒到解决，秒到第一个响应），请在请求票证时告知分析师。
+>如果您只想分析秒數到解決或秒數到第一次回應的營業時間，請在要求票證時告知分析人員。
 
 ### 量度
 
-* **返回结果**
-* 在 **`enterprise_rma`** 表
-* 此量度执行 **计数**
-* 在 **`entity_id`** 列
-* 由 **`date_requested`**
+* **傳回**
+* 在 **`enterprise_rma`** 表格
+* 此量度會執行 **計數**
+* 於 **`entity_id`** 欄
+* 排序依據： **`date_requested`**
 * [!UICONTROL Filter]: `Returns we count`
 
-* **返回的项目**
-* 在 **`enterprise_rma_item_entity`** 表
-* 此量度执行 **总和**
-* 在 **`qty_approved`** 列
-* 由 **`return date_requested`**
+* **傳回的專案**
+* 在 **`enterprise_rma_item_entity`** 表格
+* 此量度會執行 **總和**
+* 於 **`qty_approved`** 欄
+* 排序依據： **`return date_requested`**
 * [!UICONTROL Filter]: `Returns we count`
 
-* **返回的项目总值**
-* 在 **`enterprise_rma_item_entity`** 表
-* 此量度执行 **总和**
-* 在 **`Returned item total value (qty_returned * price)`** 列
-* 由 **`return date_requested`**
+* **傳回的專案總計值**
+* 在 **`enterprise_rma_item_entity`** 表格
+* 此量度會執行 **總和**
+* 於 **`Returned item total value (qty_returned * price)`** 欄
+* 排序依據： **`return date_requested`**
 * [!UICONTROL Filter]: `Returns we count`
 
-* **订单与退货之间的平均时间**
-* 在 **`enterprise_rma`** 表
-* 此量度执行 **平均**
-* 在 **`Time between order's created_at and date_requested`** 列
-* 由 **`date_requested`**
+* **訂單與退貨之間的平均時間**
+* 在 **`enterprise_rma`** 表格
+* 此量度會執行 **平均**
+* 於 **`Time between order's created_at and date_requested`** 欄
+* 排序依據： **`date_requested`**
 * [!UICONTROL Filter]: `Returns we count`
 
 >[!NOTE]
 >
->确保 [将所有新列作为量度的维度添加到](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 生成新报告之前。
+>請確定 [將所有新欄新增為量度的維度](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 建立新報表之前。
 
-### 报表
+### 報表
 
-* **返回后重复顺序概率**
-* 量度 `A`: `Number of orders with returns`
+* **傳回後的重複訂單機率**
+* 量度 `A`： `Number of orders with returns`
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
    * `Order contains a return? (1=yes/0=No) = 1`
    * `Is in current month? = No`
 
-* 量度 `B`: `Non-last orders with returns`
+* 量度 `B`： `Non-last orders with returns`
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
    * `Is customer's last order? (1=yes/0=no) = 0`
    * `Order contains a return? (1=yes/0=No) = 1`
 
-* 公式：重复顺序概率
+* 公式：重複訂購機率
 * [!UICONTROL Formula]: `B / A`
 * 
 
@@ -163,32 +163,32 @@ ht-degree: 0%
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL间隔]: `None`
+   [！UICONTROL間隔]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
 * 
-   [!UICONTROL图表类型]: `Bar`
+   [！UICONTROL圖表型別]: `Bar`
 
-* **返回的平均时间（所有时间）**
-* 量度 `A`: `Avg time between order and return`
+* **平均返回時間（所有時間）**
+* 量度 `A`： `Avg time between order and return`
 * [!UICONTROL Metric]: `Avg time between order and return`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL间隔]: `None`
+   [！UICONTROL間隔]: `None`
 * 
 
-   [!UICONTROL图表类型]: `Number`
+   [！UICONTROL圖表型別]: `Number`
 
-* **具有退货的订单百分比**
-* 量度 `A`: `Number of orders`
+* **有退貨的訂單百分比**
+* 量度 `A`： `Number of orders`
 * [!UICONTROL Metric]: `Number of orders`
 
-* 量度 `B`: `Orders w/ return`
+* 量度 `B`： `Orders w/ return`
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
    * `Order contains a return? (1=yes/0=No) = 1`
 
-* 公式：退货订单百分比
+* 公式：含退貨的訂單百分比
 * [!UICONTROL Formula]: `B / A`
 * 
 
@@ -196,21 +196,21 @@ ht-degree: 0%
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL间隔]: `None`
+   [！UICONTROL間隔]: `None`
 * [!UICONTROL Chart Type]: `Number - % of orders with return`
 
-* **按月返回的收入**
-* 量度 `A`: `Returned item total value`
+* **按月退貨收入**
+* 量度 `A`： `Returned item total value`
 * [!UICONTROL Metric]: `Returned item total value`
 
 * [!UICONTROL Time period]: `All time`
 * [!UICONTROL Interval]: `By month`
 * 
 
-   [!UICONTROL图表类型]: `Line`
+   [！UICONTROL圖表型別]: `Line`
 
-* **已退货且未再购买的客户**
-* 量度 `A`: `Number of orders with returns`
+* **已退貨且不再購買的客戶**
+* 量度 `A`： `Number of orders with returns`
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
    * `Order contains a return? (1=yes/0=No) = 1`
@@ -218,18 +218,18 @@ ht-degree: 0%
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL间隔]: `None`
+   [！UICONTROL間隔]: `None`
 * 
-   [!UICONTROL组依据]: `Customer_email`
+   [！UICONTROL分組依據]: `Customer_email`
 * 
 
-   [!UICONTROL图表类型]: `Table`
+   [！UICONTROL圖表型別]: `Table`
 
-* **退货率（按项目）**
-* 量度 `A`: `Returned items` （隐藏）
-* [!UICONTROL Metric]:返回的项目
+* **依料號的退貨率**
+* 量度 `A`： `Returned items` （隱藏）
+* [!UICONTROL Metric]：傳回的專案
 
-* 量度 `B`: `Items sold` （隐藏）
+* 量度 `B`： `Items sold` （隱藏）
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
 
@@ -241,11 +241,11 @@ ht-degree: 0%
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL间隔]: `None`
+   [！UICONTROL間隔]: `None`
 * [!UICONTROL Group by]: `product_sku AND/OR product_name`
 * 
-   [!UICONTROL图表类型]: `Table`
+   [！UICONTROL圖表型別]: `Table`
 
-编译完所有报告后，您可以在功能板上根据需要组织报告。 结果可能与上述示例仪表板类似。
+編譯所有報表後，您可以視需要在控制面板上組織報表。 結果看起來可能像上面的範例儀表板。
 
-如果您在构建此分析时遇到任何问题，或希望与专业服务团队接洽， [联系支持](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+如果您在建立此分析時遇到任何問題，或想與Professional Services團隊互動， [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

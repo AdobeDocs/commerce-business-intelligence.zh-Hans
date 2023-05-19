@@ -1,31 +1,31 @@
 ---
-title: MBI Essentials与Pro
-description: 了解MBI Essentials与MBI Pro有何不同。
+title: Commerce Intelligence Essentials與Pro
+description: 瞭解Commerce Intelligence Essentials與Commerce Intelligence Pro有何不同。
 exl-id: 624a6285-8497-43d9-a56d-8ae503e0e2dd
-source-git-commit: c403d28392d781f0e897b937d00dfe0cfe35ea4d
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '74'
 ht-degree: 5%
 
 ---
 
-# [!DNL MBI Essentials] vs [!DNL MBI Pro]
+# [!DNL Commerce Intelligence Essentials] 與 [!DNL Commerce Intelligence Pro]
 
-下表介绍了旧版 `Essentials` 帐户与当前MBI帐户的比较。 Adobe不再提供 `Essentials`.
+下表說明舊版隨附的元素 `Essentials` 帳戶與目前Commerce Intelligence帳戶的比較。 Adobe不再提供 `Essentials`.
 
-|  | **`MBI Essentials`** | **`MBI Pro`** |
+|  | **`Commerce Intelligence Essentials`** | **`Commerce Intelligence Pro`** |
 |-----|-----|-----|
-| `Pre-Defined Reports` | 最多100 | 自定义 |
-| `Pre-Defined Dashboards` | 5-6 | 自定义 |
+| `Pre-Defined Reports` | 最多100個 | 自訂 |
+| `Pre-Defined Dashboards` | 5-6 | 自訂 |
 | `New Custom Report Creation` | 是 | 是 |
-| `Commerce Tables` | 4-6 | 无限制 |
+| `Commerce Tables` | 4-6 | 無限制 |
 | `Log-ins/User Accounts` | 10 | 20 |
 | `User Permissions` | 是 | 是 |
-| `Data Warehouse Manager` | 不可用 | 可用 |
+| `Data Warehouse Manager` | 無法使用 | 可用 |
 | `Email Reports` | 是 | 是 |
 | `Cohort Report Builder` | 是 | 是 |
-| `Google Analytics Live Integration` | 是 | 无限制 |
-| `3rd Party Integrations` | 不可用 | 可用 |
+| `Google Analytics Live Integration` | 是 | 無限制 |
+| `3rd Party Integrations` | 無法使用 | 可用 |
 | `Full API Access` | 否 | 是 |
 | `Access to CS, AM, or Analysts` | 否 | 是 |
 | `Professional Services` | 可用 | 可用 |
@@ -34,9 +34,9 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->表的数量取决于来宾结帐。
+>資料表數目取決於訪客結帳。
 
-**包含的表**
+**包含的表格**
 
 * `sales\_order`
 * `sales\_order\_item`

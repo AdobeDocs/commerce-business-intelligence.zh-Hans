@@ -1,27 +1,27 @@
 ---
-title: Pro的预期生命周期值(LTV)分析
-description: 了解如何设置功能板，以帮助您了解客户的存留期价值增长和客户的预期存留期价值。
+title: Pro的預期期限值(LTV)分析
+description: 瞭解如何設定儀表板，協助您瞭解客戶期限值成長和客戶的預期期限值。
 exl-id: e353b92a-ff3b-466b-b519-4f86d054c0bc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
 
-# 预期生命周期值分析
+# 預期期限值分析
 
-本文演示了如何设置功能板，以帮助您了解客户存留期价值的增长以及客户的预期存留期价值。
+此主題示範如何設定儀表板，協助您瞭解客戶期限值成長和客戶的預期期限值。
 
 ![](../../assets/exp-lifetim-value-anyalysis.png)
 
-此分析仅适用于采用新架构的Pro客户。 如果您的帐户有权访问 `Persistent Views` 下的功能 `Manage Data` 侧栏中，您位于新架构上，可以按照此处列出的说明自行构建此分析。
+此分析僅供使用新架構的Pro客戶使用。 如果您的帳戶有權存取 `Persistent Views` 下的功能 `Manage Data` 側欄中，您所使用的是新架構，可以依照此處列出的指示，自行建立此分析。
 
-在开始之前，您需要先熟悉 [同类群组report builder。](../dev-reports/cohort-rpt-bldr.md)
+開始使用前，請先熟悉 [同類群組report builder。](../dev-reports/cohort-rpt-bldr.md)
 
-## 计算列
+## 計算欄
 
-要在上创建的列 **订单** 表（如果使用） **30天月**：
+要在上建立的欄 **訂購** 表格（若使用） **30天月**：
 
 * [!UICONTROL Column name]: `Months between first order and this order`
 * [!UICONTROL Column type]: `Same Table`
@@ -30,7 +30,7 @@ ht-degree: 0%
 * [!UICONTROL Column input]： A = `Seconds between customer's first order date and this order`
 * 
    [!UICONTROL Datatype]: `Integer`
-* **定义：**`case when A is null then null when A <= 0 then '1'::int else (ceil(A)/2629800)::int end`
+* **定義：**`case when A is null then null when A <= 0 then '1'::int else (ceil(A)/2629800)::int end`
 
 * [!UICONTROL Column name]: `Months since order`
 * [!UICONTROL Column type]: `Same Table`
@@ -39,9 +39,9 @@ ht-degree: 0%
 * [!UICONTROL Column input]： A = `created_at`
 * 
    [!UICONTROL Datatype]: `Integer`
-* 定义： `case when created_at is null then null else (ceil((extract(epoch from current_timestamp) - extract(epoch from created_at))/2629800))::int end`
+* 定義： `case when created_at is null then null else (ceil((extract(epoch from current_timestamp) - extract(epoch from created_at))/2629800))::int end`
 
-要在上创建的列 **`orders`** 表（如果使用） **日历** 月：
+要在上建立的欄 **`orders`** 表格（若使用） **行事曆** 月：
 
 * [!UICONTROL Column name]: `Calendar months between first order and this order`
 * [!UICONTROL Column type]: `Same Table`
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 * 
    [!UICONTROL Datatype]: `Integer`
-* 定义： `case when (A::date is null) or (B::date is null) then null else ((date_part('year',A::date) - date_part('year',B::date))*12 + date_part('month',A::date) - date_part('month',B::date))::int end`
+* 定義： `case when (A::date is null) or (B::date is null) then null else ((date_part('year',A::date) - date_part('year',B::date))*12 + date_part('month',A::date) - date_part('month',B::date))::int end`
 
 * [!UICONTROL Column name]: `Calendar months since order`
 * [!UICONTROL Column type]: `Same Table`
@@ -62,7 +62,7 @@ ht-degree: 0%
 * [!UICONTROL Column input]: `A` = `created_at`
 * 
    [!UICONTROL Datatype]: `Integer`
-* **定义：**`case when A is null then null else ((date_part('year',current_timestamp::date) - date_part('year',A::date))*12 + date_part('month',current_timestamp::date) - date_part('month',A::date))::int end`
+* **定義：**`case when A is null then null else ((date_part('year',current_timestamp::date) - date_part('year',A::date))*12 + date_part('month',current_timestamp::date) - date_part('month',A::date))::int end`
 
 * [!UICONTROL Column name]: `Is in current month? (Yes/No)`
 * [!UICONTROL Column type]: `Same Table`
@@ -71,38 +71,38 @@ ht-degree: 0%
 * [!UICONTROL Column input]： A = `created_at`
 * 
    [!UICONTROL Datatype]: `String`
-* 定义： `case when A is null then null when (date_trunc('month', current_timestamp::date))::varchar = (date_trunc('month', A::date))::varchar then 'Yes' else 'No' end`
+* 定義： `case when A is null then null when (date_trunc('month', current_timestamp::date))::varchar = (date_trunc('month', A::date))::varchar then 'Yes' else 'No' end`
 
 ## 量度
 
-### 量度说明
+### 量度指示
 
-要创建的量度
+要建立的量度
 
-* **按第一订单日期划分的不同客户**
-   * 如果启用来宾订单，请使用 `customer_email`
+* **依第一筆訂單日期區分的不同客戶**
+   * 如果您啟用來賓訂單，請使用 `customer_email`
 
-* 在 **`orders`** 表
-* 此量度执行 **对非重复值计数**
-* 在 **`customer_id`** 列
-* 排序依据 **`Customer's first order date`** 时间戳
+* 在 **`orders`** 表格
+* 此量度會執行 **計算不同的值**
+* 於 **`customer_id`** 欄
+* 排序依據： **`Customer's first order date`** timestamp
 
 >[!NOTE]
 >
->确保 [将所有新列作为维度添加到量度](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) 然后再生成新报告。
+>請確定 [將所有新欄新增為量度的維度](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) 建立新報表之前。
 
-## 报告
+## 報表
 
-### 报告说明
+### 報表指示
 
-**按月份每个客户的预期收入**
+**每個客戶的預期收入（按月）**
 
 * 量度 `A`： `Revenue (hide)`
-   * `Calendar months between first order and this order` `<= X` （为X选择一些合理的数字，例如24个月）
+   * `Calendar months between first order and this order` `<= X` （為X選取一些合理的數字，例如24個月）
    * `Is in current month?` = `No`
 
 * 
-   [！UICONTROL量度]: `Revenue`
+   [！UICONTROL公制]: `Revenue`
 * [!UICONTROL Filter]:
 
 * 量度 `B`： `All time customers (hide)`
@@ -124,18 +124,18 @@ ht-degree: 0%
 
    [!UICONTROL Format]: `Currency`
 
-其他图表详细信息
+其他圖表詳細資料
 
 * [!UICONTROL Time period]: `All time`
-* 时间间隔： `None`
-* [!UICONTROL Group by]： `Calendar months between first order and this order`  — 全部显示
-* 更改 `group by` 对于 `All time customers` 使用“量度”旁边的“铅笔”图标可将“量度”转换为“独立” `group by`
-* 编辑 `Show top/bottom` 字段如下所示：
+* 時間間隔： `None`
+* [!UICONTROL Group by]： `Calendar months between first order and this order`  — 全部顯示
+* 變更 `group by` 的 `All time customers` 量度變更為獨立(使用 `group by`
+* 編輯 `Show top/bottom` 欄位如下所示：
    * [!UICONTROL Revenue]: `Top 24 sorted by Calendar months between first order and this order`
    * [!UICONTROL All time customers]: `Top 24 sorted by All time customers`
    * [!UICONTROL All time customers by month since first order]: `Top 24 sorted by All time customers by month since first order`
 
-**按同类群组划分的每月平均收入**
+**每個月依同類群組的平均收入**
 
 * 量度 `A`： `Revenue`
 * 
@@ -143,7 +143,7 @@ ht-degree: 0%
 * [!UICONTROL Cohort date]: `Customer's first order date`
 * [!UICONTROL Perspective]: `Average value per cohort member`
 
-**按同类群组显示的每月累计平均收入**
+**按同類群組分類的每月累計平均收入**
 
 * 量度 `A`： `Revenue`
 * 
@@ -151,6 +151,6 @@ ht-degree: 0%
 * [!UICONTROL Cohort date]: `Customer's first order date`
 * [!UICONTROL Perspective]: `Cumulative average value per cohort member`
 
-在编译所有报告后，您可以根据需要将报告组织在功能板上。 结果可能与页面顶部的图像类似。
+編譯所有報表後，您可以視需要在控制面板上組織報表。 結果看起來可能像頁面頂端的影像。
 
-如果您在构建此分析时遇到任何问题，或者只是想让专业服务团队参与进来， [联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+如果您在建立此分析時遇到任何問題，或只是想與Professional Services團隊互動， [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

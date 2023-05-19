@@ -1,81 +1,81 @@
 ---
-title: 优化SQL查询
-description: 了解如何优化SQL查询。
+title: 最佳化SQL查詢
+description: 瞭解如何最佳化SQL查詢。
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '779'
 ht-degree: 0%
 
 ---
 
-# 优化SQL查询
+# 最佳化SQL查詢
 
-SQLReport Builder允许您在任何给定时间查询和迭代这些查询。 当需要修改查询而不必等待更新周期完成才实现您创建的列或报告需要更新时，这将很有用。
+此 [!DNL SQL Report Builder] 可讓您隨時查詢和迭代這些查詢。 當您需要修改查詢而不必等待更新週期完成才實現您建立的欄或報告需要更新時，這會很有用。
 
-在执行查询之前， [[!DNL MBI] 估计成本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=en). 成本考虑执行查询所需的时间和资源数。 如果认为该成本太高或返回的行数超过MBI限制，则查询失败。 为了查询您的Data warehouse（这可确保您编写尽可能简化的查询），Adobe建议执行以下操作。
+在執行查詢之前， [[!DNL Commerce Intelligence] 預估成本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). 成本會考量執行查詢所需的時間長度和資源數量。 如果該成本太高或傳回的列數超過 [!DNL Commerce Intelligence] 限制，查詢會失敗。 查詢您的 [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md)，這可確保您撰寫儘可能精簡的查詢，Adobe建議以下內容。
 
-## 使用SELECT或选择所有列
+## 使用SELECT或選取所有欄
 
-选择所有列并不能进行及时、易于执行的查询。 使用的查询 `SELECT *` 运行可能需要相当长的时间，尤其是当表有许多列时。
+選取所有欄無法進行即時、輕鬆執行的查詢。 使用的查詢 `SELECT *` 執行可能需要一點時間，尤其是如果您的表格有許多欄時。
 
-因此，Adobe建议您避免使用 `SELECT *` 尽可能只包含您需要的列：
+因此，Adobe建議您避免使用 `SELECT *` 儘可能且僅包含您需要的欄：
 
-| **而不是这个……** | **试试这个！** |
+| **而不是這個……** | **試試這個！** |
 |-----|-----|
 | ![](../../mbi/assets/Select_all_1.png) | ![](../../mbi/assets/Select_all_2.png) |
 
 {style="table-layout:auto"}
 
-## 使用完全外连接
+## 使用完整外部聯結
 
-外连接选择两个要连接的表的整体，这会增加查询的计算成本。 这意味着查询运行时间更长，更有可能失败，因为返回结果可能需要比执行限制更长的时间。
+外部聯結會選取兩個要聯結之表格的整體，這會增加查詢的運算成本。 這表示您的查詢執行時間較長，而且很可能會失敗，因為傳回結果所花的時間可能超過執行限制。
 
-请考虑使用内部连接或左连接，而不使用这种类型的连接。 仅当表之间存在列匹配时(例如， `order_id` 同时存在于两种典型中 `customers` 和 `orders` 表)。 左连接会返回左（第一个）表中的所有结果以及右（第二个）表中的匹配结果。
+請考慮使用內部或左側聯結，而不使用這種型別的聯結。 只有當資料表之間有欄位相符時(例如， `order_id` 同時存在於兩種典型中 `customers` 和 `orders` 表格)。 左聯結會傳回左（第一個）表格中的所有結果，以及右（第二個）表格中的相符結果。
 
-查看如何重写FULL OUTER JOIN查询：
+檢視如何重新寫入FULL OUTER JOIN查詢：
 
-| **而不是这个……** | **试试这个！** |
+| **而不是這個……** | **試試這個！** |
 |-----|-----|
 | ![](../../mbi/assets/Full_Outer_Join_1.png) | ![](../../mbi/assets/Full_Outer_Join_2.png) |
 
 {style="table-layout:auto"}
 
-除了它们使用的JOIN类型外，这些查询在所有方面都是相同的。
+除了它們使用的JOIN型別外，這些查詢在所有方面都是相同的。
 
-## 使用多个联接
+## 使用多重聯結
 
-虽然您可以在查询中包含多个联接，但请记住，这可能会增加查询的成本。 为避免达到成本阈值，Adobe建议尽可能避免多个联接。
+雖然您可以在查詢中包含多個聯結，但請記住，這可能會增加查詢的成本。 為避免達到成本臨界值，Adobe建議儘可能避免多個聯結。
 
-## 使用过滤器
+## 使用篩選器
 
-尽量使用过滤器。 `WHERE` 和 `HAVING` 子句过滤结果，只提供您真正需要的数据。
+儘可能使用篩選器。 `WHERE` 和 `HAVING` 條款會篩選結果，並只提供您真正想要的資料。
 
-## 在JOIN子句中使用筛选器
+## 在JOIN子句中使用篩選器
 
-如果在执行连接时使用过滤器，请确保将其应用于连接中的两个表。 即使它是冗余的，也减少了查询的计算开销并减少了执行时间。
+如果您在執行連線時使用篩選器，請務必將其套用至連線中的兩個表格。 即使它是多餘的，這也會減少查詢的運算成本並減少執行時間。
 
-| **而不是这个……** | **试试这个！** |
+| **而不是這個……** | **試試這個！** |
 |-----|-----|
 | ![](../../mbi/assets/Join_filters_1.png) | ![](../../mbi/assets/Join_filters_2.png) |
 
 {style="table-layout:auto"}
 
-## 使用运算符
+## 使用運運算元
 
-在编写查询时，请考虑使用尽可能便宜的运算符。 每个查询都有一个计算开销，该开销由组成查询的函数、运算符和过滤器决定。 有些运算符所需的计算工作较少，因此与其他运算符相比，这些运算符的成本较低。
+在撰寫查詢時，請考慮儘可能使用「最便宜」的運運算元。 每個查詢都有計算成本，這是由組成查詢的函式、運運算元和篩選器所決定。 有些運運算元所需的運算量較少，因此較其他運運算元便宜。
 
-比较运算符（>、&lt;、=等）开销最小，其次是 [喜欢。 SIMILAR TO和POSIX运算符](https://www.postgresql.org/docs/9.5/functions-matching.html) 这是最贵的运营商。
+比較運運算元（>、&lt;、=等）是最便宜的，其次是 [類似。 SIMILAR TO和POSIX運運算元](https://www.postgresql.org/docs/9.5/functions-matching.html) 這些是最昂貴的運運算元。
 
-## 使用EXISTS与IN
+## 使用EXISTS與IN
 
-使用 `EXISTS` 对比 `IN` 取决于您尝试返回的结果类型。 如果您只对单个值感兴趣，请使用 `EXISTS` 子句instead of `IN`. `IN` 与逗号分隔值的列表一起使用，这会增加查询的计算成本。
+使用 `EXISTS` 與 `IN` 取決於您嘗試傳回的結果型別。 如果您只對單一值感興趣，請使用 `EXISTS` 子句而非 `IN`. `IN` 與逗號分隔值清單一起使用，這會增加查詢的運算成本。
 
-时间 `IN` 查询运行之后，系统必须首先处理子查询( `IN` 语句)，则整个查询基于 `IN` 语句。 `EXISTS` 效率更高，因为不必多次运行查询 — 检查查询中指定的关系时返回true/false值。
+時間 `IN` 執行查詢，系統必須首先處理子查詢( `IN` 陳述式)，則整個查詢會根據 `IN` 陳述式。 `EXISTS` 效率更高，因為查詢不需要執行多次 — 檢查查詢中指定的關係時傳回true/false值。
 
-简言之，在使用时，系统不必处理太多 `EXISTS`.
+簡言之，系統在使用時，不必處理太多 `EXISTS`.
 
-| **而不是这个……** | **试试这个！** |
+| **而不是這個……** | **試試這個！** |
 |-----|-----|
 | ![](../../mbi/assets/Exists_1.png) | ![](../../mbi/assets/Exists_2.png) |
 
@@ -83,20 +83,20 @@ SQLReport Builder允许您在任何给定时间查询和迭代这些查询。 �
 
 ## 使用ORDER BY
 
-`ORDER BY` 是SQL中一个昂贵的函数，会显着增加查询成本。 如果您收到一条错误消息，指出查询的EXPLAIN成本过高，请尝试消除任何 `ORDER BY`从您的查询中查找。
+`ORDER BY` 是SQL中一個昂貴的函式，而且會顯著提高查詢的成本。 如果您收到錯誤訊息，指出查詢的EXPLAIN成本過高，請嘗試消除任何 `ORDER BY`s （除非必要）。
 
-这并不是说 `ORDER BY` 无法使用 — 仅应仅在必要时使用。
+這並不是說 `ORDER BY` 無法使用 — 僅應僅在必要時使用。
 
 ## 使用GROUP BY和ORDER BY
 
-在少数情况下，此方法可能与您尝试执行的操作不一致。 一般规则是，如果您使用 `GROUP BY` 和 `ORDER BY`，则应将两个子句中的列以相同的顺序放置。 例如：
+在少數情況下，此方法可能與您嘗試執行的操作不符。 一般規則是，如果您使用 `GROUP BY` 和 `ORDER BY`，您應該以相同的順序放置兩個子句中的欄。 例如：
 
-| **而不是这个……** | **试试这个！** |
+| **而不是這個……** | **試試這個！** |
 |-----|-----|
 | ![](../../mbi/assets/Group_by_2.png) | ![](../../mbi/assets/Group_by_1.png) |
 
 {style="table-layout:auto"}
 
-## 总结
+## 正在結束
 
-学习编写SQL的最好方法 — 并且要高效地完成此任务 — 是通过反复试验。 要找到最适合您的内容，请尝试仅使用SQL编辑器重新创建一些报表。
+學習撰寫SQL的最好方法（並有效率）是反複試驗。 若要找出最適合您的內容，請嘗試僅使用SQL編輯器重新建立一些報表。

@@ -1,125 +1,125 @@
 ---
-title: 清空您的 [!DNL MBI] 帐户
-description: 了解如何清理您的 [!DNL MBI] 帐户。
+title: 去除您的 [!DNL Commerce Intelligence] 帳戶
+description: 瞭解如何清理您的 [!DNL Commerce Intelligence] 帳戶。
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
 
-# 清理您的 [!DNL MBI] 帐户
+# 清理您的 [!DNL Adobe Commerce Intelligence] 帳戶
 
-无论您是否曾与 [!DNL MBI] 在6个月或6年的时间里，保持良好的账户对于贵组织充分利用平台至关重要。 随着时间的推移，用户、功能板、报表、量度和列会自然而然地不再需要。 您可能创建了报表供一次性使用并忘记了该报表，或者离开您公司的用户从未停用过其帐户。
+無論您是否曾與 [!DNL Commerce Intelligence] 在六個月或六年的時間裡，維持良好的帳號對於貴組織充分運用平台極為重要。 一段時間後，通常會自然而然地有使用者、控制面板、報表、量度和欄位不再需要這些專案。 您可能已建立報表以供一次性使用，但已忘記該報表，或是離開您公司的使用者從未停用其帳戶。
 
-替换为 [对所有元素进行标准化、明确的命名](../best-practices/naming-elements.md)的) [!DNL MBI] 帐户，下面的“帐户审核”步骤可帮助您减少杂乱无章的分析以及对用户的不必要的分析。 一项额外优势包括 [更新周期可能更快](../best-practices/reduce-update-cycle-time.md).
+替換為 [標準化、清除所有元素的命名](../best-practices/naming-elements.md)的) [!DNL Commerce Intelligence] 帳戶，以下帳戶稽核步驟可協助您減少使用者的雜湊和不必要的分析。 一個額外優勢包括 [更新週期可能更快](../best-practices/reduce-update-cycle-time.md).
 
-## 步骤1：识别非活动用户
+## 步驟1：識別非作用中的使用者
 
-清理帐户的第一步是停用非活动用户的帐户，例如已离开公司或不再使用的用户 [!DNL MBI] 他们目前的角色。
+清理帳戶的第一步是停用非作用中使用者的帳戶，例如已離開公司或不再使用的使用者 [!DNL Commerce Intelligence] 在其目前角色中。
 
-为此，您可以单击顶部导航栏右上角的公司名称，然后选择 **[!UICONTROL Manage Users]**. 接下来，选择要取消激活的用户，然后单击 **[!UICONTROL Deactivate User]**.
+若要這麼做，請按一下右上角導覽列中的公司名稱，然後選取 **[!UICONTROL Manage Users]**. 接下來，選取您要停用的使用者，然後按一下 **[!UICONTROL Deactivate User]**.
 
 >[!NOTE]
 >
->您需要 [管理员权限](../administrator/user-management/user-management.md) 完成此操作。
+>您需要 [管理員許可權](../administrator/user-management/user-management.md) 以執行此操作。
 
 >[!WARNING]
 >
->停用用户将删除由该用户创建的图表、功能板和其他资源。 如果要保留这些资产，请联系 [!DNL MBI] [支持](../guide-overview.md) 团队名称。 支持人员可以帮助您将这些资源转移给其他用户。
+>停用使用者會移除該使用者建立的圖表、儀表板和其他資產。 如果您想要保留這些資產，請聯絡 [!DNL Commerce Intelligence] [支援](../guide-overview.md#Submitting-a-Support-Ticket) 團隊。 支援可協助您將這些資產轉移給其他使用者。
 
-### 重新激活用户
+### 重新啟用使用者
 
-要重新激活用户，请使用已停用的同一电子邮件地址重新创建其帐户，以重新邀请用户，并在登录时恢复其访问及其拥有的数据。
+若要重新啟用使用者，請使用已停用的相同電子郵件地址重新建立其帳戶，藉此重新邀請使用者，並在登入時還原其存取權和擁有的資料。
 
-## 步骤2：删除未使用的功能板和报表
+## 步驟2：刪除未使用的儀表板和報表
 
-审核帐户的下一步是删除任何未使用的功能板和报表。
+稽核帳戶的下一個步驟是刪除任何未使用的儀表板和報表。
 
 >[!NOTE]
 >
->您需要 `Admin` 或 `Standard` [用户权限](../administrator/user-management/user-management.md) 完成此操作。
+>您需要 `Admin` 或 `Standard` [使用者許可權](../administrator/user-management/user-management.md) 以執行此操作。
 
-每个用户具有 `Admin` 或 `Standard` access可以创建报告和仪表板。 因此，拥有这些权限的所有人都必须执行以下步骤来识别和删除未使用的报表。
+每位使用者具有 `Admin` 或 `Standard` 存取可建立報告和儀表板。 因此，擁有這些許可權的所有人都必須遵循下列步驟，以識別並移除未使用的報表。
 
-### 查看您的仪表板和报告
+### 檢閱您的儀表板和報表
 
-在删除任何内容之前，您应该查看报告和仪表板，以评估正在使用的内容。 虽然您可以使用 **[!UICONTROL find unused reports]** 任何初始审查都会大大提高清理工作的效率。
+在刪除任何專案之前，您應該檢閱報告和儀表板，以評估正在使用的專案。 雖然您可以使用 **[!UICONTROL find unused reports]** 任何初始稽核功能皆可大幅提升清理工作的效率。
 
-### 删除功能板和报表
+### 刪除控制面板和報表
 
-在访问功能板和报表后，您可以开始清理帐户。
+存取控制面板和報告後，您就可以開始清理帳戶。
 
-**从功能板中删除报告**
+**欲從儀表板移除報告**
 
-1. 在功能板上找到要删除的报告。
-1. 选择 **[!UICONTROL Options]** 报表的右上角。
-1. 单击 **[!UICONTROL Remove From Dashboard]**.
+1. 在控制面板上找出您要移除的報告。
+1. 選取 **[!UICONTROL Options]** 報表的右上角。
+1. 按一下 **[!UICONTROL Remove From Dashboard]**.
 
-**删除整个仪表板**
+**刪除整個儀表板**
 
-1. 选择 **[!UICONTROL Manage Data]**，然后**[!UICONTROL Dashboards**].
-1. 单击要删除的仪表板。
-1. 单击 **[!UICONTROL Delete Dashboard]**.
+1. 選取 **[!UICONTROL Manage Data]**，然後**[!UICONTROL Dashboards**].
+1. 按一下要刪除的儀表板。
+1. 按一下 **[!UICONTROL Delete Dashboard]**.
 
-您还可以选择 **[!UICONTROL Dashboard Options]**，则 **[!UICONTROL Delete]** 从仪表板本身。
+您也可以選取 **[!UICONTROL Dashboard Options]**，則 **[!UICONTROL Delete]** 圖示板本身。
 
 ![](../../mbi/assets/Delete_from_dashboard.png)
 
 >[!NOTE]
 >
->删除功能板不会删除其中的报表，因此您必须再执行一个步骤来删除报表。
+>刪除儀表板不會刪除其中的報告，因此您必須再執行一個步驟來刪除報告。
 
-**删除未使用的报告**
+**刪除未使用的報告**
 
-1. 选择 **[!UICONTROL Manage Data]**，则 **[!UICONTROL Reports]**.
-1. 查看 **仅显示未使用的报表** 框中。 这会创建一个未在功能板或电子邮件摘要中使用的报告列表。
-1. 选择要删除的报告。 您可以通过单击报表列表上方的复选框来选择全部。
-1. 单击 **[!UICONTROL Delete Selected]**.
+1. 選取 **[!UICONTROL Manage Data]**，則 **[!UICONTROL Reports]**.
+1. 檢查 **僅顯示未使用的報告** 方塊。 這會建立未在控制面板或電子郵件摘要中使用的報告清單。
+1. 選取您要刪除的報告。 您可以按一下報表清單上方的核取方塊來選取全部。
+1. 按一下 **[!UICONTROL Delete Selected]**.
 
-以下是未使用的报告删除过程的概况：
+以下是未使用報表刪除程式的概覽：
 
 ![](../../mbi/assets/unused_reports.png)
 
-## 步骤3：删除未使用的量度
+## 步驟3：刪除未使用的量度
 
-清理用户列表、功能板和报告后，您可以开始审核量度列表。 这有助于您识别任何可能已过期或未使用的内容，例如，使用不同的定义创建了一个新量度。
+清理使用者清單、儀表板和報表後，您可以開始稽核量度清單。 這可協助您識別任何可能已過時或未使用的專案，例如，已使用不同定義建立的新量度。
 
-1. 要生成量度的依赖报表列表，请转到 **[!DNL Manage Data]**，然后选择单击 **[!UICONTROL Metrics]**.
-1. 单击 **[!UICONTROL Edit]** 在指标旁边。
-1. 在页面底部，您会看到一个名为的部分 **[!UICONTROL Dependent Charts]**. 单击该链接可生成此量度的依赖报表列表。
-1. 系统完成检查后， [!DNL MBI] 显示使用此量度的功能板、报告和用户的列表。
+1. 若要產生量度的相依報表清單，請前往 **[!DNL Manage Data]**，然後選取「按一下」 **[!UICONTROL Metrics]**.
+1. 按一下 **[!UICONTROL Edit]** 在量度旁。
+1. 在頁面底部，您會看到一個區段，稱為 **[!UICONTROL Dependent Charts]**. 按一下連結，即可產生此量度的相依報表清單。
+1. 系統完成檢查後， [!DNL Commerce Intelligence] 顯示使用此量度的儀表板、報表和使用者清單。
 
 ![](../../mbi/assets/report_dependecies.png)
 
-如果您决定不再需要该量度，请导航回 **[!UICONTROL Metrics]** 页面（通过单击） **[!UICONTROL Back to Metric List]** 以查找要删除的量度。 单击 **[!UICONTROL Delete]**.
+如果您決定不再需要該量度，請導覽回 **[!UICONTROL Metrics]** 按一下以建立頁面 **[!UICONTROL Back to Metric List]** 以尋找您要刪除的量度。 按一下 **[!UICONTROL Delete]**.
 
-## 步骤4：评估已同步的列
+## 步驟4：評估已同步的欄
 
-最后一步是评估Data warehouse中当前正在同步的列。 取消同步列不仅可以清除您的帐户，还可能会缩短更新时间。
+最後一個步驟是評估目前在Data Warehouse中同步處理的欄。 取消同步欄不僅會減少帳戶的流量，也可能縮短更新時間。
 
-如果您希望实现此目标，请联系 [!DNL MBI] [支持](../guide-overview.md). 支持团队可创建一个报告，该报告应包含任何用户未在任何功能板中使用且未用于电子邮件摘要的所有列（不包括SQL报告）。 然后，您可以使用此报表作为指南，通过Data warehouse管理器选择要取消同步的列。
+如果您想要追求此目標，請聯絡 [!DNL Commerce Intelligence] [支援](../guide-overview.md#Submitting-a-Support-Ticket). 支援團隊可建立一份報表，其中包含所有未在任何使用者的控制面板中使用，以及未用於電子郵件摘要的欄，但不包括SQL報表。 然後，您可以使用此報表作為透過Data Warehouse管理員選取要取消同步處理的欄的指南。
 
 >[!NOTE]
 >
->您以后始终可以再次开始同步这些列。 取消同步列会从Data warehouse中删除任何数据；这仅意味着在更新周期内不会检查此列是否有新值或更新值。
+>您日後一律可以再次開始同步這些欄。 取消同步欄會從您的Data Warehouse中移除任何資料；這僅表示在更新週期期間，不會檢查此欄是否有新值或更新值。
 
-**取消同步列（或列）**
+**取消同步欄（或欄）**
 
-1. 转到 **[!DNL Manage Data]**，则 **[!UICONTROL Data Warehouse]**.
-1. 在 **[!UICONTROL Synced Tables]** 列表时，导航到包含该列的表。
-1. 选中要取消同步的一个或多个列旁边的一个或多个框。
+1. 前往 **[!DNL Manage Data]**，則 **[!UICONTROL Data Warehouse]**.
+1. 在 **[!UICONTROL Synced Tables]** 清單，導覽至包含欄的表格。
+1. 勾選一或多個要取消同步之欄旁的一或多個方塊。
    >[!NOTE]
    >
-   >如果不删除整个表，则无法取消同步主键列。
+   >您必須拖放整個資料表，才能取消同步處理主索引鍵資料行。
 
-1. 单击 **[!UICONTROL Remove]** 以取消同步一个或多个列。
+1. 按一下 **[!UICONTROL Remove]** 以取消同步一或多個資料行。
 
-下面我们来看看整个过程：
+以下是整個程式的概況：
 
 ![](../../mbi/assets/drop_column.png)
 
-## 总结
+## 正在結束
 
-就是这样！ 您的 [!DNL MBI] 现在，帐户应该更整洁，更便于您和您的团队导航。
+您的 [!DNL Commerce Intelligence] 您和您的團隊現在應該可以更整潔、更輕鬆地導覽。

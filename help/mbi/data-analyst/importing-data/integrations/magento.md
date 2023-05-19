@@ -1,26 +1,26 @@
 ---
-title: Connect Commerce
-description: 了解如何查找最有价值的客户获取来源和渠道。
+title: 連線Adobe Commerce
+description: 瞭解如何尋找您最有價值的贏取來源和管道。
 exl-id: c20e7673-9aa3-4e5e-979c-6adaa4164793
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
-source-wordcount: '103'
+source-wordcount: '100'
 ht-degree: 0%
 
 ---
 
-# Connect Commerce
+# Connect [!DNL Adobe Commerce]
 
 >[!NOTE]
 >
->需要 [管理员权限](../../../administrator/user-management/user-management.md).
+>需要 [管理員許可權](../../../administrator/user-management/user-management.md).
 
-想要了解您的业务表现如何，或查找最有价值的客户获取来源和渠道？ 将商务数据连接到 [!DNL MBI] 允许您回答这些问题等。
+想要瞭解您的業務表現或尋找您最有價值的贏取來源和管道？ 正在連線您的 [!DNL Adobe Commerce] 資料目標 [!DNL Commerce Intelligence] 可讓您回答這些問題及其他問題。
 
-由于商务数据库基于MySQL，因此您可以将其连接到 [!DNL MBI] 通过 [直接连接](../integrations/mysql-via-a-direct-connection.md), [cPanel](../integrations/mysql-via-cpanel.md)或 [通过SSH隧道](../integrations/mysql-via-ssh-tunnel.md). 建议使用SSH方法，因为该方法最安全。
+作為 [!DNL Adobe Commerce] 資料庫是以MySQL為基礎，您可以將其連線至 [!DNL Commerce Intelligence] 透過 [直接連線](../integrations/mysql-via-a-direct-connection.md)， [[!DNL cPanel]](../integrations/mysql-via-cpanel.md)，或 [透過SSH通道](../integrations/mysql-via-ssh-tunnel.md). 建議使用SSH方法，因為它是最安全的。
 
-## 相关信息
+## 相關資訊
 
-* [预期商务数据](../integrations/magento-data.md)
-* [用于分段和过滤的推荐数据维度](../../../best-practices/segment-filter.md)
-* [您最有价值的客户获取来源和渠道是什么？](../../analysis/most-value-source-channel.md)
+* [預期的Commerce資料](../integrations/magento-data.md)
+* [分段和篩選的建議資料維度](../../../best-practices/segment-filter.md)
+* [您最寶貴的贏取來源和管道為何？](../../analysis/most-value-source-channel.md)

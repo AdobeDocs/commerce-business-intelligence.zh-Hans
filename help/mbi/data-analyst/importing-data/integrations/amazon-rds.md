@@ -1,54 +1,58 @@
 ---
-title: 连接Amazon RDS
-description: 了解连接RDS实例的步骤。
+title: 連線Amazon RDS
+description: 瞭解連線您的RDS執行個體的步驟。
 exl-id: 02ad29c8-84d6-4b49-9ac1-e5f4feaa7fda
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
 
-# 连接Amazon RDS
+# Connect [!DNL Amazon RDS]
 
-Amazon Relational Database Services (RDS)是一种托管数据库服务，它运行在您可能已经熟悉的数据库引擎上 —  [[!DNL MySQL]](../integrations/mysql-via-a-direct-connection.md)， [[!DNL Microsoft® SQL]](../integrations/microsoft-sql-server.md)、和 [[!DNL PostgreSQ]](../integrations/postgresql.md).
+[!DNL Amazon Relational Database Services (RDS)] 是在您可能已經熟悉的資料庫引擎上執行的Managed資料庫服務：
 
-连接RDS实例的步骤因所使用的数据库类型以及是否使用加密连接(如 [`SSH tunnel for MySQL`](../integrations/mysql-via-ssh-tunnel.md))，以下是基本信息：
+* [[!DNL MySQL]](../integrations/mysql-via-a-direct-connection.md)
+* [[!DNL Microsoft SQL]](../integrations/microsoft-sql-server.md)
+* [[!DNL PostgreSQL]](../integrations/postgresql.md)
 
-## 授权 [!DNL MBI] 访问数据库
+連線您的電腦的步驟 [!DNL RDS] 執行個體會依您使用的資料庫型別，以及您是否使用加密連線(例如 [`SSH tunnel for MySQL`](../integrations/mysql-via-ssh-tunnel.md))，以下是基本介紹。
 
-在凭据页面上(**[!UICONTROL Manage Data** > **Integrations]**)对于每个数据库，您会看到一个包含必须授权才能将RDS连接到MBI的IP地址的框： `54.88.76.97` 和 `34.250.211.151`. 以下是 `MySQL credentials` 页面，在该页面中突出显示了IP地址框：
+## 授權 [!DNL Commerce Intelligence] 以存取您的資料庫
+
+在認證頁面(**[!UICONTROL Manage Data** > **Integrations]**)對於每個資料庫，您會看到一個方塊，其中包含您必須授權才能連線的IP位址[!DNL RDS] 至 [!DNL Commerce Intelligence]： `54.88.76.97` 和 `34.250.211.151`. 以下為檢視 `MySQL credentials` 頁面中，您反白顯示IP位址方塊：
 
 ![](../../../assets/RDS_IP.png)
 
-对象 [!DNL MBI] 要成功连接到RDS实例，您必须通过AWS管理控制台将这些IP地址添加到相应的数据库安全组。 可以将这些IP地址添加到现有组，也可以创建一个现有组 — 重要的是，该组有权访问您要连接的实例 [!DNL MBI].
+對象 [!DNL Commerce Intelligence] 以成功連線您的 [!DNL RDS] 執行個體時，您必須透過AWS管理主控台，將這些IP位址新增至適當的資料庫安全性群組。 這些IP位址可以新增至現有群組，或者您可以建立一個IP位址 — 重要的是，群組有權存取您要連線的執行個體 [!DNL Commerce Intelligence].
 
-添加 [!DNL MBI] IP地址，确保添加 `/32` 到IP地址的末尾，以向Amazon表明它是精确的IP地址。 别担心；AWS界面明确说明了这是必需的。
+新增 [!DNL Commerce Intelligence] ip位址，請務必新增 `/32` 至地址結尾以表示 [!DNL Amazon] 表示它是確切的IP位址。 別擔心；AWS介面會明確指出這是必要專案。
 
-## 创建 `Linux` 用户 [!DNL MBI] {#linux}
+## 建立 `Linux` 使用者 [!DNL Commerce Intelligence] {#linux}
 
 >[!NOTE]
 >
->仅当使用加密连接时才需要执行此步骤。 有关如何执行此操作的说明，请参阅正在使用的数据库的设置文章（例如：MySQL）。 此 `Linux` 用户允许我们创建 `SSH tunnel`，这是通过Internet发送数据的最安全方法。
+>只有在您使用加密連線時，才需要執行此步驟。 如需如何執行此動作的說明，請參閱您使用之資料庫的設定主題（例如：MySQL）。 此 `Linux` 使用者允許我們建立 `SSH tunnel`，這是透過網際網路傳送資料最安全的方法。
 
-## 为MBI创建数据库用户
+## 建立資料庫使用者 [!DNL Commerce Intelligence]
 
-这是该过程的一部分，其中的步骤因您使用的数据库而异。 不过，其想法是相同的：您为创建一个用户， [!DNL MBI] 用于访问数据库。 有关创建数据库的说明 [!DNL MBI] 用户可在正在使用的数据库的设置文章中找到。
+根據您使用的資料庫，步驟會有所不同。 不過，您的想法是一樣的，您會為以下專案建立使用者： [!DNL Commerce Intelligence] 用來存取您的資料庫。 建立資料庫的指示 [!DNL Commerce Intelligence] 使用者可在您使用之資料庫的設定主題中找到。
 
-## 在MBI中输入连接信息
+## 將連線資訊輸入到 [!DNL Commerce Intelligence]
 
-在您授予 [!DNL MBI] 访问您的实例并为我们创建了一个用户，您最后需要做的就是将连接信息输入到 [!DNL MBI].
+在您授與之後 [!DNL Commerce Intelligence] 存取您的執行個體並建立了一個使用者，您最後需要做的就是將連線資訊輸入到 [!DNL Commerce Intelligence].
 
-的凭据页面 `MySQL`， `Microsoft SQL`、和 `PostgreSQL` 可通过 `Integrations` 页面(**[!UICONTROL Manage Data** > **Integrations]**)，方法是单击 **[!UICONTROL Add Integration]**. 显示集成列表后，单击用于转到“身份证明”页的数据库的图标。 如果您当前无权访问所需的集成，请联系您的Adobe客户团队。
+的認證頁面 `MySQL`， `Microsoft SQL`、和 `PostgreSQL` 可透過 `Integrations` 頁面(**[!UICONTROL Manage Data** > **Integrations]**)，方法是按一下 **[!UICONTROL Add Integration]**. 顯示整合清單時，按一下您用來移至「證明資料」頁面的資料庫圖示。 如果您目前無法存取所需的整合，請聯絡您的Adobe客戶團隊。
 
-要完成创建连接，您需要以下信息：
+若要完成連線的建立，您需要下列資訊：
 
-* RDS实例的公共地址：可在AWS管理控制台中找到它。
-* 数据库实例使用的端口：某些数据库具有默认端口，该端口会自动填充 `Port` 字段。 此信息还可在数据库的设置文档中找到。
-* 您为其创建的用户的用户名和密码 [!DNL MBI].
+* 您的RDS執行個體的公用位址：這可以在 [!DNL AWS] 管理主控台。
+* 資料庫執行處理使用的連線埠：有些資料庫有預設的連線埠，會自動填入 `Port` 欄位。 此資訊也可在資料庫的設定檔案中找到。
+* 您為其建立之使用者的使用者名稱和密碼 [!DNL Commerce Intelligence].
 
-如果您使用的是加密连接，请更改 `Encrypted` 将“数据库身份证明”页切换为 `Yes`. 这将显示一个用于设置加密的额外表单：
+如果您使用加密連線，請變更 `Encrypted` 將「資料庫證明資料」頁面切換為 `Yes`. 這會顯示一個額外表單來設定加密：
 
 ![](../../../assets/sql-integration-encrypted-yes.png)
 
-就这么多！ 连接RDS实例已完成。
+

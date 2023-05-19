@@ -1,26 +1,26 @@
 ---
-title: 在多个屏幕上显示功能板
-description: 了解如何在办公室周围显示仪表板。
+title: 在多個熒幕上顯示儀表板
+description: 瞭解如何在辦公室周圍顯示儀表板。
 exl-id: aabe5c8f-0809-467c-9713-099aed6926b9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
 
 ---
 
-# 在办公室周围显示仪表板
+# 在辦公室周圍顯示儀表板
 
-对象 [!DNL MBI] 希望在整个办公室的屏幕上显示其仪表板和报告的用户，有多种硬件选项可以轻松启用此设置。
+對象 [!DNL Commerce Intelligence] 有興趣在整個辦公室的熒幕上顯示其儀表板和報表的使用者，有各種硬體選項可以輕鬆啟用此設定。
 
-以下是您需要用于该选项的推荐列表：
+以下是您需要選項的建議專案清單：
 
-1. **具有HDMI输入的电视机或显示器** 广播到。
+1. **含HDMI輸入的電視機或顯示器** 廣播至。
 
-1. **支持Wifi且运行轻量级操作系统的转换器，例如 [!DNL Chrome] 操作系统或Raspberry Pi。** 转换器应具有连接到屏幕的HDMI输出，并始终显示选定的仪表板。 专用计算机运行自己的操作系统优于类似这样的设置 [!DNL Chromecast]，您只能将同一功能板流式传输到所有连接的屏幕。 转换器最好安装在屏幕后面。
+1. **具備Wifi功能的硬體鎖，執行輕量型作業系統，例如 [!DNL Chrome] 作業系統或Raspberry Pi。** 您的硬體鎖應該有可連線至熒幕的HDMI輸出，並且一律顯示您選取的控制面板。 專屬電腦執行自己的作業系統，優於類似以下的設定 [!DNL Chromecast]，您只能將相同的儀表板轉接到所有連線的熒幕。 硬體鎖最好安裝在熒幕後面。
 
-1. **USB键盘和鼠标** 控制转换器。
+1. **USB鍵盤與滑鼠** 控制您的硬體鎖。
 
-1. **一种浏览器扩展，可同时在多个选项卡之间旋转。** 这允许您设置显示在唯一选项卡中的任何选定功能板。 Adobe推荐 [左轮手选项卡](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en) 扩展（如果您使用） [!DNL Chrome].
+1. **瀏覽器擴充功能，可一次在多個索引標籤之間旋轉。** 這可讓您設定顯示在唯一標籤中的任何選定儀表板。 Adobe建議 [旋轉器標籤](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en) 擴充功能(如果您使用 [!DNL Chrome].
 
-一旦有了上述硬件，您就可以在屏幕上打开一个浏览器窗口，其中包含要在每个选项卡中显示的特定仪表板。 最后，将浏览器配置为按所需的频率旋转每个仪表板。
+擁有上述硬體後，您可以在熒幕上開啟一個瀏覽器視窗，其中包含您想要顯示在每個標籤中的特定儀表板。 最後，將瀏覽器設定為以所需的頻率旋轉每個儀表板。

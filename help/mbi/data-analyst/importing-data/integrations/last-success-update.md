@@ -1,32 +1,32 @@
 ---
-title: 了解数据库和SQL编辑器之间的结果
-description: 了解数据库和SQL编辑器之间的结果。
+title: 瞭解資料庫和SQL編輯器之間的結果
+description: 瞭解瞭解資料庫和SQL編輯器之間的結果。
 exl-id: f31f3eef-791a-4984-901e-bc10554031bd
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '266'
 ht-degree: 0%
 
 ---
 
-# 数据库结果与 `SQL Editor` 结果
+# 資料庫結果vs [!DNL SQL Editor] 結果
 
-你可能会好奇 `Last successful update began` 字段在您的 `Integrations` 页面：
+您可能會好奇 `Last successful update began` 欄位位於您的 `Integrations` 頁面：
 
 ![Last_successful_update.png](../../../assets/Last_successful_update.png)
 
-## 了解 `timestamp` 字段
+## 瞭解 `timestamp` 欄位
 
-它显示了开始 `timestamp` （在您帐户设置的时区内） _上次成功更新周期_ 在您的帐户上。
+它會顯示開始 `timestamp` （在您帳戶上設定的時區內） _上次成功更新週期_ 在您的帳戶上。
 
-- 如果任何同步的表在上次更新周期遇到问题，则此时间戳为 *未更新*.
-- 因此，在某些情况下，报告可能更新了新数据，但 *上次成功更新已开始* 仍然落后。
+- 如果任何已同步表格在上次更新週期期間發生問題，則此時間戳記為 *未更新*.
+- 因此，在某些情況下，報表可能已更新為全新資料，但 *上次成功更新已開始* 仍落後。
 
-## 确定“真正的”最后一个数据点
+## 識別「真正的」最後一個資料點
 
-特定集成的最新数据点由 `Last Data Point Received` `timestamp` 位于每个集成的右侧。 该时间戳是指您的Data warehouse从数据源成功接收数据点的最后一个时间点，无论数据点是数据库、API还是第三方集成。
+特定整合的最新資料點由 `Last Data Point Received` 時間戳記，位於每個整合的右側。 該時間戳記指您的Data Warehouse成功從該來源接收資料點的最後一個時間，無論該來源是資料庫、API或第三方整合。
 
-检查来自以下位置的数据的时效性： *特定表*，Adobe建议快速创建 [SQL报告](../../dev-reports/sql-rpt-bldr.md) 会执行 `MAX(timestamp)` 在您帐户中最重要的表格上。 将此时间戳与 `Last Data Point` 指示问题影响的是整个帐户还是表的子集。 Adobe建议对三到四个常用重要表执行此操作。
+檢查資料的時效性 *特定表格*，Adobe建議快速建立 [[!DNL SQL] 報告](../../dev-reports/sql-rpt-bldr.md) 會執行 `MAX(timestamp)` 在您帳戶的最重要表格上。 將此時間戳記與 `Last Data Point` 指出問題是否影響整個帳戶或表格子集。 Adobe建議對三至四個重要、常用的表格執行此動作。
 
-- 如果 `MAX(timestamp)` 值比 `Last Data Point Received`，这意味着一部分表受到影响，但整个帐户的更新周期是稳定的。
-- 如果 `MAX(timestamp)` 值等于或早于 `Last Data Point Received`，这意味着帐户的更新周期受到影响。 在这种情况下， [提交支持服务单](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+- 如果 `MAX(timestamp)` 值晚於 `Last Data Point Received`，這表示一部分表格受到影響，但整體帳戶的更新週期穩定。
+- 如果 `MAX(timestamp)` 值等於或早於 `Last Data Point Received`，這表示帳戶的更新週期受到影響。 在此情況下， [提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

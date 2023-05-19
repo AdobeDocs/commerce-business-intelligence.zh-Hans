@@ -1,65 +1,63 @@
 ---
-title: 预期的QuickBooks数据
-description: 了解如何轻松地跟踪相关数据字段以供分析。
+title: 預期QuickBooks資料
+description: 瞭解如何輕鬆追蹤相關資料欄位以供分析。
 exl-id: a60996bd-e3d1-497d-abce-f02ef1444f1a
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1053'
 ht-degree: 0%
 
 ---
 
-# 预期 [!DNL QuickBooks] 数据
+# 預期 [!DNL QuickBooks] 資料
 
-![](../../../assets/Quickbooks.png)
+晚於 [您已連線 [!DNL QuickBooks] 帳戶](../../../data-analyst/importing-data/integrations/quickbooks.md)，您可以使用 [Data Warehouse管理員](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) 以輕鬆追蹤相關資料欄位以供分析。 在您的Data Warehouse中建立下清單格：
 
-晚于 [您已连接 [!DNL QuickBooks] 帐户](../../../data-analyst/importing-data/integrations/quickbooks.md)，您可以使用 [data warehouse管理器](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) 以轻松跟踪相关数据字段以供分析。 在您的Data warehouse中创建了以下表：
+若要檢視所有可供追蹤的欄位，請按一下表格名稱欄中的連結。
 
-要查看所有可用于跟踪的字段，请单击表名列中的链接。
+## 交易實體 {#transactionentities}
 
-## 交易实体 {#transactionentities}
-
-| **表名** | **描述** |
+| **表格名稱** | **說明** |
 |-----|-----|
-| [`bill`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Bill) | 票据表包含有关AP事务处理或第三方付款请求的信息。 属性包括货币类型、汇率、总金额、到期日、余额等。 |
-| [`billpayments`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/BillPayment) | BillPayment实体是从供应商接收的票据付款的最终交易记录。 此表包括供应商信息、付款类型、总金额、交易记录日期等。 |
-| [`creditmemos`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/CreditMemo) | 贷项通知单表记录全部或部分付款的退款或贷项事务处理。 某些属性包括客户名称、客户的帐单和送货信息、金额和日期。 |
-| [`deposits`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Deposit) | 按金包括直接按金及存放于中国后转至资产账户之客户付款。 `Undeposited Funds` 帐户。 属性包括金额、存款ID和日期。 |
-| [`estimates`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Estimate) | 估计是向客户提供包括商品或服务之建议定价之交易。 此表记录金额、任何折扣信息、客户信息和日期。 |
-| [`invoices`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Invoice) | 发票是客户稍后支付的销售表单。 发票表记录任何存款信息、日期、行项目、税务信息和客户信息。 |
-| [`journalentries`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/JournalEntry) | 日记帐分录表记录AR和AP帐户信息，包括日记帐分录ID、事务处理日期和行项目信息。 |
-| [`payments`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Payment) | 付款记录包括付款ID、已核销和未核销金额、事务处理日期、事务处理类型和处理状态等属性。 |
-| [`purchases`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Purchase) | purchases表表示您的支出，包括采购ID、付款类型、金额和任何行项目信息。 |
-| [`purchaseorders`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/PurchaseOrder) | 采购订单是发送给供应商的货物请求。 此表包括供应商信息、采购订单ID、交易记录日期、行项目信息、总金额和AP帐户信息。 |
-| [`refundreceipts`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/RefundReceipt) | 此表记录给客户的退款。 属性包括退款收款ID、行项目信息、总金额、客户信息和余额。 |
-| [`salesreceipts`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/SalesReceipt) | 销售收款表记录提供给客户的销售收款中的信息，包括销售收款ID、行项目信息、总额、客户信息、事务处理日期和任何定金。 |
-| [`timeactivities`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/TimeActivity) | 时间活动是供应商和/或员工的时间记录。 时间活动表包括时间活动ID、员工/供应商信息、记录的时间、活动描述和记录的日期。 |
-| [`transfers`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Transfer) | 转帐表记录有关在帐户之间移动的资金的信息。 属性包括转移ID、金额、帐户信息和日期。 |
-| [`vendorcredits`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/VendorCredit) | 供应商贷项是退款或提供给供应商贷项的AP交易记录。 此 `vendorcredits` 该表包括供应商贷项ID、行项目信息、供应商信息、AP帐户、总金额和日期。 |
+| [`bill`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Bill) | 此 `bills` 表格包含AP交易的相關資訊，或第三方付款要求。 屬性包括幣別型態、匯率、總金額、到期日、餘額等。 |
+| [`billpayments`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/BillPayment) | `BillPayment` 實體是從供應商收到的票據付款的最終交易。 此表格包含供應商資訊、付款型別、總金額、交易日期等。 |
+| [`creditmemos`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/CreditMemo) | 此 `creditmemos` 表格會記錄全部與部份付款的退款或銷退折讓交易。 部分屬性包括客戶名稱、客戶的帳單和送貨資訊、金額和日期。 |
+| [`deposits`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Deposit) | `Deposits` 包括直接存款和客戶付款，這些款項存放於 `Undeposited Funds` 帳戶。 屬性包括金額、存款ID和日期。 |
+| [`estimates`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Estimate) | `Estimates` 是提供給客戶的交易，包括商品或服務的建議定價。 此表格會記錄金額、任何折扣資訊、客戶資訊及日期。 |
+| [`invoices`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Invoice) | `Invoices` 是客戶稍後付款的銷售表單。 商業發票表格會記錄任何存款資訊、日期、明細行專案、稅捐資訊及客戶資訊。 |
+| [`journalentries`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/JournalEntry) | 此 `journalentries` 表格會記錄AR與AP科目資訊，包括分錄識別碼、交易日期及明細行料號資訊。 |
+| [`payments`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Payment) | A `payment` 記錄包含付款識別碼、已沖銷和未沖銷金額、交易日期、交易型態及處理狀態等屬性。 |
+| [`purchases`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Purchase) | 此 `purchases` 表格代表您的費用，並包含採購ID、付款型別、金額及任何明細專案資訊。 |
+| [`purchaseorders`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/PurchaseOrder) | 此 `purchaseorders` 表格包含傳送給廠商的貨品請求。 此表格包含供應商資訊、採購單識別碼、交易日期、明細行料號資訊、總金額及AP帳戶資訊。 |
+| [`refundreceipts`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/RefundReceipt) | 此 `refundreceipts` 表格會記錄給予客戶的退款。 屬性包含退款收款識別碼、明細行料號資訊、總金額、客戶資訊及餘額。 |
+| [`salesreceipts`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/SalesReceipt) | 此 `salesreceipts` 表格會記錄指定給客戶的銷售收款中的資訊，包括銷售收款識別碼、明細行專案資訊、總金額、客戶資訊、交易日期及任何訂金。 |
+| [`timeactivities`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/TimeActivity) | 此 `timeactivities` 表格會保留廠商和/或員工的時間記錄，並包含時間活動ID、員工/廠商資訊、記錄時間、活動說明和記錄的日期。 |
+| [`transfers`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Transfer) | 此 `transfers` 表格會記錄帳戶間資金移動的資訊。 屬性包括移轉ID、金額、帳戶資訊和日期。 |
+| [`vendorcredits`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/VendorCredit) | 廠商貸方是指退款或給予廠商貸方的AP交易。 此 `vendorcredits` 表格包含廠商貸方ID、明細專案資訊、廠商資訊、AP帳戶、總金額及日期。 |
 
 {style="table-layout:auto"}
 
-## 名称列表实体 {#namelistentities}
+## 為清單實體命名 {#namelistentities}
 
-| **表名** | **描述** |
+| **表格名稱** | **說明** |
 |-----|-----|
-| [`accounts`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Account) | 此表包括帐户ID、名称、状态、类型、余额、货币和创建时间。 |
-| [`budgets`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Budget) | 此表记录与公司预算相关的所有信息，包括预算ID、名称、起始日期和终止日期、类型、状态和详细信息。 |
-| [`classes`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Class) | 类应用于事务处理的明细行，允许您跟踪未与客户或项目关联的区段。 此表记录类ID、名称、子类和状态。 |
-| [`customers`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Customer) | customers表包含与客户相关的所有信息，包括客户的ID、姓名、帐单和送货地址、电话号码和电子邮件地址。 |
-| [`departments`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Department) | departments表包括部门ID、名称和类型（子部门与顶层部门）。 |
-| [`employees`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Employee) | employees表记录有关您公司员工的信息。 如果公司启用了工资单，则属性包括员工ID、姓名、地址、电话号码和可开单信息。 |
-| [`items`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Item) | 项目表包含有关贵公司销售的产品或服务的详细信息。 此表包括物料标识、名称、说明、单价、类型、采购信息、现有量以及收入和资产帐户信息。 |
-| [`paymentmethods`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/PaymentMethod) | 付款方法表记录收到的货物和服务的付款方法。 它包含付款ID、类型和名称。 |
-| [`taxagencies`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/TaxAgency) | 此表记录有关税务代理的信息（包括税务代理ID），以及有关采购和销售税的跟踪信息。 |
-| [`taxcodes`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/TaxCode) | 税码用于跟踪产品、服务和客户的纳税状态（应纳税与非纳税）。 “税码”表包括税码ID、名称、说明、状态、应纳税状态、税率和税组。 |
-| [`taxrates`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/TaxRate) | 计算税项负债时采用税率。 此表包括税率ID、名称、说明、税率、税务代理等。 |
-| [`terms`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Term) | 该实体指销售条款。 术语表包括术语ID、名称、类型、折扣百分比和到期日。 |
-| [`vendors`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Vendor) | 供应商表包含有关您从中购买的供应商的信息。 表属性包括供应商ID、公司名称、帐号、帐户余额、1099状态、帐单地址、电话号码、电子邮件地址和网址。 |
+| [`accounts`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Account) | 此表格包含帳戶ID、名稱、狀態、型別、餘額、貨幣和建立時間。 |
+| [`budgets`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Budget) | 此表格會記錄與公司預算相關的所有資訊，包括預算識別碼、名稱、開始與結束日期、型態、狀態及明細。 |
+| [`classes`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Class) | 套用至交易明細行的類別可讓您追蹤未與客戶或專案繫結的區段。 此表格記錄類別ID、名稱、子類別和狀態。 |
+| [`customers`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Customer) | 此 `customers` 表格包含與客戶相關的所有資訊，包括客戶ID、名稱、帳單和送貨地址、電話號碼及電子郵件地址。 |
+| [`departments`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Department) | 此 `departments` 表格包含部門ID、名稱和型別（子部門與最上層部門）。 |
+| [`employees`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Employee) | 此 `employees` 表格會記錄您公司員工的相關資訊。 如果公司已啟用給薪功能，則屬性包括員工識別碼、姓名、地址、電話號碼及可開立帳單的資訊。 |
+| [`items`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Item) | 此 `items` 表格包含貴公司銷售的產品或服務詳細資訊。 此表格包含料號識別碼、名稱、摘要、單價、型態、採購資訊、庫存量以及收入與資產科目資訊。 |
+| [`paymentmethods`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/PaymentMethod) | 此 `paymentmethods` 表格記錄收到的商品與服務付款方式。 它包含付款ID、型別和名稱。 |
+| [`taxagencies`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/TaxAgency) | 此表格會記錄稅務代理商的相關資訊，包括稅務代理商ID，以及針對採購和銷售所追蹤的稅捐資訊。 |
+| [`taxcodes`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/TaxCode) | 稅捐代碼可用來追蹤產品、服務及客戶的稅捐狀態（應稅與不納稅）。 此 `taxcodes` 此表格包含稅捐代碼識別碼、名稱、摘要、狀態、應稅狀態、稅率及稅捐群組。 |
+| [`taxrates`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/TaxRate) | 稅率是用來計算稅捐負債。 此表格包含稅率ID、名稱、說明、稅率、稅務代理等。 |
+| [`terms`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Term) | 此實體代表進行銷售的條款。 字詞表包含字詞ID、名稱、型別、折扣百分比和到期日。 |
+| [`vendors`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Vendor) | 「廠商」表格包含您所購買之廠商的相關資訊。 表格屬性包括廠商ID、公司名稱、帳號、帳戶餘額、1099狀態、帳單地址、電話號碼、電子郵件地址和網址。 |
 
 {style="table-layout:auto"}
 
-## 相关：
+## 相關：
 
-* [正在连接 [!DNL QuickBooks]](../integrations/quickbooks.md)
-* [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [正在連線 [!DNL QuickBooks]](../integrations/quickbooks.md)
+* [重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

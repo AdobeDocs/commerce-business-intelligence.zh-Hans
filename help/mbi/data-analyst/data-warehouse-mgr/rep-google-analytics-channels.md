@@ -1,74 +1,74 @@
 ---
-title: 使用客户获取源复制Google Analytics渠道
-description: 了解如何使用客户获取源复制Google Analytics渠道。
+title: 使用贏取來源複製Google Analytics管道
+description: 瞭解如何使用贏取來源來復寫Google Analytics管道。
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
 
-# 使用客户获取源的Google Analytics
+# [!DNL Google Analytics] 使用贏取來源
 
-## 什么是渠道？ {#channels}
+## 什麼是管道？ {#channels}
 
-创建自定义区段以查看不同流量的表现和观察趋势是对的最强大的用途之一  [!DNL Google Analytics ]. 中默认存在的一类区段 [!DNL Google Analytics ] 是 `Channels`. 渠道是用户访问您网站的一组常用方式。  [!DNL Google Analytics ] 自动对您获取用户的多种方式进行排序（无论是社交媒体、每次点击付费、电子邮件还是推荐链接），并将其捆绑到一个存储桶或渠道中。
+建立自訂區段來檢視不同流量的表現和觀察趨勢，是對最強大的用途之一 [!DNL Google Analytics]. 預設存在於中的一個區段類別 [!DNL Google Analytics] 是 `Channels`. 管道是使用者造訪您網站的一組常見方式。  [!DNL Google Analytics] 自動排序您取得使用者的許多方式（無論是社群媒體、每次點按付費、電子郵件或轉介連結），並將其整合到貯體或頻道中。
 
-## 为什么我看不到我的 `channels` 在MBI中？ {#nochannels}
+## 為什麼我看不到我的 `channels` （在Commerce Intelligence？） {#nochannels}
 
-`Channels` 是数据的简单、聚合存储段。 要将客户获取分类为渠道存储段，Google会使用特定参数设置不同的规则和定义：客户获取的组合 [来源](https://support.google.com/analytics/answer/1033173?hl=en) （流量的来源）和客户获取 [中](https://support.google.com/analytics/answer/6099206?hl=en) （源的一般类别）。
+`Channels` 是簡單的彙總資料貯體。 若要將您的贏取排序至管道值區， [!DNL Google] 使用特定引數設定不同的規則和定義：贏取組合 [來源](https://support.google.com/analytics/answer/1033173?hl=en) （流量的來源）和贏取 [中](https://support.google.com/analytics/answer/6099206?hl=en) （來源的一般類別）。
 
-虽然拥有这些存储段可以帮助您了解流量的来源，但此类数据不会通过渠道进行标记，而是通过源和媒体的组合进行标记。 由于Google将渠道信息作为两个单独的数据点发送，因此渠道分组不会自动显示在 [!DNL MBI].
+雖然擁有這些貯體可協助您瞭解流量的來源，但此資料不會透過管道進行標籤，而是透過來源和中介的組合進行標籤。 因為 [!DNL Google] 以兩個個別的資料點傳送管道資訊，管道分組不會自動顯示於 [!DNL Commerce Intelligence].
 
-## 默认渠道分组是什么？ 它们是如何创建的？
+## 什麼是預設的管道群組？ 它們是如何建立的？
 
-默认情况下，Google会为您设置八个不同的渠道。 查看确定如何创建这些文档的规则：
+依預設， [!DNL Google] 設定八個不同的管道。 決定如何建立管道的規則如下。
 
-| 渠道 | 这是什么？ | 它是如何创建的？ |
+| **頻道** | **這是什麼？** | **它是如何建立的？** |
 |---|---|---|
-| 直接 | 直接进入您网站的任何人。 | 源= `Direct`<br>和中= `(not set); OR Medium = (none)` |
-| 自然搜索 | 在无偿搜索引擎中自然排名的流量。 | 中= `organic` |
-| 反向链接 | 流量来自非Organic Search的外部链接或非社交网络网站。 | 中= `referral` |
-| 付费搜索 | 具有UTM跟踪代码的流量，其中媒体为“cpc”、“ppc”或“paidsearch”，并且是不匹配“内容”的广告分发网络。 | 中= `^(cpc|ppc|paidsearch)$`<br>AND Ad Distribution Network ≠ `Content` |
-| Social | 反向链接流量来自大约 [400个社交网络](https://www.annielytics.com/blog/analytics/sites-google-analytics-includes-in-social-reports/) 和未被标记为广告。 | 社交源反向链接= `Yes`<br>或中= `^(social|social-network|social-media|sm|social network|social media)$` |
-| 电子邮件 | 使用“电子邮件”媒介标记的会话流量。 | 媒体的UTM跟踪代码= `email` |
-| 显示 | 具有UTM跟踪代码的流量，其中媒体为display或cpm。 此外，还包括广告分发网络与“内容”匹配的AdWords交互 | 中= `^(display|cpm|banner)$`<br>或Ad分发网络= `Content`<br>AND广告格式≠ `Text` |
-| 其他 | 其他广告渠道（不包括付费搜索）中的会话，这些会话使用媒介“cpc”、“ppc”、“cpm”、“cpv”、“cpa”、“cpp”、“affiliate”进行标记。 | 中= `^(cpv|cpa|cpp|content-text)$` |
+| 直接 | 直接進入您網站的人。 | 來源= `Direct`<br>AND中= `(not set); OR Medium = (none)` |
+| 有機搜尋 | 已有機地在無償搜尋引擎中排名的流量。 | 中= `organic` |
+| 轉介 | 來自非有機搜尋外部連結或非社交網路網站的流量。 | 中= `referral` |
+| 付費搜尋 | 具有UTM追蹤程式碼的流量，其中媒體為「cpc」、「ppc」或「paidsearch」，並且是不符合「內容」的廣告散佈網路。 | 中= `^(cpc|ppc|paidsearch)$`<br>AND Ad Distribution Network ≠ `Content` |
+| 社交 | 反向連結流量來自以下任何一項：大約 [400個社交網路](https://www.annielytics.com/blog/analytics/sites-google-analytics-includes-in-social-reports/) 和不會被標籤為廣告。 | 社交來源轉介= `Yes`<br>或中= `^(social|social-network|social-media|sm|social network|social media)$` |
+| 電子郵件 | 來自使用「電子郵件」媒介標籤的工作階段的流量。 | 媒體的UTM追蹤代碼= `email` |
+| 顯示 | 具有UTM追蹤程式碼（媒體為顯示或cpm）的流量。 也包括廣告散佈網路符合「內容」的AdWords互動 | 中= `^(display|cpm|banner)$`<br>OR廣告散佈網路= `Content`<br>AND廣告格式≠ `Text` |
+| 其他 | 其他廣告頻道（不包括付費搜尋）的工作階段，並以&quot;cpc&quot;、&quot;ppc&quot;、&quot;cpm、&quot;cpv&quot;、&quot;cpa&quot;、&quot;cpp&quot;、&quot;affiliate&quot;等媒體標籤。 | 中= `^(cpv|cpa|cpp|content-text)$` |
 
 {style="table-layout:auto"}
 
-## 如何在Data warehouse中重新创建这些渠道分组？ {#recreate}
+## 如何在Data Warehouse中重新建立這些管道群組？ {#recreate}
 
-现在您已经知道渠道只是源和介质的组合，在Data warehouse中重新创建这些分组是一个简单的三步过程。
+現在您知道管道只是來源和媒體的組合，在Data Warehouse中重新建立這些分組是簡單的3步驟流程。
 
-1. **启用您的[!DNL Google ECommerce]集成**
+1. **啟用您的[!DNL Google ECommerce]整合**
 
-   [启用后](../importing-data/integrations/google-ecommerce.md)，确保 [同步](../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) **中** 和 **源** data warehouse中的字段。 完成此操作后，媒体获取数据和源获取数据将引入您的Data warehouse。
+   [啟用時](../importing-data/integrations/google-ecommerce.md)，請確定 [同步](../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) **中** 和 **source** Data Warehouse中的欄位。 完成此作業後，媒體與來源贏取資料將會帶入您的Data Warehouse。
 
-1. **上传Google渠道分组的映射**
+1. **上傳Google的管道分組對應**
 
-   为了节省您的时间，Commerce已创建一个表，并将默认分组映射为文件，您可以 [下载](../../assets/ga-channel-mapping.csv).
+   Adobe Commerce會建立表格，並將預設群組對應為檔案，您可以 [下載](../../assets/ga-channel-mapping.csv).
 
-   如果您是Google Analytics专家并创建了自己的渠道，则要在将文件上传到之前将特定规则添加到映射表 [!DNL MBI].
+   如果您是 [!DNL Google Analytics] pro並建立您自己的管道，您想要先將特定規則新增至對應表格，然後再將檔案上傳至 [!DNL Commerce Intelligence].
 
-   将它作为a引入您的Data warehouse [文件上传](../importing-data/connecting-data/using-file-uploader.md).
+   將其帶入您的Data Warehouse，作為 [檔案上傳](../importing-data/connecting-data/using-file-uploader.md).
 
    ![](../../assets/Setting_Primary_Keys.png)
 
-1. **建立以下对象之间的关系：[!DNL Google ECommerce]和映射文件上传**
+1. **建立以下專案之間的關係：[!DNL Google ECommerce]和對應檔案上傳**
 
-   要建立[!DNL Google ECommerce]和映射表， [提交支持请求](../../guide-overview.md) 敬您的Data Analyst团队并参考本文。 分析人员将创建一个新的计算列，称为 **渠道** （在电子商务表中）。 **经过一个完整的更新周期后**，此列即可在筛选条件或分组依据中使用。
+   若要建立[!DNL Google ECommerce] 和對應表， [提交支援要求](../../guide-overview.md#Submitting-a-Support-Ticket) 至您的資料分析團隊並參考此主題。 分析人員會建立新的計算欄，稱為 **頻道** 在電子商務表格中。 **在完整更新週期後**，此欄將可在 `Filter` 或 `Group by`.
 
-恭喜！ 现在，您的Data warehouse中包含Google Analytics渠道分组，这意味着您可以从新的角度分析数据：
+您現在擁有 [!DNL Google Analytics Channel] Data Warehouse中的分組，這表示您可以從新的角度分析資料：
 
-![按渠道对“订单数”量度分段](../../assets/GA_Channel_Gif.gif)
+![依管道將「訂單數」量度分段](../../assets/GA_Channel_Gif.gif)
 
-在此示例中，您开始执行简单操作 — 将 **订单数** 量度依据 **渠道**. 现在轮到您了 — 测试您的新列，看看您可以在Google Analytics渠道数据中识别哪些趋势！
+在此範例中，您一開始是透過分段 **訂單數** 量度依據 **頻道**. 測試新欄，看看您可在中識別哪些趨勢 [!DNL Google Analytics Channel] 資料！
 
-## 相关文档
+## 相關檔案
 
 * [使用Report Builder](../../tutorials/using-visual-report-builder.md)
-* [预期[!DNL Google ECommerce]数据](../importing-data/integrations/google-ecommerce-data.md)
-* [构建[!DNL Google ECommerce]包含订单和客户数据的维度](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
-* [您最宝贵的客户获取来源和渠道是什么？](../analysis/most-value-source-channel.md)
+* [預期[!DNL Google ECommerce]資料](../importing-data/integrations/google-ecommerce-data.md)
+* [建置[!DNL Google ECommerce]包含訂單和客戶資料的維度](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
+* [您最寶貴的贏取來源和管道為何？](../analysis/most-value-source-channel.md)

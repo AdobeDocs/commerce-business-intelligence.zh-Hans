@@ -1,86 +1,84 @@
 ---
-title: 使用映射表标准化数据
-description: 了解如何使用映射表。
+title: 使用對應表格標準化資料
+description: 瞭解如何使用對應表格。
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
 
-# 使用映射表标准化数据
+# 使用對應表格標準化資料
 
-图片如下：您位于 `Report Builder`，构建 `Revenue by State` 报告。 您位于区域。 在您添加之前，一切进展顺利 `billing state` 分组到您的报表，您会看到以下内容：
+想像您身在 `Report Builder` 建立 `Revenue by State` 報告。 在您嘗試新增「 」之前，一切順利 `billing state` 分組至您的報表，您會看到以下畫面：
 
 ![](../../assets/Messy_State_Segments.png)
 
-## 这怎么会发生？
+## 這怎麼會發生？
 
-遗憾的是，缺乏标准化有时会导致数据混乱，并在构建报告时带来麻烦。 在本例中，您的客户可能没有下拉菜单或标准化方式来输入其计费状态信息。 这会导致出现各种值 —  `pa`， `PA`， `penna`， `pennsylvania`、和 `Pennsylvania`  — 全部为同一状态，这会导致在 `Report Builder`.
+遺憾的是，缺乏標準化有時會導致資料混亂，並在建立報告時造成麻煩。 在此範例中，您的客戶可能沒有下拉式選單或標準化方式可輸入其計費狀態資訊。 這會導致各種值 —  `pa`， `PA`， `penna`， `pennsylvania`、和 `Pennsylvania`  — 全部為相同狀態，這會導致中出現一些奇怪的結果 `Report Builder`.
 
-可能存在一个技术资源，可帮助您清理数据或将所需的列直接插入数据库。 如果答案是否定的，还有另一种解决方案： **映射表**. 映射表允许您将数据映射到单个输出，从而快速、轻松地清除和标准化任何混乱的数据。
+可能有技術資源可協助您清除資料，或直接將所需的欄插入資料庫。 如果沒有，還有另一個解決方案 —  **對應表格**. 對應表格可讓您將資料對應至單一輸出，快速輕鬆地清除任何雜亂的資料並將其標準化。
 
 >[!NOTE]
 >
->如果没有Adobe支持团队的帮助，则无法为统一表创建映射表。
+>如果沒有Adobe支援團隊的協助，您就無法建立統一表格的對映表。
 
-## 如何创建它？ {#how}
+## 如何建立？ {#how}
 
-**数据格式刷新程序：**
+**資料格式重新整理程式：**
 
-* 确保您的电子表格具有标题行。
-* 避免使用逗号！ 上传文件时会导致问题。
-* 使用标准日期格式 `(YYYY-MM-DD HH:MM:SS)` 用于日期。
-* 百分比必须以小数形式输入。
-* 确保正确保留任何前导零或尾随零。
+* 請確定您的試算表有標題列。
+* 避免使用逗號！ 上傳檔案時會造成問題。
+* 使用標準日期格式 `(YYYY-MM-DD HH:MM:SS)` 用於日期。
+* 百分比必須以小數點輸入。
+* 請確定正確保留任何開頭或結尾的零。
 
-在深入之前，Adobe建议您 [导出原始表数据](../../tutorials/export-raw-data.md). 首先查看原始数据意味着您可以探索需要清理的数据的所有可能组合，从而确保映射表涵盖所有内容。
+潛入之前，Adobe建議您 [匯出原始資料表資料](../../tutorials/export-raw-data.md). 首先檢視原始資料表示您可以探索您需要清理的資料的所有可能組合，從而確保對應表格涵蓋所有內容。
 
-要生成映射表，您需要创建一个两列电子表格，该表格应遵循 [格式化文件上传的规则](../../data-analyst/importing-data/connecting-data/using-file-uploader.md).
+若要建立對映表格，您需要建立一個兩欄式試算表，並遵循 [檔案上傳的格式化規則](../../data-analyst/importing-data/connecting-data/using-file-uploader.md).
 
-在第一列中，输入存储在数据库中的值 **每行只有一个值**. 例如， `pa` 和 `PA` 不能位于同一行 — 每个输入都需要有自己的行。 有关示例，请参阅下文。
+在第一欄中，輸入儲存在資料庫中的值 **每列只有一個值**. 例如， `pa` 和 `PA` 不能在同一行 — 每個輸入必須有自己的列。 如需範例，請參閱下文。
 
-在第二列中，输入以下值 **应为**. 继续使用计费状态示例（如果需要） `pa`， `PA`， `Pennsylvania`、和 `pennsylvania` 简单地 `PA`，您可以输入 `PA` 在此列中为每个输入值。
+在第二欄中，輸入這些值 **應為**. 如果您想要的話，繼續使用計費狀態範例 `pa`， `PA`， `Pennsylvania`、和 `pennsylvania` 成為 `PA`，您可以輸入 `PA` 在此欄中為每個輸入值。
 
 ![](../../assets/Mapping_table_examples.jpg)
 
-## 我需要做什么 [!DNL MBI] 使用它？ {#use}
+## 我需要做什麼 [!DNL Commerce Intelligence] 以使用它？ {#use}
 
-创建完映射表后，您将需要 [上传文件](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) 到 [!DNL MBI] 和 [创建联接列](../../data-analyst/data-warehouse-mgr/calc-column-types.md) 该选项会将新字段重新定位到所需的表中。 将文件同步到Data warehouse后，即可执行此操作。
+完成建立對應表格之後，您必須 [上傳檔案](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) 到 [!DNL Commerce Intelligence] 和 [建立聯結欄](../../data-analyst/data-warehouse-mgr/calc-column-types.md) 會將新欄位重新定位到所需的表格中。 將檔案同步至您的Data Warehouse後，您就可以執行此動作。
 
-此示例移动您在 `mapping_state` 表(`state_input`)到 `customer_address` 使用联接列的表。 这允许我们按清理进行分组 `state_input` 列而不是 `state` 列。
+此範例會移動您在 `mapping_state` 表格(`state_input`)重新命名為 `customer_address` 使用聯結欄的表格。 這可讓我們依清理來分組 `state_input` 欄，而非 `state` 欄。
 
-要创建 `joined` 列中，导航到字段将在Data warehouse管理器中重新定位到的表。 在本例中，这将 `customer_address` 表格。
+若要建立 `joined` 欄，瀏覽至欄位將在「Data Warehouse管理員」中重新放置到的表格。 在此範例中，這將會是 `customer_address` 表格。
 
-1. 单击 **[!UICONTROL Create a Column]**.
-1. 选择 `Joined Column` 从 `Definition` 下拉菜单。
-1. 为列提供一个名称，使其与 `state` 列中的值。 为列命名 `billing state (mapped)` 这样您就可以在Report Builder中进行分段时知道要使用哪一列。
-1. 连接表所需的路径不存在，因此您需要创建一个路径。 单击 **[!UICONTROL Create new path]**  在 `Select a table and column` 下拉菜单。
+1. 按一下 **[!UICONTROL Create a Column]**.
+1. 選取 `Joined Column` 從 `Definition` 下拉式清單。
+1. 為欄命名，使其與 `state` 資料行中的資料行。 為欄命名 `billing state (mapped)` 以便您分辨在report builder中分段時要使用的欄。
+1. 您需要連線表格的路徑不存在，因此您需要建立一個路徑。 按一下 **[!UICONTROL Create new path]**  在 `Select a table and column` 下拉式清單。
 
-   如果您不确定表关系是什么，或者不确定如何正确定义主键和外键，请查看 [教程](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md) 以寻求帮助。
+   如果您不確定表格關係是什麼，或不確定如何正確定義主索引鍵和外索引鍵，請出庫 [教學課程](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md) 以取得協助。
 
-   * 在 `Many` 侧，选择要将该字段重新定位到的表(同样，对于我们来说，它是 `customer_address`)和 `Foreign Key` 列，或 `state` 列，在本例中。
-   * 在 `One` 侧，选择 `mapping` 表格和 `Primary key` 列。 在这种情况下，您可以选择 `state_input` 中的列 `mapping_state` 表格。
-   * 下面是路径的外观：
+   * 於 `Many` 在側，選取您要重新放置欄位的表格(同樣地，對我們來說，它是 `customer_address`)和 `Foreign Key` 欄，或 `state` 欄，在範例中。
+   * 於 `One` 側，選取 `mapping` 表格和 `Primary key` 欄。 在此情況下，您可以選取 `state_input` 欄來自 `mapping_state` 表格。
+   * 以下是該路徑的外觀：
 
       ![](../../assets/State_Mapping_Path.png)
 
-1. 完成后，单击 **[!UICONTROL Save]** 以创建路径。
-1. 路径在保存后可能不会立即填充 — 如果发生这种情况，请单击 `Path` 框并选择您创建的路径。
-1. 单击 **[!UICONTROL Save]** 以创建列。
+1. 完成後，按一下 **[!UICONTROL Save]** 以建立路徑。
+1. 路徑在儲存後可能不會立即填入 — 如果發生這種情況，請按一下 `Path` 方塊並選取您建立的路徑。
+1. 按一下 **[!UICONTROL Save]** 以建立欄。
 
-就是这样！
+## 我現在該做什麼？ {#wrapup}
 
-## 我现在该做什么？ {#wrapup}
-
-更新周期完成后，您将能够使用新联接的列来正确划分数据，而不是从数据库中划分混乱的列。 立即查看您的分组选项 — 不再有压力混乱：
+更新週期完成後，您將能夠使用新的聯結欄來正確地劃分您的資料，而不是從資料庫中劃分混亂的欄。 立即檢視您的分組選項 — 不再有壓力混亂：
 
 ![](../../assets/Clean_State_Segments.png)
 
-无论您何时想要清理Data warehouse中一些潜在的混乱数据，映射表都非常方便。 但是，映射表也可以用于其他一些很酷的用例，例如 [在MBI中复制Google Analytics渠道](../data-warehouse-mgr/rep-google-analytics-channels.md).
+無論您何時想要清除Data Warehouse中某些可能雜亂的資料，對應表格都相當方便。 不過，對應表格也可用於其他酷炫的使用案例，例如 [複製您的 [!DNL Google Analytics channels] 在 [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md).
 
-### 相关
+### 相關
 
-* [了解和评估表关系](../data-warehouse-mgr/table-relationships.md)
-* [为计算列创建/删除路径](../data-warehouse-mgr/create-paths-calc-columns.md)
+* [瞭解和評估表格關係](../data-warehouse-mgr/table-relationships.md)
+* [建立/刪除計算欄的路徑](../data-warehouse-mgr/create-paths-calc-columns.md)

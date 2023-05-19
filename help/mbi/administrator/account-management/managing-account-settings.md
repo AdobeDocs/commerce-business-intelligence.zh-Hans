@@ -1,34 +1,34 @@
 ---
-title: 管理您的帐户设置
-description: 了解如何为Data warehouse自定义帐户设置。
+title: 管理您的帳戶設定
+description: 瞭解如何為您的Data Warehouse自訂帳戶設定。
 exl-id: 847d51b1-287e-4c14-b64e-0bd9bfcccedc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
 
-# 自定义帐户设置
+# 自訂帳戶設定
 
 >[!NOTE]
 >
->需要 [管理员权限。](../../administrator/user-management/user-management.md)
+>需要 [管理員許可權。](../../administrator/user-management/user-management.md)
 
-在您的 [!DNL MBI] 帐户，您可以为Data warehouse自定义帐户设置。 选择位于任何屏幕右上角的组织名称，然后选择 **[!UICONTROL Account Settings]** 从下拉菜单中查找。
+在您的 [!DNL Commerce Intelligence] 帳戶，您可以為Data Warehouse自訂帳戶設定。 您可以在任何畫面的右上角選取您的組織名稱，然後選擇 **[!UICONTROL Account Settings]** 下拉式清單中的。
 
-* **[!UICONTROL Client Name:]** 此设置将显示在所有功能板的右上角，以及帐户中的其他位置。 如果您想更改 **[!UICONTROL "Vandelay Industries Co., Ltd]** 转换为 **[!UICONTROL "Vandelay]**，这是执行此操作的位置。
+* **[!UICONTROL Client Name:]** 此設定會出現在所有儀表板的右上角，以及您帳戶內的其他位置。 如果您想要變更 **[!UICONTROL "Vandelay Industries Co., Ltd]** 轉換成 **[!UICONTROL "Vandelay]**，這是執行此動作的位置。
 
-* **[!UICONTROL Currency:]** 这是 *默认货币* 所有货币值。 无论何时将小数或货币值同步到Data warehouse中，此设置都会确定报表中放置在该值之前的符号。
+* **[!UICONTROL Currency:]** 這是 *預設貨幣* 您帳戶中的所有貨幣值。 無論小數或貨幣值何時同步至Data Warehouse，此設定都會決定報表中置於該值之前的符號。
 
-* **[!UICONTROL Blackout Hours:]** 此设置确保在一天中的选定小时内，您的Data warehouse不会访问连接的数据库。 所有小时均以零小时和东部标准时间(EST)表示。 例如，如果您不希望在EST上午9:00到EST下午1:00之间访问生产数据库，则应键入以下数字数组： **9、10、11、12**.
+* **[!UICONTROL Blackout Hours:]** 此設定可確保您的Data Warehouse在一天中的選定時段不會存取您連線的資料庫。 所有時數都會以零時和東部標準時間(EST)表示。 例如，如果您不想在東部標準時間上午9:00到下午1:00之間存取生產資料庫，則應輸入下列數字陣列： **9、10、11、12**.
 
-* **[!UICONTROL Forced update hours:]** 此设置可确保自动在您的帐户中开始Data warehouse更新 *在小时内* 您已指定。 与中断时间一样，这些时间也在东部时间中。 例如，如果您希望Data warehouse更新自动从 **午夜** 和 **中午** EST，应键入以下数字数组： **0， 12**.
+* **[!UICONTROL Forced update hours:]** 此設定可確保帳戶中的Data Warehouse更新自動開始 *在小時內* 您已指定。 和中斷時數一樣，這些也會出現在ET中。 例如，如果您希望Data Warehouse更新自動從 **午夜** 和 **中午** EST，您應輸入下列位數陣列： **0， 12**.
 
-* **[!UICONTROL Send email summaries if the data has not updated yet:]** 此选项管理计划发送电子邮件摘要的情况 *在其某个报表中的数据之前* 已刷新。 如果您选择 **否**，则您的帐户会在其计划时间跳过发送电子邮件。 而是在数据更新后由您的帐户发送。 如果您选择 **[!UICONTROL Yes]**，则您的帐户会发送电子邮件，其中包括一则说明数据已过时的消息，并在数据更新后发送另一封电子邮件。
+* **[!UICONTROL Send email summaries if the data has not updated yet:]** 此選項可管理排程傳送電子郵件摘要的情況 *在其其中一個報表中的資料之前* 已重新整理。 如果您選擇 **否**，您的帳戶會在排程的時間略過傳送電子郵件。 而是在您的資料更新後，由您的帳戶傳送。 如果您選擇 **[!UICONTROL Yes]**，您的帳戶會傳送電子郵件、包含說明資料已過時的訊息，並在資料更新後傳送另一封電子郵件。
 
-* **[!UICONTROL Enable data updates:]** 此选项可确保数据更新在您的帐户上运行。 如果将设置更改为 **[!UICONTROL No]**，数据同步和列计算在您的帐户中停止。
+* **[!UICONTROL Enable data updates:]** 此選項可確保資料更新在您的帳戶上執行。 如果您將設定變更為 **[!UICONTROL No]**，資料同步和欄計算會在您的帳戶中暫停。
 
 >[!NOTE]
 >
->确保选择 **[!UICONTROL Save Customizations]** 进行更改之后。
+>請務必選取 **[!UICONTROL Save Customizations]** 完成任何變更之後。

@@ -1,65 +1,66 @@
 ---
-title: 配置数据检查
-description: 了解如何使用可变值配置数据列。
+title: 設定資料檢查
+description: 瞭解如何使用可變更的值設定資料欄。
 exl-id: c31ef32e-ba5a-4902-b632-fbab551cc632
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
 
-# 配置数据检查
+# 設定資料檢查
 
-在数据库表中，可以存在具有可变值的数据列。 例如，在 `orders`)表可能有一个名为的列 `status`. 最初将订单写入数据库时， status列可能包含值 _待处理_. 订单会复制到您的 [data warehouse](../data-warehouse-mgr/tour-dwm.md) 使用此 `pending` 值。
+在資料庫表格中，可以有具有可變值的資料欄。 例如，在 `orders` 表格中可能有一個名為的欄 `status`. 最初將訂單寫入資料庫時，狀態列可能包含值 _擱置中_. 訂單會複製到您的 [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) 與此 `pending` 值。
 
-但是，订单状态可以更改 — 它们并不总是处于 `pending` 状态。 最终，它可能会变成 `complete` 或 `cancelled`. 要确保Data warehouse同步此更改，必须重新检查列以查找新值。
+訂單狀態可以變更，但並不一定在 `pending` 狀態。 最終，它可能會變成 `complete` 或 `cancelled`. 為確保您的Data Warehouse同步此變更，必須重新檢查欄中是否有新值。
 
-这与 [复制方法](../data-warehouse-mgr/cfg-replication-methods.md) 已经讨论过了？ 重新检查的处理方式因选择的复制方法而异。 此 `Modified\_At` 复制方法是处理更改值的最佳选择，因为不必配置重新检查。 此 `Auto-Incrementing Primary Key` 和 `Primary Key Batch Monitoring` 方法需要重新检查配置。
+這如何與 [復寫方法](../data-warehouse-mgr/cfg-replication-methods.md) 已經討論過了？ 重新檢查的處理方式會因所選的復寫方法而異。 此 `Modified\_At` 復寫方法是處理變更值的最佳選擇，因為不需要設定重新檢查。 此 `Auto-Incrementing Primary Key` 和 `Primary Key Batch Monitoring` 方法需要重新檢查設定。
 
-使用这两种方法之一时，必须标记可更改列以重新检查。 有三种方法可以做到这一点：
+使用其中一種方法時，必須標籤可變更的欄以重新檢查。 有三種方法可以達成此目的：
 
-* 作为要重新检查的更新标志列的一部分运行的审核进程。
+1. 作為要重新檢查的更新旗標欄的一部分執行的稽核程式。
 
    >[!NOTE]
    >
-   >审计人员依靠的是抽样过程，更改列可能不会立即捕获。
+   >Auditor仰賴抽樣程式，因此可能不會立即擷取變更的欄。
 
-* 您可以通过选中Data warehouse管理器中列旁边的复选框，然后单击 **[!UICONTROL Set Recheck Frequency]**，并为应检查更改的时间选择适当的时间间隔。
-* 成员隶属于 [!DNL MBI] data warehouse团队可以手动标记列，以便在您的Data warehouse中重新签入。 如果您知道可更改列，请与团队联系以请求设置重新检查。 在请求中包含列列表以及频率。
+1. 您可以自行設定，方法是選取Data Warehouse管理員中欄旁的核取方塊，然後按一下 **[!UICONTROL Set Recheck Frequency]**，並選擇適當的時間間隔，以檢查變更。
 
-## 重新检查频率 {#frequency}
+1. 成員隸屬於 [!DNL Adobe Commerce Intelligence] Data Warehouse團隊可以手動標籤欄，以便在您的Data Warehouse中重新入庫。 如果您知道可變更的欄，請聯絡團隊以請求設定重新檢查。 在您的要求中包含欄清單以及頻率。
 
-**你知道吗？**
-在上设置重新检查 `primary key` 列不检查列是否有更改的值。 将检查表中是否删除了行，并且所有删除操作都将从Data warehouse中清除。
+## 重新檢查頻率 {#frequency}
 
-当列被标记为要重新检查时，您还可以设置重新检查的频率。 如果特定列不经常更改，则选择不太频繁的重新检查可以 [优化更新周期](../../best-practices/reduce-update-cycle-time.md).
+**您知道嗎？**
+設定重新檢查 `primary key` 欄不會檢查欄中是否有變更的值。 系統會檢查表格中是否有刪除的列，且會從Data Warehouse中清除任何刪除。
 
-频率选项包括：
+當欄被標籤為要重新檢查時，您也可以設定重新檢查發生的頻率。 如果特定欄不經常變更，則選擇不太頻繁的重新檢查可以 [最佳化您的更新週期](../../best-practices/reduce-update-cycle-time.md).
 
-* `always`  — 在每次更新期间进行重新检查
-* `daily`  — 对声明的时区进行首次午夜后更新时进行重新检查
-* `weekly`  — 对于您声明的时区，在每周的星期五晚上9点后进行重新检查
-* `monthly`  — 对于您声明的时区，在星期五晚上9点后每四周更新一次，此时将重新检查
-* `once`  — 仅在下次更新（一次性刷新）时发生
+頻率選項包括：
 
-由于更新时间与需要同步的数据量相关，因此Adobe建议选择 `daily`， `weekly`，或 `monthly` 重新检查而不是每次更新。
+* `always`  — 在每次更新期間進行重新檢查
+* `daily`  — 重新檢查會在您宣告的時區的第一次午夜後更新時進行
+* `weekly`  — 對於您宣告的時區，每星期晚上9點後都會進行重新檢查
+* `monthly`  — 對於您宣告的時區，每四周於下午9點後重新檢查一次
+* `once`  — 只會在下次更新時發生（一次性的重新整理）
 
-## 管理重新检查频率 {#manage}
+由於更新時間與需要同步多少資料相關，Adobe建議選擇 `daily`， `weekly`，或 `monthly` 重新檢查而不是每次更新。
 
-通过单击表名，然后检查各个列，可以在Data warehouse中管理重新检查频率。 同步状态和重新检查频率(即 **更改？** 列)。
+## 管理重新檢查頻率 {#manage}
 
-要更改重新检查频率，请单击要更改的列旁边的复选框。 然后单击 **[!UICONTROL Set Recheck Frequency]** 下拉菜单并设置所需的频率。
+按一下表格名稱，然後檢查個別欄，即可在Data Warehouse中管理重新檢查頻率。 同步狀態與重新檢查頻率( **變更？** 欄)會針對表格中的每個欄顯示。
+
+若要變更重新檢查頻率，請按一下您要變更之欄旁的核取方塊。 然後按一下 **[!UICONTROL Set Recheck Frequency]** 下拉式清單並設定所需的頻率。
 
 ![](../../assets/dwm-recheck.png)
 
-您有时可能会看到 `Paused` 在 `Changes?` 列。 当表的 [复制方法](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) 设置为 `Paused`.
+您有時可能會看到 `Paused` 在 `Changes?` 欄。 當表格的 [復寫方法](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) 設為 `Paused`.
 
-Adobe建议查看这些列以优化更新并确保重新检查可更改的列。 如果给定数据更改的频率，列的重新检查频率很高，Adobe建议降低它以优化更新。
+[!DNL Adobe] 建議檢閱這些欄，以最佳化更新並確保重新檢查可變更的欄。 如果根據資料變更的頻率，欄的重新檢查頻率很高，Adobe建議將其降低以最佳化更新。
 
-如有疑问，请联系我们，或者查询当前的复制方法或重新检查。
+如有疑問，請聯絡我們，或詢問目前的復寫方法或重新檢查。
 
-**相关：**
+**相關：**
 
-* [缩短更新时间](../../best-practices/reduce-update-cycle-time.md)
-* [优化数据库以进行分析](../../best-practices/opt-db-analysis.md)
+* [縮短更新時間](../../best-practices/reduce-update-cycle-time.md)
+* [最佳化資料庫以進行分析](../../best-practices/opt-db-analysis.md)

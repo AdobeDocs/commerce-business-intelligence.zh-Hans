@@ -1,36 +1,36 @@
 ---
-title: 访问 [!DNL MBI] 帐户
-description: 了解如何登录您的 [!DNL MBI] 帐户。
+title: 存取您的Commerce Intelligence帳戶
+description: 瞭解如何登入您的Commerce Intelligence帳戶。
 exl-id: 3ee36e0e-f447-4be3-afc8-ccc6d3aa4f20
-source-git-commit: 7f168ff545a68e5ee9ec2f80928a653fd6a1370b
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '158'
 ht-degree: 0%
 
 ---
 
-# 访问已激活的 [!DNL MBI] 帐户
+# 存取您啟用的專案 [!DNL Adobe Commerce Intelligence] 帳戶
 
-在激活 [!DNL MBI] 帐户 [内部部署或云](../getting-started/onpremise-activation.md) 并且已与您的Adobe帐户团队合作以完成配置步骤，您现在可以登录到您的帐户。
+在您啟動您的 [!DNL Commerce Intelligence] 帳戶為 [內部部署或雲端](../getting-started/onpremise-activation.md) 並與您的Adobe帳戶團隊合作完成設定步驟，您現在可以登入您的帳戶。
 
-您可以使用 [!DNL Adobe ID] 或使用 [!DNL MBI] 电子邮件地址和密码。
+您可以使用以下專案登入： [!DNL Adobe ID] 或使用 [!DNL Commerce Intelligence] 電子郵件地址和密碼。
 
-![登录](../assets/sign-in.png)
+![登入](../assets/sign-in.png)
 
-## 使用 [!DNL Adobe ID]
+## 使用您的帳戶登入 [!DNL Adobe ID]
 
-1. 单击 **[!UICONTROL Sign in with Adobe ID]**.
+1. 按一下 **[!UICONTROL Sign in with Adobe ID]**.
 
-   ![登录adobe](../assets/sign-in-adobe.png)
+   ![登入adobe](../assets/sign-in-adobe.png)
 
-1. 输入您在创建 [!DNL MBI] 帐户。 如果您还没有Adobe帐户，请单击 **[!UICONTROL Create an account]** 并输入您的信息。 请记住使用您在创建 [!DNL MBI] 帐户。 电子邮件地址是您访问Adobe帐户所需的密钥。
+1. 輸入您在建立您的網站時所使用的電子郵件地址。 [!DNL Commerce Intelligence] 帳戶。 如果您還沒有Adobe帳戶，請按一下 **[!UICONTROL Create an account]** 並輸入您的資訊。 請記得使用您建立時所使用的電子郵件地址 [!DNL Commerce Intelligence] 帳戶。 電子郵件地址是您存取Adobe帳戶所需的金鑰。
 
 >[!NOTE]
 >
->如果您使用 [!DNL Adobe ID]，则无法更改 [!DNL MBI] 配置文件密码。
+>如果您使用 [!DNL Adobe ID]，您無法變更您的 [!DNL Commerce Intelligence] 設定檔密碼。
 
-## 使用您的用户名和密码登录
+## 使用您的使用者名稱和密碼登入
 
-输入您的电子邮件地址和密码，然后单击 **[!UICONTROL Sign In]**.
+輸入您的電子郵件地址和密碼，然後按一下 **[!UICONTROL Sign In]**.
 
-您现在有权访问 [!DNL MBI].
+您現在可以存取 [!DNL Commerce Intelligence].

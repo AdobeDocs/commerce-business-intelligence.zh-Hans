@@ -1,41 +1,41 @@
 ---
-title: 导入Linkshare数据
-description: 了解如何将Linkshare数据导入 [!DNL MBI].
+title: 匯入Linkshare資料
+description: 瞭解如何將Linkshare資料匯入 [!DNL Commerce Intelligence].
 exl-id: 1c2025a6-746c-4929-bbb1-62af1afcbc49
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%
 
 ---
 
-# 导入 `Linkshare` 数据
+# 匯入 [!DNL Linkshare] 資料
 
-将您的 `Linkshare` 数据进入 [!DNL MBI]，您需要执行两项操作：
+將您的 [!DNL Linkshare] 資料匯入 [!DNL Adobe Commerce Intelligence]，您必須執行下列兩件事：
 
-1. [在中导出Linkshare数据 ](#export)
-1. [将电子表格上传到 [!DNL MBI]](../connecting-data/using-file-uploader.md)
+1. [匯出Linkshare資料於 ](#export)
+1. [將試算表上傳至 [!DNL Commerce Intelligence]](../connecting-data/using-file-uploader.md)
 
-## 从Linkshare导出数据 {#export}
+## 從Linkshare匯出資料 {#export}
 
-1. 在您的 `Linkshare` 帐户，转到 **[!UICONTROL Reports** > **Run Reports].**
+1. 在您的 [!DNL Linkshare] 帳戶，前往 **[!UICONTROL Reports** > **Run Reports].**
 
-1. 在 `Report` 下拉列表，选择 **[!UICONTROL Sales & Activity Report]**.
+1. 在 `Report` 下拉式清單，選取 **[!UICONTROL Sales & Activity Report]**.
 
-1. 将所有其他下拉选项保留为默认选项。
+1. 將所有其他下拉式清單選項保留為預設選項。
 
-1. 在 `Date Range` 下拉菜单中，选择任意选项(`Sun - Sat`， `Mon - Sun`)与匹配 `Start of Week` 中的设置 [!DNL MBI].
+1. 在 `Date Range` 下拉式清單，選取任一選項(`Sun - Sat`， `Mon - Sun`)與您的相符 `Start of Week` 中的設定 [!DNL Commerce Intelligence].
 
-1. 清除 `Compare Year-Over-Year Data` 复选框。
+1. 清除 `Compare Year-Over-Year Data` 核取方塊。
 
-1. 下 `Data Type`，选择 `Transaction Date`.
+1. 下 `Data Type`，選取 `Transaction Date`.
 
-   ![导入\_linkshare\_data.png](../../../assets/importing_linkshare_data.png)
+   ![匯入\_linkshare\_data.png](../../../assets/importing_linkshare_data.png)
 
-1. 单击 **[!UICONTROL View Report]**.
+1. 按一下 **[!UICONTROL View Report]**.
 
-1. 单击 **[!UICONTROL Download]**.
+1. 按一下 **[!UICONTROL Download]**.
 
-   此时， `.csv` 文件并下载。
+   此時， `.csv` 檔案和已下載。
 
-下载文件后，您可以将其上传到 [!DNL MBI] 使用 [`File Upload` 功能](../connecting-data/using-file-uploader.md).
+下載檔案後，您可以將其上傳至 [!DNL Commerce Intelligence] 使用 [`File Upload` 功能](../connecting-data/using-file-uploader.md).

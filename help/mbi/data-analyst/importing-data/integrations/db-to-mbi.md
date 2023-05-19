@@ -1,14 +1,14 @@
 ---
-title: 连接MySQL数据库
-description: 观看如何将MySQL数据库与 [!DNL MBI].
+title: 連線您的 [!DNL MySQL] 資料庫
+description: 觀看如何連結 [!DNL MySQL] 資料庫 [!DNL Commerce Intelligence].
 exl-id: 22632cab-3c44-4a1b-8809-ac6cba5f655a
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
-source-wordcount: '18'
+source-wordcount: '15'
 ht-degree: 0%
 
 ---
 
-# 连接您的 `MySQL` 数据库
+# 連線您的 `MySQL` 資料庫
 
-即将提供信息。
+資訊即將推出。

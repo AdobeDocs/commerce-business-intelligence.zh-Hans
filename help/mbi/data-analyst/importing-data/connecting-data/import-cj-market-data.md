@@ -1,34 +1,34 @@
 ---
-title: 导入CJ附属机构（佣金联合）营销数据
-description: 了解如何将CJ Affiliate(Commission Junction)数据导入 [!DNL MBI].L MBI]。
+title: 匯入CJ Affiliate (Commission Junction)行銷資料
+description: 瞭解如何將CJ Affiliate (Commission Junction)資料匯入 [!DNL Commerce Intelligence].L Commerce Intelligence]。
 exl-id: 1db83f34-15a1-4599-ab0a-65d527ccae01
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '148'
 ht-degree: 0%
 
 ---
 
-# 导入 `CJ Affiliate` 数据
+# 匯入 [!DNL CJ Affiliate] 資料
 
-导入 `CJ Affiliate` (Commission Junction)将数据导入 [!DNL MBI]，只需执行以下步骤并将生成的文件附加到支持工单即可。 Adobe将设置您帐户的数据表，并允许您继续单独上传数据。
+匯入 [!DNL CJ Affiliate (Commission Junction)] 資料匯入 [!DNL Adobe Commerce Intelligence]，只需遵循下列步驟，並將產生的檔案附加至 [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html). Adobe會設定您帳戶的資料表，並允許您繼續獨立上傳資料。
 
-## 导出 `CJ Affiliate` 数据
+## 匯出 [!DNL CJ Affiliate] 資料
 
-1. 在您的 `CJ Affiliate` 帐户，转到 `Reports` 选项卡。
+1. 在您的 [!DNL CJ Affiliate] 帳戶，前往 `Reports` 標籤。
 
-1. 在 `Performance` 选项卡，选择 `Report Options`.
+1. 在 `Performance` 索引標籤，選取 `Report Options`.
 
-1. 设置 `Performance By` 等于 `Program`， `Trend` 等于 `Daily`、和 `Date Range` 等于要审核的日期范围。
+1. 設定 `Performance By` 等於 `Program`， `Trend` 等於 `Daily`、和 `Date Range` 等於要稽核的日期範圍。
 
    ![export-cj-affiliate-data](../../../assets/export-cj-affiliate-data-1.png)<!--{:.zoom}-->
 
-1. 选择 `Run Report`.
+1. 選取 `Run Report`.
 
-1. 在 `File Format` 下拉列表，选择 `CSV`.  单击 **[!UICONTROL Download]**.
+1. 在 `File Format` 下拉式清單，選取 `CSV`.  按一下 **[!UICONTROL Download]**.
 
-   ![导出cj附属活动数据](../../../assets/export-an-individual-order-2.jpg)<!--{:.zoom}-->
+   ![匯出cj附屬機構資料](../../../assets/export-an-individual-order-2.jpg)<!--{:.zoom}-->
 
-1. 下载文件后，您可以 [上传文件](../connecting-data/using-file-uploader.md) 敬您的 [!DNL MBI] data warehouse。
+1. 下載檔案後，您可以 [上傳檔案](../connecting-data/using-file-uploader.md) 至您的 [!DNL Commerce Intelligence] Data Warehouse。
 
-   这会在以下位置创建一个表： [!DNL MBI] 可继续定期将新数据上传到的Data warehouse。 上传文件时，请确保遵循中列出的格式要求 [使用文件上传程序](../connecting-data/using-file-uploader.md).
+   這樣會在中建立表格 [!DNL Commerce Intelligence] 可繼續定期將最新資料上傳至的Data Warehouse。 上傳檔案時，請遵循下列格式要求： [使用檔案上傳程式](../connecting-data/using-file-uploader.md).

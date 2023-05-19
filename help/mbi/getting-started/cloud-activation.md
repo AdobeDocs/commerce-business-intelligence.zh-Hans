@@ -1,204 +1,204 @@
 ---
-title: 激活 [!DNL MBI] 云入门订阅帐户
-description: 了解如何激活 [!DNL MBI] 云入门项目。
+title: 針對Cloud Starter訂閱啟用您的Commerce Intelligence帳戶
+description: 瞭解如何啟用Cloud Starter專案的Commerce Intelligence。
 exl-id: 172439ee-fa1d-4872-b6a9-c61a212a7cbe
 redirect_to: https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/start/onpremise-activation.html
-source-git-commit: f358f11586e4b7c44e9192584ea0fdeff5526287
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '19'
 ht-degree: 0%
 
 ---
 
-# 激活 [!DNL MBI] 帐户 `Cloud Starter` 订阅
+<!---# Activate your [!DNL Commerce Intelligence] Account for `Cloud Starter` Subscriptions
 
-激活 [!DNL MBI] 表示 `Cloud Starter` 项目，首先创建 [!DNL MBI] 帐户，然后创建 `SSH` 键，然后最终连接到您的Commerce数据库。 请参阅 [激活内部部署订阅](../getting-started/onpremise-activation.md).
+To activate [!DNL Commerce Intelligence] for `Cloud Starter` projects, first create an [!DNL Commerce Intelligence] account, then create a `SSH` key, then finally connect to your Commerce database. See [activating on-premise subscriptions](../getting-started/onpremise-activation.md).
 
 >[!NOTE]
 >
->如需激活帮助 [!DNL MBI] 表示 `Cloud Pro` 项目，请联系您的Adobe客户团队或客户技术顾问。
+>For help with activation [!DNL Commerce Intelligence] for `Cloud Pro` projects, contact your Adobe Account Team or Customer Technical Advisor.
 
-1. 创建 [!DNL MBI] 帐户。
+1. Create your [!DNL Commerce Intelligence] Account.
 
-   - 转到 [Adobe Commerce帐户登录](https://account.magento.com/customer/account/login)
+    - Go to [Adobe Commerce account login](https://account.magento.com/customer/account/login)
 
-   - 转到 **[!UICONTROL My Account** > **My [!DNL MBI] Instances]**.
+    - Go to **[!UICONTROL My Account** > **My [!DNL Commerce Intelligence] Instances]**.
 
-   - 单击 **[!UICONTROL Create Instance]**. 如果看不到此按钮，请联系Adobe客户团队或客户技术顾问。
+    - Click **[!UICONTROL Create Instance]**. If you do not see this button, contact your Adobe Account Team or Customer Technical Advisor.
 
-   - 选择 `Cloud Starter` 订阅。 如果您只有 `cloud starter` 订阅，这是默认选项。
+    - Select your `Cloud Starter` subscription. If you only have a `cloud starter` subscription, this is the default selection.
 
-   - 单击 **[!UICONTROL Continue]**.
+    - Click **[!UICONTROL Continue]**.
 
-   - 输入信息以创建帐户。
+    - Input your information to create your account.
 
-   ![](../assets/create-account-2.png)
+     ![](../assets/create-account-2.png)
 
-   - 转到您的收件箱并验证您的电子邮件地址。
+    - Go to your inbox and verify your email address.
 
-   ![](../assets/create-account-3.png)
+    ![](../assets/create-account-3.png)
 
-   - 创建密码。
+    - Create your password.
 
-   ![](../assets/create-account-4.png)
+    ![](../assets/create-account-4.png)
 
-   - 创建帐户后，您可以将用户添加到新帐户。 现在可以添加技术管理员以执行以下步骤。
+    - After creating your account, you can add users to your new account. Technical admins can now be added to carry out the following steps.
 
-   ![](../assets/create-account-5.png)
+     ![](../assets/create-account-5.png)
 
-1. 输入有关商店的信息以设置首选项。
+1. Input information about your store to set your preferences.
 
-   ![](../assets/create-account-6.png)
+    ![](../assets/create-account-6.png)
 
-   收集一些信息，然后才能在载入流程中连接数据库以执行第三步。 您需要完成 `Connect your database` 页面。
+    Gather some information before you can connect your database for the third step in the onboarding flow. You complete the `Connect your database` page in Step 9.
 
-1. 创建专用 [!DNL MBI] 用户。
+1. Create dedicated [!DNL Commerce Intelligence] User.
 
-   - 在 [Adobe Commerce帐户](https://account.magento.com/customer/account/login).
+    - Create a user in your [Adobe Commerce account](https://account.magento.com/customer/account/login).
 
-   - _为什么是新用户？_ [!DNL MBI] 需要将用户添加到项目中以持续获取要传输到帐户的新数据 [!DNL MBI] data warehouse。 此用户将用作该连接。 有关将此用户添加到项目的信息，请参阅步骤4。
+    - _Why a new user?_ [!DNL Commerce Intelligence] needs a user added to the project to continuously fetch new data to be transferred to the account's [!DNL Commerce Intelligence] Data Warehouse. This user serves as that connection. Adding this user to the project is covered in Step 4.
 
-   - 为什么有一个 [!DNL MBI] 用户是为了防止添加的用户无意中被停用或删除，并停止 [!DNL MBI] 连接。
+    - The reason for having a dedicated [!DNL Commerce Intelligence] user is to prevent the added user from inadvertently being deactivated or deleted and stopping the [!DNL Commerce Intelligence] connection.
 
-1. 将新创建的用户作为 `Contributor`.
+1. Add the newly created user to the project's primary environment as a `Contributor`.
 
-   ![](../assets/create-account-7.png)
+    ![](../assets/create-account-7.png)
 
-1. 获取 [!DNL MBI] `SSH` 键。
+1. Get your [!DNL Commerce Intelligence] `SSH` keys.
 
-   - 转到 `Connect your database` 页面 [!DNL MBI] 设置用户界面，向下滚动到 `Encryption settings`.
+    - Go to the `Connect your database` page of the [!DNL Commerce Intelligence] setup user interface and scroll down to `Encryption settings`.
 
-   - 对于 `Encryption Type` 字段，选择 `SSH Tunnel`.
+    - For the `Encryption Type` field, choose `SSH Tunnel`.
 
-   - 从下拉菜单中，您可以复制并粘贴提供的 [!DNL MBI] `Public Key`.
+    - From the dropdown, you can copy and paste the provided [!DNL Commerce Intelligence] `Public Key`.
 
-   ![](../assets/create-account-8.png)
+    ![](../assets/create-account-8.png)
 
-1. 添加新 [!DNL MBI] `Public key` 到 [!DNL MBI] 用户在步骤5中创建。
+1. Add your new [!DNL Commerce Intelligence] `Public key` to the [!DNL Commerce Intelligence] user created in Step 5.
 
-   - 转到 [您的cloud Adobe Commerce帐户](https://account.magento.com/cloud/customer/login/). 使用您的帐户登录信息登录新 [!DNL MBI] 用户已创建。 然后转到 `Account Settings` 选项卡。
+    - Go to [your cloud Adobe Commerce account](https://account.magento.com/cloud/customer/login/). Sign in with your account login information for the new [!DNL Commerce Intelligence] user created. Then go to the `Account Settings` tab.
 
-   - 向下滚动页面并展开下拉菜单 `SSH` 键。 然后，单击 **[!UICONTROL Add a public key]**.
+    - Scroll down the page and expand the dropdown for `SSH` keys. Then click **[!UICONTROL Add a public key]**.
 
-   ![](../assets/create-account-9.png)
+    ![](../assets/create-account-9.png)
 
-   - 添加 [!DNL MBI] `SSH Public Key` 从上。
+    - Add the [!DNL Commerce Intelligence] `SSH Public Key` from above.
 
-   ![](../assets/create-account-10.png)
+    ![](../assets/create-account-10.png)
 
-1. 提供 [!DNL MBI] MySQL凭据。
+1. Provide [!DNL Commerce Intelligence] [!DNL MySQL] credentials.
 
-   - 更新 `.magento/services.yaml`
+    - Update your `.magento/services.yaml`
 
-   ```sql
-   mysql:
-       type: mysql:10.0
-       disk: 2048
-       configuration:
-           schemas:
-               - main
-           endpoints:
-               mysql:
-                   default_schema: main
-                   privileges:
-                       main: admin
-               mbi:
-                   default_schema: main
-                   privileges:
-                       main: ro
-   ```
+    ```sql
+    mysql:
+        type: mysql:10.0
+        disk: 2048
+        configuration:
+            schemas:
+                - main
+            endpoints:
+                mysql:
+                    default_schema: main
+                    privileges:
+                        main: admin
+                mbi:
+                    default_schema: main
+                    privileges:
+                        main: ro
+    ```
 
-   - 更新 `.magento.app.yaml`
+    - Update your `.magento.app.yaml`
 
-   ```sql
-           relationships:
-               database: "mysql:mysql"
-               mbi: "mysql:mbi"
-               redis: "redis:redis"
-   ```
+    ```sql
+            relationships:
+                database: "mysql:mysql"
+                mbi: "mysql:mbi"
+                redis: "redis:redis"
+    ```
 
-1. 获取有关将数据库连接到 [!DNL MBI].
+1. Get information for connecting your database to [!DNL Commerce Intelligence].
 
-   运行
-   `echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 --decode | json_pp`
+    Run
+    `echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 --decode | json_pp`
 
-   以获取有关连接数据库的信息。
+    to get information on connecting your database.
 
-   您应会收到与以下输出类似的信息：
+    You should receive information similar to the output below:
 
-   ```json
-           "mbi" : [
-                 {
-                    "scheme" : "mysql",
-                    "rel" : "mbi",
-                    "cluster" : "vfbfui4vmfez6-master-7rqtwti",
-                    "query" : {
-                       "is_master" : true
-                    },
-                    "ip" : "169.254.169.143",
-                    "path" : "main",
-                    "host" : "[!DNL MBI].internal",
-                    "hostname" : "3m7xizydbomhnulyglx2ku4wpq.mysql.service._.magentosite.cloud",
-                    "username" : "mbi",
-                    "service" : "mysql",
-                    "port" : 3306,
-                    "password" : "[password]"
-                 }
-              ],
-   ```
+    ```json
+            "mbi" : [
+                  {
+                     "scheme" : "mysql",
+                     "rel" : "mbi",
+                     "cluster" : "vfbfui4vmfez6-master-7rqtwti",
+                     "query" : {
+                        "is_master" : true
+                     },
+                     "ip" : "169.254.169.143",
+                     "path" : "main",
+                     "host" : "[!DNL Commerce Intelligence].internal",
+                     "hostname" : "3m7xizydbomhnulyglx2ku4wpq.mysql.service._.magentosite.cloud",
+                     "username" : "mbi",
+                     "service" : "mysql",
+                     "port" : 3306,
+                     "password" : "[password]"
+                  }
+               ],
+    ```
 
-1. 连接商务数据库
+1. Connect your Commerce Database
 
    ![](../assets/create-account-11.png)
 
-   - `Integration Name`: [选择集成的名称。]
+    - `Integration Name`: [Choose a name for your integration.]
 
-   - `Host`: `[!DNL MBI].internal`
+    - `Host`: `[!DNL Commerce Intelligence].internal`
 
-   - `Port`: `3306`
+    - `Port`: `3306`
 
-   - `Username`: `mbi`
+    - `Username`: `mbi`
 
-   - `Password`: [在步骤8的输出中提供输入密码。]
+    - `Password`: [input password provided in the output for Step 8.]
 
-   - `Database Name`: `main`
+    - `Database Name`: `main`
 
-   - `Table Prefixes`: [如果没有表前缀，则留空]
+    - `Table Prefixes`: [leave blank if there are no table prefixes]
 
-1. 设置您的时区设置。
+1. Set your Timezone Settings.
 
-   ![输入](../assets/create-account-12.png)
+    ![Inputs](../assets/create-account-12.png)
 
-   - `Database`: `Timezone: UTC`
+     - `Database`: `Timezone: UTC`
 
-   - `Desired Timezone`: [选择您希望数据显示的时区。]
+     - `Desired Timezone`: [Choose the time zone for which you want your data to display in.]
 
-1. 获取有关加密设置的信息。
+1. Get information for your encryption settings.
 
-   - 项目UI提供了 `SSH` 访问字符串。 此字符串可用于收集 `Remote Address` 和 `Username` 设置 `Encryption` 设置。 使用 `SSH Access` 字符串（可通过单击项目UI主分支上的访问站点按钮找到），并找到您的 `User Name` 和 `Remote Address` 如下所示。
+    - The project UI provides an `SSH` access string. This string can be used for gathering the information needed for `Remote Address` and `Username` in setting up your `Encryption` settings. Use the `SSH Access` string found by clicking the access site button on your Primary branch of your Project UI and find your `User Name` and `Remote Address` as shown below.
 
-   ![](../assets/create-account-13.png)
+    ![](../assets/create-account-13.png)
 
-   ![](../assets/create-account-14.png)
+    ![](../assets/create-account-14.png)
 
-1. 输入 `Encryption` 设置
+1. Input information for your `Encryption` settings
 
-   ![](../assets/create-account-15.png)
+    ![](../assets/create-account-15.png)
 
-   **输入**
+    **Inputs**
 
-   - `Encryption Type`: `SSH Tunnel`
+     - `Encryption Type`: `SSH Tunnel`
 
-   - `Remote Address`: `ssh.us-3.magento.cloud`
+     - `Remote Address`: `ssh.us-3.magento.cloud`
 
-   - `Username`: `vfbfui4vmfez6-master-7rqtwti--mymagento`
+     - `Username`: `vfbfui4vmfez6-master-7rqtwti--mymagento`
 
-   - `Port`: `22`
+     - `Port`: `22`
 
-1. 单击 **[!UICONTROL Save Integration]**.
+1. Click **[!UICONTROL Save Integration]**.
 
-1. 现在，您已成功连接到 [!DNL MBI] 帐户。
+1. You have now successfully connected to your [!DNL Commerce Intelligence] account.
 
-1. 成功连接后 [!DNL MBI] 要访问您的商务数据库，请联系您的Adobe帐户团队以协调后续步骤，例如设置集成和其他配置步骤。
+1. After you have successfully connected [!DNL Commerce Intelligence] to your Commerce database, contact your Adobe Account Team to coordinate the next steps, such as setting up integrations and other configuration steps.
 
-1. 完成配置后，您可以 [登录](../getting-started/sign-in.md) 至 [!DNL MBI] 帐户。
+1. When you finish configuration, you can [sign in](../getting-started/sign-in.md) to your [!DNL Commerce Intelligence] account.--->

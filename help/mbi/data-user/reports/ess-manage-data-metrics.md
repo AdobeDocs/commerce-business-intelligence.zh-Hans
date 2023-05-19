@@ -1,79 +1,79 @@
 ---
-title: 创建量度
-description: 了解如何使用量度创建图表。
+title: 建立量度
+description: 瞭解如何使用量度建立圖表。
 exl-id: d4c25546-3c51-4d32-b9d8-c424ec103be5
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
 
-# 创建量度
+# 建立量度
 
 >[!NOTE]
 >
->需要 [管理员权限](../../administrator/user-management/user-management.md).
+>需要 [管理員許可權](../../administrator/user-management/user-management.md).
 
-换句话说，量度就是一种度量。 在SQL和数据库结构中，量度就像变量时段内的存储查询。
+量度是一種測量。 在SQL和資料庫結構中，量度就像變數期間的預存查詢。
 
-In [!DNL MBI]，您可以使用量度来 [创建图表](../../data-user/reports/ess-rpt-build-visual.md). 例如，量度 `revenue` 是订单总数。 量度 `average customer revenue per order` 是客户每次订购的平均花费。
+在 [!DNL Commerce Intelligence]，您可將量度用於 [建立圖表](../../data-user/reports/ess-rpt-build-visual.md). 例如，量度 `revenue` 是訂單總數。 量度 `average customer revenue per order` 是客戶每筆訂單的平均花費。
 
-在报表中使用量度时，可以在指定的时间段内分析量度，并且 [过滤或分段](../../best-practices/segment-filter.md) 按不同类别分类。 考虑分析按性别分组的平均客户收入 — 在这种情况下， `average customer revenue per order` 是量度，性别是分组。
+在報表中使用量度時，可在指定的時段內分析，並且 [篩選或分段](../../best-practices/segment-filter.md) 依不同類別。 考慮分析按性別分組的平均客戶收入 — 在此情況下， `average customer revenue per order` 是量度，而性別是群組。
 
-## 定义量度 {#define}
+## 定義量度 {#define}
 
-1. 要创建指标，请单击 **[!UICONTROL Data** > **Metrics]**.
+1. 若要建立量度，請按一下 **[!UICONTROL Data** > **Metrics]**.
 
-1. 单击 **[!UICONTROL Create New Metric]**.
+1. 按一下 **[!UICONTROL Create New Metric]**.
 
-1. 从下拉菜单中，单击包含要用于量度的本机列或计算列的表。
+1. 從下拉式清單中，按一下包含您要用於量度之原生或計算欄的表格。
 
-1. 为您的量度命名。
+1. 為您的量度命名。
 
-   Adobe建议一个名称，只需一眼即可告知您该指标是什么。 例如： `Average Order Revenue`.
+   Adobe會推薦可以讓您一目瞭然地知道量度是什麼的名稱。 例如： `Average Order Revenue`.
 
-1. 下一步是定义量度的用途。 使用下拉菜单，定义量度的操作， `operation` 列，和 `date` 维度：
+1. 下一步是定義量度的用途。 使用下拉式功能表，定義量度的操作、 `operation` 欄和 `date` 維度：
 
-   * 选择操作：
-      * `Count`  — 此操作计算数据表中的行数
-      * `Max`  — 最大值返回特定数据列的最大值
-      * `Min` - Min返回特定数据列的最小值
-      * `Sum`  — 此操作对特定数据列的值进行求和
-      * `Average`  — 此操作计算数据列值的平均值
-      * `Count Distinct Value`  — 此值计算特定数据列中的唯一值数
-      * `Median`  — 此操作计算数据列值的中位数
-      * `First and Third Quartiles`  — 这些操作分别计算数据列值的第25个百分位和第75个百分位
-      * `Tenth and Ninetieth Percentiles`  — 这些操作分别计算数据列值的第10个百分位和第90个百分位
-   * 选择要对其执行操作的列。 例如，如果您要查找总收入，则可以对 `order total` 列。
+   * 選擇作業：
+      * `Count`  — 此作業會計算資料表格中的列數
+      * `Max` - Max會傳回特定資料欄的最大值
+      * `Min` - Min會傳回特定資料欄的最小值
+      * `Sum`  — 此作業會加總特定資料欄的值
+      * `Average`  — 此作業會計算資料欄值的平均值
+      * `Count Distinct Value`  — 這會計算特定資料欄中值的唯一數量
+      * `Median`  — 此作業會計算資料欄值的中位數
+      * `First and Third Quartiles`  — 這些作業會分別計算資料欄值的第25個百分位和第75個百分位
+      * `Tenth and Ninetieth Percentiles`  — 這些作業會分別計算資料欄值的第10個百分位和第90個百分位
+   * 選擇要對其執行作業的欄。 例如，如果您想找出總收入，您可以對下列專案執行加總作業： `order total` 欄。
 
-      如果您正在编辑现有量度，还可以 [更改量度的操作表](../../data-analyst/data-warehouse-mgr/change-metric-op-table.md) 在本节中。
+      如果您正在編輯現有量度，您也可以 [變更量度的作業表格](../../data-analyst/data-warehouse-mgr/change-metric-op-table.md) 在本節中。
 
-   * 选择可用于对指标进行趋势分析的日期维度。 例如， `order date`.
+   * 選擇可用來分析量度趨勢的日期維度。 例如， `order date`.
 
 
-## 添加筛选器 {#filters}
+## 新增篩選器 {#filters}
 
-此 `Filter` 部分允许您创建过滤器或应用 [保存的筛选器集](../../data-user/reports/ess-manage-data-filters.md) 到您的量度。
+此 `Filter` 區段可讓您建立篩選器或套用 [儲存的篩選器集](../../data-user/reports/ess-manage-data-filters.md) 至您的量度。
 
-对于 `average order revenue` 量度时，您不希望包含设置商店时可能完成的任何测试订单 — 这样会得到不准确的结果。 可以应用过滤器集以从数据集中删除这些订单。 创建过滤器后，该过滤器将应用于使用此量度构建的所有图表。
+對於 `average order revenue` 量度時，您不會想要納入任何在設定商店時可能完成的測試訂單，因為這會提供不準確的結果。 可套用篩選集，以從資料集中移除這些訂單。 建立篩選器後，該篩選器將套用至使用此量度建立的所有圖表。
 
-此 `Filter Logic` 部分中，您可以进一步定义量度的行为方式。
+此 `Filter Logic` 區段可讓您進一步定義量度的行為方式。
 
-* &quot;\[`A`\]或\[`B`“\]”允许满足筛选条件的任何数据\[`A`\]或\[`B`\]
-* &quot;\[`A`\]和\[`B`“\]”仅允许同时满足两个筛选器的数据\[`A`\]和\[`B`\]
-* &quot;(\[`A`\]和\[`B`\])或\[`C`“\]”仅允许满足这两个筛选器的数据\[`A`\]和\[`B`\]，或满足筛选条件\[`C`\]独自
+* &quot;\[`A`\]或\[`B`\]」可允許任何符合篩選條件的資料\[`A`\]或\[`B`\]
+* &quot;\[`A`\]和\[`B`\]」僅允許同時符合兩個篩選器的資料\[`A`\]和\[`B`\]
+* &quot;(\[`A`\]和\[`B`\])或\[`C`\]」僅允許同時滿足兩個篩選器的資料\[`A`\]和\[`B`\]，或滿足篩選器\[`C`\]單獨使用
 
-## 添加Dimension {#dimensions}
+## 新增Dimension {#dimensions}
 
-此 [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) 部分显示用于筛选或分组的所有可用数据维；默认情况下，所有可用数据列将作为维列出。 继续示例，如果您想按反向链接来源划分收入，可以在此处执行此操作。
+此 [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) 區段會顯示所有可用於篩選或分組的資料維度；依預設，所有可用資料欄都會列為維度。 繼續此範例，如果您想依反向連結來源來劃分收入，可以在這裡進行。
 
-除了将所有可用数据列列为维度之外， [!DNL MBI] 猜测列可分组到哪个位置。 *要对报表中的数据划分区段或分组，请执行以下操作*，列必须标记为可分组。
+除了將所有可用的資料欄列為維度之外， [!DNL Commerce Intelligence] 猜想欄可分組到哪個位置。 *若要在報表上將資料分段或分組*，欄必須標示為可分組。
 
 ## 正在完成 {#finish}
 
-除了定义量度的行为方式外，您还可以在 `User Rights` 部分。 While `Admin` 用户有权访问所有量度，您必须通过选中相应组旁边的复选框来指示可以使用此量度的用户。
+除了定義量度的行為方式外，您也可以在 `User Rights` 區段。 當 `Admin` 使用者有權存取所有量度，您必須勾選適當群組旁的方塊，指出可以使用此量度的使用者。
 
-如果您正在编辑现有指标，则可以在中查看使用此指标的图表（以及图表的所有者）的列表。 `Dependent Charts` 部分。
+如果您正在編輯現有量度，可以在以下位置檢視使用此量度的圖表清單（以及圖表擁有者）： `Dependent Charts` 區段。
 
-更改会自动保存，您的量度现已准备就绪。
+變更會自動儲存，您的量度現已準備就緒。

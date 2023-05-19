@@ -1,87 +1,90 @@
 ---
-title: 预期的Google Adwords数据
-description: 了解如何使用Data warehouse管理器轻松地跟踪相关数据字段以供分析。
+title: 預期Google Adwords資料
+description: 瞭解如何使用Data Warehouse管理員輕鬆追蹤相關資料欄位以進行分析。
 exl-id: b0085683-7bb1-4da2-b343-4309e4796f0c
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '563'
 ht-degree: 0%
 
 ---
 
-# 预期的Google Adwords数据
+# 預期 [!DNL Google Adwords] 資料
 
-晚于 [您已连接 [!DNL Google Adwords] 帐户](../integrations/google-adwords.md)，您可以使用 [data warehouse管理器](../../data-warehouse-mgr/tour-dwm.md) 以轻松跟踪相关数据字段以供分析。
+晚於 [您已連線 [!DNL Google Adwords] 帳戶](../integrations/google-adwords.md)，您可以使用 [Data Warehouse管理員](../../data-warehouse-mgr/tour-dwm.md) 以輕鬆追蹤相關資料欄位以供分析。
 
-在该处，您注意到两个表格可用于复制到Data warehouse中： `campaigns[account-id]` 和 `adwords[account-id]`.
+在此處，您注意到兩個表格可用於復寫至Data Warehouse：
 
-此 `campaigns` 表 *默认使用*，以便您可以开始同步该表中的所有相关字段。
+* `campaigns[account-id]`
+* `adwords[account-id]`
 
-此 `adwords` 表包含四列，这些列不在 `campaigns` 表：
+此 `campaigns` 表格 *預設情況下應該使用*，以開始同步該表格的所有相關欄位。
 
-* `keyword`
-* `adContent`
-* `adDestinationUrl`
-* `adGroup`
+此 `adwords` 表格包含四個不在 `campaigns` 表格：
 
-只要您想执行考虑这些属性的分析，就必须使用 `adwords` 表格。
+1. `keyword`
+1. `adContent`
+1. `adDestinationUrl`
+1. `adGroup`
+
+當您想要執行考慮這些屬性的分析時，必須使用 `adwords` 表格。
 
 >[!IMPORTANT]
 >
->此表排除了所有四列为 `null`.
+>此表格會排除全部四個資料欄的資料列 `null`.
 
-以下是两个表的预期模式：
+以下是兩個表格的預期結構描述。
 
-## `Campaigns` 表
+## [!DNL Campaigns] 表格
 
-此 `campaigns` 表包含以下列：
+此 `campaigns` 表格包含下列資料欄：
 
-| **列** | **描述** |
+| **欄** | **說明** |
 |-----|-----|
-| `\_id` | 表的主键 |
-| `accountId` | 帐户ID |
-| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adclicks) | 当天的点击总数 |
-| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adcost) | 当天营销活动的总成本 |
-| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adwordscampaignid) | [!DNL Adwords] 营销活动ID |
-| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=traffic_sources&amp;jump=ga_campaign) | 促销活动名称(例如， [utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)) |
-| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=time&amp;jump=ga_date) | 营销活动运行的日期 |
-| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_impressions) | 当天的展示次数 |
-| `profileId` | 配置文件ID |
-| `profileName` | 配置文件名称 |
-| `\_updated\_at` | 此行上次更新的日期和时间 |
+| `\_id` | 表格的主索引鍵 |
+| `accountId` | 帳戶ID |
+| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adclicks) | 當天的點按總數 |
+| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adcost) | 當天行銷活動的總成本 |
+| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adwordscampaignid) | [!DNL Adwords] 行銷活動ID |
+| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=traffic_sources&amp;jump=ga_campaign) | 促銷活動名稱(例如， [utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)) |
+| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=time&amp;jump=ga_date) | 行銷活動執行的日期 |
+| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_impressions) | 當天的曝光次數 |
+| `profileId` | 設定檔ID |
+| `profileName` | 設定檔名稱 |
+| `\_updated\_at` | 此列的上次更新日期與時間 |
 
 {style="table-layout:auto"}
 
-## AdWords表
+## [!DNL AdWords] 表格
 
-此 `adwords` 表包含以下列：
+此 `adwords` 表格包含下列資料欄：
 
-| **列** | **描述** |
+| **欄** | **說明** |
 |-----|-----|
-| `\_id` | 表的主键 |
-| `accountId` | 帐户ID |
-| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adclicks) | 当天的点击总数 |
-| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adcost) | 当天营销活动的总成本 |
-| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adwordscampaignid) | [!DNL Adwords] 营销活动ID |
-| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=traffic_sources&amp;jump=ga_campaign) | 促销活动名称(例如， [utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)) |
-| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=time&amp;jump=ga_date) | 营销活动运行的日期 |
-| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_impressions) | 当天的展示次数 |
-| `profileId` | 配置文件ID |
-| `profileName` | 配置文件名称 |
-| `\_updated\_at` | 此行上次更新的日期和时间 |
-| `keyword` | 营销活动关键词 |
-| `adContent` | 在线营销活动文本的第一行 |
-| `adDestinationUrl` | 要访问的URL [!DNL Adwords] 广告引用的流量 |
-| `adGroup` | 的名称 [!DNL Adwords] 广告组 |
+| `\_id` | 表格的主索引鍵 |
+| `accountId` | 帳戶ID |
+| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adclicks) | 當天的點按總數 |
+| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adcost) | 當天行銷活動的總成本 |
+| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adwordscampaignid) | [!DNL Adwords] 行銷活動ID |
+| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=traffic_sources&amp;jump=ga_campaign) | 促銷活動名稱(例如， [utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)) |
+| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=time&amp;jump=ga_date) | 行銷活動執行的日期 |
+| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_impressions) | 當天的曝光次數 |
+| `profileId` | 設定檔ID |
+| `profileName` | 設定檔名稱 |
+| `\_updated\_at` | 此列的上次更新日期與時間 |
+| `keyword` | 行銷活動的關鍵字 |
+| `adContent` | 線上行銷活動文字的第一行 |
+| `adDestinationUrl` | URL的 [!DNL Adwords] 廣告引用的流量 |
+| `adGroup` | 的名稱 [!DNL Adwords] 廣告群組 |
 
 {style="table-layout:auto"}
 
-使用此数据，您可以开始创建 [量度 ](../../../data-user/reports/ess-manage-data-metrics.md) 和 [报告](../../../tutorials/using-visual-report-builder.md) 基于支出数据和 [将其与您的终生收入结合起来以计算ROI](../../analysis/roi-ad-camp.md).
+您可以使用此資料開始建立 [量度](../../../data-user/reports/ess-manage-data-metrics.md) 和 [報告](../../../tutorials/using-visual-report-builder.md) 根據支出資料和 [將其與您的終身收入結合起來以計算ROI](../../analysis/roi-ad-camp.md).
 
-## 统一表
+## 整合的表格
 
-Adobe建议创建 `consolidated ad spend` 表将所有广告源中的数据合并到一个表中。 这使您能够使用一组指标进行广告分析。
+[!DNL Adobe] 建議建立 `consolidated ad spend` 表格，用於將來自多個廣告來源的所有資料合併為單一表格。 這可讓您使用一組量度進行廣告分析。
 
-如果没有统一表格，如果您在 `adwords` 表，您需要复制报表或创建重复的量度以将该数据与您的 [!DNL Facebook Ads] 数据。 使用统一表可以无缝地整合 [!DNL Facebook Ads] 使用您的现有数据 [!DNL Adwords] 报告。 您还可以按广告平台进行分段。
+如果您沒有整合表格，而且在上建置了精美的儀表板， `adwords` 表格中，您需要複製報告或建立重複的量度，以將該資料與您的 [!DNL Facebook Ads] 資料。 使用整合表格可讓您順暢地整合 [!DNL Facebook Ads] 使用您現有的資料 [!DNL Adwords] 報表。 您也可以依廣告平台進行分段。
 
-如果您已同步上述字段，请联系我们以整合您的广告支出。
+如果您已同步上述欄位， [聯絡我們](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 以整合您的廣告支出。

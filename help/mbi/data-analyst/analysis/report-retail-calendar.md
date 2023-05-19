@@ -1,137 +1,137 @@
 ---
-title: 在零售日历上报告
-description: 了解如何设置结构以在您的网站中使用4-5-4零售日历 [!DNL MBI] 帐户。
+title: 在零售行事曆上建立報表
+description: 瞭解如何設定結構，以在您的 [!DNL Commerce Intelligence] 帳戶。
 exl-id: 3754151c-4b0f-4238-87f2-134b8409e32b
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
 
-# 在零售业日历中报告
+# 在零售行事曆上建立報表
 
-本文演示了如何设置结构以使用 [4-5-4零售日历](https://nrf.com/resources/4-5-4-calendar) 在您的 [!DNL MBI] 帐户。 可视化Report Builder提供了极其灵活的时间范围、间隔和独立的设置。 但是，所有这些设置都适用于传统的每月日历。
+本主題示範如何設定結構以使用 [4-5-4零售日曆](https://nrf.com/resources/4-5-4-calendar) 在您的 [!DNL Adobe Commerce Intelligence] 帳戶。 視覺化Report Builder提供極具彈性的時間範圍、間隔和獨立設定。 不過，所有這些設定都適用於傳統的每月行事曆。
 
-由于许多客户更改其日历以使用零售日期或会计日期，因此以下步骤说明了如何使用您的数据以及使用零售日期创建报表。 尽管下面的说明引用了4-5-4零售日历，但您可以为您的团队使用的任何特定日历更改它们，无论是财务日历还是自定义时间范围。
+由於許多客戶會變更其行事曆以使用零售或會計日期，以下步驟說明如何使用零售日期處理資料和建立報表。 雖然以下指示會參照4-5-4零售日曆，但您可以為團隊使用的任何特定日曆更改它們，無論是財務日曆還是自訂時間框架。
 
-在开始之前，您需要熟悉 [文件上传程序](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) 并确保您已将 `.csv` 文件。 这可确保日期涵盖所有历史数据并将日期推送到未来。
+開始使用前，您應先檢閱 [檔案上傳程式](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) 並確保您已將 `.csv` 檔案。 這可確保日期涵蓋所有歷史資料，並將日期推送至未來。
 
-此分析包含 [高级计算列](../data-warehouse-mgr/adv-calc-columns.md).
+此分析包含 [進階計算欄](../data-warehouse-mgr/adv-calc-columns.md).
 
-## 快速入门
+## 快速入門
 
-您可以 [下载](../../assets/454-calendar.csv) a `.csv` 2014年至2017年零售年度的4-5-4零售日历版本。 您可能需要根据内部零售日历调整此文件，并扩展日期范围以支持您的历史和当前时间范围。 下载文件后，使用文件上传程序在 [!DNL MBI] data warehouse。 如果您使用的是4-5-4零售日历的未更改版本，请确保此表字段的结构和数据类型与以下内容匹配：
+您可以 [下載](../../assets/454-calendar.csv) a `.csv` 2014至2017年零售年度的4-5-4零售行事曆版本。 您可能需要根據內部零售日曆調整此檔案，並擴大日期範圍以支援您的歷史和目前時間範圍。 下載檔案後，使用檔案上傳程式在 [!DNL Commerce Intelligence] Data Warehouse。 如果您使用的是4-5-4零售行事曆的未變更版本，請確保此表格中欄位的結構和資料型別符合以下內容：
 
-| 列名称 | 列数据类型 | 主键 |
+| 欄名稱 | 欄資料型別 | 主索引鍵 |
 | --- | --- | --- |
 | `Date Retail` | `Date & Time` | `Yes` |
 | `Year Retail` | `Whole Number` | `No` |
 | `Quarter Retail` | `Whole Number` | `No` |
 | `Month Number Retail` | `Whole Number` | `No` |
 | `Week Retail` | `Whole Number` | `No` |
-| `Month Name Retail` | `Text` （最多255个字符） | `No` |
+| `Month Name Retail` | `Text` （最多255個字元） | `No` |
 | `Week Number of Month Retail` | `Whole Number` | `No` |
 
 {style="table-layout:auto"}
 
-## 要创建的列
+## 要建立的欄
 
-* **sales\_order** 表
+* **sales\_order** 表格
    * `INPUT` `created\_at` (yyyy-mm-dd 00:00:00)
       * [!UICONTROL Column type]: – `Same table > Calculation`
       * [!UICONTROL Inputs]: – `created\_at`
       * [!UICONTROL Datatype]: – `Datetime`
       * [!UICONTROL Calculation]: - ` case when A is null then null else to\_char(A, 'YYYY-MM-DD 00:00:00') end`
 
-* **零售日历** 文件上载表
-   * **当前日期**
+* **零售日曆** 檔案上傳表格
+   * **目前日期**
       * [!UICONTROL Column type]: `Same table > Calculation`
       * [!UICONTROL Inputs]: `Date Retail`
       * 
-         [！UICONTROL数据类型]: `Datetime`
+         [！UICONTROL資料型別]: `Datetime`
       * [!UICONTROL Calculation]: `case when A is null then null else to\_char(now(), 'YYYY-MM-DD 00:00:00') end`
 
          >[!NOTE]
          >
-         >此 `now()` 上述函数特定于PostgreSQL。 尽管最多 [!DNL MBI] data warehouse托管在PostgreSQL上，某些应用程序可能托管在Redshift上。 如果上述计算返回错误，您可能需要使用Redshift函数 `getdate()` 而不是 `now()`.
-   * **当前零售年份** （必须由支持分析人员创建）
+         >此 `now()` 以上函式為PostgreSQL專屬函式。 雖然最多 [!DNL Commerce Intelligence] 資料倉儲是在PostgreSQL上託管，有些可能會在Redshift上託管。 如果上述計算傳回錯誤，您可能需要使用Redshift函式 `getdate()` 而非 `now()`.
+   * **目前零售年份** （必須由支援分析人員建立）
       * [!UICONTROL Column type]：E`vent Counter`
       * [!UICONTROL Local Key]: `Current date`
       * [!UICONTROL Remote Key]: `Retail calendar.Date Retail`
       * 
          [!UICONTROL Operation]: `Max`
       * [!UICONTROL Operation value]: `Year Retail`
-   * **是否包括在当前零售年度？ （是/否）**
+   * **包含在目前的零售年度中？ （是/否）**
       * [!UICONTROL Column type]: `Same table > Calculation`
       * [!UICONTROL Inputs]:
          * `A` - `Year Retail`
          * `B` - `Current retail year`
       * 
-         [！UICONTROL数据类型]: `String`
+         [！UICONTROL資料型別]: `String`
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when A = B then 'Yes' else 'No' end`
-   * **是否包含在以前的零售年度中？ （是/否）**
+   * **是否包含在上一個零售年度？ （是/否）**
       * [!UICONTROL Column type]: `Same table > Calculation`
       * [!UICONTROL Inputs]:
          * `A` - `Year Retail`
          * `B` - `Current retail year`
       * 
-         [！UICONTROL数据类型]: String
+         [！UICONTROL資料型別]: String
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when (A = (B-1)) then 'Yes' else 'No' end`
 
 
-* **sales\_order** 表
-   * **创建时间\_at（零售年份）**
+* **sales\_order** 表格
+   * **建立時間\_at （零售年份）**
       * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
-      * 路径 — 
+      * 路徑 — 
          * [!UICONTROL Many]: `sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`
          * [!UICONTROL One]: `Retail Calendar.Date Retail`
-      * 选择 [!UICONTROL table]： `Retail Calendar`
-      * 选择 [!UICONTROL column]： `Year Retail`
-   * **创建时间\_at（零售周）**
+      * 選取 [!UICONTROL table]： `Retail Calendar`
+      * 選取 [!UICONTROL column]： `Year Retail`
+   * **建立時間\_at （零售周）**
       * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
-      * 路径 — 
-         * [!UICONTROL Many]： sales\_order。\[INPUT\]已创建\_at (yyyy-mm-dd 00):00:00
-         * [!UICONTROL One]：零售业Calendar.Date零售业
-      * 选择 [!UICONTROL table]： `Retail Calendar`
-      * 选择 [!UICONTROL column]： `Week Retail`
-   * **创建时间\_at（零售月份）**
+      * 路徑 — 
+         * [!UICONTROL Many]： sales\_order。\[INPUT\]已建立\_at (yyyy-mm-dd 00):00:00
+         * [!UICONTROL One]：零售業行事曆.Date Retail
+      * 選取 [!UICONTROL table]： `Retail Calendar`
+      * 選取 [!UICONTROL column]： `Week Retail`
+   * **建立時間\_at （零售月份）**
       * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
-      * 路径
+      * 路徑
          * [!UICONTROL Many]: `sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`
          * [!UICONTROL One]: `Retail Calendar.Date Retail`
-      * 选择 [!UICONTROL table]： `Retail Calendar`
-      * 选择 [!UICONTROL column]： `Month Number Retail`
-   * **是否包含在上一个零售年度中？ （是/否）**
+      * 選取 [!UICONTROL table]： `Retail Calendar`
+      * 選取 [!UICONTROL column]： `Month Number Retail`
+   * **是否包含在上一個零售年度？ （是/否）**
       * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
-      * 路径 — 
+      * 路徑 — 
          * [!UICONTROL Many]: `sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`
-         * [!UICONTROL One]：零售业 `Calendar.Date Retail`
-      * 选择 [!UICONTROL table]： `Retail Calendar`
-      * 选择 [!UICONTROL column]： `Include in previous retail year? (Yes/No)`
-   * **是否包含在当前零售年度中？ （是/否）**
+         * [!UICONTROL One]：零售業 `Calendar.Date Retail`
+      * 選取 [!UICONTROL table]： `Retail Calendar`
+      * 選取 [!UICONTROL column]： `Include in previous retail year? (Yes/No)`
+   * **是否包含於目前的零售年度？ （是/否）**
       * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
-      * 路径 — 
+      * 路徑 — 
          * [!UICONTROL Many]: `sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`
-         * [!UICONTROL One]：零售业 `Calendar.Date Retail`
-      * 选择 [!UICONTROL table]： `Retail Calendar`
-      * 选择 [!UICONTROL column]： `Include in current retail year? (Yes/No)`
+         * [!UICONTROL One]：零售業 `Calendar.Date Retail`
+      * 選取 [!UICONTROL table]： `Retail Calendar`
+      * 選取 [!UICONTROL column]： `Include in current retail year? (Yes/No)`
 
 ## 量度
 
-注意：此分析不需要新指标。 但是，请确保 [将您在sales\_order表中构建的新列添加为维](../data-warehouse-mgr/manage-data-dimensions-metrics.md) ，然后继续查看这些报表。
+注意：此分析不需要新量度。 不過，請確定 [將您在sales\_order表格中建立的新欄新增為維度](../data-warehouse-mgr/manage-data-dimensions-metrics.md) ，然後繼續處理報表。
 
-## 报告
+## 報表
 
-* **每周订单 — 零售日历（按年）**
+* **每週訂單 — 零售行事曆(YoY)**
    * 量度 `A`： `2017`
-      * [!UICONTROL Metric]：订单数
+      * [!UICONTROL Metric]：訂單數
       * [!UICONTROL Filter]:
-         * 创建时间\_at（零售年份）= 2017
+         * 建立時間\_at （零售業年份） = 2017
    * 量度 `B`： `2016`
-      * [!UICONTROL Metric]：订单数
+      * [!UICONTROL Metric]：訂單數
       * [!UICONTROL Filter]:
-         * Created\_at （零售年份）= 2016
+         * 建立時間\_at （零售業年份） = 2016
    * 量度 `C`： `2015`
       * [!UICONTROL Metric]: `Number of orders`
       * [!UICONTROL Filter]:
@@ -143,12 +143,12 @@ ht-degree: 0%
       [!UICONTROL Group by]: `Created\_at` (retail week)
    * 
       [!UICONTROL Chart type]: `Line`
-      * 关闭 `multiple Y-axes`
+      * 關閉 `multiple Y-axes`
 
-* **零售日历概述（当前零售年份，按月）**
+* **零售行事曆概觀（目前零售年份/月）**
    * 量度 `A`： `Revenue`
       * 
-         [！UICONTROL量度]: `Revenue`
+         [！UICONTROL公制]: `Revenue`
       * [!UICONTROL Filter]:
          * 
             [!UICONTROL Include current retail year?]: `Yes`
@@ -171,15 +171,15 @@ ht-degree: 0%
 
       [!UICONTROL Chart type]: `Line`
 
-* **零售业日历概述（上一零售年，按月）**
+* **零售行事曆概觀（前一個零售年度，按月）**
    * 量度 `A`： `Revenue`
       * 
-         [！UICONTROL量度]: `Revenue`
+         [！UICONTROL公制]: `Revenue`
       * [!UICONTROL Filter]:
          * 
             [!UICONTROL Include current retail year?]: `Yes`
    * 量度 `B`： `Orders`
-      * [!UICONTROL Metric]：订单数
+      * [!UICONTROL Metric]：訂單數
       * [!UICONTROL Filter]:
          * 
             [!UICONTROL Include current retail year?]: `Yes`
@@ -197,10 +197,10 @@ ht-degree: 0%
 
       [!UICONTROL Chart type]: `Line`
 
-## 后续步骤
+## 後續步驟
 
-上文中介绍了如何配置零售日历，使其与基于的任何指标兼容。 `sales\_order` 表格(例如 `Revenue` 或 `Orders`)。 您还可以对其进行扩展，以支持基于任何表构建的量度的零售日历。 唯一要求是此表必须有一个有效的datetime字段，该字段可用于联接到零售业日历表。
+上述內容說明如何設定零售日曆，使其與依據您設定的任何量度相容。 `sales\_order` 表格(例如 `Revenue` 或 `Orders`)。 您也可以將此擴充以支援任何表格上建立之量度的零售日曆。 此表格唯一需要的是具有有效的日期時間欄位，可用來聯結至Retail Calendar表格。
 
-例如，要在4-5-4零售日历中查看客户级别指标，请创建 `Same Table` 在中计算 `customer\_entity` 表，类似于 `\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)` 如上所述。 然后，您可以使用此列复制 `One to Many` JOINED\_COLUMN计算(如 `Created_at (retail year)` 和 `Include in previous retail year? (Yes/No)` 加入 `customer\_entity` 表 `Retail Calendar` 表格。
+例如，若要在4-5-4零售行事曆上檢視客戶層級量度，請建立 `Same Table` 中的計算 `customer\_entity` 表格，類似於 `\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)` 如上所述。 然後您可以使用此欄來重現 `One to Many` JOINED\_COLUMN計算(如 `Created_at (retail year)`)和 `Include in previous retail year? (Yes/No)` 藉由加入 `customer\_entity` 表格至 `Retail Calendar` 表格。
 
-别忘了 [将所有新列作为维度添加到量度](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 然后再生成新报告。
+別忘了 [將所有新欄新增為量度的維度](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 建立新報表之前。

@@ -1,33 +1,33 @@
 ---
-title: 限制指标访问
-description: 了解如何使用指标访问和限制。
+title: 限制量度存取
+description: 瞭解如何使用量度存取和限制。
 exl-id: 88f5ca7a-8073-4968-9685-95f141b2a87f
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
 
-# 管理指标用户
+# 管理量度使用者
 
-除了设置用户权限级别之外，您还可以按用户限制对量度的访问。 例如，如果您希望会计部门可以访问与收入相关的指标，但不能访问用户获取指标，则可以限制对这些指标的访问。
+除了設定使用者許可權層級外，您也可以逐個使用者限制量度的存取權。 例如，如果您希望會計部門能存取收入相關量度，但不存取使用者贏取量度，則可以限制這些量度的存取權。
 
-在这种情况下，Adobe建议将该用户帐户设置为 **[[!UICONTROL Standard]](../../administrator/user-management/user-management.md)**. **[!UICONTROL Standard]** 应该向不需要创建或更改量度、计算列、集成或用户的用户授予权限，但是他们确实需要访问Data warehouse中的数据。 如果要完全限制对数据的访问，请使用 **[!UICONTROL Read Only]** 权限。
+在這樣的情況下，Adobe建議將該使用者的帳戶設定為 **[[!UICONTROL Standard]](../../administrator/user-management/user-management.md)**. **[!UICONTROL Standard]** 應授予不需要建立或變更量度、計算欄、整合或使用者的許可權，但他們確實需要存取Data Warehouse中的資料。 如果您想要完全限制對資料的存取，請使用 **[!UICONTROL Read Only]** 許可權。
 
-设置权限级别后，您可以选择指标 **[!UICONTROL Standard]** 用户可通过以下方式访问：
+設定許可權層級後，您可以選取 **[!UICONTROL Standard]** 使用者可以執行下列動作來存取：
 
-1. 转到 **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**.
-1. 选择所需的用户帐户。
-1. 此 **[!UICONTROL Metrics]** 选项卡显示可用度量的列表。 选中您希望用户有权访问的指标；取消选择用户不应有权访问的指标。
-1. [!DNL MBI] 自动保存更改。 如果更改成功， [!DNL MBI] 显示 **[!UICONTROL Saved!]** 页面顶部的。
-
->[!NOTE]
->
->所有用户具有 **[!UICONTROL Standard]** 除了来自的所有量度之外，权限还可以通过“数据导出”访问Data warehouse中的所有数据 [!DNL Google Analytics].
-
-您还可以通过编辑量度和 **[!UICONTROL Standard]** 在中选择用户 **[[!UICONTROL User Rights]](../../data-user/reports/ess-manage-data-metrics.md)** 部分。
+1. 前往 **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**.
+1. 選取所需的使用者帳戶。
+1. 此 **[!UICONTROL Metrics]** 索引標籤會顯示可用量度的清單。 檢查您希望使用者存取的量度，並取消選取使用者不應該存取的量度。
+1. [!DNL Adobe Commerce Intelligence] 會自動儲存變更。 如果變更成功， [!DNL Commerce Intelligence] 顯示 **[!UICONTROL Saved!]** ，位於頁面頂端。
 
 >[!NOTE]
 >
->如果复制量度， [!DNL MBI] 复制在原始量度中设置的用户权限。
+>所有使用者具有 **[!UICONTROL Standard]** 除了來自的所有量度之外，許可權還可以透過「資料匯出」存取Data Warehouse中的所有資料 [!DNL Google Analytics].
+
+您也可以編輯量度和 **[!UICONTROL Standard]** 在中選取使用者 **[[!UICONTROL User Rights]](../../data-user/reports/ess-manage-data-metrics.md)** 區段。
+
+>[!NOTE]
+>
+>如果您複製量度， [!DNL Commerce Intelligence] 複製在原始量度中設定的使用者許可權。
