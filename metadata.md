@@ -9,33 +9,33 @@ role: User
 index: true
 source-git-commit: 8e4854e5b8820eb1fa0aee0d23f7e1ecd36c538b
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '127'
 ht-degree: 0%
 
 ---
 
 
-# 供内部使用的元数据
+# 供內部使用的中繼資料
 
-的 `metadata.md` 文件包含可传递到用户指南的存储库级别元数据 `TOC.md` 文件。 如果要更改任何用户指南的metadata.md内容，请在任意 `TOC.md` 文件。
+此 `metadata.md` 檔案包含傳遞至使用手冊的存放庫層級中繼資料 `TOC.md` 存放庫中的檔案。 如果您想要變更任何使用手冊的metadata.md內容，請在任何使用手冊中變更 `TOC.md` 檔案。
 
-| 元数据 | 功能 |
+| 中繼資料 | 作用 |
 |--- |--- |
-| solution-title | 在文章标题中用作链接 |
-| solution-hub-url | 打开helpx中心页面 |
-| solution-icon | 在解决方案标题旁边显示解决方案图标。 尚未实施 |
-| getting-started-url | helpx快速入门页面的链接 |
-| tutorials-url | 视频教程（helpx教程或KT教程）的链接 |
-| mini-toc-levels | 确定在右边栏中显示的标题级别数。 默认为2 |
-| git-repo | 指定供内部使用的主控存储库的位置 |
+| solution-title | 在文章標題中作為連結使用 |
+| solution-hub-url | 開啟helpx中樞頁面 |
+| solution-icon | 在解決方案標題旁邊顯示解決方案圖示。 尚未實作 |
+| getting-started-url | helpx快速入門頁面的連結 |
+| tutorials-url | 教學課程影片（helpx或KT教學課程其中之一）的連結 |
+| mini-toc-levels | 決定顯示在右側欄中的標題層數。 預設值為2 |
+| git-repo | 指定內部使用的主要存放庫位置 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-在TOC.md文件中
+在TOC.md檔案中
 
-| 元数据 | 功能 |
+| 中繼資料 | 作用 |
 |--- |--- |
-| user-guide-title | 在文章标题中用作链接 |
-| user-guide-url | 打开helpx中心页面 |
+| 使用手冊標題 | 在文章標題中作為連結使用 |
+| 使用手冊url | 開啟helpx中樞頁面 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

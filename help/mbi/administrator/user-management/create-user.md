@@ -26,7 +26,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->新使用者預設沒有任何儀表板。 Adobe建議您 [共用](../../data-user/dashboards/share-dashboard-with-users.md) 與新使用者立即互動的必要儀表板。
+>新使用者預設沒有任何儀表板。 Adobe建議您 [共用](../../data-user/dashboards/share-dashboard-with-users.md) 新使用者立即使用的必要控制面板。
 
 ## 更新您的電子郵件地址或密碼
 

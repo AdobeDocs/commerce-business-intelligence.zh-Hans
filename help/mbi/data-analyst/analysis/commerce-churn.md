@@ -1,6 +1,6 @@
 ---
-title: Commerce流失
-description: 瞭解如何產生及分析您的Commerce流失率。
+title: 商务流失
+description: 了解如何生成和分析您的商务流失率。
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
 source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
@@ -15,16 +15,16 @@ ht-degree: 2%
 
 ![](../../assets/Churn_rate_image.png)
 
-許多客戶都希望獲得協助，以開始概念化 **時間範圍** 他們應該根據其資料使用。 如果您想要使用歷史客戶行為來定義此專案 **流失時間範圍**，請熟悉 [定義流失](../analysis/define-cust-churn.md) 主題。 然後，您便可以在以下說明中使用流失率公式中的結果。
+许多客户在开始时需要获得帮助概念，以了解应根据数据使用哪些 **时间范围** 。 如果要使用历史客户行为定义此 **流失时间范围** ，您可能希望熟悉 [ 定义流失 ](../analysis/define-cust-churn.md) 主题。 然后，您可以在以下说明中使用公式中的结果来获得流失率。
 
-## 計算欄
+## 计算列
 
-要建立的欄
+要创建的列
 
-* **`customer_entity`** 表格
+* **`customer_entity`** 表
 * **`Customer's last order date`**
-   * 選取 [!UICONTROL definition]： `Max`
-   * 選取 [!UICONTROL table]： `sales_flat_order`
+   * [!UICONTROL definition]选择：`Max`
+   * 选择 [!UICONTROL table] ： `sales_flat_order`
    * 選取 [!UICONTROL column]： `created_at`
    * `sales_flat_order.customer_id = customer_entity.entity_id`
    * [!UICONTROL Filter]: `Orders we count`
@@ -35,34 +35,34 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->請確定 [將所有新欄新增為量度的維度](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 建立新報表之前。
+>在构建新报表之前， [ 请确保将所有新列添加为量度 ](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 。
 
-## 量度
+## 指标
 
-* **新客戶（依第一筆訂單日期）**
-   * 被計數的客戶
+* **新客户（按首次订购日期）**
+   * 计数的客户
 
 >[!NOTE]
 >
->此量度可能存在於您的帳戶中。
+>此量度可能存在于您的帐户上。
 
-* 在 **`customer_entity`** 表格
-* 此量度會執行 **計數**
+* **`customer_entity`**&#x200B;表格中
+* 此量度执行 **计数**
 * 於 **`entity_id`** 欄
 * 排序依據： **`Customer's first order date`** timestamp
 * [!UICONTROL Filter]:
 
 * **新客戶（依上次訂購日期）**
-   * 被計數的客戶
+   * 计数的客户
 
    >[!NOTE]
    >
-   >此量度可能存在於您的帳戶中。
+   >此量度可能存在于您的帐户上。
 
-* 在 **`customer_entity`** 表格
-* 此量度會執行 **計數**
-* 於 **`entity_id`** 欄
-* 排序依據： **`Customer's last order date`** timestamp
+* **`customer_entity`**&#x200B;表格中
+* 此量度执行 **计数**
+* **`entity_id`**&#x200B;列上
+* 按 **`Customer's last order date`** 时间戳排序
 * [!UICONTROL Filter]:
 
 >[!NOTE]
@@ -78,7 +78,7 @@ ht-degree: 2%
       [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]:
-   * 自客戶上次訂購日期以來的秒數>= [您為流失客戶定義的截止日期&#x200B;]**`^`**
+   * 客户上次订购日期后的秒数 > = [ 您自定义的 churned 客户的截止时间&#x200B;]**`^`**
    * `Lifetime number of orders Greater Than 0`
 
    * [!UICONTROL Metric]: `New customers (by last order date)`

@@ -11,13 +11,13 @@ ht-degree: 0%
 
 # Advertising Campaigns和ROI
 
-[!DNL Adobe Commerce Intelligence] 讓您輕鬆進行 [結合廣告成本資料和收入資料](../../data-analyst/importing-data/integrations/google-adwords.md) 從您的資料庫。 這可協助您識別哪些行銷活動具有最高的投資報酬率(ROI)。 本主題探討評估行銷活動績效的幾個不同方法。
+[!DNL Adobe Commerce Intelligence] 讓您輕鬆進行 [結合廣告成本資料和收入資料](../../data-analyst/importing-data/integrations/google-adwords.md) 從您的資料庫。 这可帮助您识别哪些营销活动的投资回报率（ROI）最高。 本主题探讨评估营销活动效果的几种不同方法。
 
-## 必要條件
+## 先决条件
 
-* 匯入您的廣告成本資料：
-   * [連線您的 [!DNL Google AdWords] 至 [!DNL Commerce Intelligence]](../importing-data/integrations/google-adwords.md)：這會同步您的 [!DNL Adwords] 支出 [!DNL Commerce Intelligence]
-   * [上傳其他廣告成本資料](../importing-data/connecting-data/import-offline-ad-data.md)：建議將此用於沒有直接聯結器的頻道 [!DNL Commerce Intelligence]
+* 导入您的广告成本数据：
+   * [将您  [!DNL Google AdWords]  的连接到  [!DNL Commerce Intelligence]](../importing-data/integrations/google-adwords.md) ：这会同步您 [!DNL Adwords] 的支出 [!DNL Commerce Intelligence]
+   * [上传其他广告成本数据 ](../importing-data/connecting-data/import-offline-ad-data.md) ：对于没有直接连接器的渠道，建议使用此项 [!DNL Commerce Intelligence]
    * 如果您從多個來源匯入成本資料，您可以 [consolidate](../../best-practices/consolidating-your-tables.md) 中的資料 [!DNL Commerce Intelligence]. 簡單 [提交支援票證](../../guide-overview.md#Submitting-a-Support-Ticket).
 * [追蹤使用者贏取管道資料](../analysis/google-track-user-acq.md)
 
@@ -50,9 +50,9 @@ ht-degree: 0%
 1. 建立行銷活動所花費的區段報表
 1. 在任何控制面板中，按一下 [!UICONTROL Add Report > Create report]
 1. 選取 [!UICONTROL Adword Cost] 您剛才建立的量度
-1. 設定 [!UICONTROL Time period] 至 `All-time`、和 [!UICONTROL Interval] 至 `None`
-1. 在 `Group by` 標籤，新增 `campaign` 作為 [!UICONTROL grouping field]，然後按一下 `Add All` 在方塊中。
-1. 此報表顯示您的所有時間 [!DNL AdWords] 成本（依行銷活動）
+1. 将 &quot; [!UICONTROL Time period] 至 `All-time` [!UICONTROL Interval] &quot; 设置为 `None`
+1. `Group by`在选项卡下，添加 `campaign` 为 [!UICONTROL grouping field] ，然后单击 `Add All` 框中的。
+1. 此报表显示营销活动的所有时间 [!DNL AdWords] 成本
 
 **2. 建立可依行銷活動計算新使用者的報表：**
 
@@ -73,25 +73,25 @@ ht-degree: 0%
 **最後，將這三項分析整合在一份報表中，以計算行銷活動ROI：**
 
 1. 在任何控制面板中，按一下 **[!UICONTROL Add Report > Create new report]**
-1. 新增作為輸入，使用上述三個量度。 每個檔案都會指派一個字母(例如，\[`A`\]， \[`B`\]和\[`C`\])
-1. [!UICONTROL Cost]：新增量度AdWords成本 — 此為變數\[A\]。 依行銷活動傳回成本。
+1. 添加为输入，请使用上面所用的三个量度。 每个分配一个字母（例如，\ [ `A` \]、\ [ `B` \] 和 \ [ `C` \]）
+1. [!UICONTROL Cost]：添加量度 AdWords 成本-这是变量 \ [A \]。 依行銷活動傳回成本。
 1. [!UICONTROL Users]：新增量度新使用者 — 這是變數\[B\]。 這會傳回行銷活動的使用者人數。
 1. [!UICONTROL LTV]：新增量度平均期限收入 — 此為變數\[`C`\]。 這會依行銷活動傳回LTV。
 
 1. 按一下「圖表」一字旁邊的隱藏圖示，即可將焦點放在表格上
 1. 現在使用 `Add Formula` 若要結合這些量度，如下所示：
-1. [!UICONTROL ROI]：輸入公式 `(\[C\]-\[A\]/\[B\])/(\[A\]/\[B\])`，若為\[`A`\]表示 `Ad Cost by Campaigns`， \[`B`\]表示 `New users by campaigns`，和\[`C`\] `LTV by campaigns`. 這會傳回（平均使用者LTV — 每次收購的平均成本） / （每次收購的平均成本）的比率
-1. [!UICONTROL Avg Return per User]：輸入公式 **\[`C`\]-(\[`A`\]/\[`B`\])**. 透過計算（平均使用者LTV） — （每次收購的平均成本），這會傳回使用者的平均利潤。
+1. [!UICONTROL ROI]：如果 \ [ `A` \] 表示 `Ad Cost by Campaigns` 、\ [ `B` \] 表示 `New users by campaigns` 和 \ [ `C` \ `LTV by campaigns` ]，请输入公式 `(\[C\]-\[A\]/\[B\])/(\[A\]/\[B\])` 。这会返回（平均用户 LTV 平均客户获取成本）/（每个客户获取的平均成本）
+1. [!UICONTROL Avg Return per User]：輸入公式 **\[`C`\]-(\[`A`\]/\[`B`\])**. 这会通过计算（平均用户 LTV）-（每个客户获取的平均成本）返回在用户上进行的平均边距。
 1. [!UICONTROL CPA]：輸入公式 **`\[A\]/\[B\]`**. 這會傳回實際促銷活動的每次贏取成本。
 1. 要納入的其他潛在量度 [!DNL AdWords] 資料包含的總和  `Impressions` 和 `adClicks` (從 [!DNL AdWords] 資料)，以及總計 `number of orders` 透過特定行銷活動建立。
-1. 根據使用者註冊或首次購買後30天和90天的LTV來計算ROI，也可能會很有趣。
+1. 在用户注册或进行首次购买后，根据 LTV 30 天和90天来计算 ROI 也可能会有意义。
 
-1. 您可以隨時按一下並拖曳量度和公式，以重新排序報表的欄
-1. 為報表命名，並請務必儲存為表格。
+1. 感觉免费单击并拖动量度和公式以对报表中的列重新排序
+1. 命名报表并确保另存为表。
 
-## 產品行銷活動
+## 产品营销活动
 
-您執行產品專屬廣告嗎？ 若是如此，您可以計算特定產品的收入/成本，以評估這些促銷活動的ROI。
+您是否正在运行特定于产品的广告？ 如果是这样，您可以通过计算特定产品的收入/成本来在这些营销活动上衡量 ROI。
 
 >[!NOTE]
 >
@@ -120,12 +120,12 @@ ht-degree: 0%
 1. 備妥這些量度後，即可新增公式：
 1. [!UICONTROL ROI]：輸入公式 `\[A\]/\[B\]`，若為 `\[A\]` 表示 `Revenue per campaign for specific product(s)` 和 `\[B\]` 表示 `Ad cost by campaigns`. 這會傳回（特定產品的收入） / （促銷活動成本）的比率
 1. [!UICONTROL Return]：輸入公式 `\[A\]-\[B\]`. 這會透過計算（平均使用者LTV） — （每次收購的平均成本）傳回使用者的平均利潤
-1. （可選） [!UICONTROL Revenue]：取消隱藏 `Revenue by items` 量度以瞭解每個行銷活動的特定產品收入
-1. （可選） [!UICONTROL Cost]：取消隱藏 `AdWords Cost` 檢視行銷活動成本的量度
+1. （可选） [!UICONTROL Revenue] ：取消隐藏 `Revenue by items` 量度以查看每个营销活动的特定产品收入
+1. （可选） [!UICONTROL Cost] ：取消隐藏 `AdWords Cost` 量度以查看营销活动的成本
 
-1. 為報表命名，並請務必將其儲存為表格
+1. 为报表指定一个名称，并确保将其另存为表格
 
-**3. 對每個廣告產品或產品群組重複上述步驟1和2。**
+**3. 对每个播发产品或产品群组重复执行上述步骤1和2。**
 
 ## 相關檔案
 

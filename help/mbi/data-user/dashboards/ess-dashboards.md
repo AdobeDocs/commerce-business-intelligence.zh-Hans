@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 儀表板
 
-[!DNL Adobe Commerce Intelligence] 控制面板可讓您快速檢視商店的績效和銷售活動。 個別控制面板可以與其他使用者共用，並組織成邏輯群組。 您也可以為其他使用者設定不同等級的許可權。
+[!DNL Adobe Commerce Intelligence] 控制面板可讓您快速檢視商店的績效和銷售活動。 個別控制面板可以與其他使用者共用，並組織成邏輯群組。 您还可以为其他用户设置不同级别的许可。
 
 可以輕鬆建立報表、新增至控制面板，以及將資料匯出至Excel。 圖表和報告可以調整大小並拖曳到儀表板上的適當位置。
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 控制面板是可共用的，其主題貯體適用於您在Report Builder中建立的分析。 這就是鼓勵您的團隊共同作業，並在整個組織中維護單一信任來源的方法。
 
-*如果您是管理員或標準使用者*，您可以按一下 `Dashboard Options` 下拉式清單並選取 `Create New dashboard`.
+*如果您是管理员或标准用户* ，则可以通过单击下拉列表并选择 `Create New dashboard` &quot;&quot; `Dashboard Options` 来创建功能板。
 
 您所建立的控制面板完全由您決定。 您可以依照自己的需求和工作流程，以任何方式在控制面板中排列元素和調整元素大小。
 
@@ -31,15 +31,15 @@ ht-degree: 0%
 
 1. 在功能表中，按一下 **[!UICONTROL Dashboards]**.
 
-1. 預設圖示板的名稱會出現在圖示板標題的左上角。 按一下向下箭頭(![](../../assets/magento-bi-btn-down.png))以顯示可用的選項。
+1. 默认功能板的名称显示在功能板标题的左上角。 单击向下箭头（ ![](../../assets/magento-bi-btn-down.png) ）以显示可用的选项。
 
-   ![建立儀表板](../../assets/magento-bi-dashboard-create.png)
+   ![创建功能板](../../assets/magento-bi-dashboard-create.png)
 
-1. 按一下 **[!UICONTROL Create Dashboard]**. 然後，執行下列動作：
+1. 单击 **[!UICONTROL Create Dashboard]** 。 然后，执行以下操作：
 
-   * 輸入 `Name` （適用於您的儀表板）。
+   * `Name`为您的功能板输入。
 
-   * 若要建立 `Group` 對於圖示板，輸入群組的名稱。
+   * 要为功能板创建 `Group` ，请输入群组的名称。
 
       例如，如果您的Commerce安裝有多個商店檢視，您可能會為每個商店檢視建立一個群組。
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
    ![儀表板名稱](../../assets/magento-bi-dashboard-create-name.png)
 
-   * 新圖示板的名稱會出現在左上角。 按一下向下箭頭(![](../../assets/magento-bi-btn-down.png))以顯示選項。 如果您已建立群組，則新圖示板會顯示在清單中該群組的下方。
+   * 新功能板的名称将显示在左上角。 按一下向下箭頭(![](../../assets/magento-bi-btn-down.png))以顯示選項。 如果创建了群组，则新功能板会显示在列表中的群组下方。
 
 
 ### 新增報告
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 1. 按一下 **[!UICONTROL Create Report]** 以顯示 **[!UICONTROL Report Builder Options]**.
 
-   ![Report Builder選項](../../assets/magento-bi-report-builder.png)
+   ![Report Builder 选项](../../assets/magento-bi-report-builder.png)
 
 ## 在儀表板上排列專案
 
@@ -72,17 +72,17 @@ ht-degree: 0%
 
 ## 管理您的儀表板 {#managedash}
 
-在 **[!DNL Manage Data** > **Dashboards]**，您可以管理自己所擁有控制面板的使用者許可權、刪除不再需要的控制面板，以及設定預設控制面板。
+在中 **[!DNL Manage Data** > **Dashboards]** ，您可以为您拥有的功能板管理用户权限，删除不再需要的功能板，并设置默认功能板。
 
-### 共用您的儀表板 {#sharingdash}
+### 共享您的功能板 {#sharingdash}
 
-達到真正規模 [!DNL Commerce Intelligence] 在整個組織並提供有價值的深入分析，Adobe鼓勵您與其他團隊成員共用您建立的儀表板。 *您可以共用您擁有的儀表板* 按一下 `Share Dashboard` 選項。
+为了真正地在整个组织范围内扩展 [!DNL Commerce Intelligence] 并提供有价值的见解，Adobe Systems 鼓励您共享用其他团队成员创建的功能板。 *您可以通过单击 `Share Dashboard` 页面顶部的选项来共享自己* 的功能板。
 
-當您共用控制面板時，您可以在組織或個人基礎上指派許可權，這表示您可以決定誰可以檢視和編輯您的報告。
+共享功能板时，您可以在整个组织或单个基础上分配权限，这意味着您可决定谁可以视图和编辑报表。
 
 >[!NOTE]
 >
->`Read-Only` 使用者只有直接共用給他們的儀表板存取權 — 他們無法自行搜尋和新增儀表板。 別忘了把它們放在回圈中！
+>`Read-Only` 用户只能访问直接与他们共享的功能板-他们不能搜索，也不能添加控制面板。 別忘了把它們放在回圈中！
 
 ### 存取共用儀表板 {#accessshared}
 
@@ -90,11 +90,11 @@ ht-degree: 0%
 
 ![尋找儀表板](../../assets/find_dashboard.png)<!--{: width="1000" height="535"}-->
 
-### 管理儀表板設定
+### 管理功能板设置
 
-1. 在功能表中，按一下 **[!DNL Manage Data** > **Dashboards]**.
+1. 在菜单上，单击 **[!DNL Manage Data** > **Dashboards]** 。
 
-1. 如果適用，請輸入新的 `Dashboard Name`.
+1. 如果适用，请输入新 `Dashboard Name` 的。
 
 1. 若要將控制面板指派給特定 `Dashboard Group`，從群組清單中選擇。
 
@@ -109,12 +109,12 @@ ht-degree: 0%
       * `None`
    1. 提示確認時，按一下 **[!UICONTROL OK]** 更新每個使用者的許可權層級。
 
-   1. 若要變更個人的許可權層級，請在清單中尋找使用者以變更許可權層級。 變更會自動儲存。
+   1. 要更改个人的许可级别，请在列表中找到用户更改许可级别。 更改会自动保存。
 
    **`Default`**
 
-   1. 若要將此儀表板設為您的預設儀表板 [!DNL Commerce Intelligence] 帳戶，按一下 **[!UICONTROL Make Default]**.
+   1. 要将此功能板设为 [!DNL Commerce Intelligence] 帐户的默认功能，请单击 **[!UICONTROL Make Default]** 。
 
    **`Remove`**
 
-   1. 若要移除儀表板，請按一下 **[!UICONTROL Delete Dashboard]**.
+   1. 要删除功能板，请单击 **[!UICONTROL Delete Dashboard]** 。

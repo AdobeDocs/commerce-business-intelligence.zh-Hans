@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 使用對應表格標準化資料
 
-想像您身在 `Report Builder` 建立 `Revenue by State` 報告。 在您嘗試新增「 」之前，一切順利 `billing state` 分組至您的報表，您會看到以下畫面：
+假设您正在 `Report Builder` 构建 `Revenue by State` 报表。 在您嘗試新增「 」之前，一切順利 `billing state` 分組至您的報表，您會看到以下畫面：
 
 ![](../../assets/Messy_State_Segments.png)
 
@@ -25,29 +25,29 @@ ht-degree: 0%
 >
 >如果沒有Adobe支援團隊的協助，您就無法建立統一表格的對映表。
 
-## 如何建立？ {#how}
+## 如何创建它？ {#how}
 
-**資料格式重新整理程式：**
+**数据格式刷新器：**
 
-* 請確定您的試算表有標題列。
-* 避免使用逗號！ 上傳檔案時會造成問題。
-* 使用標準日期格式 `(YYYY-MM-DD HH:MM:SS)` 用於日期。
-* 百分比必須以小數點輸入。
-* 請確定正確保留任何開頭或結尾的零。
+* 请确保您的电子表格具有标题行。
+* 避免使用逗号！ 当您上传文件时，它会导致问题。
+* 使用标准日期格式 `(YYYY-MM-DD HH:MM:SS)` 日期。
+* 百分比必须以小数位数输入。
+* 请确保所有前导或尾随的零都已正确保留。
 
-潛入之前，Adobe建議您 [匯出原始資料表資料](../../tutorials/export-raw-data.md). 首先檢視原始資料表示您可以探索您需要清理的資料的所有可能組合，從而確保對應表格涵蓋所有內容。
+在进行深入研究之前，Adobe Systems 建议您 [ 导出原始表数据 ](../../tutorials/export-raw-data.md) 。 首先查看原始数据意味着您可以浏览需要清理的数据的所有可能组合，从而确保映射表包含所有内容。
 
-若要建立對映表格，您需要建立一個兩欄式試算表，並遵循 [檔案上傳的格式化規則](../../data-analyst/importing-data/connecting-data/using-file-uploader.md).
+要制作映射表，您需要创建一个双列式电子表格，并遵循 [ 文件上传 ](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) 的格式规则。
 
-在第一欄中，輸入儲存在資料庫中的值 **每列只有一個值**. 例如， `pa` 和 `PA` 不能在同一行 — 每個輸入必須有自己的列。 如需範例，請參閱下文。
+在第一列中，输入存储在数据库 **中每行** 中只有一个值的值。 例如， `pa` 和 `PA` 不能在同一行 — 每個輸入必須有自己的列。 如需範例，請參閱下文。
 
 在第二欄中，輸入這些值 **應為**. 如果您想要的話，繼續使用計費狀態範例 `pa`， `PA`， `Pennsylvania`、和 `pennsylvania` 成為 `PA`，您可以輸入 `PA` 在此欄中為每個輸入值。
 
 ![](../../assets/Mapping_table_examples.jpg)
 
-## 我需要做什麼 [!DNL Commerce Intelligence] 以使用它？ {#use}
+## 我需要做 [!DNL Commerce Intelligence] 些什么才能使用它？ {#use}
 
-完成建立對應表格之後，您必須 [上傳檔案](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) 到 [!DNL Commerce Intelligence] 和 [建立聯結欄](../../data-analyst/data-warehouse-mgr/calc-column-types.md) 會將新欄位重新定位到所需的表格中。 將檔案同步至您的Data Warehouse後，您就可以執行此動作。
+创建完映射表后，必须 [ 将该文件 ](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) 上传到中 [!DNL Commerce Intelligence] ，并 [ 创建一个联接列 ](../../data-analyst/data-warehouse-mgr/calc-column-types.md) ，将新字段重新定位到所需的表中。 您可以在文件同步到数据仓库后执行此操作。
 
 此範例會移動您在 `mapping_state` 表格(`state_input`)重新命名為 `customer_address` 使用聯結欄的表格。 這可讓我們依清理來分組 `state_input` 欄，而非 `state` 欄。
 
@@ -55,30 +55,30 @@ ht-degree: 0%
 
 1. 按一下 **[!UICONTROL Create a Column]**.
 1. 選取 `Joined Column` 從 `Definition` 下拉式清單。
-1. 為欄命名，使其與 `state` 資料行中的資料行。 為欄命名 `billing state (mapped)` 以便您分辨在report builder中分段時要使用的欄。
-1. 您需要連線表格的路徑不存在，因此您需要建立一個路徑。 按一下 **[!UICONTROL Create new path]**  在 `Select a table and column` 下拉式清單。
+1. 為欄命名，使其與 `state` 資料行中的資料行。 命名列 `billing state (mapped)` ，以便您可以在报表生成器中划分区段时判断要使用的列。
+1. 连接表所需的路径不存在，因此您需要创建一个。 在下拉菜单中 `Select a table and column` 单击 **[!UICONTROL Create new path]** 。
 
-   如果您不確定表格關係是什麼，或不確定如何正確定義主索引鍵和外索引鍵，請出庫 [教學課程](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md) 以取得協助。
+   如果您不确定表关系是什么，或者如何正确定义主键和外键，请查看 [ 教程 ](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md) 以了解一些帮助。
 
-   * 於 `Many` 在側，選取您要重新放置欄位的表格(同樣地，對我們來說，它是 `customer_address`)和 `Foreign Key` 欄，或 `state` 欄，在範例中。
-   * 於 `One` 側，選取 `mapping` 表格和 `Primary key` 欄。 在此情況下，您可以選取 `state_input` 欄來自 `mapping_state` 表格。
-   * 以下是該路徑的外觀：
+   * `Many`在侧面，选择要将字段重新定位到的表格（同样，对于我们 `customer_address` 而言）以及 `Foreign Key` 列或 `state` 列（在示例中）。
+   * `One`在侧面，选择 `mapping` 表格和 `Primary key` 列。在这种情况下，您可以从 `mapping_state` 表中选择 `state_input` 列。
+   * 以下是查看点赞路径的外观：
 
       ![](../../assets/State_Mapping_Path.png)
 
-1. 完成後，按一下 **[!UICONTROL Save]** 以建立路徑。
-1. 路徑在儲存後可能不會立即填入 — 如果發生這種情況，請按一下 `Path` 方塊並選取您建立的路徑。
-1. 按一下 **[!UICONTROL Save]** 以建立欄。
+1. 完成后，单击 **[!UICONTROL Save]** 以创建路径。
+1. 保存后路径可能不会立即填充-如果发生这种情况，请单击 `Path` 该框并选择您创建的路径。
+1. 单击 **[!UICONTROL Save]** 以创建列。
 
-## 我現在該做什麼？ {#wrapup}
+## 我现在该怎么做？ {#wrapup}
 
 更新週期完成後，您將能夠使用新的聯結欄來正確地劃分您的資料，而不是從資料庫中劃分混亂的欄。 立即檢視您的分組選項 — 不再有壓力混亂：
 
 ![](../../assets/Clean_State_Segments.png)
 
-無論您何時想要清除Data Warehouse中某些可能雜亂的資料，對應表格都相當方便。 不過，對應表格也可用於其他酷炫的使用案例，例如 [複製您的 [!DNL Google Analytics channels] 在 [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md).
+当您想要清理数据仓库中的某些可能杂乱的数据时，映射表非常有用。 但是，映射表也可用于其他一些酷用例，点赞 [ 复制您  [!DNL Google Analytics channels]  的  [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md) 。
 
-### 相關
+### 相关
 
-* [瞭解和評估表格關係](../data-warehouse-mgr/table-relationships.md)
-* [建立/刪除計算欄的路徑](../data-warehouse-mgr/create-paths-calc-columns.md)
+* [了解和评估表关系](../data-warehouse-mgr/table-relationships.md)
+* [创建/删除计算列的路径](../data-warehouse-mgr/create-paths-calc-columns.md)

@@ -12,14 +12,14 @@ ht-degree: 0%
 # 計算欄型別
 
 * [相同的表格計算](#sametable)
-* [一對多計算](#onetomany)
+* [一对多计算](#onetomany)
 * [多對一計算](#manytoone)
 * [便利的參考地圖](#map)
 * [進階計算欄](#advanced)
 
 在內 [Data Warehouse管理員](../data-warehouse-mgr/tour-dwm.md)，您可以建立欄，以擴充和最佳化資料進行分析。 [此功能](../data-warehouse-mgr/creating-calculated-columns.md) 選取「Data Warehouse管理員」中的任何表格，然後按一下 **[!UICONTROL Create New Column]**.
 
-本主題說明您可以使用「Data Warehouse管理員」建立的欄型別。 此外也涵蓋說明、該欄的視覺化逐步解說，以及 [參考地圖](#map) 建立欄所需的所有輸入。 建立計算欄有三種方式：
+本主題說明您可以使用「Data Warehouse管理員」建立的欄型別。 此外也涵蓋說明、該欄的視覺化逐步解說，以及 [參考地圖](#map) 建立欄所需的所有輸入。 创建计算列的方法有三种：
 
 1. [相同的表格計算資料行](#sametable)
 1. [一對多計算欄](#onetomany)
@@ -27,17 +27,17 @@ ht-degree: 0%
 
 ## 相同的表格計算資料行 {#sametable}
 
-這些資料欄是使用來自相同表格的輸入資料欄建置。
+这些列是使用同一表中的输入列生成的。
 
-### 年齡 {#age}
+### 年龄 {#age}
 
-期限計算欄會傳回目前時間與某個輸入時間之間的秒數。
+年龄计算列返回当前时间与某些输入时间之间的秒数。
 
-以下範例會建立 `Seconds since customer's most recent order` 在 `customers` 表格。 這可用來建構尚未在中進行購買（有時稱為流失）的客戶的使用者清單 `X days`.
+下面的示例在表格中 `customers` 创建 `Seconds since customer's most recent order` 。可用于构建未在中 `X days` 进行购买的客户用户列表（有时也称为 churning）。
 
 ![](../../assets/age.gif)
 
-### 貨幣轉換器
+### 货币转换器
 
 貨幣轉換器計算欄將欄的原生貨幣轉換為所需的新貨幣。
 
@@ -47,9 +47,9 @@ ht-degree: 0%
 
 ![](../../assets/currency_converter.png)
 
-## 一對多計算欄 {#onetomany}
+## 一对多计算列 {#onetomany}
 
-`One-to-Many` 欄 [使用兩個表格之間的路徑](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md). 此路徑一律代表一個表格，其中有一個屬性存在；以及多個表格，其中屬性會向下被「重新定位」。 路徑可描述為 `foreign key--primary key` 關係。
+`One-to-Many` 列 [ 使用两个表 ](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md) 之间的路径。 此路徑一律代表一個表格，其中有一個屬性存在；以及多個表格，其中屬性會向下被「重新定位」。 路徑可描述為 `foreign key--primary key` 關係。
 
 ### 聯結欄 {#joined}
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 ## 多對一計算欄 {#manytoone}
 
-這些欄使用與一對多欄相同的路徑，但它們將資料指向相反的方向。 欄會建立在路徑的一側，而不是多側。 由於這種關係，欄中的值必須是彙總，也就是說，對許多側的資料點執行的數學運算。 這方面的使用案例有很多，下面列出了一些案例。
+这些列使用与一对多列相同的路径，但它们以相反的方向指向数据。 欄會建立在路徑的一側，而不是多側。 由於這種關係，欄中的值必須是彙總，也就是說，對許多側的資料點執行的數學運算。 這方面的使用案例有很多，下面列出了一些案例。
 
 ### 計數 {#count}
 
@@ -69,15 +69,15 @@ ht-degree: 0%
 
 在以下範例中，維度 `Customer's lifetime number of canceled orders` 建立於 `customers` 表格(具有篩選器 `orders.status`)。
 
-![](../../assets/many_to_one.gif){： width=&quot;699&quot; height=&quot;351&quot;}
+![](../../assets/many_to_one.gif){： width = &quot;699&quot; height = &quot;351&quot;}
 
-### 總和 {#sum}
+### 和 {#sum}
 
-「總和」計算欄是 `many` 將表格移至單一表格。
+计算列总和是表格中 `many` 值与一个表格的总和。
 
-這可用來建立客戶層級的維度，例如 `Customer's lifetime revenue`.
+这可用于创建客户级维度点赞 `Customer's lifetime revenue` 。
 
-### 最小值或最大值 {#minmax}
+### 最小或最大 {#minmax}
 
 最小值或最大值計算欄會傳回多面存在的最小或最大記錄。
 
@@ -85,11 +85,11 @@ ht-degree: 0%
 
 ### 存在 {#exists}
 
-計算欄是判斷在多面是否存在記錄的二進位測試。 換言之，新欄會傳回 `1` 如果路徑連線每個表格中的至少一列，並且 `0` 如果無法建立連線。
+计算列是一个二进制测试，用于确定记录在多个侧是否存在。 换句话说，如果路径至少连接了每个表中的一行，并且 `0` 无法建立连接，则新列将返回 a `1` 。
 
-例如，此型別的維度可能決定客戶是否購買過特定產品。 使用a之間的聯結 `customers` 表格和 `orders` 表格、特定產品的篩選器、維度 `Customer has purchased Product X?` 可以建置。
+例如，如果客户曾购买了特定产品，则此类维度可能会决定。 使用表和 `orders` 表之间 `customers` 的联接、特定产品的过滤器，可以建立维度 `Customer has purchased Product X?` 。
 
-## 便利的參考地圖 {#map}
+## 方便的参考图 {#map}
 
 如果您在建立計算欄時遇到無法記住所有輸入內容的問題，請在建立時將此參考地圖備妥使用：
 
@@ -101,8 +101,8 @@ ht-degree: 0%
 
 為確保快速週轉，Adobe建議將 [進階計算欄型別](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) 指南以瞭解Adobe支援團隊可建立哪種欄。 該主題也涵蓋您建立欄所需的資訊 — 將其包含在您的請求中。
 
-## 相關檔案
+## 相关文档
 
-* [建立計算欄](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md)
-* [建立/刪除計算欄的路徑](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md)
-* [瞭解和評估表格關係](../../data-analyst/data-warehouse-mgr/table-relationships.md)
+* [创建计算列](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md)
+* [创建/删除计算列的路径](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md)
+* [了解和评估表关系](../../data-analyst/data-warehouse-mgr/table-relationships.md)

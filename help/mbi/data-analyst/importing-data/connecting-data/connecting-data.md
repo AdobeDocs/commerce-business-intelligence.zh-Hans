@@ -13,7 +13,7 @@ ht-degree: 0%
 
 在 [!DNL Adobe Commerce Intelligence]，資料來源稱為 `integrations`. 晚於 `integration` 成功連線後，您將能夠在「Data Warehouse管理員」中瀏覽可供同步的表格。
 
-整合可透過以下方式新增和管理： `Connections` 頁面，按一下即可存取 **[!UICONTROL Manage Data** > **Connections]**. 在這裡，您會看到：
+整合可透過以下方式新增及管理： `Connections` 頁面，按一下即可存取 **[!UICONTROL Manage Data** > **Connections]**. 在這裡，您會看到：
 
 * 與您帳戶連線的所有整合專案清單
 

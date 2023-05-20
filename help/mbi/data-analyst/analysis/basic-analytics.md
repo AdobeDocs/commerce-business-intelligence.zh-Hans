@@ -438,7 +438,7 @@ ht-degree: 0%
 
 ### 依贏取來源劃分的客戶
 
-* **說明**：如果您使用追蹤訂單的來源、媒體及促銷活動 [!DNL Google eCommerce]，您可以依客戶的贏取來源來分析客戶。 這可協助您識別哪些行銷來源正在爭取客戶，並回答下列問題：「您的大多數客戶都是透過以下方式發出第一筆訂單 [!DNL Google]， [!DNL Facebook]，還是其他來源？」
+* **說明**：如果您使用追蹤訂單的來源、媒體及行銷活動 [!DNL Google eCommerce]，您可以依客戶的贏取來源來分析客戶。 這可協助您識別哪些行銷來源正在爭取客戶，並回答下列問題：「您的大多數客戶都是透過以下方式發出第一筆訂單 [!DNL Google]， [!DNL Facebook]，還是其他來源？」
 * **報表範例**：依贏取來源劃分的客戶
    * **[!UICONTROL Metric Used]**: `New Customers`
    * **[!UICONTROL Time Range]**: `All-Time`
