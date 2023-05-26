@@ -1,6 +1,6 @@
 ---
-title: customer_entity表格
-description: 瞭解如何存取所有已註冊帳戶的記錄。
+title: customer_entity表
+description: 了解如何访问所有已注册帐户的记录。
 exl-id: 24bf0e66-eea0-45ea-8ce6-4ff99b678201
 source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
@@ -9,62 +9,62 @@ ht-degree: 0%
 
 ---
 
-# customer_entity表格
+# customer_entity表
 
-此 `customer_entity` 表格包含所有已註冊帳號的記錄。 無論客戶是否完成購買，只要客戶註冊帳戶，即視為已註冊。 每一列對應一個唯一的註冊帳戶，由帳戶的 `entity_id`.
+此 `customer_entity` 表包含所有已注册帐户的记录。 无论客户是否完成购买，只要他们注册了一个帐户，该帐户即被视为已注册。 每一行对应于一个唯一的注册帐户，该帐户的 `entity_id`.
 
-此表格不包含透過訪客結帳發出訂單的客戶記錄。 如果您的商店接受訪客結帳，請參閱 [如何說明來賓訂單](../data-warehouse-mgr/guest-orders.md) 這些訂單的。
+此表不包含通过访客结帐发出订单的客户记录。 如果您的商店接受访客结帐，请参阅 [如何记录访客订单](../data-warehouse-mgr/guest-orders.md) 为了那些订单。
 
-## 通用欄
+## 公用列
 
-| **欄名稱** | **說明** |
+| **列名称** | **描述** |
 |---|---|
-| `created_at` | 與帳戶註冊日期對應的時間戳記，以UTC在本機儲存。 視您在中的設定而定 [!DNL Commerce Intelligence]，此時間戳記可能會轉換為中的報表時區 [!DNL Commerce Intelligence] 與您的資料庫時區不同 |
-| `email` | 與帳戶相關聯的電子郵件地址 |
-| `entity_id` (PK) | 表格的唯一識別碼，通常用於聯結至 `customer_id` 在例項的其他表格中 |
-| `group_id` | 與關聯的外來鍵 `customer_group` 表格。 加入 `customer_group.customer_group_id` 以判斷與註冊帳戶相關聯的客戶群組 |
-| `store_id` | 與關聯的外來鍵 `store` 表格。 加入 `store`.`store_id` 若要判斷哪個Commerce商店檢視與已註冊的帳戶相關聯 |
+| `created_at` | 与帐户的注册日期对应的时间戳，以UTC本地存储。 取决于您在中的配置 [!DNL Commerce Intelligence]时，此时间戳可能会转换为中的报表时区 [!DNL Commerce Intelligence] 与您的数据库时区不同 |
+| `email` | 与帐户关联的电子邮件地址 |
+| `entity_id` (PK) | 表的唯一标识符，通常用于联接 `customer_id` 在实例中的其他表中 |
+| `group_id` | 与关联的外键 `customer_group` 表格。 加入 `customer_group.customer_group_id` 确定与注册帐户关联的客户组 |
+| `store_id` | 与关联的外键 `store` 表格。 加入 `store`.`store_id` 以确定哪个Commerce商店视图与注册的帐户关联 |
 
 {style="table-layout:auto"}
 
-## 通用計算欄
+## 通用计算列
 
-| **欄名稱** | **說明** |
+| **列名称** | **描述** |
 |---|---|
-| `Customer's first 30 day revenue` | 此客戶在客戶第一個訂單日期起計30天內所下所有訂單的收入總和。 透過加入計算 `customer_entity.entity_id` 至 `sales_order.customer_id` 並加總 `base_grand_total` 所有訂單的欄位，其中 `sales_order.Seconds between customer's first order date and this order` ≤ 2592000，即30天內的秒數 |
-| `Customer's first order date` | 此客戶下第一個訂單的時間戳記。 透過加入計算 `customer_entity.entity_id` 至 `sales_order.customer_id` 並傳回最小值 `sales_order`.`created_at` 值 |
-| `Customer's first order's billing region` | 與客戶第一筆訂單相關聯的帳單區域。 透過加入計算 `customer_entity.entity_id` 至 `sales_order.customer_id` 並傳回 `Billing address region` 位置 `sales_order.Customer's order number` = 1 |
-| `Customer's first order's coupon_code` | 與客戶第一筆訂單相關聯的優惠券代碼。 透過加入計算 `customer_entity.entity_id` 至 `sales_order.customer_id` 並傳回 `sales_order.coupon_code` 位置 `sales_order.Customer's order number` = 1 |
-| `Customer's group code` | 註冊客戶的群組名稱。 透過加入計算 `customer_entity.group_id` 至 `customer_group`.`customer_group_id` 並傳回 `customer_group_code` 欄位 |
-| `Customer's lifetime number of coupons` | 套用至此客戶所下所有訂單的抵用券總數。 透過加入計算 `customer_entity.entity_id` 至 `sales_order.customer_id` 並計算訂單數量，其中 `sales_order.coupon_code` 不是 `NULL` |
-| `Customer's lifetime number of orders` | 此客戶下單的訂單總數。 透過加入計算 `customer_entity.entity_id` 至 `sales_order.customer_id` 並計算 `sales_order` 表格 |
-| `Customer's lifetime revenue` | 此客戶下所有訂單的收入總和。 透過加入計算 `customer_entity.entity_id` 至 `sales_order.customer_id` 並加總 `base_grand_total` 此客戶下所有訂單的欄位 |
-| `Seconds since customer's first order date` | 客戶首次訂購日期與現在之間經過的時間。 透過減法計算 `Customer's first order date` 從執行查詢時的伺服器時間戳記傳回，以整數秒數傳回 |
-| `Store name` | 與此註冊帳戶關聯的Commerce商店名稱。 透過加入計算 `customer_entity.store_id` 至 `store.store_id` 並傳回 `name` 欄位 |
+| `Customer's first 30 day revenue` | 该客户在首次订购日期后30天内下达的所有订单的收入总计。 通过加入计算 `customer_entity.entity_id` 到 `sales_order.customer_id` 并总结 `base_grand_total` 所有订单的字段，其中 `sales_order.Seconds between customer's first order date and this order` ≤ 2592000，即30天内的秒数 |
+| `Customer's first order date` | 此客户下第一个订单的时间戳。 通过加入计算 `customer_entity.entity_id` 到 `sales_order.customer_id` 并返回最小值 `sales_order`.`created_at` 值 |
+| `Customer's first order's billing region` | 与客户第一张订单关联的开单区域。 通过加入计算 `customer_entity.entity_id` 到 `sales_order.customer_id` 并返回 `Billing address region` 位置 `sales_order.Customer's order number` = 1 |
+| `Customer's first order's coupon_code` | 与客户第一张订单关联的优惠券代码。 通过加入计算 `customer_entity.entity_id` 到 `sales_order.customer_id` 并返回 `sales_order.coupon_code` 位置 `sales_order.Customer's order number` = 1 |
+| `Customer's group code` | 注册客户的组名称。 通过加入计算 `customer_entity.group_id` 到 `customer_group`.`customer_group_id` 并返回 `customer_group_code` 字段 |
+| `Customer's lifetime number of coupons` | 应用于此客户所下所有订单的优惠券总数。 通过加入计算 `customer_entity.entity_id` 到 `sales_order.customer_id` 并计算订单数，其中 `sales_order.coupon_code` 不是 `NULL` |
+| `Customer's lifetime number of orders` | 此客户下达的订单总数。 通过加入计算 `customer_entity.entity_id` 到 `sales_order.customer_id` 并计算 `sales_order` 表 |
+| `Customer's lifetime revenue` | 此客户下达的所有订单的总收入。 通过加入计算 `customer_entity.entity_id` 到 `sales_order.customer_id` 并总结 `base_grand_total` 此客户下达的所有订单的字段 |
+| `Seconds since customer's first order date` | 从客户的首次订购日期到现在之间的间隔时间。 通过减法计算 `Customer's first order date` 从执行查询时的服务器时间戳返回，以整数秒数形式返回 |
+| `Store name` | 与此注册帐户关联的Commerce商店的名称。 通过加入计算 `customer_entity.store_id` 到 `store.store_id` 并返回 `name` 字段 |
 
 {style="table-layout:auto"}
 
-## 通用量度
+## 常用量度
 
-| **量度名稱** | **說明** | **建構** |
+| **量度名称** | **描述** | **构造** |
 |---|---|---|
-| `Avg first 30 day revenue` | 每位客戶在客戶首次訂購後30天內所下的訂單的平均收入 | 作業：平均<br/>運算元： `Customer's first 30 day revenue`<br/>時間戳記： `created_at`<br/>篩選器：<br/><br/>- \[A\] `Seconds since customer's first order date` ≥ 2592000 （排除從首次訂購起未達到30天的客戶） |
-| `Avg lifetime coupons` | 每位客戶在其期限內，套用至訂單的平均優惠券數量 | 作業：平均<br/>運算元： `Customer's lifetime number of coupons`<br/>時間戳記： `created_at` |
-| `Avg lifetime orders` | 每位客戶在其期限內的平均訂購次數 | 作業：平均<br/>運算元： `Customer's lifetime number of orders`<br/>時間戳記： `created_at` |
-| `Avg lifetime revenue` | 所有訂購期限內的每個客戶平均總收入 | 作業：平均<br/>運算元： `Customer's lifetime revenue`<br/>時間戳記： `created_at` |
-| `New customers` | 至少有一筆訂單的客戶數，計算在其第一筆訂單的日期。 不包括註冊但從未下訂單的帳戶 | 作業：計數<br/>運算元： `entity_id`<br/>時間戳記： `Customer's first order date` |
-| `Registered accounts` | 註冊的帳戶數目。 包含所有已註冊的帳戶，無論帳戶是否下過訂單 | 作業：計數<br/>運算元： `entity_id`<br/>時間戳記： `created_at` |
+| `Avg first 30 day revenue` | 每个客户在客户首次订购后30天内下订单的平均收入 | 工序：平均<br/>操作数： `Customer's first 30 day revenue`<br/>时间戳： `created_at`<br/>过滤器：<br/><br/>- \[A\] `Seconds since customer's first order date` ≥ 2592000（不包括自首次订购以来未满30天的客户） |
+| `Avg lifetime coupons` | 每个客户在整个生命周期内应用于订单的平均优惠券数 | 工序：平均<br/>操作数： `Customer's lifetime number of coupons`<br/>时间戳： `created_at` |
+| `Avg lifetime orders` | 每位客户在其生命周期内下达的平均订单数 | 工序：平均<br/>操作数： `Customer's lifetime number of orders`<br/>时间戳： `created_at` |
+| `Avg lifetime revenue` | 所有订购在整个生命周期内每位客户的平均总收入 | 工序：平均<br/>操作数： `Customer's lifetime revenue`<br/>时间戳： `created_at` |
+| `New customers` | 至少有一张订单的客户数，计算在其第一张订单的日期。 不包括注册但从未下订单的帐户 | 操作：计数<br/>操作数： `entity_id`<br/>时间戳： `Customer's first order date` |
+| `Registered accounts` | 注册的帐户数。 包括所有已注册的帐户，无论该帐户是否下过订单 | 操作：计数<br/>操作数： `entity_id`<br/>时间戳： `created_at` |
 
 {style="table-layout:auto"}
 
-## 外部索引鍵聯結路徑
+## 外键连接路径
 
 `customer_group`
 
-* 加入 `customer_group` 此表格可建立傳回已註冊帳戶之客戶群組名稱的欄。
-   * 路徑： `customer_entity.group_id` （許多） => `customer_group.customer_group_id` （一）
+* 加入 `customer_group` 表，以创建返回已注册帐户的客户组名称的列。
+   * 路径： `customer_entity.group_id` （许多） => `customer_group.customer_group_id` （一）
 
 `store`
 
-* 加入 `store` 此表格可建立傳回與已註冊帳戶相關聯之存放區之詳細資料的資料欄。
-   * 路徑： `customer_entity.store_id` （許多） => `store.store_id` （一）
+* 加入 `store` 表创建列，这些列返回与已注册帐户关联的商店相关的详细信息。
+   * 路径： `customer_entity.store_id` （许多） => `store.store_id` （一）

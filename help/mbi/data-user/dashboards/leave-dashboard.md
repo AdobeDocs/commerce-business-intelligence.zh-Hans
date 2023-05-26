@@ -1,6 +1,6 @@
 ---
-title: 保留（取消共用）控制面板
-description: 瞭解如何從儀表板離開或取消共用您自己。
+title: 保留（取消共享）功能板
+description: 了解如何从仪表板离开或取消共享您自己。
 exl-id: c84e7145-aded-4f66-8e52-a61c7e6ac804
 source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
@@ -9,10 +9,10 @@ ht-degree: 0%
 
 ---
 
-# 保留（取消共用）控制面板
+# 保留（取消共享）功能板
 
-變更團隊？ 在春天中清洗您的 [!DNL Commerce Intelligence] 帳戶？ 若要離開儀表板或取消共用您自己，請按一下 **[!UICONTROL Shared]** 位於熒幕頂端時，如果您想離開儀表板。 按一下 **[!UICONTROL Leave this Dashboard]** 以移除您自己。
+更换团队？ 在春天的时候清洗你的 [!DNL Commerce Intelligence] 帐户？ 要从仪表板离开或取消共享您自己，请单击 **[!UICONTROL Shared]** 位于屏幕顶部时，您想要离开仪表板。 单击 **[!UICONTROL Leave this Dashboard]** 去自寻死路。
 
-範例：
+示例：
 
-![離開儀表板](../../assets/Leave_Dashboard.gif)
+![离开仪表板](../../assets/Leave_Dashboard.gif)

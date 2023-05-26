@@ -1,6 +1,6 @@
 ---
-title: 連線Google Analytics倉儲
-description: 瞭解如何追蹤訪客如何使用您的網站、哪些內容吸引人、訪客的退出位置等。
+title: ConnectGoogle Analytics仓库
+description: 了解如何跟踪访客如何使用您的网站、哪些内容有吸引力、访客的退出位置等。
 exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -9,59 +9,59 @@ ht-degree: 0%
 
 ---
 
-# 连接 [!DNL Google Analytics Warehoused]
+# Connect [!DNL Google Analytics Warehoused]
 
 >[!NOTE]
 >
->需要 [ 管理员权限 ](../../../administrator/user-management/user-management.md) 。
+>需要 [管理员权限](../../../administrator/user-management/user-management.md).
 
 ![](../../../assets/google-analytics-logo.png)
 
-[!DNL Google Analytics] 是 internet 上使用最广泛的网站分析服务。 通过在您的网站实施 [!DNL Google Analytics] ，您可以跟踪访客使用网站的方式、哪些内容有吸引力、访客退出的位置等。 [!DNL Google Analytics Warehoused] 是与现有 [!DNL Google Analytics] 集成的独立集成。 由于您的数据仓库中的 [!DNL Google Analytics] 数据与现有 [!DNL Google Analytics] 集成的实时馈送不同，因此它可以更好地分析。 在中 [!DNL Commerce Intelligence] 分析这些量度以及其他数据，可改进网站的整体运行状况和可用性。
+[!DNL Google Analytics] 是Internet上使用最广泛的Web分析服务。 实施 [!DNL Google Analytics] 允许您跟踪访客如何使用您的网站、哪些内容有吸引力、访客的退出位置等。 [!DNL Google Analytics Warehoused] 是独立于您现有的集成 [!DNL Google Analytics] 集成。 由于具备以下特性，因此可更好地进行分析 [!DNL Google Analytics] data warehouse中的数据，这与现有 [!DNL Google Analytics] 集成。 在中分析这些指标 [!DNL Commerce Intelligence]与其他数据一起使用可提高网站的整体运行状况和可用性。
 
-## GA Warehoused 与实时集成之间的差异
+## GA仓库与实时集成的区别
 
-主要區別在於儲存了一項整合([!DNL Google Analytics Warehoused])，而另一個不是([!DNL Google Analytics Live])。 若為 [!DNL Google Analytics Warehoused]，這允許操控您的 [!DNL Google Analytics] 資料並提供您合併 [!DNL Google Analytics] 和其他資料來源，以建立具洞察力的報表。
+主要区别在于存储了一个集成([!DNL Google Analytics Warehoused])，而另一个不是([!DNL Google Analytics Live])。 在 [!DNL Google Analytics Warehoused]，这允许对您的 [!DNL Google Analytics] 数据，并让您能够合并 [!DNL Google Analytics] 和其他数据源，以创建富有洞察力的报表。
 
-檢視 [!DNL Google Analytics] 廣告行銷活動，以從操作角度說明可執行的動作。 假設您在第四季有多個名稱不同的廣告行銷活動。 行銷活動是特定行銷計畫的成果。 使用倉儲資料，您可以建立欄以尋找有問題的行銷活動名稱，並傳回的第四季行動方案名稱 `Operation Dumbo`.
+查看 [!DNL Google Analytics] 广告营销活动，以从操作角度说明可执行的操作。 假设您在第四季度有多个名称不同的广告营销活动。 这些营销活动是特定营销计划的成果。 使用仓库数据，您可以创建一个列，以查找有问题的促销活动名称并返回第四季度的计划名称 `Operation Dumbo`.
 
-組合外觀允許 [!DNL Google Analytics] 要與其他資料結合以進行分析的資料。 例如， `Total Time On Site By Ad Campaign` 从 [!DNL Google Analytics] 获取数据并将其与 `Total Spent Per Campaign` 数据 [!DNL Facebook Ads] 进行联接，以完整了解参与的成本。
+组合方面允许 [!DNL Google Analytics] 要与其他数据结合以执行分析的数据。 例如， take `Total Time On Site By Ad Campaign` 数据来源 [!DNL Google Analytics] 并加入进来 `Total Spent Per Campaign` 数据来源 [!DNL Facebook Ads] 以全面了解参与成本是多少。
 
-[!DNL Google Analytics Live]通过整合，每个 [!DNL Google Analytics] 图表都点赞一个小的思洛存储器，而该存储库未保存在您的数据仓库中。
+使用 [!DNL Google Analytics Live] 另一方面，集成，每 [!DNL Google Analytics] 图表就像一个不存储在Data warehouse中的小容器。
 
-## 连接 [!DNL Google Analytics Warehoused]
+## 正在连接 [!DNL Google Analytics Warehoused]
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused] 是一个 `Premium` 集成。 [如果您有兴趣将此集成添加到您的订阅，请联系支持人员 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 。
+>[!DNL Google Analytics Warehoused] 是 `Premium` 集成。 [联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 如果您有兴趣将此集成添加到订阅。
 
-1. 转到下 **[!UICONTROL Admin** > **Integrations]** 的 `Connections` 页面。
-1. 按一下 **[!UICONTROL Add an Integration]**，位於右側。
-1. 按一下 [!DNL Google Analytics Warehoused] 圖示。 如此將可開啟 [!DNL Google Analytics] 認證頁面。
-1. 輸入您的 [!DNL Google Analytics] 認證。 授權程式完成後，您會被重新導向回 [!DNL Commerce Intelligence].
-1. 設定檔ID清單隨即顯示。 檢查您要連線的設定檔 [!DNL Commerce Intelligence]. 如果您有多個設定檔，並且需要一些幫助來識別哪一個，請參閱連線多個 [!DNL Google Analytics] 下方的設定檔區段。
+1. 转到 `Connections` 页面位于 **[!UICONTROL Admin** > **Integrations]**.
+1. 单击 **[!UICONTROL Add an Integration]**，位于右侧。
+1. 单击 [!DNL Google Analytics Warehoused] 图标。 这将打开 [!DNL Google Analytics] “身份证明”页。
+1. 输入您的 [!DNL Google Analytics] 凭据。 授权过程完成后，您将被重定向回 [!DNL Commerce Intelligence].
+1. 此时将显示配置文件ID列表。 检查要连接的配置文件 [!DNL Commerce Intelligence]. 如果您有多个配置文件，并且需要一些帮助来识别哪个配置文件是哪个，请参阅连接多个 [!DNL Google Analytics] 配置文件部分。
 
-## 连接多个 [!DNL Google Analytics] 配置文件
+## 连接多个 [!DNL Google Analytics] 用户档案
 
-您可以将多个网站连接到单个 [!DNL Google Analytics] 帐户，并由其自身 [!DNL Google Analytics] 的用户档案 ID 进行标识。 在这种情况下，您可以选择将您的所有用户档案 Id 都包含在中 [!DNL Commerce Intelligence] 。 检查在 &quot;用户档案选择&quot; 步骤中要点赞包含的用户档案 Id。
+您可能已将多个网站连接到一个 [!DNL Google Analytics] 帐户，由其自身标识 [!DNL Google Analytics] 配置文件ID。 在这种情况下，您可以选择将您的所有配置文件ID包含在 [!DNL Commerce Intelligence]. 检查要在用户档案选择步骤中包含的用户档案ID。
 
-识别特定网站的 [!DNL Google Analytics] 配置文件 ID：
+识别特定网站的 [!DNL Google Analytics] 配置文件ID：
 
 1. 登录 [!DNL Google Analytics]
-1. 前往特定網站的 [!DNL Google Analytics] 儀表板
-1. 檢視URL — 設定檔ID對應至下列八個數字 `p` 行尾
+1. 前往特定网站的 [!DNL Google Analytics] 仪表板
+1. 查看URL — 配置文件ID对应于以下八个数字 `p` 行尾
 
    `www.google.com/analytics/web/#home/a11345062w43527078p**XXXXXXXX**/`
 
-## 中斷連線 [!DNL Google Analytics Warehoused] 從 [!DNL Commerce Intelligence] {#disconnect}
+## 断开连接 [!DNL Google Analytics Warehoused] 起始日期 [!DNL Commerce Intelligence] {#disconnect}
 
-1. 造訪您的 [!DNL Google Analytics] [帳戶設定](https://myaccount.google.com/intro) 頁面。
-1. 在 `Security` 區段，然後按一下 **[!UICONTROL edit]** 旁邊 `Authorizing` 應用程式和網站。
-1. 按一下 **[!UICONTROL revoke access]** 旁邊 [!DNL Commerce Intelligence].
+1. 访问您的 [!DNL Google Analytics] [帐户设置](https://myaccount.google.com/intro) 页面。
+1. 在 `Security` 部分，然后单击 **[!UICONTROL edit]** 旁边 `Authorizing` 应用程序和站点。
+1. 单击 **[!UICONTROL revoke access]** 旁边 [!DNL Commerce Intelligence].
 
 ## 相关文档
 
-* [Reauthenticating 集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
-* [连接 [!DNL Google Adwords]](../integrations/google-adwords.md)
+* [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [正在连接 [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [分析网站活动和客户转化率](../../analysis/web-act-cust-conversion.md)
-* [使用  [!DNL Google Analytics]  cookie 跟踪用户客户获取数据](../../analysis/google-track-user-acq.md)
+* [使用跟踪用户获取数据 [!DNL Google Analytics] Cookie](../../analysis/google-track-user-acq.md)

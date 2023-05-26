@@ -1,6 +1,6 @@
 ---
-title: 連線磁條
-description: 瞭解如何管理及追蹤企業的付款及發票資料。
+title: 连接条带
+description: 了解如何管理和跟踪企业的付款和发票数据。
 exl-id: c038f2a9-b2bd-4e45-93f9-12d2e5077b31
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -13,37 +13,37 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->需要 [管理員許可權](../../../administrator/user-management/user-management.md).
+>需要 [管理员权限](../../../administrator/user-management/user-management.md).
 
 ![](../../../assets/stripe-logo.png)
 
-[!DNL Stripe] 可讓您管理及追蹤企業的付款與商業發票資料。 正在連線您的 [!DNL Stripe] 帳戶至 [!DNL Commerce Intelligence] 是一個簡單的兩個步驟程式：
+[!DNL Stripe] 允许您管理和跟踪企业的付款和发票数据。 正在连接 [!DNL Stripe] 目标帐户 [!DNL Commerce Intelligence] 是一个简单的两步过程：
 
-1. [新增 [!DNL Stripe] 作為中的資料來源 [!DNL Commerce Intelligence]](#stepone)
-1. [允許 [!DNL Commerce Intelligence] 存取您的 [!DNL Stripe] 資料](#steptwo)
+1. [添加 [!DNL Stripe] 作为中的数据源 [!DNL Commerce Intelligence]](#stepone)
+1. [允许 [!DNL Commerce Intelligence] 访问您的 [!DNL Stripe] 数据](#steptwo)
 
-## 新增 [!DNL Stripe] 作為資料來源 {#stepone}
+## 添加 [!DNL Stripe] 作为数据源 {#stepone}
 
-1. 前往 `Connections` 頁面於 **[!UICONTROL Admin** > **Connections]**.
-1. 按一下 **[!UICONTROL Add a Data Source]**，位於熒幕右側 `Data Sources` 表格。
-1. 按一下 [!DNL Stripe] 圖示。 這會顯示 `[!DNL Stripe] authorization` 頁面。
-1. 按一下 **[!UICONTROL Connect with Stripe]**.
+1. 转到 `Connections` 页面位于 **[!UICONTROL Admin** > **Connections]**.
+1. 单击 **[!UICONTROL Add a Data Source]**，位于屏幕右侧上方的 `Data Sources` 表格。
+1. 单击 [!DNL Stripe] 图标。 这会显示 `[!DNL Stripe] authorization` 页面。
+1. 单击 **[!UICONTROL Connect with Stripe]**.
 
-## 允許 [!DNL Commerce Intelligence] 存取您的 [!DNL Stripe] 資料 {#steptwo}
+## 允许 [!DNL Commerce Intelligence] 访问您的 [!DNL Stripe] 数据 {#steptwo}
 
-按一下 **[!UICONTROL Connect with Stripe]**，就會顯示存取要求頁面。
+单击后 **[!UICONTROL Connect with Stripe]**，则会显示访问请求页面。
 
-1. 按一下 **[!UICONTROL Sign in with Stripe to Continue]**.
+1. 单击 **[!UICONTROL Sign in with Stripe to Continue]**.
 
-1. 輸入您的認證，然後按一下 **[!UICONTROL Sign in to your account]**.
+1. 输入您的凭据，然后单击 **[!UICONTROL Sign in to your account]**.
 
-1. 將會驗證您的認證，並將您導向回 [!DNL Commerce Intelligence].
+1. 您的凭据将经过验证，您将被定向回 [!DNL Commerce Intelligence].
 
-1. 如果連線成功， *連線成功！* 訊息會顯示在畫面頂端。
+1. 如果连接成功， *连接成功！* 消息显示在屏幕顶部。
 
-## 相關：
+## 相关：
 
-此 [[!DNL Stripe] API檔案](https://stripe.com/docs/api) 可作為進一步瞭解如何操作的有用資源 [!DNL Stripe] 與整合 [!DNL Commerce Intelligence].
+此 [[!DNL Stripe] API文档](https://stripe.com/docs/api) 可以成为详细了解如何操作的有用资源 [!DNL Stripe] 与集成 [!DNL Commerce Intelligence].
 
-* [預期 [!DNL Stripe] 資料](../integrations/stripe-data.md)
-* [重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [预期 [!DNL Stripe] 数据](../integrations/stripe-data.md)
+* [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -1,6 +1,6 @@
 ---
-title: 複製儀表板
-description: 瞭解如何複製控制面板。
+title: 克隆功能板
+description: 了解如何克隆功能板。
 exl-id: f0bfa786-ab01-4c55-9d8a-ed002c2321b6
 source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
@@ -9,26 +9,26 @@ ht-degree: 0%
 
 ---
 
-# 複製控制面板
+# 克隆功能板
 
-複製控制面板可讓您將控制面板中的所有報告複製到新的控制面板中。
+通过克隆功能板，您可以将功能板中的所有报告复制到新功能板中。
 
-如果您想要重新建立現有的一組圖表，但變更了角度（例如，不同的資料檢視、不同的市場、不同的網站或商店），這會很有用。 複製控制面板後，您可以編輯每個新圖表以變更其量度、資料檢視、篩選或分組依據。
+如果要重新创建一组现有图表，但更改了视角（例如，不同的数据视图、不同的市场、不同的网站或商店），此操作很有用。 复制功能板后，您可以编辑每个新图表以更改其量度、数据视图、过滤器或分组依据。
 
-1. 若要複製控制面板，請按一下 **[!UICONTROL Options]** 在熒幕上方。
+1. 要克隆功能板，请单击 **[!UICONTROL Options]** 在屏幕顶部。
 
-1. 在下拉式清單中，按一下 **[!UICONTROL Save As]**.
+1. 在下拉菜单中，单击 **[!UICONTROL Save As]**.
 
-1. 出現提示時，輸入 `New Dashboard Name`. Adobe會推薦一些名稱，讓您一目瞭然地知道儀表板中包含哪些資訊。
+1. 出现提示时，输入 `New Dashboard Name`. Adobe推荐了一些名称，这些名称一眼就能告诉您仪表板中包含哪些信息。
 
-   例如，您正在複製名為的控制面板 `Customer Activity`. 此儀表板包含您費城地點的客戶活動資訊，但現在您想要為新的紐約市地點建立儀表板。 此儀表板可命名為 `New York City - Customer Activity`.
+   例如，您正在克隆名为的功能板 `Customer Activity`. 该仪表板中包含有关您费城位置的客户活动信息，但现在您需要为新的纽约市位置创建一个仪表板。 此仪表板可以命名为 `New York City - Customer Activity`.
 
-1. 使用 `Chart Title Find` 和 `Chart Title Replace` 要尋找所有圖表的欄位 `Philadelphia` 並將它取代為 `New York City`.
+1. 使用 `Chart Title Find` 和 `Chart Title Replace` 用于查找所有图表的字段 `Philadelphia` 并将其替换为 `New York City`.
 
-   如果您沒有在這些欄位中輸入任何值，請 `(2)` 會在新控制面板中的所有圖表標題結尾自動附加。
+   如果您没有在这些字段中输入任何值， `(2)` 自动将图表标题附加到新功能板中的所有图表标题的末尾。
 
-1. 按一下 **[!UICONTROL Save]** 以仿製控制面板。
+1. 单击 **[!UICONTROL Save]** 以克隆功能板。
 
-範例：
+示例：
 
-![原地複製控制面板](../../assets/datgif.gif)
+![克隆功能板](../../assets/datgif.gif)

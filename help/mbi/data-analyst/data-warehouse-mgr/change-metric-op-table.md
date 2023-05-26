@@ -1,6 +1,6 @@
 ---
-title: 變更量度的作業表格
-description: 瞭解如何變更量度用來執行其操作的資料表。
+title: 更改量度的操作表
+description: 了解如何更改量度用于执行其操作的数据表。
 exl-id: c7a074ca-31f4-43e5-85d9-b64dca95dc23
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -9,20 +9,20 @@ ht-degree: 0%
 
 ---
 
-# 變更量度的作業表格
+# 更改量度的操作表
 
-在某些情況下，您可以決定變更量度用來執行其操作的資料表格。 例如，如果您有新的使用者表格，您想從以下移轉與使用者相關的量度：  `Users\_Old` 使用 `Users\_New` 表格。
+在某些情况下，您可以决定更改量度用来执行操作的数据表。 例如，如果您有一个新的用户表，则需要从以下位置迁移与用户相关的指标：  `Users\_Old` 表使用 `Users\_New` 表格。
 
-1. 前往 **[!UICONTROL Data]** > **[!UICONTROL Metrics]**
-1. 按一下 **[!UICONTROL Edit]** 位於您要切換的量度旁 `operational` 表格。
-1. 在編輯器中，按一下 **[!UICONTROL Change]**.
+1. 转到 **[!UICONTROL Data]** > **[!UICONTROL Metrics]**
+1. 单击 **[!UICONTROL Edit]** ，位于要切换的指标旁边 `operational` 表格。
+1. 在编辑器中，单击 **[!UICONTROL Change]**.
 
    ![](../../assets/change-metrics-1.png)
-1. 選取您要以此量度為基礎的新表格。
-1. 將現有資料維度與新表格中對應的維度配對。 例如，如果您有一個名為 `User's registration date`，只要選取新表格中記錄相同日期資料的欄。 （如果新表格中沒有相符的欄，請參閱下一步）
+1. 选择要作为此量度基础的新表。
+1. 将现有数据维度与新表中对应的数据维度进行匹配。 例如，如果您有一个名为 `User's registration date`，只需选择新表中的哪一列记录相同的日期数据即可。 （如果新表中没有匹配的列，请参阅下一步）
 
    ![](../../assets/change-metrics-2.png)
 
-1. 如果新表格中沒有相符的欄，您可以 **在您的資料表中建立它** 或 [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 如果是由建立的計算欄或維度 [!DNL Commerce Intelligence]. 您也可以 **從量度中刪除維度**. 若要刪除您不再需要的維度，只需返回量度的編輯器，並選取要刪除的維度底下 `Dimensions`.
+1. 如果新表中没有匹配的列，则可以 **在数据表中创建它** 或 [联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 如果它是计算列或维度，建立者为 [!DNL Commerce Intelligence]. 您还可以 **从量度中删除维度**. 要删除您不再需要的维度，只需返回量度的编辑器，然后选择要删除的维度下 `Dimensions`.
 
    ![](../../assets/change-metrics-3.png)

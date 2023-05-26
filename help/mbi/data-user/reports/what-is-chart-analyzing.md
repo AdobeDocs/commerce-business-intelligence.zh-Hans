@@ -1,6 +1,6 @@
 ---
-title: 圖表資料資訊
-description: 瞭解如何使用視覺Report Builder中的視覺效果選項。
+title: 图表数据信息
+description: 了解如何使用可视化Report Builder中的可视化选项。
 exl-id: 865efc8b-1e1a-4033-9e42-cbd03b220260
 source-git-commit: af1e3839839b4c419beabb0cc666c996ea2179d4
 workflow-type: tm+mt
@@ -9,11 +9,11 @@ ht-degree: 0%
 
 ---
 
-# 圖表資料資訊
+# 图表数据信息
 
-選擇簡單英文或量度定義。 使用者可以按一下「 」，為圖表加上註釋，並檢檢視表中的度量和公式。 _資訊_ 圖示加以檢視。
+以简单的英语或量度定义为例。 用户可以通过单击 _信息_ 图标。
 
-## 相關：
+## 相关：
 
 * [基本Analytics](../../data-analyst/analysis/basic-analytics.md)
 * [[!DNL Visual Report Builder]](../../data-user/reports/ess-rpt-build-visual.md)

@@ -1,6 +1,6 @@
 ---
-title: 分析網站活動和客戶轉換率
-description: 瞭解如何設定儀表板來追蹤您的網站活動（包括頁面檢視、工作階段和使用者），以及您的客戶在一段時間內的轉換率。
+title: 分析网站活动和客户转化率
+description: 了解如何设置一个功能板，用于跟踪您的网站活动（包括页面查看次数、会话数和用户）以及一段时间内您的客户转化率。
 exl-id: 2b57d5b3-3bbf-4ec9-86a6-9fa850c1c459
 source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
@@ -9,98 +9,98 @@ ht-degree: 0%
 
 ---
 
-# 分析網站活動
+# 分析网站活动
 
-[!DNL Adobe Commerce Intelligence] 可讓您輕鬆將廣告成本資料與其餘資料整合。 這不僅可讓您瞭解您的網站活動，而且可讓您推匯出網站上成為註冊使用者或進行購買的訪客百分比。
+[!DNL Adobe Commerce Intelligence] 使您可轻松地将广告成本数据与您的其余数据集成。 这不仅使您能够了解您的网站活动，而且使您能够推断网站上成为注册用户或进行购买的访客百分比。
 
-此主題示範如何設定控制面板，追蹤網站活動（包括頁面檢視、工作階段和使用者）以及客戶在一段時間內的轉換率。
+本主题将演示如何设置一个功能板，用于跟踪您的网站活动（包括页面查看次数、会话数和用户）以及一段时间内客户的转化率。
 
-## 必要條件
+## 先决条件
 
-**匯入您的廣告成本資料**  — 連線 [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md) 至 [!DNL Adobe Commerce Intelligence]  — 這會自動同步您的 [!DNL AdWords] Commerce Intelligence支出。
+**导入您的广告成本数据**  — 连接 [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md) 到 [!DNL Adobe Commerce Intelligence]  — 这将自动同步 [!DNL AdWords] 在Commerce Intelligence方面的支出。
 
-**追蹤使用者贏取管道資料**  — 繫結您的 [!DNL Google AdWords] 將資料與資料庫中的特定訂單對應，您必須 [追蹤使用者贏取](../analysis/google-track-user-acq.md) 透過 [!DNL Google Analytics E-commerce]. 這可讓您使用utm來源和媒體來連線每個訂單。
+**跟踪用户获取渠道数据**  — 系上你的领带 [!DNL Google AdWords] 数据库中的特定订单的数据，您必须 [跟踪用户获取](../analysis/google-track-user-acq.md) via [!DNL Google Analytics E-commerce]. 这允许您使用utm源和媒介连接每个订单。
 
-## 使用者贏取行銷活動
+## 用户获取促销活动
 
-這份報表的集合是以下列方式建置：
+此报表的集合使用以下项目构建：
 
-* 連線時自動產生的量度 [!DNL Google AdWords] 資料
-* 您的帳戶中應已可用的基本量度，例如 `Number of orders` 和 `New users`
-* 加入時建立的Dimension [!DNL Google Analytics Ecommerce] 資料至您的資料庫，例如訂單的utm來源與訂單的utm媒體。 如果您的帳戶目前沒有這些欄位，請聯絡支援團隊
+* 当您连接 [!DNL Google AdWords] 数据
+* 您的帐户中应已可用的基本指标，例如 `Number of orders` 和 `New users`
+* 加入时创建的Dimension [!DNL Google Analytics Ecommerce] 到数据库的数据，如订单的utm源和订单的utm介质。 如果您的帐户中当前没有这些字段，请联系支持团队
 
-## 建立報告
+## 构建报告
 
-**首先，建立顯示一段時間內頁面檢視、工作階段和使用者數量的報告：**
+**首先，创建一个显示一段时间内页面查看次数、会话数和用户数的报告：**
 
-1. 建立報表。
-1. 按一下 **[!UICONTROL Add Metric]**，然後將滑鼠移至 [!DNL Google Analytics] 區段並選取 `Page Views`.
-1. 新增另一個量度，再次繫結在 [!DNL Google Analytics] 區段，這次選取 `Sessions`.
-1. 新增第三個量度，再次繫結在 [!DNL Google Analytics] 區段，這次選取 `Users`.
-1. 現在將您的時段變更為移動範圍（從31天前到1天前），並將時間間隔調整為 `by day`.
-1. 為您的報表命名(例如， `Page views, sessions and users by day`)，然後按一下 **[!UICONTROL Save]**.
+1. 创建报告。
+1. 单击 **[!UICONTROL Add Metric]**，然后将鼠标悬停在 [!DNL Google Analytics] 部分，然后选择 `Page Views`.
+1. 添加另一个量度，再次悬停在 [!DNL Google Analytics] 部分，这次选择 `Sessions`.
+1. 添加第三个量度，再次将鼠标悬停在 [!DNL Google Analytics] 部分，这次选择 `Users`.
+1. 现在，将您的时间段更改为从31天前到1天前的移动范围，并将时间间隔调整为 `by day`.
+1. 为报表命名(例如， `Page views, sessions and users by day`)，然后单击 **[!UICONTROL Save]**.
 
-**第二個報表會檢視過去一年中的頁面檢視次數：**
+**第二份报告考察了过去一年页面查看次数：**
 
-1. 建立報表。
-1. 按一下 **[!UICONTROL Add Metric]**，將游標移至 [!DNL Google Analytics] 區段並選取 _頁面檢視_.
-1. 將您的時段變更為移動範圍（從13個月前到1個月前），並將時間間隔調整為 `by month`.
-1. 為您的報表命名，例如 `Page views by month,` 並按一下 **[!UICONTROL Save]**.
+1. 创建报告。
+1. 单击 **[!UICONTROL Add Metric]**，将鼠标悬停在 [!DNL Google Analytics] 部分，然后选择 _页面查看次数_.
+1. 将您的时间段更改为移动范围（从13个月前到1个月前），并将时间间隔调整为 `by month`.
+1. 为您的报表命名，如 `Page views by month,` 并单击 **[!UICONTROL Save]**.
 
-**第三張圖表檢視過去一年的反彈率：**
+**第三张图表审视了过去一年的反弹率：**
 
-1. 建立報表。
-1. 按一下 **[!UICONTROL Add Metric]**，將游標移至 [!DNL Google Analytics] 區段並選取 _跳出率_.
-1. 將您的時段變更為移動範圍（從13個月前到1個月前），並將時間間隔調整為 `by month`.
-1. 為您的報表命名，例如 `Bounce rate by month`，然後按一下 **[!UICONTROL Save]**.
+1. 创建报告。
+1. 单击 **[!UICONTROL Add Metric]**，将鼠标悬停在 [!DNL Google Analytics] 部分，然后选择 _跳出率_.
+1. 将您的时间段更改为移动范围（从13个月前到1个月前），并将时间间隔调整为 `by month`.
+1. 为您的报表命名，如 `Bounce rate by month`，然后单击 **[!UICONTROL Save]**.
 
-**現在，比較新訪客與回訪訪客的平均工作階段長度：**
+**现在，查看新访客与回访访客的平均会话时长：**
 
-1. 建立報表。
-1. 按一下 **UICONTROL新增量度**，將游標移至 [!DNL Google Analytics] 區段並選取 `Average Session Length`.
-1. 將您的時段變更為移動範圍（從13個月前到1個月前），並將時間間隔調整為 `by month`？
-1. 新增 `Group by` 並選取 `New or returning visitor`.  檢查 `Show All` 方塊；然後按一下 **[!UICONTROL Apply]**.
-1. 為您的報表命名，例如 `Average session length`，然後按一下 **[!UICONTROL Save]**.
+1. 创建报告。
+1. 单击 **UICONTROL添加量度**，将鼠标悬停在 [!DNL Google Analytics] 部分，然后选择 `Average Session Length`.
+1. 将您的时间段更改为移动范围（从13个月前到1个月前），并将时间间隔调整为 `by month`？
+1. 添加 `Group by` 并选择 `New or returning visitor`.  查看 `Show All` 框；然后单击 **[!UICONTROL Apply]**.
+1. 为您的报表命名，如 `Average session length`，然后单击 **[!UICONTROL Save]**.
 
-**接下來，檢視過去30天內排名最前的反向連結網域：**
+**接下来，查看过去30天内排名最前的反向链接域：**
 
-1. 建立報表。
-1. 按一下 **[!UICONTROL Add Metric]**，將游標移至 [!DNL Google Analytics] 區段並選取 `Sessions`.
-1. 將您的時段變更為移動範圍（從31天前到1天前），並將時間間隔調整為 `none`.
-1. 新增 `Group by` 並選取 `ga:source`.  檢查 _全部顯示_ 方塊；然後按一下 **[!UICONTROL Apply]**.
-1. 新增另一個 `group by` 並選取 `ga:medium`. 再次檢查 `Show All` 方塊；然後按一下 **[!UICONTROL Apply]**.
-1. 為您的報表命名，例如 `Top 20 Referring Domains, 30 Days`，然後按一下 **[!UICONTROL Save]**.
+1. 创建报告。
+1. 单击 **[!UICONTROL Add Metric]**，将鼠标悬停在 [!DNL Google Analytics] 部分，然后选择 `Sessions`.
+1. 将您的时间段更改为从31天前到1天前的移动范围，并将时间间隔调整为 `none`.
+1. 添加 `Group by` 并选择 `ga:source`.  查看 _全部显示_ 框；然后单击 **[!UICONTROL Apply]**.
+1. 添加另一个 `group by` 并选择 `ga:medium`. 再次检查 `Show All` 框；然后单击 **[!UICONTROL Apply]**.
+1. 为您的报表命名，如 `Top 20 Referring Domains, 30 Days`，然后单击 **[!UICONTROL Save]**.
 
-**最後，檢視轉換：**
+**最后，查看转化：**
 
-1. 建立報表。
-1. 新增下列量度：
+1. 创建报告。
+1. 添加以下量度：
 
 * `New users`
-   * 按一下 **[!UICONTROL Hide]** 在量度名稱下方
+   * 单击 **[!UICONTROL Hide]** 在指标名称下
 
 * `Number of orders`
-   * 新增篩選器 `Customer's order number` = 1並按一下 **[!UICONTROL Apply]**
-   * 按一下量度名稱並呼叫它，以重新命名量度 `Number of first orders`，然後按一下 **[!UICONTROL Hide]**
+   * 添加筛选条件 `Customer's order number` = 1并单击 **[!UICONTROL Apply]**
+   * 通过单击指标名称并调用它来重命名指标 `Number of first orders`，然后单击 **[!UICONTROL Hide]**
 
 * `Number of orders`
    * **[!UICONTROL Hide]** 量度
 
 * `Users`
    * **[!UICONTROL Hide]** 量度
-   * 將時段變更為 `24 months ago to now`，並將時間間隔調整為 `by month`.
-   * 按一下「 」，新增下列公式 **[!UICONTROL Formula]**.
-   * A/D，然後按一下 **[!UICONTROL Apply]**
-   * 重新命名公式 `Registration conversion`
-   * B/D ，然後按一下 **[!UICONTROL Apply]**
-   * 重新命名公式 `First order conversion`
-   * C/D，然後按一下 **[!UICONTROL Apply]**
-   * 重新命名公式 `Any order conversion`
+   * 将时间段更改为 `24 months ago to now`，并将时间间隔调整为 `by month`.
+   * 通过单击添加以下公式 **[!UICONTROL Formula]**.
+   * A/D ，然后单击 **[!UICONTROL Apply]**
+   * 重命名公式 `Registration conversion`
+   * B/D ，然后单击 **[!UICONTROL Apply]**
+   * 重命名公式 `First order conversion`
+   * C/D ，然后单击 **[!UICONTROL Apply]**
+   * 重命名公式 `Any order conversion`
 
-* 現在為您的報表命名，例如 `Conversion by month`，然後按一下 **[!UICONTROL Save]**.
+* 现在为您的报告命名，例如 `Conversion by month`，然后单击 **[!UICONTROL Save]**.
 
-## 後續步驟
+## 后续步骤
 
-現在您可以存取有關您網站流量和轉換率的資料，您可以開始發掘這些資料以推動業務決策，例如哪些網站最能帶來您網站的流量？ 或您的哪些行銷活動最能有效吸引具有高期限價值的客戶？
+现在您有权访问有关网站流量和转化率的数据，您可以开始挖掘这些数据以推动业务决策，例如，哪些网站最能推动流量流向您的网站？ 或者，您的哪些促销活动在吸引具有高存留期价值的客户方面最有效？
 
-當您調整廣告支出和行銷策略時，可以繼續追蹤以下專案的成效： [!DNL Commerce Intelligence]，在此控制面板上反複處理，以符合貴公司不斷變化的優先順序。
+在调整广告支出和营销策略时，您可以继续跟踪以下各项的结果： [!DNL Commerce Intelligence]，在此功能板上进行迭代，以满足贵公司不断变化的优先级。

@@ -1,6 +1,6 @@
 ---
-title: 刪除或重新啟用Adobe Commerce Intelligence使用者
-description: 瞭解如何刪除 [!DNL Commerce Intelligence] 使用者。
+title: 删除或重新激活Adobe Commerce Intelligence用户
+description: 了解如何删除 [!DNL Commerce Intelligence] 用户。
 exl-id: 0590275d-3329-40fb-8be1-4a700438338d
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -9,20 +9,20 @@ ht-degree: 0%
 
 ---
 
-# 刪除 [!DNL Adobe Commerce Intelligence] 使用者
+# 删除 [!DNL Adobe Commerce Intelligence] 用户
 
-前往右上角的帳戶下拉式清單，即可刪除使用者。 按一下 **[!UICONTROL Manage Users]**，選取您要刪除的帳戶並按一下 **[!UICONTROL Deactivate User]**.
+通过转到右上角的帐户下拉菜单，可以删除用户。 单击 **[!UICONTROL Manage Users]**，选择要删除的帐户并单击 **[!UICONTROL Deactivate User]**.
 
 >[!NOTE]
 >
->在刪除使用者之前，您可能想要檢查是否有任何要保留的圖表。 [!DNL Adobe Commerce Intelligence] 支援人員可與您共用使用者的儀表板，讓您僅儲存所需的內容。 支援人員也可以將所有儀表板推送至您的帳戶，這會將擁有權轉移給您。 [聯絡我們](../../guide-overview.md#Submitting-a-Support-Ticket) 以取得協助。
+>在删除用户之前，您可能需要检查是否存在任何要保留的图表。 [!DNL Adobe Commerce Intelligence] 支持人员可以与您共享用户功能板，这样您就只能保存所需的内容。 支持人员还可以将所有仪表板推送到您的帐户，从而向您转移所有权。 [联系我们](../../guide-overview.md#Submitting-a-Support-Ticket) 以寻求帮助。
 
-## 重新啟用已刪除的 [!DNL Commerce Intelligence] 使用者
+## 重新激活已删除的 [!DNL Commerce Intelligence] 用户
 
-您可以透過建立具有相同電子郵件地址的使用者來重新啟用使用者。 使用者會收到電子郵件以建立新密碼，並在登入時還原其控制面板和設定。
+您可以通过创建具有相同电子邮件地址的用户来重新激活用户。 用户会收到一封创建新密码的电子邮件，并在登录时恢复其功能板和设置。
 
-如果您只需要該使用者推送至其他使用者帳戶的控制面板，請執行以下操作：
+如果您只需要该用户推送到其他用户帐户中的仪表板，请执行以下操作：
 
-1. 使用已刪除使用者的電子郵件地址來建立新的 [!DNL Commerce Intelligence] 使用者。
-1. [通知支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 在您建立使用者之後。 支援將儀表板轉移至您的帳戶。
-1. 在Adobe支援通知您轉移後，您可以再次刪除使用者。
+1. 使用已删除用户的电子邮件地址新建 [!DNL Commerce Intelligence] 用户。
+1. [通知支持](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 创建用户之后。 支持将功能板转移到您的帐户中。
+1. 在Adobe支持部门通知您转移后，您可以再次删除该用户。

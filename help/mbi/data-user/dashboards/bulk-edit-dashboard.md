@@ -1,6 +1,6 @@
 ---
-title: 在儀表板中大量編輯圖表
-description: 瞭解如何在中使用大量編輯功能 [!DNL Commerce Intelligence].
+title: 在功能板中批量编辑图表
+description: 了解如何在中使用批量编辑功能 [!DNL Commerce Intelligence].
 exl-id: 576ffabb-5e5d-4251-9662-951e2cd30f31
 source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
@@ -9,9 +9,9 @@ ht-degree: 0%
 
 ---
 
-# 在儀表板中大量編輯圖表
+# 在功能板中批量编辑图表
 
-大量編輯功能可讓您輕鬆變更儀表板中的圖表名稱和日期。 例如，您希望特定控制面板上的所有圖表每月參考單一商店並報告，而不是每季報告。 與其手動變更所有內容，不如讓 `bulk-editing` 功能完成工作。 在本主題中，您將瞭解如何使用：
+利用批量编辑功能，可以轻松更改功能板中的图表名称和日期。 例如，您希望特定仪表板上的所有图表引用单个商店，并按月而不是按季度报告。 与其手动更改所有内容，不如让 `bulk-editing` 功能完成工作。 在本主题中，您将了解如何使用：
 
 * [此 [!DNL Find/Replace] 功能](#findreplace)
 
@@ -19,52 +19,52 @@ ht-degree: 0%
 
 * [此 [!DNL Change Dates] 功能](#dates)
 
-話雖如此，請考慮以下事項： *這些變更需要永久保留嗎？* 如果沒有，請考慮複製控制面板，然後變更新控制面板中的日期。 這可讓您保留原始儀表板，同時仍可進行所需的變更。
+话虽如此，想想这个。 *这些更改是否需要永久有效？* 如果不能，请考虑克隆功能板，然后更改新功能板中的日期。 这允许您保留原始仪表板，同时仍可进行所需的更改。
 
 >[!NOTE]
 >
->如果您變更許多報表，更新程式可能需要一點時間。
+>如果要更改大量报表，则更新过程可能需要一点时间。
 
 ## 使用 [!DNL Find/Replace] {#findreplace}
 
-1. 按一下齒輪(![](../../assets/gear-icon.png))圖示，然後按一下「 」 [!UICONTROL Bulk Edit Reports] 視窗。
+1. 单击齿轮(![](../../assets/gear-icon.png))图标，然后 [!UICONTROL Bulk Edit Reports] 窗口。
 
-1. 按一下 **[!UICONTROL Chart Title Find and Replace]** 在快顯視窗中。
+1. 单击 **[!UICONTROL Chart Title Find and Replace]** 在弹出窗口中。
 
-1. 在 `Chart Title Find` 欄位，輸入您要尋找的字詞或字元。
+1. 在 `Chart Title Find` 字段中，键入要查找的单词或字符。
 
-1. 在 `Replace With` 欄位，輸入應該取代 `Find` 欄位。
+1. 在 `Replace With` 字段中，键入应替换 `Find` 字段。
 
-1. 按一下 **[!UICONTROL Update Reports]**.
+1. 单击 **[!UICONTROL Update Reports]**.
 
-範例：
+示例：
 
-![大量編輯](../../assets/bulk_edit.gif)
+![批量编辑](../../assets/bulk_edit.gif)
 
-## 前置詞 `Chart Names` {#prepend}
+## 前置词 `Chart Names` {#prepend}
 
-1. 按一下齒輪(![](../../assets/gear-icon.png))圖示，然後按一下「 」 [!UICONTROL Bulk Edit Reports] 視窗。
+1. 单击齿轮(![](../../assets/gear-icon.png))图标，然后 [!UICONTROL Bulk Edit Reports] 窗口。
 
-1. 按一下 **[!UICONTROL Prepend Report Names]** 在快顯視窗中。
+1. 单击 **[!UICONTROL Prepend Report Names]** 在弹出窗口中。
 
-1. 輸入您要在圖表前加上的單字或字元。
+1. 键入要在图表前添加的单词或字符。
 
-1. 按一下 **[!UICONTROL Update Reports]**.
+1. 单击 **[!UICONTROL Update Reports]**.
 
-範例：
+示例：
 
-![前置詞](../../assets/prepend.gif)
+![前置词](../../assets/prepend.gif)
 
-## 變更 `Dates` {#dates}
+## 更改 `Dates` {#dates}
 
-1. 按一下齒輪(![](../../assets/gear-icon.png))圖示加以選取，然後選取 [!UICONTROL Bulk Edit Reports] 視窗。
+1. 单击齿轮(![](../../assets/gear-icon.png))图标，然后选择 [!UICONTROL Bulk Edit Reports] 窗口。
 
-1. 按一下 **[!UICONTROL Change Dates]** 在快顯視窗中。
+1. 单击 **[!UICONTROL Change Dates]** 在弹出窗口中。
 
-1. 設定新的 `Start/End Date` 和 `Time Interval`. 您也可以保留這些欄位不變。
+1. 设置新 `Start/End Date` 和 `Time Interval`. 您还可以保留这些字段不变。
 
-1. 按一下 **[!UICONTROL Update Reports]**.
+1. 单击 **[!UICONTROL Update Reports]**.
 
-範例：
+示例：
 
-![變更日期](../../assets/dates.gif)
+![更改日期](../../assets/dates.gif)

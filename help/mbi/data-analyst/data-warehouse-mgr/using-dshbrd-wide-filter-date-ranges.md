@@ -1,6 +1,6 @@
 ---
-title: 儀表板範圍篩選
-description: 瞭解如何在特定儀表板上大量編輯所有報告。
+title: 功能板范围筛选
+description: 了解如何在特定仪表板上批量编辑所有报告。
 exl-id: 379d0027-8a7a-4062-a66a-4f06c37b806c
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -9,46 +9,46 @@ ht-degree: 0%
 
 ---
 
-# 儀表板範圍篩選
+# 功能板范围筛选
 
-透過控制面板範圍的篩選，您可以對特定控制面板上的所有報告進行大量編輯。 您可以快速檢視不同時段或不同商店的相同分析。 您可以輕鬆比較每個商店去年、月或周的績效。 您可以更新整個儀表板，以因應新啟動的行銷活動。
+通过功能板范围的筛选，您可以对特定功能板上的所有报告进行批量编辑。 您可以快速查看不同时间段或不同商店的相同分析。 您可以轻松地比较每个商店去年、月或周的性能。 您可以更新整个仪表板以适应新启动的活动。
 
-## 日期篩選器
+## 日期过滤器
 
-若要變更儀表板上報告的日期範圍或間隔，請按一下右上角的日曆圖示(![行事曆](../../assets/calendar-button.png))。
+要更改功能板上报告的日期范围或时间间隔，请单击右上角的日历图标(![日历](../../assets/calendar-button.png))。
 
-您可以選擇使用檢視資料 `Fixed Date Range` 或各種預先計算的 `Moving Date Ranges`：
+您可以选择使用查看数据 `Fixed Date Range` 或各种预先计算的 `Moving Date Ranges`：
 
-![移動日期範圍](../../assets/moving_date_ranges.png)
+![移动日期范围](../../assets/moving_date_ranges.png)
 
-此 `Last Full...` 移動範圍選項代表最近完全完成的範圍，而 `This...` 是目前進行中的範圍。 例如，如果現在是六月， `Last Full Month` 是 _5月1日至5月31日_，而 `This Month` 是 _6月1日至現在_.
+此 `Last Full...` 移动范围选项表示最近完全完成的范围，而 `This...` 是当前正在进行的范围。 例如，如果现在是六月， `Last Full Month` 是 _5月1日 — 5月31日_，而 `This Month` 是 _6月1日至现在_.
 
-或是建立您自己的 `Custom Moving Range`\：
+或者创建您自己的 `Custom Moving Range`\：
 
-![自訂移動範圍](../../assets/custom-moving-range.png)
+![自定义移动范围](../../assets/custom-moving-range.png)
 
-選擇以變更間隔。 選取預設按鈕(![時間間隔預設值](../../assets/time_interval_default.png))表示只有日期範圍會變更：
+选择以更改间隔。 选择默认按钮(![时间间隔默认值](../../assets/time_interval_default.png))表示只有日期范围会更改：
 
-![時間間隔](../../assets/time_interval.png)
+![时间间隔](../../assets/time_interval.png)
 
-若要將所有報表還原成其初始日期範圍和間隔，請按一下 **[!UICONTROL Restore Defaults]** 或按 **[!UICONTROL Cancel]**.
+要将所有报告恢复到其初始日期范围和时间间隔，请单击 **[!UICONTROL Restore Defaults]** 或单击 **[!UICONTROL Cancel]**.
 
-當您為儀表板指定日期篩選器時，該篩選器只會套用到該儀表板。 當您導覽至其他儀表板時，不會套用它。
-
->[!NOTE]
->
->目前， `Cohort Reports` 和 `SQL Reports` 在儀表板層級套用變更時未包含。
-
-## 存放區篩選器
-
-若要分析特定商店的表現，請按一下右上角的商店圖示(![存放區篩選器](../../assets/store-filter.png))。 依預設， `Store Filter` 設為 `All Stores`，會顯示來自所有使用者的資料 [存放區檢視](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html) 可在您的Commerce網站上取得。
+为功能板指定日期过滤器时，该过滤器仅应用于该功能板。 当您导航到其他功能板时，不会应用此功能。
 
 >[!NOTE]
 >
->商店篩選器已針對整個啟用或停用 [!DNL Commerce Intelligence] 帳戶。 如果儀表板包含不受篩選器影響的報表（例如未在任何上建置的報表） [!DNL Adobe Commerce] 資料)，這些報表在套用商店篩選時不會更新。 您可以 [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 如果您認為報表應該根據商店選擇進行更新，或是您認為您的帳戶商店篩選條件遭到錯誤停用。
+>目前， `Cohort Reports` 和 `SQL Reports` 在功能板级别应用更改时不包含。
 
-當您從以下專案選取商店時： `Store Filter`，當您在儀表板之間導覽時，篩選器會保留您的選擇。 保留您的選取範圍可讓您檢視所選商店中任何位置的資料，直到您選取為止 `All Stores`.
+## 存储筛选器
 
-## 共用儀表板的篩選器
+要分析特定商店的执行情况，请单击右上角的商店图标(![商店筛选条件](../../assets/store-filter.png))。 默认情况下， `Store Filter` 设置为 `All Stores`，其中显示来自所有 [商店视图](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html) 在您的Commerce网站中提供。
 
-對於共用控制面板，如果一位使用者設定日期篩選器，則具有該控制面板存取許可權的其他使用者會看到套用的相同篩選器。 不過，在此情況下不會套用商店篩選。 如果控制面板擁有者設定商店篩選並共用控制面板，則設定的商店篩選不會保留給其他使用者。 使用者必須具備 [編輯存取權](../../data-user/dashboards/share-dashboard-with-users.md) 至控制面板，以調整控制面板篩選器。
+>[!NOTE]
+>
+>商店筛选器已针对整个网站启用或禁用 [!DNL Commerce Intelligence] 帐户。 如果功能板包含不受过滤器影响的报表（例如未在任何功能板的基础上构建报表） [!DNL Adobe Commerce] 数据)，则应用商店筛选条件时，这些报表不会更新。 您可以 [联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 如果您认为报表应基于存储选择进行更新，或者如果您认为您的帐户存储过滤器被错误地禁用。
+
+当您从中选择商店时 `Store Filter`，则当您在功能板之间导航时，过滤器会保留您的选择。 保留您的选择允许您查看所选存储中任何位置的数据，直到您选择为止 `All Stores`.
+
+## 共享功能板的筛选器
+
+对于共享功能板，如果一位用户配置日期过滤器，则具有该功能板访问权限的其他用户会看到应用了该同一过滤器。 但是，存储过滤器不适用于这种情况。 如果功能板所有者配置商店筛选条件并共享功能板，则配置的商店筛选条件不会保留给其他用户。 用户必须具有 [编辑访问权限](../../data-user/dashboards/share-dashboard-with-users.md) ，以调整功能板筛选器。

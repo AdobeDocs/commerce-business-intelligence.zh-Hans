@@ -1,6 +1,6 @@
 ---
-title: 選擇Report Builder
-description: 瞭解如何選擇您的Report Builder。
+title: 选择一个Report Builder
+description: 了解如何选择Report Builder。
 exl-id: ec4204ef-975e-45c3-b09e-fb97ffc2c497
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -9,65 +9,65 @@ ht-degree: 0%
 
 ---
 
-# 選擇Report Builder
+# 选择一个Report Builder
 
 >[!NOTE]
->>需要 [管理員許可權](../../administrator/user-management/user-management.md).
+>>需要 [管理员权限](../../administrator/user-management/user-management.md).
 
 
-現在您有了更多建立分析的選項，有時候可能很難確切知道哪一種風格的Report Builder適合您的需求。 本主題將引導您選擇最佳方法來建置分析。
+现在，您有了更多创建分析的选项，有时可能很难确切知道哪种Report Builder风格适合您的需求。 本主题将指导您选择构建分析的最佳方法。
 
-## 何時應使用 [!DNL SQL Report Builder]？ {#whensql}
+## 何时应使用 [!DNL SQL Report Builder]？ {#whensql}
 
-檢視您使用的一些常見原因 [!DNL SQL Report Builder] 超過 [!DNL traditional Report Builder].
+查看一些您之所以要使用 [!DNL SQL Report Builder] 超过 [!DNL traditional Report Builder].
 
-### 如果您想使用 [!DNL SQL] — 特定函式……
+### 如果您要使用 [!DNL SQL]特定函数……
 
-美的一部分 [!DNL SQL Report Builder] 這讓您能夠使用Data Warehouse管理員中目前未提供的功能。 過去，分析師可能必須介入協助您完全實現您的願景。
+是美丽的一部分 [!DNL SQL Report Builder] 它使您能够使用Data warehouse管理器中当前未提供的功能。 过去，分析师可能必须介入以帮助您充分实现您的愿景。
 
-此 [!DNL SQL Report Builder] 支援函式，例如 [`LISTAGG`](https://docs.aws.amazon.com/redshift/latest/dg/r_LISTAGG.html) 和 [`GETDATE`](https://docs.aws.amazon.com/redshift/latest/dg/r_GETDATE.html)，而您先前無法使用。 您可以存取 [`full list`](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html)，但其他一些SQL特定函式包括：
+此 [!DNL SQL Report Builder] 支持函数，例如 [`LISTAGG`](https://docs.aws.amazon.com/redshift/latest/dg/r_LISTAGG.html) 和 [`GETDATE`](https://docs.aws.amazon.com/redshift/latest/dg/r_GETDATE.html)，之前无法使用该功能。 您可以访问 [`full list`](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html)，但其他一些特定于SQL的函数包括：
 
-* [`Bitwise aggregate` 函式](https://docs.aws.amazon.com/redshift/latest/dg/c_bitwise_aggregate_functions.html)
+* [`Bitwise aggregate` 函数](https://docs.aws.amazon.com/redshift/latest/dg/c_bitwise_aggregate_functions.html)
 * [`CASE expression`](https://docs.aws.amazon.com/redshift/latest/dg/r_CASE_function.html)
 * [`JSON_EXTRACT_PATH_TEXT`](https://docs.aws.amazon.com/redshift/latest/dg/JSON_EXTRACT_PATH_TEXT.html)
 * [`LOG`](https://docs.aws.amazon.com/redshift/latest/dg/r_LOG.html)
 * [`MONTHS_BETWEEN`](https://docs.aws.amazon.com/redshift/latest/dg/r_MONTHS_BETWEEN_function.html)
 * [`REPLACE`](https://docs.aws.amazon.com/redshift/latest/dg/r_REPLACE.html)
 * [`SQRT`](https://docs.aws.amazon.com/redshift/latest/dg/r_SQRT.html)
-* [`concatenation` 運運算元](https://docs.aws.amazon.com/redshift/latest/dg/r_concat_op.html)
+* [`concatenation` 运算符](https://docs.aws.amazon.com/redshift/latest/dg/r_concat_op.html)
 
-### 如果您想要執行一些測試……
+### 如果你想做些测试……
 
-如果您想嘗試不同的技巧和策略來找出最適合您的分析的技巧，您可能會想要使用 [!DNL SQL Report Builder]. 在「Data Warehouse管理員」中建置欄需要時間，而您使用DWM建立的欄則取決於更新週期。
+如果您想尝试不同的技术和策略来找出最适合您的分析的技术，您可能需要使用 [!DNL SQL Report Builder]. 在Data warehouse管理器中构建列需要使用DWM创建的时间和列取决于更新周期。
 
-您最多只能等待一個更新週期，然後才能使用欄。 如果您發現建立欄時發生錯誤，您必須等待 *二* 循環：一個用於初始填入欄，另一個用於傳播修訂版本的循環。
+您最多只能等待一个更新周期，然后才能使用列。 如果您意识到构建栏时犯了错误，则必须等待 *二* 循环：一个循环用于最初填充列，另一个循环用于传播修订。
 
-### 如果您只使用新欄一次……
+### 如果您只使用新列一次……
 
-如上節所述，在Data Warehouse管理員中建立欄需要時間。 如果您只打算使用一個您在報表中建立的欄，Adobe建議使用 [!DNL SQL Report Builder]. 如此一來，您就不必等待更新週期完成，而能更迅速地恢復工作。
+如上节中所述，在Data warehouse管理器中创建列需要一些时间。 如果您只打算在一个报表中使用您创建的列，则Adobe建议使用 [!DNL SQL Report Builder]. 这无需等待更新周期完成，让您更快地恢复工作。
 
-### 如果您使用的資料具有一對多關係……
+### 如果您使用的数据具有一对多关系……
 
-有時，資料的結構可能導致 [!DNL SQL Report Builder] 更有效率、更符合邏輯的選擇來建置您的分析。 在「Data Warehouse管理員」中直接建立一對一關係的欄，但當您處理一對多關係時，事情可能會有點混亂。
+有时，数据结构可能会导致 [!DNL SQL Report Builder] 构建分析时更有效、更合理的选择。 在Data warehouse管理器中为一对一关系创建列非常简单，但是在处理一对多关系时，事情可能会变得有些混乱。
 
-假設單一產品被視為多個產品類別的一部分，而您想要檢視與每個產品的每個類別相關聯的收入。 嘗試使用DWM建立這種關係可能既繁瑣又困難，但撰寫時 [!DNL SQL] 查詢可能更直接一些：
+假设单个产品被视为多个产品类别的一部分，并且您希望查看与每个产品的每个类别关联的收入。 尝试使用DWM创建这种关系可能既繁琐又困难，但请编写 [!DNL SQL] 查询可能更直接一些：
 
 ![](../../assets/When_should_I_use_the_RB_2.png)
 
-## 我何時應使用傳統Report Builder？ {#whentraditionalrb}
+## 何时应使用传统Report Builder？ {#whentraditionalrb}
 
-而 [!DNL SQL Report Builder] 可讓您對先前無法使用的功能擁有更多控制權和存取權，但可能並不總是正確的選擇。 Adobe建議，在決定要使用哪種Report Builder風格時，也應考量下列事項。
+而 [!DNL SQL Report Builder] 让您能够更好地控制和访问以前不可用的功能，它可能并不总是正确的选择。 Adobe建议，在确定要使用的Report Builder的风格时，您还应考虑以下事项。
 
-### 如果您要建置簡單報表……
+### 如果您正在构建一个简单的报表……
 
-如果您要建立的內容簡單明瞭，則使用傳統Report Builder可能比撰寫完整檔案快得多 [!DNL SQL] 查詢。 如果您需要建立分析的任何欄已經在Data Warehouse管理員中，則此功能會很有幫助。
+如果要创建的内容简单明了，则使用传统Report Builder比编写完整文档快得多 [!DNL SQL] 查询。 如果您需要创建分析的任何列已在Data warehouse管理器中，则此功能会很有用。
 
-### 如果您正在與其他使用者共用您的工作……
+### 如果您正在与其他用户共享您的工作……
 
-貴組織的使用者是否使用/檢視此分析？ 視您與誰共用您的工作而定，有時候選擇視覺Report Builder可能更好。 使用者可快速檢視 [!DNL Visual Report Builder] 與讀取可能較長的專案 [!DNL SQL] 查詢。
+贵组织中的用户是否使用/查看此分析？ 根据您与谁共享您的作品，有时候坚持使用可视化Report Builder可能会更好。 用户可快速查看 [!DNL Visual Report Builder] 与读取可能较长的 [!DNL SQL] 查询。
 
-如果有人需要報告但不熟悉 [!DNL SQL]，Adobe建議使用Report Builder的原始風格。 讓操作更輕鬆。
+如果有人需要报告但不熟悉 [!DNL SQL]，Adobe建议使用Report Builder的原始风格。 这让他们更容易办到。
 
-## 正在結束 {#wrapup}
+## 总结 {#wrapup}
 
-兩者皆有 [!DNL SQL Report Builder] 和 [!DNL Visual Report Builder] 適用於多種使用案例。 這通常取決於您的分析需求以及誰在使用分析。
+两者都是 [!DNL SQL Report Builder] 和 [!DNL Visual Report Builder] 适用于各种用例。 这通常取决于您的分析需求以及谁在使用分析。

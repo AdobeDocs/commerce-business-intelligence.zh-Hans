@@ -1,6 +1,6 @@
 ---
-title: 定義客戶集中度
-description: 瞭解如何設定儀表板，協助您測量總收入在客戶群之間的分配方式。
+title: 定义客户集中度
+description: 了解如何设置一个仪表板，帮助您衡量总收入如何在客户群中分配。
 exl-id: 6242019f-a6a5-48d3-b214-94acd7842e00
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -9,89 +9,89 @@ ht-degree: 0%
 
 ---
 
-# 客戶集中
+# 客户集中
 
-此主題示範如何設定儀表板，協助您測量總收入在客戶群之間的分配方式。 瞭解客戶貢獻了多少百分比的收入，並建立分段清單以將市場最佳化，並留住貢獻最多的客戶。
+本主题演示如何设置一个仪表板，帮助您衡量总收入如何在客户群中分配。 了解客户贡献了多少百分比的收入，并创建分段列表以最好地向市场推广并留住贡献最多的客户。
 
-此分析包含 [進階計算欄](../data-warehouse-mgr/adv-calc-columns.md).
+此分析包含 [高级计算列](../data-warehouse-mgr/adv-calc-columns.md).
 
-## 快速入門
+## 快速入门
 
-您必須先上傳僅包含主索引鍵（值為1）的檔案。 這允許建立一些分析所需的計算欄。
+您需要首先上传一个文件，该文件只包含值为1的主键。 这允许为分析创建一些必要的计算列。
 
-您可以使用 [檔案上傳程式](../importing-data/connecting-data/using-file-uploader.md) 和下圖來格式化您的檔案。
+您可以使用 [文件上传程序](../importing-data/connecting-data/using-file-uploader.md) 和下图来格式化您的文件。
 
-## 計算欄
+## 计算列
 
-如果您使用原始架構(例如，如果您沒有 `Data Warehouse Views` 下的選項 `Manage Data` 選單)，您想要聯絡支援團隊以建置以下欄。 在新架構上，這些欄可從以下網址建立： `Manage Data > Data Warehouse` 頁面。 詳細指示如下。
+如果您使用的是原始架构(例如，如果您没有 `Data Warehouse Views` 下的选项 `Manage Data` 菜单)，您希望联系支持团队以构建以下列。 在新架构上，这些列可以从 `Manage Data > Data Warehouse` 页面。 详细说明如下。
 
-如果您的企業允許訪客訂購，則需作進一步的區分。 如果是，您可以忽略的所有步驟 `customer_entity` 表格。 如果不允許來賓訂單，請忽略的所有步驟 `sales_flat_order` 表格。
+如果贵公司允许客人下单，则需作进一步区分。 如果是这样，您可以忽略的所有步骤 `customer_entity` 表格。 如果不允许来宾订单，请忽略 `sales_flat_order` 表格。
 
-要建立的欄
+要创建的列
 
-* `Sales_flat_order/customer_entity` 表格
-* （輸入） `reference`
+* `Sales_flat_order/customer_entity` 表
+* （输入） `reference`
 * [!UICONTROL Column type]: – `Same table > Calculation`
 * [!UICONTROL Inputs]: – `entity_id`
-* [!UICONTROL Calculation]： - **A為null然後為null的情況，否則1結束**
+* [!UICONTROL Calculation]： - **A为null时为null的情况，否则1结束**
 * [!UICONTROL Datatype]: – `Integer`
 
-* `Customer concentration` 表格（這是您上傳且編號為的檔案） `1`)
-* 客戶數量
+* `Customer concentration` 表(这是您上传的文件，编号为 `1`)
+* 客户数量
 * [!UICONTROL Column type]: – `Many to One > Count Distinct`
-* 路徑 —  `sales_flat_order.(input) reference > Customer Concentration.Primary Key` 或 `customer_entity.(input)reference > Customer Concentration.Primary Key`
-* 選取的欄 —  `sales_flat_order.customer_email` 或 `customer_entity.entity_id`
+* 路径 —  `sales_flat_order.(input) reference > Customer Concentration.Primary Key` 或 `customer_entity.(input)reference > Customer Concentration.Primary Key`
+* 选定的列 —  `sales_flat_order.customer_email` 或 `customer_entity.entity_id`
 
-* `customer_entity` 表格
-* 客戶數量
+* `customer_entity` 表
+* 客户数量
 * [!UICONTROL Column type]: – `One to Many > JOINED_COLUMN`
-* 路徑 —  `customer_entity.(input) reference > Customer Concentration. Primary Key`
-* 選取的欄 —  `Number of customers`
+* 路径 —  `customer_entity.(input) reference > Customer Concentration. Primary Key`
+* 选定的列 —  `Number of customers`
 
-* （輸入） `Ranking by customer lifetime revenue`
+* （输入） `Ranking by customer lifetime revenue`
 * [!UICONTROL Column type]: – `Same table > Event Number`
 * 事件所有者 —  `Number of customers`
 * 事件排名 —  `Customer's lifetime revenue`
 
-* 客戶的收入百分位數
+* 客户的收入百分位数
 * [!UICONTROL Column type]: – `Same table > Calculation`
 * [!UICONTROL Inputs]: – `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]： - **A為空值然後為空值的情況除外(A/B)* 100個結尾&#x200B;**
+* [!UICONTROL Calculation]： - **当A为null然后为null时的情况，否则(A/B)* 100结束&#x200B;**
 * [!UICONTROL Datatype]: – `Decimal`
 
-* `Sales_flat_order` 表格
-* 客戶數量
+* `Sales_flat_order` 表
+* 客户数量
 * [!UICONTROL Column type]: – `One to Many > JOINED_COLUMN`
-* 路徑 —  `sales_flat_order.(input) reference > Customer Concentration.Primary Key`
-* 選取的欄 —  `Number of customers`
+* 路径 —  `sales_flat_order.(input) reference > Customer Concentration.Primary Key`
+* 选定的列 —  `Number of customers`
 
-* （輸入）依客戶期限收入的排名
+* （输入）按客户存留期收入排名
 * [!UICONTROL Column type]: – `Same table > Event Number`
 * 事件所有者 —  `Number of customers`
 * 事件排名 —  `Customer's lifetime revenue`
-* 篩選 —  `Customer's order number = 1`
+* 筛选条件 —  `Customer's order number = 1`
 
-* 客戶的收入百分位數
+* 客户的收入百分位数
 * [!UICONTROL Column type]: – `Same table > Calculation`
 * [!UICONTROL Inputs]: – `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]： - **A為空值然後為空值的情況除外(A/B)* 100個結尾&#x200B;**
+* [!UICONTROL Calculation]： - **当A为null然后为null时的情况，否则(A/B)* 100结束&#x200B;**
 * [!UICONTROL Datatype]: - `Decimal`
 
 >[!NOTE]
 >
->使用的百分位數是客戶的分割，代表客戶群的第X個百分位數。 每個客戶都與1到100的整數相關聯，這可以視為其期限收入 *排名*. 例如，如果特定客戶的客戶收入百分位數為 **5**，此客戶位於 ***第五個百分位數*** 終生收入方面所有客戶的總和。
+>使用的百分位数是甚至客户分段，代表客户群的第X个百分位数。 每个客户都关联一个1到100的整数，可将其视为其生命周期收入 *排名*. 例如，如果特定客户的客户收入百分位数为 **5**，该客户位于 ***第5个百分位数*** 终生收入而言，所有客户之总收入约为25,000港元。
 
 ## 量度
 
-* **客戶期限值總計**
-* 在 `customer_entity` 表格
-* 此量度會執行 **總和**
-* 於 `Customer's lifetime revenue` 欄
-* 排序依據： `Customer's first order date` timestamp
+* **客户存留期值总计**
+* 在 `customer_entity` 表
+* 此量度执行 **总和**
+* 在 `Customer's lifetime revenue` 列
+* 排序依据 `Customer's first order date` 时间戳
 
-## 報表
+## 报告
 
-* **客戶集中**
+* **客户集中**
 * [!UICONTROL Metric]: `Total customer lifetime value`
 * [!UICONTROL Filter]: `Customer's revenue percentile IS NOT NULL`
 
@@ -99,33 +99,33 @@ ht-degree: 0%
 * [!UICONTROL Filter]: `Customer's revenue percentile IS NOT NULL`
 
 * 
-   [！UICONTROL分組依據]: `Independent`
+   [！UICONTROL分组依据]: `Independent`
 * 量度 `A`： `Total customer lifetime revenue by percentile`
 * 量度 `B`： `Total customer lifetime revenue (ungrouped)`
 * [!UICONTROL Time period]: `All time`
 * 
    [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Customer's revenue percentile`
-* 顯示頂端/底端： `100% of Customer's revenue percentile Name`
+* 显示顶部/底部： `100% of Customer's revenue percentile Name`
 * 
 
    [!UICONTROL Chart type]: `Line`
 
-* **前10%集中**
+* **前10%浓度**
 * [!UICONTROL Filter]: `Customer's revenue percentile <= 10`
 
 * 量度 `A`： `Total customer lifetime revenue`
 * [!UICONTROL Time period]: `All time`
 * 
    [!UICONTROL Interval]: `None`
-* 隱藏圖表
+* 隐藏图表
 * 
-   [！UICONTROL分組依據]: `Email`
+   [！UICONTROL分组依据]: `Email`
 * 
 
    [!UICONTROL Chart type]: `Table`
 
-* **僅需一次購買即可達到最低50%的集中度**
+* **仅需一次购买即可达到最低50%的集中度**
 
 * 量度 `A`： `Total customer lifetime revenue`
 * `Customer's revenue percentile <= 50`
@@ -135,27 +135,27 @@ ht-degree: 0%
 * [!UICONTROL Time period]: `All time`
 * 
    [!UICONTROL Interval]: `None`
-* 隱藏圖表
+* 隐藏图表
 * 
-   [！UICONTROL分組依據]: `Email`
+   [！UICONTROL分组依据]: `Email`
 * 
 
    [!UICONTROL Chart type]: `Table`
 
-* **最後10%的濃度**
+* **底部10%浓度**
 * [!UICONTROL Filter]: `Customer's revenue percentile > 90`
 
 * 量度 `A`： `Total customer lifetime revenue`
 * [!UICONTROL Time period]: `All time`
 * 
    [!UICONTROL Interval]: `None`
-* 隱藏圖表
+* 隐藏图表
 * 
-   [！UICONTROL分組依據]: `Email`
+   [！UICONTROL分组依据]: `Email`
 * 
 
    [!UICONTROL Chart type]: `Table`
 
-編譯所有報表後，您可以視需要在控制面板上組織報表。 結果看起來可能像上面的範例儀表板。
+在编译所有报告后，您可以根据需要将报告组织在功能板上。 结果可能类似于上述示例仪表板。
 
-如果您在建立此分析時遇到任何問題，或只是想與Professional Services團隊互動， [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+如果您在构建此分析时遇到任何问题，或者只是想让专业服务团队参与进来， [联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

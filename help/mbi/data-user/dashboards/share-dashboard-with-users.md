@@ -1,6 +1,6 @@
 ---
-title: 與其他使用者共用儀表板
-description: 瞭解如何與其他使用者共用儀表板。
+title: 与其他用户共享功能板
+description: 了解如何与其他用户共享功能板。
 exl-id: 6279b049-d1b2-4d40-b30b-ee8772e990f4
 source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
@@ -9,36 +9,36 @@ ht-degree: 0%
 
 ---
 
-# 與其他使用者共用儀表板
+# 与其他用户共享功能板
 
-共用儀表板是讓您的團隊保持循環並鼓勵合作討論的絕佳方式。 透過建立和共用中央儀表板，您可以在維持控制的同時，為團隊提供所需的資訊。 [[!DNL Adobe] 建議](../../best-practices/share-dashboard-best-practice.md){： target=&quot;_blank&quot;}您授予的 `Edit` 少數人的權利，以減少意外變更。
+共享功能板是让您的团队保持循环并鼓励协作讨论的绝佳方式。 通过创建和共享中央仪表板，您可以在保持控制的同时为团队提供所需的信息。 [[!DNL Adobe] 推荐](../../best-practices/share-dashboard-best-practice.md){： target=&quot;_blank&quot;}您授予的 `Edit` 少数几个用户的权限，以最大限度地减少意外更改。
 
 >[!NOTE]
 >
->如果您共用的儀表板包含以特定使用者無權存取的量度建立的報告，則報告會顯示 `Error Loading Data` 訊息。 如果您希望資料顯示給特定使用者，請 [管理員使用者](../../administrator/user-management/user-management.md) 必須授與這些報告中使用之所有量度的存取權。
+>如果您共享的功能板包含使用特定用户无权访问的量度构建的报告，则这些报告将显示 `Error Loading Data` 消息。 如果您希望数据显示给特定用户，请 [管理员用户](../../administrator/user-management/user-management.md) 必须授予对这些报表中使用的所有量度的访问权限。
 
-## 共用儀表板
+## 共享功能板
 
-1. 按一下 **[!UICONTROL Share Dashboard]** 在熒幕上方。
+1. 单击 **[!UICONTROL Share Dashboard]** 在屏幕顶部。
 
-   您網站的所有使用者清單 [!DNL Commerce Intelligence] 帳戶將會顯示。
+   您的中所有用户的列表 [!DNL Commerce Intelligence] 将显示帐户。
 
-1. 若要選取要與其共用控制面板的使用者，請核取其名稱左側的方塊。
+1. 要选择要与其共享功能板的用户，请选中其名称左侧的框。
 
-   若要選取/取消選取所有使用者，請按一下 **[!UICONTROL Select]** 並選取 `Everyone` 或 `None`（分別）。
+   要选择/取消选择所有用户，请单击 **[!UICONTROL Select]** 并选择 `Everyone` 或 `None`，则不会显示任何内容。
 
-1. 許可權可依個別使用者或整體設定。
+1. 可以逐个用户或批量设置权限。
 
-   *若要設定個別許可權*，按一下 **[!UICONTROL None]** 位於使用者名稱右側。 從此下拉式清單中，選取使用者應具有的許可權型別。
+   *设置个人权限*，单击 **[!UICONTROL None]** 用户名称的右侧。 从该下拉列表中，选择用户应具有的权限类型。
 
-   *若要大量設定許可權*，按一下 **[!UICONTROL Set Permissions]**. 從此下拉式清單中，選取所選使用者應具有的許可權型別。
+   *要集体设置权限*，单击 **[!UICONTROL Set Permissions]**. 从该下拉列表中，选择所选用户应具有的权限类型。
 
    >[!NOTE]
    >
-   >您也可以使用此功能來更新先前設定的許可權。 例如，如果您要停止與他人共用控制面板，請將其許可權設為 `None`.
+   >您还可以使用此功能更新以前设置的权限。 例如，如果要停止与他人共享功能板，请将他们的权限设置为 `None`.
 
-1. 若要共用控制面板，請按一下 **[!UICONTROL Save Changes]**. 所選使用者將收到一封電子郵件，邀請他們檢視儀表板。
+1. 要共享功能板，请单击 **[!UICONTROL Save Changes]**. 选定的用户将收到一封电子邮件，邀请他们查看功能板。
 
-範例：
+示例：
 
-![共用儀表板](../../assets/Share_Dashboards.gif)
+![共享仪表板](../../assets/Share_Dashboards.gif)

@@ -1,6 +1,6 @@
 ---
-title: 資料和更新資訊
-description: 瞭解如何檢查更新週期的狀態。
+title: 数据和更新信息
+description: 了解如何检查更新周期的状态。
 exl-id: a4a2e487-b826-4888-baf0-9d246a8ff153
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -9,37 +9,37 @@ ht-degree: 0%
 
 ---
 
-# 資料和更新資訊
+# 数据和更新信息
 
-* [我的資料為何變更？](#datachange)
-* [定期和強制更新之間有何差異？](#regularforcedupdates)
-* [更新週期為何需要很長時間？](#updatecycletime)
-* [更新週期完成時是否可以通知我？](#notifyupdate)
-* [為什麼是 [!DNL Google ECommerce] 資料與我的資料庫不同？](#ecommdatabase)
-* [如何疑難排解資料差異？](#datadiscrepancy)
+* [为什么我的数据发生了更改？](#datachange)
+* [定期更新和强制更新之间有何区别？](#regularforcedupdates)
+* [为什么更新周期需要很长时间？](#updatecycletime)
+* [更新周期完成时是否可以通知我？](#notifyupdate)
+* [为什么是 [!DNL Google ECommerce] 与我的数据库不同的数据？](#ecommdatabase)
+* [如何解决数据不一致问题？](#datadiscrepancy)
 
-## 我的資料為何變更？ {#datachange}
+## 为什么我的数据发生了更改？ {#datachange}
 
-圖表值會因新資料同步至您的Data Warehouse而在一天中不斷變更。 此外，現有資料欄的值可能因為 [重新檢查](../data-warehouse-mgr/cfg-data-rechecks.md). 重新檢查是在資料欄中尋找變更值的程式，例如從移出的訂單狀態 `open` 至 `shipped`.
+由于新数据正在同步到您的Data warehouse，图表值可能会在一天中发生更改。 此外，现有数据列的值可能由于 [重新检查](../data-warehouse-mgr/cfg-data-rechecks.md). 重新检查是在数据列中查找已更改值的过程，例如订单状态从 `open` 到 `shipped`.
 
-有幾種不同的方式 [檢查更新週期的狀態](../../best-practices/check-update-cycle.md)，視使用者的許可權設定而定。
+有几种不同的方式 [检查更新周期的状态](../../best-practices/check-update-cycle.md)，具体取决于用户的权限设置。
 
-## 定期和強制更新之間有何差異？ {#regularforcedupdates}
+## 定期更新和强制更新之间有何区别？ {#regularforcedupdates}
 
-定期更新包括 **已排程** 強制更新時的程式 **由您啟動的手動處理**. 如果您有中斷時數(或時間段，其中 [!DNL Commerce Intelligence] 不應更新您的資料)，強制更新會啟動一個不遵守中斷期間限制的週期。
+定期更新包括 **已计划** 进程，而强制更新 **由您启动的手动流程**. 如果您有封锁小时(或时间段，其中 [!DNL Commerce Intelligence] 不应更新您的数据)，强制更新会启动一个不遵守封锁期限制的周期。
 
-## 更新週期為何需要很長時間？ {#updatecycletime}
+## 为什么更新周期需要很长时间？ {#updatecycletime}
 
-許多因素都會增加原本就漫長的更新時間。 特定 [復寫方法](../data-warehouse-mgr/cfg-replication-methods.md)， [較高的重新檢查頻率](../data-warehouse-mgr/cfg-data-rechecks.md)，而控制面板和圖表的數量只是少數幾個貢獻者。 Adobe建議 [重新設定部分設定](../../best-practices/reduce-update-cycle-time.md) 和 [最佳化資料庫以進行分析](../../best-practices/opt-db-analysis.md) 以縮短更新時間。
+许多因素都会增加原本就漫长的更新时间。 特定 [复制方法](../data-warehouse-mgr/cfg-replication-methods.md)， [较高的重检查频率](../data-warehouse-mgr/cfg-data-rechecks.md)、功能板和图表的数量只是少数几个参与者。 Adobe建议 [重新配置某些设置](../../best-practices/reduce-update-cycle-time.md) 和 [优化数据库以进行分析](../../best-practices/opt-db-analysis.md) 以缩短更新时间。
 
-## 更新週期完成時是否可以通知我？ {#notifyupdate}
+## 更新周期完成时是否可以通知我？ {#notifyupdate}
 
-如果更新進行中，則連結會位於 `Connections` 週期完成時，可用於請求電子郵件通知的頁面。
+如果正在进行更新，则在 `Connections` 周期完成后，可用于请求电子邮件通知的页面。
 
-## 為什麼是[!DNL Google ECommerce]資料與我的資料庫不同？ {#ecommdatabase}
+## 为什么是[!DNL Google ECommerce]与我的数据库不同的数据？ {#ecommdatabase}
 
-兩者之間的差異 [!DNL Google Analytics] 和資料庫可能會因為各種原因而產生。 無法正確啟用追蹤、使用者造訪無痕以及點選事件無法正常運作只是幾個範例。 如果您的收入和訂單看起來不正確， [請參閱此主題](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) 以診斷問題。
+以下各项之间的差异 [!DNL Google Analytics] 和数据库可能由于各种原因而产生。 跟踪未正确启用、用户访问无痕化和点击事件未正确工作只是几个示例。 如果你的收入和订单不合理， [请参阅此主题](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) 以诊断问题。
 
-## 如何疑難排解資料差異？ {#datadiscrepancy}
+## 如何解决数据不一致问题？ {#datadiscrepancy}
 
-Adobe知道看到不一致的資料可能會讓人感到沮喪。 嘗試使用 [資料差異檢查清單](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html) 或 [資料匯出教學課程](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html) 以診斷問題。 如果您仍然被截斷， [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Adobe知道，看到不一致的数据可能会让人感到沮丧。 尝试使用 [数据差异核对清单](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html) 或 [数据导出教程](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html) 以诊断问题。 如果你还受阻， [联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

@@ -1,6 +1,6 @@
 ---
-title: 建立或刪除計算欄的路徑
-description: 瞭解如何定義路徑，描述您正在建立欄的表格如何與您正在提取資訊的表格相關。
+title: 为计算列创建或删除路径
+description: 了解如何定义一个路径，用于描述您正在其上创建列的表如何与您从中提取信息的表相关。
 exl-id: 734a8046-8058-4f03-93a2-8d59b9be6d2d
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -9,92 +9,92 @@ ht-degree: 0%
 
 ---
 
-# 建立或刪除計算欄的路徑
+# 创建或删除计算列的路径
 
-## 計算欄重新整理程式
+## 计算列刷新程序
 
-時間 [建立計算欄](../data-warehouse-mgr/creating-calculated-columns.md) 在您的Data Warehouse中，系統會要求您定義一個路徑，描述您正在建立欄的表格如何與您正在提取資訊的表格相關。 若要成功建立路徑，您需要知道兩件事：
+时间 [创建计算列](../data-warehouse-mgr/creating-calculated-columns.md) 在您的Data warehouse中，系统会要求您定义一个路径，用于描述您正在创建列的表如何与正在从中提取信息的表相关联。 要成功创建路径，您需要了解以下两点：
 
-1. 資料庫中的資料表如何相互關聯
-1. 定義此關係的主要和外部索引鍵
+1. 数据库中的表如何相互关联
+1. 定义此关系的主键和外键
 
-如果您知道此資訊，可以依照本主題中的指示輕鬆建立路徑。 您可能需要諮詢貴組織的技術專家，或聯絡 [Professional Services團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+如果您知道此信息，可以按照本主题中的说明轻松创建路径。 您可能需要咨询贵组织的技术专家，或联系 [Professional Services团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
-## 重新整理表格關係和索引鍵型別 {#refresher}
+## 刷新表关系和键类型 {#refresher}
 
-### 表格關係 {#relationships}
+### 表关系 {#relationships}
 
-本概念的說明請參閱 [瞭解和評估表格關係文章](../../data-analyst/data-warehouse-mgr/table-relationships.md)，但快速摘要不會傷害任何人，對嗎？
+此概念在 [了解和评估表关系文章](../../data-analyst/data-warehouse-mgr/table-relationships.md)但是一个简单的摘要不会伤到任何人，对吧？
 
-表格可以透過下列三種方式之一相互關聯：
+表可以通过以下三种方式之一相互关联：
 
 | **`Relationship Type`** | **`Example`** |
 |-----|-----|
-| **`one-to-one`** | 人員與駕照號碼之間的關係。 一個人只能有一個駕駛執照號碼，而且一個駕駛執照號碼只屬於一個人。 |
-| **`one-to-many`** | 訂單與料號之間的關係 — 一個訂單可以包含許多料號，但一個料號屬於單一訂單。 在這種情況下，訂單表格是一面，而料號表格是多面。 |
-| **`many-to-many`** | 產品與類別之間的關係：一個產品可以屬於許多類別，而一個類別可以包含許多產品。 |
+| **`one-to-one`** | 人与驾照号码之间的关系。 一个人只能有一个驾驶执照号码，一个驾驶执照号码只属于一个人。 |
+| **`one-to-many`** | 订单与物料之间的关系 — 一个订单可以包含多个物料，但一个物料属于单个订单。 在这种情况下，订单表是一侧，而物料表是多侧。 |
+| **`many-to-many`** | 产品与类别之间的关系：一个产品可以属于多个类别，而一个类别可以包含多个产品。 |
 
 {style="table-layout:auto"}
 
-瞭解兩個表格之間的關係後，就可使用它來決定應該建立哪個路徑，以將資訊從一個表格帶入另一個表格。 此下一個步驟需要瞭解有助於建立表格關係的主要和外部索引鍵。
+了解两个表之间的关系后，便可以使用该关系确定应创建哪条路径来将信息从一个表带到另一个表。 此下一步需要知道有助于建立表关系的主键和外键。
 
-### 主要和外部索引鍵 {#keys}
+### 主键和外键 {#keys}
 
-A `Primary Key` 是不變更的資料行或資料行集，會在表格中產生唯一值。 例如，當客戶在網站上訂購時，會在網站中新增一列 `orders` 購物車中的表格，含新的 `order_id`. 此 `order_id` 可讓客戶與企業追蹤該特定訂單的進度。 由於訂單ID是唯一的，因此通常會 `Primary Key` 的 `orders` 表格。
+A `Primary Key` 是一个未更改的列或列集，在表中生成唯一值。 例如，当客户在网站上下达订单时，会在页面上添加一个新行 `orders` 购物车中的表格，带新的 `order_id`. 此 `order_id` 允许客户和公司跟踪该特定订单的进度。 由于订单ID是唯一的，因此它通常 `Primary Key` 的 `orders` 表格。
 
-A `Foreign Key` 是在連結至的表格內建立的欄 `Primary Key` 另一個資料表的資料行。 外部索引鍵會在表格之間建立參考，讓分析人員可以輕鬆查閱記錄並將記錄連結在一起。 假設您想知道哪些訂單屬於您的每位客戶。 此 `customer id` 欄(`Primary Key` 的 `customers` 表格)和 `order_id` 欄(`Foreign Key` 在 `customers` 表格，參考 `Primary Key` 的 `orders` 表格)可讓我們連結及分析此資訊。 建立路徑時，系統會要求您同時定義 `Primary Key` 和 `Foreign Key`.
+A `Foreign Key` 是在表内创建的列，该表链接到 `Primary Key` 另一个表的列。 外键可在表之间创建引用，使分析人员能够轻松查找记录并将记录链接在一起。 假设您想知道哪些订单属于您的每个客户。 此 `customer id` 列(`Primary Key` 的 `customers` 表)和 `order_id` 列(`Foreign Key` 在 `customers` 表，引用 `Primary Key` 的 `orders` 表)来链接和分析此信息。 创建路径时，系统会要求您同时定义 `Primary Key` 和 `Foreign Key`.
 
-## 建立路徑 {#createpath}
+## 创建路径 {#createpath}
 
-在Data Warehouse中建立欄時，您必須定義將資訊從一個表格帶入另一個表格的路徑。 有時候，路徑會預先填入，因為表格之間有路徑，但如果路徑不存在，則必須建立路徑。
+在Data warehouse中创建列时，必须定义将信息从一个表引入另一个表的路径。 有时，路径会预先填充，因为表之间存在路径，但如果不存在这种情况，则必须创建路径。
 
-使用關聯性： **客戶** 和 **訂購** 以向您說明如何操作。 劃分：
+使用以下项之间的关系： **客户** 和 **订单** 来向您展示它是如何做到的。 划分：
 
-* 關係為 `one-to-many`  — 客戶可以有許多訂單，但一個訂單只能有一個客戶。 這會告訴我們關係的方向，或是應該建立計算欄的位置。 在此案例中，它表示資訊來自 `orders` 表格可帶入 `customers` 表格。
-* 此 `primary key` 您要使用的是 `customers.customerid`，或 `customer ID` 中的欄 `customers` 表格。
-* 此 `foreign key` 您要使用的是 `orders.customerid`，或 `customer ID` 中的欄 `orders` 表格。
+* 关系是 `one-to-many`  — 一个客户可以有多个订单，但一个订单只能有一个客户。 这告诉我们关系的方向或应创建计算列的位置。 在本例中，这意味着信息来自 `orders` 表格可引入 `customers` 表格。
+* 此 `primary key` 要使用的是 `customers.customerid`，或 `customer ID` 中的列 `customers` 表格。
+* 此 `foreign key` 要使用的是 `orders.customerid`，或 `customer ID` 中的列 `orders` 表格。
 
-現在，您可以建立路徑。
+现在，您可以创建路径。
 
-1. 按一下 **[!UICONTROL Data > Data Warehouse]**.
-1. 在表格清單中，按一下要建立欄的表格。 在此範例中，它是 `customers` 表格。
-1. 表格結構描述隨即顯示。 按一下 **[!UICONTROL Create New Column]**.
-1. 為欄命名，例如， `Customer's orders`.
-1. 選取欄的定義。 檢視 [計算欄指南](../data-warehouse-mgr/creating-calculated-columns.md) 以取得便利的速查表。
-1. 在 [!UICONTROL Select table and column] 下拉式清單，按一下 **[!UICONTROL Create new path]** 選項。
+1. 单击 **[!UICONTROL Data > Data Warehouse]**.
+1. 在表列表中，单击要在其中创建列的表。 在此示例中，它是 `customers` 表格。
+1. 此时将显示表架构。 单击 **[!UICONTROL Create New Column]**.
+1. 为列命名，例如， `Customer's orders`.
+1. 选择列的定义。 查看 [计算列指南](../data-warehouse-mgr/creating-calculated-columns.md) 买张便利的备忘单。
+1. 在 [!UICONTROL Select table and column] 在下拉菜单中，单击 **[!UICONTROL Create new path]** 选项。
 
-   ![建立計算欄模式的路徑](../../assets/Creating_Paths_modal.png)
+   ![“为计算列创建路径”模式](../../assets/Creating_Paths_modal.png)
 
-1. 使用下拉式清單，選取每個表格的主要和外部索引鍵。
+1. 使用下拉列表，为每个表选择主键和外键。
 
-   於 `Many` 側，您選取 `orders.customerid`  — 請記住，客戶可以有許多訂單。
+   在 `Many` 侧，您选择 `orders.customerid`  — 请记住，客户可以有许多订单。
 
-   於 `One` 側，您選取 `customers.customerid`  — 訂單只能有一個客戶。
+   在 `One` 侧，您选择 `customers.customerid`  — 订单只能有一个客户。
 
-1. 按一下 **[!UICONTROL Save]** 以儲存路徑並完成欄的建立。
+1. 单击 **[!UICONTROL Save]** 以保存路径并完成列创建。
 
-### 建立路徑的限制 {#limits}
+### 创建路径的限制 {#limits}
 
-* **[!DNL Commerce Intelligence]無法猜測主要/外部索引鍵關係**. 您不想將不正確的資料帶入帳戶，因此建立路徑必須手動完成。
+* **[!DNL Commerce Intelligence]无法猜测主/外键关系**. 您不希望将不正确的数据引入您的帐户，因此必须手动创建路径。
 
-* **目前，只能在兩個不同的表格之間指定路徑**. 您嘗試重新建立的邏輯是否涉及兩個以上的表格？ 然後(1)先將欄聯結到中介表格，然後再聯結到「最終目的地」表格，或是(2)參閱 [Professional Services團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 以找出達成目標的最佳方法。
+* **目前，只能在两个不同的表之间指定路径**. 您尝试重新创建的逻辑是否涉及两个以上的表？ 然后，可能有必要执行以下操作(1)先将列连接到中间表，然后再连接到“最终目标”表，或者(2)查阅 [Professional Services团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 找到实现目标的最佳方法。
 
-* **欄一次只能是ONE路徑的外來鍵參考**. 例如，如果 `order_items.order_id` 指向 `orders.id`，則 `order_items.order_id` 無法指向任何其他專案。
+* **列一次只能是ONE路径的外键引用**. 例如，如果 `order_items.order_id` 指向 `orders.id`，则 `order_items.order_id` 无法指向任何其他内容。
 
-* **`Many-to-many`技術上講，路徑可以建立，但通常會產生不良資料，因為兩側都不是真 `one-to-many` 外部索引鍵**. 接近這些路徑的最佳方式一律取決於特定的所需分析。 請洽詢RJ分析師團隊，以找出最佳解決方案。
+* **`Many-to-many`从技术上讲，路径可以创建，但通常会产生不良数据，因为两侧都不是真 `one-to-many` 外键**. 接近这些路径的最佳方法始终取决于特定的所需分析。 请咨询RJ分析团队，以了解最佳解决方案。
 
-如果由於上述一個或多個限制而無法建立計算欄，請聯絡支援並提供您所在欄的說明
+如果由于上述一个或多个限制而无法创建计算列，请与支持人员联系并提供对当前列的描述
 
-## 刪除計算資料行路徑 {#delete}
+## 删除计算列路径 {#delete}
 
-在您的Data Warehouse中建立了不正確的路徑？ 或者你正在做一些春季清潔，想整理一下？ 如果您需要從帳戶中刪除路徑，可以 [傳送票證給Adobe支援分析師](../../guide-overview.md#Submitting-a-Support-Ticket). **請務必包含路徑的名稱！**
+在您的Data warehouse中创建了错误的路径？ 还是说你春天打扫的时候想打扫一下？ 如果需要从帐户中删除路径，您可以 [向Adobe支持分析人员发送票证](../../guide-overview.md#Submitting-a-Support-Ticket). **确保包含路径的名称！**
 
-## 正在結束 {#wrapup}
+## 总结 {#wrapup}
 
-現在您已熟悉如何在Data Warehouse中建立計算欄的路徑。 如果您仍不確定特定路徑，請記住，您可以隨時按一下 **[!UICONTROL Support]** 在您的 [!DNL Commerce Intelligence] 帳戶以取得協助。
+现在您已经习惯了在Data warehouse中为计算列创建路径。 如果您仍不确定特定路径，请记住，您可以随时单击 **[!UICONTROL Support]** 在您的 [!DNL Commerce Intelligence] 帐户以获取帮助。
 
-## 相關
+## 相关
 
-* [瞭解和評估表格關係](../data-warehouse-mgr/table-relationships.md)
-* [建立計算欄的路徑](../data-warehouse-mgr/create-paths-calc-columns.md)
-* [計算欄型別](../data-warehouse-mgr/calc-column-types.md) 正在嘗試建立。
+* [了解和评估表关系](../data-warehouse-mgr/table-relationships.md)
+* [为计算列创建路径](../data-warehouse-mgr/create-paths-calc-columns.md)
+* [计算列类型](../data-warehouse-mgr/calc-column-types.md) 正在尝试创建。

@@ -1,6 +1,6 @@
 ---
-title: 新增Adobe Commerce Intelligence使用者
-description: 瞭解如何新增 [!DNL Commerce Intelligence] 使用者以及如何更新您的使用者名稱或密碼。
+title: 添加新的Adobe Commerce Intelligence用户
+description: 了解如何添加新的 [!DNL Commerce Intelligence] 用户以及如何更新您的用户名或密码。
 exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -9,33 +9,33 @@ ht-degree: 0%
 
 ---
 
-# 新增 [!DNL Adobe Commercer Intelligence] 使用者
+# 添加新 [!DNL Adobe Commercer Intelligence] 用户
 
-1. 按一下右上角的公司名稱，然後選取 **[!UICONTROL Invite User]** 下拉式清單中的。
-1. 輸入使用者名稱和電子郵件。
-1. 設定使用者的 **[!UICONTROL general permission level]**： `Admin`， `Standard`，或 `Read Only`.
-1. 指出此新使用者是否也應負責 **[!UICONTROL billing]** 或 **[!UICONTROL technical]** 核取適當方塊時的問題。
+1. 单击右上角的公司名称，然后选择 **[!UICONTROL Invite User]** 从下拉菜单中查找。
+1. 输入用户名和电子邮件。
+1. 设置用户的 **[!UICONTROL general permission level]**： `Admin`， `Standard`，或 `Read Only`.
+1. 指示此新用户是否也应负责 **[!UICONTROL billing]** 或 **[!UICONTROL technical]** 问题。
 
    >[!NOTE]
    >
-   >若要檢視、新增或變更帳戶的帳單資訊，您必須擁有 `Billing` 許可權。 [許可權是逐個使用者設定的](../../administrator/user-management/user-management.md) 建立使用者帳戶時。 如果您需要 `Billing` 許可權，請聯絡您帳戶的管理員。
+   >要查看、添加或更改帐户的计费信息，您必须拥有 `Billing` 权限。 [权限是逐个用户设置的](../../administrator/user-management/user-management.md) 创建用户帐户时。 如果您需要 `Billing` 权限，请联系您帐户的管理员。
 
-1. 按一下 **[!UICONTROL Save]**.
+1. 单击 **[!UICONTROL Save]**.
 
-新使用者會收到一封包含登入和密碼詳細資訊的電子郵件。
+新用户将收到一封电子邮件，其中包含登录信息和密码详细信息。
 
 >[!NOTE]
 >
->新使用者預設沒有任何儀表板。 Adobe建議您 [共用](../../data-user/dashboards/share-dashboard-with-users.md) 新使用者立即使用的必要控制面板。
+>默认情况下，新用户没有任何仪表板。 Adobe建议您 [共享](../../data-user/dashboards/share-dashboard-with-users.md) 与新用户一起使用的必要功能板。
 
-## 更新您的電子郵件地址或密碼
+## 更新您的电子邮件地址或密码
 
-您可以按一下右上角的公司名稱來更新您的電子郵件地址和/或密碼，然後按一下 **[!UICONTROL Edit Profile]**.
+您可以通过单击右上角的公司名称来更新电子邮件地址和/或密码，然后单击 **[!UICONTROL Edit Profile]**.
 
-## 重新傳送邀請
+## 重新发送邀请
 
-如果您需要重新傳送邀請，請在 [登入頁面](https://dashboard.rjmetrics.com/v2/session/create)，按一下 **[!UICONTROL Forgot?]**，輸入新使用者的電子郵件地址，然後按一下 **[!UICONTROL Reset Password]**. 這會重新傳送邀請並允許使用者登入。
+如果您需要重新发送邀请，请在 [登录页面](https://dashboard.rjmetrics.com/v2/session/create)，单击 **[!UICONTROL Forgot?]**，输入新用户的电子邮件地址，然后单击 **[!UICONTROL Reset Password]**. 这将重新发送邀请，并允许用户登录。
 
 >[!IMPORTANT]
 >
->每個帳戶都有合約數量的授權或名額。 如果您達到上限或想瞭解更多， [提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+>每个帐户都有一个合同数量的许可证或名额。 如果您达到限制或想了解更多信息， [提交支持服务单](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

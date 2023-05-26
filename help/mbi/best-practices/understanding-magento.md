@@ -1,6 +1,6 @@
 ---
-title: 瞭解您的 [!DNL Commerce Intelligence] 環境
-description: 瞭解如何使用並改善您的 [!DNL Commerce Intelligence] 環境。
+title: 了解您的 [!DNL Commerce Intelligence] 环境
+description: 了解如何使用和改进您的 [!DNL Commerce Intelligence] 环境。
 exl-id: 601b5fba-da02-4cc8-96ed-147c24f326f9
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -9,36 +9,36 @@ ht-degree: 0%
 
 ---
 
-# 您的 [!DNL Adobe Commerce Intelligence] 環境
+# 您的 [!DNL Adobe Commerce Intelligence] 环境
 
-分析商務資料時，請注意這些因素和常見的誤解。 如果您需要協助以確保正確使用您的Commerce結構描述，請立即 [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+在分析商业数据时，请注意这些因素和常见的误解。 如果您在确保正确使用Commerce架构方面需要帮助，请立即 [联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## [!DNL entity\_id]
 
-許多表格包含名為的欄 `entity\_id`. 在每個包含 `entity\_id`，該欄用於識別唯一列。
+许多表都包含名为的列 `entity\_id`. 在每个包含 `entity\_id`，该列用于标识唯一行。
 
-例如， `sales\_order` 表格為唯一順序。 此表格中的主索引鍵稱為 `entity\_id`. 可將此欄視為 `order\_id`. 在另一個表格中， `customer\_entity`，每一列代表一個不重複客戶。 此表格中的主索引鍵也稱為 `entity\_id`，這可以視為 `customer\_id`.
+例如， `sales\_order` 表格是一个唯一顺序。 此表的主键名为 `entity\_id`. 本专栏可被认为是 `order\_id`. 在一个单独的表格中， `customer\_entity`，每一行表示一个唯一的客户。 此表中的主键也称为 `entity\_id`，可以将其视为 `customer\_id`.
 
-在這些表格中， `sales\_order.entity\_id` 不等於 `customer\_entity.entity\_id`. 這適用於包含下列專案的所有資料表集： true `entity\_id`： `table\_A.entity\_id` 不等於 `table\_B.entity\_id`.
+在那些表格里， `sales\_order.entity\_id` 不等于 `customer\_entity.entity\_id`. 对于包含以下项的所有表集，此情况都为true `entity\_id`： `table\_A.entity\_id` 不等于 `table\_B.entity\_id`.
 
 ## [!DNL Guest orders]
 
-如果您允許客戶在沒有帳戶的情況下從您的網站訂購（訪客訂單），這些客戶不會將填入為 `customer\_entity` 表格。 此外，訪客下單的每個訂單都有一個Null `customer\_id` 上的值 `sales\_order` 表格。
+如果您允许客户在没有帐户的情况下从您的网站订购（访客订单），则这些客户不会在 `customer\_entity` 表格。 此外，访客下单的每个订单都为空 `customer\_id` 值 `sales\_order` 表格。
 
-因此，如果您想要追蹤來賓在一段時間內的行為，所有客戶層級欄位都必須在頁面上計算 `sales\_order` 表格，使用客戶識別碼，例如 `customer\_email`.
+因此，如果您希望跟踪来宾在一段时间内的行为，所有客户级别的列都必须根据 `sales\_order` 表，使用客户标识符，例如 `customer\_email`.
 
-如果您使用 `sales\_order` 表格作為客戶表格時，您建立客戶層級量度時必須小心。 例如，考慮平均期限收入量度。 此量度用於識別客戶群中的平均期限收入。 首先，需要新欄，讓每個客戶傳回其期限收入。 接著，您必須平均此欄位才能取得客戶的平均期限收入。
+如果您使用 `sales\_order` 表，则在创建客户级别量度时必须小心。 例如，考虑平均生命周期收入量度。 此量度用于标识整个客户群的平均生命周期收入。 首先，需要新列，以便为每个客户返回其生命周期收入。 然后，您必须对此列求平均值，以获取客户的平均生命周期收入。
 
-如果您能使用 `customer\_entity` 表格中，每一列都是單一客戶，且每個客戶僅存在於該表格中一次。 因此，當您有期限收入欄時，您只需要建立平均量度即可。 不過，如果您使用 `sales\_order` 表格作為您的客戶表格，客戶可能會存在於許多列中。 設定期限收入欄後，指定客戶下的每個訂單（列）會顯示客戶的期限收入；但您只想將該客戶納入整體平均量度一次。
+如果您能够使用 `customer\_entity` 表，每一行都是一个客户，并且每个客户仅在该表中存在一次。 因此，当您具有生命周期收入列时，您只需创建一个平均量度。 但是，如果您使用 `sales\_order` 表作为客户表，客户可能存在于许多行中。 设置生命周期收入列后，给定客户下达的每个订单（行）将显示该客户的生命周期收入；但您只想在总体平均量度中包含该客户一次。
 
-這裡的訣竅在於您必須將篩選器新增至量度，確保只包含每位客戶一次。 Adobe鼓勵您建立並使用篩選器集，命名為 **我們計算的客戶** 篩選條件 **客戶的訂單編號= 1** （您可能需要使用其他篩選器來排除不想要的客戶）。 新增此篩選器可確保您將每個客戶僅納入客戶層級量度一次。
+这里的技巧是，您必须向量度添加一个过滤器，以确保只包含每个客户一次。 Adobe鼓励您创建并使用名为的过滤器集 **我们计算的客户** 筛选条件 **客户的订单编号= 1** （在排除不需要的客户时，您可能需要使用其他过滤器）。 添加此过滤器可确保每个客户在客户级别的量度中仅包含一次。
 
-## 產品和類別
+## 产品和类别
 
-產品可以有多個類別，而類別可用於多個產品。 因此，在設定類別層級分析時，您必須小心使用正確的定義。 您要頂層類別嗎？ 第二層類別？ 如果產品可能屬於多個頂層類別，該怎麼辦？
+产品可以有多个类别，而类别可用于多个产品。 因此，在设置类别级别分析时，必须注意使用正确的定义。 是否要顶级类别？ 二级类别？ 如果产品可以归入多个顶级类别，该怎么办？
 
-想像一下，根據Commerce實作的定義，有一對牛仔褲分為3個不同的類別層級：「服飾」（頂層）、「外套」（第二層）和「褲子」（第三層）。 您可能希望依售出件數來分析類別效能。 此分析所需的量度為 _已售出專案_，建立在 `sales\_order\_item` 表格。 因此，您必須將類別層級資訊移至料號表格。 上的每一列 `sales\_order\_item` 表格具有相關聯的 `product\_id`，因此，如果您知道與產品相關聯的類別，則可將該資訊移至所需的表格。
+想象一下，根据Commerce实施中的定义，一条牛仔裤分为三个不同的类别级别：“服装”（顶级）、“外套”（第二级）和“裤子”（第三级）。 您可能希望按售出件数分析类别性能。 此分析所需的量度是 _已售出商品_，构建于 `sales\_order\_item` 表格。 因此，您需要将类别级别的信息移动到物料表中。 上的每一行 `sales\_order\_item` 表具有关联的 `product\_id`，因此，如果您知道与产品关联的类别，则可以将该信息转到所需的表中。
 
-在移動任何資料之前，您必須先知道適當的聯結和篩選器，以確保您擷取正確的類別。 對於某些分析，您可能需要知道「褲子」，但在其他分析中，「服裝」可能更合適。 這些是需個別識別的相異類別。 瞭解每個分類層次如何定義，可確保您將單位銷售歸因到適合您特定分析的類別。
+在移动任何数据之前，您必须首先知道正确的联接和过滤器，以确保获取正确的类别。 对于某些分析，您可能需要知道“裤子”，但在其他分析中，“服装”可能更合适。 这些是单独标识的不同类别。 了解每个类别级别的定义方式可确保您将单位销售量归因到特定分析的相应类别。
 
-現在，假設您也有一個 `Our Favorites` 網站首頁上的最上層類別。 您可能已實作Commerce商店，將Jean納入 `Clothing` 類別與 `Our Favorites` 類別。 如果是這樣的話，這雙牛仔褲會有多個頂層類別。 在這種情況下，請將單一頂層類別移至 `sales\_order\_item` 表格並不完全合理，因為有多種選項。 若要解決此問題，Adobe建議建立檢查特定類別的是/否欄。 例如， `Is product in Clothing category?` 和 `Is product in Our Favorites category?` 欄可讓您檢查產品是否屬於這些特定類別。
+现在，想象一下 `Our Favorites` 网站主页上的顶级类别。 您可能已经实施了Commerce商店，以便在这两个商店中都包含这些牛仔裤 `Clothing` 类别和 `Our Favorites` 类别。 如果是这样的话，这双牛仔裤还有多个顶级类别。 在这种情况下，将单个顶级类别移至 `sales\_order\_item` 表格不太合理，因为有多种选择。 为此，Adobe建议创建可检查特定类别的“是”/“否”列。 例如， `Is product in Clothing category?` 和 `Is product in Our Favorites category?` 列允许您检查产品是否属于这些特定类别。

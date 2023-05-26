@@ -1,6 +1,6 @@
 ---
-title: 將SQL查詢轉譯為Commerce Intelligence報表
-description: 瞭解SQL查詢如何轉換為計算量度（您在Commerce Intelligence中使用的量度）。
+title: 将SQL查询转换为Commerce Intelligence报表
+description: 了解如何将SQL查询转换为计算列（您在Commerce Intelligence中使用的量度）。
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
 source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
@@ -9,150 +9,150 @@ ht-degree: 0%
 
 ---
 
-# 在Commerce Intelligence中翻譯SQL查詢
+# 在Commerce Intelligence中翻译SQL查询
 
-曾經想知道如何將SQL查詢轉譯為 [計算欄](../data-warehouse-mgr/creating-calculated-columns.md)， [量度](../../data-user/reports/ess-manage-data-metrics.md)、和 [報告](../../tutorials/using-visual-report-builder.md) 您使用於 [!DNL Commerce Intelligence]？ 如果您是重度的SQL使用者，請瞭解SQL在中轉譯的方式 [!DNL Commerce Intelligence] 可讓您更聰明地在 [Data Warehouse管理員](../data-warehouse-mgr/tour-dwm.md) 並充分利用 [!DNL Commerce Intelligence] 平台。
+曾经想知道如何将SQL查询转换为 [计算列](../data-warehouse-mgr/creating-calculated-columns.md)， [量度](../../data-user/reports/ess-manage-data-metrics.md)、和 [报告](../../tutorials/using-visual-report-builder.md) 您在中使用 [!DNL Commerce Intelligence]？ 如果您是重型SQL用户，请了解SQL在中如何翻译 [!DNL Commerce Intelligence] 使您能够在以下位置更智能地工作： [data warehouse管理器](../data-warehouse-mgr/tour-dwm.md) 并充分利用 [!DNL Commerce Intelligence] 平台。
 
-在本主題的最後，您會找到 **翻譯矩陣** SQL查詢子句和 [!DNL Commerce Intelligence] 元素。
+在本主题的最后，您会找到 **翻译矩阵** SQL查询子句和 [!DNL Commerce Intelligence] 元素。
 
-從檢視一般查詢開始：
+首先查看常规查询：
 
 |  |  |
 |--- |--- |
 | `SELECT` |  |
-| `a,` | 報告 `group by` |
-| `SUM(b)` | `Aggregate function` （欄） |
-| `FROM c` | `Source` 表格 |
+| `a,` | 报告 `group by` |
+| `SUM(b)` | `Aggregate function` （列） |
+| `FROM c` | `Source` 表 |
 | `WHERE` |  |
 | `d IS NOT NULL` | `Filter` |
-| `AND time < X`<br><br> `AND time >= Y` | 報告 `time frame` |
-| `GROUP BY a` | 報告 `group by` |
+| `AND time < X`<br><br> `AND time >= Y` | 报告 `time frame` |
+| `GROUP BY a` | 报告 `group by` |
 
-此範例涵蓋大部分的翻譯案例，但有一些例外。 深入瞭解，從如何 `aggregate` 函式已翻譯。
+此示例涵盖了大多数翻译案例，但有一些例外。 深入了解，从如何 `aggregate` 函数被转换。
 
-## 彙總函式
+## 集合函数
 
-彙總函式(例如， `count`， `sum`， `average`， `max`， `min`)在查詢中，採用以下任一形式 **量度彙總** 或 **欄彙總** 在 [!DNL Commerce Intelligence]. 區別因素在於執行彙總是否需要聯結。
+集合函数(例如， `count`， `sum`， `average`， `max`， `min`)在查询中，可以采用以下形式 **量度聚合** 或 **列聚合** 在 [!DNL Commerce Intelligence]. 区分因素是执行聚合是否需要连接。
 
-檢視上述每個專案的範例。
+查看以上每个方面的示例。
 
-## 量度彙總 {#aggregate}
+## 量度聚合 {#aggregate}
 
-彙總時需要量度 `within a single table`. 舉例來說， `SUM(b)` 來自上述查詢的彙總函式最可能由總和欄的量度表示 `B`. 
+聚合时需要量度 `within a single table`. 例如， `SUM(b)` 来自上述查询的聚合函数极有可能由对列求和的量度表示 `B`. 
 
-檢視以下的特定範例： `Total Revenue` 量度可定義於 [!DNL Commerce Intelligence]. 檢視以下您嘗試翻譯的查詢：
+查看以下特定示例： `Total Revenue` 量度可在 [!DNL Commerce Intelligence]. 查看下面您尝试翻译的查询：
 
 |  |  |
 |--- |--- |
 | `SELECT` |  |
-| `SUM(order_total) as "Total Revenue"` | `Metric operation` （欄） |
-| `FROM orders` | `Metric source` 表格 |
+| `SUM(order_total) as "Total Revenue"` | `Metric operation` （列） |
+| `FROM orders` | `Metric source` 表 |
 | `WHERE` |  |
 | `email NOT LIKE '%@magento.com'` | 量度 `filter` |
-| `AND created_at < X`<br><br>`AND created_at >= Y` | 量度 `timestamp` (和報告 `time range`) |
+| `AND created_at < X`<br><br>`AND created_at >= Y` | 量度 `timestamp` （和报表） `time range`) |
 
-按一下「 」，導覽至量度產生器 **[!UICONTROL Manage Data** > **&#x200B;量度&#x200B;**> **建立新量度]**，您必須先選取適當的 `source` 表格，在此例中為 `orders` 表格。 然後會設定量度，如下所示：
+通过单击导航到量度生成器 **[!UICONTROL Manage Data** > **&#x200B;量度&#x200B;**> **创建新量度]**，您必须首先选择适当的 `source` 表，在此例中为 `orders` 表格。 然后，将设置量度，如下所示：
 
-![量度彙總](../../assets/Metric_aggregation.png)
+![指标聚合](../../assets/Metric_aggregation.png)
 
-## 欄彙總
+## 列聚合
 
-彙總從其他表格聯結的欄時，需要計算欄。 舉例來說，您可能有一個內建欄， `customer` 已呼叫的資料表 `Customer LTV`，會加總在「 」中與該客戶相關聯之所有訂單的總值 `orders` 表格。
+在聚合从另一个表连接的列时，需要计算列。 例如，您可能有一个内置于 `customer` 已调用的表 `Customer LTV`，对以下位置中与该客户关联的所有订单的总值求和： `orders` 表格。
 
-此彙總的查詢可能如下所示：
+此聚合的查询可能如下所示：
 
 |  |  |
 |--- |--- |
 | `Select` |  |
-| `c.customer_id` | 彙總擁有者 |
-| `SUM(o.order_total) as "Customer LTV"` | 彙總操作（欄） |
-| `FROM customers c` | 彙總擁有者表格 |
-| `JOIN orders o` | 彙總來源表格 |
-| `ON c.customer_id = o.customer_id` | 路徑 |
-| `WHERE o.status = 'success'` | 彙總篩選器 |
+| `c.customer_id` | 聚合所有者 |
+| `SUM(o.order_total) as "Customer LTV"` | 聚合操作（列） |
+| `FROM customers c` | 聚合所有者表 |
+| `JOIN orders o` | 聚合源表 |
+| `ON c.customer_id = o.customer_id` | 路径 |
+| `WHERE o.status = 'success'` | 聚合筛选器 |
 
-設定此專案於 [!DNL Commerce Intelligence] 需要使用Data Warehouse管理員，在其中建立 `orders` 和 `customers` 然後建立名為的欄 `Customer LTV` 在您客戶的表格中。
+在中设置 [!DNL Commerce Intelligence] 需要使用Data warehouse管理器，在其中构建 `orders` 和 `customers` 表，然后创建一个名为的列 `Customer LTV` 在您客户的桌子上。
 
-瞭解如何在 `customers` 和 `orders`. 最終目標是在「 」中建立新的彙總欄 `customers` 表格，因此請先導覽至 `customers` Data Warehouse表格，然後按一下 **[!UICONTROL Create a Column** > **&#x200B;選取定義&#x200B;**> **SUM]**.
+了解如何在 `customers` 和 `orders`. 最终目标是在 `customers` 表，因此首先导航到 `customers` data warehouse表格，然后单击 **[!UICONTROL Create a Column** > **&#x200B;选择定义&#x200B;**> **SUM]**.
 
-接下來，您需要選取來源表格。 如果路徑存在您的 `orders` 表格中，只要從下拉式清單中選取它即可。 不過，如果您要建立新路徑，請按一下 **[!UICONTROL Create new path]** 而且畫面會如下所示：
+接下来，您需要选择源表。 如果存在指向您的页面的路径， `orders` 表，只需从下拉菜单中选择它即可。 但是，如果要构建新路径，请单击 **[!UICONTROL Create new path]** 此时将显示以下屏幕：
 
-![建立新路徑](../../assets/Create_new_path.png)
+![创建新路径](../../assets/Create_new_path.png)
 
-在此，您需要仔細考慮您嘗試加入的兩個表格之間的關係。 在此情況下，可能會 `Many` 訂單關聯至 `One` 客戶，因此 `orders` 表格會列於 `Many` 側，而 `customers` 表格已選取於 `One` 側。
+在此，您需要仔细考虑您尝试连接的两个表之间的关系。 在这种情况下，可能会出现 `Many` 与关联的订单 `One` 客户，因此 `orders` 表格列于 `Many` 侧，而 `customers` 表已选择 `One` 侧面。
 
 >[!NOTE]
 >
->在 [!DNL Commerce Intelligence]， a `path` 相當於 `Join` 在SQL中。
+>In [!DNL Commerce Intelligence]， a `path` 等同于 `Join` 在SQL中。
 
-儲存路徑後，您可以建立 `Customer LTV` 欄！ 請參閱下文：
+保存路径后，您可以创建 `Customer LTV` 列！ 请参阅下文：
 
 ![](../../assets/Customer_LTV.gif)
 
-現在您已建置新的 `Customer LTV` 中的欄 `customers` 表格，您已準備好建立 [量度彙總](#aggregate) 使用此欄（例如，找出每位客戶的平均LTV）。 您也可以 `group by` 或 `filter` 的計算欄劃分，該計算欄使用的現有量度建立在 `customers` 表格。
+现在您已构建新的 `Customer LTV` 中的列 `customers` 表，您已准备好创建 [指标聚合](#aggregate) 使用此列（例如，查找每个客户的平均LTV）。 您还可以 `group by` 或 `filter` 的计算列（使用基于以下项构建的现有指标） `customers` 表格。
 
 >[!NOTE]
 >
->對於後者，無論何時建立新的計算欄，您都必須 [將維度新增至現有量度](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 在as a使用之前 `filter` 或 `group by`.
+>对于后者，无论何时构建新的计算列，您都必须 [将维度添加到现有量度](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 在它作为 `filter` 或 `group by`.
 
-另請參閱 [建立計算欄](../data-warehouse-mgr/creating-calculated-columns.md) 與您的Data Warehouse管理員。
+参见 [创建计算列](../data-warehouse-mgr/creating-calculated-columns.md) 您的Data warehouse管理员。
 
 ## `Group By` 子句
 
-`Group By` 查詢中的函式通常表示為 [!DNL Commerce Intelligence] 做為用來劃分或篩選視覺報表的欄。 例如，讓我們重新造訪 `Total Revenue` 您先前探索的查詢，但這次是依 `coupon\_code` 以更清楚瞭解哪些優惠券產生最多收入。
+`Group By` 查询中的函数通常表示为 [!DNL Commerce Intelligence] 用作对可视化报表进行分段或过滤的列。 例如，让我们重新访问 `Total Revenue` 您之前探索的查询，但这次按 `coupon\_code` 以更好地了解哪些优惠券产生的收入最多。
 
-從下列查詢開始：
+从下面的查询开始：
 
 |  |  |
 |--- |--- |
-| `SELECT coupon_code,` | 報告 `group by` |
-| `SUM(order_total) as "Total Revenue"` | `Metric operation`（欄） |
-| `FROM orders` | `Metric source` 表格 |
+| `SELECT coupon_code,` | 报告 `group by` |
+| `SUM(order_total) as "Total Revenue"` | `Metric operation`（列） |
+| `FROM orders` | `Metric source` 表 |
 | `WHERE` |  |
 | `email NOT LIKE '%@magento.com'` | 量度 `filter` |
-| `AND created_at < '2016-12-01'` <br><br>`AND created_at >= '2016-09-01'` | 量度 `timestamp` (和報告 `time range`) |
-| `GROUP BY coupon_code` | 報告 `group by` |
+| `AND created_at < '2016-12-01'` <br><br>`AND created_at >= '2016-09-01'` | 量度 `timestamp` （和报表） `time range`) |
+| `GROUP BY coupon_code` | 报告 `group by` |
 
 >[!NOTE]
 >
->與您之前開始的查詢唯一不同之處在於新增「coupon\_code」作為分組依據。_
+>与之前开始的查询的唯一区别是添加了“coupon\_code”作为分组依据。_
 
-使用相同的 `Total Revenue` 您先前建立的量度，現在已準備好建立依優惠券代碼分段的收入報表！ 請檢視下方的gif，其中顯示如何設定此視覺報表，並檢視9月至11月的資料：
+使用相同的 `Total Revenue` 您之前创建的量度，现在可以创建按优惠券代码分段的收入报表了！ 查看下面的gif，其中显示了如何设置此可视化报表，查看9月至11月的数据：
 
-![依優惠券代碼收入](../../assets/Revenue_by_coupon_code.gif)
+![按优惠券代码列出的收入](../../assets/Revenue_by_coupon_code.gif)
 
 ## 公式
 
-有時候，為了計算不同欄之間的關係，查詢可能涉及多個彙總。 例如，您可以透過下列兩種方式之一計算查詢中的平均訂單值：
+有时，查询可能涉及多个聚合，以便计算单独列之间的关系。 例如，您可以通过以下两种方法之一计算查询中的平均订单值：
 
 * `AVG('order\_total')` 或
 * `SUM('order\_total')/COUNT('order\_id')`
 
-前一種方法會涉及建立新量度，此量度會對 `order\_total` 欄。 不過，後一種方法可直接在Report Builder中建立，假設您已設定量度以計算 `Total Revenue` 和 `Number of orders`.
+前一种方法涉及创建一个新量度，该量度对 `order\_total` 列。 但是，后一种方法可以直接在Report Builder中创建，前提是您已设置指标以计算 `Total Revenue` 和 `Number of orders`.
 
-後退一步，檢視以下專案的整體查詢： `Average order value`：
+退一步看一下针对以下项的整体查询： `Average order value`：
 
 |  |  |
 |--- |--- |
 | `SELECT` |  |
-| `SUM(order_total) as "Total Revenue"` | 量度 `operation` （欄） |
-| `COUNT(order_id) as "Number of orders"` | 量度 `operation` （欄） |
-| `SUM(order_total)/COUNT(order_id) as "Average order value"` | 量度 `operation` （欄） /量度作業（欄） |
-| `FROM orders` | 量度 `source` 表格 |
+| `SUM(order_total) as "Total Revenue"` | 量度 `operation` （列） |
+| `COUNT(order_id) as "Number of orders"` | 量度 `operation` （列） |
+| `SUM(order_total)/COUNT(order_id) as "Average order value"` | 量度 `operation` （列）/量度操作（列） |
+| `FROM orders` | 量度 `source` 表 |
 | `WHERE` |  |
 | `email NOT LIKE '%@magento.com'` | 量度 `filter` |
-| `AND created_at < '2016-12-01'`<br><br>`AND created_at >= '2016-09-01'` | 量度時間戳記（和報告時間範圍） |
+| `AND created_at < '2016-12-01'`<br><br>`AND created_at >= '2016-09-01'` | 量度时间戳（和报告时间范围） |
 
-現在假設您已設定量度以計算 `Total Revenue` 和 `Number of orders`. 由於這些量度存在，因此您只需開啟 `Report Builder` 並使用建立隨選計算 `Formula` 功能：
+现在，假定您已设置指标以计算 `Total Revenue` 和 `Number of orders`. 由于存在这些量度，因此您只需打开 `Report Builder` 并使用创建按需计算 `Formula` 功能：
 
 ![AOV公式](../../assets/AOV_forumula.gif)
 
-## 正在結束
+## 总结
 
-如果您是重度的SQL使用者，請考慮如何在中翻譯查詢 [!DNL Commerce Intelligence] 可讓您建立計算欄、量度和報表。
+如果您是繁重的SQL用户，请考虑查询在中如何翻译 [!DNL Commerce Intelligence] 使您能够构建计算列、量度和报表。
 
-如需快速參考，請檢視下方的矩陣。 這會顯示SQL子句的同等專案 [!DNL Commerce Intelligence] 元素以及它如何對應至多個元素，端視其在查詢中的使用方式而定。
+如需快速参考，请查看下面的矩阵。 这显示了SQL子句的等效项 [!DNL Commerce Intelligence] 元素以及它如何映射到多个元素，具体取决于它在查询中的使用方式。
 
 ## Commerce Intelligence元素
 
-|**`SQL Clause`**|**`Metric`**|**`Filter`**|**`Report group by`**|**`Report time frame`**|**`Path`**|**`Calculated column inputs`**|**`Source table`**| |—|—|—|—|—|—|—|—|—|—| |`SELECT`|X|-|X|-|-|X|-| |`FROM`|-|-|-|-|-|-|X| |`WHERE`X軸 — |-|-|-|-|-| |`WHERE` （含時間元素）|-|-|-|X|-|-|-| |`JOIN...ON`X軸X軸 |`GROUP BY`X軸線 — |-|-|-|-|
+|**`SQL Clause`**|**`Metric`**|**`Filter`**|**`Report group by`**|**`Report time frame`**|**`Path`**|**`Calculated column inputs`**|**`Source table`**| |—|—|—|—|—|—|—|—|—| |`SELECT`X-|X-|-|X-| |`FROM`|-|-|-|-|-|X| |`WHERE`X和X |`WHERE` （含时间元素）|-|-|-|X|-|-|-| |`JOIN...ON`X和X |`GROUP BY`X轴线

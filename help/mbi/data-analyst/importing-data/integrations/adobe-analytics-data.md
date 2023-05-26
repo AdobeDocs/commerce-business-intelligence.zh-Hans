@@ -1,6 +1,6 @@
 ---
-title: 預期 [!DNL Adobe Analytics] 資料
-description: 瞭解連線您的RDS執行個體的步驟。
+title: 预期 [!DNL Adobe Analytics] 数据
+description: 了解连接RDS实例的步骤。
 exl-id: 4df66ec1-c7f3-4b02-8f0f-49cada99c14c
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -9,43 +9,43 @@ ht-degree: 0%
 
 ---
 
-# 預期 [!DNL Adobe Analytics] 資料
+# 预期 [!DNL Adobe Analytics] 数据
 
-此 [!DNL Adobe Analytics] 整合 [!DNL Adobe Commerce Intelligence] 使用 [Analytics 2.0報表API](https://developer.adobe.com/analytics-apis/docs/2.0/#!AdobeDocs/analytics-2.0-apis/master/README.md).
+此 [!DNL Adobe Analytics] 集成 [!DNL Adobe Commerce Intelligence] 使用 [Analytics 2.0报表API](https://developer.adobe.com/analytics-apis/docs/2.0/#!AdobeDocs/analytics-2.0-apis/master/README.md).
 
 >[!INFO]
 >
->為確保您取得預期的資料，您可以先在中建立報表 [!DNL Adobe Analytics] 具有所需量度和維度的工作區。 這可讓您檢查資料的相容性和可用性。
+>为确保您获得所需数据，您可以首先在中构建报表 [!DNL Adobe Analytics] 包含所需量度和维度的工作区。 这允许您检查数据的兼容性和可用性。
 
-每個已連線的報表套裝有一個資料表呼叫 `report-suite-<ID>` (其中 `<ID>` 是由產生的唯一ID [!DNL Commerce Intelligence])中建立的Data Warehouse。
+每个连接的报表包一个表名为 `report-suite-<ID>` (其中 `<ID>` 是由生成的唯一ID [!DNL Commerce Intelligence]data warehouse )的页面名称。
 
-此表格的結構描述是由您在整合設定程式中選取的量度和維度所組成。 還會產生其他數個欄 [!DNL Commerce Intelligence]，用於識別身分。
+此表的架构由您在集成设置过程中选择的量度和维度组成。 还生成了其他多个列 [!DNL Commerce Intelligence]，用于标识目的。
 
-例如，如果您在設定期間選取下列量度和維度：
+例如，如果在设置期间选择了以下量度和维度：
 - `Metric`: `Page views`
 - `Dimension`: `Page`
 
-此表格將包含下列欄：
+该表将包含以下列：
 
-| 欄名稱 | 說明 |
+| 列名称 | 描述 |
 | --- | --- |
-| `_id` | 此欄是主索引鍵。 |
-| `_item_hash` | [!DNL Commerce Intelligence] 唯一識別碼。 此欄的建立者 [!DNL Commerce Intelligence]. |
-| `_updated_at` | 此欄包含上次更新資料列的時間。 建立者： [!DNL Commerce Intelligence]. |
-| `start_date` | 列中包含資料的開始日期。 `start_date` 一列中永遠是同一天的00:00。 |
-| `end_date` | 列所包含資料的結束日期。 `end_date` 一列中永遠是同日23:59。 |
-| `page_views` | 選取的量度：所識別時段內的頁面檢視總數。 |
-| `page` | 選取的維度：具有追蹤檢視的個別頁面名稱。 |
+| `_id` | 此列是主键。 |
+| `_item_hash` | [!DNL Commerce Intelligence] 唯一标识符。 此列的创建者 [!DNL Commerce Intelligence]. |
+| `_updated_at` | 此列包含上次更新数据行的时间。 创建者 [!DNL Commerce Intelligence]. |
+| `start_date` | 行所包含数据的开始日期。 `start_date` 始终为一行中的当天00:00。 |
+| `end_date` | 行所包含数据的结束日期。 `end_date` 始终为一行中当天的23:59。 |
+| `page_views` | 所选量度：已识别的时段内页面查看的总数。 |
+| `page` | 选定的维度：具有跟踪视图的单个页面名称。 |
 
-控制哪些選取的量度和維度可在您的 [!DNL Commerce Intelligence] 表格範例使用 *同步* 或 *取消同步* 中的選項 `Data Warehouse` 頁面。 目前未同步的欄會以灰色顯示。 如果您停止同步欄，可以稍後再次開始同步。
+控制哪些选定的量度和维度在您的 [!DNL Commerce Intelligence] 表，通过使用 *同步* 或 *取消同步* 中的选项 `Data Warehouse` 页面。 当前未同步的列以灰色显示。 如果停止同步列，可以稍后再次开始同步。
 
-## 目前限制
+## 当前限制
 
-本節概述 [!DNL Adobe Analytics] 整合 [!DNL Commerce Intelligence].
+本节概述了 [!DNL Adobe Analytics] 集成 [!DNL Commerce Intelligence].
 
-| 限制 | 說明 |
+| 限制 | 描述 |
 | --- | --- |
-| `Historical data period` | 如同其他協力廠商整合， [!DNL Adobe Analytics] 整合會提取有限的歷史資料量，然後繼續更新資料。 歷史期間設定為2週。 |
-| `Empty component combinations` | 某些量度和維度組合沒有包含資料。 如果選取這種組合進行復寫， [!DNL Commerce Intelligence] 會從複製的表格中排除資料行。 若要避免選取這類組合，您可以先在 [[!DNL Adobe Analytics] Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) 以確認您取得預期的資料。 |
-| `Re-authorization cadence` | 重新授權 [!DNL Adobe Analytics] 每兩週需要整合一次。 若要重新授權，請前往整合的「編輯」頁面，然後按一下 **[!UICONTROL Re-Authorize with [!DNL Adobe Analytics]]**. |
-| `One dimension per row` | [!DNL Adobe Analytics] 一次提供一個維度的量度資料。 如果您在設定期間選取多個維度，則在 [!DNL Commerce Intelligence] 表格包含單一維度值，且每個維度都為null。 |
+| `Historical data period` | 与其他第三方集成一样， [!DNL Adobe Analytics] 集成会提取有限数量的历史数据，然后继续保持数据更新。 历史时段配置为2周。 |
+| `Empty component combinations` | 某些量度和维度组合不包含数据。 如果选择这种组合进行复制， [!DNL Commerce Intelligence] 从复制表中排除列。 要避免选择此类组合，您可以首先在 [[!DNL Adobe Analytics] 工作区](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) 来验证您是否获得了预期的数据。 |
+| `Re-authorization cadence` | 重新授权 [!DNL Adobe Analytics] 每两周需要集成一次。 要重新授权，请转到集成的“编辑”页面并单击 **[!UICONTROL Re-Authorize with [!DNL Adobe Analytics]]**. |
+| `One dimension per row` | [!DNL Adobe Analytics] 一次提供一个维度的量度数据。 如果在设置期间选择多个维，则在 [!DNL Commerce Intelligence] 表包含单个维度值，且每个维都为null。 |

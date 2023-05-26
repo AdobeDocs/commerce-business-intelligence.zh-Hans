@@ -1,6 +1,6 @@
 ---
-title: 檢視付費資訊
-description: 瞭解如何更新您的付費資訊。
+title: 查看计费信息
+description: 了解如何更新账单信息。
 source-git-commit: c3014c03e7ba8faeb88758821d672f664fc6bf22
 workflow-type: tm+mt
 source-wordcount: '46'
@@ -8,6 +8,6 @@ ht-degree: 0%
 
 ---
 
-# 帳單資訊
+# 帐单信息
 
-若要檢視、新增或變更帳戶的帳單資訊，您必須擁有 `Billing` 許可權。 [許可權是逐個使用者設定的](../../administrator/user-management/user-management.md) 建立使用者帳戶時。 如果您需要 `Billing` 許可權，請聯絡您帳戶的管理員。
+要查看、添加或更改帐户的计费信息，您必须拥有 `Billing` 权限。 [权限是逐个用户设置的](../../administrator/user-management/user-management.md) 创建用户帐户时。 如果您需要 `Billing` 权限，请联系您帐户的管理员。

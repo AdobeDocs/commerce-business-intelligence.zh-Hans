@@ -1,6 +1,6 @@
 ---
-title: 使用視覺Report Builder
-description: 瞭解如何分析特定時段內的報表資料。
+title: 使用可视化Report Builder
+description: 了解如何分析报表中特定时间段的数据。
 exl-id: da97b63d-63f0-4fd6-87e3-4cac49a42acc
 source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
@@ -11,140 +11,140 @@ ht-degree: 0%
 
 # 使用 [!DNL Visual Report Builder]
 
-此 [[!DNL Visual Report Builder]](../data-user/reports/ess-rpt-build-visual.md) 可讓您透過視覺化方式探索資料，以獲得深入見解並有助於推動業務決策。 本教學課程將逐步帶您瞭解建立基本報表的程式。
+此 [[!DNL Visual Report Builder]](../data-user/reports/ess-rpt-build-visual.md) 允许您以可视方式浏览数据，从而获取见解并帮助制定业务决策。 本教程将指导您完成创建基本报表的过程。
 
 >[!NOTE]
 >
->若要將報告新增至控制面板，您需要 `Standard` [使用者許可權](../administrator/user-management/user-management.md) 和 `Edit` 控制面板的存取權。
+>要将报告添加到功能板，您需要 `Standard` [用户权限](../administrator/user-management/user-management.md) 和 `Edit` 对仪表板的访问权限。
 
-## 步驟1：建立報表
+## 步骤1：创建报告
 
-若要開始建立報告，請按一下 **[!UICONTROL Report Builder]** 位於側欄或 **[!UICONTROL Add Report]** 任何控制面板頂端的。 當 `Report Builder` 頁面顯示，按一下 **[!UICONTROL Visual Report Builder]** 選項。
+要开始创建报告，请单击 **[!UICONTROL Report Builder]** 在侧栏上或 **[!UICONTROL Add Report]** 位于任何仪表板的顶部。 当 `Report Builder` 页面时，单击 **[!UICONTROL Visual Report Builder]** 选项。
 
-若要編輯在中建立的報告 [!DNL Visual Report Builder]，按一下任何圖表右上角的齒輪（「選項」）圖示，然後按一下 **[!UICONTROL Edit]**.
+编辑在中创建的报告 [!DNL Visual Report Builder]中，单击任意图表右上角的齿轮（选项）图标，然后单击 **[!UICONTROL Edit]**.
 
-## 步驟2：新增量度
+## 步骤2：添加量度
 
-建立分析的第一步是選取 [量度](../data-user/reports/ess-manage-data-metrics.md) 以進行分析。 雖然量度預設會依字母順序列出，但您也可以依支援量度的表格來加以群組。
+创建分析的第一步是选择 [量度](../data-user/reports/ess-manage-data-metrics.md) 以进行分析。 虽然量度默认按字母顺序列出，但您也可以按支持该量度的表对它们进行分组。
 
-在選取初始量度後，您可以新增其他量度，並將所有量度覆蓋在單一報表上，或是透過新增公式來執行多量度計算。
+您可以在选择初始量度后添加其他量度，并将所有量度叠加在单个报表上，或通过添加公式执行多量度计算。
 
-## 步驟3：新增 `Formulas`
+## 步骤3：添加 `Formulas`
 
-`Formulas` 新增至報表(按一下 **[!UICONTROL Add Formula]**，位於報表中量度清單的正上方。 在 [公式編輯器](../data-analyst/dev-reports/formulas-in-rpt-bldr.md)，報表中包含的任何量度都可當作輸入專案使用。 基本的數學運運算元可用來操作不同的量度。
+`Formulas` 通过单击添加到报表 **[!UICONTROL Add Formula]**，位于报表中量度列表的正上方。 在 [公式编辑器](../data-analyst/dev-reports/formulas-in-rpt-bldr.md)，则报表中包含的任何指标都可用作输入。 基本数学运算符用于处理不同的量度。
 
-假設您要建立一份報表，顯示每筆訂單的平均收入。 在此情況下，您將 `Revenue` 量度依據 `Number of orders` 量度。
+假设您要创建一个报表，向我们显示每订单的平均收入。 在这种情况下，您将 `Revenue` 量度依据 `Number of orders` 量度。
 
 ![](../assets/ave-rev-per-order.png)
 
-## 步驟4：設定 `Time Period` 和 `Interval of Analysis` {#time}
+## 步骤4：设置 `Time Period` 和 `Interval of Analysis` {#time}
 
-若要聚焦於特定時間段，您可以設定分析的時間段。 您也可以選擇時間間隔來區隔資料（例如，按年、按季度或按月）。 使用圖表右上角的功能表來設定時段和間隔。
+要将某个特定时间段的值设为0，则可以设置分析的时间段。 您还可以选择时间间隔来按数据分段（例如，按年、按季度或按月）。 使用图表右上角的菜单设置时段和间隔。
 
 ![](../assets/Time_Options_Report_Builder.png)
 
-設定時段的特定日期範圍時，請確定開始日期是間隔的開始，結束日期是間隔的結束。
+为时间段设置特定日期范围时，请确保开始日期在时间间隔的开始日期，结束日期在时间间隔的结束日期。
 
-例如，設定時間週期 `January 1st` 至 `March 1st` 並選取 `monthly` 間隔顯示 `March` 作為資料點，但忽略中的每一天 `March` 例外 `March 1`. 在此情況下，您應將 `Time Period` 從 `January 1 to March 31`.
+例如，设置时间段 `January 1st` 到 `March 1st` 并选择一个 `monthly` 间隔显示 `March` 作为数据点，但忽略中的每一天 `March` 排除 `March 1`. 在这种情况下，您应该将 `Time Period` 起始日期 `January 1 to March 31`.
 
-## 步驟5： `Group by` / `Segmenting the Analysis` {#groupby}
+## 步骤5： `Group by` / `Segmenting the Analysis` {#groupby}
 
-[若要依資料維度劃分量度](../best-practices/segment-filter.md)，按一下 **[!UICONTROL Group by]** 功能表。 這會顯示一個下拉式清單，其中包含清單中包含的第一個量度所有可用的維度。
+[按数据维度划分量度](../best-practices/segment-filter.md)，单击 **[!UICONTROL Group by]** 菜单的位置。 这会显示一个下拉列表，其中包含列表中包含的第一个量度的所有可用维度。
 
-您可以選擇 `None` 以防止量度分段。 例如，您可能想要傳回總收入而不分段的量度，同時讓另一個收入量度依地區分段。
+您可以选择 `None` 以防止对量度进行分段。 例如，您可能希望有一个指标返回总收入但不进行分段，而让另一个收入指标按区域分段。
 
-返回每個訂單範例的平均收入，並將「群組依據」設定為促銷代碼。 這會顯示有促銷代碼和無促銷代碼的訂單的每筆訂單平均收入。
+返回每个订单示例的平均收入，并将分组方式设置为促销代码。 这显示了使用和不使用促销代码的订单的每订单平均收入。
 
 ![](../assets/Group_By_Report_Builder.png)
 
-如果分析中包含的量度是建立在不同資料表格上，則快顯視窗可讓您選取每個表格中相符的資料維度。 此處的目標是尋找共用區段值型別的維度：
+如果分析中包含的量度基于不同的数据表构建，则通过弹出窗口可在每个表中选择匹配的数据维度。 此处的目标是找到共享分段值类型的维度：
 
 ![](../assets/Dimension_Editor.png)
 
-## 步驟6：設定 `Metric Filters`， `Perspective`、和 `Time Interval` {#metric-specific}
+## 步骤6：设置 `Metric Filters`， `Perspective`、和 `Time Interval` {#metric-specific}
 
-對於新增到分析的每個量度，您可以新增篩選器、選取相關的資料透視，並設定 `time interval` 選項。 若要存取這些功能，請按一下漏斗(`Filter`)，眼睛(`Perspective`)和時鐘(`Time`)圖示加以儲存，並位於報表中所包含量度旁邊。
+对于添加到分析的每个量度，您可以添加过滤器，选择相关数据透视，然后设置 `time interval` 选项。 要访问这些功能，请单击漏斗(`Filter`)，眼睛(`Perspective`)和时钟(`Time`)图标，这些图标位于报表中包含的量度旁边。
 
 ![](../assets/Filters_Perspective_Interval_Report_builder.png)
 
 ### `Filters`
 
-`Filters` 限制分析中包含的資料集。 例如，在評估個別贏取管道及移除離群值時，篩選器會很有用。
+`Filters` 限制分析中包含的数据集。 例如，在评估各个客户获取渠道和删除离群值时，过滤器非常有用。
 
-除了下拉式選單和文字方塊之外，您也可以使用特殊的篩選運運算元，例如 `LIKE` 或 `IN` 以建立篩選器。
+除了下拉菜单和文本框之外，您还可以使用特殊的过滤器运算符，例如 `LIKE` 或 `IN` 以创建过滤器。
 
-使用萬用字元(`%` 或 `_`)，搭配 `LIKE` 陳述式受到支援。 此 `%` 萬用字元符合多個字元，而 `_` 只符合任一單一字元。 例如：
+使用通配符(`%` 或 `_`)，替换为 `LIKE` 语句受支持。 此 `%` 通配符匹配多个字符，而 `_` 仅匹配任意单个字符。 例如：
 
-- `affiliate's name Like B%` 僅允許來自名稱開頭為的客戶之資料 `B`.
+- `affiliate's name Like B%` 仅允许来自名称以开头的客户的数据 `B`.
 
-- `affiliate's name Like _ake` 僅允許來自名稱類似以下專案的客戶的資料： `Jake`， `Rake`，或 `Bake` 但不是 `Drake` 或 `Blake`.
+- `affiliate's name Like _ake` 仅允许来自名称类似于 `Jake`， `Rake`，或 `Bake` 但不是 `Drake` 或 `Blake`.
 
-新增多個篩選器可讓您嚴格控制圖表的資料。 依預設，所有篩選條件都必須為true，才會包含資料片段，但您可以編輯「篩選規則」文字方塊來建立OR關係。
+添加多个筛选器可严格控制图表数据。 默认情况下，对于要包含的数据段，所有筛选条件都必须为true，但您可以通过编辑“筛选规则”文本框来创建OR关系。
 
 ![](../assets/edit-filter-rules.png)
 
 ### `Perspectives`
 
-`Perspectives` 可讓您輕鬆切換資料的不同檢視。 檢視可用功能：
+`Perspectives` 允许您轻松地在不同的数据视图之间进行切换。 查看可用内容：
 
-- `Standard perspective`：標準透視在x軸上顯示相符日期的結果（例如1月的收入）。 這是您在「每筆訂單的平均收入」範例中使用的角度。
+- `Standard perspective`：标准透视在x轴上显示匹配日期的结果（例如，一月收入）。 这是您在每个订单的平均收入示例中使用的透视。
 
 ![](../assets/Standard.png)
 
-- `Amount` 或 `Percent Change` 與 `Previous Period` 透視：此透檢視顯示從一個間隔到下一個間隔的變更量或百分比，可用來測量快速變更量度的變更率。 這裡還有一個視角來比較間隔與去年同一時段，以顯示年與年的成長率。
+- `Amount` 或 `Percent Change` 对比 `Previous Period` 透视：此透视图显示从一个间隔到下一个间隔的更改量或更改百分比，可用于测量快速变化的量度中的更改率。 还有一种观点认为，应将这一时间间隔与去年同期进行比较，以显示年同比增长率。
 
 ![](../assets/Amt_or_Percent_Change.png)
 
-- `Cumulative perspective`：此 `cumulative perspective` 顯示一段時間期間內量度的進行中或累計總量。 這通常用於分析客戶總數及規劃未來容量。
+- `Cumulative perspective`：此 `cumulative perspective` 显示指标在相应时段内的持续或累计总和。 这通常用于分析总客户并规划未来容量。
 
 ![](../assets/Cumulative_Perspective.png)
 
-- `Percent of First Value perspective`：此透視以分析中包含的首次時間間隔的百分比顯示資料。 這有助於測量特定動作相對於第一個週期績效的有效性。
+- `Percent of First Value perspective`：此透视以分析中包含的首次时间间隔的百分比显示数据。 这有助于衡量特定操作相对于第一期性能的有效性。
 
 ![](../assets/Percent_of_First_Value.png)
 
-- `Rolling averages window perspective`：滾動平均視窗透視會顯示指定時間範圍內量度的滾動平均值。 間隔必須與報告層級上設定的間隔相同。 例如，如果報表依周顯示收入的最後一個完整季度，您可以將滾動平均期間範圍設定為四周。 這使得前三個值為空，而第四個值代表收入前四週的平均值。 為清楚起見，請務必關閉 `Multiple Y-Axes` 核取方塊。
+- `Rolling averages window perspective`：滚动平均窗口透视显示指定时间范围内量度的滚动平均值。 间隔必须与在报告级别设置的间隔相同。 例如，如果报表按周显示收入的最后一个完整季度，您可以将滚动平均窗口时间范围设置为四周。 这使得前三个值为空，第四个值表示收入前四周的平均值。 为清楚起见，请务必关闭 `Multiple Y-Axes` 复选框。
 
 ![](../assets/rolling_avg_window.png)
 
-### 量度特定時間選項
+### 特定于指标的时间选项
 
-報表中使用的量度有兩個選項：它們可根據全域時間選項或不根據將它們顯示為純量數字的時間趨勢分析。
+报表中使用的量度有两个选项：它们可以根据全局时间选项随时间推移显示趋势，也可以不随时间推移显示趋势，这些选项会将它们显示为标量数字。
 
-將測量結果時間間隔變更為 `None` 傳回 `scalar` number ，建立公式時，此數值將包含時間趨勢量度除以 `scalar` 數字。 此外，您也可以變更 `scalar` 量度至與報表的時間範圍無關的時間範圍。
+将量度时间间隔更改为 `None` 返回 `scalar` 数字，在创建涉及将时间趋势量度除以 `scalar` 数字。 此外，您还可以更改 `scalar` 量度到与报表的时间范围无关的时间范围。
 
-舉例來說，假設您想瞭解2019年的每月收入，以佔2019年整體收入的百分比表示。 您可以新增兩個 `Revenue` 報表的量度，其全域時間範圍從2019年1月1日到2019年12月31日，依每月間隔分段。
+例如，假设您希望看到2019年的月收入在2019年总收入中所占的百分比。 您可以添加两个 `Revenue` 全局时间范围为2019年1月1日至2019年12月31日的报表的量度，按月间隔分段。
 
 >[!NOTE]
 >
->如果您新增 `group by` 尺寸、選擇新的視覺效果，或調整時間間隔，然後只儲存數字(`scalar`)。 下次您從儀表板開啟報表時，不會保留這些調整，只會保留時間範圍。
+>如果添加 `group by` 维度、选择新可视化图表或调整时间间隔，然后仅保存数字(`scalar`)。 下次从仪表板打开该报表时，不会保留这些调整，而只会保留时间范围。
 
-若要進一步瞭解如何在報表中使用時間選項，請參閱此 [教學課程](../tutorials/time-options-visual-rpt-bldr.md).
+要了解有关在报表中使用时间选项的更多信息，请参阅此 [教程](../tutorials/time-options-visual-rpt-bldr.md).
 
-## 步驟7：儲存報表
+## 步骤7：保存报表
 
-建立圖表時，按一下「 」即可儲存圖表 **[!UICONTROL Save]** 右上角的 `Visual Report Builder`.
+创建图表时，可通过单击 **[!UICONTROL Save]** 位于的右上角 `Visual Report Builder`.
 
-您可以選擇儲存圖表、表格或數字(`scalar`)使用 `Type` 下拉式清單以及報告應儲存到的控制面板 `Location` 下拉式清單。
+您可以选择保存图表、表或数字(`scalar`)使用 `Type` 下拉列表以及报告应保存到的功能板 `Location` 下拉菜单。
 
-然後，您可以按一下「 」以儲存報表 **[!UICONTROL Save to Dashboard]**.
+然后，您可以通过单击 **[!UICONTROL Save to Dashboard]**.
 
 ![](../assets/save-to-dashboard.png)
 
-## 報表輸出
+## 报告输出
 
-若要協助您決定要選擇哪個報表輸出，請參閱下列內容：
+要帮助您确定选择哪个报表输出，请参阅以下内容：
 
-### 圖表
+### 图表
 
 ![](../assets/RB_Chart.png)
 
-### 表格
+### 表
 
 ![](../assets/RB_Table.png)
 
-### 數字(`scalar`)
+### 数字(`scalar`)
 
 ![](../assets/RB_Scalar.png)
 
-恭喜！ 您已完成。
+恭喜！ 你完了。

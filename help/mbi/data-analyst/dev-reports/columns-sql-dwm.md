@@ -1,6 +1,6 @@
 ---
-title: SQL和Data Warehouse管理員之間的差異
-description: 瞭解SQL和Data Warehouse管理員之間的差異。
+title: SQL和Data warehouse管理器之间的区别
+description: 了解SQL和Data warehouse管理器之间的区别。
 exl-id: 31dd7a04-5c03-4399-b67e-f51703eb9fea
 source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
@@ -9,18 +9,18 @@ ht-degree: 0%
 
 ---
 
-# 兩者之間的差異 [!DNL SQL] 和 [!DNL Data Warehouse Manager]
+# 之间的差异 [!DNL SQL] 和 [!DNL Data Warehouse Manager]
 
-在中建立的欄之間有兩個主要差異 [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) 以及使用 [[!DNL Data Warehouse Manager]](../data-warehouse-mgr/creating-calculated-columns.md). 一個是與更新週期的相依性，另一個是欄如何儲存在您的帳戶中。
+在中创建的列之间存在两个主要区别 [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) 以及使用 [[!DNL Data Warehouse Manager]](../data-warehouse-mgr/creating-calculated-columns.md). 一个是与更新周期的依赖关系，另一个是列在帐户中的保存方式。
 
-## 中的欄 [!DNL SQL Report Builder]
+## 中的列 [!DNL SQL Report Builder]
 
-欄不依賴於更新週期，因此您不再需要等待一個欄完成之後才能對欄進行迭代。 如果發生錯誤，只需按幾下按鍵即可進行修正，不必再等待兩次更新完成後再返回工作。
+列不依赖于更新周期，因此无需再等待一个列完成即可对列进行迭代。 如果您犯了错误，只需按几下按键即可进行更正 — 无需再等待两次更新完成后即可重新开始工作。
 
 >[!IMPORTANT]
 >
->您使用建立的欄 [!DNL SQL] 編輯器不會儲存至您的Data Warehouse。 您一律可以存取包含欄的查詢，但如果您想要在多個報表中使用欄，則必須在每個報表的查詢中重新建立該欄。 這表示欄是使用 [!DNL SQL] 編輯器無法用於傳統中 [!DNL Report Builder].
+>您使用 [!DNL SQL] 编辑器未保存到您的Data warehouse。 您始终可以访问包含列的查询，但如果您要在多个报表中使用列，则必须在每个报表的查询中重新创建该列。 这意味着使用创建的列 [!DNL SQL] 无法在传统中使用编辑器 [!DNL Report Builder].
 
-## Data Warehouse管理員中的欄
+## data warehouse管理器中的列
 
-欄取決於更新週期，因此必須先完成一個完整的週期，然後才能進行編輯。 這些欄會儲存至Data Warehouse管理員，並可在傳統檔案中使用 [!DNL Report Builder] 或 [!DNL SQL Report Builder].
+列取决于更新周期，因此必须先完成一个完整的周期，然后才能对其进行编辑。 这些列将保存到Data warehouse管理器中，并可在传统模板中使用 [!DNL Report Builder] 或 [!DNL SQL Report Builder].

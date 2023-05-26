@@ -1,6 +1,6 @@
 ---
-title: 重複訂購機率報表
-description: 瞭解並瞭解「重複訂購機率」報表。
+title: 重复订购概率报表
+description: 了解并了解重复订购概率报表。
 exl-id: 2c88b85a-7320-44ca-87a5-5b91250348ea
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -9,33 +9,33 @@ ht-degree: 0%
 
 ---
 
-# 重複訂購機率報表
+# 重复订购概率报表
 
-## 何時為 `Incremental Event Probability` 有透視可用嗎？
+## 何时为 `Incremental Event Probability` 透视是否可用？
 
-此 `incremental event probability` 「透視」僅適用於篩選器使用對所有訂單都相等的維度(例如，使用者的 `gender`，使用者的 `age` 或使用者的 `source`)。
+此 `incremental event probability` 仅当过滤器使用的维度对于所有订单都相等时(例如，用户的 `gender`，用户的 `age` 或用户的 `source`)。
 
-這是因為此觀點仰賴一個名為的維度 `User's order number` 區段劃分，計算使用者的購買數（例如，John的第一次、第二次和第三次訂單）。
+这是因为此视角依赖于名为的维度 `User's order number` 分段，用于统计用户的购买量（例如，John的第一次、第二次和第三次订单）。
 
-如果您新增的篩選使用並非對所有訂單都相等的維度(例如， `Order's Region`)， `User's order number` 維度將不再準確。 這是因為在為使用者的訂單編號時，並未考慮特定區域（例如，John的第1、第2、第3筆訂單仍相同，無論其區域為何）。
+如果添加的过滤器使用的维度并非对所有订单都相等(例如， `Order's Region`)，则 `User's order number` 维度将不再准确。 这是因为在对用户的订单进行编号时，它不考虑特定区域（例如，John的第1、第2、第3个订单仍然相同，无论其区域如何）。
 
-## 將訂單特定維度轉換為使用者特定維度
+## 将特定于订单的维度转换为特定于用户的维度
 
-在某些情況下，您或許可以將 `order-specific` 將維度移入 `user-specific` 要新增為篩選器的維度 `Repeat Order Probability` 圖表。 在這些情況下，您會傳回使用者第一個訂單或最新訂單的訂單屬性（例如，使用者的第一個訂單區域名稱）。
+在某些情况下，您也许能够 `order-specific` 将维度转换为 `user-specific` 添加为筛选器的维度 `Repeat Order Probability` 图表。 在这些情况下，将返回用户第一订单或最新订单的订单属性（例如，用户的第一订单区域名称）。
 
-如果您想要建立此類新維度， [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+如果要创建此类新维度， [联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
-## 比較不同屬性的訂單重複機率
+## 不同属性订单重复概率的比较
 
-若要比較不同訂單屬性(例如訂單的 `region`)，Adobe建議建立類似以下的圖表 `Users by lifetime number of orders`. 這會顯示產生1、2、3...期限訂單數並新增訂單層級篩選器的使用者人數。 （換言之，這可顯示使用者是否在一個地區或另一個地區進行多次重複購買。）
+要比较不同订单属性(例如，订单的 `region`)，Adobe建议创建类似于以下内容的图表 `Users by lifetime number of orders`. 它显示发出1、2、3、...生命周期订单数并添加订单级别过滤器的用户数。 （换句话说，它可以向您显示用户是否在一个地区或另一个地区进行了多次重复购买。）
 
-組成此類圖表的數字可匯出至Excel以計算重複順序機率比率。 若要檢視客戶進行下列活動的機率： `(x)` 要完成的訂單 `(x+1)` 訂購，簡單` divide the number of people who've made at least (x+1) purchases by the number of people who have made at least (x)` 購買。
+然后，可以将构成此类图表的数字导出到excel以计算重复顺序概率比率。 查看客户做出以下操作的可能性 `(x)` 要完成的订单 `(x+1)` 订单，简单` divide the number of people who've made at least (x+1) purchases by the number of people who have made at least (x)` 购买。
 
-### 範例：
+### 示例：
 
-| 類別 | 值 |
+| 类别 | 值 |
 |---|---|
-| 一生中購買1次的客戶數 | `90` |
-| 一生中購買2次的客戶數 | `30` |
-| 一生中購買3次的客戶數 | `10` |
-| 已在其一生中購買過一次以再次購買的客戶的重複訂購機率 | `(30 + 10) / (30+10+90) = 30.77%` |
+| 在其一生中购买了1次的客户数 | `90` |
+| 一生中购买过2次的客户数 | `30` |
+| 一生中购买了3次的客户的数量 | `10` |
+| 已购买过一次的客户再次购买时的重复订购概率 | `(30 + 10) / (30+10+90) = 30.77%` |

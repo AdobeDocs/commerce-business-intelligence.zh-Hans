@@ -1,6 +1,6 @@
 ---
-title: 新架構
-description: 瞭解遷移至新架構的好處。
+title: 新架构
+description: 了解迁移到新架构的好处。
 exl-id: cbb10673-5704-4a90-9574-5ac114f389b9
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -9,42 +9,42 @@ ht-degree: 0%
 
 ---
 
-# 新架構
+# 新架构
 
-[!DNL Adobe Commerce Intelligence] 過去一年，產品與工程團隊一直專注於儘可能進行最全面、最符合需求的改進。 Adobe很高興宣佈推出新功能 [!DNL Commerce Intelligence] 讓這些改善成為現實的產品架構。
+[!DNL Adobe Commerce Intelligence] 过去一年，产品和工程团队一直专注于尽可能进行最全面、最符合要求的改进。 Adobe很高兴宣布推出一款新产品 [!DNL Commerce Intelligence] 使这些改进成为现实的产品体系结构。
 
-## 新架構的優點
+## 新架构的好处
 
-* 在Data Warehouse中建立欄型別，包括使用SQL的計算欄。
-* 新欄可立即使用。
-* 資料延遲大幅改善。
+* 在Data warehouse中创建列类型，包括带SQL的计算列。
+* 新列将立即可用。
+* 数据延迟显着改善。
 
-## 技術優點
+## 技术优势
 
-主要差異列於上面，但主要變更是在更新週期期間執行計算的方式。 在每次更新期間，計算不再在每個欄上執行；而是從視覺Report Builder隨選執行。
+上面列出了主要差异，但主要更改是在更新周期中执行计算的方式。 在每次更新期间，不再在每列上运行计算；而是按需从可视化Report Builder中运行计算。
 
-### 遷移至新架構
+### 迁移到新架构
 
-由於帳戶的基本建設方式不同，因此不會自動將您的Data Warehouse或報表移轉至新的架構帳戶。 遷移至新架構需要重新實作您現有的帳戶。
+由于客户的基本结构不同，因此不会自动将您的Data warehouse或报告迁移到新的架构客户。 迁移到新架构需要重新实施您的现有帐户。
 
-### 遷移至新架構的成本
+### 迁移至新架构的成本
 
-沒有新增成本！ Adobe會為您建立此新帳戶，以開始重新實作，至少有一個月的免費時間。 這可讓您有時間開啟兩個帳戶，以便更輕鬆地執行重新實作，並確保您的團隊沒有服務間隙。
+没有增加成本！ Adobe将为您创建此新帐户以开始重新实施，至少在一个月内免费。 这样，您就有时间打开这两个帐户，以便更轻松地执行重新实施，并确保您的团队不存在服务缺口。
 
-### 在新架構中重新實作帳戶所需的時間
+### 在新架构中重新实施帐户所需的时间
 
-重新實作時間視您要重建的內容而異。 Adobe建議您在現有帳戶中執行下列步驟，以瞭解重新實作中會涉及哪些內容：
+重新实施时间因您要重建的内容而异。 Adobe建议您在现有帐户中执行以下步骤，以了解重新实施所涉及的步骤：
 
-* 識別一組核心報表/控制面板。
-* 識別建立這些報表所需的量度和維度。
-* 識別重新建立這些量度和維度所需的欄。
+* 确定一组核心报表/功能板。
+* 确定构建这些报表所需的量度和维度。
+* 确定重新创建这些量度和维度所需的列。
 
-完成此程式後，您就會知道哪些資料需要同步至新架構Data Warehouse，才能重新建置這些核心報表。
+完成后，您会知道需要同步到新架构Data warehouse的数据，以便重建这些核心报告。
 
-### 取得協助
+### 获取帮助
 
-此 [!DNL Adobe Commerce Intelligence] [服務團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 您只需額外付費即可執行重新實作。 聯絡您的 [Adobe客戶團隊](../../guide-overview.md#Submitting-a-Support-Ticket) 並準備好提供您想要優先在新帳戶中建立的儀表板/報告清單
+此 [!DNL Adobe Commerce Intelligence] [服务团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 可以执行重新实施，但需支付额外费用。 联系 [Adobe客户团队](../../guide-overview.md#Submitting-a-Support-Ticket) 并准备好提供您希望在新帐户中优先创建的功能板/报表的列表
 
-### 繼續使用現有架構
+### 继续使用现有架构
 
-如果這些功能對您來說並不重要，您可以繼續使用現有帳戶。 保留現有帳戶不需額外付費。 Adobe會持續支援這些帳戶，不會有任何變更。
+如果这些功能对您来说并不重要，您可以继续使用现有帐户。 保留现有帐户无需额外付费。 Adobe将继续支持这些帐户，而不会做任何更改。

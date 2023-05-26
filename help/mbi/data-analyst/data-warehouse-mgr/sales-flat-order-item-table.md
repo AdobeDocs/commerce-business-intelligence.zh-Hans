@@ -1,6 +1,6 @@
 ---
-title: sales_order_item表格
-description: 瞭解如何使用sales_order_item表格。
+title: sales_order_item表
+description: 了解如何使用sales_order_item表。
 exl-id: 5c48e985-3ba2-414b-bd1f-555b3da763bd
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -9,83 +9,83 @@ ht-degree: 0%
 
 ---
 
-# `sales_order_item` 表格
+# `sales_order_item` 表
 
-此 `sales_order_item` 表格(`sales_flat_order_item` （在M1上）包含訂單中所購買所有產品的記錄。 每一列代表一個唯一 `sku` 包含在訂單中。 為特定採購的單位數量 `sku` 最常由 `qty_ordered` 欄位。
+此 `sales_order_item` 表(`sales_flat_order_item` （在M1上）包含订单中购买的所有产品的记录。 每一行表示一个唯一的 `sku` 包含在订单中。 为特定采购的单位数量 `sku` 通常由 `qty_ordered` 字段。
 
-## 產品型別
+## 产品类型
 
-此 `sales_order_item` 擷取所有專案的詳細資料 [產品型別](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html#product-types) 已購買的專案。 中的常見做法 [!DNL Adobe Commerce] 是提供可設定的產品，換句話說，就是可根據尺寸、顏色和其他產品屬性自訂的產品。 雖然可設定的產品有其專屬的 `sku`，這可能與多個簡單產品有關，其中每個簡單產品代表一個獨特的產品設定。 請參閱 [設定產品](https://developer.adobe.com/commerce/webapi/rest/tutorials/configurable-product/) 以取得詳細資訊。
+此 `sales_order_item` 捕获全部的详细信息 [产品类型](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html#product-types) 已购买的产品。 中的常见做法 [!DNL Adobe Commerce] 是提供可配置产品，换句话说，就是可根据尺寸、颜色和其他产品属性定制的产品。 尽管可配置产品有其自身的 `sku`，它可以与多个简单产品相关，其中每个简单产品表示一个独特的产品配置。 请参阅 [配置产品](https://developer.adobe.com/commerce/webapi/rest/tutorials/configurable-product/) 了解更多信息。
 
-例如，假設是可設定的產品，例如T恤。 客戶出庫時，會選取選項以變更顏色和大小。 如果客戶選取 `blue`，大小為 `small`，最後他們購買簡單產品，例如 `t-shirt-blue-small` 與的父產品相關 `t-shirt`.
+例如，假定可配置产品为T恤。 客户签出时，会选择选项来更改颜色和大小。 如果客户选择 `blue`，并且大小为 `small`，最终他们购买了一个简单的产品，例如 `t-shirt-blue-small` 与的父产品相关 `t-shirt`.
 
-當可設定的產品包含在訂單中時，會在以下兩列產生： `sales_order_item` 表格：一個用於 [簡單](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-simple.html) `sku` 一個用於 [可設定](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html) 父系。 這兩個記錄位於 `sales_order_item` 表格可透過下列連線彼此關聯：
+当可配置产品包含在订单中时，会在以下位置生成两行： `sales_order_item` 表：一个用于 [简单](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-simple.html) `sku` 一个用于 [可配置](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html) 父级。 这两个记录在 `sales_order_item` 表可以通过以下连接相互关联：
 
-* （簡單） `sales_order_item.parent_item_id` => （可設定） `sales_order_item.item_id`
+* （简单） `sales_order_item.parent_item_id` =>（可配置） `sales_order_item.item_id`
 
-因此，您可以在簡單層次或可設定層次報告產品的銷售情況。 依預設，所有標準 `order-item-level` 中的量度 [!DNL Commerce Intelligence] 設定為排除簡單產品，以及 *僅限* 報告可設定的版本。 這是透過以下方式完成的： `Ordered products we count` 篩選器集，根據條件 `parent_item_id` 是 `NULL`.
+因此，可以在简单级别或可配置级别报告产品的销售情况。 默认情况下，所有标准 `order-item-level` 中的量度 [!DNL Commerce Intelligence] 配置为排除简单产品，并且 *仅限* 报告可配置版本。 这是通过以下方式实现的 `Ordered products we count` 筛选器集，根据条件 `parent_item_id` 是 `NULL`.
 
-## 通用欄
+## 公用列
 
-| **欄名稱** | **說明** |
+| **列名称** | **描述** |
 |----|----|
-| `base_price` | 售出後產品在銷售時的個別單位價格 [目錄價格規則、分級折扣和特殊定價](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) 在套用任何稅捐、運費或購物車折扣之前使用。 以商店的基本貨幣表示。 |
-| `created_at` | 訂單專案的建立時間戳記，以UTC在本機儲存。 視您在中的設定而定 [!DNL Commerce Intelligence]，此時間戳記可能會轉換為中的報表時區 [!DNL Commerce Intelligence] 與您的資料庫時區不同。 |
-| `item_id` (PK) | 資料表的唯一識別碼。 |
-| `name` | 訂單專案的文字名稱。 |
-| `order_id` | `Foreign key` 與 `sales_order` 表格。 加入 `sales_order.entity_id` 以決定與訂單料號相關聯的訂單屬性。 |
-| `parent_item_id` | `Foreign key` 將簡單產品與其父套裝或可設定產品相關聯。 加入 `sales_order_item.item_id` 以判斷與簡單產品相關聯的父產品屬性。 對於父級訂單專案（亦即套件或可配置產品型別），請 `parent_item_id` 是 `NULL`. |
-| `product_id` | `Foreign key` 與 `catalog_product_entity` 表格。 加入 `catalog_product_entity.entity_id` 以決定與訂單料號相關聯的產品屬性。 |
-| `product_type` | 已售出的產品型別。 潛在 [產品型別](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html#product-types) 包括：簡單、可設定、分組、虛擬、套件組合和可下載。 |
-| `qty_ordered` | 銷售時包含在購物車中特定訂單專案的單位數量。 |
-| `sku` | 所購買訂單專案的唯一識別碼。 |
-| `store_id` | `Foreign key` 與 `store` 表格。 加入 `store.store_id` 以判斷與訂單專案相關聯的Commerce商店檢視。 |
+| `base_price` | 售后产品销售时单个单位的价格 [目录价格规则、分层折扣和特殊定价](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) ，且未应用任何税费、运费或购物车折扣。 以存储的基本货币表示。 |
+| `created_at` | 订单项的创建时间戳，以UTC本地存储。 取决于您在中的配置 [!DNL Commerce Intelligence]时，此时间戳可能会转换为中的报表时区 [!DNL Commerce Intelligence] 与您的数据库时区不同的时区。 |
+| `item_id` (PK) | 表的唯一标识符。 |
+| `name` | 订单项的文本名称。 |
+| `order_id` | `Foreign key` 与 `sales_order` 表格。 加入 `sales_order.entity_id` 以确定与订单项目关联的订单属性。 |
+| `parent_item_id` | `Foreign key` 将简单产品与其父捆绑包或可配置产品相关联。 加入 `sales_order_item.item_id` 以确定与简单产品相关的父产品属性。 对于父订单项目（即捆绑包或可配置产品类型）， `parent_item_id` 是 `NULL`. |
+| `product_id` | `Foreign key` 与 `catalog_product_entity` 表格。 加入 `catalog_product_entity.entity_id` 以确定与订单项目关联的产品属性。 |
+| `product_type` | 已销售的产品类型。 潜在 [产品类型](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html#product-types) 包括：简单、可配置、分组、虚拟、捆绑和可下载。 |
+| `qty_ordered` | 销售时特定订单项目购物车中包含的单位数量。 |
+| `sku` | 所购买订单项目的唯一标识符。 |
+| `store_id` | `Foreign key` 与 `store` 表格。 加入 `store.store_id` 以确定与订单项目关联的Commerce商店视图。 |
 
 {style="table-layout:auto"}
 
-## 通用計算欄
+## 通用计算列
 
-| **欄名稱** | **說明** |
+| **列名称** | **描述** |
 |---|---|
-| `Customer's email` | 下訂單客戶的電子郵件地址。 透過加入計算 `sales_order_item.order_id` 至 `sales_order.entity_id` 並傳回 `customer_email` 欄位。 |
-| `Customer's lifetime number of orders` | 此客戶下單的訂單總數。 透過加入計算 `sales_order_item.order_id` 至 `sales_order.entity_id` 並傳回 `Customer's lifetime number of orders` 欄位。 |
-| `Customer's lifetime revenue` | 此客戶下所有訂單的收入總和。 透過加入計算 `sales_order_item.order_id` 至 `sales_order.entity_id` 並傳回 `Customer's lifetime revenue` 欄位。 |
-| `Customer's order number` | 此客戶訂單的循序訂單排名。 透過加入計算 `sales_order_item.order_id` 至 `sales_order.entity_id` 並傳回 `Customer's order number` 欄位。 |
-| `Order item total value (quantity * price)` | 之後銷售時的訂單專案總值 [目錄價格規則、分級折扣和特殊定價](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) 在套用任何稅捐、運費或購物車折扣之前使用。 將計算方式為 `qty_ordered` 依據 `base_price`. |
-| `Order's coupon_code` | 套用至訂單的優惠券。 透過加入計算 `sales_order_item.order_id` 至 `sales_order.entity_id` 並傳回 `coupon_code` 欄位。 |
-| `Order's increment_id` | 訂單的唯一識別碼。 透過加入計算 `sales_order_item.order_id` 至 `sales_order.entity_id` 並傳回 `increment_id` 欄位。 |
-| `Order's status` | 訂單的狀態。 透過加入計算 `sales_order_item.order_id` 至 `sales_order.entity_id` 並傳回 `status` 欄位。 |
-| `Store name` | 與訂單專案相關聯的Commerce商店名稱。 透過加入計算 `sales_order_item.store_id` 至 `store.store_id` 並傳回 `name` 欄位。 |
+| `Customer's email` | 下订单客户的电子邮件地址。 通过加入计算 `sales_order_item.order_id` 到 `sales_order.entity_id` 并返回 `customer_email` 字段。 |
+| `Customer's lifetime number of orders` | 此客户下达的订单总数。 通过加入计算 `sales_order_item.order_id` 到 `sales_order.entity_id` 并返回 `Customer's lifetime number of orders` 字段。 |
+| `Customer's lifetime revenue` | 此客户下达的所有订单的总收入。 通过加入计算 `sales_order_item.order_id` 到 `sales_order.entity_id` 并返回 `Customer's lifetime revenue` 字段。 |
+| `Customer's order number` | 此客户订单的连续订单排名。 通过加入计算 `sales_order_item.order_id` 到 `sales_order.entity_id` 并返回 `Customer's order number` 字段。 |
+| `Order item total value (quantity * price)` | 订单项目在销售时的总值，晚于 [目录价格规则、分层折扣和特殊定价](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) ，且未应用任何税费、运费或购物车折扣。 计算方法为： `qty_ordered` 按 `base_price`. |
+| `Order's coupon_code` | 应用于订单的优惠券。 通过加入计算 `sales_order_item.order_id` 到 `sales_order.entity_id` 并返回 `coupon_code` 字段。 |
+| `Order's increment_id` | 订单的唯一标识符。 通过加入计算 `sales_order_item.order_id` 到 `sales_order.entity_id` 并返回 `increment_id` 字段。 |
+| `Order's status` | 订单的状态。 通过加入计算 `sales_order_item.order_id` 到 `sales_order.entity_id` 并返回 `status` 字段。 |
+| `Store name` | 与订单项目关联的Commerce商店的名称。 通过加入计算 `sales_order_item.store_id` 到 `store.store_id` 并返回 `name` 字段。 |
 
 {style="table-layout:auto"}
 
-## 通用量度
+## 常用量度
 
-| **量度名稱** | **說明** | **建構** |
+| **量度名称** | **描述** | **构造** |
 |---|---|---|
-| `Products ordered` | 銷售時包含在購物車中的產品總數 | `Operation: Sum`<br>`Operand: qty_ordered`<br>`Timestamp: created_at` |
-| `Revenue by products ordered` | 在套用目錄價格規則、階層式折扣和特殊定價之後，以及在套用任何稅捐、運費或購物車折扣之前，購物車中包含的產品總價值 | `Operation: Sum`<br>`Operand: Order item total value (quantity * price)`<br>`Timestamp: created_at` |
+| `Products ordered` | 销售时购物车中包含的产品总数 | `Operation: Sum`<br>`Operand: qty_ordered`<br>`Timestamp: created_at` |
+| `Revenue by products ordered` | 在应用目录价格规则、分层折扣和特殊定价之后且未应用任何税费、运费或购物车折扣之前，购物车中包含的产品在销售时的总价值 | `Operation: Sum`<br>`Operand: Order item total value (quantity * price)`<br>`Timestamp: created_at` |
 
 {style="table-layout:auto"}
 
-## `Foreign Key` 聯結路徑
+## `Foreign Key` 联接路径
 
 `catalog_product_entity`
 
-* 加入 `catalog_product_entity` 表格以建立傳回與訂單料號相關聯之產品屬性的欄位。
-   * 路徑： `sales_order_item.product_id` （許多） => `catalog_product_entity.entity_id` （一）
+* 加入 `catalog_product_entity` 表，用于创建返回与订单项目关联的产品属性的列。
+   * 路径： `sales_order_item.product_id` （许多） => `catalog_product_entity.entity_id` （一）
 
 `sales_order`
 
-* 加入 `sales_order` 表格，以建立與訂單料號相關的新訂單層次欄位。
-   * 路徑： `sales_order_item.order_id` （許多） => `sales_order.entity_id` （一）
+* 加入 `sales_order` 表，用于创建与订单项目关联的新订单层列。
+   * 路径： `sales_order_item.order_id` （许多） => `sales_order.entity_id` （一）
 
 `sales_order_item`
 
-* 加入 `sales_order_item` 建立將上層可設定或捆綁SKU的詳細資訊與簡單產品關聯的欄。 [聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 以取得設定這些計算的協助(若是在Data Warehouse管理員中建立)。
-   * 路徑： `sales_order_item.parent_item_id` （許多） => `sales_order_item.item_id` （一）
+* 加入 `sales_order_item` 创建将父可配置或捆绑SKU的详细信息与简单产品关联的列。 [联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 以获取配置这些计算的帮助(如果在Data warehouse管理器中生成)。
+   * 路径： `sales_order_item.parent_item_id` （许多） => `sales_order_item.item_id` （一）
 
 `store`
 
-* 加入 `store` 此表格可建立傳回與訂單專案相關Commerce商店詳細資訊的欄。
-   * 路徑： `sales_order_item.store_id` （許多） => `store.store_id` （一）
+* 加入 `store` 表，用于创建返回与订单项关联的Commerce商店相关的详细信息的列。
+   * 路径： `sales_order_item.store_id` （许多） => `store.store_id` （一）

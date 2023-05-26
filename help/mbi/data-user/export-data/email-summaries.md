@@ -1,6 +1,6 @@
 ---
-title: 建立自動化的電子郵件摘要
-description: 瞭解如何建立自動化的電子郵件摘要。
+title: 创建自动化的电子邮件摘要
+description: 了解如何创建自动化的电子邮件摘要。
 exl-id: a9aea4fc-9193-467f-8554-3ad77ac3fa73
 source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
@@ -9,91 +9,91 @@ ht-degree: 0%
 
 ---
 
-# 建立自動化的電子郵件摘要
+# 创建自动化的电子邮件摘要
 
-電子郵件摘要是強大的溝通工具，可用來與主要利害關係人分享您的企業的狀態和趨勢。 透過電子郵件摘要，您可以：
+电子邮件摘要是一种功能强大的通信工具，可用于与关键利益相关者共享您的业务状态和趋势。 利用电子邮件摘要，您可以：
 
-* 以電子郵件傳送包含報告的圖形摘要
-* 納入或排除電子郵件摘要作者，以免其收到電子郵件
-* 排程電子郵件傳送時間
-* 編輯、刪除和暫停現有的排程電子郵件摘要
+* 以电子邮件形式发送包含报告的图形摘要
+* 在接收电子邮件时包括或排除电子邮件摘要作者
+* 发送电子邮件的时间安排
+* 编辑、删除和暂停现有的计划电子邮件摘要
 
-## 建立新的電子郵件摘要
+## 新建电子邮件摘要
 
-1. 按一下 **[!DNL Manage Data]** 則 **[!UICONTROL Email Summary]** 在側欄中。
+1. 单击 **[!DNL Manage Data]** 则 **[!UICONTROL Email Summary]** 在侧栏中。
 
-   如果您是第一次建立電子郵件摘要，此頁面不會顯示任何已儲存的摘要。
+   如果这是您首次创建电子邮件摘要，则此页面不会显示任何已保存的摘要。
 
-1. 按一下 **[!UICONTROL Create New Email Summary]** 右上角。
+1. 单击 **[!UICONTROL Create New Email Summary]** 在右上角。
 
-1. 輸入摘要的名稱。
+1. 输入摘要的名称。
 
-   選擇傳達摘要中所包含內容的名稱。 例如， `AOV Comparison`.
+   选择传达摘要中所包含内容的名称。 例如， `AOV Comparison`.
 
-1. 在 `Choose Content` 區段，選取您要包含在摘要中的報告。
+1. 在 `Choose Content` 部分，选择要包含在摘要中的报告。
 
-   您最多可以選取您擁有的10個報表。 選取報表後，若要以表格或圖表形式傳送報表，請使用顯示的圖示加以選取。 如果您以數字儲存報表，則只能以數字傳送。 如需傳送電子郵件摘要的詳細資訊，該摘要包含含有過時資料的報告，請參閱 [管理您的帳戶設定](../../administrator/account-management/managing-account-settings.md).
+   您最多可以选择自己拥有的10个报表。 选择报告后，使用显示的图标选择希望该报告以表格或图表形式发送。 如果将报表另存为数字，则只能以数字发送。 有关发送包含带有过时数据报表的电子邮件摘要的信息，请参阅 [管理帐户设置](../../administrator/account-management/managing-account-settings.md).
 
    >[!NOTE]
    >
-   >`Cohort` 只有當您使用新架構時，才可使用報表。
+   >`Cohort` 仅当使用新架构时，报告才可用。
 
-1. （選用）選取 `Send Email To Me` 如果您想要收到電子郵件。
+1. （可选）选择 `Send Email To Me` 如果您希望接收电子邮件。
 
-1. 若要在電子郵件中加入其他使用者，請在 `Add Email Recipients` 以逗號、空格、定位字元或分號分隔的欄位。
+1. 要在电子邮件中包含其他用户，请在以下位置输入其电子邮件地址： `Add Email Recipients` 以逗号、空格、制表符或分号分隔的字段。
 
-## 排程電子郵件摘要
+## 计划电子邮件摘要
 
-在 `Set when to send the Email Summary` 欄位中，您可以指定何時傳送電子郵件摘要。 選項包括：
+在 `Set when to send the Email Summary` 字段，您可以指定何时发送电子邮件摘要。 选项包括：
 
 * `Manual`
 * `Once`
 * `Repeating`
 
-### 儲存電子郵件摘要以便在稍後日期傳送
+### 保存电子邮件摘要，以便稍后发送
 
-1. 選取 `Manual` 從 `Set when to send the Email Summary` 欄位。
+1. 选择 `Manual` 从 `Set when to send the Email Summary` 字段。
 
-1. 按一下 **[!UICONTROL Save]**.
+1. 单击 **[!UICONTROL Save]**.
 
-   這會將摘要儲存至電子郵件摘要清單。
+   这会将摘要保存到电子邮件摘要列表中。
 
-1. 當您準備好傳送摘要時，請按一下齒輪圖示並選取 `Send Now`.
+1. 准备好发送摘要时，单击齿轮图标并选择 `Send Now`.
 
-### 傳送電子郵件摘要一次
+### 发送电子邮件摘要一次
 
-1. 選取 `Once` 從 `Set when to send the Email Summary` 欄位。
+1. 选择 `Once` 从 `Set when to send the Email Summary` 字段。
 
-1. 在中指定開始日期 `Select Start Date` 行事曆。
+1. 在中指定开始日期 `Select Start Date` 日历。
 
-1. 在中指定傳送電子郵件的時間 `Select time to send` 欄位。
+1. 在中指定发送电子邮件的时间 `Select time to send` 字段。
 
-### 建立重複排程
+### 创建重复计划
 
-1. 選取 `Repeating` 從 `Set when to send the Email Summary` 欄位。
+1. 选择 `Repeating` 从 `Set when to send the Email Summary` 字段。
 
-1. 在 `Set Frequency` 欄位，選取 `Daily`， `Weekly`，或 `Monthly`.
+1. 在 `Set Frequency` 字段，选择 `Daily`， `Weekly`，或 `Monthly`.
 
-1. 在中指定開始日期 `Select Start Date` 行事曆。
+1. 在中指定开始日期 `Select Start Date` 日历。
 
-1. 在中指定傳送電子郵件的時間 `Select time to send` 欄位。
+1. 在中指定发送电子邮件的时间 `Select time to send` 字段。
 
-1. （選擇性）若要指定結束日期，請選取 `End Date` 並從行事曆中選取結束日期。
+1. （可选）要指定结束日期，请选择 `End Date` 并从日历中选择结束日期。
 
-## 修改現有電子郵件摘要
+## 修改现有电子邮件摘要
 
-建立並儲存電子郵件摘要後， `Email Summaries` 頁面會顯示所有已儲存摘要的清單。 您可以展開(`+`)以取得詳細資訊。 此檢視中的欄包括：
+创建并保存电子邮件摘要后， `Email Summaries` 页面显示所有已保存摘要的列表。 您可以展开(`+`)以了解详细信息。 此视图中的列包括：
 
-* `Email Name`  — 電子郵件摘要的名稱
-* `Content`  — 摘要中的內容型別，例如任何報表的名稱。 如需傳送電子郵件摘要的詳細資訊，該摘要包含含有過時資料的報告，請參閱 [管理您的帳戶設定](../../administrator/account-management/managing-account-settings.md).
-* `Scheduled`  — 傳送電子郵件摘要的頻率、日期和時間
-* `Recipients`  — 電子郵件摘要的收件者
-* `Created Date`  — 建立電子郵件摘要的日期
+* `Email Name`  — 电子邮件摘要的名称
+* `Content`  — 摘要中的内容类型，如任何报表的名称。 有关发送包含带有过时数据报表的电子邮件摘要的信息，请参阅 [管理帐户设置](../../administrator/account-management/managing-account-settings.md).
+* `Scheduled`  — 发送电子邮件摘要的频率、日期和时间
+* `Recipients`  — 电子邮件摘要的收件人
+* `Created Date`  — 创建电子邮件摘要的日期
 * `Status` - `Paused` 或 `Active`
 
-按一下每列右側的齒輪圖示，以：
+单击每行右侧的齿轮图标，可以：
 
-* `Send Now`  — 立即傳送電子郵件摘要給所有指定的收件者
-* `Edit`  — 可讓您修改電子郵件摘要的詳細資訊
-* `Pause/Active`  — 可讓您根據設定的方式，暫停傳送電子郵件摘要或啟用摘要
-* `Delete`  — 刪除電子郵件摘要
+* `Send Now`  — 立即向所有指定的收件人发送电子邮件摘要
+* `Edit`  — 用于修改电子邮件摘要的详细信息
+* `Pause/Active`  — 允许您暂停发送电子邮件摘要，或根据配置方式启用摘要
+* `Delete`  — 删除电子邮件摘要

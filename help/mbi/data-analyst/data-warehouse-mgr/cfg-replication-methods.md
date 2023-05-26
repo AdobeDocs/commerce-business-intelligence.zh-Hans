@@ -1,6 +1,6 @@
 ---
-title: 設定復寫方法
-description: 瞭解表格的組織方式，以及表格資料的行為方式，讓您能夠為表格選擇最佳的複製方法。
+title: 配置复制方法
+description: 了解表的组织方式，以及表数据的行为如何允许您为表选择最佳的复制方法。
 exl-id: 83895c48-a6ec-4b01-9890-164e0b21dcbc
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -9,118 +9,118 @@ ht-degree: 0%
 
 ---
 
-# 設定復寫方法
+# 配置复制方法
 
-`Replication` 方法和 [重新檢查](../data-warehouse-mgr/cfg-data-rechecks.md) 用於識別資料庫表格中的新資料或更新資料。 正確設定這些變數對於確保資料正確性和最佳化更新時間至關重要。 本主題著重於復寫方法。
+`Replication` 方法和 [重新检查](../data-warehouse-mgr/cfg-data-rechecks.md) 用于标识数据库表中的新数据或更新数据。 正确设置这些参数对于确保数据准确性和优化更新时间至关重要。 本主题侧重于复制方法。
 
-新表格同步於 [Data Warehouse管理員](../data-warehouse-mgr/tour-dwm.md)，則會自動為表格選擇復寫方法。 瞭解各種複製方法、表格的組織方式以及表格資料的行為方式，讓您為表格選擇最佳的複製方法。
+当新表同步到 [data warehouse管理器](../data-warehouse-mgr/tour-dwm.md)，将自动为表选择复制方法。 了解各种复制方法、表的组织方式以及表数据的行为方式允许您为表选择最佳的复制方法。
 
-## 什麼是復寫方法？
+## 什么是复制方法？
 
-`Replication` 方法分為三個群組 —  `Incremental`， `Full Table`、和 `Paused`.
+`Replication` 方法分为三组： `Incremental`， `Full Table`、和 `Paused`.
 
-[**[!UICONTROL Incremental Replication]**](#incremental) 表示 [!DNL Commerce Intelligence] 僅會復寫每次復寫嘗試的新資料或更新資料。 由於這些方法可大幅減少延遲，Adobe建議儘可能使用它。
+[**[!UICONTROL Incremental Replication]**](#incremental) 表示 [!DNL Commerce Intelligence] 在每次复制尝试时仅复制新的或更新数据。 由于这些方法可显着减少延迟，因此Adobe建议尽可能使用该方法。
 
-[**[!UICONTROL Full Table Replication]**](#fulltable) 表示 [!DNL Commerce Intelligence] 會在每次複製嘗試時複製表格的全部內容。 由於要複製的資料量可能很大，這些方法可能會增加延遲和更新時間。 如果表格包含任何時間戳記或日期時間欄，Adobe建議改用增量方法。
+[**[!UICONTROL Full Table Replication]**](#fulltable) 表示 [!DNL Commerce Intelligence] 在每次复制尝试时复制表的全部内容。 由于要复制的数据量可能很大，因此这些方法可能会增加延迟和更新时间。 如果表包含任何带有时间戳的列或日期时间列，Adobe建议改用增量方法。
 
-**[!UICONTROL Paused]** 表示資料表的復寫已停止或暫停。 [!DNL Commerce Intelligence] 不會在更新週期期間檢查新資料或更新後的資料；這表示不會從以此為複製方法的表格中複製任何資料。
+**[!UICONTROL Paused]** 指示表的复制已停止或暂停。 [!DNL Commerce Intelligence] 在更新周期内不检查新数据或更新数据；这意味着不会从使用此数据作为复制方法的表中复制任何数据。
 
-## 增量複製方法 {#incremental}
+## 增量复制方法 {#incremental}
 
-### 修改時間（最理想）
+### 修改于（最理想）
 
-此 `Modified At` 複製方法使用datetime欄（在建立列時填入，然後在資料變更時更新）來尋找要複製的資料。 此方法的設計是要處理符合下列條件的表格：
+此 `Modified At` 复制方法使用datetime列（在创建行时填充，然后在数据更改时更新）来查找要复制的数据。 此方法旨在处理满足以下条件的表：
 
-* 包含 `datetime` 欄，此欄最初是在建立列時填入，並會在修改列時更新；
-* 此 `datetime` 資料行從不為null；
-* 不會從表格中刪除列
+* 包含 `datetime` 创建行时初始填充的列，并会在修改行时更新；
+* 此 `datetime` 列从不为空；
+* 不会从表中删除行
 
-除了這些條件外，Adobe還建議 **索引** 此 `datetime` 欄用於 `Modified At` 復寫，因為這有助於最佳化復寫速度。
+除了这些标准之外，Adobe还建议 **索引** 此 `datetime` 列用于 `Modified At` 复制，因为这有助于优化复制速度。
 
-當更新執行時，透過搜尋在下列專案中有值的列來識別新資料或已變更的資料： `datetime` 最近一次更新後發生的欄。 探索到新資料列時，會將它們復寫到您的Data Warehouse。 如果有任何列存在於 [Data Warehouse管理員](../data-warehouse-mgr/tour-dwm.md)，則會以目前的資料庫值覆寫。
+当更新运行时，通过搜索在下列位置具有值的行来识别新数据或更改的数据： `datetime` 在最近一次更新后出现的列。 当发现新行时，会将它们复制到您的Data warehouse。 如果有任何行存在于 [data warehouse管理器](../data-warehouse-mgr/tour-dwm.md)时，它们会被当前数据库值覆盖。
 
-例如，表格中可能有一欄稱為 `modified\_at` 表示上次變更資料的時間。 如果最新的更新在星期二中午執行，則更新會搜尋所有具有 `modified\_at` 值大於星期二中午。 自星期二中午以來建立或修改的任何探索到的列都會複製到Data Warehouse。
+例如，一个表可能有一个名为 `modified\_at` 指示上次更改数据的时间。 如果最新的更新在星期二中午运行，则该更新会搜索所有具有 `modified\_at` 值大于星期二中午。 在星期二中午之后创建或修改的任何发现行都将复制到Data warehouse。
 
-**您知道嗎？**
-即使您的資料庫目前無法支援 `Incremental` 複製方法，您也許能夠 [變更您的資料庫](../../best-practices/mod-db-inc-replication.md) 可讓您使用 `Modified At` 或 `Single Auto Incrementing PK`.
+**你知道吗？**
+即使您的数据库当前不支持 `Incremental` 复制方法，您可以 [对数据库进行更改](../../best-practices/mod-db-inc-replication.md) 这将允许使用 `Modified At` 或 `Single Auto Incrementing PK`.
 
-`Modified At` 不僅是最理想的複製方法，也是最快速的複製方法。 此方法不僅會在大型資料集時產生顯著的速度提升，而且不需要設定重新檢查選項。 其他方法需要逐一檢視整個表格以識別變更，即使一小部分資料已變更。 `Modified At` 只會反複處理這個小子集。
+`Modified At` 它不仅是最理想的复制方法，也是最快速的复制方法。 此方法不仅会在大型数据集时产生显着的速度提升，而且不需要配置重新检查选项。 其他方法需要遍历整个表以标识更改，即使一小部分数据发生了更改。 `Modified At` 只遍历该小子集。
 
-### 單一自動遞增主索引鍵
+### 单个自动递增主键
 
-`Auto Incrementing` 是循序將主索引鍵指派給資料列的行為。 如果表格為 `Auto Incrementing` 而表格中的最高主索引鍵是1,000，則下一個主值是1,001或更高。 不使用的表格 `Auto Incrementing` 行為可能會將小於1,000的主索引鍵值或跳至大得多的數字，但這不常使用。
+`Auto Incrementing` 是按顺序将主键分配给行的行为。 如果表为 `Auto Incrementing` 并且表中的最高主键值为1,000，则下一个主值为1,001或更高。 未使用的表 `Auto Incrementing` 行为可以指定一个小于1,000的主键值或跳转到更大的数字，但这并不常用。
 
-此方法旨在從符合下列條件的表格複製新資料：
+此方法旨在从满足以下条件的表中复制新数据：
 
 * `single-column primary key`；和
-* `primary key` 資料型別是 `integer`；和
-* `auto incrementing` 主索引鍵值。
+* `primary key` 数据类型是 `integer`；和
+* `auto incrementing` 主键值。
 
-當表格使用 `Single Auto Incrementing Primary Key` 復寫，透過搜尋高於Data Warehouse中目前最高值的主索引鍵值來探索新資料。 例如，如果Data Warehouse中的最高主鍵值為500，則下次更新執行時，將會搜尋主鍵值為501或更高的列。
+当表使用 `Single Auto Incrementing Primary Key` 复制时，通过搜索高于Data warehouse中当前最高值的主键值来发现新数据。 例如，如果Data warehouse中的最高主键值为500，则下次更新运行时，它将搜索主键值为501或更高的行。
 
-### 新增日期
+### 添加日期
 
-此 `Add Date` 方法的功能類似於 `Single Auto Incrementing Primary Key` 方法。 此方法不會使用整數以作為表格的主索引鍵，而是會使用 `timestamped` 欄以檢查新列。
+此 `Add Date` 方法的功能类似于 `Single Auto Incrementing Primary Key` 方法。 此方法不使用整数以表示表的主键，而是使用 `timestamped` 列来检查新行。
 
-當表格使用 `Add Date` 復寫，透過搜尋時間戳記值(大於同步至您的Data Warehouse的最新日期)來探索新資料。 例如，如果更新上次執行時間為20/12/2015 09:00:00，則時間戳記大於此值的任何列都會標示為新資料並複製。
+当表使用 `Add Date` 复制，通过搜索时间戳值(大于同步到Data warehouse的最新日期)来发现新数据。 例如，如果更新上次运行于2015/20/12/09:00:00，任何时间戳大于此值的行都将标记为新数据并复制。
 
 >[!NOTE]
 >
->不喜歡 `Modified At` 方法， `Add Date` 不會檢查現有列以取得更新資訊 — 它只會期待新列。
+>不像 `Modified At` 方法， `Add Date` 不检查现有行以了解更新的信息 — 它只期待新行。
 
-## 完整資料表複製方法 {#fulltable}
+## 全表复制方法 {#fulltable}
 
-### 完整表格
+### 完整表
 
-`Full table` 復寫會在偵測到新資料列時重新整理整個表格。 這顯然是最不有效的複製方法，因為所有資料都必須在每次更新期間重新處理（假設有新列）。
+`Full table` 每当检测到新行时，复制操作都会刷新整个表。 到目前为止，这是最不有效的复制方法，因为所有数据必须在每次更新期间重新处理（假定有新行）。
 
-在同步化程式開始時查詢資料庫並計算列數，即可偵測到新列。 如果您的本機資料庫包含的資料列超過 [!DNL Commerce Intelligence]，則會重新整理表格。 如果列計數相同，或 [!DNL Commerce Intelligence] 包含 *更多* 資料列，則會略過表格。
+通过在同步过程开始时查询数据库并计算行数来检测新行。 如果本地数据库包含的行数大于 [!DNL Commerce Intelligence]，然后刷新表。 如果行计数相同，或者 [!DNL Commerce Intelligence] 包含 *更多* 行数超过本地数据库行数，则会跳过该表。
 
-這引出了以下重要問題 **`Full Table`當發生下列情況時，復寫不相容：**
+这就引出了一个重要问题 **`Full Table`在以下情况下，复制不兼容：**
 
-* 在後續更新週期之間，刪除的資料列多於在本機資料庫表格中建立的資料列，或者
-* 欄值已變更，但未建立其他列
+* 在后续更新周期之间，删除的行数多于在本地数据库表中创建的行数，或者
+* 列值已更改，但未创建其他行
 
-在上述任一案例中， `Full Table` 復寫不會偵測到任何變更，且您的資料會過時。 由於此複製方法效率低下，且符合上述要求， `Full Table` 僅建議將復寫作為最後手段。
+在上述任一情况下， `Full Table` 复制不会检测到任何更改，您的数据会过时。 由于这种复制方法效率低下，并且满足上述要求， `Full Table` 仅建议将复制作为最后手段。
 
-### 主索引鍵批次
+### 主键批次
 
-當表格使用 `Primary Key Batch` （PK批次），藉由計算主索引鍵值範圍或批次內的列來探索新資料。 雖然您通常認為這會與整數搭配使用，但文字值的排序方式甚至可讓系統定義常數範圍。
+当表使用 `Primary Key Batch` （PK批次），通过计数主键值的范围或批次中的行来发现新数据。 虽然您通常认为这会与整数一起使用，但也可以通过允许系统定义常量范围的方式对文本值进行排序。
 
-例如，假設更新執行並執行索引鍵1到100範圍的列計數。 在此更新中，系統會尋找並記錄37列。 在下次更新中，會在1-100範圍上再次執行列計數，並找到41列。 由於與上次更新相比列數不同，因此系統會更詳細地檢查該範圍（或批次）。
+例如，假设更新运行并对从1到100的键范围执行行计数。 在此更新中，系统会查找并记录37行。 在下一次更新中，再次对1-100范围执行行计数，并找到41行。 由于与上次更新相比，行数存在差异，因此系统会更详细地检查该范围（或批次）。
 
-此方法旨在從符合下列條件的表格複製資料：
+此方法旨在从满足以下条件的表中复制数据：
 
-* 單欄非整數；或
-* 複合索引鍵（包含主索引鍵的多個欄） — 請注意，複合主索引鍵中使用的欄不能有null值；或
-* 單欄、整數、不自動增加主索引鍵值。
+* 单列非整数；或
+* 复合键（包含主键的多个列） — 请注意，复合主键中使用的列不能具有null值；或
+* 单列、整数、不自动递增的主键值。
 
-此方法並不理想，因為為了檢查批次和尋找變更而必須執行的處理量太大，所以速度非常慢。 Adobe建議不要使用此方法，除非無法進行必要的修改以支援其他複製方法。 如果必須使用此方法，預計更新時間會增加。
+此方法并不理想，因为检查批次和查找更改所必须执行的处理量太大，所以它速度非常慢。 Adobe建议不要使用此方法，除非无法进行必要的修改以支持其他复制方法。 如果必须使用此方法，预计更新时间将会增加。
 
-## 設定復寫方法
+## 设置复制方法
 
-複製方法是以逐個表格為基礎設定的。 若要設定表格的復寫方法，您需要 [`Admin`](../../administrator/user-management/user-management.md) 許可權供您存取Data Warehouse管理員。
+复制方法是逐表设置的。 要为表设置复制方法，您需要 [`Admin`](../../administrator/user-management/user-management.md) 权限，以便您可以访问Data warehouse管理器。
 
-1. 進入「Data Warehouse管理員」後，從 `Synced Tables` 清單以顯示表格的綱要。
-1. 目前的復寫方法列在表格名稱下方。 若要變更，請按一下連結。
-1. 在顯示的快顯視窗中，按一下任一專案旁的單選按鈕 `Incremental` 或 `Full Table` 復寫，以選取復寫型別。
-1. 接下來，按一下 **[!UICONTROL Replication Method]** 下拉式清單以選取方法。 例如， `Paused` 或 `Modified At`.
+1. 进入Data warehouse管理器后，从 `Synced Tables` 列表以显示表的架构。
+1. 表名下面列出了当前的复制方法。 要更改它，请单击链接。
+1. 在显示的弹出窗口中，单击任一选项旁边的单选按钮 `Incremental` 或 `Full Table` 复制以选择复制类型。
+1. 接下来，单击 **[!UICONTROL Replication Method]** 下拉菜单以选择方法。 例如， `Paused` 或 `Modified At`.
 
    >[!NOTE]
    >
-   >**有些增量方法會要求您設定`Replication Key`**. [!DNL Commerce Intelligence] 將使用此索引鍵來決定下一個更新週期應從何處開始。
+   >**某些增量方法要求您设置`Replication Key`**. [!DNL Commerce Intelligence] 将使用此键来确定下一个更新周期应从何处开始。
    >
-   >例如，如果您想使用 `modified at` 您的方法 `orders` 表格，您需要設定 `date column` 做為復寫金鑰。 複製金鑰可能有數個選項，但您選取 `created at`，或建立訂單的時間。 如果上次更新週期於2015年12月1日停止:10:00，下一個週期將開始使用 `created at` 日期大於此。
+   >例如，如果要使用 `modified at` 方法 `orders` 表，您需要设置 `date column` 作为复制密钥。 复制密钥可能有多个选项，但您选择 `created at`，或创建订单的时间。 如果上次更新周期停止于2015年12月1日00:10:00，下一个周期将开始使用 `created at` 日期大于此。
 
-1. 完成後，按一下 **[!UICONTROL Save]**.
+1. 完成后，单击 **[!UICONTROL Save]**.
 
-檢視整個程式：
+看看整个过程：
 
 ![](../../assets/replication_method.gif)<!--{: width="801" height="341"}-->
 
-## 正在結束
+## 总结
 
-為了完成，您已經將這個表格放在一起，比較各種複製方法。 為Data Warehouse中的表格選取方法非常方便。
+最后，您将此表放在一起，比较各种复制方法。 在为Data warehouse中的表选择方法时，它非常方便。
 
 | **`Method`** | **`Syncing New Data`** | **`Processing Rechecks on Large Data Sets`** | **`Handle Composite Keys?`** | **`Handle Non-Integer PKs?`** | **`Handle Non-Sequential PK Population?`** | **`Handle Row Deletion?`** |
 |-----|-----|-----|-----|-----|-----|-----|
@@ -130,9 +130,9 @@ ht-degree: 0%
 
 {style="table-layout:auto"}
 
-## 相關檔案
+## 相关文档
 
-* [瞭解資料重新檢查](../data-warehouse-mgr/cfg-data-rechecks.md)
-* [修改資料庫以支援 ](../../best-practices/mod-db-inc-replication.md)
-* [最佳化資料庫以進行分析](../../best-practices/opt-db-analysis.md)
-* [縮短更新時間](../../best-practices/reduce-update-cycle-time.md)
+* [了解数据重新检查](../data-warehouse-mgr/cfg-data-rechecks.md)
+* [修改数据库以支持 ](../../best-practices/mod-db-inc-replication.md)
+* [优化数据库以进行分析](../../best-practices/opt-db-analysis.md)
+* [缩短更新时间](../../best-practices/reduce-update-cycle-time.md)

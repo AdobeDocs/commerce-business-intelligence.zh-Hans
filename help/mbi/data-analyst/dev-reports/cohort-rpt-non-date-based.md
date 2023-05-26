@@ -1,6 +1,6 @@
 ---
-title: 非日期同類群組的同類群組Report Builder
-description: 瞭解如何依類似活動或屬性將使用者分組。
+title: 非基于日期的同类群组的同类群组Report Builder
+description: 了解如何按相似的活动或属性对用户进行分组。
 exl-id: c7b85ce9-113c-4ffc-855f-3d53fe2347d8
 source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
@@ -9,78 +9,78 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Cohort Report Builder] 以非日期為基礎的同類群組
+# [!DNL Cohort Report Builder] 适用于不基于日期的同类群组
 
-此 [`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md) 很適合協助商戶研究不同使用者子集在一段時間內的行為。 在過去， `Cohort Report Builder` 已最佳化為依一般使用者分組 `cohort date` （例如，在指定月份首次購買的所有客戶集）。 此 `Non-Date Based Cohort` 功能現在可讓您依據類似活動或屬性來群組使用者。 檢視此功能的幾個使用案例。
+此 [`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md) 非常适用于帮助商家研究用户在不同时间内的行为方式。 过去， `Cohort Report Builder` 已针对用户分组进行了优化 `cohort date` （例如，在给定月份首次购买的所有客户集）。 此 `Non-Date Based Cohort` 功能现在允许您按类似的活动或属性对用户进行分组。 查看此功能的几个用例。
 
-## 使用案例
+## 用例
 
-這不是一份完整的清單，但以下是一些使用此功能可完成的潛在分析。
+这不是一个全面的列表，但以下是使用此功能可以完成的一些潜在分析。
 
-* 檢查從以下專案取得的客戶收入： [!DNL Google] 與 [!DNL Facebook]
-* 分析首次購買地點為美國與加拿大的客戶
-* 檢視從各種廣告促銷活動取得的客戶行為
+* 审查向附属公司收购之客户之 [!DNL Google] 对比 [!DNL Facebook]
+* 分析首次购买美国与加拿大产品的客户
+* 查看从各种广告促销活动获得的客户行为
 
-## 如何建立分析
+## 如何创建分析
 
-1. 按一下 **[!UICONTROL Report Builder]** 在左側標籤上或 **[!UICONTROL Add Report** > **Create Report]** 在任何儀表板中。
+1. 单击 **[!UICONTROL Report Builder]** 在左侧选项卡上或 **[!UICONTROL Add Report** > **Create Report]** 在任意仪表板中。
 
-1. 在 `Report Builder Selection` 熒幕，按一下 **[!UICONTROL Create Report]** 旁邊 `Visual Report Builder` 選項。
+1. 在 `Report Builder Selection` 屏幕，单击 **[!UICONTROL Create Report]** 旁边的 `Visual Report Builder` 选项。
 
-### 新增量度
+### 添加指标
 
-現在您已在 `Report Builder`，您可新增要對其執行分析的量度(例如： `Revenue` 或 `Orders`)。
+现在您已在 `Report Builder`，您可以添加要对其执行分析的量度(例如： `Revenue` 或 `Orders`)。
 
 >[!NOTE]
 >
->原生 [!DNL Google Analytics] 量度與 `Cohort Report Builder`. 此範例的目標是檢視透過不同方式取得的第一筆訂單客戶在一段時間內的收入 [!DNL Google Analytics] 來源。
+>本机 [!DNL Google Analytics] 指标与 `Cohort Report Builder`. 此示例的目标是查看通过不同渠道获得的第一订单客户在一段时间内的收入 [!DNL Google Analytics] 源。
 
-### 切換 `Metric View` 至 `Cohort`
+### 切换 `Metric View` 到 `Cohort`
 
-![同類群組1切換量度檢視](../../assets/1-toggle-metric-view-to-cohort.png)
+![按同类群组切换量度视图](../../assets/1-toggle-metric-view-to-cohort.png)
 
-這會開啟一個新視窗，您可在其中設定同類群組報表的詳細資料。
+这将打开一个新窗口，您可以在其中配置同类群组报表的详细信息。
 
-建立同類群組報表需要五種規格：
+构建同类群组报表需要五种规范：
 
-1. 如何將同類群組分組
-1. 選取同類群組
-1. 動作時間戳記
-1. 同類群組首次動作時間範圍
-1. 同類群組發生後的時間範圍
+1. 如何将同类群组分组
+1. 选择同类群组
+1. 操作时间戳
+1. 同类群组首次操作时间范围
+1. 同类群组发生后的时间范围
 
-![同類群組群組](../../assets/2-cohort-groups.png)<!--{: width="200" height="224"}-->
+![同类群组](../../assets/2-cohort-groups.png)<!--{: width="200" height="224"}-->
 
 !![cohort-first-action-time-range]<!--(../../assets/3-cohort-first-action-time-range.png){: width="400" height="554"}-->
 
-#### 1.分組 `cohorts`
+#### 1.分组 `cohorts`
 
-`Cohorts` 在此範例中，依行為特徵分組 `Customer's first order GA source`. 此處可用的選項是已經指定為的欄 `groupable` 量度的。
+`Cohorts` 在本例中，按行为特征分组 `Customer's first order GA source`. 此处可用的选项是已指定为的列 `groupable` 对于量度。
 
-#### 2.選取同類群組
+#### 2.选择同类群组
 
-您可以顯示給定特徵的所有結果。 因為這會導致許多 `cohorts`，您可以選取 `cohorts` (對應至下列專案可用的各種值： `Customer's first order GA source`)。
+可以显示给定特征的所有结果。 因为这会导致许多 `cohorts`，您可以选择特定的 `cohorts` （对应于各种可用值） `Customer's first order GA source`)。
 
-![同類群組群組](../../assets/4-cohort-groups.png)<!--{: width="300" height="338"}-->
+![同类群组](../../assets/4-cohort-groups.png)<!--{: width="300" height="338"}-->
 
 #### 3. `Action timestamp`
 
-這可讓您選擇以日期為基礎的欄，而不是建立量度的欄。 在下方，您會看到選取適用於指定的時間範圍 `action timestamp`.
+这允许您选择基于日期的列，而不是创建量度的列。 在下面，您会看到选择适用于给定的时间范围 `action timestamp`.
 
 #### 4. `Cohort first action time range`
 
-您可以在此處選取包含 `cohorts action timestamp` （首次訂購時間為2017年11月至2018年10月的客戶亦是如此）。 這可以是移動日期範圍或固定日期範圍。
+您可以在此处选择包含 `cohorts action timestamp` （第一张订单从2017年11月至2018年10月的客户也是如此）。 这可以是移动日期范围或固定日期范围。
 
 #### 5. `Time range after cohort occurrence`
 
-您想看看 `cohorts` 按月、周或年顯示一段期間？ 您可在這裡進行這些選取。 在該區段下方，您將選取 `time range` 晚於 `cohort action timestamp` 已發生。 例如，對於在動作時間範圍內下第一筆訂單的客戶，這會向您顯示12個月的資料。
+您是否想查看 `cohorts` 按月、周、年划分时间？ 您可在以下位置进行这些选择。 在该部分下，您将选择 `time range` 在 `cohort action timestamp` 已发生。 例如，对于在操作时间范围内下第一张订单的客户，这会向您显示12个月的数据。
 
 ![cohort-first-action-time-range](../../assets/5-cohort-first-action-time-range.png)<!--{: width="400" height="557"}-->
 
 >[!NOTE]
 >
->[!UICONTROL Filters] 當您在兩者之間切換時，套用至量度的功能會維持不變 `Standard` 和 `Cohort` 檢視。
+>[!UICONTROL Filters] 当您在之间切换时，应用到您的量度将保持不变 `Standard` 和 `Cohort` 视图。
 
-### 相關
+### 相关
 
-另請參閱 [`Perspectives`](../../data-analyst/dev-reports/cohort-rpt-bldr.md).
+参见 [`Perspectives`](../../data-analyst/dev-reports/cohort-rpt-bldr.md).

@@ -1,6 +1,6 @@
 ---
-title: 建置[!DNL Google ECommerce]維度
-description: 瞭解如何建立將電子商務資料與訂單和客戶資料連結的維度。
+title: 生成[!DNL Google ECommerce]维度
+description: 了解如何构建将电子商务数据与订单和客户数据关联的维度。
 exl-id: f8a557ae-01d7-4886-8a1c-c0f245c7bc49
 source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
@@ -9,124 +9,124 @@ ht-degree: 0%
 
 ---
 
-# 建置 [!DNL Google ECommerce] Dimension
+# 生成 [!DNL Google ECommerce] Dimension
 
 >[!NOTE]
 >
->需要 [管理員許可權](../../administrator/user-management/user-management.md).
+>需要 [管理员权限](../../administrator/user-management/user-management.md).
 
-現在您已完成 [連線您的[!DNL Google ECommerce] 帳戶](../../data-analyst/importing-data/integrations/google-ecommerce.md)，您能如何處理這些資料？ [!DNL Commerce Intelligence]？ 本主題將引導您建立維度，將您的電子商務資料與您的訂單和客戶資料連結。
+现在您已完成 [连接您的[!DNL Google ECommerce] 帐户](../../data-analyst/importing-data/integrations/google-ecommerce.md)，您可以在中处理这些数据 [!DNL Commerce Intelligence]？ 本主题将指导您构建将电子商务数据与订单和客户数据关联的维度。
 
-所涵蓋的維度可讓您建置分析 [回答有關行銷管道和行銷活動的重要問題](../../data-analyst/analysis/most-value-source-channel.md). 每個來源佔收入的百分比為何？ 的期限值如何 [!DNL Facebook] 已獲得客戶與來自的客戶比較 [!DNL Google]？
+所涵盖的维度使您能够构建分析 [回答有关营销渠道和营销活动的重要问题](../../data-analyst/analysis/most-value-source-channel.md). 每个来源占收入的百分比是多少？ 的生命周期值如何 [!DNL Facebook] 已收购客户与来自已收购客户之比较 [!DNL Google]？
 
-## 必要條件和概觀
+## 先决条件和概述
 
-若要在此主題中建立維度，您需要 [!DNL Google ECommerce] 表格， an `orders` 表格和 `customers` 表格。 這些表格必須 [已同步至您的Data Warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md) 建立維度之前。 已同步的表格會顯示在 `Synced Tables` 部分 `Data Warehouse Manager`.
+要在此主题中创建维度，您需要一个 [!DNL Google ECommerce] 表，一 `orders` 表格和 `customers` 表格。 这些表必须 [已同步到您的Data warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md) 在生成维度之前。 已同步的表显示在 `Synced Tables` 部分 `Data Warehouse Manager`.
 
-如果您需要重新整理程式，以下提供同步表格和欄的快速檢視：
+如果需要刷新程序，可以快速查看同步表和列：
 
 ![](../../assets/Syncing_New_Columns.gif)
 
-從建立聯結之後 `orders` 表格至 [!DNL Google eCommerce] 表格中，您會建立下列清單中的前三個維度。 接下來，您使用這些維度，在 `customers` 表格。 若要完成，請將這些欄聯結到 `orders` 表格。
+从创建连接后 `orders` 表 [!DNL Google eCommerce] 表格中，创建下面列表中的前三个维度。 接下来，使用这些维度在 `customers` 表格。 最后，将这些列联结到 `orders` 表格。
 
-以下是涵蓋的維度：
+下面是所涉及的维度：
 
-* **訂單表格**
+* **订单表**
 
-* 訂單的 [!DNL Google Analytics] source
-* 訂單的 [!DNL Google Analytics] 中
-* 訂單的 [!DNL Google Analytics]行銷活動
-* 客戶的第一筆訂單 [!DNL Google Analytics] source
-* 客戶的第一筆訂單 [!DNL Google Analytics] 中
-* 客戶的第一筆訂單 [!DNL Google Analytics] 行銷活動
+* 订单的 [!DNL Google Analytics] 源
+* 订单的 [!DNL Google Analytics] 中
+* 订单的 [!DNL Google Analytics]营销策划
+* 客户的首份订单 [!DNL Google Analytics] 源
+* 客户的首份订单 [!DNL Google Analytics] 中
+* 客户的首份订单 [!DNL Google Analytics] 营销活动
 
-* **Customers表格**
+* **Customers表**
 
-* 客戶的第一筆訂單 [!DNL Google Analytics] source
-* 客戶的第一筆訂單 [!DNL Google Analytics] 中
-* 客戶的第一筆訂單 [!DNL Google Analytics] 行銷活動
+* 客户的首份订单 [!DNL Google Analytics] 源
+* 客户的首份订单 [!DNL Google Analytics] 中
+* 客户的首份订单 [!DNL Google Analytics] 营销活动
 
-## 建立維度
+## 构建维度
 
-若要建立尺寸，請開啟 [Data Warehouse管理員](../data-warehouse-mgr/tour-dwm.md) 按一下 **[!UICONTROL Data]** > **[!UICONTROL Data Warehouse]**.
+要创建尺寸，请打开 [data warehouse管理器](../data-warehouse-mgr/tour-dwm.md) 通过单击 **[!UICONTROL Data]** > **[!UICONTROL Data Warehouse]**.
 
-### 訂單表格，第1回合
+### 订单表，第1轮
 
-此範例會建置 **訂單的 [!DNL Google Analytics] 來源** 維度。
+此示例构建 **订单的 [!DNL Google Analytics] 来源** 维度。
 
-1. 從Data Warehouse中的表格清單中，按一下表格(在此案例中， `orders`)，其中包含您的訂單資訊。
-1. 按一下 **[!UICONTROL Create a Column]**.
-1. 為欄命名。
-1. 選取 `Joined Column` 從 [定義下拉式清單](../data-warehouse-mgr/calc-column-types.md). 此範例適用於 [一對一關係](../data-warehouse-mgr/table-relationships.md)，比對 `eCommerce.transactionID` 欄中的唯一一列 `orders` 表格。
-1. 接下來，您需要定義路徑，或定義所使用的表格和欄的連線方式。 按一下 `Select a table and column` 下拉式清單。
-1. 您需要的路徑無法使用，因此您需要建立新的路徑。 按一下 **[!UICONTROL Create new Path]**.
-1. 在顯示的視窗中，設定 `Many` 側邊到 `orders.order\_id`，或中的欄 `orders` 包含訂單ID的表格。
-1. 於 `One` 側，尋找 `Google ECommerce` 表格，然後將欄設定為 `transactionID`.
+1. 从Data warehouse中的表列表中，单击表(在本例中， `orders`)，其中包含您的订单信息。
+1. 单击 **[!UICONTROL Create a Column]**.
+1. 命名列。
+1. 选择 `Joined Column` 从 [定义下拉列表](../data-warehouse-mgr/calc-column-types.md). 此示例适用于 [一对一关系](../data-warehouse-mgr/table-relationships.md)，匹配 `eCommerce.transactionID` 一行中的任意一列 `orders` 表格。
+1. 接下来，您需要定义路径，或者定义所使用的表和列的连接方式。 单击 `Select a table and column` 下拉菜单。
+1. 您需要的路径不可用，因此您需要创建一个新路径。 单击 **[!UICONTROL Create new Path]**.
+1. 在显示的窗口中，设置 `Many` 侧到 `orders.order\_id`，或中的列 `orders` 包含订单ID的表。
+1. 在 `One` 侧，查找 `Google ECommerce` 表，然后将列设置为 `transactionID`.
 
    ![](../../assets/google-ecommerce-table.png)
 
-1. 按一下 **[!UICONTROL Save]** 以建立路徑。
-1. 新增路徑後，按一下 **[!UICONTROL Select table and column]** 再下拉式清單。
-1. 找到 `ECommerce` 表格，然後按一下 `Source` 欄。 這會將訂單與來源資訊繫結。
-1. 回到表格結構描述後，請按一下 **[!UICONTROL Save]** 再次建立維度。
+1. 单击 **[!UICONTROL Save]** 以创建路径。
+1. 添加路径后，单击 **[!UICONTROL Select table and column]** 再次下拉菜单。
+1. 找到 `ECommerce` 表，然后单击 `Source` 列。 这会将订单与源信息绑定。
+1. 返回表模式后，单击 **[!UICONTROL Save]** 再次创建维度。
 
-以下是整個程式的概況：
+下面我们来看看整个过程：
 
 ![](../../assets/help_center.gif)
 
-接下來，嘗試建立 **訂單的 [!DNL Google Analytics] 中** 和 `campaign`. 這些維度沒有太多變更，所以請再試一次。 但如果您卡住了，可以結帳檢視 [本文結尾](#stuck) 以檢視不同之處。
+接下来，尝试创建 **订单的 [!DNL Google Analytics] 中** 和 `campaign`. 这些维度变化不大，所以试试看。 但如果你被卡住了，你可以去看看了 [本文结尾](#stuck) 看看有什么不同。
 
-### Customers表格 {#customers}
+### Customers表 {#customers}
 
-此範例會建置 **客戶的第一筆訂單 [!DNL Google Analytics] source** 維度。
+此示例构建 **客户的首份订单 [!DNL Google Analytics] 源** 维度。
 
-1. 從Data Warehouse中的表格清單中，按一下表格(在此案例中， `customers`)，其中包含您的客戶資訊。
-1. 按一下 **[!UICONTROL Create a Column]**.
-1. 為欄命名。
-1. 在此範例中，選取 `is MAX` 定義 [定義下拉式清單](../../data-analyst/data-warehouse-mgr/calc-column-types.md). 此 `is MIN` 定義也可以套用至只有一個可能值的文字欄。 重要部分是確保設定正確的篩選器，稍後再執行。
-1. 按一下 **[!UICONTROL Select a table and column]** 下拉式清單並選取 `orders` 表格，然後 `Order's [!DNL Google Analytics] source` 欄。
-1. 按一下 **[!UICONTROL Save]**.
-1. 回到表格結構描述後，按一下 `Options` 下拉式清單，然後 `Filters`.
-1. 按一下 **[!UICONTROL Add Filter Set]** 然後選取 `Orders we count` 設定。 您只希望納入您盤點篩選集之訂單中的訂單，因此請務必選取此篩選集。
-1. 按一下 **[!UICONTROL Add Filter]**. 您要尋找客戶的第一筆訂單 [!DNL Google Analytics] 來源，因此您需要新增篩選器：
+1. 从Data warehouse中的表列表中，单击表(在本例中， `customers`)，其中包含您的客户信息。
+1. 单击 **[!UICONTROL Create a Column]**.
+1. 命名列。
+1. 对于此示例，请选择 `is MAX` 定义 [定义下拉列表](../../data-analyst/data-warehouse-mgr/calc-column-types.md). 此 `is MIN` 定义也可以应用到只有一个可能值的文本列。 重要的部分是确保设置正确的过滤器，您稍后可以这样做。
+1. 单击 **[!UICONTROL Select a table and column]** 下拉菜单并选择 `orders` 表，然后 `Order's [!DNL Google Analytics] source` 列。
+1. 单击 **[!UICONTROL Save]**.
+1. 返回表模式后，单击 `Options` 下拉列表，然后 `Filters`.
+1. 单击 **[!UICONTROL Add Filter Set]** 然后选择 `Orders we count` 设置。 您只希望将您盘点筛选集的订单中包含的订单包括在内，因此选择此筛选集非常重要。
+1. 单击 **[!UICONTROL Add Filter]**. 您要查找客户的第一张订单 [!DNL Google Analytics] 源，因此您需要添加过滤器：
 
-   _orders.客戶的訂單編號= 1
+   _orders.客户的订单号= 1
 
    _
-1. 按一下 **[!UICONTROL Save]** 以建立維度。
+1. 单击 **[!UICONTROL Save]** 创建尺寸。
 
-接下來，嘗試建立 **客戶的第一筆訂單 [!DNL Google Analytics] 中** 和 `campaign`. 這些維度沒有太多變更，所以請再試一次。 但如果您卡住了，可以結帳檢視 [本文結尾](#stuck) 以檢視不同之處。
+接下来，尝试创建 **客户的首份订单 [!DNL Google Analytics] 中** 和 `campaign`. 这些维度变化不大，所以试试看。 但如果你被卡住了，你可以去看看了 [本文结尾](#stuck) 看看有什么不同。
 
-### 額外優點：訂單表格，第2回合
+### 附加练习：订单表，第2轮
 
-如有需要，您可以在此停止，但本節可讓您透過以下專案來啟用進一步分析： **客戶的第一筆訂單 [!DNL Google Analytics] 維度** 您建立於 [最後一節](#customers) 到 `orders` 表格。 在此區段中建立維度可讓您分析以下專案上建立的所有量度： `orders` 表格 —  `Revenue`， `Number of orders`， `Distinct buyers`，等等 — 使用 [!DNL Google Analytics] 客戶第一筆訂單的屬性。
+如果需要，可以在此处停止，但本节通过提供 **客户的首份订单 [!DNL Google Analytics] 维度** 您已在 [最后一节](#customers) 到 `orders` 表格。 在此部分中创建维度可让您分析以下内容的基础上构建的所有量度： `orders` 表 —  `Revenue`， `Number of orders`， `Distinct buyers`，等等 — 使用 [!DNL Google Analytics] 客户第一笔订单的属性。
 
-此範例會加入 `Customer's first order's [!DNL Google Analytics] source` 的維度 `orders` 表格。
+此示例将 `Customer's first order's [!DNL Google Analytics] source` 维度到 `orders` 表格。
 
-1. 從Data Warehouse中的表格清單中，按一下表格(在此案例中， `orders`)，其中包含您的訂單資訊。
-1. 按一下 **[!UICONTROL Create a Column]**.
-1. 為欄命名。
-1. 選取 `Joined Column` 從定義下拉式清單。 這會將您在上一節建立的客戶維度加入 `orders` 表格。
-1. 按一下 **[!UICONTROL Select a table and column]** 下拉式清單，然後選取 `customers` 表格和 `Customer's first order's [!DNL Google Analytics] source` 欄。
-1. 如果路徑未自動填入，請選取最能連線客戶與訂單表格的路徑。
-1. 按一下 **[!UICONTROL Save]** 以建立維度。
+1. 从Data warehouse中的表列表中，单击表(在本例中， `orders`)，其中包含您的订单信息。
+1. 单击 **[!UICONTROL Create a Column]**.
+1. 命名列。
+1. 选择 `Joined Column` 从“定义”下拉菜单中。 这会将您在上一节中创建的客户维加入 `orders` 表格。
+1. 单击 **[!UICONTROL Select a table and column]** 下拉列表，然后选择 `customers` 表格和 `Customer's first order's [!DNL Google Analytics] source` 列。
+1. 如果路径未自动填充，请选择最能连接customers和orders表的路径。
+1. 单击 **[!UICONTROL Save]** 创建尺寸。
 
-以下是整個程式的概況：
+下面我们来看看整个过程：
 
 ![](../../assets/help_center2.gif)
 
-加入 `Customer's first order's` 中和 `campaign` 的維度 `orders` 表格。 加入維度，如果發生問題，則出庫 [文章結尾](#stuck) 如果您需要協助。
+加入 `Customer's first order's` 中和 `campaign` 的维度 `orders` 表格。 连接维度，如果遇到问题，则检出 [文章的结尾](#stuck) 如果你需要帮助。
 
-### 正在結束
+### 总结
 
-您已建立完維度，這表示您現在可以建立強大的分析來追蹤各種管道和行銷活動的績效。 請記住 **新欄要等到下一次更新完成後才能使用**.
+您完成了维度的创建，这意味着您现在可以创建强大的分析来跟踪各种渠道和营销活动的性能。 请记住 **新列将只有在下次更新完成后才可用**.
 
-本主題會介紹一些較受歡迎的維度，但天空是限制 — 請嘗試建立您自己的維度，或如果您想尋求探索其他選項的協助，請隨時向我們撥打電話。 
+本主题中介绍了一些更受欢迎的维度，但天空才是极限 — 请尝试创建自己的维度，或者如果您想在探索其他选项方面获得帮助，可以随时向我们发出提醒。 
 
-### 其他附註
+### 其他说明
 
-**`Orders`表格#1**：建立時 `Order's [!DNL Google Analytics]` 中和 `campaign` 尺寸不同，差異在於步驟12中選取的欄。 在此範例中，欄是 `Source`.
+**`Orders`表#1**：创建时 `Order's [!DNL Google Analytics]` 中和 `campaign` 维中，差异是在步骤12中选择的列。 在此示例中，列为 `Source`.
 
-**`Customers`表格**：建立時 `Customer's first order's [!DNL Google Analytics]` 中和 `campaign` 尺寸不同，差異在於步驟5中選取的欄。 在此範例中，欄是 `Order's [!DNL Google Analytics]` 來源。
+**`Customers`表**：创建时 `Customer's first order's [!DNL Google Analytics]` 中和 `campaign` 维中，差异在于步骤5中选择的列。 在此示例中，列为 `Order's [!DNL Google Analytics]` 源。
 
-**`Orders`表格#2**：加入 `Customer's first order's [!DNL Google Analytics]` 中和 `campaign` 欄至 `orders` 表格中，差異為步驟5中所選取的欄。 在此範例中，欄是 `Customer's first order's [!DNL Google Analytics]` 來源。
+**`Orders`表#2**：加入 `Customer's first order's [!DNL Google Analytics]` 中和 `campaign` 列到 `orders` 表，其差异为在第5步中选择的列。 在此示例中，列为 `Customer's first order's [!DNL Google Analytics]` 源。

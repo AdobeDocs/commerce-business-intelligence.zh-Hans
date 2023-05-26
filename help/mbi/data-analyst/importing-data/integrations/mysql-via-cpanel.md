@@ -1,6 +1,6 @@
 ---
-title: 透過cPanel連線MySQL
-description: 瞭解如何透過cPanel連線MySQL。
+title: 通过cPanel连接MySQL
+description: 了解如何通过cPanel连接MySQL。
 exl-id: 90b0a0b0-8c6b-4144-95b4-f588f18616c7
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -9,62 +9,62 @@ ht-degree: 0%
 
 ---
 
-# Connect [!DNL MySQL] 透過 [!DNL cPanel]
+# Connect [!DNL MySQL] via [!DNL cPanel]
 
-* [建立 [!DNL Commerce Intelligence] [!DNL MySQL] 使用者在 [!DNL cPanel]](#cpanel)
-* [輸入連線和使用者資訊到 [!DNL Commerce Intelligence]](#finish)
+* [创建 [!DNL Commerce Intelligence] [!DNL MySQL] 用户位置 [!DNL cPanel]](#cpanel)
+* [将连接和用户信息输入到 [!DNL Commerce Intelligence]](#finish)
 
-## 跳至
+## 跳转到
 
-* [[!DNL MySQL] 透過SSH通道](../integrations/mysql-via-ssh-tunnel.md)
-* [[!DNL MySQL] 透過直接連線](../integrations/mysql-via-a-direct-connection.md)
+* [[!DNL MySQL] 通过SSH通道](../integrations/mysql-via-ssh-tunnel.md)
+* [[!DNL MySQL] 通过直接连接](../integrations/mysql-via-a-direct-connection.md)
 
 >[!IMPORTANT]
 >
->[!DNL Adobe] 建議您使用SSH或其他加密形式來保護您的資料！ 如果這不是選項，您仍然可以直接連線 [!DNL Commerce Intelligence] 使用本主題中的指示至您的資料庫。
+>[!DNL Adobe] 建议您使用SSH或其他某种加密形式来保护您的数据！ 如果此选项不可用，您仍可以直接连接 [!DNL Commerce Intelligence] 使用本主题中的说明访问数据库。
 
-本主題將引導您直接連線至 [!DNL MySQL] 資料庫至 [!DNL Commerce Intelligence] 使用 [!DNL cPanel]. 此程式也可用於連線 [!DNL Adobe Commerce] 以及任何其他以MySQL為基礎的電子商務資料庫 [!DNL Commerce Intelligence].
+本主题将指导您完成直接连接 [!DNL MySQL] 数据库至 [!DNL Commerce Intelligence] 使用 [!DNL cPanel]. 此进程也可用于连接 [!DNL Adobe Commerce] 和任何其他基于MySQL的电子商务数据库 [!DNL Commerce Intelligence].
 
-1. 建立 [!DNL Commerce Intelligence] [!DNL MySQL] 使用者在 [!DNL cPanel]
-1. 輸入連線和使用者資訊到 [!DNL Commerce Intelligence]
+1. 创建 [!DNL Commerce Intelligence] [!DNL MySQL] 用户位置 [!DNL cPanel]
+1. 将连接和用户信息输入到 [!DNL Commerce Intelligence]
 
-開始使用。
+开始使用。
 
-## 建立 [!DNL Commerce Intelligence] [!DNL MySQL] 使用者在 [!DNL cPanel] {#cpanel}
+## 创建 [!DNL Commerce Intelligence] [!DNL MySQL] 用户位置 [!DNL cPanel] {#cpanel}
 
-1. 登入 [!DNL cPanel] 透過您的託管提供者。
-1. 按一下 **[!UICONTROL [!DNL MySQL] Databases]**，位於 `Database` 區段。
-1. 向下捲動至 `Add New User` 部分和建立使用者 [!DNL Commerce Intelligence]：
+1. 登录 [!DNL cPanel] 通过您的托管提供商。
+1. 单击 **[!UICONTROL [!DNL MySQL] Databases]**，位于 `Database` 部分。
+1. 向下滚动到 `Add New User` 部分和创建用户 [!DNL Commerce Intelligence]：
 
    ![](../../../assets/create-mbi-mysql-user-cpanel.png)
 
-1. 按一下 **[!UICONTROL Create User]**.
-1. 現在您已建立使用者，您需要將其與資料庫建立關聯。 返回 `Add New User` 區段 — 請參閱設定 `Add User to Database?` 這正是您所需要的。
-1. 在 `User` 在此區段的下拉式清單中，選取您建立的使用者。
-1. 在 `Database` 在此段落的下拉式清單中，選取您要連線的資料庫 [!DNL Commerce Intelligence].
-1. 按一下 **[!UICONTROL Add]**.
-1. 當許可權檢查清單出現時，勾選旁邊的核取方塊 `SELECT`  — 僅此而已 [!DNL Commerce Intelligence] 需要連線至您的資料庫。
+1. 单击 **[!UICONTROL Create User]**.
+1. 现在您已经创建了用户，您需要将其关联到数据库。 返回至 `Add New User` 部分 — 查看设置 `Add User to Database?` 那是你所需要的。
+1. 在 `User` 在此部分的下拉列表中，选择您创建的用户。
+1. 在 `Database` 在此部分的下拉列表中，选择要连接的数据库 [!DNL Commerce Intelligence].
+1. 单击 **[!UICONTROL Add]**.
+1. 出现权限核对清单时，选中旁边的复选框 `SELECT`  — 仅此而已 [!DNL Commerce Intelligence] 需要连接到数据库。
 
-## 將連線和使用者資訊輸入到 [!DNL Commerce Intelligence] {#finish}
+## 将连接和用户信息输入到 [!DNL Commerce Intelligence] {#finish}
 
-若要完成工作，您必須將連線和使用者資訊輸入到 [!DNL Commerce Intelligence]. 您是否離開 [!DNL MySQL] 憑證頁面是否開啟？ 如果沒有，請前往 **[!UICONTROL Manage Data** > **Connections]** 並按一下 **[!UICONTROL Add New Data Source]**，然後 [!DNL MySQL] 圖示。
+要完成这些操作，您需要将连接和用户信息输入到 [!DNL Commerce Intelligence]. 您是否离开了 [!DNL MySQL] 凭据页面是否打开？ 如果不能，请转到 **[!UICONTROL Manage Data** > **Connections]** 并单击 **[!UICONTROL Add New Data Source]**，则 [!DNL MySQL] 图标。
 
-在此頁面中輸入下列資訊 `Database Connection` 區段：
+将以下信息输入此页面的 `Database Connection` 部分：
 
-* `Username`：的使用者名稱 [!DNL Commerce Intelligence] [!DNL MySQL] 使用者
-* `Password`：的密碼 [!DNL Commerce Intelligence] [!DNL MySQL] 使用者
-* `Port`：伺服器上的MySQL連線埠(`3306` 預設值)
-* `Host`：的公用位址 `MySQL` 伺服器 [!DNL Commerce Intelligence] 連線到。 這通常是您用來登入的URL `[!DNL cPanel]`.
+* `Username`：的用户名 [!DNL Commerce Intelligence] [!DNL MySQL] 用户
+* `Password`：的密码 [!DNL Commerce Intelligence] [!DNL MySQL] 用户
+* `Port`：服务器上的MySQL端口(`3306` 默认)
+* `Host`：的公共地址 `MySQL` 服务器 [!DNL Commerce Intelligence] 连接到。 这通常是您用来登录的URL `[!DNL cPanel]`.
 
-如果您使用 [`SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md)，您必須輸入加密資訊。 設定 `Encrypted` 切換至 `Yes` 以顯示表單。
+如果您使用 [`SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md)，则必须输入加密信息。 设置 `Encrypted` 切换到 `Yes` 以显示表单。
 
-* `Connection Type`：將此項設為 `SSH Tunnel`
-* `Remote Address`：伺服器的IP位址或主機名稱 [!DNL Commerce Intelligence] 將隧道連線至
-* `Username`：的使用者名稱 [!DNL Commerce Intelligence] `SSH (Linux)` 使用者，請參閱 [指示](../../../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md) 操作說明（如果尚未完成）
-* `SSH Port`：伺服器上的SSH連線埠(`22` 預設值)
+* `Connection Type`：将此项设置为 `SSH Tunnel`
+* `Remote Address`：服务器的IP地址或主机名 [!DNL Commerce Intelligence] 将隧道连接至
+* `Username`：的用户名 [!DNL Commerce Intelligence] `SSH (Linux)` 用户，请参见 [说明](../../../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md) 如何执行此操作（如果尚未完成）
+* `SSH Port`：服务器上的SSH端口(`22` 默认)
 
-完成後，按一下 **[!UICONTROL Save & Test]** 以完成設定。
+完成后，单击 **[!UICONTROL Save & Test]** 以完成设置。
 
-## 相關：
+## 相关：
 
-* [重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

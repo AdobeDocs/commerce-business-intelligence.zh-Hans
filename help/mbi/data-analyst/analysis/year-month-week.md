@@ -1,6 +1,6 @@
 ---
-title: 年度、每月和每週報告
-description: 瞭解如何輕鬆檢視一段時間的趨勢，並變更您可能想要比較之時間期間的觀點。
+title: 年度、月度和周报表
+description: 了解如何轻松地查看一段时间的趋势，并更改您可能想要比较的时间段的视角。
 exl-id: 74cf11c3-7ce0-477f-9a28-9d782e5da3d9
 source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
@@ -9,31 +9,31 @@ ht-degree: 0%
 
 ---
 
-# 特定時段內的報告
+# 按时间段报告
 
 >[!NOTE]
 >
->本主題包含使用原始架構和新架構的使用者端指示。 您位於 [新架構](../../administrator/account-management/new-architecture.md) 如果您擁有 [!DNL _Data Warehouse檢視_] 選取後可用的區段 [!DNL Manage Data] 從主工具列。
+>本主题包含有关使用原始架构和新架构的客户端的说明。 您位于 [新架构](../../administrator/account-management/new-architecture.md) 如果您拥有 [!DNL _data warehouse查看次数_] 部分在选择后可用 [!DNL Manage Data] 从主工具栏中。
 
-Report Builder可讓您輕鬆檢視一段時間的趨勢，並變更您可能想要比較之時段的觀點。 此主題示範如何設定控制面板，以更深入的方式讓您建立報表，分析周別、月別、年別。
+Report Builder允许您轻松查看一段时间的趋势，并更改您可能想要比较的时间段的视角。 本主题演示如何设置仪表板以更深入地进行分析，使您能够创建按周、按月、按年分析的报告。
 
 ![](../../assets/Wow__mom__yoy.png)
 
-開始之前，您應該檢閱探索更詳細的觀點 [此處](../../tutorials/using-visual-report-builder.md) 和獨立時間選項 [此處](../../tutorials/time-options-visual-rpt-bldr.md).
+在开始之前，您应该更详细地查看浏览透视 [此处](../../tutorials/using-visual-report-builder.md) 和独立时间选项 [此处](../../tutorials/time-options-visual-rpt-bldr.md).
 
-此分析包含 [進階計算欄](../data-warehouse-mgr/adv-calc-columns.md).
+此分析包含 [高级计算列](../data-warehouse-mgr/adv-calc-columns.md).
 
-## 計算欄
+## 计算列
 
-* **`Sales_flat_order`** 表格
-* **原始架構：** 以下欄由分析師建立，作為您的一部分 `[YoY WoW MoM ANALYSIS]` 票證
+* **`Sales_flat_order`** 表
+* **原始架构：** 以下列由分析师创建，作为您的一部分 `[YoY WoW MoM ANALYSIS]` 票证
 * `created_at (month-day)`
 * `created_at (month)`
 * `created_at (day of the month)`
 * `created_at (day of the week)`
 * `created_at (hour of the day)`
 
-* **新架構：** 以下列出的SQL，附有如何建立此計算的範例圖片
+* **新架构：** 下面列出的SQL，其中包含有关如何创建此计算的示例照片
    * `created_at (month-day)` [!UICONTROL Calculation]： **to_char(A， &#39;mm-dd&#39;)**
    * `created_at (month)` [!UICONTROL Calculation]： **to_char(A， &#39;mm-month&#39;)**
    * `created_at (day of the month)`&lt; [!UICONTROL Calculation]： **to_char(A， &#39;dd&#39;)**
@@ -44,21 +44,21 @@ Report Builder可讓您輕鬆檢視一段時間的趨勢，並變更您可能想
 
 ## 量度
 
-無。
+无。
 
 >[!NOTE]
 >
->請確定 [將所有新欄新增為量度的維度](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 建立新報表之前。
+>确保 [将所有新列作为维度添加到量度](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 然后再生成新报告。
 
-## 報表
+## 报告
 
-* **按年圖表**
+* **按年图表**
    * [!UICONTROL Metric]: `Number of orders`
 
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Time options]: `Time range (Custom)`: `2 years ago to 1 year ago`
 
-   * [!UICONTROL Show top/bottom]：前100%排序依據 **`created_at (month-day)`***
+   * [!UICONTROL Show top/bottom]：前100%的排序依据 **`created_at (month-day)`***
 
 * 量度 `A`： `This year`
 * 量度 `B`： `Last year`
@@ -69,30 +69,30 @@ Report Builder可讓您輕鬆檢視一段時間的趨勢，並變更您可能想
 * 
    [!UICONTROL Chart Type]: `Line`
 
-* **MoM圖表**
+* **MoM图表**
    * [!UICONTROL Metric]: `Number of orders`
 
    * [!UICONTROL Metric]: `Number of orders`
-   * 時間選項： `Time range (Custom)`： `2 months ago to 1 month ago`
+   * 时间选项： `Time range (Custom)`： `2 months ago to 1 month ago`
 
-   * 顯示前/後：前100%排序依據 **`created_at (day of month)`***
+   * 显示前/后：前100%的排序依据 **`created_at (day of month)`***
 
 * 量度 `A`：本月*
-* 量度 `B`：上個月*
-* [!UICONTROL Time period]：一個月前至0個月前
+* 量度 `B`：上个月*
+* [!UICONTROL Time period]：一个月前至0个月前
 * 
    [!UICONTROL Interval]: None
 * [!UICONTROL Group by]: `created_at (day of month)`
 * 
    [!UICONTROL Chart Type]: Line
 
-* **WoW圖表**
+* **WoW图表**
    * [!UICONTROL Metric]: `Number of orders`
 
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Time options]: `Time range (Custom)`: `2 weeks ago to 1 week ago`
 
-   * [!UICONTROL Show top/bottom]：前100%排序依據 `created_at (day of week)`
+   * [!UICONTROL Show top/bottom]：前100%的排序依据 `created_at (day of week)`
 
 * 量度 `A`： `This week`
 * 量度 `B`： `Last week`
@@ -103,13 +103,13 @@ Report Builder可讓您輕鬆檢視一段時間的趨勢，並變更您可能想
 * 
    [!UICONTROL Chart Type]: `Line`
 
-* **DoD圖表**
+* **DoD图表**
    * [!UICONTROL Metric]: `Number of orders`
 
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Time options]: `Time range (Custom)`: `2 days ago to 1 day ago`
 
-   * [!UICONTROL Show top/bottom]：前100%排序依據 `created_at (hour of day)`
+   * [!UICONTROL Show top/bottom]：前100%的排序依据 `created_at (hour of day)`
 
 * 量度 `A`： `Today`
 * 量度B： `Yesterday`
@@ -120,4 +120,4 @@ Report Builder可讓您輕鬆檢視一段時間的趨勢，並變更您可能想
 * 
    [!UICONTROL Chart Type]: `Line`
 
-編譯所有報表後，您可以視需要在控制面板上組織報表。 結果看起來可能像這個頁面頂端的影像。
+在编译所有报告后，您可以根据需要将报告组织在功能板上。 结果可能类似于此页面顶部的图像。

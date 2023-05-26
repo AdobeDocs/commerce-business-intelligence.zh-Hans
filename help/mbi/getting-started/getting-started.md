@@ -1,6 +1,6 @@
 ---
-title: Adobe Commerce Intelligence簡介
-description: 瞭解Adobe Commerce Intelligence
+title: Adobe Commerce Intelligence简介
+description: 了解Adobe Commerce Intelligence
 exl-id: 0c960d8c-9bb7-429e-a88e-21678a77b710
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -10,18 +10,18 @@ ht-degree: 0%
 ---
 
 
-# 簡介 [!DNL Adobe Commerce Intelligence]
+# 简介 [!DNL Adobe Commerce Intelligence]
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce Intelligence] 先前稱為 [!DNL Magento Business Intelligence]. 本指南目前正在進行一系列更新，以擷取變更。
+>[!DNL Adobe Commerce Intelligence] 以前称为 [!DNL Magento Business Intelligence]. 本指南目前正在进行一系列更新，以捕捉这些变化。
 
-[!DNL Adobe Commerce Intelligence] (先前稱為 [!DNL Magento Business Intelligence])是雲端型資料管理和分析平台。 [!DNL Commerce Intelligence] 可讓您輕鬆合併及管理資料來源、建立資料模型、建立圖表及報告，以及維護單一信任來源。
+[!DNL Adobe Commerce Intelligence] (以前称为 [!DNL Magento Business Intelligence])是一个基于云的数据管理和分析平台。 [!DNL Commerce Intelligence] 使您能够轻松整合和管理数据源、为数据建模、创建图表和报告，以及维护单个真实来源。
 
-[!DNL Commerce Intelligence]，的核心功能 [!DNL Adobe Commerce]，提供跨多個資料來源的最佳實務深入分析，讓商戶可做出科學資料導向的決策，並採取清晰且明智的行動。 自動化您的報告程式，並轉變您進行業務決策和跨團隊合作的方式。 運用以下工具，從您的決策中排除猜測 [!DNL Commerce Intelligence].
+[!DNL Commerce Intelligence]，的核心功能 [!DNL Adobe Commerce]，提供跨多个数据源的最佳实践见解，允许商家做出科学的数据驱动型决策并采取清晰、知情的操作。 自动化您的报告过程，并转变您制定业务决策和跨团队协作的方式。 从您的决策中排除猜测因素，使用 [!DNL Commerce Intelligence].
 
-連結、合併及轉換您的資料。 以視覺效果呈現、分析並取得對您企業資料的深入且可行的深入分析。 建立自訂量度和報表，而不需要正式的Commerce Intelligence培訓。 這可讓您的整個團隊以資料為導向，沒有任何常見的技術難題。 它也可讓您使用隨附的儀表板來深入瞭解您的業務績效。
+连接、整合和转换您的数据。 可视化、分析您的业务数据，并获取对其可操作的深入洞察。 创建自定义量度和报表，而无需正式的Commerce Intelligence培训。 这使您的整个团队能够进行数据驱动，没有任何常见的技术难题。 它还允许您使用包含的仪表板深入了解您的业务绩效。
 
-標準儀表板包括行銷ROI、客戶期限值、客戶細分、高管和投資者KPI、同類群組分析和銷售分析。
+标准功能板包括营销ROI、客户存留期值、客户细分、管理层和投资者KPI、同类群组分析和促销分析。
 
-當您 [啟用](../getting-started/onpremise-activation.md) 您的 [!DNL Commerce Intelligence] 帳戶，您正在連線 [!DNL Adobe Commerce] 資料庫至 [!DNL Commerce Intelligence] 以及立即存取五個控制面板，提供約100份報表。 這些報表的設計目的是針對您的資料提供深入分析，並回答下列問題 *我的訂單是如何逐月增長的？*， *誰是我最忠誠的客戶？*、和 *我的優惠券策略有效嗎？*.
+当您 [激活](../getting-started/onpremise-activation.md) 您的 [!DNL Commerce Intelligence] 帐户，您正在连接 [!DNL Adobe Commerce] 数据库至 [!DNL Commerce Intelligence] 以及立即访问五个包含约100个报表的仪表板。 这些报表旨在提供有关数据的见解并回答以下问题 *我的订单是如何逐月增长的？*， *谁是我最忠诚的客户？*、和 *我的优惠券策略是否有效？*.

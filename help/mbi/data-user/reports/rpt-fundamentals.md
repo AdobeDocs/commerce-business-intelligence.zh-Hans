@@ -1,6 +1,6 @@
 ---
-title: 使用報表
-description: 瞭解如何使用您的報告資料。
+title: 使用报表
+description: 了解如何使用报表数据。
 exl-id: 94d4db27-0e06-4066-9c03-036b109d2d9b
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -9,121 +9,121 @@ ht-degree: 0%
 
 ---
 
-# 使用報表
+# 使用报告
 
-使用報告於 [!DNL Adobe Commerce Intelligence] 協助您回答業務問題 — 無論您是隻想檢視本月與去年的收入，還是想瞭解您最新的贏取成本 [!DNL Google AdWords] 行銷活動。
+在中使用报表 [!DNL Adobe Commerce Intelligence] 帮助您回答业务问题 — 是只想查看本月与上一年的收入对比，还是想了解您最新的购置成本 [!DNL Google AdWords] 营销活动。
 
-從問題到答案的路徑看起來是什麼樣子？
+从问题到答案的路径到底是什么样的？
 
-為了協助您視覺化此流程，該路由如下圖所示。 本主題說明如何解決分析問題，以及獲取所需資料所需的後端後勤工作。
+为了帮助您可视化此过程，该路由如下图所示。 本主题说明了如何解决分析问题，以及获取所需数据所需的后端后勤工作。
 
-## 從問題開始
+## 从问题开始
 
-您知道您不斷詢問問題以改善您的業務，從提高客戶滿意度到降低供應成本。 您專注於如何將您的問題轉換為有助於您推動決策的分析。
+您知道，为了改善您的业务，您不断提出各种问题，从提高客户满意度到降低供应成本。 您专注于如何将您的问题转化为有助于您制定决策的分析。
 
-在此範例中，假設您要回答以下問題：
+对于此示例，假设您要回答以下问题：
 
-* 我的新註冊者轉換速度如何？
+* 我的新注册者的转化速度如何？
 
-## 識別測量
+## 识别测量
 
-現在是時候找出可能的分析和測量清單，以協助回答這個問題。 在此範例中，著重於下列量度：
+现在应该确定一系列可能的分析和衡量标准，以帮助回答这个问题。 对于此示例，请重点关注以下量度：
 
-* 從註冊到每次使用的首次購買日期的平均時間。
+* 每次使用从注册到首次购买日期的平均时间。
 
-這會顯示註冊日期與使用者首次購買日期之間的平均間隔時間，並讓您瞭解使用者在轉換漏斗中的這最後一個步驟中的行為。
+这揭示了注册日期与用户的首次购买日期之间经过的平均时间，并提供了有关用户在转化漏斗中的这最后一步如何表现的想法。
 
-## 尋找資料
+## 查找数据
 
-瞭解測量什麼只能幫我們達成目標。 若要評估每位使用者從註冊到首次購買日期的平均時間，您必須識別您的測量所包含的所有資料點。
+了解如何衡量只有我们才能获得其中一部分机会。 要评估每位用户从注册到首次购买日期的平均时间，您需要确定由衡量标准组成的所有数据点。
 
-將您的量值劃分為核心元件。 您必須知道已註冊的人數、購買的人數，以及兩次事件之間經過的時間。
+将度量划分为其核心组件。 您必须知道已注册的人数，或注册的人数，已购买的人数，以及两次事件之间经过的时间。
 
-在較高層級，您需要知道在資料庫中哪裡可以找到此資料，尤其是：
+在更高级别上，您需要知道在数据库中从何处查找此数据，特别是：
 
-* 此表格會在每次有人註冊時記錄一列資料
-* 此表格會記錄每次有人購買時的資料列
-* 可用來聯結或參照 `purchase` 表格至 `customer` 表格 — 這可讓我們知道誰購買了
+* 每次有人注册时记录一行数据的表
+* 记录每次有人购买时的数据行的表
+* 可用于连接或引用 `purchase` 表 `customer` 表 — 这允许我们了解谁购买了
 
-在更精細的層級，您需要識別用於此分析的確切資料欄位：
+在更精细的粒度级别，您需要确定用于此分析的确切数据字段：
 
-* 包含客戶註冊日期的資料表格和欄：例如 `user.created\_at`
-* 包含購買日期的資料表格和欄：例如 `order.created\_at`
+* 包含客户注册日期的数据表和列：例如 `user.created\_at`
+* 包含购买日期的数据表和列：例如 `order.created\_at`
 
-## 建立資料欄以供分析
+## 创建数据列以供分析
 
-除了上述的原生資料欄以外，您還需要一組計算資料欄位來啟用此分析，包括：
+除了上面列出的本机数据列之外，还需要一组计算的数据字段来启用此分析，包括：
 
-* `Customer's first purchase date` 會傳回特定使用者的 `MIN(order.created_at`)
+* `Customer's first purchase date` 返回特定用户的 `MIN(order.created_at`)
 
-然後用於建立：
+然后用于创建：
 
-* `Time between a customer's registration date and first purchase date`，會傳回從註冊到首次購買日期之間經過的特定使用者時間。 這是您日後量度的基礎。
+* `Time between a customer's registration date and first purchase date`，返回从注册到首次购买日期之间经过的特定用户时间。 这是稍后量度的基础。
 
-這兩個欄位都必須在使用者層級建立(例如 `user` 表格)。 這可讓使用者標準化平均分析（換言之，此平均計算中的分母是使用者計數）。
+这两个字段都需要在用户级别创建(例如，在 `user` 表)。 这使得平均分析可以由用户标准化（换句话说，此平均计算中的分母是用户计数）。
 
-這是以下位置 [!DNL Commerce Intelligence] 開始使用！ 您可以使用 [!DNL Commerce Intelligence] Data Warehouse以建立上述欄。 請聯絡Adobe分析團隊，向我們提供建立新欄位的特定定義。 您也可以使用 [欄編輯器](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
+这里是 [!DNL Commerce Intelligence] 步入！ 您可以使用 [!DNL Commerce Intelligence] 创建上述列的Data warehouse。 请联系Adobe分析团队，向我们提供用于创建的新列的特定定义。 您还可以使用 [列编辑器](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
 
-最佳實務是避免直接在資料庫中建立這些計算資料欄位，因為這會對生產伺服器造成不必要的負擔。
+最佳做法是避免直接在数据库中创建这些计算数据字段，因为它会给生产服务器带来不必要的负担。
 
-## 建立量度
+## 创建量度
 
-現在您已具備分析所需的資料欄位，您可以開始尋找或建立相關量度來建構您的分析。
+现在，您已具备分析所需的数据字段，接下来该查找或创建相关指标以构建您的分析。
 
-您想在此執行下列計算：
+在此处，您要执行以下计算：
 
 
-_[總和 `Time between a customer's registration date and first purchase date`] / [註冊及購買的客戶總數]_
+_[总和 `Time between a customer's registration date and first purchase date`] / [注册和购买的客户总数]_
 
-而且您想要根據客戶的註冊日期，檢視這項計算隨著時間繪製或趨勢分析。 以下為操作說明 [建立此量度](../../data-user/reports/ess-manage-data-metrics.md) 在 [!DNL Commerce Intelligence]：
+您希望根据客户的注册日期，查看此计算随时间绘制的图或趋势图。 下面是如何 [创建此量度](../../data-user/reports/ess-manage-data-metrics.md) 在 [!DNL Commerce Intelligence]：
 
-1. 前往 **[!UICONTROL Data]** 並選取 `Metrics` 標籤。
-1. 按一下 **[!UICONTROL Add New Metric]** 並選取 `user` 表格（您建立上述維度的位置）。
-1. 從下拉式清單中選取 `Average` 於`Time between a customer's registration date and first purchase date` 中的欄 `user` 表格排序依據 `Customer's registration date`  欄。
-1. 新增任何相關的篩選器或篩選器集。
+1. 转到 **[!UICONTROL Data]** 并选择 `Metrics` 选项卡。
+1. 单击 **[!UICONTROL Add New Metric]** 并选择 `user` 表（您创建上述维的位置）。
+1. 从下拉菜单中，选择 `Average` 在`Time between a customer's registration date and first purchase date` 中的列 `user` 表排序方式 `Customer's registration date`  列。
+1. 添加任何相关的过滤器或过滤器集。
 
-此量度現已準備就緒。
+此量度现已准备就绪。
 
-## 建立報告
+## 创建报告
 
-設定好新量度後，您就可以用它來報告註冊日期與首次購買日期（依註冊日期）之間的平均時間。
+设置了新量度后，您可以使用该量度按注册日期报告注册与首次购买日期之间的平均时间。
 
-只要前往任何儀表板並 [建立報告](../../data-user/reports/ess-manage-data-metrics.md) 使用以上建立的量度。
+只需转到任意仪表板并 [创建报告](../../data-user/reports/ess-manage-data-metrics.md) 使用上面创建的量度。
 
 ### `Visual Report Builder` {#visualrb}
 
-[此 `Visual Report Builder`](../../data-user/reports/ess-rpt-build-visual.md) 是視覺化資料最簡單的方法。 如果您不熟悉SQL或想要快速建立報表，最好選擇視覺Report Builder。 只要按幾下，您就可以新增量度、劃分資料，以及建立要傳送至整個組織的報表。 此選項對初學者和專家都是完美的選擇，因為它不需要任何技術專業知識。
+[此 `Visual Report Builder`](../../data-user/reports/ess-rpt-build-visual.md) 是可视化数据的最简单方法。 如果您不熟悉SQL或希望快速创建报告，则最好使用可视化Report Builder。 只需单击几下，您就可以添加指标、划分数据并创建报告以将其添加到整个组织中。 此选项对于初学者和专家都是完美的，因为它不需要任何技术专业知识。
 
 |  |  |
 |--- |--- |
-| **這是最適合……** | **這個不太適合……** |
-|  — 所有層級的分析/技術體驗<br> — 快速建立報告<br> — 建立分析以與其他使用者共用 |  — 需要SQL特定函式的分析<br> — 測試新欄 — 計算欄取決於初始資料母體的更新週期，而使用SQL建立的欄則不然。 |
+| **这个很适合……** | **这个不太适合……** |
+|  — 所有级别的分析/技术经验<br> — 快速创建报告<br> — 创建要与其他用户共享的分析 |  — 需要SQL特定函数的分析<br> — 测试新列 — 计算列取决于初始数据填充的更新周期，而使用SQL创建的列则不然。 |
 
 {style="table-layout:auto"}
 
-### 報表說明和影像
+### 报表说明和图像
 
-#### 新增說明至報表
+#### 向报表添加描述
 
-建立與您團隊其他成員共用的報告時，Adobe建議新增說明，讓其他使用者更能瞭解您的分析。
+在创建与您团队的其他成员共享的报告时，Adobe建议添加描述，以便其他用户更好地了解您的分析。
 
-1. 按一下 **[!UICONTROL i]** 位於任何報表頂端。
-1. 在文字方塊中輸入說明。
-1. 按一下 **[!UICONTROL Save Description]**.
+1. 单击 **[!UICONTROL i]** 位于任何报表的顶部。
+1. 在单词框中输入描述。
+1. 单击 **[!UICONTROL Save Description]**.
 
-請參閱下文：
+请参阅下文：
 
-![圖表說明](../../assets/Chart_Description.gif)
+![图表描述](../../assets/Chart_Description.gif)
 
-#### 將報表匯出為影像
+#### 将报表导出为图像
 
-需要在簡報或檔案中包含報告？ 任何報表都可以使用以下專案儲存為影像(PNG、PDF或SVG格式)： `Report Options` 功能表，位於每個報表的右上角。
+是否需要在演示文稿或文档中包含报告？ 任何报告都可以使用另存为图像(PNG、PDF或SVG格式) `Report Options` 菜单，位于每个报告的右上角。
 
-1. 按一下任何報表右上角的齒輪圖示。
-1. 從下拉式清單中選取 `Enlarge`.
-1. 當報表放大時，按一下 **[!UICONTROL Download]** 報表的右上角。
-1. 從下拉式清單中選取偏好的影像格式。 下載會立即開始。
+1. 单击任何报表右上角的齿轮图标。
+1. 从下拉菜单中，选择 `Enlarge`.
+1. 当报表放大时，单击 **[!UICONTROL Download]** 报表的右上角。
+1. 从下拉列表中选择首选的图像格式。 下载立即开始。
 
-請參閱下文：
+请参阅下文：
 
 ![](../../assets/exp-rep-as-image.gif)

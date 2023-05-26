@@ -1,6 +1,6 @@
 ---
-title: 常見Commerce表格
-description: 瞭解一些較常見的表格 [!DNL Commerce Intelligence] 客戶使用。
+title: 常见Commerce表
+description: 了解一些更常见的表 [!DNL Commerce Intelligence] 客户使用。
 exl-id: 8b316130-55c6-4771-ae6e-97ac605fc6cc
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -9,26 +9,26 @@ ht-degree: 0%
 
 ---
 
-# 常見Commerce表格
+# 常见Commerce表
 
-當您第一次連線時 [!DNL Adobe Commerce] 執行個體至 [[!DNL Adobe Commerce Intelligence]](../importing-data/integrations/magento.md)， [!DNL Commerce Intelligence] 自動複製部分commerce表格（通常是4-6個表格）中的資料，以設定儀表板和報表的初始集合。 雖然這是一個絕佳的起點，但大多數的商店執行個體會產生數十個（如果不是數百個）其他表格，這些表格可提供對業務效能的重要分析。
+当您首次连接 [!DNL Adobe Commerce] 实例到 [[!DNL Adobe Commerce Intelligence]](../importing-data/integrations/magento.md)， [!DNL Commerce Intelligence] 自动从一些commerce表（通常为4-6表）中复制数据以配置仪表板和报表的初始集。 虽然这是一个很好的起点，但大多数存储实例会生成数十个（如果不是数百个）其他表，这些表可以提供对业务性能的重要洞察。
 
-以下是一些較常見的表格清單，其中 [!DNL Commerce Intelligence] 客戶使用。 在您之後 [將您的Commerce執行個體連結至Commerce Intelligence](../../data-analyst/importing-data/integrations/magento.md)，您可以使用 [Data Warehouse管理員](../../data-analyst/data-warehouse-mgr/tour-dwm.md) 以追蹤相關資料欄位。
+以下列出了一些更常见的表， [!DNL Commerce Intelligence] 客户使用。 在您之后 [将您的Commerce实例连接到Commerce Intelligence](../../data-analyst/importing-data/integrations/magento.md)，您可以使用 [data warehouse管理器](../../data-analyst/data-warehouse-mgr/tour-dwm.md) 以跟踪相关数据字段。
 
-| 表格名稱 | 說明 |
+| 表名 | 描述 |
 |---|---|
-| `catalog_category_entity` | 中的每一列 `catalog_category_entity` 表格說明特定類別。 與相關聯的 `catalog_category_entity_varchar` 表格和 `catalog_category_product` 對應表格時，您可以取得每個產品的類別資訊。 |
-| `catalog_category_product` | 中的每一列 `catalog_category_product` 表格會列出產品與類別的組合。 因此，特定產品可以不同類別多次存在於此表格上，而特定類別可以多次存在於此表格上與不同產品相關聯。 此表格會編制下列專案的索引： `catalog_category_entity` 表格（包含類別層次明細）與 `catalog_product_entity` 表格（包含產品層級詳細資訊）。 |
-| `catalog_product_entity` | 中的每一列 `catalog_product_entity` 表格代表特定產品。 包括在您的Commerce帳戶及其SKU中建立該產品的時機。 |
-| `customer_entity` | 中的每一列 [`customer_entity`](../data-warehouse-mgr/cust-ent-table.md) 表格代表您網站上的註冊使用者。 此表格會提供客戶層級的基本詳細資料，例如其註冊日期和電子郵件地址。 |
-| `quote` | 中的每一列 [`quote`](../data-warehouse-mgr/sales-flat-quote-table.md) 表格代表結帳程式中建立的購物車，無論該購物車最終是否轉換為訂單。 由於此表格可能會很大，Adobe建議您在符合某些條件時（例如有任何未轉換的購物車超過60天）定期刪除記錄。 |
-| `quote_item` | 中的每一列 [`quote_item`](../data-warehouse-mgr/sales-flat-quote-item-table.md) 表格代表新增至購物車的專案，無論購物車最終是否轉換為訂單。 由於此表格可能會很大，Adobe建議您在符合某些條件時（例如有任何未轉換的購物車超過60天）定期刪除記錄。 |
-| `sales_order` | 中的每一列 [`sales_order`](../data-warehouse-mgr/sales-flat-order-table.md) 表格代表您網站上的訂單。 此表格包含訂單層次資訊，例如訂單日期、下訂單的客戶、訂單總計，以及折扣與優惠券代碼使用方式。 |
-| `sales_order_address` | 上的每一列 `sales_order_address` 表格包含特定訂單的送貨與帳單資訊。 於 `sales_order` 表格， `billing_address_id` 和 `shipping_address_id` 對於指定的訂單，請參閱特定列(識別方式 `entity_id`)於 `sales_order_address` 表格。 |
-| `sales_order_item` | 中的每一列 [`sales_order_item`](../data-warehouse-mgr/sales-flat-quote-item-table.md) 表格會識別特定訂單中的特定專案。 每一資料列都包含產品、購買數量及特定料號相關訂單等詳細資訊。 |
+| `catalog_category_entity` | 中的每一行 `catalog_category_entity` 该表描述了特定类别。 具有关联的 `catalog_category_entity_varchar` 表格和 `catalog_category_product` 映射表时，可以获得每个产品的类别信息。 |
+| `catalog_category_product` | 中的每一行 `catalog_category_product` 此表列出了产品和类别的组合。 因此，给定产品可以多次存在于具有不同类别的此表中，并且给定类别可以多次存在于此表中，这些类别与不同的产品相关联。 此表对 `catalog_category_entity` 表（保存类别层详细信息）和 `catalog_product_entity` 表（包含产品级别的详细信息）。 |
+| `catalog_product_entity` | 中的每一行 `catalog_product_entity` 表表示特定产品。 这包括在您的Commerce帐户及其SKU中创建该产品的时间。 |
+| `customer_entity` | 中的每一行 [`customer_entity`](../data-warehouse-mgr/cust-ent-table.md) 表表示您网站上的注册用户。 此表提供了客户级别的基本详细信息，如注册日期和电子邮件地址。 |
+| `quote` | 中的每一行 [`quote`](../data-warehouse-mgr/sales-flat-quote-table.md) 表表示在结帐过程中创建的购物车，无论该购物车最终是否转换为订单。 由于此表可能很大，因此Adobe建议您在满足某些条件时定期删除记录，例如，如果有任何超过60天的未转换购物车。 |
+| `quote_item` | 中的每一行 [`quote_item`](../data-warehouse-mgr/sales-flat-quote-item-table.md) 表表示添加到购物车的项目，无论购物车最终是否转换为订单。 由于此表可能很大，因此Adobe建议您在满足某些条件时定期删除记录，例如，如果有任何超过60天的未转换购物车。 |
+| `sales_order` | 中的每一行 [`sales_order`](../data-warehouse-mgr/sales-flat-order-table.md) 表表示在您网站上下达的订单。 此表包含订单级别的信息，如订单日期、下订单的客户、订单总额以及折扣和优惠券代码用途。 |
+| `sales_order_address` | 上的每一行 `sales_order_address` 此表包含特定订单的发运和开单信息。 在 `sales_order` 表， `billing_address_id` 和 `shipping_address_id` 对于给定订单，请参阅特定行(标识为 `entity_id`) `sales_order_address` 表格。 |
+| `sales_order_item` | 中的每一行 [`sales_order_item`](../data-warehouse-mgr/sales-flat-quote-item-table.md) 表标识特定订单中的特定项目。 每行都包含与给定项目关联的产品、购买数量和订单等详细信息。 |
 
 {style="table-layout:auto"}
 
-## 相關檔案
+## 相关文档
 
-[實體關係圖](../data-warehouse-mgr/entity-rel-diag.md)
+[实体关系图](../data-warehouse-mgr/entity-rel-diag.md)

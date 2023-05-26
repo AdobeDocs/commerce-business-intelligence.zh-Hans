@@ -1,6 +1,6 @@
 ---
-title: 預期[!DNL Google ECommerce]資料
-description: 瞭解與Google E-commerce共用的資料型別。
+title: 预期[!DNL Google ECommerce]数据
+description: 了解与Google E-commerce共享的数据类型。
 exl-id: 8e5d8863-f003-4c38-95c5-660bcbff48da
 source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
@@ -9,22 +9,22 @@ ht-degree: 0%
 
 ---
 
-# 預期[!DNL Google ECommerce] 資料
+# 预期[!DNL Google ECommerce] 数据
 
-在您的 [!DNL Google ECommerce] 帳戶已成功連線到 [!DNL Commerce Intelligence]，系統會開始將資料匯入標題為的表格中 `ecommerce`. 此表格會記錄每個交易的資料列。 這包括下列順序層級資料欄：
+在您的 [!DNL Google ECommerce] 帐户已成功连接到 [!DNL Commerce Intelligence]之后，系统开始将数据导入一个标题为 `ecommerce`. 此表记录每个事务处理的数据行。 这包括以下订单级别的数据列：
 
-| 欄名稱 | 說明 |
+| 列名称 | 描述 |
 |-----|-----|
-| `\_id` | 此欄是主索引鍵。 |
-| `accountId` | 此欄包含與您的帳戶關聯的帳戶ID。 [!DNL Google Analytics] 電子商務帳戶。 |
-| `profileName` | 此欄包含您的 [!DNL Google Analytics] 設定檔名稱。 |
-| `profileId` | 此欄包含您的 [!DNL Google Analytics] 設定檔ID。 |
-| `socialNetwork` | 此欄包含社交網路的名稱(例如， [!DNL Facebook]，或 [!DNL YouTube]) |
-| `campaign` | 此欄包含行銷活動名稱(例如， [`utm\_campaign`](https://support.google.com/analytics/answer/1033867?hl=en))。 |
-| `medium` | 此欄包含媒體名稱(例如， [`utm\_medium`](https://support.google.com/analytics/answer/1033867?hl=en)) |
-| `source` | 此欄包含來源名稱。 (例如， [`utm\_source`](https://support.google.com/analytics/answer/1033867?hl=en)) |
-| `keyword` | 此欄包含關鍵字說明(例如， [`utm\_term`](https://support.google.com/analytics/answer/1033867?hl=en)) |
-| `transactionId` | 此欄包含訂單ID。 這可用來將反向連結資料聯結回您的訂單資料。 |
-| `updated\_at` | 此欄包含上次更新資料列的時間。 |
+| `\_id` | 此列是主键。 |
+| `accountId` | 此列包含与您的关联的帐户ID [!DNL Google Analytics] 电子商务帐户。 |
+| `profileName` | 此列包含 [!DNL Google Analytics] 配置文件名称。 |
+| `profileId` | 此列包含 [!DNL Google Analytics] 配置文件ID。 |
+| `socialNetwork` | 此列包含社交网络的名称(例如， [!DNL Facebook]，或 [!DNL YouTube]) |
+| `campaign` | 此列包含促销活动名称(例如， [`utm\_campaign`](https://support.google.com/analytics/answer/1033867?hl=en))。 |
+| `medium` | 此列包含媒体名称(例如， [`utm\_medium`](https://support.google.com/analytics/answer/1033867?hl=en)) |
+| `source` | 此列包含源名称。 (例如， [`utm\_source`](https://support.google.com/analytics/answer/1033867?hl=en)) |
+| `keyword` | 此列包含关键字说明(例如， [`utm\_term`](https://support.google.com/analytics/answer/1033867?hl=en)) |
+| `transactionId` | 此列包含订单ID。 这用于将反向链接数据连接回您的订单数据。 |
+| `updated\_at` | 此列包含上次更新数据行的时间。 |
 
 {style="table-layout:auto"}

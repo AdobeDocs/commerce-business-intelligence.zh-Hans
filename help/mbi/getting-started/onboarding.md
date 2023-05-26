@@ -1,6 +1,6 @@
 ---
-title: 加入Adobe Commerce Intelligence
-description: 瞭解如何上手Adobe Commerce Intelligence。
+title: 载入Adobe Commerce Intelligence
+description: 了解如何上手Adobe Commerce Intelligence。
 exl-id: e0cce957-af2c-4514-9afd-c9aaa651a4f0
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -9,26 +9,26 @@ ht-degree: 0%
 
 ---
 
-# 入門 [!DNL Adobe Commerce Intelligence]
+# 入门 [!DNL Adobe Commerce Intelligence]
 
-與相關的入門問題 `store` 和 `database` 設定可確保您正確設定報表。 有了這些答案，Adobe提供的報表將完全根據您商店的設定量身打造。
+与相关的入门培训问题 `store` 和 `database` 设置可确保正确设置报表。 有了这些答案，Adobe将提供您专为商店设置定制的报表。
 
-## 商店設定
+## 存储设置
 
-- *您的商店是否接受訪客結帳？*  — 選取 **是** 若您允許客戶在商店購買商品，而不需註冊帳戶。
+- *您的商店是否接受访客结帐？*  — 选择 **是** 如果您允许客户从您的商店购买商品，而无需注册帐户。
 
-- `Timezone`  — 選取 `timezone` 您想要在中檢視報告的資訊。
+- `Timezone`  — 选择 `timezone` 您希望在中查看您的报告。
 
-- `Currency`  — 選取 `currency` 您的商店營運所在的區域。
+- `Currency`  — 选择 `currency` 你的店铺经营所在的地方。
 
-- `Your week starts on...`  — 在報表中選取您要作為一週開始的一週中的哪一天。
+- `Your week starts on...`  — 在报表中，选择您希望在一周中的哪一天作为一周的开始。
 
-- *您使用哪個版本的Commerce？*  — 選取 `currency` 您的商店營運所在的區域。
+- *您使用哪个版本的Commerce？*  — 选择 `currency` 你的店铺经营所在的地方。
 
-- *您的商店位於歐盟嗎？*  — 如果您回答 `Yes` 針對此問題，Adobe會依照GDPR的規定，將您的Data Warehouse和所有資料託管於歐盟。
+- *你的店在欧盟吗？*  — 如果您回答 `Yes` 对于此问题，Adobe根据GDPR将您的Data warehouse和所有数据托管在欧盟。
 
-## 資料庫設定
+## 数据库设置
 
-- `Database name`  — 什麼是 *的名稱 [!DNL MySQL] 資料庫* 您的Commerce交易式資料位於何處？
+- `Database name`  — 什么是 *的名称 [!DNL MySQL] 数据库* Commerce事务型数据驻留在何处？
 
-- `Table prefix (optional)`  — 您的Commerce資料庫中包含的表格是否前置有任何內容(例如， `store_`)？ 情況通常並非如此，但這是可進行的自訂。
+- `Table prefix (optional)`  — 您的Commerce数据库中包含的表是否前面有任何内容(例如， `store_`)？ 这通常不是这种情况，但可以进行自定义。

@@ -1,6 +1,6 @@
 ---
-title: 變更共用儀表板的存取權
-description: 瞭解如何變更共用儀表板的存取權。
+title: 更改对共享仪表板的访问权限
+description: 了解如何更改对共享仪表板的访问权限。
 exl-id: 0041281a-0a3c-49f8-9a5f-39a02c3acf26
 source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
 workflow-type: tm+mt
@@ -9,6 +9,6 @@ ht-degree: 0%
 
 ---
 
-# 變更共用儀表板的存取權
+# 更改对共享仪表板的访问权限
 
-您可以隨時變更儀表板的存取權，使用與以下專案相同的步驟： [最初共用控制面板](../../data-user/dashboards/share-dashboard-with-users.md){： target=&quot;_blank&quot;}。 顯示在中的使用者清單中 `Share Dashboard` 功能表，視需要更新使用者/組織許可權，然後按一下 **[!UICONTROL Save Changes]** 以更新。
+可以随时更改对功能板的访问权限，其步骤与 [最初共享功能板](../../data-user/dashboards/share-dashboard-with-users.md){： target=&quot;_blank&quot;}. 显示在中的用户列表中 `Share Dashboard` 菜单，根据需要更新用户/组织权限，然后单击 **[!UICONTROL Save Changes]** 以进行更新。

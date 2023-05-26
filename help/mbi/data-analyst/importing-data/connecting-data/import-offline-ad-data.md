@@ -1,6 +1,6 @@
 ---
-title: 匯入其他廣告支出資料
-description: 瞭解如何將離線或其他廣告支出資料匯入 [!DNL Commerce Intelligence].
+title: 导入其他广告支出数据
+description: 了解如何将离线或其他广告支出数据导入 [!DNL Commerce Intelligence].
 exl-id: 6f12a397-0927-4e87-95ff-3a55ccc9e14b
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -9,30 +9,30 @@ ht-degree: 0%
 
 ---
 
-# 匯入其他廣告支出資料
+# 导入其他广告支出数据
 
-上傳廣告支出資料可讓您將廣告成本與 `customer lifetime value (CLV)` 從您的行銷活動取得的使用者數量。
+上传广告支出数据允许您通过将广告成本与 `customer lifetime value (CLV)` 从您的营销活动获得的用户的数量。
 
-## 正在上傳廣告成本資料
+## 上传广告成本数据
 
-分析廣告支出資料的第一步是取得資料。 由於大部分的廣告平台都可讓您匯出報表，因此Adobe建議您從廣告平台匯出原始資料，然後直接上傳至 [!DNL Commerce Intelligence] 沒有任何操作。 您可以對Data Warehouse中的資料執行操作，因此無需加倍努力。
+分析广告支出数据的第一步是获取数据。 由于大多数广告平台都允许您导出报表，因此Adobe建议您从广告平台导出原始数据并直接将其上传到 [!DNL Commerce Intelligence] 没有任何操纵。 您可以对Data warehouse中的数据执行操作，因此无需加倍努力。
 
-匯出廣告支出資料後，請使用 [`File Upload` 功能](../connecting-data/using-file-uploader.md) 將資料帶入您的Data Warehouse。 您可以將新資料上傳至相同的 [!DNL Commerce Intelligence] 表格在一段時間內的變化。
+导出广告支出数据后，请使用 [`File Upload` 功能](../connecting-data/using-file-uploader.md) 将数据导入您的Data warehouse。 您可以将新数据上传到相同的 [!DNL Commerce Intelligence] 表格随时间变化。
 
-## 離線來源
+## 脱机源
 
-除了您的線上行銷活動，您也可能有離線廣告，例如在廣播或廣告牌上。 若要解決這些情況，您可以手動上傳包含成本資料的試算表 [!DNL Commerce Intelligence].
+除了在线促销活动之外，您还可能会有离线广告，例如在广播或广告牌上广告。 要考虑这些情况，您可以手动将带有成本数据的电子表格上传到 [!DNL Commerce Intelligence].
 
-建立「 」時，建議使用下方探討的表格結構 `.csv` 檔案來記錄廣告支出資料。 範本檔案也會附加在本主題底部，以作為範例。 建議的欄包括：
+建议在创建 `.csv` 用于记录广告支出数据的文件。 作为示例，还将在本主题底部附加一个模板文件。 推荐的列包括：
 
-* `ID`  — 這是資料庫用來作為主索引鍵的每個資料列的唯一識別碼。 每一列的名稱必須不同。
-* `Date`  — 這是行銷活動執行的日期，格式為yyyy-mm-dd。
-* `Amount`  — 這是您在行銷活動上花費的金額。
-* `campaign`  — 這是行銷活動名稱。 如果您使用 [!DNL Google Analytics] 若要追蹤您的其他廣告支出資料，資料應符合utm\_campaign名稱。
-* `source`  — 這是來源名稱。 如果您使用 [!DNL Google Analytics]，這應該符合 `utm_source` 名稱。
-* `other` （選擇性） — 您也可以合併其他欄，協助您劃分行銷活動和成本。 它也可以將數個不同的UTM行銷活動名稱摘要成單一且一致的行銷活動，以用於追蹤目的。 使用V-Lookup至第二個工作表來比對每個促銷活動名稱與其他名稱，並在此處動態報告，而不用手動進行此設定，可能會有幫助。
+* `ID`  — 这是数据库用作主键的每个数据行的唯一标识符。 每一行的此项必须不同。
+* `Date`  — 这是营销活动运行的日期，格式为yyyy-mm-dd。
+* `Amount`  — 这是您在营销活动上花费的金额。
+* `campaign`  — 这是营销活动名称。 如果您使用 [!DNL Google Analytics] 要跟踪您的其他广告支出数据，它应与utm\_campaign名称匹配。
+* `source`  — 这是源名称。 如果您使用 [!DNL Google Analytics]，这应该与 `utm_source` 名称。
+* `other` （可选） — 您还可以合并其他列，以帮助您划分促销活动和成本。 它还可以作为一种方法，将多个不同的UTM营销活动名称汇总到单个一致的营销活动中，以便进行跟踪。 最好不要手动进行此设置，而是使用V-Lookup查找第二个工作表来将每个促销活动名称与其他名称进行匹配，并在此处动态报告该名称。
 
-## 相關
+## 相关
 
-* [Connect [!DNL AdWords] 資料](../integrations/google-adwords.md)
-* [提高廣告促銷活動的ROI](../../analysis/roi-ad-camp.md)
+* [Connect [!DNL AdWords] 数据](../integrations/google-adwords.md)
+* [提高广告促销活动的ROI](../../analysis/roi-ad-camp.md)
