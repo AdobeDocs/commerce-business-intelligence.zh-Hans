@@ -2,7 +2,7 @@
 title: 将SQL查询转换为Commerce Intelligence报表
 description: 了解如何将SQL查询转换为计算列（您在Commerce Intelligence中使用的量度）。
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
-source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
+source-git-commit: fa65bd909495d4d73cabbc264e9a47b3e0a0da3b
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 首先查看常规查询：
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT` |  |
 | `a,` | 报告 `group by` |
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 查看以下特定示例： `Total Revenue` 量度可在 [!DNL Commerce Intelligence]. 查看下面您尝试翻译的查询：
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT` |  |
 | `SUM(order_total) as "Total Revenue"` | `Metric operation` （列） |
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 |  |  |
 |--- |--- |
-| `Select` |  |
+| `Select` | |
 | `c.customer_id` | 聚合所有者 |
 | `SUM(o.order_total) as "Customer LTV"` | 聚合操作（列） |
 | `FROM customers c` | 聚合所有者表 |
@@ -103,7 +103,7 @@ ht-degree: 0%
 
 从下面的查询开始：
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT coupon_code,` | 报告 `group by` |
 | `SUM(order_total) as "Total Revenue"` | `Metric operation`（列） |
@@ -132,7 +132,7 @@ ht-degree: 0%
 
 退一步看一下针对以下项的整体查询： `Average order value`：
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT` |  |
 | `SUM(order_total) as "Total Revenue"` | 量度 `operation` （列） |
@@ -155,11 +155,11 @@ ht-degree: 0%
 
 ## Commerce Intelligence元素
 
-|**`SQL Clause`**|**`Metric`**|**`Filter`**|**`Report group by`**|**`Report time frame`**|**`Path`**|**`Calculated column inputs`**|**`Source table`**|
+| **`SQL Clause`** | **`Metric`** | **`Filter`** | **`Report group by`** | **`Report time frame`** | **`Path`** | **`Calculated column inputs`** | **`Source table`** |
 |---|---|---|---|---|---|---|---|
-|`SELECT`|X|-|X|-|-|X|-|
-|`FROM`|-|-|-|-|-|-|X|
-|`WHERE`|-|X|-|-|-|-|-|
-|`WHERE` (with time elements)|-|-|-|X|-|-|-|
-|`JOIN...ON`|-|X|-|-|X|X|-|
-|`GROUP BY`|-|-|X|-|-|-|-|
+| `SELECT` | X | - | X | - | - | X | - |
+| `FROM` | - | - | - | - | - | - | X |
+| `WHERE` | - | X | - | - | - | - | - |
+| `WHERE` （含时间元素） | - | - | - | X | - | - | - |
+| `JOIN...ON` | - | X | - | - | X | X | - |
+| `GROUP BY` | - | - | X | - | - | - | - |
