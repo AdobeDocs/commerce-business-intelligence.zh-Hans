@@ -2,7 +2,9 @@
 title: Pro的预期生命周期值(LTV)分析
 description: 了解如何设置功能板，以帮助您了解客户的存留期价值增长和客户的预期存留期价值。
 exl-id: e353b92a-ff3b-466b-b519-4f86d054c0bc
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
@@ -26,19 +28,19 @@ ht-degree: 0%
 * [!UICONTROL Column name]: `Months between first order and this order`
 * [!UICONTROL Column type]: `Same Table`
 * 
-   [!UICONTROL Column equation]: `CALCULATION`
+  [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]： A = `Seconds between customer's first order date and this order`
 * 
-   [!UICONTROL Datatype]: `Integer`
+  [!UICONTROL Datatype]: `Integer`
 * **定义：**`case when A is null then null when A <= 0 then '1'::int else (ceil(A)/2629800)::int end`
 
 * [!UICONTROL Column name]: `Months since order`
 * [!UICONTROL Column type]: `Same Table`
 * 
-   [!UICONTROL Column equation]: `CALCULATION`
+  [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]： A = `created_at`
 * 
-   [!UICONTROL Datatype]: `Integer`
+  [!UICONTROL Datatype]: `Integer`
 * 定义： `case when created_at is null then null else (ceil((extract(epoch from current_timestamp) - extract(epoch from created_at))/2629800))::int end`
 
 要在上创建的列 **`orders`** 表（如果使用） **日历** 月：
@@ -46,31 +48,31 @@ ht-degree: 0%
 * [!UICONTROL Column name]: `Calendar months between first order and this order`
 * [!UICONTROL Column type]: `Same Table`
 * 
-   [!UICONTROL Column equation]: `CALCULATION`
+  [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column inputs]:
    * `A` = `created_at`
    * `B` = `Customer's first order date`
 
 * 
-   [!UICONTROL Datatype]: `Integer`
+  [!UICONTROL Datatype]: `Integer`
 * 定义： `case when (A::date is null) or (B::date is null) then null else ((date_part('year',A::date) - date_part('year',B::date))*12 + date_part('month',A::date) - date_part('month',B::date))::int end`
 
 * [!UICONTROL Column name]: `Calendar months since order`
 * [!UICONTROL Column type]: `Same Table`
 * 
-   [!UICONTROL Column equation]: `CALCULATION`
+  [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]: `A` = `created_at`
 * 
-   [!UICONTROL Datatype]: `Integer`
+  [!UICONTROL Datatype]: `Integer`
 * **定义：**`case when A is null then null else ((date_part('year',current_timestamp::date) - date_part('year',A::date))*12 + date_part('month',current_timestamp::date) - date_part('month',A::date))::int end`
 
 * [!UICONTROL Column name]: `Is in current month? (Yes/No)`
 * [!UICONTROL Column type]: `Same Table`
 * 
-   [!UICONTROL Column equation]: `CALCULATION`
+  [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]： A = `created_at`
 * 
-   [!UICONTROL Datatype]: `String`
+  [!UICONTROL Datatype]: `String`
 * 定义： `case when A is null then null when (date_trunc('month', current_timestamp::date))::varchar = (date_trunc('month', A::date))::varchar then 'Yes' else 'No' end`
 
 ## 量度
@@ -102,7 +104,7 @@ ht-degree: 0%
    * `Is in current month?` = `No`
 
 * 
-   [！UICONTROL量度]: `Revenue`
+  [！UICONTROL量度]: `Revenue`
 * [!UICONTROL Filter]:
 
 * 量度 `B`： `All time customers (hide)`
@@ -121,8 +123,7 @@ ht-degree: 0%
 * [!UICONTROL Formula]: `Expected revenue`
 * [!UICONTROL Formula]: `A / (B - C)`
 * 
-
-   [!UICONTROL Format]: `Currency`
+  [!UICONTROL Format]: `Currency`
 
 其他图表详细信息
 
@@ -139,7 +140,7 @@ ht-degree: 0%
 
 * 量度 `A`： `Revenue`
 * 
-   [!UICONTROL Metric view]: `Cohort`
+  [!UICONTROL Metric view]: `Cohort`
 * [!UICONTROL Cohort date]: `Customer's first order date`
 * [!UICONTROL Perspective]: `Average value per cohort member`
 
@@ -147,7 +148,7 @@ ht-degree: 0%
 
 * 量度 `A`： `Revenue`
 * 
-   [!UICONTROL Metric view]: `Cohort`
+  [!UICONTROL Metric view]: `Cohort`
 * [!UICONTROL Cohort date]: `Customer's first order date`
 * [!UICONTROL Perspective]: `Cumulative average value per cohort member`
 

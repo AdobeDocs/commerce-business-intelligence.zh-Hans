@@ -2,7 +2,9 @@
 title: 使用映射表标准化数据
 description: 了解如何使用映射表。
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 0%
@@ -64,7 +66,7 @@ ht-degree: 0%
    * 在 `One` 侧，选择 `mapping` 表格和 `Primary key` 列。 在这种情况下，您可以选择 `state_input` 中的列 `mapping_state` 表格。
    * 下面是路径的外观：
 
-      ![](../../assets/State_Mapping_Path.png)
+     ![](../../assets/State_Mapping_Path.png)
 
 1. 完成后，单击 **[!UICONTROL Save]** 以创建路径。
 1. 路径在保存后可能不会立即填充 — 如果发生这种情况，请单击 `Path` 框并选择您创建的路径。

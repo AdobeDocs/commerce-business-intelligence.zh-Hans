@@ -2,7 +2,9 @@
 title: Google Analytics — 跟踪数据库中的用户设备和浏览器数据
 description: 了解实际上有多少用户通过移动设备登录，以及这如何影响这些用户的生命周期值。
 exl-id: 57b1bc45-b139-4370-86ea-2fbd021aa14d
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, User
+feature: Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%
@@ -20,8 +22,7 @@ ht-degree: 0%
 1. `Mozilla/5.0 (Macintosh; Intel Mac OS X 10\_8\_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.116 Safari/537.36`
 1. `Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/17.0 Firefox/17.0`
 1. `Mozilla/5.0 (iPhone; U; CPU iPhone OS 4\_0 like Mac OS X; en-us) AppleWebKit/532.9 (KHTML, like Gecko) Version/4.0.5 Mobile/8A293 Safari/6531.22.7`
-1.
-` Mozilla/5.0 (iPad; CPU OS 5\_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B176 Safari/7534.48.3`
+1.` Mozilla/5.0 (iPad; CPU OS 5\_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B176 Safari/7534.48.3`
 1. `Mozilla/5.0 (Linux; U; Android 2.2; en-us; Nexus One Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1`
 
 如果仔细查看，您会发现该字符串包含有关用户的操作系统、浏览器以及用户正在使用的设备名称（如果该字符串具有名称）的信息。 尽管User-Agent字符串在各平台甚至同一平台的版本之间差别很大，但平台名称通常确实会存在于其中的某个位置。 例如，上#1是带有Chrome浏览器的Mac，#2上则是带有Firefox浏览器的Windows计算机，#3是iPhone，#4是iPad，#5是Android设备。

@@ -2,7 +2,9 @@
 title: 确定最有价值的营销资源和渠道
 description: 了解可用于发现您最有价值的营销渠道的一些报表。
 exl-id: 8d25bc80-ea60-47db-b01b-04a23a24c14d
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 0%

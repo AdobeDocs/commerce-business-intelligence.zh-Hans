@@ -2,7 +2,9 @@
 title: 在Adobe Commerce中存储数据
 description: 了解如何生成数据、导致插入新行的原因以及如何将操作记录到Adobe Commerce数据库中。
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 3%
@@ -61,7 +63,7 @@ ht-degree: 3%
 
 帐户创建完成后， `Sammy Customer` 已准备好开始购买。 在网站上，客户添加了两对的 `Throwback Bellbottoms` 和一个 `V-Neck T-Shirt` 到购物车。 对选择满意，客户移至结帐处并提交订单，并在以下页面上创建以下条目 [销售统一订单表](../data-warehouse-mgr/sales-flat-order-table.md)：
 
-| **`entity id`** | **`customer id**`**`subtotal`****`created at`** |
+| **`entity id`** | **`customer id**` | **`subtotal`** | **`created at`** |
 |---|---|---|---|
 | 227 | 214 | 94.85 | 2016/09/23 15:41:39 |
 

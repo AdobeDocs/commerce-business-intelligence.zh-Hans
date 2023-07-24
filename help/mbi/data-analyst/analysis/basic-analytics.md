@@ -2,7 +2,9 @@
 title: 了解和构建基本分析
 description: 了解如何了解和构建基础分析。
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Dashboards, Data Integration
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '3113'
 ht-degree: 0%
@@ -153,7 +155,7 @@ ht-degree: 0%
    * **[!UICONTROL Time Interval]**: `By Month`
    * **[!UICONTROL Group By]**： `Customer's Order Number`，然后选择 `2` 和 `3`
 
-   ![](../../assets/2nd_and_3rd_purchases_last_year.png)
+  ![](../../assets/2nd_and_3rd_purchases_last_year.png)
 
 * **报告示例2**：去年重复客户的数量
    * **[!UICONTROL Metric]**: `Distinct Customers`
@@ -161,7 +163,7 @@ ht-degree: 0%
    * **[!UICONTROL Time Range]**: `Moving range > Last Year`
    * **[!UICONTROL Time Interval]**: `By Month`
 
-   ![去年回头客](../../assets/Repeat_customers_last_year.png)<!--{: width="929"}-->
+  ![去年回头客](../../assets/Repeat_customers_last_year.png)<!--{: width="929"}-->
 
 ### 按订单存留期数排列的顶级客户
 
@@ -174,7 +176,7 @@ ht-degree: 0%
    * **[!UICONTROL Group By]**: `customer_email`
    * **[!UICONTROL Show Top/Bottom]**：按订单排序的前25项
 
-   ![按订单列出的前25个客户](../../assets/Top_25_customers_by_lifetime_orders.png)<!--{: width="929"}-->
+  ![按订单列出的前25个客户](../../assets/Top_25_customers_by_lifetime_orders.png)<!--{: width="929"}-->
 
 ### 按生命周期收入排列的顶级客户
 
@@ -187,7 +189,7 @@ ht-degree: 0%
    * **[!UICONTROL Group By]**: `customer_email`
    * **[!UICONTROL Show Top Bottom]**：按生命周期收入排序的前25项
 
-   ![按收入划分的前25个客户](../../assets/top_25_customers_by_lifetime_revneue.png)<!--{: width="929"}-->
+  ![按收入划分的前25个客户](../../assets/top_25_customers_by_lifetime_revneue.png)<!--{: width="929"}-->
 
 ### 按同类群组列出的平均生命周期收入
 
@@ -202,7 +204,7 @@ ht-degree: 0%
    * **[!UICONTROL Table]**: `Customer_entity`
    * **[!UICONTROL Perspective]**：每个同类群组成员的累积平均值
 
-   ![按同类群组划分的客户存留期收入](../../assets/Avg_customer_lifetime_revenue_by_cohort.png)<!--{: width="929"}-->
+  ![按同类群组划分的客户存留期收入](../../assets/Avg_customer_lifetime_revenue_by_cohort.png)<!--{: width="929"}-->
 
 ### 按优惠券使用情况划分客户
 
@@ -218,7 +220,7 @@ ht-degree: 0%
    * **[!UICONTROL Time range]**: `All Time`
    * **[!UICONTROL Time interval]**: `By Month`
 
-   ![按优惠券使用情况划分的客户](../../assets/Customers_by_coupon_usage.png)<!--{: width="929"}-->
+  ![按优惠券使用情况划分的客户](../../assets/Customers_by_coupon_usage.png)<!--{: width="929"}-->
 
 * **报告示例2**：按月划分的优惠券和非优惠券客户百分比
    * **[!UICONTROL Metric A]**： `Non coupon customers` （隐藏量度）
@@ -300,7 +302,7 @@ ht-degree: 0%
    * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
    * **[!UICONTROL Time Interval]**: `By Month`
 
-   ![订购的产品](../../assets/products_ordered_pic1.png)<!--{: width="929"}-->
+  ![订购的产品](../../assets/products_ordered_pic1.png)<!--{: width="929"}-->
 
 * 将此量度与您的订单数量度组合，以计算每订单的项目数。 接下来，将优惠券代码添加到报表中，以确定您的促销活动对购物车大小有何影响，或者按新订单与重复订单进行分段，从而更好地了解您的客户行为。
 * **报告示例**：按订单划分的产品：第一笔订单与重复订单
@@ -337,7 +339,7 @@ ht-degree: 0%
    * **[!UICONTROL Time Interval]**: `By Month`
    * **[!UICONTROL Perspective]**: `Amount Change vs Previous Year`
 
-   ![AOV](../../assets/aov_pic.png)<!--{: width="929"}-->
+  ![AOV](../../assets/aov_pic.png)<!--{: width="929"}-->
 
 ### 最多购买带优惠券的产品
 
@@ -351,7 +353,7 @@ ht-degree: 0%
    * **[!UICONTROL Group By**]： `name` (或 `SKU`或任何其他产品标识符)
    * **[!UICONTROL Show top/bottom]**：按订购的产品排列的前25项
 
-   ![带优惠券的产品](../../assets/prod_coupons_pic.png)<!--{: width="929"}-->
+  ![带优惠券的产品](../../assets/prod_coupons_pic.png)<!--{: width="929"}-->
 
 ### 订单间隔时间
 
@@ -398,7 +400,7 @@ ht-degree: 0%
    * **[!UICONTROL Time Range]**: `1 Year Ago to 3 Months Ago`
    * **[!UICONTROL Time Interval]**: `By Day`
 
-   ![广告展示次数](../../assets/ad_impressions.png)<!--{: width="929"}-->
+  ![广告展示次数](../../assets/ad_impressions.png)<!--{: width="929"}-->
 
 ### 点进率(CTR)
 
@@ -482,7 +484,7 @@ ht-degree: 0%
       * 对于量度 `A`，选择 `Customer's first order's campaign`
       * 对于量度 `B`，选择 `campaign`
 
-   ![新用户。](../../assets/New_Users_Last_Month.png)
+  ![新用户。](../../assets/New_Users_Last_Month.png)
 
 >[!NOTE]
 >

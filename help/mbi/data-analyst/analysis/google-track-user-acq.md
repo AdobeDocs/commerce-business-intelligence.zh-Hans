@@ -2,7 +2,9 @@
 title: Google Analytics — 跟踪用户获取源数据概述
 description: 了解如何按用户获取源划分您的数据。
 exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
-source-git-commit: af1e3839839b4c419beabb0cc666c996ea2179d4
+role: Admin, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 1%

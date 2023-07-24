@@ -2,7 +2,9 @@
 title: 定义客户流失
 description: 了解如何设置仪表板来帮助您定义事务型客户的流失。
 exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 0%
@@ -68,29 +70,27 @@ ht-degree: 0%
 
 * [!UICONTROL Formula]：初始重复顺序概率
 * 
-   [！UICONTROL公式]: `A/B`
+  [！UICONTROL公式]: `A/B`
 * 
-
-   [!UICONTROL Format]: `Percent`
+  [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * 
-
-   [!UICONTROL Chart type]: `Scalar`
+  [!UICONTROL Chart type]: `Scalar`
 
 * **重复订购的概率自订购以来经过的月数**
 * 量度A：按自上一个订单以来的月份重复订单（隐藏）
 * [!UICONTROL Metric]: `Number of orders`
 * 
-   [!UICONTROL Perspective]: `Cumulative`
+  [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * 量度B：按订购后月份列出的最后订单（隐藏）
 * [!UICONTROL Metric]: `Number of orders`
 * 
-   [!UICONTROL Perspective]: `Cumulative`
+  [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
 * 量度C：所有时间重复顺序（隐藏）
@@ -98,33 +98,29 @@ ht-degree: 0%
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * 
-
-   [！UICONTROL分组依据]: `Independent`
+  [！UICONTROL分组依据]: `Independent`
 
 * 量度D：所有时间的最后订单（隐藏）
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
 * 
-
-   [！UICONTROL分组依据]: `Independent`
+  [！UICONTROL分组依据]: `Independent`
 
 * [!UICONTROL Formula]：初始重复顺序概率
 * 
-   [！UICONTROL公式]: `(C-A)/(C+D-A-B)`
+  [！UICONTROL公式]: `(C-A)/(C+D-A-B)`
 * 
-
-   [!UICONTROL Format]: `Percent`
+  [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Months since previous order`
 * 显示top.bottom：前24个类别，按类别名称排序
 
 * 
-
-   [!UICONTROL Chart type]: `Line`
+  [!UICONTROL Chart type]: `Line`
 
 初始重复订单概率报表表示重复订单总数/订单总数。 每个顺序都是产生重复顺序的机会；重复顺序的数量是那些实际发生的顺序的子集。
 

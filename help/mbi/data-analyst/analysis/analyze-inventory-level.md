@@ -2,7 +2,9 @@
 title: 分析库存水平
 description: 了解如何分析库存水平。
 exl-id: 620156c5-7bea-4b36-84c7-e0cb4b5cc8be
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Dashboards, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -35,88 +37,88 @@ ht-degree: 0%
    * **`Product's most recent order date`**
       * [!UICONTROL Column type]: `Many to One`
       * 
-         [!UICONTROL Column equation]: `MAX`
+        [!UICONTROL Column equation]: `MAX`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
       * 选择 [!UICONTROL column]： `created_at`
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
+
    * **`Product's first order date`**
       * [!UICONTROL Column type]: `Many to One`
       * 
-         [!UICONTROL Column equation]: `MIN`
+        [!UICONTROL Column equation]: `MIN`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
       * 选择 [!UICONTROL column]： `created_at`
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
+
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]: `Same Table`
       * 
-         [!UICONTROL Column equation]: `AGE`
+        [!UICONTROL Column equation]: `AGE`
       * 选择 [!UICONTROL DATETIME column]： `Product's most recent order date`
+
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `Many to One`
       * 
-         [!UICONTROL Column equation]: `SUM`
+        [!UICONTROL Column equation]: `SUM`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
       * 选择 [!UICONTROL column]： `qty_ordered`
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
+
    * **`Avg products sold per week (all time)`**
       * [!UICONTROL Column type]: `Same Table`
       * 
-         [!UICONTROL Column equation]: `CALCULATION`
+        [!UICONTROL Column equation]: `CALCULATION`
       * [!UICONTROL Column] 输入：
          * 答： `Product's lifetime number of items sold`
          * B： `Product's first order date`
       * 
-         [!UICONTROL Datatype]: `Decimal`
+        [!UICONTROL Datatype]: `Decimal`
       * 定义：
          * 当A为null或B为null时，则使用null else round(A：：decimal/(extract(epoch from (current_timestamp - B))：：decimal/604800.0)，2) end
-
-
-
-
 
 * **[!UICONTROL cataloginventory_stock_item]** 表：
    * **`Sku`**
       * [!UICONTROL Column type]: `One to Many`
       * 
-         [!UICONTROL Column equation]: `JOINED_COLUMN`
+        [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * 选择 [!UICONTROL column]： `sku`
+
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `One to Many`
       * 
-         [!UICONTROL Column equation]: `JOINED_COLUMN`
+        [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * 选择 [!UICONTROL column]： `Product's lifetime number of items sold`
+
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]: `One to Many`
       * 
-         [!UICONTROL Column equation]: `JOINED_COLUMN`
+        [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * 选择 [!UICONTROL column]： `Seconds since product's most recent order date`
+
    * **`Avg products sold per week (all time)`**
       * [!UICONTROL Column type]: `One to Many`
       * 
-         [!UICONTROL Column equation]: `JOINED_COLUMN`
+        [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * 选择 [!UICONTROL column]： `Avg products sold per week (all time)`
+
    * **`Weeks on hand`**
       * [!UICONTROL Column type]: `Same Table`
       * 
-         [!UICONTROL Column equation]: `CALCULATION`
+        [!UICONTROL Column equation]: `CALCULATION`
       * [!UICONTROL Column] 输入：
          * 答： `qty`
          * B： `Avg products sold per week (all time)`
       * 
-         [!UICONTROL Datatype]: `Decimal`
+        [!UICONTROL Datatype]: `Decimal`
       * 定义：
          * 当A为null或B为null或B = 0.0时为null，否则以round(A：：decimal/B，2)结尾
-
-
-
-
 
 +++
 +++ 旧版架构
@@ -125,70 +127,70 @@ ht-degree: 0%
    * **`Product's most recent order date`**
       * [!UICONTROL Column type]: `Many to One`
       * 
-         [!UICONTROL Column equation]: `MAX`
+        [!UICONTROL Column equation]: `MAX`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
       * 选择 [!UICONTROL column]： `created_at`
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
+
    * **`Product's first order date`**
       * [!UICONTROL Column type]: `Many to One`
       * 
-         [!UICONTROL Column equation]: `MIN`
+        [!UICONTROL Column equation]: `MIN`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
       * 选择 [!UICONTROL column]： `created_at`
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
+
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]: `Same Table`
       * 
-         [!UICONTROL Column equation]: `AGE`
+        [!UICONTROL Column equation]: `AGE`
       * 选择DATETIME列： **`Product's most recent order date`**
+
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `Many to One`
       * 
-         [!UICONTROL Column equation]: `SUM`
+        [!UICONTROL Column equation]: `SUM`
       * [!UICONTROL Path]: **`sales_order_item.product_id => catalog_product_entity.entity_id`**
       * 选择 [!UICONTROL column]： **`qty_ordered`**
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
+
    * **`Avg products sold per week (all time)`**
       * 由分析人员创建，在您提交您的文档时 **[库存分析]** 支持请求
-
-
-
-
 
 * **[!UICONTROL cataloginventory_stock_item]** 表：
    * **`Sku`**
       * [!UICONTROL Column type]: `One to Many`
       * 
-         [!UICONTROL Column equation]: `JOINED_COLUMN`
+        [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * 选择 [!UICONTROL column]： `sku`
+
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `One to Many`
       * 
-         [!UICONTROL Column equation]: `JOINED_COLUMN`
+        [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * 选择 [!UICONTROL column]： `Product's lifetime number of items sold`
+
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]: `One to Many`
       * 
-         [!UICONTROL Column equation]: `JOINED_COLUMN`
+        [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * 选择 [!UICONTROL column]： `Seconds since product's most recent order date`
+
    * **`Avg products sold per week (all time)`**
       * [!UICONTROL Column type]: `One to Many`
       * 
-         [!UICONTROL Column equation]: `JOINED_COLUMN`
+        [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * 选择 [!UICONTROL column]： `Avg products sold per week (all time)`
+
    * **`Weeks on hand`**
       * 由分析人员创建，在您提交您的文档时 **[!UICONTROL INVENTORY ANALYSIS]** 支持请求
-
-
-
-
 
 +++
 
@@ -214,33 +216,30 @@ ht-degree: 0%
       * `Sku`
       * `Weeks on hand`
    * 
-
-      [!UICONTROL Chart type]: `Table`
+     [!UICONTROL Chart type]: `Table`
 
 * **`Inventory with less than 2 weeks on hand (order now)`**
    * [!UICONTROL Metric]: `Inventory on hand`
       * [!UICONTROL Filters]:
          * [A] `Weeks on hand` `< 2`
+
    * [!UICONTROL Time period]: `All time`
    * 时间间隔： `None`
    * 
-      [！UICONTROL分组依据]: `Sku`
+     [！UICONTROL分组依据]: `Sku`
    * 
-
-      [!UICONTROL Chart type]: `Table`
-
+     [!UICONTROL Chart type]: `Table`
 
 * **`Inventory with more than 26 weeks on hand (put on sale)`**
    * [!UICONTROL Metric]: `Inventory on hand`
       * [!UICONTROL Filters]:
          * [A] `Weeks on hand` `> 26`
+
    * [!UICONTROL Time period]: `All time`
    * 时间间隔： `None`
    * 
-      [！UICONTROL分组依据]: `Sku`
+     [！UICONTROL分组依据]: `Sku`
    * 
-
-      [!UICONTROL Chart type]: `Table`
-
+     [!UICONTROL Chart type]: `Table`
 
 如果您在构建此分析时遇到任何问题，或者只是想让专业服务团队参与进来， [联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

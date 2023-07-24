@@ -2,7 +2,9 @@
 title: enterprise_rma表
 description: 了解如何分析有关特定退货请求的信息。
 exl-id: a19cbc9a-e34f-4f4e-820f-9e413d1a552d
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
@@ -44,10 +46,10 @@ ht-degree: 0%
 
 | **量度名称** | **描述** | **构造** |
 |---|---|---|
-| `Number of returns` | 请求的退货次数。 | `Operation` 列： `entity id`<br>`Operation`： `Count`<br>`Timestamp` 列： `date requested` |
-| `Total returned amount` | 返回的总货币金额。 | `Operation `列： `Return's total value`<br>`Operation`：Sum<br>`Timestamp` 列：请求日期 |
-| `Average returned amount` | 返回的平均货币金额。 | `Operation`` Column: Return's total value`<br>`Operation`： `Average`<br>`Timestamp` 列： `date requested` |
-| `Average time to return` | 从订单到退货的平均时间。 | `Operation` 列：订单创建日期和退货请求日期之间的秒数<br>`Operation`： `Average`<br>`Timestamp` 列： `date requested` |
+| `Number of returns` | 请求的退货次数。 | `Operation` 列： `entity id`<br>`Operation`： `Count`<br>`Timestamp` 列： `date requested` |
+| `Total returned amount` | 返回的总货币金额。 | `Operation `列： `Return's total value`<br>`Operation`：Sum<br>`Timestamp` 列：请求日期 |
+| `Average returned amount` | 返回的平均货币金额。 | `Operation`` Column: Return's total value`<br>`Operation`： `Average`<br>`Timestamp` 列： `date requested` |
+| `Average time to return` | 从订单到退货的平均时间。 | `Operation` 列：订单创建日期和退货请求日期之间的秒数<br>`Operation`： `Average`<br>`Timestamp` 列： `date requested` |
 
 {style="table-layout:auto"}
 

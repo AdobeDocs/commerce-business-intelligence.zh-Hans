@@ -2,7 +2,9 @@
 title: 高级计算列类型
 description: 了解大多数使用列案例的基础知识 — 但您可能希望计算列比Data warehouse管理器可创建的要复杂一些。
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 4%

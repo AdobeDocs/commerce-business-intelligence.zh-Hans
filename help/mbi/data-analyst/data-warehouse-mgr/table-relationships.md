@@ -2,7 +2,9 @@
 title: 了解和评估表关系
 description: 了解如何了解一个表中可能存在的多少个事件可能属于另一个表中的实体。
 exl-id: e7256f46-879a-41da-9919-b700f2691013
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 0%
@@ -120,7 +122,7 @@ ht-degree: 0%
 如果以下任一项为true，则关系为 `many-to-many`：
 
 * `Non-primary key` 列用于链接两个表
-   ![](../../assets/many-to-many1.png)
+  ![](../../assets/many-to-many1.png)
 * 复合的一部分 `primary key` 用于链接两个表
 
 ![](../../assets/many-to-mnay2.png)

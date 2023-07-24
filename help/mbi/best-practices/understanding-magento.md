@@ -2,7 +2,9 @@
 title: 了解您的 [!DNL Commerce Intelligence] 环境
 description: 了解如何使用和改进您的 [!DNL Commerce Intelligence] 环境。
 exl-id: 601b5fba-da02-4cc8-96ed-147c24f326f9
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 0%
@@ -19,7 +21,7 @@ ht-degree: 0%
 
 例如， `sales\_order` 表格是一个唯一顺序。 此表的主键名为 `entity\_id`. 本专栏可被认为是 `order\_id`. 在一个单独的表格中， `customer\_entity`，每一行表示一个唯一的客户。 此表中的主键也称为 `entity\_id`，可以将其视为 `customer\_id`.
 
-在那些表格里， `sales\_order.entity\_id` 不等于 `customer\_entity.entity\_id`. 对于包含以下项的所有表集，此情况都为true `entity\_id`： `table\_A.entity\_id` 不等于 `table\_B.entity\_id`.
+在那些表格里， `sales\_order.entity\_id` 不等于 `customer\_entity.entity\_id`. 对于包含以下项的所有表集，此情况都为true `entity\_id`： `table\_A.entity\_id` 不等于 `table\_B.entity\_id`.
 
 ## [!DNL Guest orders]
 

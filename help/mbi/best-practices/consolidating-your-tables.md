@@ -2,7 +2,9 @@
 title: 合并表
 description: 了解如何整合表和数据库。
 exl-id: 6065bed3-fb84-4147-a223-92dc3e1b15a5
-source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
+role: Admin, User
+feature: Commerce Tables, Data Integration
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%

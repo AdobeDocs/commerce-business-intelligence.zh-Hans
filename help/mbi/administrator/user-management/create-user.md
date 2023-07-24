@@ -2,7 +2,9 @@
 title: 添加新的Adobe Commerce Intelligence用户
 description: 了解如何添加新的 [!DNL Commerce Intelligence] 用户以及如何更新您的用户名或密码。
 exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: User Management
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 0%

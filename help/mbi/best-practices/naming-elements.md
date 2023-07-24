@@ -2,7 +2,9 @@
 title: 在Commerce Intelligence中命名报表和元素
 description: 了解在中命名报告和元素的最佳实践 [!DNL Commerce Intelligence].
 exl-id: c662cedd-c779-4254-b04b-f3092a538c85
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, User
+feature: Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
@@ -11,7 +13,7 @@ ht-degree: 0%
 
 # 为报表和元素命名
 
-开始在中构建之前[!DNL Adobe Commerce Intelligence]，Adobe希望共享一些成功秘诀。 了解如何创建量度、过滤器等很重要，但是，如果您无法找到所需的内容或者存在歧义，则所有工作都可能徒劳无益。
+开始在中构建之前 [!DNL Adobe Commerce Intelligence]，Adobe希望共享一些成功秘诀。 了解如何创建量度、过滤器等很重要，但是，如果您无法找到所需的内容或者存在歧义，则所有工作都可能徒劳无益。
 
 ## 命名法为何重要？ {#why}
 

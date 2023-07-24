@@ -2,7 +2,9 @@
 title: 在多个屏幕上显示功能板
 description: 了解如何在办公室周围显示仪表板。
 exl-id: aabe5c8f-0809-467c-9713-099aed6926b9
-source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
+role: Admin, User
+feature: Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%

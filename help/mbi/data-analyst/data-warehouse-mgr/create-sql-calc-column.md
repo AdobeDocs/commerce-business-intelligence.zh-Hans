@@ -2,7 +2,9 @@
 title: 创建和使用SQL计算列
 description: 了解如何在新的Adobe Commerce Intelligence架构上以SQL计算列的形式创建高级列。
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
-source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, SQL Report Builder, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '816'
 ht-degree: 0%

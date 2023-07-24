@@ -2,7 +2,9 @@
 title: 预测
 description: 预测
 exl-id: 61e0516a-941c-4e32-b051-6ff664962198
-source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '58'
 ht-degree: 0%

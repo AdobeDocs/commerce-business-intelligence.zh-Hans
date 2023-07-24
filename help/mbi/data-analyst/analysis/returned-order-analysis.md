@@ -2,7 +2,9 @@
 title: 分析退货单
 description: 了解如何设置一个仪表板，用于提供对商店回报的详细分析。
 exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -60,10 +62,9 @@ ht-degree: 0%
 * 选择定义： `Joined Column`
 * [!UICONTROL Create Path]:
 * 
-   [!UICONTROL Many]: `enterprise_rma.order_id`
+  [!UICONTROL Many]: `enterprise_rma.order_id`
 * 
-
-   [!UICONTROL One]: `sales_flat_order.entity_id`
+  [!UICONTROL One]: `sales_flat_order.entity_id`
 
 * 选择 [!UICONTROL table]： `sales_flat_order`
 * 选择 [!UICONTROL column]： `created_at`
@@ -82,10 +83,9 @@ ht-degree: 0%
 * 选择定义： `Joined Column`
 * [!UICONTROL Create Path]:
    * 
-      [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
+     [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
    * 
-
-      [!UICONTROL One]: `enterprise_rma.entity_id`
+     [!UICONTROL One]: `enterprise_rma.entity_id`
 
 * 选择 [!UICONTROL table]： `enterprise_rma`
 * 选择 [!UICONTROL column]： `date_requested`
@@ -158,15 +158,14 @@ ht-degree: 0%
 * 公式：重复订单概率
 * [!UICONTROL Formula]: `B / A`
 * 
-
-   [!UICONTROL Format]: `Percentage`
+  [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [！UICONTROL间隔]: `None`
+  [！UICONTROL间隔]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
 * 
-   [！UICONTROL图表类型]: `Bar`
+  [！UICONTROL图表类型]: `Bar`
 
 * **平均返回时间（所有时间）**
 * 量度 `A`： `Avg time between order and return`
@@ -174,10 +173,9 @@ ht-degree: 0%
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [！UICONTROL间隔]: `None`
+  [！UICONTROL间隔]: `None`
 * 
-
-   [！UICONTROL图表类型]: `Number`
+  [！UICONTROL图表类型]: `Number`
 
 * **具有退货的订单百分比**
 * 量度 `A`： `Number of orders`
@@ -191,12 +189,11 @@ ht-degree: 0%
 * 公式：具有退货的订单百分比
 * [!UICONTROL Formula]: `B / A`
 * 
-
-   [!UICONTROL Format]: `Percentage`
+  [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [！UICONTROL间隔]: `None`
+  [！UICONTROL间隔]: `None`
 * [!UICONTROL Chart Type]: `Number - % of orders with return`
 
 * **按月返回收入**
@@ -206,8 +203,7 @@ ht-degree: 0%
 * [!UICONTROL Time period]: `All time`
 * [!UICONTROL Interval]: `By month`
 * 
-
-   [！UICONTROL图表类型]: `Line`
+  [！UICONTROL图表类型]: `Line`
 
 * **已退货且不再购买的客户**
 * 量度 `A`： `Number of orders with returns`
@@ -218,12 +214,11 @@ ht-degree: 0%
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [！UICONTROL间隔]: `None`
+  [！UICONTROL间隔]: `None`
 * 
-   [！UICONTROL分组依据]: `Customer_email`
+  [！UICONTROL分组依据]: `Customer_email`
 * 
-
-   [！UICONTROL图表类型]: `Table`
+  [！UICONTROL图表类型]: `Table`
 
 * **按物料列出的退货率**
 * 量度 `A`： `Returned items` （隐藏）
@@ -236,15 +231,14 @@ ht-degree: 0%
 * [!UICONTROL Formula]: `Return %`
 * [!UICONTROL Formula]: `B / A`
 * 
-
-   [!UICONTROL Format]: `Percentage`
+  [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [！UICONTROL间隔]: `None`
+  [！UICONTROL间隔]: `None`
 * [!UICONTROL Group by]: `product_sku AND/OR product_name`
 * 
-   [！UICONTROL图表类型]: `Table`
+  [！UICONTROL图表类型]: `Table`
 
 在编译所有报告后，您可以根据需要将报告组织在功能板上。 结果可能类似于上述示例仪表板。
 

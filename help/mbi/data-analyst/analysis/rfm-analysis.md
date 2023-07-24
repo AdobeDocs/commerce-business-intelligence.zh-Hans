@@ -2,7 +2,9 @@
 title: 回访间隔、频度、货币(RFM)分析
 description: 了解如何设置一个仪表板，以便按客户回访间隔、频度和货币排名划分客户。
 exl-id: 8f0f08fd-710b-4810-9faf-3d0c3cc0a25d
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
@@ -41,19 +43,17 @@ ht-degree: 0%
 * [!UICONTROL Filter]: `Orders we count`
 
 * 
-
-       自客户上次订购日期以来的秒数
-   * [!UICONTROL Column type]： — “相同表>年龄”
+      自客户上次订购日期以来的秒数
+  * [!UICONTROL Column type]： — “相同表>年龄”
 * 已选择 [!UICONTROL column]： `Customer's last order date`
 
 * （输入）计数引用
 * [!UICONTROL Column type]: `Same table > Calculation`
 * 
-   [！UICONTROL输入]: `entity_id`
+  [！UICONTROL输入]: `entity_id`
 * [!UICONTROL Calculation]: `**case when A is null then null else 1 end**`
 * 
-
-   [！UICONTROL数据类型]: `Integer`
+  [！UICONTROL数据类型]: `Integer`
 
 * **计数引用** 表（这是您上传的编号为“1”的文件）
 * 客户数量
@@ -77,16 +77,14 @@ ht-degree: 0%
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime revenue`, `Number of customers`
 * [!UICONTROL Calculation]: `case when A is null then null else (B-(A-1)) end`
 * 
-
-   [！UICONTROL数据类型]: `Integer`
+  [！UICONTROL数据类型]: `Integer`
 
 * 客户的货币得分（按百分位数）
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime revenue`, `Number of customers`
 * [!UICONTROL Calculation]: `Case when round((B-A+1)*100/B,0) <= 20 then 5 when round((B-A+1)*100/B,0) <= 40 then 4 when round((B-A+1)*100/B,0) <= 60 then 3 when round((B-A+1)*100/B,0) <= 80 then 2 when round((B-A+1)*100/B,0) <= 100 then 1 else 0 end`
 * 
-
-   [！UICONTROL数据类型]: `Integer`
+  [！UICONTROL数据类型]: `Integer`
 
 * （输入）按客户存留期订单数排名
 * [!UICONTROL Column type]: `Same table > Event Number`
@@ -95,7 +93,7 @@ ht-degree: 0%
 
 * 按客户存留期订单数排名
 * 
-   [！UICONTROL列类型]: – "相同表>计算"
+  [！UICONTROL列类型]: – "相同表>计算"
 * [!UICONTROL Inputs]： - **（输入）按客户存留期订单数排名**， **客户数量**
 * [!UICONTROL Calculation]： - **当A为null时的大小写，否则(B-(A-1))结束**
 * [!UICONTROL Datatype]： — 整数
@@ -105,8 +103,7 @@ ht-degree: 0%
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime number of orders`, `Number of customers`
 * [!UICONTROL Calculation]: `Case when round((B-A+1)*100/B,0) <= 20 then 5 when round((B-A+1)*100/B,0) <= 40 then 4 when round((B-A+1)*100/B,0) <= 60 then 3 when round((B-A+1)*100/B,0) <= 80 then 2 when round((B-A+1)*100/B,0) <= 100 then 1 else 0 end`
 * 
-
-   [！UICONTROL数据类型]: `Integer`
+  [！UICONTROL数据类型]: `Integer`
 
 * 自客户上次订购日期以来按秒排名
 * [!UICONTROL Column type]: `Same table > Event Number`
@@ -118,16 +115,14 @@ ht-degree: 0%
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime number of orders`, `Number of customers`
 * [!UICONTROL Calculation]: `Case when (A * 100/B,0) <= 20 then 5 when (A * 100/B,0) <= 40 then 4 when (A * 100/B,0) <= 60 then 3 when (A * 100/B,0) <= 80 then 2 when (A * 100/B,0) <= 100 then 1 else 0 end`
 * 
-
-   [！UICONTROL数据类型]: `Integer`
+  [！UICONTROL数据类型]: `Integer`
 
 * 客户的回访间隔分数（按百分位数）
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `Customer's recency score (by percentiles)`, `Customer's frequency score (by percentiles)`, `Customer's monetary score (by percentiles)`
 * [!UICONTROL Calculation]: `case when (A IS NULL or B IS NULL or C IS NULL) then null else concat(A,B,C) end`
 * 
-
-   [！UICONTROL数据类型]: String
+  [！UICONTROL数据类型]: String
 
 * **计数引用** 表
 * [!UICONTROL Number of customers]: `(RFM > 0)`
@@ -147,8 +142,7 @@ ht-degree: 0%
 * [!UICONTROL Inputs]: – `Customer's recency score (by percentiles)`, `Customer's frequency score (by percentiles)`, `Customer's monetary score (by percentiles)`
 * [!UICONTROL Calculation]: `case when (A IS NULL or B IS NULL or C IS NULL) then null else A+B+C end`
 * 
-
-   [！UICONTROL数据类型]: `Integer`
+  [！UICONTROL数据类型]: `Integer`
 
 * （输入）按客户的整体RFM得分排名
 * [!UICONTROL Column type]: `Same table > Event Number`
@@ -161,16 +155,14 @@ ht-degree: 0%
 * [!UICONTROL Inputs]: `(input) Ranking by customer's overall RFM score`, `Number of customers (RFM > 0)`
 * [!UICONTROL Calculation]: `case when A is null then null else (B-(A-1)) end`
 * 
-
-   [！UICONTROL数据类型]: `Integer`
+  [！UICONTROL数据类型]: `Integer`
 
 * 客户的RFM组
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime revenue`, `Number of customers`
 * [!UICONTROL Calculation]: `Case when round(A * 100/B,0) <= 20 then '5. copper' when round(A * 100/B,0) <= 40 then '4. bronze' when round(A * 100/B,0) <= 60 then '3. silver' when round(A * 100/B,0)<= 80 then '2. gold' else '1. Platinum' end`
 * 
-
-   [！UICONTROL数据类型]: `Integer`
+  [！UICONTROL数据类型]: `Integer`
 
 >[!NOTE]
 >
@@ -193,14 +185,13 @@ ht-degree: 0%
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * 隐藏图表
 * [!UICONTROL Group by]: `Customer's RFM group`
 * 
-   [！UICONTROL分组依据]: `Email`
+  [！UICONTROL分组依据]: `Email`
 * 
-
-   [!UICONTROL Chart type]: `Table`
+  [!UICONTROL Chart type]: `Table`
 
 * **具有五个回访间隔分数的客户**
 * 量度 `A`： `New customers`
@@ -209,16 +200,15 @@ ht-degree: 0%
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * 
-   [!UICONTROL Chart Type]: `Scalar`
+  [!UICONTROL Chart Type]: `Scalar`
 * 隐藏图表
 * 
-   [！UICONTROL分组依据]: `Email`
+  [！UICONTROL分组依据]: `Email`
 * [!UICONTROL Group by]: `Customer's RFM score (R+F+M)`
 * 
-
-   [!UICONTROL Chart type]: `Table`
+  [!UICONTROL Chart type]: `Table`
 
 * **具有一个回访间隔分数的客户**
 * 量度 `A`： `New customers`
@@ -227,15 +217,14 @@ ht-degree: 0%
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * 
-   [!UICONTROL Chart Type]: `Scalar`
+  [!UICONTROL Chart Type]: `Scalar`
 * 隐藏图表
 * 
-   [！UICONTROL分组依据]: `Email`
+  [！UICONTROL分组依据]: `Email`
 * [!UICONTROL Group by]: `Customer's RFM score (R+F+M)`
 * 
-
-   [!UICONTROL Chart type]: `Table`
+  [!UICONTROL Chart type]: `Table`
 
 在编译所有报告后，您可以根据需要将报告组织在功能板上。 结果可能类似于上面的示例仪表板，但生成的三个表只是您可以执行的客户细分类型的示例。

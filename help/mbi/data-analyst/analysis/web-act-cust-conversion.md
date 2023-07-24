@@ -2,7 +2,9 @@
 title: 分析网站活动和客户转化率
 description: 了解如何设置一个功能板，用于跟踪您的网站活动（包括页面查看次数、会话数和用户）以及一段时间内您的客户转化率。
 exl-id: 2b57d5b3-3bbf-4ec9-86a6-9fa850c1c459
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, User
+feature: Reports, Data Integration
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '744'
 ht-degree: 0%

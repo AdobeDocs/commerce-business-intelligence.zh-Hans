@@ -2,7 +2,9 @@
 title: 来宾订单
 description: 了解访客订单对您数据的影响，以及对于贵机构的访客订单，您必须正确考虑哪些选项。 [!DNL Commerce Intelligence] data warehouse。
 exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 0%
@@ -21,13 +23,13 @@ ht-degree: 0%
 
 * **如果所有客户都已注册** 客服订单是不被允许的，这意味着 `orders` 表中有一个值 `customer\_id` 列。 因此，每个订单都会重新联结到 `customers` 表格。
 
-   ![](../../assets/guest-orders-4.png)
+  ![](../../assets/guest-orders-4.png)
 
 * **如果允许来宾订单**，这意味着某些订单在 `customer\_id` 列。 只有注册客户会获得 `customer\_id` 上的列 `orders` 表格。 未注册的客户将获得 `NULL` （或空白）值。 因此，并非所有订单记录在 `customers` 表格。
 
-   >[!NOTE]
-   >
-   >要识别发出订单的唯一个人，需要在旁边添加另一个唯一用户属性 `customer\_id` 已附加到订单。 通常使用客户的电子邮件地址。
+  >[!NOTE]
+  >
+  >要识别发出订单的唯一个人，需要在旁边添加另一个唯一用户属性 `customer\_id` 已附加到订单。 通常使用客户的电子邮件地址。
 
 ## 如何在Data warehouse设置中考虑来宾订单
 

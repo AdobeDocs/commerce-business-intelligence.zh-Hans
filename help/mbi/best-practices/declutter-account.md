@@ -2,7 +2,9 @@
 title: 清空您的 [!DNL Commerce Intelligence] 帐户
 description: 了解如何清理您的 [!DNL Commerce Intelligence] 帐户。
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
-source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
+role: Admin, User
+feature: Accounts
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 0%

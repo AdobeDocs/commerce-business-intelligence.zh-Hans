@@ -2,7 +2,9 @@
 title: 优惠券性能
 description: 了解如何分析优惠券性能。
 exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: Data Warehouse Manager, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '1167'
 ht-degree: 0%
@@ -34,19 +36,19 @@ ht-degree: 0%
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `coupon\_code`
-   * 
-      [！UICONTROL数据类型]: `String`
-   * [!UICONTROL Calculation]：用例 `A` 为空，则 `No coupon` else `Coupon` 结束
 
+   * 
+     [！UICONTROL数据类型]: `String`
+   * [!UICONTROL Calculation]：用例 `A` 为空，则 `No coupon` else `Coupon` 结束
 
 * **\[INPUT\]客户\_id — 优惠券代码**
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `customer\_id`
       * `B`: `coupon\_code`
+
    * [!UICONTROL Datatype] 字符串
    * [!UICONTROL Calculation]: `concat(A,' - ',B)`
-
 
 * **具有此优惠券的订单数**
    * [!UICONTROL Column type]: `Same Table => EVENT\_NUMBER`
@@ -64,6 +66,7 @@ ht-degree: 0%
    * [!UICONTROL Filters]:
       * `A`: `Orders we count`
       * `B`: `Customer's order number = 1`
+
    * **客户的首笔订单优惠券**
       * [!UICONTROL Column type]: `Many to One => MAX`
       * [!UICONTROL Path]: `sales\_flat\_order.customer\_id = customer\_entity.entity\_id`
@@ -71,42 +74,41 @@ ht-degree: 0%
       * [!UICONTROL Filter]:
          * `A`: `Orders we count`
          * `B`: `Customer's order number = 1`
+
    * **客户使用的优惠券的生命周期数**
       * [!UICONTROL Column type]: `Many to One => COUNT`
       * [!UICONTROL Path]: `sales\_flat\_order.customer\_id = customer\_entity.entity\_id`
       * [!UICONTROL Filter]:
          * `A`: `Orders we count`
          * `B`: `Order has coupon applied? (Coupon/No coupon) = Coupon`
+
    * **优惠券收购客户或非优惠券收购客户**
       * [!UICONTROL Column type]: `Same Table => CALCULATION`
       * [!UICONTROL Inputs]:
          * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
+
       * 
-         [！UICONTROL数据类型]: `String`
+        [！UICONTROL数据类型]: `String`
       * [!UICONTROL Calculation]： **如果A=&#39;Coupon&#39;然后&#39;Coupon acquisition customer&#39;否则&#39;Non-coupon acquisition customer&#39;结束**
+
    * **含优惠券的客户订单百分比**
       * [!UICONTROL Column type]: `Same Table => CALCULATION`
       * [!UICONTROL Inputs]:
          * `A`: `User's lifetime number of coupons used`
          * `B`: `User's lifetime number of orders`
+
       * 
-         [！UICONTROL数据类型]: `Decimal`
+        [！UICONTROL数据类型]: `Decimal`
       * [!UICONTROL Calculation]： **A为null或B为null或B=0然后为null的情况，否则A/B结束**
+
    * **客户的优惠券使用情况**
       * [!UICONTROL Column type]: `Same Table => Calculation`
       * [!UICONTROL Inputs]:
          * `A`: `Percent of customer's orders with coupon`
+
       * 
-         [！UICONTROL数据类型]: `String`
+        [！UICONTROL数据类型]: `String`
       * [!UICONTROL Calculation]： **当A=0时为Null，当A&lt;0.5时为“Never used coupon”，当A=0.5时为“Moverly full price”，当A=1时为“50/50”，当A>0.5时为“Coupons only”，当A>0.5时为“Moverly coupon”，否则为“Undefined”**
-
-
-
-
-
-
-
-
 
 * `sales\_flat\_order` 表
    * **客户的第一张订单包含优惠券？ （优惠券/无优惠券）**
@@ -114,11 +116,11 @@ ht-degree: 0%
       * [!UICONTROL Path]: `sales\_flat\_order.customer\_id = customer\_entity.entity\_id`
       * 选择 [!UICONTROL column]： `Customer's first order included a coupon? (Coupon/No coupon)`
 ^
+
    * **客户的首笔订单优惠券**
       * [!UICONTROL Column type]: `One to Many => JOINED\_COLUMN`
       * [!UICONTROL Path]: `sales\_flat\_order.customer\_id = customer\_entity.entity\_id`
       * 选择 [!UICONTROL column]： `Customer's first order coupon?`
-
 
 如果不支持来宾订单，则创建其他列：
 
@@ -131,29 +133,29 @@ ht-degree: 0%
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
-   * 
-      [！UICONTROL数据类型]: `String`
-   * [!UICONTROL Calculation]： **如果A=&#39;Coupon&#39;然后&#39;Coupon acquisition customer&#39;否则&#39;Non-coupon acquisition customer&#39;结束**
 
+   * 
+     [！UICONTROL数据类型]: `String`
+   * [!UICONTROL Calculation]： **如果A=&#39;Coupon&#39;然后&#39;Coupon acquisition customer&#39;否则&#39;Non-coupon acquisition customer&#39;结束**
 
 * **含优惠券的客户订单百分比**
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `User's lifetime number of coupons used`
       * `B`: `User's lifetime number of orders`
-   * 
-      [！UICONTROL数据类型]: `Decimal`
-   * [!UICONTROL Calculation]： **A为null或B为null或B=0然后为null的情况，否则A/B结束**
 
+   * 
+     [！UICONTROL数据类型]: `Decimal`
+   * [!UICONTROL Calculation]： **A为null或B为null或B=0然后为null的情况，否则A/B结束**
 
 * **客户的优惠券使用情况**
    * [!UICONTROL Column type]: `Same Table => Calculation`
    * [!UICONTROL Inputs]:
       * `A`: `Percent of customer's orders with coupon`
-   * 
-      [！UICONTROL数据类型]: `String`
-   * [!UICONTROL Calculation]： **当A=0时为Null，当A&lt;0.5时为“Never used coupon”，当A=0.5时为“Moverly full price”，当A=1时为“50/50”，当A>0.5时为“Coupons only”，当A>0.5时为“Moverly coupon”，否则为“Undefined”**
 
+   * 
+     [！UICONTROL数据类型]: `String`
+   * [!UICONTROL Calculation]： **当A=0时为Null，当A&lt;0.5时为“Never used coupon”，当A=0.5时为“Moverly full price”，当A=1时为“50/50”，当A>0.5时为“Coupons only”，当A>0.5时为“Moverly coupon”，否则为“Undefined”**
 
 ## 量度
 
@@ -189,11 +191,10 @@ ht-degree: 0%
 * 量度 `A`： `Coupon acquisitions`
 * [!UICONTROL Time period]: `All time`
 * 
-   [！UICONTROL间隔]: `None`
+  [！UICONTROL间隔]: `None`
 * [!UICONTROL Group by]： `Coupon acquisitions customer` 或 `Non coupon acquisition customer`
 * 
-
-   [！UICONTROL图表类型]: `Pie`
+  [！UICONTROL图表类型]: `Pie`
 
 * **收购优惠券及非收购优惠券客户数目**
    * [!UICONTROL Metric]: `New customers`
@@ -212,10 +213,9 @@ ht-degree: 0%
 * 量度 `A`： `Average lifetime revenue (at least 3 months age)`
 * [!UICONTROL Time period]: `X years ago to 90 days ago`
 * 
-   [！UICONTROL间隔]: `None`
+  [！UICONTROL间隔]: `None`
 * 
-
-   [！UICONTROL图表类型]: `Scalar`
+  [！UICONTROL图表类型]: `Scalar`
 
 * **平均存留期收入：无优惠券常见问题解答。 （90天以上）**
    * [!UICONTROL Metric]：平均生命周期收入
@@ -225,10 +225,9 @@ ht-degree: 0%
 * 量度 `A`： `Average lifetime revenue (at least 3 months age)`
 * [!UICONTROL Time period]: `X years ago to 90 days ago`
 * 
-   [！UICONTROL间隔]: `None`
+  [！UICONTROL间隔]: `None`
 * 
-
-   [！UICONTROL图表类型]: `Scalar`
+  [！UICONTROL图表类型]: `Scalar`
 
 * **按一阶优惠券计算的平均生命周期收入**
    * [!UICONTROL Metric]: `Average lifetime revenue`
@@ -236,11 +235,10 @@ ht-degree: 0%
 * 量度 `A`： `Average lifetime revenue`
 * [!UICONTROL Time period]: `All time`
 * 
-   [！UICONTROL间隔]: `None`
+  [！UICONTROL间隔]: `None`
 * [!UICONTROL Group by]: `Customer's first order's coupon`
 * 
-
-   [！UICONTROL图表类型]: `Column`
+  [！UICONTROL图表类型]: `Column`
 
 >[!NOTE]
 >
@@ -250,23 +248,23 @@ ht-degree: 0%
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * 客户的第一笔订单包括优惠券（优惠券/无优惠券）=优惠券
+
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * 客户的第一笔订单包括优惠券（优惠券/无优惠券）=优惠券
       * 是客户的最后一个订单吗？ =否
    * 
-      [！UICONTROL公式]: `B/A`
+     [！UICONTROL公式]: `B/A`
    * [!UICONTROL Format]: `Percentage %`
 
    * 从中选择统计上显著的数字 `Customer's by lifetime orders` 图表。 在查看图表时，一个好的规则是查找时段中具有30个或更多客户的订单编号。 根据您的数据集，这可能是一个很大的数字，因此请随意添加1-10。
-
 
 * 量度 `A`： `Number of orders`
 * 量度 `B`： `Number of non last orders`
 * [!UICONTROL Formula]: `Repeat order probability`
 * [!UICONTROL Time period]: `All time`
 * 
-   [！UICONTROL间隔]: `None`
+  [！UICONTROL间隔]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
 * [!UICONTROL Chart type]: `Bar chart`
 
@@ -274,24 +272,24 @@ ht-degree: 0%
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * 客户的第一笔订单包括优惠券（优惠券/无优惠券）=无优惠券
+
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * 客户的第一笔订单包括优惠券（优惠券/无优惠券）=无优惠券
       * 是客户的最后一个订单吗？ =否
+
    * 
-      [！UICONTROL公式]: `B/A`
+     [！UICONTROL公式]: `B/A`
    * [!UICONTROL Format]: `Percentage %`
 
    * 从中选择统计上显著的数字 `Customer's by lifetime orders` 图表或1-5。
-
-
 
 * 量度 `A`： `Number of orders`
 * 量度 `B`： `Number of non last orders`
 * [!UICONTROL Formula]: `Repeat order probability`
 * [!UICONTROL Time period]: `All time`
 * 
-   [！UICONTROL间隔]: `None`
+  [！UICONTROL间隔]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
 * [!UICONTROL Chart type]: `Bar chart`
 
@@ -299,21 +297,21 @@ ht-degree: 0%
    * [!UICONTROL Metric]: `New customers`
    * [!UICONTROL Filter]:
       * 优惠券收购客户或非优惠券收购客户=优惠券收购
+
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * 客户的订单编号> 1
       * 客户的第一笔订单是否包含优惠券？ （优惠券/无优惠券）=优惠券
+
    * [!UICONTROL Metric]:`Number of orders`
    * [!UICONTROL Filter]:
       * 客户的订单编号> 1
       * 客户的第一笔订单是否包含优惠券？ （优惠券/无优惠券）=优惠券
       * 订单已应用优惠券？ （优惠券/无优惠券）=优惠券
+
    * 
-      [！UICONTROL公式]: `C/B`
+     [！UICONTROL公式]: `C/B`
    * [!UICONTROL Format]: `Percentage %`
-
-
-
 
 * 量度 `A`： `Coupon-acquired customers`
 * 量度 `B`： `Number of repeat orders`
@@ -321,30 +319,29 @@ ht-degree: 0%
 * [!UICONTROL Formula]: `% of repeat orders with coupon`
 * [!UICONTROL Time period]: `All time`
 * 
-   [！UICONTROL间隔]: `None`
+  [！UICONTROL间隔]: `None`
 * 
-
-   [！UICONTROL图表类型]: `Table` (可以转置此表以获得更好的可视化)
+  [！UICONTROL图表类型]: `Table` (可以转置此表以获得更好的可视化)
 
 * **非优惠券收购客户的优惠券使用率（重复订购）**
    * [!UICONTROL Metric]: `New customers`
    * [!UICONTROL Filter]:
       * 优惠券收购客户或非优惠券收购客户=非优惠券收购
+
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * 客户的订单编号> 1
       * 客户的第一笔订单是否包含优惠券？ （优惠券/无优惠券）=无优惠券
+
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * 客户的订单编号> 1
       * 客户的第一笔订单是否包含优惠券？ （票息/无票息）=无票息
       * 订单已应用优惠券？ （优惠券/无优惠券）=优惠券
+
    * 
-      [！UICONTROL公式]: `C/B`
+     [！UICONTROL公式]: `C/B`
    * [!UICONTROL Format]: `Percentage %`
-
-
-
 
 * 量度 `A`： `Non-coupon-acquired customers`
 * 量度 `B`： `Number of repeat orders`
@@ -352,37 +349,35 @@ ht-degree: 0%
 * [!UICONTROL Formula]: `% of repeat orders with coupon`
 * [!UICONTROL Time period]: `All time`
 * 
-   [！UICONTROL间隔]: `None`
+  [！UICONTROL间隔]: `None`
 * 
-
-   [！UICONTROL图表类型]: `Table` (可以转置此表以获得更好的可视化)
+  [！UICONTROL图表类型]: `Table` (可以转置此表以获得更好的可视化)
 
 * **优惠券使用情况详细信息（首次订购）**
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * 客户的订单编号= 1
       * 使用此优惠券的订单数> 10
+
    * 
-      [！UICONTROL量度]: `Revenue`
+     [！UICONTROL量度]: `Revenue`
    * [!UICONTROL Filter]:
       * 客户的订单编号= 1
       * 使用此优惠券的订单数> 10
+
    * [!UICONTROL Metric]: `Coupon discount amount`
    * [!UICONTROL Filter]:
       * 客户的订单编号= 1
       * 使用此优惠券的订单数> 10
+
    * [!UICONTROL Formula]： `B-C` （如果C为负）；B+C（如果C为正）
    * 
-
-      [！UICONTROL格式]: `Currency`
+     [！UICONTROL格式]: `Currency`
 
    * [!UICONTROL Metric]: `Average order value`
    * [!UICONTROL Filter]:
       * 客户的订单编号= 1
       * 使用此优惠券的订单数> 10
-
-
-
 
 * 量度 `A`： `First time orders (FTO)`
 * 量度 `B`： `Revenue from FTO`
@@ -391,11 +386,10 @@ ht-degree: 0%
 * 量度 `E`： `Average order value for FTO`
 * [!UICONTROL Time period]: `All time`
 * 
-   [！UICONTROL间隔]: `None`
+  [！UICONTROL间隔]: `None`
 * [!UICONTROL Group by]: `coupon code`
 * 
-
-   [！UICONTROL图表类型]: `Table`
+  [！UICONTROL图表类型]: `Table`
 >[!NOTE]
 >
 >“使用此优惠券的订单数”的数量10是任意的。 请为此过滤器使用最合适的数量。
@@ -406,24 +400,22 @@ ht-degree: 0%
 * 量度 `A`： `Number or orders with coupon`
 * [!UICONTROL Time period]: `All time`
 * 
-   [！UICONTROL间隔]: `None`
+  [！UICONTROL间隔]: `None`
 * 
-
-   [！UICONTROL图表类型]: `Scalar`
+  [！UICONTROL图表类型]: `Scalar`
 
 * **含优惠券的订单净收入（全时）**
    * 
-      [！UICONTROL量度]: `Revenue`
+     [！UICONTROL量度]: `Revenue`
    * [!UICONTROL Filter]:
       * 订单已应用优惠券？ （优惠券/无优惠券）=优惠券
 
 * 量度 `A`： `Net revenue from orders with coupons`
 * [!UICONTROL Time period]: `All time`
 * 
-   [！UICONTROL间隔]: `None`
+  [！UICONTROL间隔]: `None`
 * 
-
-   [！UICONTROL图表类型]: `Scalar`
+  [！UICONTROL图表类型]: `Scalar`
 
 * **优惠券折扣（所有时间）**
    * [!UICONTROL Metric]: `Number of coupons used`
@@ -431,10 +423,9 @@ ht-degree: 0%
 * 量度 `A`： `Coupon discount amount`
 * [!UICONTROL Time period]: `All time`
 * 
-   [！UICONTROL间隔]: `None`
+  [！UICONTROL间隔]: `None`
 * 
-
-   [！UICONTROL图表类型]: `Scalar`
+  [！UICONTROL图表类型]: `Scalar`
 
 * **有优惠券和无优惠券的订单数**
    * [!UICONTROL Metric]: `Number of orders`
@@ -442,7 +433,7 @@ ht-degree: 0%
 * 量度 `A`： `Number of orders`
 * [!UICONTROL Time period]: `Last 24 months`
 * 
-   [！UICONTROL间隔]: `None`
+  [！UICONTROL间隔]: `None`
 * [!UICONTROL Group by]: `Order has coupon applied? (Coupon/No coupon)`
 * [!UICONTROL Chart type]: `Stacked column`
 
@@ -454,49 +445,45 @@ ht-degree: 0%
 * 量度 `A`： `New customers`
 * [!UICONTROL Time period]: `All time`
 * 
-   [！UICONTROL间隔]: `None`
+  [！UICONTROL间隔]: `None`
 * [!UICONTROL Group by]: `Customer's coupon usage`
 * 
-
-   [！UICONTROL图表类型]: `Pie`
+  [！UICONTROL图表类型]: `Pie`
 
 * **优惠券使用情况详细信息**
    * [!UICONTROL Metric]: `Number of orders with coupon`
    * [!UICONTROL Filter]:
       * 使用此优惠券的订单数> 10
+
    * 
-      [！UICONTROL量度]: `Revenue`
+     [！UICONTROL量度]: `Revenue`
    * [!UICONTROL Filter]:
       * 使用此优惠券的订单数> 10
+
    * [!UICONTROL Metric]: `Coupon discount amount`
    * [!UICONTROL Filter]:
       * 使用此优惠券的订单数> 10
+
    * [!UICONTROL Formula]： `B-C` (如果 `C` 为负面)； `B+C` (如果 `C` 为正数)
    * 
-
-      [！UICONTROL格式]: `Currency`
+     [！UICONTROL格式]: `Currency`
 
    * [!UICONTROL Formula]： `C/(B-C)` (如果 `C` 为负面)； `C/(B+C)` (如果 `C` 为正数)
    * 
-
-      [！UICONTROL格式]: `Percentage`
+     [！UICONTROL格式]: `Percentage`
 
    * [!UICONTROL Metric]: `Average order value`
    * [!UICONTROL Filter]:
       * 使用此优惠券的订单数> 10
-   * 
-      [！UICONTROL公式]: `C/A`
-   * 
 
-      [！UICONTROL格式]: `Currency`
+   * 
+     [！UICONTROL公式]: `C/A`
+   * 
+     [！UICONTROL格式]: `Currency`
 
    * [!UICONTROL Metric]: `Distinct buyers`
    * [!UICONTROL Filter]:
       * 使用此优惠券的订单数> 10
-
-
-
-
 
 * 量度 `A`： `Number of orders`
 * 量度 `B`： `Net revenue from orders`
@@ -508,10 +495,10 @@ ht-degree: 0%
 * 量度 `H`： `Distinct buyers`
 * [!UICONTROL Time period]: `All time`
 * 
-   [！UICONTROL间隔]: `None`
+  [！UICONTROL间隔]: `None`
 * [!UICONTROL Group by]: `coupon code`
 * 
-   [！UICONTROL图表类型]: `Table`
+  [！UICONTROL图表类型]: `Table`
 
 >[!NOTE]
 >

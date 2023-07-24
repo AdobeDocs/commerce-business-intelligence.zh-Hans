@@ -2,7 +2,9 @@
 title: 创建计算列
 description: 了解如何整合来自不同来源的数据。
 exl-id: 668cbc77-6a96-4687-9f40-3635b1be5c66
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%

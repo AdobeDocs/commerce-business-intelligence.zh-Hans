@@ -2,7 +2,9 @@
 title: quote_item表
 description: 了解如何使用quote_item表。
 exl-id: dad36e88-5986-4b52-8a0e-ac084fabb275
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 0%
@@ -51,8 +53,8 @@ ht-degree: 0%
 
 | **量度名称** | **描述** | **构造** |
 |---|---|---|
-| `Number of abandoned cart items` | 添加到符合特定“放弃”条件的购物车中的物料总数 | `Operation: Sum`<br/>`Operand: qty`<br/>`Timestamp: Cart creation date`<br>过滤器：<br><br>- \[`A`\] `Cart is active? (1/0)` = 1<br>- \[`B`\] `Seconds since cart creation` > x，其中“x”对应于自创建购物车以来经过的时间（以秒为单位），超过该时间，购物车将被视为放弃 |
-| `Abandoned cart item value` | 与满足特定“放弃”条件的购物车关联的总收入 | `Operation: Sum`<br>`Operand: Cart item total value (qty * base_price)`<br>`Timestamp:` `Cart creation date`<br>过滤器：<br><br>- \[`A`\] `Cart is active? (1/0)` = 1<br>- \[`B`\] `Seconds since cart creation` > x，其中“x”对应于自创建购物车以来经过的时间（以秒为单位），超过该时间，购物车将被视为放弃 |
+| `Number of abandoned cart items` | 添加到符合特定“放弃”条件的购物车中的物料总数 | `Operation: Sum`<br/>`Operand: qty`<br/>`Timestamp: Cart creation date`<br>过滤器：<br><br>- \[`A`\] `Cart is active? (1/0)` = 1<br>- \[`B`\] `Seconds since cart creation` > x，其中“x”对应于自创建购物车以来经过的时间（以秒为单位），超过该时间，购物车将被视为放弃 |
+| `Abandoned cart item value` | 与满足特定“放弃”条件的购物车关联的总收入 | `Operation: Sum`<br>`Operand: Cart item total value (qty * base_price)`<br>`Timestamp:` `Cart creation date`<br>过滤器：<br><br>- \[`A`\] `Cart is active? (1/0)` = 1<br>- \[`B`\] `Seconds since cart creation` > x，其中“x”对应于自创建购物车以来经过的时间（以秒为单位），超过该时间，购物车将被视为放弃 |
 
 {style="table-layout:auto"}
 

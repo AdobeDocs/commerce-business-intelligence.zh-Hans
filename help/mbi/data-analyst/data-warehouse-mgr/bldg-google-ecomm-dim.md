@@ -1,8 +1,10 @@
 ---
-title: 生成[!DNL Google ECommerce]维度
+title: 生成[!DNL Google ECommerce] 维度
 description: 了解如何构建将电子商务数据与订单和客户数据关联的维度。
 exl-id: f8a557ae-01d7-4886-8a1c-c0f245c7bc49
-source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Integration, Data Warehouse Manager
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 0%

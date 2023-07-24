@@ -2,7 +2,9 @@
 title: 限制对数据库的访问
 description: 了解如何限制访问，限制对存放数据库的服务器的访问。
 exl-id: 7a0bc0d7-086e-4a6e-b1dd-6db13814710e
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: Accounts, User Management
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
