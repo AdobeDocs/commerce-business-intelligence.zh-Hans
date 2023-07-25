@@ -2,7 +2,9 @@
 title: 搜索功能板
 description: 了解如何使用全局搜索功能来查找功能板，以及如何搜索其他用户拥有的功能板。
 exl-id: eea09ee5-e7ec-4002-8257-a35a64c900a9
-source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Dashboards
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 0%

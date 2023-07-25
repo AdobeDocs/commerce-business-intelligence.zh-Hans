@@ -2,7 +2,9 @@
 title: 重复订购概率报表
 description: 了解并了解重复订购概率报表。
 exl-id: 2c88b85a-7320-44ca-87a5-5b91250348ea
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%

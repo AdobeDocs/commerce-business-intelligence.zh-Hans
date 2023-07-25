@@ -2,7 +2,9 @@
 title: 导入Bing Ad支出数据
 description: 了解如何将Bing广告支出数据导入 [!DNL Commerce Intelligence] 以进行分析。
 exl-id: c8dec4b4-74ce-41b2-a77d-403fe44e2816
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 0%

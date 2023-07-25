@@ -2,7 +2,9 @@
 title: 预期的QuickBooks数据
 description: 了解如何轻松地跟踪相关数据字段以供分析。
 exl-id: a60996bd-e3d1-497d-abce-f02ef1444f1a
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%

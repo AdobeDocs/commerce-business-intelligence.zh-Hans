@@ -2,7 +2,9 @@
 title: 同类群组Report Builder
 description: 了解对在生命周期内具有相似特征的用户组的分析。
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '1556'
 ht-degree: 0%
@@ -181,7 +183,7 @@ ht-degree: 0%
 
 ### 我想知道，平均而言，一个用户在其一生中的不同时间点下多少订单。
 
-!![Average number of orders users make at different points in their lifetimes](../../assets/cohort2.gif
+(../../assets/cohort2.gif
 
 对于此示例，您分析了 `Number of orders` 量度，按 `customer's first order date`，并包括最近八个同类群组(定义见 `Time Period` 菜单)。 要查看每个同类群组的平均订单数，您将 `perspective` 到 `Average Value per Cohort Member`.
 

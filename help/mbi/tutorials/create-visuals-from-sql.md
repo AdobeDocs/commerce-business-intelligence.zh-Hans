@@ -2,7 +2,9 @@
 title: 通过SQL查询创建可视化图表
 description: 了解如何熟悉SQLReport Builder中使用的术语，并为创建SQL可视化图表奠定坚实的基础。
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
-source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
+role: Admin, Data Architect, Data Engineer, Leader, User
+feature: SQL Report Builder, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%

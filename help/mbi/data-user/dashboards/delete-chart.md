@@ -2,7 +2,9 @@
 title: 永久删除图表
 description: 了解如何永久删除图表。
 exl-id: 34234ff6-b258-4369-9774-946d8423d4da
-source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Dashboards
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 0%

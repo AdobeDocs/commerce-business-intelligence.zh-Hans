@@ -2,7 +2,9 @@
 title: 通过SSH通道连接PostgreSQL
 description: 了解如何通过SSH隧道将PostgreSQL数据库连接到Commerce Intelligence。
 exl-id: da610988-21c1-4f5f-b4e2-e2deb175a2aa
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -15,8 +17,8 @@ ht-degree: 0%
 
 1. [检索 [!DNL Commerce Intelligence] 公钥](#retrieve)
 1. [允许访问 [!DNL Commerce Intelligence] IP地址](#allowlist)
-1. [创建 [!DNL Linux] 用户 [!DNL Commerce Intelligence] ](#linux)
-1. [创建 [!DNL PostgreSQL] 用户 [!DNL Commerce Intelligence] ](#postgres)
+1. [创建 [!DNL Linux] 用户 [!DNL Commerce Intelligence]](#linux)
+1. [创建 [!DNL PostgreSQL] 用户 [!DNL Commerce Intelligence]](#postgres)
 1. [将连接和用户信息输入到 [!DNL Commerce Intelligence]](#finish)
 
 ## 正在检索 [!DNL Commerce Intelligence] [!DNL public key] {#retrieve}

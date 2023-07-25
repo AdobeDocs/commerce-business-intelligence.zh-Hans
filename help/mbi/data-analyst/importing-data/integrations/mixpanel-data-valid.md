@@ -2,7 +2,9 @@
 title: Mixpanel中的数据验证
 description: 了解如何确认您已直接在Mixpanel中同步所有可用的相同数据。
 exl-id: d18ce954-26fe-4440-ad8b-4f266c007b2f
-source-git-commit: 903e839e8bd8a4e7b6d21b6a7ebcae49f2dfe6e4
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 0%
@@ -11,7 +13,7 @@ ht-degree: 0%
 
 # 数据验证 [!DNL Mixpanel]
 
-时间 [!DNL Adobe Commerce Intelligence] 首先连接到 [!DNL Mixpanel] 数据，您的客户经理或分析师可能会要求您提供数据导出自 [!DNL Mixpanel] 用于验证。 这样，您可以确认已同步了所有可直接在中使用的相同数据 [!DNL Mixpanel].
+时间 [!DNL Adobe Commerce Intelligence] 首先连接到 [!DNL Mixpanel] 数据，您的客户经理或分析师可能会要求您提供数据导出自 [!DNL Mixpanel] 用于验证。 这样，您可以确认已同步了所有可直接在中使用的相同数据 [!DNL Mixpanel].
 
 ## 数据导出过程： `Events`
 

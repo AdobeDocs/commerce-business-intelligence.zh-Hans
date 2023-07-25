@@ -2,7 +2,9 @@
 title: 首次购买的平均时间报告
 description: 了解如何使用平均首次购买时间报表。
 exl-id: c18734ce-0ae0-4e84-b9d0-eb2c21a5c3a5
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports
+source-git-commit: 330832e2668024b00edb2b7c49b92bb042bd004a
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 0%

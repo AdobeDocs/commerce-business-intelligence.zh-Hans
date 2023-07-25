@@ -1,7 +1,9 @@
 ---
 title: 是否在更新周期后重建查询？
 description: 了解运行更新周期后查询会发生什么情况。
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 0%

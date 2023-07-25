@@ -2,7 +2,9 @@
 title: 创建量度
 description: 了解如何使用量度创建图表。
 exl-id: d4c25546-3c51-4d32-b9d8-c424ec103be5
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 0%
@@ -45,12 +47,12 @@ In [!DNL Commerce Intelligence]，您可以使用量度来 [创建图表](../../
       * `Median`  — 此操作计算数据列值的中位数
       * `First and Third Quartiles`  — 这些操作分别计算数据列值的第25个百分位和第75个百分位
       * `Tenth and Ninetieth Percentiles`  — 这些操作分别计算数据列值的第10个百分位和第90个百分位
+
    * 选择要对其执行操作的列。 例如，如果您要查找总收入，则可以对 `order total` 列。
 
-      如果您正在编辑现有量度，还可以 [更改量度的操作表](../../data-analyst/data-warehouse-mgr/change-metric-op-table.md) 在本节中。
+     如果您正在编辑现有量度，还可以 [更改量度的操作表](../../data-analyst/data-warehouse-mgr/change-metric-op-table.md) 在本节中。
 
    * 选择可用于对指标进行趋势分析的日期维度。 例如， `order date`.
-
 
 ## 添加筛选器 {#filters}
 

@@ -2,7 +2,9 @@
 title: 创建Google Analytics图表
 description: 了解如何根据Google Analytics数据创建图表。
 exl-id: ee80fd0d-e3b1-4331-853d-3c2c11931d3f
-source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%
@@ -29,7 +31,7 @@ ht-degree: 0%
 >
 >唯一需要使用\字符转义的特殊字符是下面的元字符：
 
-|  |  |  |  |  |
+| | | | | |
 |-----|-----|-----|-----|-----|
 | `^` | `[` | `]` | `$` | `(` |
 | `)` | `.` | `{` | `}` | `*` |

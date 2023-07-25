@@ -2,7 +2,9 @@
 title: 公式
 description: 了解如何使用公式。
 exl-id: b6432d93-739f-410c-b732-e09a278f8dae
-source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 0%
@@ -49,7 +51,7 @@ ht-degree: 0%
 
    * 在 `Enter your Formula` 输入框，输入 `A/B`.
 
-      这样按新客户数量订购的产品划分收入。
+     这样按新客户数量订购的产品划分收入。
 
    * 设置 `Select format` 到 `123Number`.
 
@@ -71,11 +73,11 @@ ht-degree: 0%
 
    * 在日历上，选择日期范围。
 
-      在本例中，假日季节来自 `November 1` 到 `December 31`.
+     在本例中，假日季节来自 `November 1` 到 `December 31`.
 
    * 下 `Select Time Interval`，选择 `Day`.
 
-      ![固定日期范围](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range.png)
+     ![固定日期范围](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range.png)
 
    * 完成后，单击 **[!UICONTROL Apply]**.
 

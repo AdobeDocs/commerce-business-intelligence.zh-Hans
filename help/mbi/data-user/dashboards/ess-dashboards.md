@@ -2,7 +2,9 @@
 title: 仪表板
 description: 了解如何创建和使用功能板。
 exl-id: a872344b-ac66-41eb-a471-5a69f8802527
-source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Dashboards
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 0%
@@ -41,14 +43,13 @@ ht-degree: 0%
 
    * 创建 `Group` 对于仪表板，输入组的名称。
 
-      例如，如果您的Commerce安装有多个商店视图，则可以为每个商店视图创建一个组。
+     例如，如果您的Commerce安装有多个商店视图，则可以为每个商店视图创建一个组。
 
    * 单击 **[!UICONTROL Create]**.
 
    ![仪表板名称](../../assets/magento-bi-dashboard-create-name.png)
 
    * 新仪表板的名称将显示在左上角。 单击向下箭头(![](../../assets/magento-bi-btn-down.png))以显示选项。 如果创建了组，则新仪表板将显示在列表中该组的下方。
-
 
 ### 添加报告
 
@@ -58,7 +59,7 @@ ht-degree: 0%
 
    * 在功能板标题中，单击 **[!UICONTROL Add Report]**.
 
-      ![添加报告](../../assets/magento-bi-dashboard-create-add-report.png)
+     ![添加报告](../../assets/magento-bi-dashboard-create-add-report.png)
 
 1. 单击 **[!UICONTROL Create Report]** 以显示 **[!UICONTROL Report Builder Options]**.
 
@@ -107,6 +108,7 @@ In **[!DNL Manage Data** > **Dashboards]**，您可以管理自己拥有的仪�
       * `View`
       * `Edit`
       * `None`
+
    1. 提示确认时，单击 **[!UICONTROL OK]** 更新每个用户的权限级别。
 
    1. 要更改个人的权限级别，请在列表中查找用户以更改权限级别。 更改将自动保存。

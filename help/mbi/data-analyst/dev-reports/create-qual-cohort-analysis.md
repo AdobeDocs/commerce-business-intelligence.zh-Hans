@@ -2,7 +2,9 @@
 title: 创建定性同类群组分析
 description: 了解什么是定性同类群组，为什么您可能希望构建此分析，以及如何在Commerce Intelligence中创建它。
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 0%

@@ -2,7 +2,9 @@
 title: 生命周期收入同类群组分析
 description: 探索Commerce Intelligence同类群组分析的强大功能。
 exl-id: f2b55745-d364-4ba6-9857-ce9cee05c3ae
-source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 0%

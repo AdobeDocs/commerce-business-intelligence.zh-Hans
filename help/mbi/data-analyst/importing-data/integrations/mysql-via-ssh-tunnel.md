@@ -2,7 +2,9 @@
 title: 正在连接 [!DNL MySQL] 通过SSH通道
 description: 了解如何连接 [!DNL MySQL] 通过SSH通道。
 exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '611'
 ht-degree: 0%
@@ -106,7 +108,7 @@ Replace `secure password here` 安全密码，该密码可以不同于 `SSH` 密
 * `Port`： [!DNL MySQL] 服务器上的端口（默认为3306）
 * `Host` 默认情况下，这是localhost。 通常，它是的绑定地址值 [!DNL MySQL] 服务器，默认情况下为 `127.0.0.1 (localhost)`，但也可以是某个本地网络地址(例如， `192.168.0.1`)或服务器的公共IP地址。
 
-   该值可在以下位置找到： `my.cnf` 文件(位于 `/etc/my.cnf`)下，代码为 `\[mysqld\]`. 如果bind-address行在该文件中被注释掉，则您的服务器不会受到外部连接尝试的保护。
+  该值可在以下位置找到： `my.cnf` 文件(位于 `/etc/my.cnf`)下，代码为 `\[mysqld\]`. 如果bind-address行在该文件中被注释掉，则您的服务器不会受到外部连接尝试的保护。
 
 在 `SSH Connection` 部分：
 

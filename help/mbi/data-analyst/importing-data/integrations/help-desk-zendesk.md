@@ -2,7 +2,9 @@
 title: Zendesk技术支持报告
 description: 了解您最宝贵的推荐渠道。
 exl-id: b6142ef2-2be8-401f-ac35-f86fc68d204e
-source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%
@@ -196,16 +198,14 @@ ht-degree: 0%
 
       * `Calculation` - `to_char(A,'D')||'. '||to_char(A,'Day')`
 
-      *`Datatype` – `String`
-
+     *`Datatype` – `String`
 
 * **`customer_entity`** 表
    * 选择定义： `Count`
    * [!UICONTROL Create Path]:
    * [!UICONTROL Many]: `[!DNL Zendesk] tickets.email`
    * 
-
-      [！UICONTROL One]: `customer_entity.email`
+     [！UICONTROL One]: `customer_entity.email`
 
    * 选择 [!UICONTROL table]： `[!DNL Zendesk] tickets`
    * [!UICONTROL Path]: `[!DNL Zendesk] tickets.email = customer_entity.email`
@@ -402,8 +402,7 @@ ht-degree: 0%
 
 * **[!UICONTROL Number of new users who have and have not filed tickets]**
    * 
-
-      [！UICONTROL量度]: Users
+     [！UICONTROL量度]: Users
 
 * 量度 `A`： `New users`
 * `Time period`: `All time`

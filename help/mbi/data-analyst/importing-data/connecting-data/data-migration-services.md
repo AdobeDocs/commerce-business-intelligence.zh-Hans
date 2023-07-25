@@ -2,7 +2,9 @@
 title: 数据迁移服务
 description: 了解提交请求并开始迁移所需的一切。
 exl-id: 105cd003-98ef-4358-80b9-b3190c2c57b7
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 0%

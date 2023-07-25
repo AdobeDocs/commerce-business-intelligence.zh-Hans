@@ -2,7 +2,9 @@
 title: 筛选器
 description: 了解如何使用过滤器。
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
-source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%
@@ -37,21 +39,21 @@ ht-degree: 0%
 
    * 单击过滤器的第一部分，然后选择要用作表达式主体的列。
 
-      ![选择过滤器的第一部分](../../assets/magento-bi-report-builder-filter-part1.png)
+     ![选择过滤器的第一部分](../../assets/magento-bi-report-builder-filter-part1.png)
 
    * 单击过滤器的第二部分并选择运算符。
 
-      ![选择运算符](../../assets/magento-bi-report-builder-filter-part2.png)
+     ![选择运算符](../../assets/magento-bi-report-builder-filter-part2.png)
 
    * 在筛选器的第三部分，输入完成表达式所需的值。
 
-      ![输入值](../../assets/magento-bi-report-builder-filter-part3.png)
+     ![输入值](../../assets/magento-bi-report-builder-filter-part3.png)
 
    * 筛选完成后，单击 **[!UICONTROL Apply]**.
 
-      现在，此报表仅包含回头客户，为该报表检索的客户记录数已从33,000减少到12,600。
+     现在，此报表仅包含回头客户，为该报表检索的客户记录数已从33,000减少到12,600。
 
-      ![已过滤的报告](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
+     ![已过滤的报告](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
 
 1. 在侧栏中，单击透视( ![](../../assets/magento-bi-btn-perspective.png))图标。
 

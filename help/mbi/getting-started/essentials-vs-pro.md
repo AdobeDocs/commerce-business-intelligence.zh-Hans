@@ -2,7 +2,9 @@
 title: Commerce Intelligence Essentials与Pro
 description: 了解Commerce Intelligence Essentials与Commerce Intelligence Pro有何不同。
 exl-id: 624a6285-8497-43d9-a56d-8ae503e0e2dd
-source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
+role: Admin, Data Architect, Data Engineer, Leader, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '74'
 ht-degree: 5%
@@ -13,7 +15,7 @@ ht-degree: 5%
 
 下表介绍了旧版中包含的元素 `Essentials` 帐户与当前Commerce Intelligence帐户进行比较。 Adobe不再提供 `Essentials`.
 
-|  | **`Commerce Intelligence Essentials`** | **`Commerce Intelligence Pro`** |
+|   | **`Commerce Intelligence Essentials`** | **`Commerce Intelligence Pro`** |
 |-----|-----|-----|
 | `Pre-Defined Reports` | 最多100个 | 自定义 |
 | `Pre-Defined Dashboards` | 5-6 | 自定义 |
