@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Connect [!DNL Google Analytics]
+# 连接 [!DNL Google Analytics]
 
 >[!NOTE]
 >
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![](../../../assets/google-analytics-logo.png)
 
-[!DNL Google Analytics] 是Internet上使用最广泛的Web分析服务。 实施 [!DNL Google Analytics] 允许您跟踪访客如何使用您的网站、哪些内容有吸引力、访客的退出位置等。 在中分析这些指标 [!DNL Commerce Intelligence]与其他数据一起使用可提高网站的整体运行状况和可用性。
+[!DNL Google Analytics] 是互联网上使用最广泛的网站分析服务。 实施 [!DNL Google Analytics] 使用网站上的信息，您可以跟踪访客如何使用您的网站、哪些内容吸引人、访客的退出位置等。 在中分析这些指标 [!DNL Commerce Intelligence]，连同其他数据段，可提高您网站的整体运行状况和可用性。
 
 通过输入您的 [!DNL Google Analytics] 凭据进入 [!DNL Commerce Intelligence]：
 
@@ -31,25 +31,25 @@ ht-degree: 0%
 
 1. 输入您的 [!DNL Google Analytics] 凭据。 授权过程完成后，您将被重定向回 [!DNL Commerce Intelligence].
 
-1. 此时将显示配置文件ID列表。 检查要连接的配置文件 [!DNL Commerce Intelligence]. 如果您有多个配置文件，并且需要一些帮助来识别哪个配置文件是哪个，请参阅连接多个 [!DNL Google Analytics] 配置文件部分。
+1. 此时将显示配置文件ID列表。 检查要连接的配置文件 [!DNL Commerce Intelligence]. 如果您有多个配置文件并且需要帮助来识别哪一个，请参阅连接多个 [!DNL Google Analytics] “配置文件”部分。
 
    ![](../../../assets/list-profile-id.png)<!--{: width="600px"}-->
 
-1. 更改会自动保存，因此请单击 **返回连接** 等你完事了。
+1. 更改会自动保存，因此请单击 **返回到连接** 完成时。
 
 ## 连接多个 [!DNL Google Analytics] 用户档案
 
-您可能已将多个网站连接到一个 [!DNL Google Analytics] 帐户，由其自身标识 [!DNL Google Analytics] 配置文件ID。 在这种情况下，您可以选择将您的所有配置文件ID包含在 [!DNL Commerce Intelligence]. 检查要在用户档案选择步骤中包含的用户档案ID。
+您可能已将多个网站连接到单个 [!DNL Google Analytics] 帐户，由其自身的标识 [!DNL Google Analytics] 配置文件ID。 在这种情况下，您可以选择将您的所有配置文件ID包含在 [!DNL Commerce Intelligence]. 检查要在用户档案选择步骤中包含的用户档案ID。
 
 识别特定网站的 [!DNL Google Analytics] 配置文件ID：
 
 1. 登录 [!DNL Google Analytics]
 1. 前往特定网站的 [!DNL Google Analytics] 仪表板
-1. 查看URL — 配置文件ID对应于以下八个数字 `p` 行末：
+1. 查看URL — 配置文件ID对应于以下八个数字 `p` 行尾：
 
    `www.google.com/analytics/web/#home/a11345062w43527078p**XXXXXXXX**/`
 
-## 断开连接 [!DNL Google Analytics] 起始日期 [!DNL Commerce Intelligence] {#disconnect}
+## 断开连接 [!DNL Google Analytics] 从 [!DNL Commerce Intelligence] {#disconnect}
 
 1. 访问您的 [!DNL Google Analytics] [帐户设置](https://accounts.google.com/) 页面。
 1. 在 `Security` 部分，然后单击 **[!UICONTROL edit]** 旁边 `Authorizing` 应用程序和站点。

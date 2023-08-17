@@ -1,6 +1,6 @@
 ---
 title: 回访间隔、频度、货币(RFM)分析
-description: 了解如何设置一个仪表板，以便按客户回访间隔、频度和货币排名划分客户。
+description: 了解如何设置功能板，以允许您按回访间隔、频度和货币排名对客户进行分段。
 exl-id: 8f0f08fd-710b-4810-9faf-3d0c3cc0a25d
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # RFM分析
 
-本主题演示如何设置一个功能板，该功能板允许您按客户回访间隔、频度和货币排名对客户进行分段。 RFM分析是一种营销技术，它考虑客户行为，帮助您确定外联分段。 它涉及三个方面：
+本主题将演示如何设置一个功能板，以允许您按回访间隔、频度和货币排名对客户进行分段。 RFM分析是一种营销技术，它考虑客户行为，帮助您确定外联的分段。 它包含三个方面：
 
 1. 客户最近从您的商店购买的回访间隔
 1. 他们向您购买的频率
@@ -21,17 +21,17 @@ ht-degree: 0%
 
 ![](../../assets/blobid0.png)
 
-只有具备以下条件才能配置RFM分析 [!DNL Adobe Commerce Intelligence] Pro规划新架构(例如，如果您拥有 `Data Warehouse Views` 下的选项 `Manage Data` 菜单)。 这些列可以从以下位置创建： **[!DNL Manage Data > Data Warehouse]** 页面。 下面提供了详细说明。
+RFM分析只能在 [!DNL Adobe Commerce Intelligence] Pro规划新体系结构(例如， `Data Warehouse Views` 下的选项 `Manage Data` 菜单)。 这些列可以从以下位置创建： **[!DNL Manage Data > Data Warehouse]** 页面。 下面提供了详细说明。
 
 ## 快速入门
 
-您需要首先上传一个文件，该文件只包含值为1的主键。 这允许为分析创建一些必要的计算列。
+您需要首先上传一个文件，其中只包含值为1的主键。 这允许为分析创建一些必要的计算列。
 
-您可以使用此 [文章](../importing-data/connecting-data/using-file-uploader.md) 和下图来格式化您的文件。
+您可以使用此 [文章](../importing-data/connecting-data/using-file-uploader.md) 和下图以设置文件的格式。
 
 ## 计算列
 
-如果贵公司允许客人下单，则需作进一步区分。 如果是这样，您可以忽略的所有步骤 `customer_entity` 表格。 如果不允许来宾订单，请忽略 `sales_flat_order` 表格。
+如果您的企业允许客户订购，则需作进一步的区分。 如果是，则可以忽略的所有步骤 `customer_entity` 表格。 如果不允许来宾订单，请忽略 `sales_flat_order` 表格。
 
 要创建的列
 
@@ -55,11 +55,11 @@ ht-degree: 0%
 * 
   [！UICONTROL数据类型]: `Integer`
 
-* **计数引用** 表（这是您上传的编号为“1”的文件）
+* **计数引用** 表（这是您上传且编号为“1”的文件）
 * 客户数量
 * [!UICONTROL Column type]: `Many to One > Count Distinct`
-* [!UICONTROL Path]： `ales_flat_order.(input) reference > Count reference.Primary Key` 或 `customer_entity.(input)reference > Count Reference`. `Primary Key`
-* 已选择 [!UICONTROL column]： `sales_flat_order.customer_email` 或 `customer_entity.entity_id`
+* [!UICONTROL Path]： `ales_flat_order.(input) reference > Count reference.Primary Key` 或者 `customer_entity.(input)reference > Count Reference`. `Primary Key`
+* 已选择 [!UICONTROL column]： `sales_flat_order.customer_email` 或者 `customer_entity.entity_id`
 
 * **Customer_entity** 表
 * 客户数量
@@ -79,7 +79,7 @@ ht-degree: 0%
 * 
   [！UICONTROL数据类型]: `Integer`
 
-* 客户的货币得分（按百分位数）
+* 客户的货币得分（以百分位数为单位）
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime revenue`, `Number of customers`
 * [!UICONTROL Calculation]: `Case when round((B-A+1)*100/B,0) <= 20 then 5 when round((B-A+1)*100/B,0) <= 40 then 4 when round((B-A+1)*100/B,0) <= 60 then 3 when round((B-A+1)*100/B,0) <= 80 then 2 when round((B-A+1)*100/B,0) <= 100 then 1 else 0 end`
@@ -95,10 +95,10 @@ ht-degree: 0%
 * 
   [！UICONTROL列类型]: – "相同表>计算"
 * [!UICONTROL Inputs]： - **（输入）按客户存留期订单数排名**， **客户数量**
-* [!UICONTROL Calculation]： - **当A为null时的大小写，否则(B-(A-1))结束**
+* [!UICONTROL Calculation]： - **当A为null时为null的情况，否则(B-(A-1))结束**
 * [!UICONTROL Datatype]： — 整数
 
-* 客户的频率分数（按百分位数）
+* 客户的频率得分（按百分位数）
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime number of orders`, `Number of customers`
 * [!UICONTROL Calculation]: `Case when round((B-A+1)*100/B,0) <= 20 then 5 when round((B-A+1)*100/B,0) <= 40 then 4 when round((B-A+1)*100/B,0) <= 60 then 3 when round((B-A+1)*100/B,0) <= 80 then 2 when round((B-A+1)*100/B,0) <= 100 then 1 else 0 end`
@@ -127,8 +127,8 @@ ht-degree: 0%
 * **计数引用** 表
 * [!UICONTROL Number of customers]: `(RFM > 0)`
 * [!UICONTROL Column type]: `Many to One > Count Distinct`
-* [!UICONTROL Path]： `sales_flat_order.(input) reference > Customer Concentration. Primary Key` 或 `customer_entity.(input)reference > Customer Concentration.Primary Key`
-* 已选择 [!UICONTROL column]： `sales_flat_order.customer_email` 或 `customer_entity.entity_id`
+* [!UICONTROL Path]： `sales_flat_order.(input) reference > Customer Concentration. Primary Key` 或者 `customer_entity.(input)reference > Customer Concentration.Primary Key`
+* 已选择 [!UICONTROL column]： `sales_flat_order.customer_email` 或者 `customer_entity.entity_id`
 * [!UICONTROL Filter]： `Customer's RFM score (by percentile)` 不等于000
 
 * **Customer_entity** 表
@@ -137,7 +137,7 @@ ht-degree: 0%
 * [!UICONTROL Path]: `customer_entity.(input) reference > Customer Concentration.Primary Key`
 * 已选择 [!UICONTROL column]： - `Number of customers`
 
-* 客户回访间隔分数 `(R+F+M)`
+* 客户的回访间隔分数 `(R+F+M)`
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: – `Customer's recency score (by percentiles)`, `Customer's frequency score (by percentiles)`, `Customer's monetary score (by percentiles)`
 * [!UICONTROL Calculation]: `case when (A IS NULL or B IS NULL or C IS NULL) then null else A+B+C end`
@@ -166,7 +166,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->使用的百分位数甚至是对客户的分段（例如，返回1-5的20%存储段）。 如果您希望通过自定义方式对这些票证进行加权，请在提交票证时告知分析人员。
+>使用的百分比甚至是对客户的分段（例如，20%存储段可返回1-5）。 如果您希望通过自定义方式对这些内容进行加权，请在提交票证时告知分析人员。
 
 ## 量度
 
@@ -176,7 +176,7 @@ ht-degree: 0%
 >
 >确保 [将所有新列作为维度添加到量度](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 然后再生成新报告。
 
-## 报告
+## 报表
 
 * **按RFM分组的客户**
 * 量度 `A`： `New customers`
@@ -210,7 +210,7 @@ ht-degree: 0%
 * 
   [!UICONTROL Chart type]: `Table`
 
-* **具有一个回访间隔分数的客户**
+* **具有一个回访间隔得分的客户**
 * 量度 `A`： `New customers`
 * [!UICONTROL Metric]: `New customers`
 * [!UICONTROL Filter]: `Customer's recency score (by percentiles) Equal to 1`
@@ -227,4 +227,4 @@ ht-degree: 0%
 * 
   [!UICONTROL Chart type]: `Table`
 
-在编译所有报告后，您可以根据需要将报告组织在功能板上。 结果可能类似于上面的示例仪表板，但生成的三个表只是您可以执行的客户细分类型的示例。
+在编译所有报告后，您可以根据需要将报告组织在功能板上。 结果可能类似于上面的示例仪表板，但生成的三个表只是您可以执行的客户分段类型的示例。

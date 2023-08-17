@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Connect [!DNL WooCommerce]
+# 连接 [!DNL WooCommerce]
 
 >[!NOTE]
 >
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 ![](../../../assets/WooCommerce-Logo.jpg)
 
-想要了解您的业务表现或找到您最有价值的客户获取来源和渠道？ 正在连接 [!DNL WooCommerce] 数据到 [!DNL Commerce Intelligence] 允许您回答这些问题等。
+想要了解您的业务表现或寻找您最有价值的客户获取来源和渠道？ 正在连接您的 [!DNL WooCommerce] 数据到 [!DNL Commerce Intelligence] 允许您回答这些问题等。
 
-此 [!DNL WooCommerce] 数据库基于 [!DNL MySQL]，您可以将其连接到 [!DNL Commerce Intelligence] 通过 [直接连接](../integrations/mysql-via-a-direct-connection.md)， [[!DNL cPanel]](../integrations/mysql-via-cpanel.md)，或 [通过 `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md). Adobe建议使用SSH方法，因为它是最安全的。
+此 [!DNL WooCommerce] 数据库基于 [!DNL MySQL]，您可以将其连接到 [!DNL Commerce Intelligence] 通过 [直接连接](../integrations/mysql-via-a-direct-connection.md)， [[!DNL cPanel]](../integrations/mysql-via-cpanel.md)，或 [通过 `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md). Adobe建议使用SSH方法，因为此方法最安全。
 
 ## 相关：
 
 * [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
-* [分段和筛选的建议数据维度](../../../best-practices/segment-filter.md)
+* [分段和过滤的建议数据维度](../../../best-practices/segment-filter.md)

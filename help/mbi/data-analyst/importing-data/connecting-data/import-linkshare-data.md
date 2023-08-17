@@ -7,13 +7,13 @@ feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '94'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 # 导入 [!DNL Linkshare] 数据
 
-将您的 [!DNL Linkshare] 数据进入 [!DNL Adobe Commerce Intelligence]，您需要执行两项操作：
+将您的 [!DNL Linkshare] 数据到 [!DNL Adobe Commerce Intelligence]，您需要执行两项操作：
 
 1. [在中导出Linkshare数据 ](#export)
 1. [将电子表格上传到 [!DNL Commerce Intelligence]](../connecting-data/using-file-uploader.md)
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 1. 将所有其他下拉选项保留为默认选项。
 
-1. 在 `Date Range` 下拉菜单中，选择任意选项(`Sun - Sat`， `Mon - Sun`)与匹配 `Start of Week` 中的设置 [!DNL Commerce Intelligence].
+1. 在 `Date Range` 下拉菜单中，选择任一选项(`Sun - Sat`， `Mon - Sun`)匹配您的 `Start of Week` 中的设置 [!DNL Commerce Intelligence].
 
 1. 清除 `Compare Year-Over-Year Data` 复选框。
 
@@ -40,4 +40,4 @@ ht-degree: 0%
 
    此时， `.csv` 文件并下载。
 
-下载文件后，您可以将其上传到 [!DNL Commerce Intelligence] 使用 [`File Upload` 功能](../connecting-data/using-file-uploader.md).
+下载文件后，您可以将其上传到 [!DNL Commerce Intelligence] 使用 [`File Upload` 特征](../connecting-data/using-file-uploader.md).

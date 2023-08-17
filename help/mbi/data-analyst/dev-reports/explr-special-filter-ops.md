@@ -17,13 +17,13 @@ ht-degree: 0%
 
 ## `Filter Operators`
 
-* `LIKE` 模式匹配。 此参数必须结合使用通配符%（用于包含可变字母数的通配符）或_（用于通配符单个字母）。  例如，限制 `LIKE \_ake%` 将返回true `Jake Stein`， `Jake Smith`，或 `Fake Smith`.  将返回false `Drake Smith`.
+* `LIKE` 进行模式匹配。 这必须结合使用通配符%（用于包含可变字母数的通配符）或_（用于通配符单个字母）。  例如，限制 `LIKE \_ake%` 将返回true `Jake Stein`， `Jake Smith`，或 `Fake Smith`.  则返回false `Drake Smith`.
 
 * `NOT LIKE` 类似于上面的模式匹配，但检查哪些模式不匹配。
 
-* `IS` 检查列是否为 `NULL`，或为空。
+* `IS` 检查该列是否为 `NULL`，或为空。
 
-* `IS NOT` 类似于 `IS` 运算符，但检查非NULL列。
+* `IS NOT` 与 `IS` 运算符，但检查非NULL列。
 
 * `IN` 检查以逗号分隔的列表中是否存在值。 (例如，“颜色” `IN` “红色，橙色”等同于颜色 `equal to` 红色或颜色 `equal to` 橙色)。
 

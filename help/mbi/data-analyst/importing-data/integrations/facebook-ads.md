@@ -1,6 +1,6 @@
 ---
 title: 连接Facebook Ads
-description: 了解如何分析您的广告支出数据，并查看您的资金是否得到了有效使用。
+description: 学习分析广告支出数据，并查看您的资金是否得到了有效使用。
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Connect [!DNL Facebook Ads]
+# 连接 [!DNL Facebook Ads]
 
 >[!NOTE]
 >
@@ -19,9 +19,9 @@ ht-degree: 0%
 
 ![](../../../assets/facebook-ads-logo.png)
 
-你做了调查，做了广告，在网站上发起了促销活动 [!DNL Facebook]. 现在该分析您的广告支出数据了，看看您的资金是否得到了有效使用。 使用您的广告支出数据，您可以 [通过将您的广告成本和客户存留期价值(CLV)结合起来衡量促销活动ROI](../../../data-analyst/analysis/roi-ad-camp.md) 从您的营销活动获得的用户的数量。
+你做了调查，做了广告，在网站上开展了活动 [!DNL Facebook]. 现在该分析您的广告支出数据了，看看您的资金是否得到了有效花销。 利用您的广告支出数据，您可以 [通过将您的广告成本和客户存留期价值(CLV)相结合来衡量促销活动ROI](../../../data-analyst/analysis/roi-ad-camp.md) 从营销活动获得的用户的数量。
 
-正在连接 [!DNL Facebook Ad] 数据到 [!DNL Commerce Intelligence] 是一个简单的三步过程：
+正在连接您的 [!DNL Facebook Ad] 数据到 [!DNL Commerce Intelligence] 是一个简单的三步过程：
 
 1. [添加 [!DNL Facebook] 作为中的数据源 [!DNL Commerce Intelligence]](#stepone)
 1. [允许 [!DNL Commerce Intelligence] 访问您的 [!DNL Facebook Ads] 数据](#steptwo)
@@ -54,13 +54,13 @@ ht-degree: 0%
 
 ## 接下来呢？ {#next}
 
-确保您正在跟踪 [!DNL Facebook] 中的营销活动 [!DNL Google Analytics]. 这可确保 `utm\_campaign` 中的字段 [!DNL Google Analytics] 已为正确填充 [!DNL Facebook] 营销活动。
+确保您正在跟踪 [!DNL Facebook] 中的营销活动 [!DNL Google Analytics]. 这可确保 `utm\_campaign` 中的字段 [!DNL Google Analytics] 已为您的正确填充 [!DNL Facebook] 营销活动。
 
 ## 相关
 
 * [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [连接您的 [!DNL Google Adwords] 帐户](../integrations/google-ecommerce.md)
-* [通过以下方式跟踪订单反向链接来源： [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
+* [通过以下方式跟踪订单引用来源 [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [跟踪数据库中的用户反向链接源](../../analysis/google-track-user-acq.md)
 * [跟踪数据库中的用户设备、浏览器和操作系统数据](../../analysis/track-usr-dev-browser.md)
 * [了解您最有价值的客户获取来源和渠道](../../analysis/most-value-source-channel.md)

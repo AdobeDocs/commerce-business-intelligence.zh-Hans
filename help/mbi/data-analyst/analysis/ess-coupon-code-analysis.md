@@ -1,6 +1,6 @@
 ---
 title: 优惠券代码分析（基本）
-description: 了解业务的优惠券表现对于细分您的订单和更好地了解客户习惯是一种有趣的方式。
+description: 了解业务的优惠券表现对于细分您的订单和更好地了解客户习惯是一种很有意思的方式。
 exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
 role: Admin, User
 feature: Data Warehouse Manager, Reports
@@ -13,18 +13,18 @@ ht-degree: 0%
 
 # 基本优惠券代码分析
 
-了解业务的优惠券表现对于细分您的订单和更好地了解客户习惯是一种有趣的方式。
+了解业务的优惠券表现对于细分订单和更好地了解客户习惯是一种有趣的方式。
 
-本主题记录创建此分析所需的步骤，以便了解获得优惠券的客户表现、查看趋势并跟踪各个优惠券代码的使用情况。
+本主题记录创建此分析所需的步骤，以便了解获得优惠券的客户表现、查看趋势并跟踪单个优惠券代码的使用情况。
 
 ![](../../assets/coupon_analysis_dash_720.png)<!--{: width="807" height="471"}-->
 
 ## 快速入门
 
-首先，介绍如何跟踪优惠券代码。 如果客户将优惠券应用于订单，则会发生以下三种情况：
+首先，添加有关如何跟踪优惠券代码的注释。 如果客户将优惠券应用于订单，则会发生以下三种情况：
 
 * 折扣反映在 `base_grand_total` 金额(您的 `Revenue` Commerce Intelligence中的量度)
-* 优惠券代码存储在 `coupon_code` 字段。 如果此字段为NULL （空），则订单没有与其关联的优惠券。
+* 优惠券代码存储在 `coupon_code` 字段。 如果此字段为NULL（空），则该订单没有与其关联的优惠券。
 * 折扣金额存储在 `base_discount_amount`. 根据您的配置，此值可能显示为负值或正值。
 
 ## 构建量度
@@ -34,7 +34,7 @@ ht-degree: 0%
 * 导航到 **[!UICONTROL Manage Data > Metrics > Create New Metric]**.
 
 * 选择 `sales_order`.
-* 此量度执行 **总和** 在 **base_discount_amount** 列，排序方式 **created_at**.
+* 此量度执行 **总和** 在 **base_discount_amount** 列，排序依据 **created_at**.
    * [!UICONTROL Filters]:
       * 添加 `Orders we count` （保存的筛选器集）
       * 添加以下内容：
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 * 创建量度后：
    * 导航到 [!UICONTROL Dashboards > Dashboard Options > Create New Dashboard]**。
-   * 为仪表板命名，例如 `_Coupon Analysis_`.
+   * 为功能板命名，例如 `_Coupon Analysis_`.
 
 * 您可以在此处创建和添加所有报表。
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 >
 >此 [!UICONTROL Time Period]每个报表的**列为 `All-time`. 您可以根据分析需求随意更改此设置。 Adobe建议该功能板上的所有报告都涵盖相同的时间段，例如 `All time`， `Year-to-date`，或 `Last 365 days`.
 
-* **含优惠券的订单**
+* **带优惠券的订单**
    * 
      [！UICONTROL量度]: `Orders`
       * 添加筛选器：
@@ -68,7 +68,7 @@ ht-degree: 0%
      [！UICONTROL间隔]: `None`
    * [!UICONTROL Chart type]:`Number (scalar)`
 
-* **无优惠券的订单**
+* **不带优惠券的订单**
    * 
      [！UICONTROL量度]: `Orders`
       * 添加筛选器：
@@ -107,7 +107,7 @@ ht-degree: 0%
      [！UICONTROL间隔]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
-* **平均期限收入：非优惠券收购客户**
+* **平均生命周期收入：非优惠券收购客户**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * 添加筛选器：
          * [A] `Customer's first order's coupon_code` **是**`[NULL]`
@@ -140,7 +140,7 @@ ht-degree: 0%
       * 
         [!UICONTROL Format]: `Currency`
 
-   * 创建公式：**折扣百分比**
+   * 创建公式：**%折扣**
       * 公式： `(C / (B - C))`
       * 
         [!UICONTROL Format]: `Percentage`
@@ -178,7 +178,7 @@ ht-degree: 0%
    * 
      [！UICONTROL图表类型]: **Column**
 
-* **按优惠券/无优惠券收购划分的新客户**
+* **通过获取优惠券/无优惠券的新客户**
    * 量度 `1`： `New customers`
       * 添加筛选器：
          * [`A`] `Customer's first order's coupon_code` **不是** `[NULL]`

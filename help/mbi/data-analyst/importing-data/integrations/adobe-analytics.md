@@ -1,6 +1,6 @@
 ---
 title: 连接Adobe Analytics
-description: 了解如何集中对的端到端客户历程的关注 [!DNL Adobe Analytics] 而电子商务正是您赖以生存的 [!DNL Commerce Intelligence].
+description: 了解如何集中对的端到端客户历程的关注 [!DNL Adobe Analytics] 以及您依赖的电子商务重点 [!DNL Commerce Intelligence].
 exl-id: 824e1ee4-6b88-42f7-b265-29330dbc4407
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Connect [!DNL Adobe Analytics]
+# 连接 [!DNL Adobe Analytics]
 
 >[!NOTE]
 >
@@ -19,19 +19,19 @@ ht-degree: 0%
 
 ![](../../../assets/adobe-analytic-slogo.png)
 
-此 [!DNL Adobe Analytics] 集成 [!DNL Adobe Commerce Intelligence] 使您能够集中对端到端客户历程的关注 [!DNL Adobe Analytics] 而电子商务正是您赖以生存的 [!DNL Commerce Intelligence]. 这可让您全面了解商店的整体性能。
+此 [!DNL Adobe Analytics] 集成 [!DNL Adobe Commerce Intelligence] 使您能够将端到端客户历程的焦点集中在一起， [!DNL Adobe Analytics] 以及您依赖的电子商务重点 [!DNL Commerce Intelligence]. 这可让您全面了解商店的整体性能。
 
 更具体地说， [!DNL Adobe Analytics] 集成 [!DNL Commerce Intelligence] 为商家提供开始组合其 [!DNL Adobe Commerce] 和 [!DNL Adobe Analytics] 数据集。
 
 - 从现有资源创建连接 [!DNL Adobe Analytics] 帐户至 [!DNL Commerce Intelligence].
 
-- 从一个报表包中选择最多25个量度和维度以复制到您的Data warehouse中。
+- 从一个报表包中选择最多25个指标和维度以复制到您的Data Warehouse中。
 
-- 使用所有标准 [!DNL Commerce Intelligence] 用于转换、加入和报告复制数据的功能 [!DNL Adobe Analytics] 数据。
+- 使用所有标准 [!DNL Commerce Intelligence] 用于转换、加入和报告已复制内容的功能 [!DNL Adobe Analytics] 数据。
 
 ## 连接先决条件
 
-连接时需要以下信息：
+连接需要以下信息：
 
 - [!DNL Adobe Analytics] 登录凭据
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 1. 单击 **[!UICONTROL Add an Integration]**.
 
-1. 单击 **[!UICONTROL Adobe Analytics]** 图标以访问允许您授权 [!DNL Adobe Analytics] 帐户连接。
+1. 单击 **[!UICONTROL Adobe Analytics]** 图标以访问允许您授权您的 [!DNL Adobe Analytics] 帐户连接。
 
 1. 单击 **[!UICONTROL Authorize with Adobe Analytics]**.
 
@@ -53,10 +53,10 @@ ht-degree: 0%
 
 1. 此时将显示可用报表包的列表。 选择要从中导入数据的报表包，然后单击 **[!UICONTROL Continue]**.
 
-1. 此时将显示量度和维度选择屏幕。 选择至少一个量度和至少一个维度，最多总计25个量度和维度。 按名称搜索或滚动以查找组件，然后单击要选择的复选框。 单击 **[!UICONTROL Continue]**.
+1. 此时将显示量度和维度选择屏幕。 选择至少一个量度和至少一个维度，最多总共25个量度和维度。 按名称搜索或滚动以查找组件，然后单击复选框以选择。 单击 **[!UICONTROL Continue]**.
 
 1. 选定的报表包会显示在表格中。 单击 **[!UICONTROL Save]** 以确认您的选择。
 
-1. 通知 [!DNL Commerce Intelligence] [支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 您的集成已获得授权，并且他们会为您运行初始连接过程。
+1. 通知 [!DNL Commerce Intelligence] [支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 您的集成已获得授权，他们将为您运行初始连接过程。
 
-运行初始连接进程后，您的表将位于“Data warehouse”页中的 `All Tables` 选项卡。 选择要复制的列，数据将在下次完全更新后显示。
+运行初始连接进程后，您的表将位于Data Warehouse页中的 `All Tables` 选项卡。 选择要复制的列，数据将在下次完全更新后显示。

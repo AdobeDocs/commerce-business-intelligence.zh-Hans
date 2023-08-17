@@ -1,6 +1,6 @@
 ---
 title: 为计算列创建或删除路径
-description: 了解如何定义一个路径，用于描述您正在其上创建列的表如何与您从中提取信息的表相关。
+description: 了解如何定义一个路径，描述您正在其上创建列的表如何与您正在从中获取信息的表相关。
 exl-id: 734a8046-8058-4f03-93a2-8d59b9be6d2d
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 计算列刷新程序
 
-时间 [创建计算列](../data-warehouse-mgr/creating-calculated-columns.md) 在您的Data warehouse中，系统会要求您定义一个路径，用于描述您正在创建列的表如何与正在从中提取信息的表相关联。 要成功创建路径，您需要了解以下两点：
+时间 [创建计算列](../data-warehouse-mgr/creating-calculated-columns.md) 在您的Data Warehouse中，系统会要求您定义一个路径，描述您正在其上创建列的表如何与您正在从中获取信息的表相关。 要成功创建路径，您需要了解两件事：
 
 1. 数据库中的表如何相互关联
 1. 定义此关系的主键和外键
@@ -33,26 +33,26 @@ ht-degree: 0%
 | **`Relationship Type`** | **`Example`** |
 |-----|-----|
 | **`one-to-one`** | 人与驾照号码之间的关系。 一个人只能有一个驾驶执照号码，一个驾驶执照号码只属于一个人。 |
-| **`one-to-many`** | 订单与物料之间的关系 — 一个订单可以包含多个物料，但一个物料属于单个订单。 在这种情况下，订单表是一侧，而物料表是多侧。 |
+| **`one-to-many`** | 订单与物料之间的关系 — 一个订单可以包含多个物料，但一个物料属于单个订单。 在这种情况下，订单表是单侧，而物料表是多侧。 |
 | **`many-to-many`** | 产品与类别之间的关系：一个产品可以属于多个类别，而一个类别可以包含多个产品。 |
 
 {style="table-layout:auto"}
 
-了解两个表之间的关系后，便可以使用该关系确定应创建哪条路径来将信息从一个表带到另一个表。 此下一步需要知道有助于建立表关系的主键和外键。
+当理解两个表之间的关系时，可以使用该关系来确定应该创建什么路径来将信息从一个表带到另一个表。 此下一步需要了解有助于建立表关系的主键和外键。
 
 ### 主键和外键 {#keys}
 
-A `Primary Key` 是一个未更改的列或列集，在表中生成唯一值。 例如，当客户在网站上下达订单时，会在页面上添加一个新行 `orders` 购物车中的表格，带新的 `order_id`. 此 `order_id` 允许客户和公司跟踪该特定订单的进度。 由于订单ID是唯一的，因此它通常 `Primary Key` 的 `orders` 表格。
+A `Primary Key` 是一个未更改的列或列集，在表中生成唯一值。 例如，当客户在网站上下达订单时，将会在 `orders` 购物车中的表格，带新的 `order_id`. 此 `order_id` 允许客户和企业跟踪该特定订单的进度。 由于订单ID是唯一的，因此它通常是 `Primary Key` 的 `orders` 表格。
 
-A `Foreign Key` 是在表内创建的列，该表链接到 `Primary Key` 另一个表的列。 外键可在表之间创建引用，使分析人员能够轻松查找记录并将记录链接在一起。 假设您想知道哪些订单属于您的每个客户。 此 `customer id` 列(`Primary Key` 的 `customers` 表)和 `order_id` 列(`Foreign Key` 在 `customers` 表，引用 `Primary Key` 的 `orders` 表)来链接和分析此信息。 创建路径时，系统会要求您同时定义 `Primary Key` 和 `Foreign Key`.
+A `Foreign Key` 是在表内创建的列，该列链接到 `Primary Key` 另一个表的列。 外键可在表之间创建引用，使分析人员能够轻松地查找记录并将记录链接到一起。 假设您想了解哪些订单属于您的每个客户。 此 `customer id` 列(`Primary Key` 的 `customers` 表)和 `order_id` 列(`Foreign Key` 在 `customers` 表，引用 `Primary Key` 的 `orders` 表)来链接和分析此信息。 创建路径时，系统会要求您同时定义 `Primary Key` 和 `Foreign Key`.
 
 ## 创建路径 {#createpath}
 
-在Data warehouse中创建列时，必须定义将信息从一个表引入另一个表的路径。 有时，路径会预先填充，因为表之间存在路径，但如果不存在这种情况，则必须创建路径。
+在Data Warehouse中创建列时，必须定义将信息从一个表引入另一个表的路径。 有时，路径会预先填充，因为表之间存在路径，但如果不存在路径，则必须创建路径。
 
-使用以下项之间的关系： **客户** 和 **订单** 来向您展示它是如何做到的。 划分：
+使用以下各项之间的关系 **客户** 和 **订单** 来向你展示它是如何做到的。 划分：
 
-* 关系是 `one-to-many`  — 一个客户可以有多个订单，但一个订单只能有一个客户。 这告诉我们关系的方向或应创建计算列的位置。 在本例中，这意味着信息来自 `orders` 表格可引入 `customers` 表格。
+* 关系是 `one-to-many`  — 一个客户可以有多个订单，但一个订单只能有一个客户。 这告诉我们关系的方向，或应在何处创建计算列。 在本例中，这意味着信息来自 `orders` 表格可引入 `customers` 表格。
 * 此 `primary key` 要使用的是 `customers.customerid`，或 `customer ID` 中的列 `customers` 表格。
 * 此 `foreign key` 要使用的是 `orders.customerid`，或 `customer ID` 中的列 `orders` 表格。
 
@@ -62,38 +62,38 @@ A `Foreign Key` 是在表内创建的列，该表链接到 `Primary Key` 另一�
 1. 在表列表中，单击要在其中创建列的表。 在此示例中，它是 `customers` 表格。
 1. 此时将显示表架构。 单击 **[!UICONTROL Create New Column]**.
 1. 为列命名，例如， `Customer's orders`.
-1. 选择列的定义。 查看 [计算列指南](../data-warehouse-mgr/creating-calculated-columns.md) 买张便利的备忘单。
+1. 选择列的定义。 查看 [计算列指南](../data-warehouse-mgr/creating-calculated-columns.md) 做个方便易用的备忘单。
 1. 在 [!UICONTROL Select table and column] 在下拉菜单中，单击 **[!UICONTROL Create new path]** 选项。
 
-   ![“为计算列创建路径”模式](../../assets/Creating_Paths_modal.png)
+   ![为计算列创建路径模式](../../assets/Creating_Paths_modal.png)
 
-1. 使用下拉列表，为每个表选择主键和外键。
+1. 使用下拉列表，选择每个表的主键和外键。
 
-   在 `Many` 侧，您选择 `orders.customerid`  — 请记住，客户可以有许多订单。
+   在 `Many` 侧，您选择 `orders.customerid`  — 请记住，客户可以有多个订单。
 
-   在 `One` 侧，您选择 `customers.customerid`  — 订单只能有一个客户。
+   在 `One` 侧，您选择 `customers.customerid`  — 一个订单只能有一个客户。
 
-1. 单击 **[!UICONTROL Save]** 以保存路径并完成列创建。
+1. 单击 **[!UICONTROL Save]** 以保存路径并完成列的创建。
 
 ### 创建路径的限制 {#limits}
 
-* **[!DNL Commerce Intelligence]无法猜测主/外键关系**. 您不希望将不正确的数据引入您的帐户，因此必须手动创建路径。
+* **[!DNL Commerce Intelligence]无法猜测主/外键关系**. 您不希望将不正确的数据引入帐户，因此必须手动创建路径。
 
 * **目前，只能在两个不同的表之间指定路径**. 您尝试重新创建的逻辑是否涉及两个以上的表？ 然后，可能有必要执行以下操作(1)先将列连接到中间表，然后再连接到“最终目标”表，或者(2)查阅 [Professional Services团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 找到实现目标的最佳方法。
 
-* **列一次只能是ONE路径的外键引用**. 例如，如果 `order_items.order_id` 指向 `orders.id`，则 `order_items.order_id` 无法指向任何其他内容。
+* **列一次只能作为一条路径的外键引用**. 例如，如果 `order_items.order_id` 指向 `orders.id`，则 `order_items.order_id` 无法指向任何其他内容。
 
-* **`Many-to-many`从技术上讲，路径可以创建，但通常会产生不良数据，因为两侧都不是真 `one-to-many` 外键**. 接近这些路径的最佳方法始终取决于特定的所需分析。 请咨询RJ分析团队，以了解最佳解决方案。
+* **`Many-to-many`从技术上讲，路径可以创建，但通常会产生不良数据，因为这两方面都不是真的 `one-to-many` 外键**. 接近这些路径的最佳方法始终取决于特定的所需分析。 请咨询RJ分析团队以发现最佳解决方案。
 
-如果由于上述一个或多个限制而无法创建计算列，请与支持人员联系并提供对当前列的描述
+如果由于上述一个或多个限制而无法创建计算列，请与支持人员联系并提供您当前列的说明
 
 ## 删除计算列路径 {#delete}
 
-在您的Data warehouse中创建了错误的路径？ 还是说你春天打扫的时候想打扫一下？ 如果需要从帐户中删除路径，您可以 [向Adobe支持分析人员发送票证](../../guide-overview.md#Submitting-a-Support-Ticket). **确保包含路径的名称！**
+在您的Data Warehouse中创建了错误的路径？ 或者你春天要打扫一下，想打扫一下？ 如果需要从帐户中删除路径，您可以 [向Adobe支持分析师发送工单](../../guide-overview.md#Submitting-a-Support-Ticket). **确保包含路径的名称！**
 
-## 总结 {#wrapup}
+## 正在结束 {#wrapup}
 
-现在您已经习惯了在Data warehouse中为计算列创建路径。 如果您仍不确定特定路径，请记住，您可以随时单击 **[!UICONTROL Support]** 在您的 [!DNL Commerce Intelligence] 帐户以获取帮助。
+现在，您已熟悉如何在Data Warehouse中为计算列创建路径。 如果您仍不确定特定路径，请记住，您可以随时单击 **[!UICONTROL Support]** 在您的 [!DNL Commerce Intelligence] 帐户以获取帮助。
 
 ## 相关
 

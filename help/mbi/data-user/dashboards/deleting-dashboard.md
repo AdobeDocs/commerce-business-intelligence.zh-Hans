@@ -7,13 +7,13 @@ feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '114'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # 删除仪表板
 
-如果要避免仪表板列表变得过于杂乱，可以删除不再需要的仪表板。 这可以通过以下两种方式之一实现：
+如果您希望仪表板列表不要变得过于杂乱，可以删除不再需要的仪表板。 这可以通过两种方式之一实现：
 
 1. [通过 `Account Settings` 页面](#account)  — 此方法需要 [管理员权限](../../administrator/user-management/user-management.md).
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ## 通过删除功能板 `Dashboard Options` 菜单 {#do}
 
-1. 单击 **[!UICONTROL Dashboard Options]** 菜单。
+1. 单击 **[!UICONTROL Dashboard Options]** 菜单的位置。
 
 1. 在下拉菜单中，单击 **[!UICONTROL Delete]**.
 

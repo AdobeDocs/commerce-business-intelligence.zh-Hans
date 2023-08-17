@@ -1,6 +1,6 @@
 ---
 title: 预期生命周期值(LTV)分析（基本）
-description: 了解如何创建分析以了解当前客户的存留期值并预测存留期值如何随着更多订单增加。
+description: 了解如何创建分析以了解当前客户的存留期值并预测存留期值如何随着更多订单而增加。
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
 role: Admin, User
 feature: Data Warehouse Manager, Reports
@@ -30,7 +30,7 @@ ht-degree: 0%
   >构建此量度的表(可能 `customer_entity` 或 `sales_order` 取决于您的商店是否能够接受访客结帐。)。
 
    * 单击 **[!UICONTROL Create New Metric]** 并从上面选择表。
-   * 此量度执行 **中间值** 在 `Customer's lifetime revenue` 列，排序方式 `created_at`.
+   * 此量度执行 **中间值** 在 `Customer's lifetime revenue` 列，排序依据 `created_at`.
       * [!UICONTROL Filters]:
          * 添加 `Customers we count (Saved Filter Set)` (或 `Registered accounts we count`)
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 创建量度后，您可以 **创建功能板** 通过执行此操作：
 * 导航到 **[!UICONTROL Dashboards > Dashboard Options > Create New Dashboard]**.
-* 为仪表板命名，例如 `Expected LTV`.
+* 为功能板命名，例如 `Expected LTV`.
 
 * 您可以在此处创建和添加所有报表。
 
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->日期 **[!UICONTROL Time Period:]**，则每个报表的时段将列为 `All-time`. 您可以根据分析需求随意更改此设置。 Adobe建议该功能板上的所有报告都涵盖相同的时间段，例如 `All time`， `Year-to-date`，或 `Last 365 days`.
+>开启 **[!UICONTROL Time Period:]**，则每个报表的时间段均列为 `All-time`. 您可以根据分析需求随意更改此设置。 Adobe建议该功能板上的所有报告都涵盖相同的时间段，例如 `All time`， `Year-to-date`，或 `Last 365 days`.
 
 * **[!UICONTROL Average LTV (all)]**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
@@ -89,7 +89,7 @@ ht-degree: 0%
 
   >[!NOTE]
   >
-  >不要添加的所有值 `Customer's lifetime number of orders`. 相反，看一下新客户数量达到较小数量时的情况，然后手动将每个客户的存留期订单数量值添加到该时间点。 例如，如果某订单有200个客户，其中两订单有75个，三订单有15个，四订单有3个，则添加 *1、2和3*.
+  >不要添加的所有值 `Customer's lifetime number of orders`. 相反，看一下新客户数量达到较小数量的情况，然后手动将每个客户的存留期订单数量值添加到该点。 例如，如果一次订购有200个客户，两次订购有75个，三次订购有15个，四次订购有3个，则添加 *1、2和3*.
 
 * 添加现有 [!UICONTROL Avg customer lifetime revenue by cohort] 报告。
 

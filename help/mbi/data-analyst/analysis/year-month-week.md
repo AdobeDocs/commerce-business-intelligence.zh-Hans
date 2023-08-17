@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# 按时间段报告
+# 在时间段内报告
 
 >[!NOTE]
 >
->本主题包含有关使用原始架构和新架构的客户端的说明。 您位于 [新架构](../../administrator/account-management/new-architecture.md) 如果您拥有 [!DNL _data warehouse查看次数_] 部分在选择后可用 [!DNL Manage Data] 从主工具栏中。
+>本主题包含有关使用原始架构和新架构的客户端的说明。 您位于 [新架构](../../administrator/account-management/new-architecture.md) 如果您拥有 [!DNL _Data Warehouse查看_] 部分在选择后可用 [!DNL Manage Data] 从主工具栏删除。
 
-Report Builder允许您轻松查看一段时间的趋势，并更改您可能想要比较的时间段的视角。 本主题演示如何设置仪表板以更深入地进行分析，使您能够创建按周、按月、按年分析的报告。
+Report Builder允许您轻松查看一段时间的趋势，并更改您可能希望比较的时间段的视角。 本主题将演示如何设置功能板以更深层次地创建，从而允许您创建逐周、逐月、逐年的报表。
 
 ![](../../assets/Wow__mom__yoy.png)
 
@@ -51,7 +51,7 @@ Report Builder允许您轻松查看一段时间的趋势，并更改您可能想
 >
 >确保 [将所有新列作为维度添加到量度](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 然后再生成新报告。
 
-## 报告
+## 报表
 
 * **按年图表**
    * [!UICONTROL Metric]: `Number of orders`
@@ -59,7 +59,7 @@ Report Builder允许您轻松查看一段时间的趋势，并更改您可能想
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Time options]: `Time range (Custom)`: `2 years ago to 1 year ago`
 
-   * [!UICONTROL Show top/bottom]：前100%的排序依据 **`created_at (month-day)`***
+   * [!UICONTROL Show top/bottom]：前100%排序依据 **`created_at (month-day)`***
 
 * 量度 `A`： `This year`
 * 量度 `B`： `Last year`
@@ -76,11 +76,11 @@ Report Builder允许您轻松查看一段时间的趋势，并更改您可能想
    * [!UICONTROL Metric]: `Number of orders`
    * 时间选项： `Time range (Custom)`： `2 months ago to 1 month ago`
 
-   * 显示前/后：前100%的排序依据 **`created_at (day of month)`***
+   * 显示前/后：前100%排序依据 **`created_at (day of month)`***
 
 * 量度 `A`：本月*
 * 量度 `B`：上个月*
-* [!UICONTROL Time period]：一个月前至0个月前
+* [!UICONTROL Time period]：1个月前至0个月前
 * 
   [!UICONTROL Interval]: None
 * [!UICONTROL Group by]: `created_at (day of month)`
@@ -93,7 +93,7 @@ Report Builder允许您轻松查看一段时间的趋势，并更改您可能想
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Time options]: `Time range (Custom)`: `2 weeks ago to 1 week ago`
 
-   * [!UICONTROL Show top/bottom]：前100%的排序依据 `created_at (day of week)`
+   * [!UICONTROL Show top/bottom]：前100%排序依据 `created_at (day of week)`
 
 * 量度 `A`： `This week`
 * 量度 `B`： `Last week`
@@ -110,7 +110,7 @@ Report Builder允许您轻松查看一段时间的趋势，并更改您可能想
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Time options]: `Time range (Custom)`: `2 days ago to 1 day ago`
 
-   * [!UICONTROL Show top/bottom]：前100%的排序依据 `created_at (hour of day)`
+   * [!UICONTROL Show top/bottom]：前100%排序依据 `created_at (hour of day)`
 
 * 量度 `A`： `Today`
 * 量度B： `Yesterday`

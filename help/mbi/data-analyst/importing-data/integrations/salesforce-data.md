@@ -1,6 +1,6 @@
 ---
-title: 预期Salesforce数据
-description: 了解Salesforce数据中支持和不受支持的对象。
+title: 预期的Salesforce数据
+description: 了解Salesforce数据中支持和不支持的对象。
 exl-id: 6625349f-2ec0-402d-8635-889a1f29811c
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 预期 [!DNL Salesforce] 数据
 
-在 [[!DNL Salesforce] 设置](../integrations/salesforce.md) 完整，每个可查询项对应一个表 [对象](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm)  — 已命名 `sf_/\{sobject-name}`  — 在您的Data warehouse中创建。
+在 [[!DNL Salesforce] 设置](../integrations/salesforce.md) 完整，每个可查询的表 [对象](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm)  — 已命名 `sf_/\{sobject-name}`  — 在您的Data Warehouse中创建。
 
 >[!NOTE]
 >

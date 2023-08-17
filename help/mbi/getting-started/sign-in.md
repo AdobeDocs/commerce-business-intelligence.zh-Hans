@@ -1,6 +1,6 @@
 ---
 title: 访问您的Commerce Intelligence帐户
-description: 了解如何登录到Commerce Intelligence帐户。
+description: 了解如何登录到您的Commerce Intelligence帐户。
 exl-id: 3ee36e0e-f447-4be3-afc8-ccc6d3aa4f20
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Accounts
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # 访问您激活的 [!DNL Adobe Commerce Intelligence] 帐户
 
-激活您的 [!DNL Commerce Intelligence] 帐户为 [内部部署或云](../getting-started/onpremise-activation.md) 并且已与您的Adobe客户团队合作完成配置步骤，您现在可以登录您的帐户。
+在您激活您的 [!DNL Commerce Intelligence] 帐户 [内部部署或云](../getting-started/onpremise-activation.md) 并且已与Adobe客户团队合作完成配置步骤，您现在可以登录您的帐户。
 
-您可以使用您的 [!DNL Adobe ID] 或使用 [!DNL Commerce Intelligence] 电子邮件地址和密码。
+你可以使用你的 [!DNL Adobe ID] 或使用 [!DNL Commerce Intelligence] 电子邮件地址和密码。
 
 ![登录](../assets/sign-in.png)
 
-## 使用您的帐户登录 [!DNL Adobe ID]
+## 使用您的 [!DNL Adobe ID]
 
 1. 单击 **[!UICONTROL Sign in with Adobe ID]**.
 

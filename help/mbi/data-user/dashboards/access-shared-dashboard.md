@@ -1,5 +1,5 @@
 ---
-title: 访问共享仪表板
+title: 访问共享报告面板
 description: 了解如何访问共享的功能板。
 exl-id: 528b8a2e-f13c-4ce8-ab8e-13864f50761a
 role: Admin, Data Architect, Data Engineer, User
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# 访问共享仪表板
+# 访问共享报告面板
 
 让新用户快速上手很简单。
 
 ## 新用户
 
-新用户创建密码后，将显示一个常用共享功能板列表。 他们可以选择想要在仪表板上显示的仪表板，然后单击 **[!UICONTROL Done]**.
+新用户创建密码后，将显示常用共享功能板列表。 他们可以选择要在其功能板上显示的功能板，然后单击 **[!UICONTROL Done]**.
 
 ## 现有用户
 

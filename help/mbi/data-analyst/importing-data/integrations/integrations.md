@@ -13,8 +13,8 @@ ht-degree: 0%
 
 # 使用集成连接外部数据
 
-集成就是数据源。 集成是可以连接到Data warehouse的应用程序与数据库。
+集成就是数据源。 集成是可以连接到Data Warehouse的应用程序与数据库。
 
 本节介绍可用于连接各种外部数据源的可用集成 [!DNL Commerce Intelligence].
 
-要删除连接或集成， [联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 和包含要删除的连接或集成的名称。
+要删除连接或集成， [联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 并包含要删除的连接或集成的名称。

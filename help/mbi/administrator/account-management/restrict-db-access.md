@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # 限制访问
 
-创建到服务器的SSH隧道时，不需要 [!DNL Adobe Commerce Intelligence] 除了数据库之外，任何东西都可以访问。 如果你不想 [!DNL Commerce Intelligence] 要完全访问存放数据库的服务器，您可以通过强制 [!DNL Commerce Intelligence Linux] 用户进入 [受限的垃圾桶](https://www.gnu.org/software/bash/manual/html_node/The-Restricted-Shell.html).
+创建到服务器的SSH隧道时，不需要 [!DNL Adobe Commerce Intelligence] 除了数据库之外，任何东西都可以访问。 如果你不想 [!DNL Commerce Intelligence] 要完全访问数据库所在的服务器，可以通过强制 [!DNL Commerce Intelligence Linux] 用户进入 [受限贝壳](https://www.gnu.org/software/bash/manual/html_node/The-Restricted-Shell.html).
 
-您可能从名称猜到了，但使用受限制的bash shell设置比标准shell控制得更好的环境。 此类外壳的重要特性是受限制的外壳用户无法访问系统功能或进行任何类型的修改。
+您可能从名称猜到了，但使用受限的bash shell设置比标准shell更受控制的环境。 这种外壳的重要之处在于，受限外壳用户无法访问系统功能或进行任何类型的修改。
 
-要限制 [!DNL Commerce Intelligence Linux] 用户，您必须执行以下两项操作：
+要限制 [!DNL Commerce Intelligence Linux] 用户，您必须执行两项操作：
 
 1. 将PATH环境变量更改为空字符串。 这意味着用户无法访问系统可执行文件。
 

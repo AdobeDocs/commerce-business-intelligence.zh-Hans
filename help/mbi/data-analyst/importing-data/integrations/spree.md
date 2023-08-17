@@ -11,15 +11,15 @@ ht-degree: 0%
 
 ---
 
-# Connect [!DNL Spree]
+# 连接 [!DNL Spree]
 
 ![](../../../assets/spree-commerce-logo.png)
 
-想要了解您的业务表现或找到您最有价值的客户获取来源和渠道？ 正在连接 [!DNL Spree] 数据到 [!DNL Commerce Intelligence] 允许您回答这些问题等。
+想要了解您的业务表现或寻找您最有价值的客户获取来源和渠道？ 正在连接您的 [!DNL Spree] 数据到 [!DNL Commerce Intelligence] 允许您回答这些问题等。
 
 此 [!DNL Spree] 数据库基于 [!DNL PostgreSQL]，您可以将其连接到 [!DNL Commerce Intelligence] 使用 [与正常情况下相同的步骤 [!DNL Postgres] 连接](../integrations/postgresql.md).
 
 ## 相关文档
 
-* [分段和筛选的建议数据维度](../../../best-practices/segment-filter.md)
+* [分段和过滤的建议数据维度](../../../best-practices/segment-filter.md)
 * [您最宝贵的客户获取来源和渠道是什么？](../../analysis/most-value-source-channel.md)

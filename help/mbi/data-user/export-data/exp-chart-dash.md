@@ -22,6 +22,6 @@ ht-degree: 0%
 - `Full Excel Export`
 - `Raw Export`
 
-您还可以定义 [要包括在导出中的表和列](../../tutorials/export-raw-data.md).
+您还可以定义 [要包含在导出中的表和列](../../tutorials/export-raw-data.md).
 
-如果需要将图表包含在演示文稿或文档中，可以将图表导出为PNG、PDF或SVG格式的图像。 单击任何图表右上角的齿轮图标。 选择 `Enlarge` 选项，然后单击 **[!UICONTROL Download]** 以完成导出。
+如果需要在演示文稿或文档中包含图表，可以将图表导出为PNG、PDF或SVG格式的图像。 单击任何图表右上角的齿轮图标。 选择 `Enlarge` 选项，然后单击 **[!UICONTROL Download]** 以完成导出。

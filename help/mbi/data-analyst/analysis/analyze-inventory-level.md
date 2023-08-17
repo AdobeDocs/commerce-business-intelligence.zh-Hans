@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 分析库存水平
 
-本主题将演示如何设置一个功能板，该功能板提供有关您当前库存的深入分析，并包含有关旧版架构或新架构的客户说明。 如果您没有 **[!UICONTROL Data Warehouse Views]** 下的选项 **[!UICONTROL Manage Data]** 菜单。 如果您使用的是旧版架构，请提交 [新的支持请求](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 带有主题 **[!UICONTROL INVENTORY ANALYSIS]** 一旦到达中的指定部分 _计算列_ 下面的说明。
+本主题将演示如何设置功能板，该功能板提供有关当前库存的洞察信息，并包含有关旧架构或新架构的客户端说明。 如果您在旧版架构中 **[!UICONTROL Data Warehouse Views]** 下的选项 **[!UICONTROL Manage Data]** 菜单。 如果您使用的是旧版架构，请提交 [新的支持请求](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 带有主题 **[!UICONTROL INVENTORY ANALYSIS]** 一旦到达 _计算列_ 说明如下。
 
 ## 要跟踪的列：
 
@@ -77,7 +77,7 @@ ht-degree: 0%
       * 
         [!UICONTROL Datatype]: `Decimal`
       * 定义：
-         * 当A为null或B为null时，则使用null else round(A：：decimal/(extract(epoch from (current_timestamp - B))：：decimal/604800.0)，2) end
+         * 当A为null或B为null时，则为null，否则第(A：：decimal/(extract(epoch from (current_timestamp - B))：：decimal/604800.0)，2)末尾
 
 * **[!UICONTROL cataloginventory_stock_item]** 表：
    * **`Sku`**
@@ -118,10 +118,10 @@ ht-degree: 0%
       * 
         [!UICONTROL Datatype]: `Decimal`
       * 定义：
-         * 当A为null或B为null或B = 0.0时为null，否则以round(A：：decimal/B，2)结尾
+         * 当A为null或B为null或B = 0.0时为null，否则以round(A：：decimal/B，2)结束
 
 +++
-+++ 旧版架构
++++ 旧式架构
 
 * **[!UICONTROL catalog_product_entity]** 表：
    * **`Product's most recent order date`**
@@ -158,7 +158,7 @@ ht-degree: 0%
          * [A] `Ordered products we count`
 
    * **`Avg products sold per week (all time)`**
-      * 由分析人员创建，在您提交您的文档时 **[库存分析]** 支持请求
+      * 由分析人员创建，在您提交您的文件 **[库存分析]** 支持请求
 
 * **[!UICONTROL cataloginventory_stock_item]** 表：
    * **`Sku`**
@@ -190,7 +190,7 @@ ht-degree: 0%
       * 选择 [!UICONTROL column]： `Avg products sold per week (all time)`
 
    * **`Weeks on hand`**
-      * 由分析人员创建，在您提交您的文档时 **[!UICONTROL INVENTORY ANALYSIS]** 支持请求
+      * 由分析人员创建，在您提交您的文件 **[!UICONTROL INVENTORY ANALYSIS]** 支持请求
 
 +++
 
@@ -204,9 +204,9 @@ ht-degree: 0%
       * **`qty`** 列排序依据
       * [无] 列
 
-## 报告
+## 报表
 
-### 报告说明
+### 报表说明
 
 * **`Inventory on hand by sku`**
    * [!UICONTROL Metric]: `Inventory on hand`
@@ -242,4 +242,4 @@ ht-degree: 0%
    * 
      [!UICONTROL Chart type]: `Table`
 
-如果您在构建此分析时遇到任何问题，或者只是想让专业服务团队参与进来， [联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+如果您在构建此分析时遇到任何问题，或只是想与专业服务团队接洽， [联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

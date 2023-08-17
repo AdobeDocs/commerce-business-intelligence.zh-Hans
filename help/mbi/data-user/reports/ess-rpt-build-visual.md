@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # [!DNL Visual Report Builder]
 
-[!DNL Visual Report Builder] 使基于预定义量度创建快速报表变得轻松。 每个量度都包含一个查询，该查询定义报表的数据集。
+[!DNL Visual Report Builder] 使您可以轻松根据预定义指标创建快速报表。 每个量度都包含一个查询，该查询定义报表的数据集。
 
-以下示例说明如何创建简单报表、按附加维度分组数据、设置日期和时间间隔、更改图表类型以及将报表保存到功能板。
+以下示例说明如何创建简单报表、按附加维度对数据分组、设置日期和时间间隔、更改图表类型以及将报表保存到仪表板。
 
 ## 要创建简单报表，请执行以下操作：
 
@@ -31,9 +31,9 @@ ht-degree: 0%
 
    * 选择 [量度](../../data-user/reports/ess-manage-data-metrics.md) 描述要用于报表的数据集。
 
-     此 `New Customers` 此示例中使用的指标计算所有客户，并按客户注册帐户的日期对列表进行排序。 初始报告包含一个简单的线形图，后面是数据表。
+     此 `New Customers` 本示例中使用的指标计算所有客户，并按客户注册帐户的日期对列表进行排序。 初始报告包含一个简单的线形图，后面是数据表。
 
-     左侧的摘要显示当前指标的名称，其后是指标中指定的对列数据的任何计算的结果。 在此示例中，汇总显示客户总数。
+     左侧的摘要显示当前指标的名称，其后是指标中指定的任何列数据的计算结果。 在本例中，汇总显示客户总数。
 
      ![可视化Report Builder](../../assets/magento-bi-report-builder-untitled.png)
 
@@ -43,29 +43,29 @@ ht-degree: 0%
 
    **`Group By`**
 
-   此 `Group By` 通过控制，可按组或区段添加多个维度。 Dimension是表中可用于对数据进行分组的列。
+   此 `Group By` 控件允许您按组或区段添加多个维度。 Dimension是表中可用于分组数据的列。
 
-   * 从的列表中选择一个可用维度 `Group By` 选项。
+   * 从的列表中选择一个可用维 `Group By` 选项。
 
-     对于此示例，系统在客户首次下订单时发现了五个优惠券代码。
+     在本例中，系统发现客户在首次订购时使用了五个优惠券代码。
 
-     ![分组方式](../../assets/magento-bi-report-builder-group-by-dimensions.png)
+     ![分组依据](../../assets/magento-bi-report-builder-group-by-dimensions.png)
 
-     此 `Group By` 详细信息列出了客户使用的每个优惠券。 用于下达初始订单的优惠券带有复选框。 现在，图表中有多条彩色线条，表示用于第一笔订单的每个优惠券。 图例采用颜色编码以对应于每一行数据。
+     此 `Group By` 详细信息列出了客户使用的每个优惠券。 用于下达初始订单的优惠券带有复选框。 图表现在有多条彩色线条，表示用于第一订单的每个优惠券。 图例采用颜色编码以对应于每一行数据。
 
-   * 单击 **[!UICONTROL Apply]** 以关闭“分组依据”详细信息。
+   * 单击 **[!UICONTROL Apply]** 关闭“分组依据”详细信息。
 
      ![多个Dimension](../../assets/magento-bi-report-builder-group-by-dimension-detail.png)
 
    * 将鼠标悬停在每行上的几个数据点上，可查看当月首次订购该优惠券时使用该优惠券的客户数量。
 
-   * 数据表现在有一个附加维度，其中每月有一列，每个优惠券代码有一行。
+   * 数据表现在具有附加维度，其中每月有一列，每个优惠券代码有一行。
 
      ![按表数据分组](../../assets/magento-bi-report-builder-group-by-table-data.png)
 
-   * 单击转置(![](../../assets/magento-bi-btn-transpose.png))控件以更改数据的方向。
+   * 单击转置(![](../../assets/magento-bi-btn-transpose.png))控件，用于更改数据的方向。
 
-     数据轴翻转，此时表格中为每张优惠券代码各有一列，每月有一行。 您可能会发现此方向更易于阅读。
+     数据轴翻转，现在表格中每个优惠券代码对应一列，每个月对应一行。 您可能会发现此方向更易于阅读。
 
      ![转换的数据](../../assets/magento-bi-report-builder-group-by-table-data-transposed.png)
 
@@ -79,17 +79,17 @@ ht-degree: 0%
 
    * 进行以下更改：
 
-      * 要放大以放大视图，请将日期范围更改为 `Last Full Quarter`.
+      * 要放大查看，请将日期范围更改为 `Last Full Quarter`.
       * 下 `Select Time Interval`，选择 `Week`.
       * 完成后，单击 **[!UICONTROL Save]**.
 
-     现在，报表仅包含按周显示的最后一个季度的数据。
+     现在，该报表仅包含上一季度（按周）的数据。
 
-     ![按周显示上一季度的报表](../../assets/magento-bi-report-builder-date-range-quarter-by-week-chart.png)
+     ![按周显示上一季度报表](../../assets/magento-bi-report-builder-date-range-quarter-by-week-chart.png)
 
    **图表类型**
 
-   * 单击右上角的控件以查找最适合该数据图表。
+   * 单击右上角的控件可找到最适合该数据对应的图表。
 
      某些图表类型与多维数据不兼容。
 
@@ -106,7 +106,7 @@ ht-degree: 0%
 
      {style="table-layout:auto"}
 
-1. 为报表赋值 `title`，替换 `Untitled Report` 具有描述性标题的页面顶部文本。
+1. 为报表赋值 `title`，替换 `Untitled Report` 页面顶部带描述性标题的文本。
 
 1. 在右上角，单击 **[!UICONTROL Save]** 并执行以下操作：
 
@@ -116,12 +116,12 @@ ht-degree: 0%
 
    * 单击 **[!UICONTROL Save to Dashboard]**.
 
-     ![保存到功能板](../../assets/magento-bi-report-builder-save-to-dashboard.png)
+     ![保存到仪表板](../../assets/magento-bi-report-builder-save-to-dashboard.png)
 
 1. 要在仪表板中查看图表，请执行下列操作之一：
 
-   * 单击 **[!UICONTROL Go to Dashboard]** 页面顶部的消息中。
+   * 单击 **[!UICONTROL Go to Dashboard]** 在页面顶部的消息中。
 
-   * 在菜单中，选择 `Dashboards` ，然后单击当前仪表板的名称以显示列表。 然后，单击保存报告的功能板名称。
+   * 在菜单中，选择 `Dashboards` 并单击当前仪表板的名称以显示列表。 然后，单击保存报告的仪表板的名称。
 
      ![仪表板中的报告](../../assets/magento-bi-report-builder-my-dashboard.png)

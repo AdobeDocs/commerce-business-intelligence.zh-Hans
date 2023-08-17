@@ -1,17 +1,17 @@
 ---
 title: 连接QuickBooks
-description: 了解您的企业财务现在如何与销售和营销数据并存，让您能够快速、轻松地监控支出、识别超支情况等。
+description: 了解您的企业财务现在如何与销售和营销数据并存，使您能够快速、轻松地监控开支、识别超支等等。
 exl-id: e100c88c-af59-4185-b2a2-c8e77bfd7277
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '145'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Connect [!DNL QuickBooks]
+# 连接 [!DNL QuickBooks]
 
 >[!NOTE]
 >
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![](../../../assets/Quickbooks.png)
 
-使用 [!DNL QuickBooks] 集成，您的业务财务现在可以与销售和营销数据并存，从而让您快速、轻松地了解支出、识别超支情况等。
+使用 [!DNL QuickBooks] 集成，您的业务财务现在可与销售和营销数据并存，从而让您快速、轻松地掌握支出、识别过度支出等等。
 
 ## 添加 [!DNL QuickBooks] 作为中的数据源 [!DNL Commerce Intelligence]
 

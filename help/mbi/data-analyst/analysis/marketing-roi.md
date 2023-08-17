@@ -1,6 +1,6 @@
 ---
 title: 营销ROI
-description: 了解如何设置一个仪表板来跟踪您的渠道分析，包括汇总的ROI和按营销活动。
+description: 了解如何设置一个仪表板来跟踪您的渠道分析，包括汇总的ROI和按促销活动列出的分析。
 exl-id: 5de83998-e6cf-478d-bb6a-7a3dc77c2c0c
 role: Admin,  User
 feature: Reports, Dashboards
@@ -15,19 +15,19 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->本主题包含有关使用原始架构和新架构的客户端的说明。 您位于 [新架构](../../administrator/account-management/new-architecture.md) 如果您在主工具栏中选择“管理数据”后有“Data warehouse视图”部分可用。
+>本主题包含有关使用原始架构和新架构的客户端的说明。 您位于 [新架构](../../administrator/account-management/new-architecture.md) 如果您在主工具栏中选择“管理数据”后提供了“Data Warehouse视图”部分。
 
-如果您正在在线广告上花钱，则希望跟踪您在这方面的投资回报，并在进一步投资方面做出数据驱动型决策。 本主题演示如何设置功能板以跟踪您的渠道分析，包括汇总的ROI和按促销活动列出的投资回报率。
+如果您正在在线广告上花钱，则希望跟踪您的投资回报，并在进一步投资方面做出以数据为导向的决策。 本主题将演示如何设置一个功能板来跟踪您的渠道分析，包括汇总的ROI和按促销活动列出的分析。
 
 ![](../../assets/Marketing_dashboard_example.png)
 
-在开始之前，您想要连接 [!DNL [Facebook Ads]](../importing-data/integrations/facebook-ads.md)， [!DNL [Adwords]](../importing-data/integrations/google-adwords.md)、和 [!DNL [Google Ecommerce]](../importing-data/integrations/google-ecommerce.md) 帐户，并引入任何其他在线广告支出数据。 此分析包含 [高级计算列](../data-warehouse-mgr/adv-calc-columns.md).
+在开始之前，您想要连接 [!DNL [Facebook Ads]](../importing-data/integrations/facebook-ads.md)， [!DNL [Adwords]](../importing-data/integrations/google-adwords.md)、和 [!DNL [Google Ecommerce]](../importing-data/integrations/google-ecommerce.md) 账户和引入任何其他在线广告支出数据。 此分析包含 [高级计算列](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## 统一表
 
-**原始架构：** 将来自各种渠道的支出汇集在一起，例如 [!DNL Facebook Ads] 或 [!DNL Google Adwords]，Adobe建议创建 **统一表** 你广告花费的总和。 您需要一位分析师为您完成此步骤。 如果你没有， [提出支持请求](../../guide-overview.md#Submitting-a-Support-Ticket) 带有主题 `[MARKETING ROI ANALYSIS]`，Analyst将创建此表。
+**原始架构：** 将来自各种来源的支出汇集在一起，例如 [!DNL Facebook Ads] 或 [!DNL Google Adwords]，Adobe建议创建 **统一表** 你所有的广告支出。 您需要一名分析师为您完成此步骤。 如果你没有， [提出支持请求](../../guide-overview.md#Submitting-a-Support-Ticket) 带有主题 `[MARKETING ROI ANALYSIS]`，分析人员将创建此表。
 
-**新架构：** 您可以按照以下示例进行操作： [此分析库](../../data-analyst/data-warehouse-mgr/create-dw-views.md) 主题。 在新体系结构中，统一表现在称为Data warehouse视图。
+**新架构：** 您可以按照中的示例进行操作 [此分析库](../../data-analyst/data-warehouse-mgr/create-dw-views.md) 主题。 在新体系结构中，统一表现在称为Data Warehouse视图。
 
 ## 计算列
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 * **`Consolidated Digital Ad Spend`** 表
 * **`Campaign name`** 由Adobe分析师创建，作为您的一部分 **[营销ROI分析]** 票证
 
-**原有和新的体系结构：**
+**原始体系结构和新体系结构：**
 
 * **`sales_flat_order`** 表
    * **`Order's GA campaign`**
@@ -55,13 +55,13 @@ ht-degree: 0%
       * 选择定义：联接列
       * 选择 [!UICONTROL table]： `ecommerce####`
       * 选择 [!UICONTROL column]： `medium`
-      * [!UICONTROL Path]： sales_flat_order.increment_id = e-commerce####.transactionId
+      * [!UICONTROL Path]： sales_flat_order.increment_id =电子商务####.transactionId
 
    * **`Order's GA source`**
       * 选择定义：联接列
       * 选择 [!UICONTROL table]： `ecommerce####`
       * 选择 [!UICONTROL column]： `source`
-      * [!UICONTROL Path]： sales_flat_order.increment_id = e-commerce####.transactionId ^
+      * [!UICONTROL Path]： sales_flat_order.increment_id =电子商务####.transactionId ^
 
 * **`customer_entity`** 表
 * **`Customer's first order GA campaign`**
@@ -77,7 +77,7 @@ ht-degree: 0%
    * 选择定义： `Max`
    * 选择 [!UICONTROL table]： `sales_flat_order`
    * 选择 [!UICONTROL column]： `Order's GA source`
-   * [!UICONTROL Path]： sales_flat_order.customer_id = customer_entity.entity_id
+   * [!UICONTROL Path]：sales_flat_order.customer_id = customer_entity.entity_id
    * [!UICONTROL Filter]:
       * `Orders we count`
       * `Customer's order number = 1`
@@ -134,7 +134,7 @@ ht-degree: 0%
 >
 >确保 [将所有新列作为维度添加到量度](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) 然后再生成新报告。
 
-## 报告
+## 报表
 
 * **广告花费（所有时间）**
    * [!UICONTROL Metric]：广告支出
@@ -153,7 +153,7 @@ ht-degree: 0%
       * `User's first order's source LIKE %facebook%`
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
-      * 筛选器逻辑： ([`A`] 或 [`B`] 或 [`C`])和 [`D`]
+      * 筛选器逻辑： ([`A`] 或者 [`B`] 或者 [`C`])和 [`D`]
 
 * 量度 `A`： `Ad customer acquisitions`
 * [!UICONTROL Time period]: `All time`
@@ -171,7 +171,7 @@ ht-degree: 0%
       * `User's first order's source LIKE %facebook%`
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
-      * 筛选器逻辑： ([`A`] 或 [`B`] 或 [`C`])和 [`D`]
+      * 筛选器逻辑： ([`A`] 或者 [`B`] 或者 [`C`])和 [`D`]
 
    * [!UICONTROL Metric]：平均生命周期收入
    * [!UICONTROL Filters]:
@@ -179,7 +179,7 @@ ht-degree: 0%
       * `User's first order's source LIKE %facebook%`
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
-      * 筛选器逻辑： ([`A`] 或 [`B`] 或 [`C`])和 [`D`]
+      * 筛选器逻辑： ([`A`] 或者 [`B`] 或者 [`C`])和 [`D`]
 
    * [!UICONTROL Formula]: `((C - (A / B)) / (A / B))`
    * 
@@ -195,7 +195,7 @@ ht-degree: 0%
 * 
   [!UICONTROL Chart Type]: `Scalar`
 
-* **按Ga中等深浅**
+* **按Ga介质排序的订单**
    * 
      [！UICONTROL量度]: `Orders`
 
@@ -215,7 +215,7 @@ ht-degree: 0%
       * `User's first order's source LIKE %facebook%`
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
-      * 筛选器逻辑： ([`A`] 或 [`B`] 或 [`C`])和 [`D`]
+      * 筛选器逻辑： ([`A`] 或者 [`B`] 或者 [`C`])和 [`D`]
 
    * [!UICONTROL Metric]：平均生命周期收入
    * [!UICONTROL Filters]:
@@ -223,7 +223,7 @@ ht-degree: 0%
       * `User's first order's source LIKE %facebook%`
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
-      * 筛选器逻辑： ([`A`] 或 [`B`] 或 [`C`])和 [`D`]
+      * 筛选器逻辑： ([`A`] 或者 [`B`] 或者 [`C`])和 [`D`]
 
    * [!UICONTROL Metric]：平均生命周期订单数
    * [!UICONTROL Filters]:
@@ -231,7 +231,7 @@ ht-degree: 0%
       * `User's first order's source LIKE %facebook%`
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
-      * 筛选器逻辑： ([`A`] 或 [`B`] 或 [`C`])和 [`D`]
+      * 筛选器逻辑： ([`A`] 或者 [`B`] 或者 [`C`])和 [`D`]
 
    * [!UICONTROL Formula]: `(A / B)`
    * 
@@ -275,11 +275,11 @@ ht-degree: 0%
 * 
   [！UICONTROL间隔]: `None`
 * 
-  [！UICONTROL分组依据]: `campaign` (将“客户的第一个订单”促销活动用于非广告支出表格量度)
+  [！UICONTROL分组依据]: `campaign` (将“客户的第一个订单”促销活动用于非广告支出表量度)
 * 
   [!UICONTROL Chart Type]: `Table`
 
-如果您在构建此分析时遇到任何问题，或者只是想让专业服务团队参与进来， [联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+如果您在构建此分析时遇到任何问题，或只是想与专业服务团队接洽， [联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ### 相关
 

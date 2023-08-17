@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '84'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 有时候，名字不再合适。 重命名功能板既快速又简单。
 
-1. 在操控板中，单击 **[!UICONTROL Dashboard Options]** 菜单的位置，位于屏幕顶部的 `Global Search` 菜单。
+1. 在仪表板中，单击 **[!UICONTROL Dashboard Options]** 菜单的位置，位于屏幕顶部的 `Global Search` 菜单。
 
 1. 单击 **[!UICONTROL Rename]** 在下拉菜单中。
 

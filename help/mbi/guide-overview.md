@@ -8,7 +8,7 @@ exl-id: f62c7a98-1b4c-4abb-9692-50ce0f3ee1fb
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '459'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -28,34 +28,34 @@ ht-degree: 0%
 
 本指南包含以下部分，它们根据您在组织中可能拥有的角色进行整理。
 
-- [数据用户](data-user.md)：使用数据帮助制定业务决策。 您可能从团队的数据分析师那里收到报告和仪表板，但您还希望了解如何创建这些报告和仪表板。
-- [Data Analyst](data-analyst.md)：您可以轻松设计查询并成为数据分析专家。 您知道如何找到数据问题的具体答案，并希望促进同事的自助体验。
-- 管理员：您管理 [!DNL Commerce Intelligence] 帐户，包括授权、添加和删除用户以及处理基本管理任务。
+- [数据用户](data-user.md)：使用数据帮助制定业务决策。 您可能从团队的数据分析师那里收到报告和仪表板，但您还需要了解如何创建这些报告和仪表板。
+- [数据分析师](data-analyst.md)：您可以轻松设计查询，并且可以随时前往进行数据分析。 您知道如何找到数据问题的具体答案，并希望促进同事的自助体验。
+- 管理员：您管理 [!DNL Commerce Intelligence] 帐户，包括许可、添加和删除用户以及处理基本管理任务。
 
 除了上述基于角色的工作流之外，本指南还包含：
 
-- 最佳实践： [!UICONTROL Commerce Intelligence] 是一个强大而灵活的平台，这意味着执行类似任务的方式多种多样。 此部分将 [!DNL Commerce Intelligence] 捕获、分析和查看数据的推荐方法。
+- 最佳实践： [!UICONTROL Commerce Intelligence] 是一个强大而灵活的平台，这意味着有许多不同的方法来执行类似任务。 本节汇集了 [!DNL Commerce Intelligence] 捕获、分析和查看数据的推荐方法。
 - Tutorials：按照这些自学教程中的说明，了解 [!DNL Commerce Intelligence].
 
 ## 如何获取帮助
 
-联系 [支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 如果您有疑问，并且希望利用您的某些专业服务，或者如果您遇到帐户问题。
+联系 [支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 如果您有疑问并希望利用某些专业服务，或者您的帐户遇到问题。
 
 ### 服务策略
 
-查看 [客户支持团队提供的服务列表](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+查看 [客户支持团队提供的服务的列表](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ### 提交支持票证
 
-在构建高级计算列时需要帮助？ 遇到缺陷或连接问题？ 如果需要联系支持团队，Adobe会要求您使用 [支持票证准则](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html). 这些准则概述了信息Adobe解决该问题所需的信息。
+需要有关构建高级计算列的帮助吗？ 遇到缺陷或连接问题？ 如果需要联系支持团队，Adobe会要求您使用 [支持票证准则](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html). 这些准则概述了信息Adobe解决该问题所需的信息。
 
 ## 可用文档
 
 | 文档资源 | 描述 |
 |----------------------- | ----------- |
-| [Adobe Commerce 2.4商家文档](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | Adobe Commerce和Magento Open Source的以商家为中心的文档 |
+| [Adobe Commerce 2.4商家文档](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | 适用于Adobe Commerce和Magento Open Source的以商家为中心的文档 |
 | [Adobe Commerce服务文档](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html) | 支持服务集合的文档，可帮助商家将其业务的关键组件与商店集成。 |
-| [Adobe Commerce 2.4操作指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html) | 有关概念、流程、工具和最佳实践的系统文档，用于开发、部署和维护在Adobe Commerce和Magento Open Source平台上部署的项目。 |
+| [Adobe Commerce 2.4操作指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html) | 有关用于开发、部署和维护在Adobe Commerce和Magento Open Source平台上部署的项目所涉及的概念、流程、工具和最佳实践的系统文档。 |
 | [Adobe Commerce 2.4开发人员文档](https://developer.adobe.com/commerce/) | 用于构建和自定义Adobe Commerce或Magento Open Source的以开发人员为中心的文档 |
 
 {style="table-layout:auto"}

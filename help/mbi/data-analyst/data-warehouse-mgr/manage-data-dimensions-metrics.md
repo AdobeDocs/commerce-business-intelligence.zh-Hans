@@ -47,7 +47,7 @@ ht-degree: 0%
 
 1. 选择包含维度的表。
 
-1. 在左侧选择要删除维度的量度，并在右侧选择要删除的维度。
+1. 选择您要从左侧删除维度的量度，以及您要从右侧删除的维度。
 
 1. 单击 **[!UICONTROL Remove]**.
 
@@ -65,7 +65,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->必须已在中跟踪您要过滤或分组的任何维度 [!DNL Commerce Intelligence]. 如果找不到所需的维度，您可能需要开始通过 [data warehouse](../data-warehouse-mgr/tour-dwm.md) 页面。
+>必须已在中跟踪您要过滤或分组依据的任何维度 [!DNL Commerce Intelligence]. 如果找不到所需的维度，您可能需要开始通过 [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) 页面。
 
 
 **要从量度中删除维度，请执行以下操作：**
@@ -74,11 +74,11 @@ ht-degree: 0%
 
 1. 单击 **[!UICONTROL Edit]** 在需要新维度的量度上。
 
-1. 在 `Dimensions` 部分，选中要删除的维度旁边的“删除”列中的复选框。
+1. 在 `Dimensions` 部分，选中要删除的维度旁边的删除列中的复选框。
 
 >[!NOTE]
 >
->即使删除某个维度后，它仍作为Data warehouse中表上的列存在。 您可以将其添加回任何量度，并使用这些维度构建新量度。 从删除与维度对应的数据列 [!DNL Commerce Intelligence]，只需通过 [data warehouse](../data-warehouse-mgr/tour-dwm.md) 页面。
+>即使在删除维度后，它仍作为Data Warehouse中表上的列存在。 您可以将其添加回任何量度，并使用这些维度构建新量度。 从删除与维度对应的数据列 [!DNL Commerce Intelligence]，只需通过 [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) 页面。
 
 ## 相关文档
 

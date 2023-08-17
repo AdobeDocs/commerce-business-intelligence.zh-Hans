@@ -7,13 +7,13 @@ feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '254'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # 在功能板中批量编辑图表
 
-利用批量编辑功能，可以轻松更改功能板中的图表名称和日期。 例如，您希望特定仪表板上的所有图表引用单个商店，并按月而不是按季度报告。 与其手动更改所有内容，不如让 `bulk-editing` 功能完成工作。 在本主题中，您将了解如何使用：
+通过批量编辑功能，可以轻松更改功能板中的图表名称和日期。 例如，您希望特定仪表板上的所有图表引用单个商店，并且每月而不是每季度进行报告。 与其手动更改所有内容，不如让 `bulk-editing` 功能完成工作。 在本主题中，您将了解如何使用：
 
 * [此 [!DNL Find/Replace] 功能](#findreplace)
 
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 * [此 [!DNL Change Dates] 功能](#dates)
 
-话虽如此，想想这个。 *这些更改是否需要永久有效？* 如果不能，请考虑克隆功能板，然后更改新功能板中的日期。 这允许您保留原始仪表板，同时仍可进行所需的更改。
+话虽如此，不妨考虑一下。 *这些更改是否需要永久保留？* 如果不能，请考虑克隆功能板，然后更改新功能板中的日期。 这允许您保留原始仪表板，同时仍可进行所需的更改。
 
 >[!NOTE]
 >
->如果要更改大量报表，则更新过程可能需要一点时间。
+>如果要更改大量报告，则更新过程可能需要一点时间。
 
 ## 使用 [!DNL Find/Replace] {#findreplace}
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 ![前置词](../../assets/prepend.gif)
 
-## 更改 `Dates` {#dates}
+## 正在更改 `Dates` {#dates}
 
 1. 单击齿轮(![](../../assets/gear-icon.png))图标，然后选择 [!UICONTROL Bulk Edit Reports] 窗口。
 

@@ -7,7 +7,7 @@ feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce 
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '129'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 0%
     }
 ```
 
-## 变量对象键 {#varobjectkeys}
+## 可变对象键 {#varobjectkeys}
 
 包含具有可变对象键的对象的集合不会在中复制 [!DNL Commerce Intelligence]. 例如：
 
@@ -56,7 +56,7 @@ ht-degree: 0%
     }
 ```
 
-这通常发生在使用对象的情况下，而数组更合适。 现在，重写上述示例：
+这通常发生在使用对象并且数组更合适的地方。 现在，重新制作上面的示例：
 
 ```bash
     {

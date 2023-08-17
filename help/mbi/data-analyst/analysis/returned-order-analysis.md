@@ -1,6 +1,6 @@
 ---
 title: 分析退货单
-description: 了解如何设置一个仪表板，用于提供对商店回报的详细分析。
+description: 了解如何设置一个功能板，用于提供商店回报的详细分析。
 exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# 退货单
+# 返回的订单
 
 本主题将演示如何设置一个功能板，用于提供对商店退货的详细分析。
 
 ![](../../assets/detailed-returns-dboard.png)
 
-在开始之前，您必须是 [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 客户，并且应该确保贵公司使用的是 `enterprise\_rma` 返回表。
+在开始之前，您必须是 [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 客户，并且应确保您的公司正在使用 `enterprise\_rma` 返回表。
 
 此分析包含 [高级计算列](../data-warehouse-mgr/adv-calc-columns.md).
 
@@ -104,7 +104,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您只想分析秒数到分辨率或秒数到首次响应的营业时间，请在请求票证时告知分析人员。
+>如果您只想分析解决问题所需的营业时间或首次响应所需的营业时间，请在请求票证时告知分析人员。
 
 ### 量度
 
@@ -140,7 +140,7 @@ ht-degree: 0%
 >
 >确保 [将所有新列作为维度添加到量度](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 然后再生成新报告。
 
-### 报告
+### 报表
 
 * **返回后重复排序的概率**
 * 量度 `A`： `Number of orders with returns`
@@ -177,7 +177,7 @@ ht-degree: 0%
 * 
   [！UICONTROL图表类型]: `Number`
 
-* **具有退货的订单百分比**
+* **包含退货的订单百分比**
 * 量度 `A`： `Number of orders`
 * [!UICONTROL Metric]: `Number of orders`
 
@@ -186,7 +186,7 @@ ht-degree: 0%
 * [!UICONTROL Filter]:
    * `Order contains a return? (1=yes/0=No) = 1`
 
-* 公式：具有退货的订单百分比
+* 公式：包含退货的订单百分比
 * [!UICONTROL Formula]: `B / A`
 * 
   [!UICONTROL Format]: `Percentage`
@@ -240,6 +240,6 @@ ht-degree: 0%
 * 
   [！UICONTROL图表类型]: `Table`
 
-在编译所有报告后，您可以根据需要将报告组织在功能板上。 结果可能类似于上述示例仪表板。
+在编译所有报告后，您可以根据需要将报告组织在功能板上。 结果可能类似于上面的示例仪表板。
 
 如果您在构建此分析时遇到任何问题，或者希望与专业服务团队接洽， [联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

@@ -1,6 +1,6 @@
 ---
 title: Zendesk技术支持报告
-description: 了解您最宝贵的推荐渠道。
+description: 了解您最宝贵的转介渠道。
 exl-id: b6142ef2-2be8-401f-ac35-f86fc68d204e
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->这仅适用于位于以下位置的客户端： `Pro` 规划并使用新架构。 如果您拥有以下优势，那么您将使用新架构： `Data Warehouse Views` 部分在选择后可用 `Manage Data` 从主工具栏中。
+>这仅适用于位于以下位置的客户端： `Pro` 规划并使用新架构。 如果您拥有以下资源，那么您将使用新架构： `Data Warehouse Views` 部分在选择后可用 `Manage Data` 从主工具栏删除。
 
-整合您的 [!DNL Zendesk] 使用事务型数据库的数据是更好地了解客户如何与销售或客户成功团队进行交互的绝佳方法。 它还有助于您了解哪些类型的客户在使用您的支持平台。 本主题演示如何设置功能板以获取有关您的产品的详细报告 [!DNL Zendesk] 性能，以及您的事务型客户的关系。
+整合您的 [!DNL Zendesk] 使用事务型数据库的数据是更好地了解客户如何与销售或客户成功团队进行交互的绝佳方法。 它还有助于您了解哪些类型的客户在使用您的支持平台。 本主题演示如何设置功能板以获取有关您的产品的精细报告 [!DNL Zendesk] 性能，并拉近交易客户的距离。
 
 在开始之前，您想要连接 [[!DNL Zendesk]](../integrations/zendesk.md). 此分析包含 [高级计算列](../../data-warehouse-mgr/adv-calc-columns.md).
 
@@ -82,9 +82,9 @@ ht-degree: 0%
 
       * `Input columns` - `role`, `email`
 
-      * `SQL Calculation` `- case when `A` is not `null` and `答！=`end-user` 则 `Yes` 时间 `B` 不是 `null` 和 `B` 点赞 `%@magento.com` 则 `Yes` else `No` 结束
+      * `SQL Calculation` `- case when `A` is not `null` and `答！=`end-user` 则 `Yes` 时间 `B` 不是 `null` 和 `B` 点赞 `%@magento.com` 则 `Yes` 否则 `No` 结束
 
-      * Replace `@magento.com` 使用您的域
+      * 替换 `@magento.com` 与您的域
 
       * `Datatype` - `String`
 
@@ -242,7 +242,7 @@ ht-degree: 0%
 * 排序依据 **`created_at`** 时间戳
 * [!UICONTROL Filter]:
 
-* **[!DNL Zendesk]已解决票证**
+* **[!DNL Zendesk]已解决的票证**
    * `Tickets we count`
    * 中的状态 `closed, solved`
 
@@ -252,7 +252,7 @@ ht-degree: 0%
 * 排序依据 **`created_at`** 时间戳
 * [!UICONTROL Filter]:
 
-* **[!DNL Zendesk]不同的用户提交票证**
+* **[!DNL Zendesk]不同的用户归档票证**
    * `Tickets we count`
 
 * 在 **`[!DNL Zendesk] tickets`** 表
@@ -261,7 +261,7 @@ ht-degree: 0%
 * 排序依据 **`created_at`** 时间戳
 * [!UICONTROL Filter]:
 
-* **[!DNL Zendesk]平均/中间票证解析时间**
+* **[!DNL Zendesk]平均/中值票证解析时间**
    * `Tickets we count`
    * 中的状态 `closed, solved`
 
@@ -271,7 +271,7 @@ ht-degree: 0%
 * 排序依据 **`created_at`** 时间戳
 * [!UICONTROL Filter]:
 
-* **[!DNL Zendesk]首次响应的平均时间/中位数**
+* **[!DNL Zendesk]首次响应的平均时间/中间时间**
    * 已计票的票证
    * 状态为关闭，已解决
 
@@ -285,7 +285,7 @@ ht-degree: 0%
 >
 >确保 [将所有新列作为维度添加到量度](../../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) 然后再生成新报告。
 
-### 报告
+### 报表
 
 * **[!UICONTROL New/Open/Pending tickets]**
    * [!UICONTROL Metric]: `New Tickets`

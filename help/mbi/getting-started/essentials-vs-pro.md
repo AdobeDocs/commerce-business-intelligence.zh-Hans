@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # [!DNL Commerce Intelligence Essentials] 对比 [!DNL Commerce Intelligence Pro]
 
-下表介绍了旧版中包含的元素 `Essentials` 帐户与当前Commerce Intelligence帐户进行比较。 Adobe不再提供 `Essentials`.
+下表描述了旧版中包含的元素 `Essentials` 帐户与当前Commerce Intelligence帐户进行比较。 Adobe不再提供 `Essentials`.
 
 |   | **`Commerce Intelligence Essentials`** | **`Commerce Intelligence Pro`** |
 |-----|-----|-----|
@@ -36,7 +36,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->表数取决于访客结帐。
+>表数取决于来宾结帐。
 
 **包含的表**
 

@@ -1,6 +1,6 @@
 ---
 title: 实体关系图
-description: 了解一些ER图，以帮助您可视化少数常见Commerce数据库表之间的关系。
+description: 了解一些ER图，帮助您可视化少数常见Commerce数据库表之间的关系。
 exl-id: de7d419f-efbe-4d0c-95a8-155a12aa93f3
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->在本主题中，您会看到 **加入**， **关系**、和 **路径**. 这些词都用于描述两个表的连接方式。
+>在本主题中，您可以看到以下词语 **加入**， **关系**、和 **路径**. 这些词都用于描述两个表如何连接。
 
 ## 核心商务 [!UICONTROL ER] 图表
 
-![4_DB_Chart](../../assets/4_DB_Chart.png)
+![4_DB图表](../../assets/4_DB_Chart.png)
 
 此 `ER` 图表示Commerce数据库中核心表之间的关系。 通过一次查看多个关系，您可以看到数据在多个表中的关系。
 
@@ -31,13 +31,13 @@ ht-degree: 0%
 
 ![一个客户多个订单](../../assets/2_OneCustomerManyOrders.png)
 
-一位客户可以下多张订单。 这两个表之间的关系是 `customer\_entity.entity\_id = sales\_flat\_order.customer\_id`
+一个客户可以下很多订单。 这两个表之间的关系是 `customer\_entity.entity\_id = sales\_flat\_order.customer\_id`
 
 >[!IMPORTANT]
 >
->`customer\_entity.entity\_id` 不等于 `sales\_flat\_order.entity\_id`. 第一个可以被认为是 `customer\_id` 第二个可以被认为是 `order\_id.`
+>`customer\_entity.entity\_id` 不等于 `sales\_flat\_order.entity\_id`. 第一个可以被认为是 `customer\_id` 第二个可以理解为 `order\_id.`
 
-范围 [!DNL Commerce Intelligence]，如果这两个表之间的路径不存在，则可以 [创建路径](../data-warehouse-mgr/create-paths-calc-columns.md) 在“Data warehouse”选项卡中。 当您准备好创建路径时，其定义如下：
+范围 [!DNL Commerce Intelligence]，如果这两个表之间的路径不存在，则可以 [创建路径](../data-warehouse-mgr/create-paths-calc-columns.md) 在“Data Warehouse”选项卡中。 当您准备好创建路径时，其定义如下：
 
 ![](../../assets/SFO___CE_path.png)
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 一个订单可以包含许多项目。 这两个表之间的关系是 `sales\_flat\_order.entity\_id = sales\_flat\_order\_item.order\_id`.
 
-范围 [!DNL Commerce Intelligence]，如果这两个表之间的路径不存在，则可以 [创建路径](../data-warehouse-mgr/create-paths-calc-columns.md) 在“Data warehouse”选项卡中。 准备好创建路径后，请定义路径，如下所示。
+范围 [!DNL Commerce Intelligence]，如果这两个表之间的路径不存在，则可以 [创建路径](../data-warehouse-mgr/create-paths-calc-columns.md) 在“Data Warehouse”选项卡中。 准备创建路径时，请如下所示定义路径。
 
 ![](../../assets/SFOI___SFO_path.png)
 
@@ -57,6 +57,6 @@ ht-degree: 0%
 
 一个产品可以购买多个项目。 这两个表之间的关系是 `catalog\_product\_entity.entity\_id = sales\_flat\_order\_item.product`.
 
-范围 [!DNL Commerce Intelligence]，如果这两个表之间的路径不存在，则可以 [创建路径](../data-warehouse-mgr/create-paths-calc-columns.md) 在“Data warehouse”选项卡中。 准备好创建路径后，请定义路径，如下所示。
+范围 [!DNL Commerce Intelligence]，如果这两个表之间的路径不存在，则可以 [创建路径](../data-warehouse-mgr/create-paths-calc-columns.md) 在“Data Warehouse”选项卡中。 准备创建路径时，请如下所示定义路径。
 
 ![](../../assets/SFOI___CPE_path.png)

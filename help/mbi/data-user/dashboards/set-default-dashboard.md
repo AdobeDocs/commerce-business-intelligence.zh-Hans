@@ -15,13 +15,13 @@ ht-degree: 0%
 
 默认仪表板是您在打开时看到的第一个仪表板 [!DNL Commerce Intelligence].
 
-1. 在功能板中，单击 **[!UICONTROL Dashboard Options]** 位于屏幕顶部。
+1. 在仪表板中，单击 **[!UICONTROL Dashboard Options]** 位于屏幕顶部。
 
 1. 单击 **[!UICONTROL Make Default]** 在下拉菜单中。
 
 1. 显示确认提示时，单击 **[!UICONTROL Yes]** 以更改默认仪表板。
 
-现在，这是您的新默认信息板。
+现在这是您的新默认信息板。
 
 示例：
 

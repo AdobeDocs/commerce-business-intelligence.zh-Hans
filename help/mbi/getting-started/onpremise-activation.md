@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 激活您的 [!DNL Commerce Intelligence] 帐户
 
-激活 [!DNL Commerce Intelligence] 适用于内部部署或 `Cloud Pro` 订阅， [联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+激活 [!DNL Commerce Intelligence] 用于内部部署或 `Cloud Pro` 订阅， [联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 >[!NOTE]
 >

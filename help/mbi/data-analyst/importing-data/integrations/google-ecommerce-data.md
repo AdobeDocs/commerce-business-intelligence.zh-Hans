@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 预期[!DNL Google ECommerce] 数据
 
-在您的 [!DNL Google ECommerce] 帐户已成功连接到 [!DNL Commerce Intelligence]之后，系统开始将数据导入一个标题为 `ecommerce`. 此表记录每个事务处理的数据行。 这包括以下订单级别的数据列：
+在您的 [!DNL Google ECommerce] 帐户已成功连接到 [!DNL Commerce Intelligence]，则系统将开始将数据导入标题为的表中 `ecommerce`. 此表记录每个事务处理的数据行。 这包括以下订单级数据列：
 
 | 列名称 | 描述 |
 |-----|-----|
@@ -26,7 +26,7 @@ ht-degree: 0%
 | `medium` | 此列包含媒体名称(例如， [`utm\_medium`](https://support.google.com/analytics/answer/1033867?hl=en)) |
 | `source` | 此列包含源名称。 (例如， [`utm\_source`](https://support.google.com/analytics/answer/1033867?hl=en)) |
 | `keyword` | 此列包含关键字说明(例如， [`utm\_term`](https://support.google.com/analytics/answer/1033867?hl=en)) |
-| `transactionId` | 此列包含订单ID。 这用于将反向链接数据连接回您的订单数据。 |
+| `transactionId` | 此列包含订单ID。 这用于将反向链接数据联接回您的订单数据。 |
 | `updated\_at` | 此列包含上次更新数据行的时间。 |
 
 {style="table-layout:auto"}

@@ -1,6 +1,6 @@
 ---
 title: Pro的预期生命周期值(LTV)分析
-description: 了解如何设置功能板，以帮助您了解客户的存留期价值增长和客户的预期存留期价值。
+description: 了解如何设置功能板，以帮助您了解客户的存留期价值增长和预期存留期价值。
 exl-id: e353b92a-ff3b-466b-b519-4f86d054c0bc
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # 预期生命周期值分析
 
-本主题演示如何设置功能板，以帮助您了解客户的存留期价值增长和客户的预期存留期价值。
+本主题将演示如何设置功能板，以帮助您了解客户的存留期价值增长和预期存留期价值。
 
 ![](../../assets/exp-lifetim-value-anyalysis.png)
 
-此分析仅适用于采用新架构的Pro客户。 如果您的帐户有权访问 `Persistent Views` 下的功能 `Manage Data` 侧栏中，您位于新架构上，可以按照此处列出的说明自行构建此分析。
+此分析仅适用于采用新架构的Pro客户。 如果您的帐户有权访问 `Persistent Views` 下的功能 `Manage Data` 侧栏中，您位于新架构中，可以按照此处列出的说明自行构建此分析。
 
-在开始之前，您需要先熟悉 [同类群组report builder。](../dev-reports/cohort-rpt-bldr.md)
+在开始之前，您需要先了解 [同类群组report builder。](../dev-reports/cohort-rpt-bldr.md)
 
 ## 计算列
 
@@ -93,14 +93,14 @@ ht-degree: 0%
 >
 >确保 [将所有新列作为维度添加到量度](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) 然后再生成新报告。
 
-## 报告
+## 报表
 
-### 报告说明
+### 报表说明
 
 **按月份每个客户的预期收入**
 
 * 量度 `A`： `Revenue (hide)`
-   * `Calendar months between first order and this order` `<= X` （为X选择一些合理的数字，例如24个月）
+   * `Calendar months between first order and this order` `<= X` （为X选取一个合理的数字，例如24个月）
    * `Is in current month?` = `No`
 
 * 
@@ -130,7 +130,7 @@ ht-degree: 0%
 * [!UICONTROL Time period]: `All time`
 * 时间间隔： `None`
 * [!UICONTROL Group by]： `Calendar months between first order and this order`  — 全部显示
-* 更改 `group by` 对于 `All time customers` 使用“量度”旁边的“铅笔”图标可将“量度”转换为“独立” `group by`
+* 更改 `group by` 对于 `All time customers` 使用“量度”旁边的铅笔图标将“量度”设为“独立” `group by`
 * 编辑 `Show top/bottom` 字段如下所示：
    * [!UICONTROL Revenue]: `Top 24 sorted by Calendar months between first order and this order`
    * [!UICONTROL All time customers]: `Top 24 sorted by All time customers`
@@ -154,4 +154,4 @@ ht-degree: 0%
 
 在编译所有报告后，您可以根据需要将报告组织在功能板上。 结果可能与页面顶部的图像类似。
 
-如果您在构建此分析时遇到任何问题，或者只是想让专业服务团队参与进来， [联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+如果您在构建此分析时遇到任何问题，或只是想与专业服务团队接洽， [联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

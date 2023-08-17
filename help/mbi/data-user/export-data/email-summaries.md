@@ -1,6 +1,6 @@
 ---
-title: 创建自动化的电子邮件摘要
-description: 了解如何创建自动化的电子邮件摘要。
+title: 创建自动化电子邮件摘要
+description: 了解如何创建自动化电子邮件摘要。
 exl-id: a9aea4fc-9193-467f-8554-3ad77ac3fa73
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 ---
 
-# 创建自动化的电子邮件摘要
+# 创建自动化电子邮件摘要
 
-电子邮件摘要是一种功能强大的通信工具，可用于与关键利益相关者共享您的业务状态和趋势。 利用电子邮件摘要，您可以：
+电子邮件摘要是一种功能强大的通信工具，可用于与关键利益相关者分享您的业务状态和趋势。 借助电子邮件摘要，您可以：
 
-* 以电子邮件形式发送包含报告的图形摘要
+* 通过电子邮件发送包含报告的图形摘要
 * 在接收电子邮件时包括或排除电子邮件摘要作者
 * 发送电子邮件的时间安排
 * 编辑、删除和暂停现有的计划电子邮件摘要
@@ -30,11 +30,11 @@ ht-degree: 0%
 
 1. 输入摘要的名称。
 
-   选择传达摘要中所包含内容的名称。 例如， `AOV Comparison`.
+   选择用于传达摘要中所包含内容的名称。 例如， `AOV Comparison`.
 
 1. 在 `Choose Content` 部分，选择要包含在摘要中的报告。
 
-   您最多可以选择自己拥有的10个报表。 选择报告后，使用显示的图标选择希望该报告以表格或图表形式发送。 如果将报表另存为数字，则只能以数字发送。 有关发送包含带有过时数据报表的电子邮件摘要的信息，请参阅 [管理帐户设置](../../administrator/account-management/managing-account-settings.md).
+   您最多可以选择十个您拥有的报表。 选择报告后，使用显示的图标选择希望以表格或图表形式发送该报告。 如果将报表另存为数字，则只能将其作为数字发送。 有关发送电子邮件摘要的信息，该摘要包含带有过时数据的报表，请参阅 [管理帐户设置](../../administrator/account-management/managing-account-settings.md).
 
    >[!NOTE]
    >
@@ -46,13 +46,13 @@ ht-degree: 0%
 
 ## 计划电子邮件摘要
 
-在 `Set when to send the Email Summary` 字段，您可以指定何时发送电子邮件摘要。 选项包括：
+在 `Set when to send the Email Summary` 字段中，可以指定何时发送电子邮件摘要。 选项包括：
 
 * `Manual`
 * `Once`
 * `Repeating`
 
-### 保存电子邮件摘要，以便稍后发送
+### 保存稍后发送的电子邮件摘要
 
 1. 选择 `Manual` 从 `Set when to send the Email Summary` 字段。
 
@@ -84,18 +84,18 @@ ht-degree: 0%
 
 ## 修改现有电子邮件摘要
 
-创建并保存电子邮件摘要后， `Email Summaries` 页面显示所有已保存摘要的列表。 您可以展开(`+`)以了解详细信息。 此视图中的列包括：
+创建并保存电子邮件摘要后， `Email Summaries` 页面显示所有已保存摘要的列表。 您可以展开(`+`)以了解详细信息。 此视图中的列为：
 
 * `Email Name`  — 电子邮件摘要的名称
-* `Content`  — 摘要中的内容类型，如任何报表的名称。 有关发送包含带有过时数据报表的电子邮件摘要的信息，请参阅 [管理帐户设置](../../administrator/account-management/managing-account-settings.md).
+* `Content`  — 摘要中的内容类型，如任何报表的名称。 有关发送电子邮件摘要的信息，该摘要包含带有过时数据的报表，请参阅 [管理帐户设置](../../administrator/account-management/managing-account-settings.md).
 * `Scheduled`  — 发送电子邮件摘要的频率、日期和时间
 * `Recipients`  — 电子邮件摘要的收件人
 * `Created Date`  — 创建电子邮件摘要的日期
 * `Status` - `Paused` 或 `Active`
 
-单击每行右侧的齿轮图标，可以：
+单击每行右侧的齿轮图标可以：
 
 * `Send Now`  — 立即向所有指定的收件人发送电子邮件摘要
 * `Edit`  — 用于修改电子邮件摘要的详细信息
-* `Pause/Active`  — 允许您暂停发送电子邮件摘要，或根据配置方式启用摘要
+* `Pause/Active`  — 允许您根据配置方式暂停发送电子邮件摘要或启用摘要
 * `Delete`  — 删除电子邮件摘要

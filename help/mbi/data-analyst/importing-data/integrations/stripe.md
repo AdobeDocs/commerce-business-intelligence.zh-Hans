@@ -1,17 +1,17 @@
 ---
 title: 连接Stripe
-description: 了解如何管理和跟踪企业的付款和发票数据。
+description: 了解如何管理和跟踪贵企业的付款和发票数据。
 exl-id: c038f2a9-b2bd-4e45-93f9-12d2e5077b31
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '158'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Connect [!DNL Stripe]
+# 连接 [!DNL Stripe]
 
 >[!NOTE]
 >
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![](../../../assets/stripe-logo.png)
 
-[!DNL Stripe] 允许您管理和跟踪企业的付款和发票数据。 正在连接 [!DNL Stripe] 目标帐户 [!DNL Commerce Intelligence] 是一个简单的两步过程：
+[!DNL Stripe] 允许您管理和跟踪公司的付款和发票数据。 正在连接您的 [!DNL Stripe] 帐户至 [!DNL Commerce Intelligence] 是一个简单的两步流程：
 
 1. [添加 [!DNL Stripe] 作为中的数据源 [!DNL Commerce Intelligence]](#stepone)
 1. [允许 [!DNL Commerce Intelligence] 访问您的 [!DNL Stripe] 数据](#steptwo)
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 1. 输入您的凭据，然后单击 **[!UICONTROL Sign in to your account]**.
 
-1. 您的凭据将经过验证，您将被定向回 [!DNL Commerce Intelligence].
+1. 您的凭据将得到验证，并且您将被定向回 [!DNL Commerce Intelligence].
 
 1. 如果连接成功， *连接成功！* 消息显示在屏幕顶部。
 
