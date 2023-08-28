@@ -4,14 +4,14 @@ description: 了解与Google E-commerce共享的数据类型。
 exl-id: 8e5d8863-f003-4c38-95c5-660bcbff48da
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 3f16484f189f6b4a8b072d2e3514d2f170993d60
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 0%
 
 ---
 
-# 预期[!DNL Google ECommerce] 数据
+# 预期 [!DNL Google ECommerce] 数据
 
 在您的 [!DNL Google ECommerce] 帐户已成功连接到 [!DNL Commerce Intelligence]，则系统将开始将数据导入标题为的表中 `ecommerce`. 此表记录每个事务处理的数据行。 这包括以下订单级数据列：
 
