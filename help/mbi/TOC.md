@@ -4,7 +4,7 @@ description: 了解如何使用 [!DNL Commerce Intelligence] 可用于Adobe Comm
 breadcrumb-title: Commerce Intelligence用户指南
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Business Performance
-source-git-commit: 903e839e8bd8a4e7b6d21b6a7ebcae49f2dfe6e4
+source-git-commit: 2433a614e9858684842804a0ae29fb67f0d41ead
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 0%
@@ -36,7 +36,7 @@ ht-degree: 0%
 - 分析数据 {#analyze}
    - [数据分析师](data-analyst.md)
    - Data Warehouse管理器 {#warehouse-manager}
-      - [介绍](data-analyst/data-warehouse-mgr/tour-dwm.md)
+      - [简介](data-analyst/data-warehouse-mgr/tour-dwm.md)
       - [高级计算列类型](data-analyst/data-warehouse-mgr/adv-calc-columns.md)
       - [正在生成 [!DNL Google Ecommerce] 维度](data-analyst/data-warehouse-mgr/bldg-google-ecomm-dim.md)
       - [计算列类型](data-analyst/data-warehouse-mgr/calc-column-types.md)
@@ -57,12 +57,12 @@ ht-degree: 0%
       - [使用映射表标准化数据](data-analyst/data-warehouse-mgr/stndrd-data-map-tables.md)
       - [将SQL查询转换为 [!DNL Commerce Intelligence] 报表](data-analyst/dev-reports/sql-queries-reports.md)
       - [了解和评估表关系](data-analyst/data-warehouse-mgr/table-relationships.md)
-      - [使用已计算的日期差异](data-analyst/data-warehouse-mgr/using-date-diff-calc-column-.md)
+      - [使用已计算的日期差异](data-analyst/data-warehouse-mgr/using-date-diff-calc-column.md)
       - [使用功能板范围过滤](data-analyst/data-warehouse-mgr/using-dshbrd-wide-filter-date-ranges.md)
       - [使用事件编号计算列](data-analyst/data-warehouse-mgr/using-event-num-calc-column.md)
-      - [使用顺序比较计算列](data-analyst/data-warehouse-mgr/using-seq-comp-calc-column-.md)
+      - [使用顺序比较计算列](data-analyst/data-warehouse-mgr/using-seq-comp-calc-column.md)
    - 常见Commerce表 {#tables}
-      - [介绍](data-analyst/data-warehouse-mgr/common-mage-tables.md)
+      - [简介](data-analyst/data-warehouse-mgr/common-mage-tables.md)
       - [[!DNL customer_entity]](data-analyst/data-warehouse-mgr/cust-ent-table.md)
       - [[!DNL enterprise_rma]](data-analyst/data-warehouse-mgr/enter-rma-table.md)
       - [[!DNL enterprise_rma_item_entity]](data-analyst/data-warehouse-mgr/enter-rma-entity-item.md)
@@ -86,7 +86,7 @@ ht-degree: 0%
       - [使用审计量度 [!DNL SQL Report Builder]](data-analyst/dev-reports/audit-metrics-sql.md)
       - [列之间的差异 [!DNL SQL] 和 [!DNL Data Warehouse Manager]](data-analyst/dev-reports/columns-sql-dwm.md)
    - 连接数据 {#connecting}
-      - [介绍](data-analyst/importing-data/connecting-data/connecting-data.md)
+      - [简介](data-analyst/importing-data/connecting-data/connecting-data.md)
       - [格式化和导入电子商务数据](data-analyst/importing-data/connecting-data/format-import-ecom-data.md)
       - [正在导入 [!DNL Bing Ad Spend] 数据](data-analyst/importing-data/connecting-data/import-bing-ad-data.md)
       - [正在导入 [!DNL CJ Affiliate] （佣金联合）营销数据](data-analyst/importing-data/connecting-data/import-cj-market-data.md)
@@ -171,7 +171,7 @@ ht-degree: 0%
       - [分析库存水平](data-analyst/analysis/analyze-inventory-level.md)
       - [报告零售日历](data-analyst/analysis/report-retail-calendar.md)
    - 预测 {#forecasting}
-      - [介绍](data-analyst/analysis/forecasting.md)
+      - [简介](data-analyst/analysis/forecasting.md)
 - 构建报告并共享数据 {#build}
    - [数据用户](../mbi/data-user.md)
    - 报告 {#reports}
@@ -231,7 +231,7 @@ ht-degree: 0%
    - 使用功能板 {#working-dashboards}
       - [共享报告面板](best-practices/share-dashboard-best-practice.md)
       - [构建投资者信息板](best-practices/build-investor-dashboard.md)
-- 教程 {#tutorials}
+- Tutorials {#tutorials}
    - [使用 [!DNL Visual Report Builder]](tutorials/using-visual-report-builder.md)
    - [在中使用时间选项 [!DNL Visual Report Builder]](tutorials/time-options-visual-rpt-bldr.md)
    - [创建可视化 [!DNL SQL] 查询](tutorials/create-visuals-from-sql.md)
