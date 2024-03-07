@@ -4,9 +4,9 @@ description: 了解如何在新的Adobe Commerce Intelligence架构上以SQL计�
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, SQL Report Builder, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 8090c2e0f17f0e8d3bdec668ce546206bf024691
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ ht-degree: 0%
    * `Integer`  — 整数
    * `Decimal(10,2)`  — 总位数为10的小数，其中2位在小数点的右侧
    * `String`  — 使用非数字的任意文本类型或字符系列
-   * `Datetime` - yyyy-MM-dd hh:mm:ss格式
+   * `Datetime` - `yyyy-MM-dd hh:mm:ss` 格式
 
 1. 单击 **[!UICONTROL test column]**. 这会为每个输入生成一个包含五个测试值的列表，并显示步骤6中针对每组测试值的逻辑结果。 如果SQL的任何部分生成错误，则会返回相应的错误消息。 仅当所有输入列都是本地字段时，才能生成示例结果。 如果有任何输入列是计算列，则必须通过将该列添加到指标并在可视化Report Builder中查看来验证结果
 
