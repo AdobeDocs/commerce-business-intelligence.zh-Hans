@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 0%
 * [方便的参考地图](#map)
 * [高级计算列](#advanced)
 
-在 [Data Warehouse管理器](../data-warehouse-mgr/tour-dwm.md)中，您可以创建列以扩充和优化数据以供分析。 [此功能](../data-warehouse-mgr/creating-calculated-columns.md) 可以通过选择Data Warehouse管理器中的任何表并单击 **[!UICONTROL Create New Column]**.
+在[Data Warehouse管理器](../data-warehouse-mgr/tour-dwm.md)内，您可以创建列以扩充和优化数据以供分析。 [可以通过选择Data Warehouse管理器中的任何表并单击&#x200B;**[!UICONTROL Create New Column]**&#x200B;来访问此功能](../data-warehouse-mgr/creating-calculated-columns.md)。
 
-本主题介绍可使用Data Warehouse管理器创建的列的类型。 此外，还涵盖了说明、该列的视觉演练和 [参考地图](#map) 创建列所需的所有输入。 有三种方法可创建计算列：
+本主题介绍可使用Data Warehouse管理器创建的列的类型。 它还涵盖了说明、该列的视觉浏览以及创建列所需的所有输入的[引用映射](#map)。 有三种方法可创建计算列：
 
 1. [相同表计算列](#sametable)
 1. [一对多计算列](#onetomany)
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 年龄计算列返回当前时间和某个输入时间之间的秒数。
 
-下面的示例创建 `Seconds since customer's most recent order` 在 `customers` 表格。 这可用于构建尚未在中进行购买（有时称为流失）的客户的用户列表 `X days`.
+以下示例在`customers`表中创建`Seconds since customer's most recent order`。 这可用于构建未在`X days`中进行购买（有时称为流失）的客户的用户列表。
 
 ![](../../assets/age.gif)
 
@@ -43,21 +43,21 @@ ht-degree: 0%
 
 货币转换器计算列将列的本机货币转换为所需的新货币。
 
-下面的示例创建 `base\_grand\_total In AED`，转换 `base\_grand\_total` 从本机货币到AED (在 `sales\_flat\_order` 表格。 此列非常适用于具有多种货币、希望以当地货币进行报告的商店。
+下面的示例创建了`base\_grand\_total In AED`，在`sales\_flat\_order`表中将`base\_grand\_total`从本机货币转换为AED。 此列非常适用于具有多种货币、希望以当地货币进行报告的商店。
 
-对于Commerce客户， `base\_currency\_code` 字段通常存储本地货币。 此 `Spot Time` 字段应匹配量度中使用的日期。
+对于Commerce客户端，`base\_currency\_code`字段通常存储本机货币。 `Spot Time`字段应与量度中使用的日期匹配。
 
 ![](../../assets/currency_converter.png)
 
 ## 一对多计算列 {#onetomany}
 
-`One-to-Many` 列 [使用两个表之间的路径](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md). 此路径始终表示一个表（属性所在的位置）和多个表（属性会向下重定位到）。 路径可以描述为 `foreign key--primary key` 关系。
+`One-to-Many`列[使用两个表之间的路径](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md)。 此路径始终表示一个表（属性所在的位置）和多个表（属性会向下重定位到）。 可将路径描述为`foreign key--primary key`关系。
 
 ### 已联接列 {#joined}
 
-联结列在一个表上重新定位属性 *到* 多桌子。 一个/多个客户的典型示例是客户（一个）和订单（多个）。
+联结的列重新定位一个表&#x200B;*到*&#x200B;多个表上的属性。 一个/多个客户的典型示例是客户（一个）和订单（多个）。
 
-在以下示例中， `Customer's group\_id` 维度向下联接到 `orders` 表格。
+在以下示例中，`Customer's group\_id`维度向下联接到`orders`表中。
 
 ![](../../assets/joined_column.gif)
 
@@ -67,29 +67,29 @@ ht-degree: 0%
 
 ### 计数 {#count}
 
-此类型的计算列返回许多表中的值的计数 *onto* 一张桌子。
+此类型的计算列返回多个表&#x200B;*上的值的计数*&#x200B;到同一个表。
 
-在以下示例中，维度 `Customer's lifetime number of canceled orders` 创建于 `customers` 表（带有过滤器） `orders.status`)。
+在以下示例中，在`customers`表上创建维度`Customer's lifetime number of canceled orders`（具有`orders.status`的筛选器）。
 
 ![](../../assets/many_to_one.gif){： width=&quot;699&quot; height=&quot;351&quot;}
 
 ### 总和 {#sum}
 
-“总和”计算列是 `many` 放在一张桌子上。
+计算列的总和是`many`表上的值加到一个表上的总和。
 
-这可用于创建客户级别的维度，例如 `Customer's lifetime revenue`.
+这可用于创建客户级别的维度，如`Customer's lifetime revenue`。
 
 ### 最小值或最大值 {#minmax}
 
 最小值或最大值计算列将返回多个方面存在的最小或最大记录。
 
-这可用于创建客户级别的维度，例如 `Customer's first order date`.
+这可用于创建客户级别的维度，如`Customer's first order date`。
 
 ### 存在 {#exists}
 
-计算列是确定多面记录存在的二进制测试。 换言之，新列返回 `1` 如果路径连接了每个表中的至少一行，并且 `0` 如果无法建立连接。
+计算列是确定多面记录存在的二进制测试。 换言之，如果路径在每个表中至少连接一行，则新列返回`1`；如果无法建立连接，则返回`0`。
 
-例如，此类维度可以确定客户是否购买过特定产品。 使用a之间的连接 `customers` 表格和 `orders` 表，特定产品的过滤器，维度 `Customer has purchased Product X?` 可以构建。
+例如，此类维度可以确定客户是否购买过特定产品。 使用`customers`表和`orders`表之间的连接、特定产品的筛选器可以生成维度`Customer has purchased Product X?`。
 
 ## 方便的参考地图 {#map}
 
@@ -101,7 +101,7 @@ ht-degree: 0%
 
 当您试图分析和回答有关业务的问题时，可能会遇到无法构建所需确切列的情况。
 
-为确保快速回访，Adobe建议查看 [高级计算列类型](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) 指南以了解该Adobe支持团队可以构建哪些类型的列。 该主题还涵盖了创建列所需的信息 — 请将其包含在您的请求中。
+为确保快速切换，Adobe建议查看[高级计算列类型](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md)指南，以了解Adobe支持团队可以生成的列类型。 该主题还涵盖了创建列所需的信息 — 请将其包含在您的请求中。
 
 ## 相关文档
 

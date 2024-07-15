@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 共享功能板
 
-共享功能板意味着您和您的团队在任何给定时间拥有相同的信息，从而可以进行协作和讨论。 以下是共享功能板和保留 [!DNL Adobe Commerce Intelligence] 帐户整洁。
+共享功能板意味着您和您的团队在任何给定时间拥有相同的信息，从而可以进行协作和讨论。 以下是共享功能板和保持你的[!DNL Adobe Commerce Intelligence]帐户整洁的一些建议。
 
 ## 避免使用重复的仪表板
 
@@ -26,8 +26,8 @@ ht-degree: 0%
 要删除所有重复的仪表板，请执行以下操作：
 
 1. 与您的团队同步，并确定应该维护仪表板的人员。
-1. [取消共享您自己](../data-user/dashboards/leave-dashboard.md) 从所有类似的功能板（主用户共享的功能板除外）。
-1. 如果您有仪表板的副本， [删除它](../data-user/dashboards/deleting-dashboard.md).
+1. [从所有类似的仪表板中取消共享您自己](../data-user/dashboards/leave-dashboard.md)，主用户共享的仪表板除外。
+1. 如果您有仪表板的副本，请[将其删除](../data-user/dashboards/deleting-dashboard.md)。
 1. 要求其他人删除他们的仪表板版本。
 
 ## 创建一组核心功能板
@@ -36,11 +36,11 @@ ht-degree: 0%
 
 ## 与新用户共享功能板
 
-新用户还可以从访问某些未在组织范围内共享的仪表板中受益。 在这些情况下，Adobe建议功能板所有者 [共享相关仪表板](../data-user/dashboards/share-dashboard-with-users.md) 新用户的帐户创建后，这些帐户仍会保留下来。
+新用户还可以从访问某些未在组织范围内共享的仪表板中受益。 在这些情况下，Adobe建议仪表板所有者在创建其帐户时[与新用户共享相关仪表板](../data-user/dashboards/share-dashboard-with-users.md)。
 
 ## 具有编辑权限且具有选择性
 
-`Edit` 权限赋予用户很大的权力。 但权力越大，责任就越大。 为了防止图表和功能板意外更改，Adobe建议您选择提供的人员 `Edit` 的权限。
+`Edit`权限赋予用户很大的权力。 但权力越大，责任就越大。 为了防止意外更改图表和功能板，Adobe建议您选择向谁授予`Edit`权限。
 
 ## 在图表中添加批注
 

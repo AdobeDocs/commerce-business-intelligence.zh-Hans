@@ -11,17 +11,17 @@ ht-degree: 1%
 
 ---
 
-# [!DNL MongoDB] 数据建模
+# [!DNL MongoDB]数据建模
 
-时间 [!DNL Adobe Commerce Intelligence] 拉入 [!DNL MongoDB] 数据，该数据被转换为关系模型。
+当[!DNL Adobe Commerce Intelligence]拉入[!DNL MongoDB]数据时，该数据将转换为关系模型。
 
-坏消息：虽然大多数数据模式不会造成问题，但有一些模式不受支持 [!DNL Commerce Intelligence]，因为转换为关系模型。
+坏消息：虽然大多数数据模式不会造成问题，但有一些模式不受[!DNL Commerce Intelligence]支持，因为转换为关系模型。
 
 好消息是，所有这些模式都可以避免。
 
 ## 子嵌套数组 {#subnested}
 
-如果您的收藏与以下示例类似， [!DNL Commerce Intelligence] 仅复制项目阵列中的数据。 不提取子项数组中的数据。
+如果您的集合与以下示例类似，[!DNL Commerce Intelligence]仅复制项数组中的数据。 不提取子项数组中的数据。
 
 ```bash
     {
@@ -43,7 +43,7 @@ ht-degree: 1%
 
 ## 可变对象键 {#varobjectkeys}
 
-包含具有可变对象键的对象的集合不会在中复制 [!DNL Commerce Intelligence]. 例如：
+包含具有可变对象键的对象的集合未在[!DNL Commerce Intelligence]中复制。 例如：
 
 ```bash
     {

@@ -13,4 +13,4 @@ ht-degree: 0%
 
 # 导出我的查询结果
 
-单击 **[!UICONTROL Export Data]** 在 `Results` 窗格将结果导出到 `.csv` 文件。
+单击`Results`窗格中的&#x200B;**[!UICONTROL Export Data]**&#x200B;将结果导出到`.csv`文件。

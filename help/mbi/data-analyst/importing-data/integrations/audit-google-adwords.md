@@ -6,23 +6,23 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '135'
 ht-degree: 0%
 
 ---
 
-# 审核 [!DNL Google Adwords] 数据
+# 审核[!DNL Google Adwords]数据
 
-在中发现一些奇怪的内容 [[!DNL Google Adwords]](../integrations/google-adwords.md)？ 要查明问题，您需要浏览数据。 这可以通过导出您的 [!DNL Google Adwords] 数据到 `.csv` 文件。
+在[[!DNL Google Adwords]](../integrations/google-adwords.md)中发现一些奇怪的内容？ 要查明问题，您需要浏览数据。 可以通过将[!DNL Google Adwords]数据导出到`.csv`文件来完成此操作。
 
-1. 下载并安装免费的 [[!DNL Google Adwords] 编辑者](https://ads.google.com/home/tools/ads-editor/) 应用程序。
+1. 下载并安装免费的[[!DNL Google Adwords] 编辑器](https://ads.google.com/home/tools/ads-editor/)应用程序。
 
-1. 安装完成后，选择 `Add Count` 在 `Add/manage accounts` 面板。
+1. 安装完成后，在`Add/manage accounts`面板中选择`Add Count`。
 
-1. 输入您的 [!DNL Google Adwords] 帐户信息。
+1. 输入您的[!DNL Google Adwords]帐户信息。
 
-1. 将帐户添加到之后 [!DNL Google Adwords] 编辑者，选择 **[!UICONTROL File** > **&#x200B;导出电子表格(CSV)**> **导出整个帐户]**
+1. 将您的帐户添加到[!DNL Google Adwords]编辑器后，选择&#x200B;**[!UICONTROL File** > **&#x200B;导出电子表格(CSV)**> **导出整个帐户]**
 
-这会构建 `.csv` 包含您当前存储的所有信息的文件 [!DNL Google Adwords] 帐户。 此时，提交 [支持服务单](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) （请务必附加此文件！） 以便更仔细地查看您的数据。 如果文件太大，请将其与 [!DNL Commerce Intelligence] 团队管道 [!DNL Dropbox] 或 [!DNL Google Drive].
+这将生成一个`.csv`文件，其中包含存储在您当前[!DNL Google Adwords]帐户中的所有信息。 此时，请提交[支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) （请确保附加此文件！） 以便更仔细地查看您的数据。 如果文件太大，请通过[!DNL Dropbox]或[!DNL Google Drive]与[!DNL Commerce Intelligence]团队共享。
 
-有关详情 [!DNL Google Adwords] `.csv` 文件导出，请参阅官方网站上的 [[!DNL Google Adwords] 文档](https://support.google.com/google-ads/editor/answer/38657?hl=en).
+有关[!DNL Google Adwords] `.csv`文件导出的详细信息，请参阅官方的[[!DNL Google Adwords] 文档](https://support.google.com/google-ads/editor/answer/38657?hl=en)。

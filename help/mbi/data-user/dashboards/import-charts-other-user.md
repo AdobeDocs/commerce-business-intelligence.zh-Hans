@@ -17,12 +17,12 @@ ht-degree: 0%
 
 ## 查找图表
 
-首先查找要从其他用户复制的图表。 与您共享的所有功能板均可在 `Dashboard` 侧栏，其中标有共享图标。 单击所需的仪表板。
+首先查找要从其他用户复制的图表。 可以在`Dashboard`侧边栏中找到与您共享的所有功能板，它们标有一个共享图标。 单击所需的仪表板。
 
 ## 克隆图表
 
-在共享功能板中，选择要复制到您自己的帐户的图表。 单击齿轮(![](../../assets/gear-icon.png))图标，然后单击 **[!UICONTROL Save As]**.
+在共享功能板中，选择要复制到您自己的帐户的图表。 单击齿轮(![](../../assets/gear-icon.png))图标，然后单击&#x200B;**[!UICONTROL Save As]**。
 
-系统会提示您命名图表的副本，并将其添加到任何现有功能板中。 如果不选择仪表板，则会将其添加到现有图表列表中，您可以 [稍后添加](../../data-user/dashboards/add-charts-dashboard.md).
+系统会提示您命名图表的副本，并将其添加到任何现有功能板中。 如果未选择仪表板，则会将其添加到现有图表的列表中，并且您可以[稍后添加它](../../data-user/dashboards/add-charts-dashboard.md)。
 
-![客户总数](../../assets/total-customers.png)
+总共![个客户](../../assets/total-customers.png)

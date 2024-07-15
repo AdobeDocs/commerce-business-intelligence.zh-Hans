@@ -29,25 +29,25 @@ ht-degree: 0%
 
 1. 创建功能板时：
 
-   ![创建功能板组](../../assets/create-dashboard-groups-new-dashboard.png)
+   ![创建仪表板组](../../assets/create-dashboard-groups-new-dashboard.png)
 
-1. 更改现有仪表板的组时，从 `Manage Data > Dashboards` 页面：
+1. 更改现有仪表板的组时，从`Manage Data > Dashboards`页面：
 
    1. 单击要创建组的仪表板。
 
-   1. 下 `Dashboard Group (optional)`，则将显示当前功能板组。
+   1. 在`Dashboard Group (optional)`下，将显示当前仪表板组。
 
    1. 要创建组，请键入新组的名称，然后单击框外部。
 
-      ![创建功能板组](../../assets/create-dashboard-groups-existing-dashboard.png)
+      ![创建仪表板组](../../assets/create-dashboard-groups-existing-dashboard.png)
 
 ## 将现有功能板添加到现有组
 
-1. 在 `Manage Data > Dashboards` 页面上，选择要更改其组的仪表板。
+1. 在`Manage Data > Dashboards`页面上，选择要更改其组的仪表板。
 
-1. 下的文本 `Dashboard Group (optional)` 显示仪表板的当前仪表板组。
+1. `Dashboard Group (optional)`下的文本显示仪表板的当前仪表板组。
 
-1. 要更改仪表板的组，请从列表中选择另一个组 — 在本例中 `PS`， `Campaigns`.
+1. 要更改仪表板的组，请从列表中选择另一个组 — 在本例中为`PS`，`Campaigns`。
 
    ![更改组仪表板](../../assets/add-existing-dashboard-existing-group.png)
 

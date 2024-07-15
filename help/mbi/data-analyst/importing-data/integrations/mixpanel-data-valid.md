@@ -11,22 +11,22 @@ ht-degree: 0%
 
 ---
 
-# 数据验证 [!DNL Mixpanel]
+# [!DNL Mixpanel]中的数据验证
 
-时间 [!DNL Adobe Commerce Intelligence] 首先连接到 [!DNL Mixpanel] 数据，您的客户经理或分析师可能会要求您提供数据导出来自 [!DNL Mixpanel] 用于验证目的。 这样，您可以确认已同步了所有可直接在中使用的相同数据 [!DNL Mixpanel].
+当[!DNL Adobe Commerce Intelligence]首次连接到您的[!DNL Mixpanel]数据时，您的客户经理或分析师可能会请求您从[!DNL Mixpanel]提供数据导出以进行验证。 这允许您确认已同步直接在[!DNL Mixpanel]内对您可用的所有数据。
 
 ## 数据导出过程： `Events`
 
-1. 访问您的 `Segmentation` 截面和视图 `Your Top Events`.
+1. 访问您的`Segmentation`分区并查看`Your Top Events`。
 
    ![](../../../assets/your-top-events.png)
 
-1. 选择 `Past 96 Hours` 在时间范围内
+1. 为时间范围选择`Past 96 Hours`
 
    ![](../../../assets/past-96-hours.png)
 
-1. 滚动到报告的右下部分并导出 `.csv` 文件：
+1. 滚动到报告的右下部分并导出`.csv`文件：
 
    ![](../../../assets/export-csv-mixpanel.png)
 
-1. 发送 `.csv` 文件发送给在此验证流程中与之合作的客户经理或分析师。
+1. 将`.csv`文件发送给在此验证过程中与您合作的客户经理或分析师。

@@ -17,4 +17,4 @@ ht-degree: 0%
 
 在此部分中，您将了解当前客户的存留期值并预测存留期值如何随着更多订单而增加。
 
-另请参阅： [预期生命周期值(LTV)分析（基本）](../../data-analyst/analysis/ess-expected-ltv.md)
+另请参阅：[预期生命周期值(LTV)分析（基本）](../../data-analyst/analysis/ess-expected-ltv.md)

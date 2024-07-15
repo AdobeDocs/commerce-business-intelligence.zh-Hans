@@ -11,24 +11,24 @@ ht-degree: 0%
 
 ---
 
-# 访问您激活的 [!DNL Adobe Commerce Intelligence] 帐户
+# 访问您激活的[!DNL Adobe Commerce Intelligence]帐户
 
-在您激活您的 [!DNL Commerce Intelligence] 帐户 [内部部署或云](../getting-started/onpremise-activation.md) 并且已与Adobe客户团队合作完成配置步骤，您现在可以登录您的帐户。
+在为[内部部署或云](../getting-started/onpremise-activation.md)激活您的[!DNL Commerce Intelligence]帐户并与Adobe帐户团队合作完成配置步骤后，您现在可以登录您的帐户。
 
-## 使用您的 [!DNL Adobe ID]
+## 使用您的[!DNL Adobe ID]登录
 
-1. 单击 **[!UICONTROL Sign in with Adobe ID]**.
+1. 单击&#x200B;**[!UICONTROL Sign in with Adobe ID]**。
 
    ![登录adobe](../assets/sign-in-adobe.png)
 
-1. 输入您在创建 [!DNL Commerce Intelligence] 帐户。 如果您还没有Adobe帐户，请单击 **[!UICONTROL Create an account]** 并输入您的信息。 请记住使用您在创建 [!DNL Commerce Intelligence] 帐户。 电子邮件地址是访问Adobe帐户所需的密钥。
+1. 输入您在创建[!DNL Commerce Intelligence]帐户时使用的电子邮件地址。 如果您还没有Adobe帐户，请单击&#x200B;**[!UICONTROL Create an account]**&#x200B;并输入您的信息。 请记住使用创建[!DNL Commerce Intelligence]帐户时使用的电子邮件地址。 电子邮件地址是访问Adobe帐户所需的密钥。
 
 >[!NOTE]
 >
->如果您使用 [!DNL Adobe ID]，则无法更改您的 [!DNL Commerce Intelligence] 配置文件密码。
+>如果您使用[!DNL Adobe ID]登录，则无法更改[!DNL Commerce Intelligence]配置文件密码。
 
 ## 使用您的用户名和密码登录
 
-输入您的电子邮件地址和密码，然后单击 **[!UICONTROL Sign In]**.
+输入您的电子邮件地址和密码，然后单击&#x200B;**[!UICONTROL Sign In]**。
 
-您现在可以访问 [!DNL Commerce Intelligence].
+您现在有权访问[!DNL Commerce Intelligence]。

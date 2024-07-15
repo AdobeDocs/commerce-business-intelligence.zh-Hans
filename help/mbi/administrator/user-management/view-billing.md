@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # 帐单信息
 
-要查看、添加或更改帐户的帐单信息，您必须拥有 `Billing` 权限。 [权限是逐个用户设置的](../../administrator/user-management/user-management.md) 创建用户帐户时。 如果您需要 `Billing` 权限，请联系帐户管理员。
+若要查看、添加或更改帐户的帐单信息，您必须具有`Billing`权限。 [权限是在创建用户帐户时逐个用户设置的](../../administrator/user-management/user-management.md)。 如果您需要`Billing`权限，请联系您帐户的管理员。

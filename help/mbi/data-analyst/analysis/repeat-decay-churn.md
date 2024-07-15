@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 推荐的指标
 
-在分析重复概率衰减和流失时，请考虑使用([或正在生成](../../data-user/reports/ess-manage-data-metrics.md))这些量度：
+在分析重复概率衰减和流失时，请考虑使用（[或生成](../../data-user/reports/ess-manage-data-metrics.md)）以下量度：
 
 ### 初始重复顺序概率
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 查看典型电子商务业务的重复概率衰减。
 
-![初始重复订货概率重复订货概率给定订货后几个月。](../../assets/Order_probability_reports.png)
+![初始重复订购概率重复订购概率自订购以来的给定月份。](../../assets/Order_probability_reports.png)
 
 ### 初始重复顺序概率
 
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 如果您提供多个产品，您可能会想知道购买特定产品的客户与其他客户相比随着时间的推移表现如何。 想了解更多信息？ 查看本教程，探索客户同类群组（基于他们购买的特定产品）的生命周期购买行为。
 
-该最佳实践由以下人员提供 [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS)。 [联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 以了解更多信息。
+此最佳实践由[!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS)提供。 [联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)以获取更多信息。
 
 ### 相关
 

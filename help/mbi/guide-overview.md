@@ -13,11 +13,11 @@ ht-degree: 2%
 ---
 
 
-# [!DNL Adobe Commerce Intelligence] 用户指南
+# [!DNL Adobe Commerce Intelligence]用户指南
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce Intelligence] 以前称为 [!DNL Magento Business Intelligence]. 本指南目前正在进行一系列更新，以捕捉这些变化。
+>[!DNL Adobe Commerce Intelligence]以前称为[!DNL Magento Business Intelligence]。 本指南目前正在进行一系列更新，以捕捉这些变化。
 
 数据管理员有两个区域：
 
@@ -28,26 +28,26 @@ ht-degree: 2%
 
 本指南包含以下部分，它们根据您在组织中可能拥有的角色进行整理。
 
-- [数据用户](data-user.md)：使用数据帮助制定业务决策。 您可能从团队的数据分析师那里收到报告和仪表板，但您还需要了解如何创建这些报告和仪表板。
-- [数据分析师](data-analyst.md)：您可以轻松设计查询，并且可以随时前往进行数据分析。 您知道如何找到数据问题的具体答案，并希望促进同事的自助体验。
-- 管理员：您管理 [!DNL Commerce Intelligence] 帐户，包括许可、添加和删除用户以及处理基本管理任务。
+- [数据用户](data-user.md)：您使用数据帮助制定业务决策。 您可能从团队的数据分析师那里收到报告和仪表板，但您还需要了解如何创建这些报告和仪表板。
+- [数据分析师](data-analyst.md)：您很乐意设计查询并成为数据分析专家。 您知道如何找到数据问题的具体答案，并希望促进同事的自助体验。
+- 管理员：您管理[!DNL Commerce Intelligence]帐户，包括授权、添加和删除用户以及处理基本管理任务。
 
 除了上述基于角色的工作流之外，本指南还包含：
 
-- 最佳实践： [!UICONTROL Commerce Intelligence] 是一个强大而灵活的平台，这意味着有许多不同的方法来执行类似任务。 本节汇集了 [!DNL Commerce Intelligence] 捕获、分析和查看数据的推荐方法。
-- Tutorials：按照这些自学教程中的说明，了解 [!DNL Commerce Intelligence].
+- 最佳实践： [!UICONTROL Commerce Intelligence]是一个强大而灵活的平台，这意味着有许多不同的方法来执行类似任务。 此部分汇集了[!DNL Commerce Intelligence]种用于捕获、分析和查看数据的推荐方法。
+- Tutorials：按照这些自学教程了解[!DNL Commerce Intelligence]的强大功能。
 
 ## 如何获取帮助
 
-联系 [支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 如果您有疑问并希望利用某些专业服务，或者您的帐户遇到问题。
+如果您有问题并想利用某些专业服务，或者您的帐户遇到问题，请联系[支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ### 服务策略
 
-查看 [客户支持团队提供的服务的列表](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+查看客户支持团队提供的服务的[列表](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ### 提交支持票证
 
-需要有关构建高级计算列的帮助吗？ 遇到缺陷或连接问题？ 如果需要联系支持团队，Adobe会要求您使用 [支持票证准则](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html). 这些准则概述了信息Adobe解决该问题所需的信息。
+需要有关构建高级计算列的帮助吗？ 遇到缺陷或连接问题？ 如果需要联系支持团队，Adobe会要求您使用[支持票证准则](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。 这些准则概述了信息Adobe解决该问题所需的信息。
 
 ## 可用文档
 

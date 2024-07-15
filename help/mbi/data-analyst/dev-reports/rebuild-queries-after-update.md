@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # 在更新周期后重建查询
 
-您不必重新生成查询。 使用创建的报告 [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) 保存方式与在中创建的相同 `Report Builder`. SQL图表的更新过程是相同的 — 更新数据后，图表中的值将重新计算并重新显示。
+您不必重新生成查询。 使用[`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md)创建的报告将像在传统`Report Builder`中创建的报告一样保存。 SQL图表的更新过程是相同的 — 更新数据后，图表中的值将重新计算并重新显示。

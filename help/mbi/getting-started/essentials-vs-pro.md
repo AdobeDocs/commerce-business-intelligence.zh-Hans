@@ -1,19 +1,19 @@
 ---
-title: Commerce Intelligence Essentials与Pro
+title: Commerce Intelligence软件包与专业版
 description: 了解Commerce Intelligence Essentials与Commerce Intelligence Pro有何不同。
 exl-id: 624a6285-8497-43d9-a56d-8ae503e0e2dd
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 5%
+source-wordcount: '77'
+ht-degree: 2%
 
 ---
 
-# [!DNL Commerce Intelligence Essentials] 对比 [!DNL Commerce Intelligence Pro]
+# [!DNL Commerce Intelligence Essentials]与[!DNL Commerce Intelligence Pro]
 
-下表描述了旧版中包含的元素 `Essentials` 帐户与当前Commerce Intelligence帐户进行比较。 Adobe不再提供 `Essentials`.
+下表描述了旧版`Essentials`帐户与当前Commerce Intelligence帐户中包含的元素。 Adobe不再提供`Essentials`。
 
 |   | **`Commerce Intelligence Essentials`** | **`Commerce Intelligence Pro`** |
 |-----|-----|-----|

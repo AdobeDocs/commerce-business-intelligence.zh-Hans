@@ -6,15 +6,15 @@ role: Admin, User
 feature: User Management
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '82'
+source-wordcount: '75'
 ht-degree: 0%
 
 ---
 
 # 重置密码
 
-要重置密码，请单击 **[!UICONTROL Reset Password]** 在上“密码”字段下 [!DNL Adobe Commerce Intelligence] 登录页面。 输入用户帐户的电子邮件地址，将发送包含密码重置链接的电子邮件。
+要重置密码，请单击[!DNL Adobe Commerce Intelligence]登录页面中密码字段下方的&#x200B;**[!UICONTROL Reset Password]**。 输入用户帐户的电子邮件地址，将发送包含密码重置链接的电子邮件。
 
-此外，您还可以在中更改密码 [!DNL Commerce Intelligence] 通过使用 **[!UICONTROL Personal Settings]** 页面。
+此外，您还可以使用&#x200B;**[!UICONTROL Personal Settings]**&#x200B;页面在[!DNL Commerce Intelligence]中更改密码。
 
-如果重置密码且仍被锁定在您的帐户之外，请按照 [这些提示](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html) 帮助查明问题。
+如果您重置密码并且仍被锁定在帐户之外，请按照[这些提示](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html)帮助查明问题。

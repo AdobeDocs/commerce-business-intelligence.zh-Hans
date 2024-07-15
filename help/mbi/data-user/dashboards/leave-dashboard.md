@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 保留（取消共享）功能板
 
-更换团队？ 在春天打扫你的 [!DNL Commerce Intelligence] 帐户？ 要从仪表板中离开或取消共享您自己，请单击 **[!UICONTROL Shared]** 位于屏幕顶部时，您想要离开仪表板。 单击 **[!UICONTROL Leave this Dashboard]** 去移除你自己。
+更换团队？ 在春天清洗你的[!DNL Commerce Intelligence]帐户吗？ 若要离开仪表板或取消共享您自己的仪表板，请在离开仪表板时单击屏幕顶部的&#x200B;**[!UICONTROL Shared]**。 单击&#x200B;**[!UICONTROL Leave this Dashboard]**&#x200B;以自行删除。
 
 示例：
 

@@ -12,4 +12,4 @@ ht-degree: 25%
 
 # 教程
 
-按照这些自学教程了解 [!DNL Adobe Commerce Intelligence].
+按照这些自学教程了解[!DNL Adobe Commerce Intelligence]的强大功能。

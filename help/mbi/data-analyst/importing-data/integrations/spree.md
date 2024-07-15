@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# 连接 [!DNL Spree]
+# 连接[!DNL Spree]
 
 ![](../../../assets/spree-commerce-logo.png)
 
-想要了解您的业务表现或寻找您最有价值的客户获取来源和渠道？ 正在连接您的 [!DNL Spree] 数据到 [!DNL Commerce Intelligence] 允许您回答这些问题等。
+想要了解您的业务表现或寻找您最有价值的客户获取来源和渠道？ 将您的[!DNL Spree]数据连接到[!DNL Commerce Intelligence]允许您回答这些问题等。
 
-此 [!DNL Spree] 数据库基于 [!DNL PostgreSQL]，您可以将其连接到 [!DNL Commerce Intelligence] 使用 [与正常情况下相同的步骤 [!DNL Postgres] 连接](../integrations/postgresql.md).
+[!DNL Spree]数据库基于[!DNL PostgreSQL]，您可以使用与普通 [!DNL Postgres] 连接](../integrations/postgresql.md)相同的[步骤将其连接到[!DNL Commerce Intelligence]。
 
 ## 相关文档
 

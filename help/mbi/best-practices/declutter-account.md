@@ -1,35 +1,35 @@
 ---
-title: 清理您的 [!DNL Commerce Intelligence] 帐户
-description: 了解如何清理您的 [!DNL Commerce Intelligence] 帐户。
+title: 清空您的 [!DNL Commerce Intelligence] 帐户
+description: 了解如何清理 [!DNL Commerce Intelligence] 帐户。
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
 role: Admin, User
 feature: Accounts
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '873'
 ht-degree: 0%
 
 ---
 
-# 清理您的 [!DNL Adobe Commerce Intelligence] 帐户
+# 清理[!DNL Adobe Commerce Intelligence]帐户
 
-无论您是否曾与 [!DNL Commerce Intelligence] 在六个月或六年的时间里，保持良好的账户对于贵组织充分利用平台至关重要。 随着时间的推移，用户、功能板、报表、量度和列自然而然地不再需要。 您可能创建了报表供一次性使用并忘记了该报表，或者离开您公司的用户从未停用过其帐户。
+无论您已经与[!DNL Commerce Intelligence]合作六个月还是六年，保持良好的帐户对于您的组织充分利用平台至关重要。 随着时间的推移，用户、功能板、报表、量度和列自然而然地不再需要。 您可能创建了报表供一次性使用并忘记了该报表，或者离开您公司的用户从未停用过其帐户。
 
-替换为 [对所有元素进行标准化、明确的命名](../best-practices/naming-elements.md)的) [!DNL Commerce Intelligence] 帐户，下面的帐户审核步骤可帮助您减少用户的混乱和不必要的分析。 一项额外优势包括 [更新周期可能更快](../best-practices/reduce-update-cycle-time.md).
+通过[!DNL Commerce Intelligence]帐户的所有元素](../best-practices/naming-elements.md))的[标准化、清晰的命名，以下帐户审核步骤可帮助您减少用户的混乱和不必要的分析。 另一个优势包括[可能更快的更新周期](../best-practices/reduce-update-cycle-time.md)。
 
 ## 步骤1：识别非活动用户
 
-清理帐户的第一步是停用非活动用户的帐户，例如已离开公司或不再使用的用户 [!DNL Commerce Intelligence] 他们目前的角色。
+清理帐户的第一步是停用非活动用户的帐户，例如已离开公司或不再在其当前角色中使用[!DNL Commerce Intelligence]的用户。
 
-要执行此操作，请单击右上角导航栏中您公司的名称，然后选择 **[!UICONTROL Manage Users]**. 接下来，选择要取消激活的用户并单击 **[!UICONTROL Deactivate User]**.
+为此，请单击右上角导航栏中您公司的名称，然后选择&#x200B;**[!UICONTROL Manage Users]**。 接下来，选择要取消激活的用户并单击&#x200B;**[!UICONTROL Deactivate User]**。
 
 >[!NOTE]
 >
->您需要 [管理员权限](../administrator/user-management/user-management.md) 完成此操作。
+>您需要[管理员权限](../administrator/user-management/user-management.md)才能执行此操作。
 
 >[!WARNING]
 >
->停用用户将删除由该用户创建的图表、功能板和其他资源。 如果要保留这些资源，请联系 [!DNL Commerce Intelligence] [支持](../guide-overview.md#Submitting-a-Support-Ticket) 团队名称。 支持人员可以帮助您将这些资源转移给其他用户。
+>停用用户将删除由该用户创建的图表、功能板和其他资源。 如果要保留这些资产，请在停用用户之前联系[!DNL Commerce Intelligence] [支持](../guide-overview.md#Submitting-a-Support-Ticket)团队。 支持人员可以帮助您将这些资源转移给其他用户。
 
 ### 重新激活用户
 
@@ -41,31 +41,31 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您需要 `Admin` 或 `Standard` [用户权限](../administrator/user-management/user-management.md) 完成此操作。
+>您需要`Admin`或`Standard` [用户权限](../administrator/user-management/user-management.md)才能执行此操作。
 
-每个用户具有 `Admin` 或 `Standard` 访问可创建报告和仪表板。 因此，拥有这些权限的每个人必须按照以下步骤识别和删除未使用的报表。
+每个具有`Admin`或`Standard`访问权限的用户都可以创建报告和仪表板。 因此，拥有这些权限的每个人必须按照以下步骤识别和删除未使用的报表。
 
 ### 查看您的仪表板和报告
 
-在删除任何内容之前，您应该查看报告和仪表板以评估正在使用的内容。 虽然您可以使用 **[!UICONTROL find unused reports]** 如此一来，任何初始审查都会使您的清理工作更加高效。
+在删除任何内容之前，您应该查看报告和仪表板以评估正在使用的内容。 虽然您可以使用下面描述的&#x200B;**[!UICONTROL find unused reports]**&#x200B;功能，但任何初始审查都会使您的清理工作更高效。
 
 ### 删除功能板和报表
 
 访问功能板和报表后，即可开始清理帐户。
 
-**从功能板中删除报告**
+**从仪表板删除报告**
 
 1. 在功能板上找到要删除的报告。
-1. 选择 **[!UICONTROL Options]** 报表的右上角。
-1. 单击 **[!UICONTROL Remove From Dashboard]**.
+1. 选择报告右上角的&#x200B;**[!UICONTROL Options]**。
+1. 单击&#x200B;**[!UICONTROL Remove From Dashboard]**。
 
 **删除整个仪表板**
 
-1. 选择 **[!UICONTROL Manage Data]**，然后**[!UICONTROL Dashboards**].
+1. 选择&#x200B;**[!UICONTROL Manage Data]**，然后选择**[!UICONTROL Dashboards**]。
 1. 单击要删除的仪表板。
-1. 单击 **[!UICONTROL Delete Dashboard]**.
+1. 单击&#x200B;**[!UICONTROL Delete Dashboard]**。
 
-您还可以选择 **[!UICONTROL Dashboard Options]**，则 **[!UICONTROL Delete]** 从仪表板本身。
+您还可以从仪表板本身选择&#x200B;**[!UICONTROL Dashboard Options]**，然后选择&#x200B;**[!UICONTROL Delete]**。
 
 ![](../../mbi/assets/Delete_from_dashboard.png)
 
@@ -75,10 +75,10 @@ ht-degree: 0%
 
 **删除未使用的报告**
 
-1. 选择 **[!UICONTROL Manage Data]**，则 **[!UICONTROL Reports]**.
-1. 查看 **仅显示未使用的报表** 框中。 这会创建一个未在功能板或电子邮件摘要中使用的报告列表。
+1. 选择&#x200B;**[!UICONTROL Manage Data]**，然后选择&#x200B;**[!UICONTROL Reports]**。
+1. 选中位于量度列表下方的&#x200B;**仅显示未使用的报表**&#x200B;框。 这会创建一个未在功能板或电子邮件摘要中使用的报告列表。
 1. 选择要删除的报告。 您可以通过单击报表列表上方的复选框来选择全部。
-1. 单击 **[!UICONTROL Delete Selected]**.
+1. 单击&#x200B;**[!UICONTROL Delete Selected]**。
 
 以下是未使用的报告删除流程概况：
 
@@ -88,20 +88,20 @@ ht-degree: 0%
 
 清理用户列表、功能板和报告后，您可以转到审核量度列表。 这有助于您识别任何可能已过期或未使用的内容，例如，使用不同的定义创建了一个新量度。
 
-1. 要生成量度的依赖报表列表，请转到 **[!DNL Manage Data]**，然后选择单击 **[!UICONTROL Metrics]**.
-1. 单击 **[!UICONTROL Edit]** ，位于量度旁边。
-1. 在页面底部，您会看到一个名为的部分 **[!UICONTROL Dependent Charts]**. 单击该链接可生成此度量的依赖报表列表。
-1. 系统完成检查后， [!DNL Commerce Intelligence] 显示使用此量度的功能板、报表和用户的列表。
+1. 要生成量度的依赖报表列表，请转到&#x200B;**[!DNL Manage Data]**，然后选择“单击&#x200B;**[!UICONTROL Metrics]**”。
+1. 单击量度旁边的&#x200B;**[!UICONTROL Edit]**。
+1. 在页面底部，您会看到名为&#x200B;**[!UICONTROL Dependent Charts]**&#x200B;的部分。 单击该链接可生成此度量的依赖报表列表。
+1. 系统完成检查后，[!DNL Commerce Intelligence]会显示使用此量度的功能板、报告和用户的列表。
 
 ![](../../mbi/assets/report_dependecies.png)
 
-如果您确定不再需要该量度，请导航回 **[!UICONTROL Metrics]** 通过单击显示的页面 **[!UICONTROL Back to Metric List]** 以查找要删除的量度。 单击 **[!UICONTROL Delete]**.
+如果您决定不再需要该量度，请单击&#x200B;**[!UICONTROL Back to Metric List]**&#x200B;以导航回&#x200B;**[!UICONTROL Metrics]**&#x200B;页面，查找要删除的量度。 单击&#x200B;**[!UICONTROL Delete]**。
 
 ## 步骤4：评估已同步的列
 
 最后一步是评估Data Warehouse中当前正在同步的列。 取消同步列不仅可以清除您的帐户，还可能会缩短更新时间。
 
-如果您希望实现此目标，请联系 [!DNL Commerce Intelligence] [支持](../guide-overview.md#Submitting-a-Support-Ticket). 支持团队可以创建报告，该报告包含任何用户未在任何仪表板中使用以及电子邮件摘要（不包括SQL报告）中未使用的所有列。 然后，您可以使用此报表作为指南，指导您通过Data Warehouse管理器选择要取消同步的列。
+如果您想追求此目标，请联系[!DNL Commerce Intelligence] [支持](../guide-overview.md#Submitting-a-Support-Ticket)。 支持团队可以创建报告，该报告包含任何用户未在任何仪表板中使用以及电子邮件摘要（不包括SQL报告）中未使用的所有列。 然后，您可以使用此报表作为指南，指导您通过Data Warehouse管理器选择要取消同步的列。
 
 >[!NOTE]
 >
@@ -109,14 +109,14 @@ ht-degree: 0%
 
 **取消同步列（或列）**
 
-1. 转到 **[!DNL Manage Data]**，则 **[!UICONTROL Data Warehouse]**.
-1. 在 **[!UICONTROL Synced Tables]** 列表，导航到包含该列的表。
+1. 转到&#x200B;**[!DNL Manage Data]**，然后转到&#x200B;**[!UICONTROL Data Warehouse]**。
+1. 在&#x200B;**[!UICONTROL Synced Tables]**&#x200B;列表中，导航到包含该列的表。
 1. 选中要取消同步的一个或多个列旁边的一个或多个框。
    >[!NOTE]
    >
    >如果不删除整个表，则无法取消同步主键列。
 
-1. 单击 **[!UICONTROL Remove]** 以取消同步一个或多个列。
+1. 单击&#x200B;**[!UICONTROL Remove]**&#x200B;取消同步一个或多个列。
 
 下面是整个过程的概况：
 
@@ -124,4 +124,4 @@ ht-degree: 0%
 
 ## 正在结束
 
-您的 [!DNL Commerce Intelligence] 现在，帐户应该更整洁，更易于您和您的团队导航。
+对于您和您的团队，您的[!DNL Commerce Intelligence]帐户现在应该更整洁且更易于导航。

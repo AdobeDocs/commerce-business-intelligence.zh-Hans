@@ -1,6 +1,6 @@
 ---
 title: 载入Adobe Commerce Intelligence
-description: 了解如何载入Adobe Commerce Intelligence。
+description: 了解Adobe Commerce Intelligence入门。
 exl-id: e0cce957-af2c-4514-9afd-c9aaa651a4f0
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
@@ -11,26 +11,26 @@ ht-degree: 0%
 
 ---
 
-# 入门 [!DNL Adobe Commerce Intelligence]
+# 载入[!DNL Adobe Commerce Intelligence]
 
-与相关的入门培训问题 `store` 和 `database` 设置可确保您正确设置报表。 有了这些答案，Adobe将针对您商店的设置提供量身定制的报表。
+与`store`和`database`设置相关的载入问题可确保您正确设置报表。 有了这些答案，Adobe将针对您商店的设置提供量身定制的报表。
 
 ## 商店设置
 
-- *您的商店是否接受访客结帐？*  — 选择 **是** 如果您允许客户在不注册帐户的情况下从您的商店购买商品。
+- *您的商店是否接受访客签出？* — 如果允许客户在注册帐户之前从您的商店购买产品，请选择&#x200B;**是**。
 
-- `Timezone`  — 选择 `timezone` 您希望在中查看您的报表。
+- `Timezone` — 选择您希望在其中查看报告的`timezone`。
 
-- `Currency`  — 选择 `currency` 你的商店经营的那个。
+- `Currency` — 选择您的商店运营所在的`currency`。
 
-- `Your week starts on...`  — 在报表中，选择要作为一周开始的一周中的哪一天。
+- `Your week starts on...` — 在报表中选择您希望作为一周开始的一周中的哪一天。
 
-- *您使用哪个版本的Commerce？*  — 选择 `currency` 你的商店经营的那个。
+- *您使用哪个版本的Commerce？* — 选择您的商店运营所在的`currency`。
 
-- *你的店在欧盟吗？*  — 如果您回答 `Yes` 对于此问题，Adobe会根据GDPR将您的Data Warehouse和所有数据托管在欧盟。
+- *您的商店是否位于欧盟？* — 如果您回答`Yes`此问题，Adobe将您的Data Warehouse和所有数据托管在欧盟，以符合GDPR。
 
 ## 数据库设置
 
-- `Database name`  — 什么是 *的名称 [!DNL MySQL] 数据库* Commerce事务数据驻留在何处？
+- `Database name` - Commerce事务型数据所在的[!DNL MySQL]数据库&#x200B;*的*&#x200B;名称是什么？
 
-- `Table prefix (optional)`  — 您的Commerce数据库中包含的表是否前面有任何内容(例如， `store_`)？ 通常不会出现这种情况，但可以进行自定义。
+- `Table prefix (optional)` - Commerce数据库中包含的表是否带有任何前缀（例如，`store_`）？ 通常不会出现这种情况，但可以进行自定义。

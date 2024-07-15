@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # 顺序比较计算列
 
-本主题概述了 `Sequential Comparison` 中可用的计算列 **[!DNL Manage Data > Data Warehouse]** 页面。 下面是它的作用解释，然后是一个示例以及创建它的机制。
+本主题概述了&#x200B;**[!DNL Manage Data > Data Warehouse]**&#x200B;页面中可用的`Sequential Comparison`计算列的用途和用途。 下面是它的作用解释，然后是一个示例以及创建它的机制。
 
-**说明**
+**解释**
 
-此 `Sequential Comparison` 列类型：查找连续事件之间的差异。 最常见的类型 `Sequential Comparison` 列是 `Seconds since previous order` 列。 此列需要三个输入：
+`Sequential Comparison`列类型：查找连续事件之间的差异。 最常见的`Sequential Comparison`列类型是`Seconds since previous order`列。 此列需要三个输入：
 
-1. `Event Owner`：此输入确定行所分组到的实体。 例如，在 `Seconds since previous order` 列，则事件责任人是客户，因为您要查找自同一客户的上次订购以来的秒数。
-1. `Event Date`：此输入强制实施事件的序列。 在下列情况下 `Seconds since previous order`，则包含订单时间戳的列应为 `Event Date`. 此输入始终为时间戳。
-1. `Value to Compare`：此输入是要比较的实际值。 它从当前行的值中减去前一行的值。 因此，调用查找客户连续订单之间时间差的列 `Seconds since previous order`. 此输入不必为时间戳。 非时间戳示例用于查找客户的连续订单之间的订单值差异。
+1. `Event Owner`：此输入确定行分组所在的实体。 例如，在`Seconds since previous order`列中，事件所有者是客户，因为您希望查找自同一客户的上次订购以来的秒数。
+1. `Event Date`：此输入强制事件序列。 在`Seconds since previous order`的情况下，包含订单时间戳的列应为`Event Date`。 此输入始终为时间戳。
+1. `Value to Compare`：此输入是要比较的实际值。 它从当前行的值中减去前一行的值。 因此，查找客户连续订单之间时间差的列称为`Seconds since previous order`。 此输入不必为时间戳。 非时间戳示例用于查找客户的连续订单之间的订单值差异。
 
 **示例**
 
@@ -33,33 +33,33 @@ ht-degree: 0%
 | **`4`** | A | 2015-01-02 13:00:00 | 126000 |
 | **`5`** | B | 2015-01-03 13:00:00 | 217800 |
 
-在上例中， `Seconds since owner's previous event` 是 `Sequential Comparison` 计算列。 对于 `owner_id = A`，首先根据 `timestamp` 列，然后减去上一个事件的 `timestamp` 来自当前事件的时间戳。 在表的第三行 — 的第二行 `owner_id A`  — 的值 `Seconds since owner's previous event` 是“2015-01-01 02:00”到“2015-01-01 00”之间的秒数:00:00&#39;。 这一差等于两小时= 7200秒。
+在上例中，`Seconds since owner's previous event`是`Sequential Comparison`计算列。 对于`owner_id = A`，它首先基于`timestamp`列标识一个序列，然后从当前事件的时间戳中减去上一个事件的`timestamp`。 在表的第三行 — `owner_id A`的第二行 — `Seconds since owner's previous event`的值是&#39;2015-01-01 02:00&#39;和&#39;2015-01-01 00:00:00&#39;之间的秒数。 这一差等于两小时= 7200秒。
 
-对于此计算列类型，对应于所有者第一个事件的行具有 `NULL` 值。
+对于此计算列类型，对应于所有者第一个事件的行具有`NULL`值。
 
-**力学**
+**机械**
 
-创建 **事件编号** 列：
+要创建&#x200B;**事件编号**&#x200B;列，请执行以下操作：
 
-1. 导航至 **[!DNL Manage Data > Data Warehouse]** 页面。
+1. 导航到&#x200B;**[!DNL Manage Data > Data Warehouse]**&#x200B;页面。
 
 1. 导航到要在其上创建此列的表。
 
-1. 单击 **[!UICONTROL Create New Column]** 在右上角。
+1. 单击右上角的&#x200B;**[!UICONTROL Create New Column]**。
 
-1. 选择 `Same Table` 作为 `Definition Type` （如果要比较的列不在同一个表中，可能需要重新定位它们）。
+1. 选择`Same Table`作为`Definition Type`（如果要比较的列不在同一个表中，您可能需要重新定位它们）。
 
-1. 选择 `SEQUENTIAL_COMPARISON` 作为 `Column Definition Equation`.
+1. 选择`SEQUENTIAL_COMPARISON`作为`Column Definition Equation`。
 
 1. 选择输入值，如上文所述：
    - `Event Owner`
    - `Event Date`
    - `Value to Compare`
 
-1. 还可以添加过滤器以排除不考虑的行。 排除的行具有 `NULL` 此列的值。
+1. 还可以添加过滤器以排除不考虑的行。 排除的行具有此列的`NULL`值。
 
-1. 在页面顶部提供列的名称，然后单击 **[!UICONTROL Save]**.
+1. 为页面顶部的列提供一个名称，然后单击&#x200B;**[!UICONTROL Save]**。
 
-1. 列可供使用 *立即*.
+1. 该列可立即使用&#x200B;*1}。*
 
 ![秒](../../assets/SEC_new.png)

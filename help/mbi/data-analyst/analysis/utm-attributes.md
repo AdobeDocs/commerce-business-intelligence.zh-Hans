@@ -6,38 +6,38 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Reports
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '760'
 ht-degree: 0%
 
 ---
 
-# [!DNL Google Analytics] 和UTM归因
+# [!DNL Google Analytics]和UTM归因
 
-这对于以下任务至关重要 [跟踪用户获取源](../../data-analyst/analysis/google-track-user-acq.md) 到 [确定表现最佳的广告营销活动](../../data-analyst/analysis/most-value-source-channel.md). 本主题探讨 [!DNL Google Analytics] 源归因过程。 换言之，何时记录哪一条信息。
+[跟踪用户获取来源](../../data-analyst/analysis/google-track-user-acq.md)对于[识别表现最佳的广告营销活动](../../data-analyst/analysis/most-value-source-channel.md)至关重要。 本主题探讨[!DNL Google Analytics]源归因过程。 换言之，何时记录哪一条信息。
 
 ## 什么是归因？
 
-`Attribution` 是指定特定活动的引用源。 这些活动通常是宏观转化或微观转化，宏观是类似于 **购买**，微生物，例如 **注册、电子邮件注册、博客评论、** 等等。
+`Attribution`用于指定特定活动的引用源。 这些活动通常是宏观转化或微观转化，宏观是&#x200B;**购买**&#x200B;之类的内容，微观是&#x200B;**注册、电子邮件注册、博客评论**&#x200B;之类的内容。
 
 理想情况下，每次发生转化事件时，都会记录反向链接来源。 但如何确定来源？
 
-实际上，用户通常在点击/进行微观或宏观转化之前来自许多来源。 例如，他们可能通过有机方式访问网站，然后离开，然后通过付费搜索访问，然后离开，然后直接访问网站本身。 此源跟踪信息通常通过UTM参数提供给站点，但也有更复杂的系统。 出于您的目的，请关注 [UTM](https://support.google.com/analytics/answer/1033867?hl=en&amp;ref_topic=1032998).
+实际上，用户通常在点击/进行微观或宏观转化之前来自许多来源。 例如，他们可能通过有机方式访问网站，然后离开，然后通过付费搜索访问，然后离开，然后直接访问网站本身。 此源跟踪信息通常通过UTM参数提供给站点，但也有更复杂的系统。 出于您的目的，请关注[UTM](https://support.google.com/analytics/answer/1033867?hl=en&amp;ref_topic=1032998)。
 
-## 如何 [!DNL Google Analytics] 是否通过UTM参数确定反向链接来源？
+## [!DNL Google Analytics]如何通过UTM参数确定反向链接来源？
 
-在URL上指定UTM参数后，这些参数会被解析并置于 [!DNL Google Analytics] [Cookie](https://en.wikipedia.org/wiki/HTTP_cookie). 如果网站没有 [!DNL Google Analytics]，拥有UTM没有任何意义。 [!DNL Google Analytics] 制定了有关如何处理在生命周期内使用UTM点击多个URL的用户（稍后将详加介绍）的规则。 假设网站配置为将UTM参数捕获到外部数据库中，那么当发生微或宏转换时，无论在 [!DNL Google Analytics] 转换时的Cookie将被复制到数据库中。
+在URL上指定UTM参数后，这些参数会被解析并置于[!DNL Google Analytics] [Cookie](https://en.wikipedia.org/wiki/HTTP_cookie)中。 如果网站没有[!DNL Google Analytics]，则使用UTM没有任何意义。 [!DNL Google Analytics]具有如何处理在其生命周期内点击多个URL且带有UTM的用户（稍后将详加介绍）的规则。 假设网站配置为将UTM参数捕获到外部数据库中，那么当发生微或宏转换时，转换时[!DNL Google Analytics] Cookie中的任何内容都会被复制到数据库中。
 
 ## 首次点击与最后点击
 
 ### 最后点击归因
 
-最后点击归因是采用的最常见归因模型。 [!DNL Google Analytics]. 在本例中， [!DNL Google Analytics] Cookie表示转化事件之前最新源的UTM参数，即 [记录在数据库中](../../data-analyst/analysis/google-track-user-acq.md). 此 [!DNL Google Analytics] 如果用户单击包含新UTM参数集的新URL，则Cookie仅会覆盖以前的UTM参数。
+最后点击归因是[!DNL Google Analytics]使用的最常见归因模型。 在本例中，[!DNL Google Analytics] Cookie表示转换事件之前的最新源的UTM参数，该参数在数据库](../../data-analyst/analysis/google-track-user-acq.md)中记录为[。 如果用户单击包含新UTM参数集的新URL，[!DNL Google Analytics] Cookie仅会覆盖以前的UTM参数。
 
-例如，考虑首次通过以下方式访问网站的用户： [!DNL Google Analytics] *付费搜索*，然后通过以下方式返回 *自然搜索*，并最终返回到 *直接网站* 或通过 *电子邮件链接* **不包含UTM参数** 转换事件之前。 在此示例中， [!DNL Google Analytics] Cookie指出用户的来源是自然的，因为这是转化前的最后一个来源。 此 *路径* ，否则将忽略最终转化事件。 如果用户改为通过带有UTM的电子邮件链接访问网站，则 [!DNL Google Analytics] Cookie会说源是“电子邮件”。 因此，如果Cookie中存在UTM参数，并且用户通过直接进入，则 [!DNL Google Analytics] Cookie会显示UTM参数，而不是“直接”。
+例如，假定某个用户首先通过[!DNL Google Analytics] *付费搜索*&#x200B;访问网站，然后通过&#x200B;*免费搜索*&#x200B;返回，最后在转化事件之前直接返回&#x200B;*网站*&#x200B;或通过&#x200B;*电子邮件链接* **返回，而不使用UTM参数**。 在此示例中，[!DNL Google Analytics] Cookie显示用户的源是有机的，因为这是转换前的最后一个源。 忽略最终转化事件之前的用户的&#x200B;*路径*。 如果用户改为通过带有UTM的电子邮件链接访问网站，则[!DNL Google Analytics] Cookie将表明源是“电子邮件”。 因此，如果Cookie中存在UTM参数，并且用户通过直接进入，则[!DNL Google Analytics] Cookie会显示UTM参数，而不是“直接”。
 
 >[!NOTE]
 >
->特定用户的 [!DNL Google Analytics] Cookie参数会在Cookie出现时清除 [过期](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage)，或用户在浏览器中清除其Cookie时。*
+>当Cookie [过期](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage)或用户在浏览器中清除其Cookie时，特定用户的[!DNL Google Analytics] Cookie参数将被清除。*
 
 ### 首次点击归因
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ## 如何分析归因？
 
-[!DNL Google Analytics] 在其Web界面中有一些强大的功能，允许您执行四种不同的归因模型：
+[!DNL Google Analytics]的Web界面具备一些强大的功能，可让您执行四种不同的归因模型：
 
 1. 首次点击
 1. 最后点击
@@ -63,10 +63,10 @@ ht-degree: 0%
 
 ## 相关文档
 
-* [通过以下方式跟踪订单引用来源 [!DNL Google Analytics] 电子商务](../importing-data/integrations/google-ecommerce.md)
+* [通过 [!DNL Google Analytics] E-Commerce跟踪订单反向链接来源](../importing-data/integrations/google-ecommerce.md)
 * [跟踪数据库中的用户反向链接源](../analysis/google-track-user-acq.md)
 * [跟踪数据库中的用户设备、浏览器和操作系统数据](../analysis/google-track-user-acq.md)
 * [了解您最有价值的客户获取来源和渠道](../analysis/most-value-source-channel.md)
-* [连接您的 [!DNL Google Adwords] 帐户](../importing-data/integrations/google-adwords.md)
+* [连接你的 [!DNL Google Adwords] 帐户](../importing-data/integrations/google-adwords.md)
 * [提高广告促销活动的ROI](../analysis/roi-ad-camp.md)
-* [在中使用UTM标记的五个最佳实践 [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)
+* [ [!DNL Google Analytics]中UTM标记的五个最佳实践](../../best-practices/utm-tagging-google.md)

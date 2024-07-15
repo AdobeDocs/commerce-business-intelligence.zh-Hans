@@ -16,10 +16,10 @@ ht-degree: 0%
 您可以轻松设计查询，并且可以随时尝试进行数据分析。 您知道如何找到数据问题的具体答案，并希望促进同事的自助体验。
 
 本节将演示如何：
-* 连接数据并将其导入到 [!DNL Commerce Intelligence]
+* 连接数据并将其导入到[!DNL Commerce Intelligence]
 * 查看数据在Data Warehouse中的存储和结构方式
 * 分析数据
-* 使用 [!DNL SQL Report Builder]
+* 使用[!DNL SQL Report Builder]
 
 ## 相关
 

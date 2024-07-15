@@ -6,28 +6,28 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '1950'
 ht-degree: 0%
 
 ---
 
 # 现成仪表板
 
-[!DNL Adobe Commerce Intelligence] 包括现成的仪表板，可提供对业务的洞察信息。 使用功能板，您可以检查基本指标的运行状况，例如用户生命周期收入、重复购买次数、在给定时间段内购买的热门产品等等。 创建这些预配置的功能板是为了帮助您做出明智的业务决策。
+[!DNL Adobe Commerce Intelligence]包含现成的功能板，可提供对业务的洞察信息。 使用功能板，您可以检查基本指标的运行状况，例如用户生命周期收入、重复购买次数、在给定时间段内购买的热门产品等等。 创建这些预配置的功能板是为了帮助您做出明智的业务决策。
 
 >[!NOTE]
 >
->对这些仪表板的访问取决于您的帐户类型和访问级别。 如果您没有看到这些功能板，请联系 [支持](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+>对这些仪表板的访问取决于您的帐户类型和访问级别。 如果您没有看到这些仪表板，请联系[支持](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ## 报告可用性
 
-对于 `Customers` 和 `Executive Summary` 功能板中，某些报表的可用性仅取决于您应用商店的签出配置。 具体来说，如果您的商店允许访客签出或不允许访客签出。
+对于`Customers`和`Executive Summary`功能板，某些报告仅根据您商店的签出配置提供。 具体来说，如果您的商店允许访客签出或不允许访客签出。
 
 ## 客户（允许访客结帐）
 
 “客户”（允许访客结帐）仪表板提供有关客户群的信息，例如他们的购买行为。 此仪表板可帮助您提高客户维系率并确定哪些客户可带来最高收入。
 
-### 报表
+### 报告
 
 | 名称 | 描述 |
 |---|---|
@@ -42,14 +42,14 @@ ht-degree: 0%
 | `Time Between Orders` | 客户在订单之间花费的平均时间和中间时间，按订单编号细分（即订单一到二、两到三等之间的时间）。 |
 | `Number of Customers - Lifetime Orders` | 对于客户存留期内的给定订单数，已下订单的客户数以及该数字代表的整个客户群的百分比。 |
 | `One-Time Customers who Bought 3-6 Months Ago` | 首次购买且仅在3到6个月前购买的客户。 |
-| `Avg LTV by First Order` | 比较各个同类群组的累积平均客户存留期收入。 同类群组由客户首次购买的月份定义。 例如， `Jan 2020` 同类群组显示首次购买于2020年1月的客户的累积平均液晶电视观看次数。 |
+| `Avg LTV by First Order` | 比较各个同类群组的累积平均客户存留期收入。 同类群组由客户首次购买的月份定义。 例如，`Jan 2020`同类群组显示首次购买时间是2020年1月的客户的累积平均LTV。 |
 | `Customer's First 30 Day vs Lifetime Revenue` | 比较客户首次购买后30天内的平均收入与其整个生命周期内的收入。 每个气泡对应于一个航运区域，每个气泡的大小表示从该区域获得的客户数。 |
 
 ## 客户（不允许访客结帐）
 
 “客户”（不允许来宾结帐）仪表板提供有关客户群的信息，例如他们的购买行为以及从帐户注册到订单投放的转化情况。 此仪表板可帮助您提高客户维系率并确定哪些客户可带来最高收入。
 
-### 报表
+### 报告
 
 | 名称 | 描述 |
 |---|---|
@@ -72,7 +72,7 @@ ht-degree: 0%
 
 “执行摘要（允许访客结账）”仪表板可以让您简要了解订单和收入方面的业务情况。 此仪表板专为管理人员而设计，旨在全面了解业务绩效，但也可为其他人提供有见地的见解。
 
-### 报表
+### 报告
 
 | 名称 | 描述 |
 |---|---|
@@ -91,7 +91,7 @@ ht-degree: 0%
 
 “执行摘要（不允许来宾结帐）”仪表板可以让您简要了解订单、收入和帐户注册方面的业务情况。 此仪表板专为管理人员而设计，旨在全面了解业务绩效，但也可为其他人提供有见地的见解。
 
-### 报表
+### 报告
 
 | 名称 | 描述 |
 |---|---|
@@ -114,7 +114,7 @@ ht-degree: 0%
 >
 >此仪表板上的报告可用于连接到具有任一配置类型（访客签出，无访客签出）的存储区的帐户。
 
-### 报表
+### 报告
 
 | 名称 | 描述 |
 |---|---|
@@ -133,13 +133,13 @@ ht-degree: 0%
 
 ## 产品
 
-“产品”仪表板显示从订购的产品、它们的商品总价值(GMV)以及购买和退款的热门产品等方面来说明的一般产品表现。 它可以帮助您平衡购买和回报，并确定产品成功和受欢迎程度。 您的商店必须 [配置为跟踪退款](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) 用于要填充的图表。
+“产品”仪表板显示从订购的产品、它们的商品总价值(GMV)以及购买和退款的热门产品等方面来说明的一般产品表现。 它可以帮助您平衡购买和回报，并确定产品成功和受欢迎程度。 您的商店必须[配置为跟踪退款](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html)，才能填充这些图表。
 
 >[!NOTE]
 >
 >此仪表板上的报告可用于连接到具有任一配置类型（访客签出，无访客签出）的存储区的帐户。
 
-### 报表
+### 报告
 
 | 名称 | 描述 |
 |---|---|

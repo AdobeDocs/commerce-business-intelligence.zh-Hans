@@ -1,60 +1,60 @@
 ---
-title: 连接 [!DNL MongoDB] 通过SSH隧道
-description: 了解如何连接 [!DNL MongoDB] 通过SSH隧道。
+title: 通过SSH通道连接 [!DNL MongoDB]
+description: 了解如何通过SSH隧道连接 [!DNL MongoDB] 。
 exl-id: 3557a8c7-c4c5-4742-ae30-125c719aca39
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
 
-# 连接 [!DNL MongoDB] 通过SSH隧道
+# 通过SSH通道连接[!DNL MongoDB]
 
-连接您的 [!DNL MongoDB] 数据库至 [!DNL Commerce Intelligence] 通过SSH隧道，您必须执行以下操作：
+要通过SSH通道将[!DNL MongoDB]数据库连接到[!DNL Commerce Intelligence]，您必须执行以下几项操作：
 
 1. [检索 [!DNL Commerce Intelligence] 公钥](#retrieve)
 1. [允许访问 [!DNL Commerce Intelligence] IP地址](#allowlist)
-1. [创建用于Commerce Intelligence的Linux用户](#linux)
-1. [创建 [!DNL MongoDB] Commerce Intelligence用户](#mongodb)
-1. [将连接和用户信息输入到 [!DNL Commerce Intelligence]](#finish)
+1. [创建Commerce Intelligence的Linux用户](#linux)
+1. [为Commerce Intelligence创建 [!DNL MongoDB] 用户](#mongodb)
+1. [在 [!DNL Commerce Intelligence]中输入连接和用户信息](#finish)
 
 >[!NOTE]
 >
 >由于此设置的技术性质，Adobe建议您在开发人员中循环，以帮助您解决以前未完成此设置的问题。
 
-## 正在检索 [!DNL Commerce Intelligence] 公钥 {#retrieve}
+## 正在检索[!DNL Commerce Intelligence]公钥 {#retrieve}
 
-此 `public key` 用于授权 [!DNL Commerce Intelligence] `Linux` 用户。 下一部分将指导您完成创建用户和导入密钥的过程。
+`public key`用于授权[!DNL Commerce Intelligence] `Linux`用户。 下一部分将指导您完成创建用户和导入密钥的过程。
 
-1. 转到 **[!UICONTROL Data** > **Connections]** 并单击 **[!UICONTROL Add New Data Source]**.
-1. 单击 [!DNL MONGODB] 图标。
-1. 在 [!DNL MongoDB] 此时，将打开凭据页面，更改 `Encrypted` 切换到 `Yes`. 此时将显示SSH设置表单。
-1. 此 `public key` 位于此表单下。
+1. 转到&#x200B;**[!UICONTROL Data** > **Connections]**&#x200B;并单击&#x200B;**[!UICONTROL Add New Data Source]**。
+1. 单击[!DNL MONGODB]图标。
+1. 打开[!DNL MongoDB]凭据页面后，将`Encrypted`切换更改为`Yes`。 此时将显示SSH设置表单。
+1. `public key`位于此表单下。
 
 在整个教程中保持此页面处于打开状态 — 您将在下一部分和结尾处找到它。
 
-如果您有点儿迷路，下面是如何导航的 [!DNL Commerce Intelligence] 要检索密钥，请执行以下操作：
+如果您丢失了一点，下面是如何浏览[!DNL Commerce Intelligence]以检索密钥的：
 
-![检索RJMetrics公钥](../../../assets/MongoDB_Public_Key.gif)<!--{:.zoom}-->
+![正在检索RJMetrics公钥](../../../assets/MongoDB_Public_Key.gif)<!--{:.zoom}-->
 
-## 允许访问 [!DNL Commerce Intelligence] IP地址 {#allowlist}
+## 允许访问[!DNL Commerce Intelligence] IP地址 {#allowlist}
 
-要使连接成功，必须将防火墙配置为允许从IP地址访问。 他们是 `54.88.76.97` 和 `34.250.211.151`，但它也位于 [!DNL MongoDB] “身份证明”页：
+要使连接成功，必须将防火墙配置为允许从IP地址访问。 它们是`54.88.76.97`和`34.250.211.151`，但它也位于[!DNL MongoDB]凭据页面上：
 
 ![MBI_Allow_Access_IPs.png](../../../assets/MBI_allow_access_IPs.png)
 
-## 创建 `Linux` 用户用于 [!DNL Commerce Intelligence] {#linux}
+## 正在为[!DNL Commerce Intelligence]创建`Linux`用户 {#linux}
 
 >[!IMPORTANT]
 >
->如果 `sshd_config` 与服务器关联的文件未设置为默认选项，仅某些用户具有服务器访问权限 — 这会阻止成功连接到 [!DNL Commerce Intelligence]. 在这些情况下，必须运行如下命令 `AllowUsers` 以允许 `rjmetric` 用户对服务器的访问权限。
+>如果与服务器关联的`sshd_config`文件未设置为默认选项，则只有某些用户具有服务器访问权限 — 这会阻止成功连接到[!DNL Commerce Intelligence]。 在这些情况下，需要运行诸如`AllowUsers`之类的命令以允许`rjmetric`用户访问服务器。
 
-这可以是生产或辅助计算机，只要它包含实时（或经常更新）数据。 您可以按您喜欢的方式限制此用户，只要它保留连接到 [!DNL MongoDB] 服务器。
+这可以是生产或辅助计算机，只要它包含实时（或经常更新）数据。 您可以按您喜欢的方式限制此用户，只要它保留连接到[!DNL MongoDB]服务器的权利即可。
 
-要添加新用户，请以root用户身份在 `Linux` 服务器：
+要添加新用户，请以root用户身份在`Linux`服务器上运行以下命令：
 
 ```bash
     adduser rjmetric -p
@@ -62,7 +62,7 @@ ht-degree: 0%
     mkdir /home/rjmetric/.ssh
 ```
 
-记住 `public key` 你在第一节里找到的？ 要确保用户有权访问数据库，您需要将密钥导入 `authorized_keys`. 将整个密钥复制到 `authorized_keys` 文件如下所示：
+是否记得在第一节中检索到的`public key`？ 为确保用户有权访问数据库，您需要将密钥导入`authorized_keys`。 按如下方式将整个密钥复制到`authorized_keys`文件中：
 
 ```bash
     touch /home/rjmetric/.ssh/authorized_keys
@@ -76,26 +76,26 @@ ht-degree: 0%
     chmod -R 700 /home/rjmetric/.ssh
 ```
 
-## 创建 [!DNL Commerce Intelligence] [!DNL MongoDB] 用户 {#mongodb}
+## 创建[!DNL Commerce Intelligence] [!DNL MongoDB]用户 {#mongodb}
 
-[!DNL MongoDB] 服务器有两种运行模式 —  [一个具有“身份验证”选项](#auth) `(mongod -- auth)` 一个没有的， [这是默认值](#default). 创建的步骤 [!DNL MongoDB] 根据服务器使用的模式，用户会有所不同。 继续之前，请务必验证模式。
+[!DNL MongoDB]服务器具有两种运行模式 — [一种使用“auth”选项](#auth) `(mongod -- auth)`，另一种不使用[，这是默认值](#default)。 创建[!DNL MongoDB]用户的步骤因服务器使用的模式而异。 继续之前，请务必验证模式。
 
-### 如果您的服务器使用 `Auth` 选项： {#auth}
+### 如果您的服务器使用`Auth`选项： {#auth}
 
-连接到多个数据库时，可以通过登录来添加用户 [!DNL MongoDB] 以管理员用户身份运行以下命令。
+连接到多个数据库时，您可以通过以管理员用户身份登录[!DNL MongoDB]并运行以下命令来添加用户。
 
 >[!NOTE]
 >
->要查看所有可用数据库，请 [!DNL Commerce Intelligence] 用户需要权限才能运行 `listDatabases.`
+>要查看所有可用数据库，[!DNL Commerce Intelligence]用户需要运行`listDatabases.`的权限
 
-此命令授予 [!DNL Commerce Intelligence] 用户访问 `to all databases`：
+此命令授予[!DNL Commerce Intelligence]用户访问`to all databases`的权限：
 
 ```bash
     use admin
     db.createUser('rjmetric', '< secure password here >', true)
 ```
 
-使用此命令授予 [!DNL Commerce Intelligence] 用户访问 `to a single database`：
+使用此命令授予[!DNL Commerce Intelligence]用户访问`to a single database`的权限：
 
 ```bash
     use < database name >
@@ -115,35 +115,35 @@ ht-degree: 0%
 
 ### 如果您的服务器使用默认选项 {#default}
 
-如果您的服务器不使用 `auth` 模式，您的 [!DNL MongoDB] 即使没有用户名和密码，服务器也可以访问。 但是，您应确保 `mongodb.conf` 文件 `(/etc/mongodb.conf)` 包含以下行 — 如果没有，请在添加后重新启动服务器。
+如果您的服务器不使用`auth`模式，那么即使没有用户名和密码，[!DNL MongoDB]服务器也可以访问。 但是，您应确保`mongodb.conf`文件`(/etc/mongodb.conf)`具有以下行 — 如果不存在，请在添加后重新启动服务器。
 
 ```bash
     bind_ip = 127.0.0.1
     noauth = true
 ```
 
-绑定 [!DNL MongoDB] 服务器到其他地址，请在下一步中相应地调整数据库主机名。
+若要将[!DNL MongoDB]服务器绑定到其他地址，请在下一步中相应地调整数据库主机名。
 
-## 将连接和用户信息输入到 [!DNL Commerce Intelligence] {#finish}
+## 在[!DNL Commerce Intelligence]中输入连接和用户信息 {#finish}
 
-要完成这些工作，您需要将连接和用户信息输入到 [!DNL Commerce Intelligence]. 你离开了 [!DNL MongoDB] 凭据页面是否打开？ 如果没有，请转到 **[!UICONTROL Data > Connections]** 并单击 **[!UICONTROL Add New Data Source]**，然后 [!DNL MongoDB] 图标。 不要忘记更改 `Encrypted` 切换到 `Yes`.
+要完成工作，您需要在[!DNL Commerce Intelligence]中输入连接和用户信息。 您是否让[!DNL MongoDB]凭据页面保持打开状态？ 如果没有，请转到&#x200B;**[!UICONTROL Data > Connections]**&#x200B;并单击&#x200B;**[!UICONTROL Add New Data Source]**，然后单击[!DNL MongoDB]图标。 别忘了将`Encrypted`切换更改为`Yes`。
 
-在此页面中输入以下信息，从 `Database Connection` 部分：
+在此页面中输入以下信息，从`Database Connection`部分开始：
 
-* `Host`: `127.0.0.1`
-* `Username`：和 [!DNL Commerce Intelligence] [!DNL MongoDB] 用户名(应为 `rjmetric`)
-* `Password`：和 [!DNL Commerce Intelligence] [!DNL MongoDB] 密码
-* `Port`：服务器上的MongoDB端口(`27017` 默认)
+* `Host`： `127.0.0.1`
+* `Username`： [!DNL Commerce Intelligence] [!DNL MongoDB]用户名（应为`rjmetric`）
+* `Password`： [!DNL Commerce Intelligence] [!DNL MongoDB]密码
+* `Port`：您的服务器上的MongoDB端口（默认为`27017`）
 * `Database Name` （可选）：如果只允许访问一个数据库，请在此处指定该数据库的名称。
 
-在 `SSH Connection` 部分：
+在`SSH Connection`部分下：
 
 * `Remote Address`：要通过SSH连接的服务器的IP地址或主机名
-* `Username`：和 [!DNL Commerce Intelligence] Linux (SSH)用户名（应为rjmetric）
+* `Username`： [!DNL Commerce Intelligence] Linux (SSH)用户名（应为rjmetric）
 * `SSH Port`：服务器上的SSH端口（默认为22）
 
-完成后，单击 **[!UICONTROL Save Test]** 以完成设置。
+完成后，单击&#x200B;**[!UICONTROL Save Test]**&#x200B;以完成设置。
 
 ### 相关
 
-* [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

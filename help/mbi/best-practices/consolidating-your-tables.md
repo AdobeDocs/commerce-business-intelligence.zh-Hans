@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # 合并表
 
-如果您在多个商店前线或市场中进行操作，则可能会单独存储类似的数据库。 在 [!DNL Adobe Commerce Intelligence]，可以轻松地将不同数据库中的类似表整合在一起。
+如果您在多个商店前线或市场中进行操作，则可能会单独存储类似的数据库。 在[!DNL Adobe Commerce Intelligence]中，将不同数据库中的相似表合并到一起很容易。
 
-例如，您可能拥有 `orders` 表 `Market A`和类似的 `orders` 表 `Market B`. [!DNL Commerce Intelligence] 可以合并两个表，并允许您同时查看这两个表中的汇总订单数据 `Market A` 和 `B`，并按特定市场进行细分。
+例如，您可能有针对`Market A`的`orders`表以及针对`Market B`的类似`orders`表。 [!DNL Commerce Intelligence]可以合并两个表，并允许您查看来自`Market A`和`B`的汇总订单数据，以及按特定市场进行分段。
 
-要使表合并正常工作，输入表必须 **相似结构**. 换言之，所有输入表都必须包含统一表中所需的数据列。
+若要合并表，输入表必须具有&#x200B;**相似的结构**。 换言之，所有输入表都必须包含统一表中所需的数据列。
 
 本主题讨论统一表的一些最常见用例以及创建自己的统一表所需的后续步骤。
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 如果您在不同品牌和网站下销售产品，则每个品牌或网站的表格结构可能类似。
 
-例如，您可能拥有 `orders` 网站表 `A` 和另一个不同的，但相似的， `orders` 网站表 `B`. 在这种情况下，巩固 `orders` 网站中的表 `A` 和 `B`. 这使您能够查看来自网站的合并收入和订单数 `A` 和 `B`，并能够按这两个网站划分量度。
+例如，您可能有网站`A`的`orders`表和网站`B`的单独但类似的`orders`表。 在这种情况下，合并网站`A`和`B`中的`orders`表可能很有用。 这样，除了能够按网站`A`和`B`划分量度外，您还可以查看这两个网站的合并收入和订单数。
 
 ### 集成旧版数据
 
@@ -45,8 +45,8 @@ ht-degree: 0%
 
 ## 创建、查看或更新统一表
 
-如果您有兴趣向Data Warehouse中添加统一表，请联系 [!DNL Commerce Intelligence] [支持](../guide-overview.md#Submitting-a-Support-Ticket).
+如果您有兴趣向您的Data Warehouse中添加统一表，请联系[!DNL Commerce Intelligence] [支持](../guide-overview.md#Submitting-a-Support-Ticket)。
 
 >[!NOTE]
 >
->因为统一表在 `Data Warehouse Manager`，只能通过以下方式查看和更新这些表 [!DNL Commerce Intelligence] 支持。
+>由于统一表在`Data Warehouse Manager`中不可查看，因此只能由[!DNL Commerce Intelligence]支持人员查看和更新这些表。

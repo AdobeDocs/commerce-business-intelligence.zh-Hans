@@ -6,30 +6,30 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
 
 # 更新周期进度
 
-当您登录 [!DNL Adobe Commerce Intelligence] 仪表板中，可通过多种方式检查上次更新周期的状态。 这完全取决于 [用户权限](../administrator/user-management/user-management.md) 你有。
+登录[!DNL Adobe Commerce Intelligence]仪表板时，可通过多种方式检查上次更新周期的状态。 这取决于您拥有的[用户权限](../administrator/user-management/user-management.md)的类型。
 
 ## 为何要检查更新周期状态？
 
-检查状态更新周期对于您审核中的数据很有用 [!DNL Commerce Intelligence] 帐户。 如果您看到 [不符合您期望的结果](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)例如，以下位置的每日销售额： [!DNL Commerce Intelligence] 与您在eCommerce平台或 [[!DNL Google] 电子商务收入](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) 您可以检查最后一个数据点，以查看更新完成后问题是否得到解决。
+当您审核[!DNL Commerce Intelligence]帐户中的数据时，检查状态更新周期很有用。 如果您看到的[个结果不符合您的预期](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)，例如[!DNL Commerce Intelligence]中的每日销售额与您在电子商务平台或[[!DNL Google] 电子商务收入](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html)中看到的结果不匹配，您可以检查最后一个数据点，以查看在更新完成后问题是否得到解决。
 
-## [!UICONTROL Read-Only] 和 [!UICONTROL Standard] 用户
+## [!UICONTROL Read-Only]和[!UICONTROL Standard]用户
 
-`Read-only` 用户可以登录其功能板，通过将鼠标悬停在页面右上角的图标上，查看数据更新的最近时间。 这会显示何时提取最后一个数据点。
+`Read-only`用户可以登录其仪表板，通过将鼠标悬停在页面右上角的图标上，查看数据更新的最近时间。 这会显示何时提取最后一个数据点。
 
 ![](../../mbi/assets/last-success-data.png)
 
-## [!UICONTROL Admin] 用户
+## [!UICONTROL Admin]用户
 
-`Admin` 用户可以登录功能板，查看上面的最后一个数据点以及其帐户集成的简短状态图标。
+`Admin`用户可以登录到仪表板并查看上面的最后一个数据点，以及帐户集成的简短状态图标。
 
-有关更多详细信息，管理员用户可以单击 **[!UICONTROL Manage Data]** > **[!UICONTROL Integrations]**.
+有关详细信息，管理员用户可以单击&#x200B;**[!UICONTROL Manage Data]** > **[!UICONTROL Integrations]**。
 
 ![](../../mbi/assets/detail-manage-data-integrations.png)
 
@@ -41,4 +41,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您有中断时间（您不希望中断的时间） [!DNL Commerce Intelligence] 以更新您的数据)集，强制更新会启动一个不遵守这些中断小时数的限制的更新周期。
+>如果您设置了封锁时间（您不希望[!DNL Commerce Intelligence]更新数据的时间），则强制更新会启动一个不遵守封锁时间限制的更新周期。

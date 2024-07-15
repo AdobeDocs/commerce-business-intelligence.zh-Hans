@@ -13,10 +13,10 @@ ht-degree: 0%
 
 # 从功能板中删除图表
 
-要从功能板中删除图表，请单击齿轮(![](../../assets/gear-icon.png))图标，然后单击 **[!UICONTROL Remove from Dashboard]**.
+要从仪表板中删除图表，请单击图表右上角的齿轮(![](../../assets/gear-icon.png))图标，然后单击&#x200B;**[!UICONTROL Remove from Dashboard]**。
 
 >[!NOTE]
 >
->删除图表的方式与删除图表不同 [删除它](../../data-user/dashboards/delete-chart.md). 另外， [可以将图表读入功能板](../../data-user/dashboards/add-charts-dashboard.md) 随时。
+>删除图表与[删除图表](../../data-user/dashboards/delete-chart.md)不同。 此外，可以随时将[图表读取到仪表板](../../data-user/dashboards/add-charts-dashboard.md)。
 
 ![删除图表](../../assets/Removing_Charts_from_Dashboards.gif)
