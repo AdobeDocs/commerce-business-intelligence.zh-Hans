@@ -4,9 +4,9 @@ description: 了解如何使用过滤器。
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 0854d644cb72b3fc8b8b31a0bf7e8dca4cc99724
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '356'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 0%
 
      ![已过滤的报告](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
 
-1. 在侧栏中，单击透视(![](../../assets/magento-bi-btn-perspective.png))图标。
+1. 在侧边栏中，单击透视（![透视图标](../../assets/magento-bi-btn-perspective.png)）图标。
 
    ![透视](../../assets/magento-bi-report-builder-filter-perspective.png)<!--{: .zoom}-->
 
