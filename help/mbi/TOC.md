@@ -4,9 +4,9 @@ description: 了解如何使用可用于Adobe Commerce的 [!DNL Commerce Intelli
 breadcrumb-title: Commerce Intelligence用户指南
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Business Performance
-source-git-commit: 2433a614e9858684842804a0ae29fb67f0d41ead
+source-git-commit: cea314102fb3b2164c1498ce1efa60e83c41b188
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '683'
 ht-degree: 0%
 
 ---
@@ -33,9 +33,10 @@ ht-degree: 0%
       - [管理用户权限](administrator/user-management/user-management.md)
       - [重置密码](../mbi/administrator/user-management/reset-password.md)
       - [限制量度访问](../mbi/administrator/user-management/restrict-metric-access.md)
+      - [高级用户管理](../mbi/administrator/user-management/advanced.md)
 - 分析数据{#analyze}
    - [数据分析师](data-analyst.md)
-   - Data Warehouse管理员{#warehouse-manager}
+   - Data Warehouse管理器{#warehouse-manager}
       - [简介](data-analyst/data-warehouse-mgr/tour-dwm.md)
       - [高级计算列类型](data-analyst/data-warehouse-mgr/adv-calc-columns.md)
       - [生成 [!DNL Google Ecommerce] 维度](data-analyst/data-warehouse-mgr/bldg-google-ecomm-dim.md)
@@ -70,7 +71,7 @@ ht-degree: 0%
       - [[!DNL sales_order_item]](data-analyst/data-warehouse-mgr/sales-flat-order-item-table.md)
       - [[!DNL quote]](data-analyst/data-warehouse-mgr/sales-flat-quote-table.md)
       - [[!DNL quote_item]](data-analyst/data-warehouse-mgr/sales-flat-quote-item-table.md)
-   - SQLReport Builder{#sql}
+   - SQL Report Builder {#sql}
       - [使用 [!DNL Cohort Report Builder]](data-analyst/dev-reports/cohort-rpt-bldr.md)
       - [对非基于日期的同类群组使用 [!DNL Cohort Report Builder] ](data-analyst/dev-reports/cohort-rpt-non-date-based.md)
       - [创建定性同类群组分析](data-analyst/dev-reports/create-qual-cohort-analysis.md)
@@ -217,7 +218,7 @@ ht-degree: 0%
       - [使用数据](best-practices/work-data.md)
       - [ [!DNL Google Analytics]中的UTM标记](best-practices/utm-tagging-google.md)
       - [格式化并导入财务数据](best-practices/format-import-financial-data.md)
-      - [分段和过滤的推荐数据Dimension](best-practices/segment-filter.md)
+      - [分段和过滤的建议数据维度](best-practices/segment-filter.md)
       - [检查更新周期状态](best-practices/check-update-cycle.md)
       - [缩短更新周期](best-practices/reduce-update-cycle-time.md)
       - [修改数据库以支持增量复制](best-practices/mod-db-inc-replication.md)
@@ -231,7 +232,7 @@ ht-degree: 0%
    - 使用功能板{#working-dashboards}
       - [共享报告面板](best-practices/share-dashboard-best-practice.md)
       - [构建投资者信息板](best-practices/build-investor-dashboard.md)
-- Tutorials{#tutorials}
+- 教程{#tutorials}
    - [使用 [!DNL Visual Report Builder]](tutorials/using-visual-report-builder.md)
    - [在 [!DNL Visual Report Builder]中使用时间选项](tutorials/time-options-visual-rpt-bldr.md)
    - [为 [!DNL SQL] 查询创建可视化图表](tutorials/create-visuals-from-sql.md)
