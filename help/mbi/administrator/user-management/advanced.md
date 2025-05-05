@@ -392,7 +392,7 @@ ht-degree: 0%
 
 要配置用户组，请执行以下操作：
 
-1. 转到&#x200B;[!UICONTROL **管理用户**] > [!UICONTROL **User Groups]**以查看现有用户组。
+1. 转到&#x200B;[!UICONTROL **管理用户**] > [!UICONTROL **User Groups]**&#x200B;以查看现有用户组。
 
    ![配置用户组](../../assets/configure-user-groups.png)
 

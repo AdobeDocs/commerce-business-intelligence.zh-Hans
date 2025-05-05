@@ -55,7 +55,7 @@ ht-degree: 0%
 >
 >[!DNL SQL Report Builder]查询区分大小写。 请确保您在编写查询时使用正确的大小写，否则您可能会收到意外的结果或错误。
 
-按照查询优化](../../best-practices/optimizing-your-sql-queries.md)的[准则，在[!DNL SQL]编辑器中编写查询。
+按照查询优化[&#128279;](../../best-practices/optimizing-your-sql-queries.md)的准则，在[!DNL SQL]编辑器中编写查询。
 
 >[!IMPORTANT]
 >

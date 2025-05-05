@@ -50,7 +50,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->_您可以限制&#x200B;**[!UICONTROL Standard]**用户访问特定量度](../../administrator/user-management/restrict-metric-access.md)的[权限。_
+>_您可以限制&#x200B;**[!UICONTROL Standard]**&#x200B;用户访问特定量度[&#128279;](../../administrator/user-management/restrict-metric-access.md)的权限。_
 >
 >**[!UICONTROL Standard] _用户可以使用额外的权限设置访问帐单。_
 >

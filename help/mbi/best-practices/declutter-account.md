@@ -15,7 +15,7 @@ ht-degree: 0%
 
 无论您已经与[!DNL Commerce Intelligence]合作六个月还是六年，保持良好的帐户对于您的组织充分利用平台至关重要。 随着时间的推移，用户、功能板、报表、量度和列自然而然地不再需要。 您可能创建了报表供一次性使用并忘记了该报表，或者离开您公司的用户从未停用过其帐户。
 
-通过[!DNL Commerce Intelligence]帐户的所有元素](../best-practices/naming-elements.md))的[标准化、清晰的命名，以下帐户审核步骤可帮助您减少用户的混乱和不必要的分析。 另一个优势包括[可能更快的更新周期](../best-practices/reduce-update-cycle-time.md)。
+通过[!DNL Commerce Intelligence]帐户的所有元素[&#128279;](../best-practices/naming-elements.md))的标准化、清晰的命名，以下帐户审核步骤可帮助您减少用户的混乱和不必要的分析。 另一个优势包括[可能更快的更新周期](../best-practices/reduce-update-cycle-time.md)。
 
 ## 步骤1：识别非活动用户
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 **删除整个仪表板**
 
-1. 选择&#x200B;**[!UICONTROL Manage Data]**，然后选择**[!UICONTROL Dashboards**]。
+1. 选择&#x200B;**[!UICONTROL Manage Data]**，然后选择&#x200B;**[!UICONTROL Dashboards**]。
 1. 单击要删除的仪表板。
 1. 单击&#x200B;**[!UICONTROL Delete Dashboard]**。
 

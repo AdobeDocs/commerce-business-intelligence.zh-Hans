@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ### （选项1）通过[!DNL Google Analytics E-Commerce]跟踪订单引用源数据
 
-如果您使用[!DNL Google Analytics E-Commerce]跟踪您的订单和销售数据，则可以使用[!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md)同步每个订单的转介源数据。 这允许您按反向链接来源（例如，`utm_source`或`utm_medium`）对收入和订单进行分段。 您还可以通过[!DNL Commerce Intelligence]自定义维度（如`User's first order source`）了解客户获取来源。
+如果您使用[!DNL Google Analytics E-Commerce]跟踪您的订单和销售数据，则可以使用[[!DNL [Google Analytics E-Commerce Connector]]](../importing-data/integrations/google-ecommerce.md)同步每个订单的转介源数据。 这允许您按反向链接来源（例如，`utm_source`或`utm_medium`）对收入和订单进行分段。 您还可以通过[!DNL Commerce Intelligence]自定义维度（如`User's first order source`）了解客户获取来源。
 
 ### （选项2）将[!DNL Google Analytics]的客户获取源数据保存在数据库中
 
@@ -51,7 +51,7 @@ ht-degree: 1%
 
 显然有一些客户获取源数据已编码到字符串中。 测试以确认这是访客的最新客户获取来源和相关联的活动数据。 现在您需要知道如何提取数据。
 
-此代码已转换为github](https://github.com/RJMetrics/referral-grabber-php)上托管的[PHP库。 要使用库，`include`引用`ReferralGrabber.php`，然后调用
+此代码已转换为github[&#128279;](https://github.com/RJMetrics/referral-grabber-php)上托管的PHP库。 要使用库，`include`引用`ReferralGrabber.php`，然后调用
 
 `$data = ReferralGrabber::parseGoogleCookie($_COOKIE['__utmz']);`
 

@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![](../../../assets/Google_Adwords_logo.png)
 
-您完成了调查，创建了广告，启动了[!DNL Google]营销活动。 现在该分析您的广告支出数据了，看看您的资金是否得到了有效花销。 使用广告支出数据，您可通过将广告成本和从营销活动中获得的用户的客户存留期价值(CLV)](../../analysis/roi-ad-camp.md)相匹配来[衡量营销活动ROI。
+您完成了调查，创建了广告，启动了[!DNL Google]营销活动。 现在该分析您的广告支出数据了，看看您的资金是否得到了有效花销。 使用广告支出数据，您可通过将广告成本和从营销活动中获得的用户的客户存留期价值(CLV) [&#128279;](../../analysis/roi-ad-camp.md)相匹配来衡量营销活动ROI。
 
 在[!DNL Commerce Intelligence]中输入您的[!DNL Google Adwords]凭据以开始操作。
 

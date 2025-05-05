@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->为避免出现意外或无意义的结果，请确认您使用的任何维度都与您在`Report Builder`中使用的一个或多个量度](https://ga-dev-tools.google/dimensions-metrics-explorer/)兼容。[
+>为避免出现意外或无意义的结果，请确认您使用的任何维度都与您在`Report Builder`中使用的一个或多个量度[&#128279;](https://ga-dev-tools.google/dimensions-metrics-explorer/)兼容。
 
 在您的Data Warehouse中创建一个名为`report`的表。
 

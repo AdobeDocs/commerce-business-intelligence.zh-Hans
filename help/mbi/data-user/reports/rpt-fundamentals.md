@@ -75,7 +75,7 @@ ht-degree: 0%
 在这里，您要执行以下计算：
 
 
-`Time between a customer's registration date and first purchase date`]的&#x200B;_[总和/[注册并购买的客户总数]_
+`Time between a customer's registration date and first purchase date`&rbrack;的&#x200B;_&lbrack;总和/[注册并购买的客户总数]_
 
 您希望看到根据客户的注册日期绘制的计算随时间变化或趋势。 以下是如何[在[!DNL Commerce Intelligence]中创建此量度](../../data-user/reports/ess-manage-data-metrics.md)：
 
