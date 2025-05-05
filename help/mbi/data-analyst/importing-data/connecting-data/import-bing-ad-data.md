@@ -26,4 +26,4 @@ ht-degree: 0%
 1. 在`Save As`对话框中，单击要保存导出文件的文件夹。
 1. 在`File name`框中，为您的文件导出选择一个名称。
 1. 单击&#x200B;**[!UICONTROL Save]**。
-1. 下载文件后，[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)代表您执行第一次上载并设置必要的后端维度。
+1. 下载文件后，[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)代表您执行第一次上载并设置必要的后端维度。

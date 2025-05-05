@@ -25,7 +25,7 @@ ht-degree: 0%
 
 在某些情况下，您也许能够将`order-specific`维度转换为`user-specific`维度以添加为`Repeat Order Probability`图表中的筛选器。 在这些情况下，将返回用户第一订单或最新订单的订单属性（例如，用户的第一订单区域名称）。
 
-如果要创建此类新维度，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+如果要创建此类新维度，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
 
 ## 不同属性订单重复概率的比较
 

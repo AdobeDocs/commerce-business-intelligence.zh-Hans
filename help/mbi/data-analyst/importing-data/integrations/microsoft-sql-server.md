@@ -21,7 +21,7 @@ ht-degree: 0%
 
 本主题介绍如何在四步流程中将您的[!DNL Microsoft SQL]数据库连接到[!DNL Commerce Intelligence]。 此过程需要与服务器连接和SQL相关的一些技术专业知识，并且可能需要团队开发人员的支持。
 
-[!DNL Commerce Intelligence]支持[!DNL Amazon RDS]、[!DNL EC2]、[!DNL Microsoft SQL Azure]和大多数其他云服务器提供程序。 如果您对特定主机有疑问，请[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)，要求我们提供此信息。
+[!DNL Commerce Intelligence]支持[!DNL Amazon RDS]、[!DNL EC2]、[!DNL Microsoft SQL Azure]和大多数其他云服务器提供程序。 如果您对特定主机有疑问，请[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)，要求我们提供此信息。
 
 您的系统需要对数据库运行SELECT查询。 这最初是为了获取数据库结构的快照，然后定期超时以保持数据最新。 您的更新是增量式的，Adobe会限制更新频率和时间，以防止服务器上出现任何不需要的负载。
 

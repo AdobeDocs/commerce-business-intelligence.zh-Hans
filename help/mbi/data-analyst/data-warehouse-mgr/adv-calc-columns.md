@@ -161,7 +161,7 @@ ht-degree: 2%
 
 不用担心。 这里没有列出这并不意味着这是不可能的。 Data Warehouse分析人员的Adobe团队可以提供帮助。
 
-要定义新的计算列，请[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)，其中包含有关要生成的项目的详细信息。
+要定义新的计算列，请[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)，其中包含有关要生成的项目的详细信息。
 
 ## 相关文档
 

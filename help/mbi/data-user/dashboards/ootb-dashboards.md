@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >某些功能板的可用性取决于您的数据集。
 
-如果您有疑问或有兴趣向帐户添加程序包，请提交[支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)以获取帮助。
+如果您有疑问或有兴趣向帐户添加程序包，请提交[支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)以获取帮助。
 
 ## 执行概述
 

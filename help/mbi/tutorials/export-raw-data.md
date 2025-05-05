@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 导出原始数据
 
-通过使用原始数据导出，您可以从Data Warehouse中导出记录，以便更详细地了解为您的仪表板提供支持的内容。 此外，原始数据导出还可以帮助您[查明数据差异](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html)。
+通过使用原始数据导出，您可以从Data Warehouse中导出记录，以便更详细地了解为您的仪表板提供支持的内容。 此外，原始数据导出还可以帮助您[查明数据差异](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=zh-Hans)。
 
 通过原始数据导出，可访问通过取消标准化和预聚合相关量度生成的其他列和维度。 例如，`User's first order date`是一个维度，您可以为[!DNL Commerce Intelligence]中的每个用户导出该维度，但它可能在数据库中不可用。
 
