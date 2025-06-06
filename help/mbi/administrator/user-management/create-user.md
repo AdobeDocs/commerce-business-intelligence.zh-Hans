@@ -4,14 +4,14 @@ description: 了解如何添加新 [!DNL Commerce Intelligence] 用户，以及�
 exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
 role: Admin, User
 feature: User Management
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 99fc6c26017b5da4d066d400be1888ab4032590d
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
 
 ---
 
-# 添加新[!DNL Adobe Commercer Intelligence]用户
+# 添加新[!DNL Adobe Commerce Intelligence]用户
 
 1. 单击右上角的公司名称，然后从下拉列表中选择&#x200B;**[!UICONTROL Invite User]**。
 1. 输入用户名和电子邮件。
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->默认情况下，新用户没有任何仪表板。 Adobe建议立即与新用户[共享](../../data-user/dashboards/share-dashboard-with-users.md)必要的仪表板。
+>默认情况下，新用户没有任何仪表板。 Adobe建议您[立即与新用户共享](../../data-user/dashboards/share-dashboard-with-users.md)必要的功能板。
 
 ## 更新您的电子邮件地址或密码
 
@@ -40,4 +40,4 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->每个帐户都有合同数量的许可证或名额。 如果您已达到限制或想了解更多信息，请[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+>每个帐户都有合同数量的许可证或名额。 如果您已达到限制或想了解更多信息，请[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
