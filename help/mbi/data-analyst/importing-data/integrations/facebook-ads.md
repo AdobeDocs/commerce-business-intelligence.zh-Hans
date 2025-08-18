@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![](../../../assets/facebook-ads-logo.png)
 
-你做了调查，做了广告，在[!DNL Facebook]上启动了你的营销活动。 现在该分析您的广告支出数据了，看看您的资金是否得到了有效花销。 使用广告支出数据，您可通过将广告成本和从营销活动中获得的用户的客户存留期价值(CLV)[相匹配来](../../../data-analyst/analysis/roi-ad-camp.md)衡量营销活动ROI。
+你做了调查，做了广告，在[!DNL Facebook]上启动了你的营销活动。 现在该分析您的广告支出数据了，看看您的资金是否得到了有效花销。 使用广告支出数据，您可通过将广告成本和从营销活动中获得的用户的客户存留期价值(CLV) [相匹配来](../../../data-analyst/analysis/roi-ad-camp.md)衡量营销活动ROI。
 
 将您的[!DNL Facebook Ad]数据连接到[!DNL Commerce Intelligence]是一个简单的三步过程：
 

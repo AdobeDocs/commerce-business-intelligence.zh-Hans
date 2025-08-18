@@ -15,7 +15,7 @@ ht-degree: 0%
 
 你调查了你的受众，你创建了你的营销活动，你投资了几个营销渠道。 一段时间已经过去了，这些渠道的效果如何？ 哪个渠道引入的新用户最多？ 哪个来源对您的总收入贡献最大？
 
-使用[!DNL Adobe Commerce Intelligence]，您可以按反向链接来源轻松对您的收入和用户进行分段，无论该来源是对应于[!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en)还是自定义数据字段。 此分段允许您找到表现最佳的渠道并更好地投入营销预算。
+使用[!DNL Adobe Commerce Intelligence]，您可以按反向链接来源轻松对您的收入和用户进行分段，无论该来源是对应于[[!DNL [Google Analytics' UTM fields]]](https://support.google.com/analytics/answer/1191184?hl=en)还是自定义数据字段。 此分段允许您找到表现最佳的渠道并更好地投入营销预算。
 
 本主题探究了可用于揭示您最有价值的营销渠道的一些报表：
 

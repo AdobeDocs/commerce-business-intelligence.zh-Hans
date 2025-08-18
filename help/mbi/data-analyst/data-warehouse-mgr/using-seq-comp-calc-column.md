@@ -60,6 +60,6 @@ ht-degree: 0%
 
 1. 为页面顶部的列提供一个名称，然后单击&#x200B;**[!UICONTROL Save]**。
 
-1. 该列可立即使用&#x200B;*1}。*
+1. 该列可立即使用&#x200B;*1&rbrace;。*
 
 ![秒](../../assets/SEC_new.png)

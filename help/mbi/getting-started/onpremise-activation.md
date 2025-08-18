@@ -118,7 +118,7 @@ ht-degree: 0%
 
 [!UICONTROL Port]: `3306`
 
-[！UICONTROL用户名]: `mbi`
+[!UICONTROL 用户名]: `mbi`
 
 [!UICONTROL Password]：在上一部分中显示了[输入密码]
 

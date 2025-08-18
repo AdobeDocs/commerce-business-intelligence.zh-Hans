@@ -53,8 +53,8 @@ ht-degree: 0%
 * **[!UICONTROL Average LTV (all)]**
    * [!UICONTROL Metric]： `Avg lifetime revenue`
    * [!UICONTROL Time period]： `All time`
-   * 
-     [！UICONTROL间隔]: `None`
+   * &#x200B;
+     [!UICONTROL 间隔]: `None`
    * [!UICONTROL Chart Type]： `Number (scalar)`
 
 * **[!UICONTROL Average LTV (customers / non-guest checkout)]**
@@ -64,8 +64,8 @@ ht-degree: 0%
          * [`B`] `Customer's lifetime number of orders` **大于**`0`
 
    * [!UICONTROL Time period]： `All time`
-   * 
-     [！UICONTROL间隔]: `None`
+   * &#x200B;
+     [!UICONTROL 间隔]: `None`
    * [!UICONTROL Chart Type]： `Number (scalar)`
 
 * **[!UICONTROL Average and Median LTV]**
@@ -73,19 +73,19 @@ ht-degree: 0%
    * 量度`2`： `Median lifetime revenue`
    * [!UICONTROL Time period]： `All time`
    * [!UICONTROL Interval]： `By Month`
-   * 
-     [！UICONTROL图表类型]: `Line`
+   * &#x200B;
+     [!UICONTROL 图表类型]: `Line`
    * 取消选中`Multiple Y-Axes`
 
 * 按生命周期订单数&#x200B;**LTV**
    * 量度`1`： `Avg lifetime revenue`
    * 量度`2`： `New customers`
    * [!UICONTROL Time period]： `All time`
-   * 
-     [！UICONTROL间隔]: `None`
+   * &#x200B;
+     [!UICONTROL 间隔]: `None`
    * [!UICONTROL Group by]： `Customer's lifetime number of orders`
-   * 
-     [！UICONTROL图表类型]: `Line`
+   * &#x200B;
+     [!UICONTROL 图表类型]: `Line`
 
   >[!NOTE]
   >

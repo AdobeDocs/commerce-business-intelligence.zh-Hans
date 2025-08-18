@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 先决条件
 
-**导入您的广告成本数据** — 将[!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md)连接到[!DNL Adobe Commerce Intelligence] — 这会自动同步您在Commerce Intelligence中的[!DNL AdWords]支出。
+**导入您的广告成本数据** — 将[[!DNL [Google AdWords]]](../importing-data/integrations/google-adwords.md)连接到[!DNL Adobe Commerce Intelligence] — 这会自动同步您在Commerce Intelligence中的[!DNL AdWords]支出。
 
 **跟踪用户获取渠道数据** — 若要将[!DNL Google AdWords]数据与数据库中的特定订单绑定，必须[通过](../analysis/google-track-user-acq.md)跟踪用户获取[!DNL Google Analytics E-commerce]。 这样，您就可以将每个订单与utm源和媒介连接。
 

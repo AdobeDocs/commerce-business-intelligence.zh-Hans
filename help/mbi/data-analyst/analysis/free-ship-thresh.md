@@ -66,9 +66,9 @@ ht-degree: 0%
 
 * 量度`A`： `Average Order Value`
 * [!UICONTROL Time period]： `Time period with shipping rule A`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Scalar`
 
 * **装运规则为A**&#x200B;的按小计分段列出的订单数
@@ -80,53 +80,53 @@ ht-degree: 0%
 
 * 量度`A`： `Number of orders`
 * [!UICONTROL Time period]： `Time period with shipping rule A`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]： `Order subtotal (buckets)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Column`
 
 * 装运规则为A **的订单小计的**&#x200B;百分比
    * [!UICONTROL Metric]： `Number of orders`
 
    * [!UICONTROL Metric]： `Number of orders`
-   * 
-     [！UICONTROL分组依据]: `Independent`
+   * &#x200B;
+     [!UICONTROL 分组依据]: `Independent`
    * [!UICONTROL Formula]： `(A / B)`
-   * 
+   * &#x200B;
      [!UICONTROL Format]: `%`
 
 * 量度`A`： `Number of orders by subtotal (hide)`
 * 量度`B`： `Total number of orders (hide)`
 * [!UICONTROL Formula]： `% of orders`
 * [!UICONTROL Time period]： `Time period with shipping rule A`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]： `Order subtotal (buckets)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Line`
 
 * 小计超过装运规则A **的订单的**&#x200B;百分比
    * [!UICONTROL Metric]： `Number of orders`
-   * 
+   * &#x200B;
      [!UICONTROL Perspective]: `Cumulative`
 
    * [!UICONTROL Metric]： `Number of orders`
-   * 
-     [！UICONTROL分组依据]: `Independent`
+   * &#x200B;
+     [!UICONTROL 分组依据]: `Independent`
 
    * [!UICONTROL Formula]： `1- (A / B)`
-   * 
+   * &#x200B;
      [!UICONTROL Format]: `%`
 
 * 量度`A`： `Number of orders by subtotal`
 * 量度`B`： `Total number of orders (hide)`
 * [!UICONTROL Formula]： `% of orders`
 * [!UICONTROL Time period]： `Time period with shipping rule A`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]： `Order subtotal (buckets)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Line`
 
 
