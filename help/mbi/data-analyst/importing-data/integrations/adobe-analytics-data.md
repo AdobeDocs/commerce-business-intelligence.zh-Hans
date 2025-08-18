@@ -48,6 +48,6 @@ ht-degree: 0%
 | 限制 | 描述 |
 | --- | --- |
 | `Historical data period` | 与其他第三方集成一样，[!DNL Adobe Analytics]集成提取有限数量的历史数据，然后继续保持数据更新。 历史时段配置为2周。 |
-| `Empty component combinations` | 某些量度和维度组合不包含数据。 如果选择了此类组合进行复制，[!DNL Commerce Intelligence]会从复制表中排除该列。 要避免选择此类组合，您可以首先在[[!DNL Adobe Analytics] Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html)中创建报告，以验证您是否获得了预期的数据。 |
+| `Empty component combinations` | 某些量度和维度组合不包含数据。 如果选择了此类组合进行复制，[!DNL Commerce Intelligence]会从复制表中排除该列。 要避免选择此类组合，您可以首先在[[!DNL Adobe Analytics] Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans)中创建报告，以验证您是否获得了预期的数据。 |
 | `Re-authorization cadence` | 每两周需要重新授权[!DNL Adobe Analytics]集成。 要重新授权，请转到集成的“编辑”页面并单击&#x200B;**[!UICONTROL Re-Authorize with [!DNL Adobe Analytics]]**。 |
 | `One dimension per row` | [!DNL Adobe Analytics]一次为一个维度提供量度数据。 如果在设置期间选择多个维度，则[!DNL Commerce Intelligence]表中的每一行都包含一个维度值，并且每个维度都为null。 |

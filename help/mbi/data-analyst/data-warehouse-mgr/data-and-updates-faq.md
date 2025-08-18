@@ -40,8 +40,8 @@ ht-degree: 0%
 
 ## 为什么[!DNL Google ECommerce]数据与我的数据库不同？ {#ecommdatabase}
 
-[!DNL Google Analytics]和数据库之间的差异可能由各种原因引起。 跟踪未正确启用、用户访问无痕以及点击事件未正确工作只是几个示例。 如果您的收入和订单看起来不正确，[请查看此主题](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html)以诊断问题。
+[!DNL Google Analytics]和数据库之间的差异可能由各种原因引起。 跟踪未正确启用、用户访问无痕以及点击事件未正确工作只是几个示例。 如果您的收入和订单看起来不正确，[请查看此主题](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=zh-Hans)以诊断问题。
 
 ## 如何解决数据不一致问题？ {#datadiscrepancy}
 
-Adobe知道，看到不一致的数据可能会让人感到沮丧。 尝试使用[数据差异核对清单](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html)或[数据导出教程](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html)来诊断问题。 如果您仍然被阻塞，[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+Adobe知道，看到不一致的数据可能会让人感到沮丧。 尝试使用[数据差异核对清单](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html?lang=zh-Hans)或[数据导出教程](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=zh-Hans)来诊断问题。 如果您仍然被阻塞，[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。

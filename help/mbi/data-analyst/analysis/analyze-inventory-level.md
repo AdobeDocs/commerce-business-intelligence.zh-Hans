@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 分析库存水平
 
-本主题将演示如何设置功能板，该功能板提供有关当前库存的洞察信息，并包含有关旧架构或新架构的客户端说明。 如果您在&#x200B;**[!UICONTROL Data Warehouse Views]**&#x200B;菜单下没有&#x200B;**[!UICONTROL Manage Data]**&#x200B;选项，则表示您使用的是旧版架构。 如果您使用的是旧架构，请在到达以下[计算列](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)说明中的指定部分后，提交主题为&#x200B;**[!UICONTROL INVENTORY ANALYSIS]**&#x200B;的&#x200B;_新支持请求_。
+本主题将演示如何设置功能板，该功能板提供有关当前库存的洞察信息，并包含有关旧架构或新架构的客户端说明。 如果您在&#x200B;**[!UICONTROL Data Warehouse Views]**&#x200B;菜单下没有&#x200B;**[!UICONTROL Manage Data]**&#x200B;选项，则表示您使用的是旧版架构。 如果您使用的是旧架构，请在到达以下[计算列](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)说明中的指定部分后，提交主题为&#x200B;**[!UICONTROL INVENTORY ANALYSIS]**&#x200B;的&#x200B;_新支持请求_。
 
 ## 要跟踪的列：
 
@@ -242,4 +242,4 @@ ht-degree: 0%
    * &#x200B;
      [!UICONTROL Chart type]: `Table`
 
-如果您在构建此分析时遇到任何问题，或只是想与专业服务团队接洽，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+如果您在构建此分析时遇到任何问题，或只是想与专业服务团队接洽，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。

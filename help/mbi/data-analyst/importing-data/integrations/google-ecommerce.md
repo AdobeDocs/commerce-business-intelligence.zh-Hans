@@ -60,7 +60,7 @@ ht-degree: 0%
 ## 相关：
 
 * [需要 [!DNL Google ECommerce] 数据](../integrations/google-ecommerce-data.md)
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
 * [正在设置 [!DNL Google ECommerce] 跟踪](https://support.google.com/analytics/answer/1009612?hl=en)
 * [了解您最有价值的客户获取来源和渠道](../../analysis/most-value-source-channel.md)
 * [提高广告促销活动的ROI](../../analysis/roi-ad-camp.md)

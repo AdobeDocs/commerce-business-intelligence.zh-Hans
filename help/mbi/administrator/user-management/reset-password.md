@@ -17,4 +17,4 @@ ht-degree: 0%
 
 此外，您还可以使用[!DNL Commerce Intelligence]页面在&#x200B;**[!UICONTROL Personal Settings]**&#x200B;中更改密码。
 
-如果您重置密码并且仍被锁定在帐户之外，请按照[这些提示](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html)帮助查明问题。
+如果您重置密码并且仍被锁定在帐户之外，请按照[这些提示](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html?lang=zh-Hans)帮助查明问题。

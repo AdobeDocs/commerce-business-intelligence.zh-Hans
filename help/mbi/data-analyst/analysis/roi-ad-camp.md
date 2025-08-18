@@ -99,7 +99,7 @@ ht-degree: 0%
 >
 >此示例假设所有促销活动成本都专门用于生成特定产品的购买。 假设所有成本都花费在生成购买上，则生成的ROI将考虑最坏的情况（每次购买的最高成本）。 您可以确保实际ROI高于此计算。 示例：假设您在一个产生10个新用户和10次购买的营销活动上花费$20，则每次购买的实际成本为$1。 假设所有成本都花在了获取新用户上，则每次购买的成本为2美元。
 
-开始之前，[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)以将以下维度联接到行项目表(`sales\_flat\_order\_item, order\_item`)：
+开始之前，[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)以将以下维度联接到行项目表(`sales\_flat\_order\_item, order\_item`)：
 
 * 订单的来源（如果您仅在用户级别跟踪反向链接来源，则加入用户的来源）
 * 订单的促销活动（如果您仅在用户级别跟踪反向链接来源，则加入用户的促销活动）

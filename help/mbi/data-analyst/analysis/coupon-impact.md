@@ -151,4 +151,4 @@ ht-degree: 1%
 
 ## 正在结束 {#wrapup}
 
-您可以创建大量分析，以更好地了解客户如何使用优惠券。 有没有想过分析客户如何使用优惠券，或者分析使用优惠券所需的时间？ 那么怎样才能找到最优的折扣额 — 哪个金额会鼓励重复购买者、更高的平均订单价值和更高的存留期收入？ 要获得这些类型问题的帮助，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+您可以创建大量分析，以更好地了解客户如何使用优惠券。 有没有想过分析客户如何使用优惠券，或者分析使用优惠券所需的时间？ 那么怎样才能找到最优的折扣额 — 哪个金额会鼓励重复购买者、更高的平均订单价值和更高的存留期收入？ 要获得这些类型问题的帮助，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
