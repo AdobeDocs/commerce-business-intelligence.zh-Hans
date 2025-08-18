@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 格式化和导入数据
 
-如果您使用的集成当前不受[!DNL Adobe Commerce Intelligence]支持，您仍然可以使用[文件上传功能](using-file-uploader.md)将数据导入Data Warehouse。 本主题介绍用于上传电子商务数据的理想数据格式。
+如果您使用的集成当前不受[!DNL Adobe Commerce Intelligence]支持，您仍可以使用[文件上传功能](using-file-uploader.md)将数据导入Data Warehouse。 本主题介绍用于上传电子商务数据的理想数据格式。
 
 ## `Orders`表
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 | `Customer` | 下订单的客户。 |
 | `Order total` | 订单总计。 这可能是基于计算的列，其中其他列中的值（如小计和运费）构成此列的总数。 |
 | `Currency` | 订单付款币种。 包括（如果相关）。 |
-| ` Order status` | 订单的状态，如`In Progress`、`Refunded`或`Complete`。 此列的值会更改（如果不完整）。 可以使用`File Uploads`页面上的[附加数据功能](../../../data-analyst/importing-data/connecting-data/using-file-uploader.md)导入新的和更新的数据。 |
+| ` Order status` | 订单的状态，如`In Progress`、`Refunded`或`Complete`。 此列的值会更改（如果不完整）。 可以使用[页面上的](../../../data-analyst/importing-data/connecting-data/using-file-uploader.md)附加数据功能`File Uploads`导入新的和更新的数据。 |
 | `Acquisition/marketing channel` | 下订单的客户引用的客户获取或营销渠道。 |
 | `Order datetime` | 创建订单的日期和时间。 |
 | `Order updated at` | 上次修改订单记录的日期和时间。 |

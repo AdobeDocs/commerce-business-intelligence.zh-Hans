@@ -1,6 +1,6 @@
 ---
-title: SQL和Data Warehouse管理器之间的区别
-description: 了解SQL和Data Warehouse管理器之间的区别。
+title: SQL和Data Warehouse Manager之间的区别
+description: 了解SQL和Data Warehouse Manager之间的差异。
 exl-id: 31dd7a04-5c03-4399-b67e-f51703eb9fea
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
@@ -21,8 +21,8 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->使用[!DNL SQL]编辑器创建的列未保存到Data Warehouse中。 您始终可以访问包含列的查询，但如果您要在多个报表中使用列，则必须在每个报表的查询中重新创建该列。 这意味着使用[!DNL SQL]编辑器创建的列不能在传统[!DNL Report Builder]中使用。
+>使用[!DNL SQL]编辑器创建的列未保存到Data Warehouse。 您始终可以访问包含列的查询，但如果您要在多个报表中使用列，则必须在每个报表的查询中重新创建该列。 这意味着使用[!DNL SQL]编辑器创建的列不能在传统[!DNL Report Builder]中使用。
 
-## Data Warehouse管理器中的列
+## Data Warehouse Manager中的列
 
 列取决于更新周期，因此必须先完成一个完整的周期，然后才能对其进行编辑。 这些列将保存到Data Warehouse管理器，并可在传统[!DNL Report Builder]或[!DNL SQL Report Builder]中使用。

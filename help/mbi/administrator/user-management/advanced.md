@@ -3,13 +3,13 @@ title: 高级用户管理
 description: 增强数据可视性、简化报告、按用户组定制访问、简化仪表板共享并确保组织的安全性和可扩展性。
 role: Admin, User
 feature: User Management
-source-git-commit: 42871886d12b97ee52aa270da6f0186a9a4eaddc
+exl-id: d96a075d-53ab-48d3-ba83-3ff4298a0cb7
+source-git-commit: df408b8947a62cdb498b56370be965c89c45f6ff
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
 
 ---
-
 
 # 高级用户管理
 
@@ -392,7 +392,7 @@ ht-degree: 0%
 
 要配置用户组，请执行以下操作：
 
-1. 转到&#x200B;[!UICONTROL **管理用户**] > [!UICONTROL **User Groups]**&#x200B;以查看现有用户组。
+1. 转到&#x200B;[!UICONTROL **管理用户**] > [!UICONTROL **User Groups]**以查看现有用户组。
 
    ![配置用户组](../../assets/configure-user-groups.png)
 

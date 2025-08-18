@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## 为什么我的数据发生了更改？ {#datachange}
 
-由于新数据正在同步到您的Data Warehouse，图表值在一天中可能会发生更改。 此外，由于[重新检查](../data-warehouse-mgr/cfg-data-rechecks.md)，现有数据列的值可能会更改。 重新检查是一个在数据列中查找已更改值的进程，例如从`open`移至`shipped`的订单状态。
+由于新数据正在同步到您的Data Warehouse，图表值可能会在一天中发生更改。 此外，由于[重新检查](../data-warehouse-mgr/cfg-data-rechecks.md)，现有数据列的值可能会更改。 重新检查是一个在数据列中查找已更改值的进程，例如从`open`移至`shipped`的订单状态。
 
 有几种不同的方式[可以检查更新周期](../../best-practices/check-update-cycle.md)的状态，具体取决于用户的权限设置。
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ## 为什么更新周期需要很长时间？ {#updatecycletime}
 
-许多因素都会增加本已冗长的更新时间。 某些[复制方法](../data-warehouse-mgr/cfg-replication-methods.md)、[更高的重新检查频率](../data-warehouse-mgr/cfg-data-rechecks.md)以及仪表板和图表的数量只是少数参与者。 Adobe建议[重新配置某些设置](../../best-practices/reduce-update-cycle-time.md)和[优化数据库以进行分析](../../best-practices/opt-db-analysis.md)以减少更新时间。
+许多因素都会增加本已冗长的更新时间。 某些[复制方法](../data-warehouse-mgr/cfg-replication-methods.md)、[更高的重新检查频率](../data-warehouse-mgr/cfg-data-rechecks.md)以及仪表板和图表的数量只是少数参与者。 Adobe建议[重新配置某些设置](../../best-practices/reduce-update-cycle-time.md)和[优化数据库以进行analysis](../../best-practices/opt-db-analysis.md)以缩短更新时间。
 
 ## 更新周期完成时是否可以通知我？ {#notifyupdate}
 
@@ -40,8 +40,8 @@ ht-degree: 0%
 
 ## 为什么[!DNL Google ECommerce]数据与我的数据库不同？ {#ecommdatabase}
 
-[!DNL Google Analytics]和数据库之间的差异可能由各种原因引起。 跟踪未正确启用、用户访问无痕以及点击事件未正确工作只是几个示例。 如果您的收入和订单看起来不正确，[请查看此主题](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=zh-Hans)以诊断问题。
+[!DNL Google Analytics]和数据库之间的差异可能由各种原因引起。 跟踪未正确启用、用户访问无痕以及点击事件未正确工作只是几个示例。 如果您的收入和订单看起来不正确，[请查看此主题](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html)以诊断问题。
 
 ## 如何解决数据不一致问题？ {#datadiscrepancy}
 
-Adobe知道，看到不一致的数据可能会让人感到沮丧。 尝试使用[数据差异核对清单](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html?lang=zh-Hans)或[数据导出教程](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=zh-Hans)来诊断问题。 如果您仍然被阻塞，[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+Adobe知道，看到不一致的数据可能会让人感到沮丧。 尝试使用[数据差异核对清单](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html)或[数据导出教程](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html)来诊断问题。 如果您仍然被阻塞，[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。

@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 在[`Report Builder`](../../tutorials/using-visual-report-builder.md)中，您可以使用帐户中的[定义的量度](../../data-user/reports/ess-manage-data-metrics.md)创建强大的可视化图表。 在公式中组合这些量度允许您从数据获取其他见解。 本主题介绍如何在`Report Builder`中使用公式 — 让我们跳入！
 
-## 什么是`formula`？{#what}
+## 什么是`formula`？ {#what}
 
 在`Report Builder`中，`formula`只是基于某些数学逻辑的一个或多个量度的组合。 典型示例如下所示：
 
@@ -63,6 +63,6 @@ ht-degree: 0%
 
 ## 正在结束 {#wrapup}
 
-您是否注意到上述示例中公式的`timestamp`、`groupings`、`perspectives`和`filters`继承自其输入量度？ 请记住，公式可用于使用`perspectives`和[独立时间选项](../../tutorials/time-options-visual-rpt-bldr.md){： target=&quot;_blank&quot;}，就像量度一样。
+您是否注意到上述示例中公式的`timestamp`、`groupings`、`perspectives`和`filters`继承自其输入量度？ 请记住，公式可用于使用`perspectives`和[独立的时间选项](../../tutorials/time-options-visual-rpt-bldr.md){: target="_blank"}，就像量度一样。
 
-如果您对在`Report Builder`中使用公式有任何其他问题，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+如果您对在`Report Builder`中使用公式有任何其他问题，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。

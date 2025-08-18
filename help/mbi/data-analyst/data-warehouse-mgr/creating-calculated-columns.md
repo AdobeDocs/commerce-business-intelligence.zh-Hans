@@ -15,7 +15,7 @@ ht-degree: 0%
 
 在分析数据时，整合来自不同来源的数据会很有帮助。 要按客户获取来源对收入进行分组，并关联`orders`表中的数据和[!DNL Google Analytics]数据？ 您可能需要按客户性别对收入进行分组，或将客户属性加入交易数据以进行分段。 本主题将讨论如何做到这一点。
 
-在开始之前，Adobe建议您查看[计算列类型指南](../../data-analyst/data-warehouse-mgr/calc-column-types.md)，以了解有关可以在Data Warehouse管理器中创建的列类型的信息，以及它们的定义和示例。
+在开始使用之前，Adobe建议您查看[计算列类型指南](../../data-analyst/data-warehouse-mgr/calc-column-types.md)，以了解有关您可以在Data Warehouse Manager中创建的列类型的信息，以及它们的定义和示例。
 
 1. 若要开始，请单击&#x200B;**[!DNL Manage Data > Data Warehouse]**。
 

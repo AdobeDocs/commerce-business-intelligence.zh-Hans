@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 将[!DNL QuickBooks]添加为[!DNL Commerce Intelligence]中的数据源
 
-1. 转到&#x200B;**[!UICONTROL Manage Data** > **Data Sources]**&#x200B;下的`Integrations`页面。
+1. 转到`Integrations`下的&#x200B;**[!UICONTROL Manage Data** > **Data Sources]**&#x200B;页面。
 1. 单击&#x200B;**[!UICONTROL Add Integration]**，它位于屏幕右侧的`Data Sources`表上方。
 1. 单击[!DNL QuickBooks]图标。
 1. 单击&#x200B;**[!UICONTROL Connect to Quickbooks]**。
@@ -40,4 +40,4 @@ ht-degree: 0%
 ## 相关
 
 * [需要 [!DNL QuickBooks] 数据](../integrations/quickbooks-data.md)
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 0%
 * [方便的参考地图](#map)
 * [高级计算列](#advanced)
 
-在[Data Warehouse管理器](../data-warehouse-mgr/tour-dwm.md)内，您可以创建列以扩充和优化数据以供分析。 [可以通过选择Data Warehouse管理器中的任何表并单击&#x200B;**[!UICONTROL Create New Column]**&#x200B;来访问此功能](../data-warehouse-mgr/creating-calculated-columns.md)。
+在[Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md)中，您可以创建列以扩充和优化数据以供分析。 [可以通过选择Data Warehouse管理器中的任何表并单击](../data-warehouse-mgr/creating-calculated-columns.md)来访问此功能&#x200B;**[!UICONTROL Create New Column]**。
 
-本主题介绍可使用Data Warehouse管理器创建的列的类型。 它还涵盖了说明、该列的视觉浏览以及创建列所需的所有输入的[引用映射](#map)。 有三种方法可创建计算列：
+本主题介绍可使用Data Warehouse Manager创建的列类型。 它还涵盖了说明、该列的视觉浏览以及创建列所需的所有输入的[引用映射](#map)。 有三种方法可创建计算列：
 
 1. [相同表计算列](#sametable)
 1. [一对多计算列](#onetomany)
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 年龄计算列返回当前时间和某个输入时间之间的秒数。
 
-以下示例在`customers`表中创建`Seconds since customer's most recent order`。 这可用于构建未在`X days`中进行购买（有时称为流失）的客户的用户列表。
+以下示例在`Seconds since customer's most recent order`表中创建`customers`。 这可用于构建未在`X days`中进行购买（有时称为流失）的客户的用户列表。
 
 ![](../../assets/age.gif)
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 货币转换器计算列将列的本机货币转换为所需的新货币。
 
-下面的示例创建了`base\_grand\_total In AED`，在`sales\_flat\_order`表中将`base\_grand\_total`从本机货币转换为AED。 此列非常适用于具有多种货币、希望以当地货币进行报告的商店。
+下面的示例创建了`base\_grand\_total In AED`，在`base\_grand\_total`表中将`sales\_flat\_order`从本机货币转换为AED。 此列非常适用于具有多种货币、希望以当地货币进行报告的商店。
 
 对于Commerce客户端，`base\_currency\_code`字段通常存储本机货币。 `Spot Time`字段应与量度中使用的日期匹配。
 
@@ -69,9 +69,9 @@ ht-degree: 0%
 
 此类型的计算列返回多个表&#x200B;*上的值的计数*&#x200B;到同一个表。
 
-在以下示例中，在`customers`表上创建维度`Customer's lifetime number of canceled orders`（具有`orders.status`的筛选器）。
+在以下示例中，在`Customer's lifetime number of canceled orders`表上创建维度`customers`（具有`orders.status`的筛选器）。
 
-![](../../assets/many_to_one.gif){： width=&quot;699&quot; height=&quot;351&quot;}
+![](../../assets/many_to_one.gif){: width="699" height="351"}
 
 ### 总和 {#sum}
 
@@ -101,7 +101,7 @@ ht-degree: 0%
 
 当您试图分析和回答有关业务的问题时，可能会遇到无法构建所需确切列的情况。
 
-为确保快速切换，Adobe建议查看[高级计算列类型](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md)指南，以了解Adobe支持团队可以生成的列类型。 该主题还涵盖了创建列所需的信息 — 请将其包含在您的请求中。
+为确保快速回转，Adobe建议查看[高级计算列类型](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md)指南，以了解Adobe支持团队可以构建的列类型。 该主题还涵盖了创建列所需的信息 — 请将其包含在您的请求中。
 
 ## 相关文档
 

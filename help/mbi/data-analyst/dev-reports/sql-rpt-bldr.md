@@ -1,12 +1,12 @@
 ---
-title: 使用SQLReport Builder
-description: 了解使用SQLReport Builder的细节。
+title: 使用SQL Report Builder
+description: 了解使用SQL Report Builder的详细情况。
 exl-id: 3a485b00-c59d-4bc5-b78b-57e9e92dd9d6
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1378'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ ht-degree: 0%
 >
 >需要[管理员权限](../../administrator/user-management/user-management.md)才能创建和编辑SQL图表。 `Standard`用户可以在功能板上重新排列这些图表，并且`Read-only`用户具有与传统图表相同的体验。 此外，`Read-only`用户无权访问查询的文本。
 
-请观看[培训视频](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=zh-Hans)以了解更多信息。
+请观看[培训视频](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html)以了解更多信息。
 
-[!DNL SQL]或结构化查询语言是一种用于与数据库通信的编程语言。 在[!DNL Commerce Intelligence]中，[!DNL SQL]用于查询或检索您Data Warehouse中的数据。 查看仪表板上的报告 — 幕后，每个报告都由[!DNL SQL]查询提供支持。
+[!DNL SQL]或结构化查询语言是一种用于与数据库通信的编程语言。 在[!DNL Commerce Intelligence]中，[!DNL SQL]用于从Data Warehouse中查询或检索数据。 查看仪表板上的报告 — 幕后，每个报告都由[!DNL SQL]查询提供支持。
 
-您可以使用[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md)直接查询您的Data Warehouse、查看结果并将其转换为图表。 您可以通过单击&#x200B;**[!UICONTROL Report Builder** > **[!DNL SQL Report Builder]]**&#x200B;开始使用[!DNL SQL Report Builder]创建报告。
+您可以使用[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md)直接查询您的Data Warehouse、查看结果并将其转换为图表。 您可以通过单击[!DNL SQL Report Builder]开始使用&#x200B;**[!UICONTROL Report Builder** > **[!DNL SQL Report Builder]]**&#x200B;创建报告。
 
-请观看[培训视频](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=zh-Hans)以了解更多信息。
+请观看[培训视频](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html)以了解更多信息。
 
 [!DNL SQL Report Builder]允许您直接查询Data Warehouse、查看结果并快速将其转换为图表。 使用[!DNL SQL]生成报告的最好部分是您不需要等待更新周期来迭代您创建的列。 如果结果不正确，您可以快速编辑并重新运行查询，直到符合您的预期为止。
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ## 开始使用
 
-要编辑报告，请单击基于[!DNL SQL]的图表右上角的齿轮(![](../../assets/gear-icon.png))图标，然后单击&#x200B;**[!UICONTROL Edit]**。
+要编辑报告，请单击基于![](../../assets/gear-icon.png)的图表右上角的齿轮([!DNL SQL])图标，然后单击&#x200B;**[!UICONTROL Edit]**。
 
 ## 编写查询 {#writing}
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 >
 >[!DNL SQL Report Builder]查询区分大小写。 请确保您在编写查询时使用正确的大小写，否则您可能会收到意外的结果或错误。
 
-按照查询优化[&#128279;](../../best-practices/optimizing-your-sql-queries.md)的准则，在[!DNL SQL]编辑器中编写查询。
+按照查询优化[的](../../best-practices/optimizing-your-sql-queries.md)准则，在[!DNL SQL]编辑器中编写查询。
 
 >[!IMPORTANT]
 >
@@ -71,9 +71,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->SQLReport Builder支持PostgreSQL支持的任何[SELECT函数](https://www.postgresql.org/docs/9.5/sql-select.html#SQL-SELECT-LIST)或任何不改变数据的函数。 这包括但不限于AVG、COUNT、COUNT DISTINCT、MIN/MAX和SUM。
+>SQL Report Builder支持PostgreSQL支持的任何[SELECT函数](https://www.postgresql.org/docs/9.5/sql-select.html#SQL-SELECT-LIST)或任何不改变数据的函数。 这包括但不限于AVG、COUNT、COUNT DISTINCT、MIN/MAX和SUM。
 
-此外，支持任何`JOIN`类型，但Adobe建议仅使用INNER JOIN，因为它是最便宜的`JOIN`类型。
+此外，支持任何`JOIN`类型，但Adobe建议仅使用INNER JOIN，因为它是开销最小的`JOIN`类型。
 
 ## 运行查询并查看结果 {#runquery}
 
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 ## 创建可视化图表 {#createviz}
 
-若要使用查询结果创建可视化图表，请单击`Results`窗格中的&#x200B;**[!UICONTROL Chart]**&#x200B;选项卡。 在此选项卡中，选择：
+若要使用查询结果创建可视化图表，请单击&#x200B;**[!UICONTROL Chart]**&#x200B;窗格中的`Results`选项卡。 在此选项卡中，选择：
 
 * `Series`或您要测量的列，如&#x200B;**售出的商品**。
 * `Category`或要用于划分数据的列，如&#x200B;**客户获取源**。
@@ -99,13 +99,13 @@ ht-degree: 0%
 
 ![](../../assets/SQL_RB_viz_overview.gif)
 
-有关如何创建可视化图表的详细演练，请参阅[从SQL查询创建可视化图表教程](../../tutorials/create-visuals-from-sql.md){： target=&quot;_blank&quot;}。
+有关如何创建可视化图表的详细演练，请参阅[从SQL查询创建可视化图表教程](../../tutorials/create-visuals-from-sql.md){: target="_blank"}。
 
 ## 保存报告 {#save}
 
-在保存所做的工作之前，必须为报表提供一个名称。 请记住遵循[命名](../../best-practices/naming-elements.md)的最佳实践指南{： target=&quot;_blank&quot;}，并选择能清晰传达报告内容的内容！
+在保存所做的工作之前，必须为报表提供一个名称。 请记住遵循[命名](../../best-practices/naming-elements.md){: target="_blank"}的最佳实践指南，并选择能清楚地传达报告内容的内容！
 
-单击[!DNL SQL]编辑器右上角的&#x200B;**[!UICONTROL Save]**&#x200B;并选择报告`Type` （`Chart`或`Table`）。 要完成任务，请选择报告要保存到的仪表板，然后单击&#x200B;**[!UICONTROL Save to Dashboard]**。
+单击&#x200B;**[!UICONTROL Save]**&#x200B;编辑器右上角的[!DNL SQL]并选择报告`Type` （`Chart`或`Table`）。 要完成任务，请选择报告要保存到的仪表板，然后单击&#x200B;**[!UICONTROL Save to Dashboard]**。
 
 ![](../../assets/SQL_Save_Report.gif)
 
@@ -113,7 +113,7 @@ ht-degree: 0%
 
 #### [!DNL SQL Report Builder]
 
-[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md)让您能够直接查询Data Warehouse、查看结果，并快速将其转换为报表。 使用[!DNL SQL]还允许您[使用`Visual`或`Cohort`Report Builder中不可用的 [!DNL SQL] 函数](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html)，从而让您更好地控制数据。
+[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md)让您能够直接查询Data Warehouse、查看结果，并快速将其转换为报表。 使用[!DNL SQL]还允许您[使用 [!DNL SQL] 或](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html) Report Builder中的`Visual`不可用的函数`Cohort`，从而让您更好地控制数据。
 
 使用[!DNL SQL]创建的计算列不依赖于更新周期，这意味着您可以按自己的意愿对其进行迭代，并立即查看结果。
 
@@ -133,17 +133,17 @@ ht-degree: 0%
 
 大多数情况下，结果的差异可归因于更新周期。 如果[!DNL Commerce Intelligence]正在将数据从数据库复制到Data Warehouse，则即使使用相同的查询，您也可能会看到不同的结果。
 
-连接问题也会导致不一致。 通过单击&#x200B;**[!DNL Manage Data** > **Connections]**&#x200B;导航到`Connections`页面以将其签出 — 相关数据库集成是否存在错误？ 如果出现这种情况，您可能需要[重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)才能使集成重新运行。
+连接问题也会导致不一致。 通过单击`Connections`导航到&#x200B;**[!DNL Manage Data** > **Connections]**&#x200B;页面以将其签出 — 相关数据库集成是否存在错误？ 如果出现这种情况，您可能需要[重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)才能使集成重新运行。
 
 如果所有集成都连接成功，并且您未处于更新周期中，则可能有其他错误。
 
 #### 删除[!DNL SQL]报告是否也会从我的Data Warehouse中删除基础列？
 
-不需要，无论如何构建Data Warehouse，您都不会丢失任何列。
+不需要，无论如何构建Data Warehouse中的列，都不会丢失它们。
 
 如果删除使用`Data Warehouse Manager`的报表或查询，则使用创建的列不会受到影响。
 
-使用[!DNL SQL Report Builder]创建的列未保存到Data Warehouse。
+使用[!DNL SQL Report Builder]创建的列不会保存到您的Data Warehouse。
 
 
 #### `Report Builder`与`SQL Report Builder`
@@ -165,12 +165,12 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->删除[!DNL SQL]报表/查询时，不会从Data Warehouse中删除基础列。 无论如何构建列，都不会丢失任何列。
+>删除[!DNL SQL]报表/查询时，它不会从Data Warehouse中删除基础列。 无论如何构建列，都不会丢失任何列。
 
-* 如果删除使用使用Data Warehouse管理器创建的报表或查询，则这些列不会受到影响。
+* 如果您删除使用使用Data Warehouse Manager创建的报表或查询，则这些列不会受到影响。
 
-* 使用SQLReport Builder创建的列不会保存到Data Warehouse中。
+* 使用SQL Report Builder创建的列不会保存到您的Data Warehouse。
 
 ## 正在结束 {#wrapup}
 
-如果您希望尝试一些更具挑战性的东西，为什么不尝试编写针对可视化进行了优化的查询？ 要开始操作，请查看[从 [!DNL SQL] 查询创建可视化图表](../../tutorials/create-visuals-from-sql.md){： target=&quot;_blank&quot;}教程。
+如果您希望尝试一些更具挑战性的东西，为什么不尝试编写针对可视化进行了优化的查询？ 若要开始，请查看[从 [!DNL SQL] 查询教程](../../tutorials/create-visuals-from-sql.md){: target="_blank"}创建可视化图表。

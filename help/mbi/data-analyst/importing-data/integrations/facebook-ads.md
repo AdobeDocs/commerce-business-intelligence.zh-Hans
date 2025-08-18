@@ -1,5 +1,5 @@
 ---
-title: 连接Facebook Ads
+title: 连接Facebook广告
 description: 学习分析广告支出数据，并查看您的资金是否得到了有效使用。
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
 role: Admin, Data Architect, Data Engineer, User
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![](../../../assets/facebook-ads-logo.png)
 
-你做了调查，做了广告，在[!DNL Facebook]上启动了你的营销活动。 现在该分析您的广告支出数据了，看看您的资金是否得到了有效花销。 使用广告支出数据，您可通过将广告成本和从营销活动中获得的用户的客户存留期价值(CLV) [&#128279;](../../../data-analyst/analysis/roi-ad-camp.md)相匹配来衡量营销活动ROI。
+你做了调查，做了广告，在[!DNL Facebook]上启动了你的营销活动。 现在该分析您的广告支出数据了，看看您的资金是否得到了有效花销。 使用广告支出数据，您可通过将广告成本和从营销活动中获得的用户的客户存留期价值(CLV)[相匹配来](../../../data-analyst/analysis/roi-ad-camp.md)衡量营销活动ROI。
 
 将您的[!DNL Facebook Ad]数据连接到[!DNL Commerce Intelligence]是一个简单的三步过程：
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## 将[!DNL Facebook]添加为[!DNL Commerce Intelligence]中的数据源 {#stepone}
 
-1. 要将[!DNL Facebook]集成添加到您的[!DNL Commerce Intelligence]帐户，请导航到&#x200B;**[!UICONTROL Manage Data** > **Integrations]**&#x200B;下的`Connections`页面。
+1. 要将[!DNL Facebook]集成添加到您的[!DNL Commerce Intelligence]帐户，请导航到`Connections`下的&#x200B;**[!UICONTROL Manage Data** > **Integrations]**&#x200B;页面。
 1. 单击右侧的&#x200B;**[!UICONTROL Add Integration]**。
 1. 单击[!DNL Facebook]图标。 这将显示[!DNL Facebook]授权页面。
 1. 单击&#x200B;**[!UICONTROL Authorize]**。
@@ -54,11 +54,11 @@ ht-degree: 0%
 
 ## 接下来呢？ {#next}
 
-确保您在[!DNL Google Analytics]中跟踪[!DNL Facebook]营销活动。 这可确保为您的[!DNL Facebook]营销活动正确填充[!DNL Google Analytics]中的`utm\_campaign`字段。
+确保您在[!DNL Facebook]中跟踪[!DNL Google Analytics]营销活动。 这可确保为您的`utm\_campaign`营销活动正确填充[!DNL Google Analytics]中的[!DNL Facebook]字段。
 
 ## 相关
 
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [连接你的 [!DNL Google Adwords] 帐户](../integrations/google-ecommerce.md)
 * [通过 [!DNL Google eCommerce]跟踪订单反向链接来源](../integrations/google-ecommerce.md)
 * [跟踪数据库中的用户反向链接源](../../analysis/google-track-user-acq.md)

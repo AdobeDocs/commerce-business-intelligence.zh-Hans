@@ -26,5 +26,5 @@ ht-degree: 0%
 如果您只需要该用户推送到其他用户帐户中的仪表板，请执行以下操作：
 
 1. 使用已删除用户的电子邮件地址创建新的[!DNL Commerce Intelligence]用户。
-1. 创建用户后[通知支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。 支持人员将功能板转移到您的帐户中。
-1. Adobe支持部门通知您转移后，您可以再次删除用户。
+1. 创建用户后[通知支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。 支持人员将功能板转移到您的帐户中。
+1. 在Adobe支持部门通知您转移后，您可以再次删除用户。

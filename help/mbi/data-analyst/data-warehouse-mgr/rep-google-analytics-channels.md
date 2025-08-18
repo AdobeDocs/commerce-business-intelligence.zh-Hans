@@ -42,11 +42,11 @@ ht-degree: 0%
 
 ## 如何在Data Warehouse中重新创建这些渠道分组？ {#recreate}
 
-现在您知道渠道只是源和媒介的组合，只需分三步即可在Data Warehouse中重新创建这些分组。
+现在，您知道渠道只是源和媒体的组合，在Data Warehouse中重新创建这些分组是一个简单的三步过程。
 
 1. **启用您的[!DNL Google ECommerce]集成**
 
-   [启用时](../importing-data/integrations/google-ecommerce.md)，请确保在Data Warehouse中[同步](../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) **媒体**&#x200B;和&#x200B;**源**&#x200B;字段。 完成此操作后，介质和源获取数据将引入您的Data Warehouse。
+   [启用时](../importing-data/integrations/google-ecommerce.md)，请确保在Data Warehouse中[同步]&#x200B;(../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) **媒体**&#x200B;和&#x200B;**源**&#x200B;字段。 完成此操作后，媒体和来源客户获取数据将导入您的Data Warehouse。
 
 1. **上传Google渠道分组的映射**
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
    为了在[!DNL Google ECommerce]和映射表之间建立关系，[向您的数据分析团队提交支持请求](../../guide-overview.md#Submitting-a-Support-Ticket)并引用此主题。 分析师在电子商务表中创建一个名为&#x200B;**Channel**&#x200B;的新计算列。 **在完整的更新周期**&#x200B;之后，此列将在`Filter`或`Group by`中准备就绪。
 
-您的Data Warehouse中现在有[!DNL Google Analytics Channel]个分组，这意味着您可以从新的角度分析数据：
+您现在在Data Warehouse中拥有[!DNL Google Analytics Channel]分组，这意味着您可以从新的角度分析数据：
 
 ![按渠道对订单数量量度进行分段](../../assets/GA_Channel_Gif.gif)
 

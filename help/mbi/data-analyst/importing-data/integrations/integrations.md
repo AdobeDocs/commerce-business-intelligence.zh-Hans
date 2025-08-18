@@ -17,4 +17,4 @@ ht-degree: 0%
 
 此部分介绍可用于将各种外部数据源连接到[!DNL Commerce Intelligence]的可用集成。
 
-要删除连接或集成，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)并包含要删除的连接或集成的名称。
+要删除连接或集成，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)并包含要删除的连接或集成的名称。

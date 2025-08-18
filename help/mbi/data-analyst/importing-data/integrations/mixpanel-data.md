@@ -15,7 +15,7 @@ ht-degree: 0%
 
 在连接[您的 [!DNL Mixpanel] 帐户](../integrations/mixpanel.md)后，您可以使用[Data Warehouse管理器](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)轻松跟踪相关数据字段以供分析。
 
-本主题探讨可从[!DNL Mixpanel]导入到[!DNL Commerce Intelligence]帐户的主要数据表。 连接[!DNL Mixpanel]后将在您的Data Warehouse中创建以下表。 要查看所有可用于跟踪的字段，请单击表名列中的链接。
+本主题探讨可从[!DNL Mixpanel]导入到[!DNL Commerce Intelligence]帐户的主要数据表。 连接[!DNL Mixpanel]后将在Data Warehouse中创建以下表。 要查看所有可用于跟踪的字段，请单击表名列中的链接。
 
 >[!NOTE]
 >
@@ -32,4 +32,4 @@ ht-degree: 0%
 ## 相关文档
 
 * [正在连接 [!DNL Mixpanel]](../integrations/mixpanel.md)
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

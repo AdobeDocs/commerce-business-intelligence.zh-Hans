@@ -64,7 +64,7 @@ ht-degree: 0%
 
 这两个字段都需要在用户级别创建（例如，在`user`表中）。 这使得平均分析可由用户标准化（换句话说，此平均计算中的分母是用户计数）。
 
-这是[!DNL Commerce Intelligence]进入的位置！ 您可以使用[!DNL Commerce Intelligence]Data Warehouse创建上述列。 请联系Adobe分析团队，为我们提供用于创建的新列的特定定义。 您还可以使用[列编辑器](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md)。
+这是[!DNL Commerce Intelligence]进入的位置！ 您可以使用[!DNL Commerce Intelligence] Data Warehouse创建上述列。 请联系Adobe分析团队，为我们提供用于创建的新列的特定定义。 您还可以使用[列编辑器](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md)。
 
 最佳做法是避免直接在数据库中创建这些计算数据字段，因为这会给生产服务器带来不必要的负担。
 
@@ -75,13 +75,13 @@ ht-degree: 0%
 在这里，您要执行以下计算：
 
 
-`Time between a customer's registration date and first purchase date`&rbrack;的&#x200B;_&lbrack;总和/[注册并购买的客户总数]_
+_[的`Time between a customer's registration date and first purchase date`]总和/[注册并购买的客户总数]_
 
-您希望看到根据客户的注册日期绘制的计算随时间变化或趋势。 以下是如何[在[!DNL Commerce Intelligence]中创建此量度](../../data-user/reports/ess-manage-data-metrics.md)：
+您希望看到根据客户的注册日期绘制的计算随时间变化或趋势。 以下是如何[在](../../data-user/reports/ess-manage-data-metrics.md)中创建此量度[!DNL Commerce Intelligence]：
 
 1. 转到&#x200B;**[!UICONTROL Data]**&#x200B;并选择`Metrics`选项卡。
 1. 单击&#x200B;**[!UICONTROL Add New Metric]**&#x200B;并选择`user`表（您在其中创建了上述维度）。
-1. 从下拉列表中，选择按`Customer's registration date`列排序的`user`表中`Time between a customer's registration date and first purchase date`列的`Average`。
+1. 从下拉列表中，选择按`Average`列排序的`Time between a customer's registration date and first purchase date`表中`user`列的`Customer's registration date`。
 1. 添加任何相关的过滤器或过滤器集。
 
 此量度现已准备就绪。
@@ -94,7 +94,7 @@ ht-degree: 0%
 
 ### `Visual Report Builder` {#visualrb}
 
-[使用`Visual Report Builder`](../../data-user/reports/ess-rpt-build-visual.md)是可视化数据的最简单方法。 如果您不熟悉SQL或者希望快速创建报告，则最好使用VisualReport Builder。 只需单击几下，即可在您的组织内添加指标、划分数据和创建报表。 此选项对于初学者和专家都是完美的，因为它不需要任何技术专业知识。
+[使用`Visual Report Builder`](../../data-user/reports/ess-rpt-build-visual.md)是可视化数据的最简单方法。 如果您不熟悉SQL或者希望快速创建报告，则最好使用Visual Report Builder。 只需单击几下，即可在您的组织内添加指标、划分数据和创建报表。 此选项对于初学者和专家都是完美的，因为它不需要任何技术专业知识。
 
 |  |  |
 |--- |--- |
@@ -107,7 +107,7 @@ ht-degree: 0%
 
 #### 向报表添加描述
 
-在创建与团队其他成员共享的报告时，Adobe建议添加描述，以便其他用户更好地了解您的分析。
+在创建与您团队的其他成员共享的报告时，Adobe建议添加描述，以便其他用户更好地了解您的分析。
 
 1. 单击任何报告顶部的&#x200B;**[!UICONTROL i]**。
 1. 在Word框中输入说明。

@@ -1,5 +1,5 @@
 ---
-title: 通过SSH通道连接 [!DNL MongoDB]
+title: '通过SSH通道连接 [!DNL MongoDB] '
 description: 了解如何通过SSH隧道连接 [!DNL MongoDB] 。
 exl-id: 3557a8c7-c4c5-4742-ae30-125c719aca39
 role: Admin, Data Architect, Data Engineer, User
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->由于此设置的技术性质，Adobe建议您在开发人员中循环，以帮助您解决以前未完成此设置的问题。
+>由于此设置的技术性质，Adobe建议您在开发人员中循环以帮助您解决以前未完成此设置的问题。
 
 ## 正在检索[!DNL Commerce Intelligence]公钥 {#retrieve}
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ![MBI_Allow_Access_IPs.png](../../../assets/MBI_allow_access_IPs.png)
 
-## 正在为[!DNL Commerce Intelligence]创建`Linux`用户 {#linux}
+## 正在为`Linux`创建[!DNL Commerce Intelligence]用户 {#linux}
 
 >[!IMPORTANT]
 >
@@ -146,4 +146,4 @@ ht-degree: 0%
 
 ### 相关
 
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -19,9 +19,9 @@ ht-degree: 0%
 
 ## 先决条件
 
-**导入您的广告成本数据** — 将[[!DNL [Google AdWords]]](../importing-data/integrations/google-adwords.md)连接到[!DNL Adobe Commerce Intelligence] — 这会自动同步您在Commerce Intelligence中的[!DNL AdWords]支出。
+**导入您的广告成本数据** — 将[!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md)连接到[!DNL Adobe Commerce Intelligence] — 这会自动同步您在Commerce Intelligence中的[!DNL AdWords]支出。
 
-**跟踪用户获取渠道数据** — 若要将[!DNL Google AdWords]数据与数据库中的特定订单绑定，必须[通过[!DNL Google Analytics E-commerce]跟踪用户获取](../analysis/google-track-user-acq.md)。 这样，您就可以将每个订单与utm源和媒介连接。
+**跟踪用户获取渠道数据** — 若要将[!DNL Google AdWords]数据与数据库中的特定订单绑定，必须[通过](../analysis/google-track-user-acq.md)跟踪用户获取[!DNL Google Analytics E-commerce]。 这样，您就可以将每个订单与utm源和媒介连接。
 
 ## 用户获取促销活动
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 * 连接[!DNL Google AdWords]数据时自动生成的量度
 * 您的帐户中应已可用的基本量度，如`Number of orders`和`New users`
-* 将[!DNL Google Analytics Ecommerce]数据加入数据库时创建的Dimension，如订单的utm源和订单的utm介质。 如果您的帐户中当前没有这些字段，请联系支持团队
+* 将[!DNL Google Analytics Ecommerce]数据加入数据库时创建的维度，如订单的utm源和订单的utm介质。 如果您的帐户中当前没有这些字段，请联系支持团队
 
 ## 构建报告
 

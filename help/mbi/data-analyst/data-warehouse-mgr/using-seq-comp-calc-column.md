@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 顺序比较计算列
 
-本主题概述了&#x200B;**[!DNL Manage Data > Data Warehouse]**&#x200B;页面中可用的`Sequential Comparison`计算列的用途和用途。 下面是它的作用解释，然后是一个示例以及创建它的机制。
+本主题概述了`Sequential Comparison`页面中可用的&#x200B;**[!DNL Manage Data > Data Warehouse]**&#x200B;计算列的用途和用途。 下面是它的作用解释，然后是一个示例以及创建它的机制。
 
 **解释**
 
@@ -60,6 +60,6 @@ ht-degree: 0%
 
 1. 为页面顶部的列提供一个名称，然后单击&#x200B;**[!UICONTROL Save]**。
 
-1. 该列可立即使用&#x200B;*1&rbrace;。*
+1. 该列可立即使用&#x200B;*1}。*
 
 ![秒](../../assets/SEC_new.png)

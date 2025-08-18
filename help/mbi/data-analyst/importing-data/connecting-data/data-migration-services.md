@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 数据迁移
 
-迁移到新的数据库模式、服务器或报告数据库并不一定有压力。 [[!DNL Adobe] 服务团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)提供迁移帮助。
+迁移到新的数据库模式、服务器或报告数据库并不一定有压力。 [[!DNL Adobe] 服务团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)提供迁移帮助。
 
 为确保过渡尽可能顺利，提交迁移请求时应尽可能详细。 本主题包含提交请求并开始迁移所需的一切。 向我们提供您需求的全面信息，可以确保您的项目范围设定得当，并且估算准确。
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 如果您觉得可以自行进行匹配，请按照以下说明将完成的电子表格附加到您的请求：
 
-1. 查看当前同步到Data Warehouse(**[!UICONTROL Manage Data** > **Data Warehouse]**)的所有表和列。
+1. 查看当前同步到Data Warehouse (**[!UICONTROL Manage Data** > **Data Warehouse]**)的所有表和列。
 
 1. 在电子表格中，为要迁移到新数据库的每个表创建一个选项卡。
 
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 ## 如何提交请求？ {#submitreq}
 
-您可以通过[提交支持请求](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)联系我们。
+您可以通过[提交支持请求](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)联系我们。
 
 如果您按照上一节中的步骤创建列匹配电子表格，请不要忘记附加它。
 

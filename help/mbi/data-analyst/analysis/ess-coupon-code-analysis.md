@@ -29,7 +29,7 @@ ht-degree: 0%
 
 从Commerce 2.4.7开始，客户可以向订单应用多个优惠券代码。 在本例中：
 
-* 应用的所有优惠券代码都存储在`sales_order_coupons`的`coupon_code`字段中。 应用的第一个优惠券代码也存储在`sales_order`的`coupon_code`字段中。 如果此字段为NULL（空），则该订单没有与其关联的优惠券。
+* 应用的所有优惠券代码都存储在`coupon_code`的`sales_order_coupons`字段中。 应用的第一个优惠券代码也存储在`coupon_code`的`sales_order`字段中。 如果此字段为NULL（空），则该订单没有与其关联的优惠券。
 
 ## 构建量度
 
@@ -59,53 +59,46 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->每个报告的**0&rbrace;列为`All-time`。 [!UICONTROL Time Period]您可以根据分析需求随意更改此设置。 Adobe建议此仪表板上的所有报告都涵盖相同的时间段，如`All time`、`Year-to-date`或`Last 365 days`。
+>每个报告的**0}列为[!UICONTROL Time Period]。 `All-time`您可以根据分析需求随意更改此设置。 Adobe建议该仪表板上的所有报告都涵盖相同的时间段，如`All time`、`Year-to-date`或`Last 365 days`。
 
 * **含优惠券的订单**
-   * &#x200B;
-
-     [!UICONTROL 量度]: `Orders`
+   * 
+     [！UICONTROL量度]: `Orders`
       * 添加筛选器：
          * [`A`] `coupon_code` **IS NOT** `[NULL]`
 
    * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-
-     [!UICONTROL 间隔]: `None`
+   * 
+     [！UICONTROL间隔]: `None`
    * [!UICONTROL Chart type]：`Number (scalar)`
 
 * **没有优惠券的订单**
-   * &#x200B;
-
-     [!UICONTROL 量度]: `Orders`
+   * 
+     [！UICONTROL量度]: `Orders`
       * 添加筛选器：
          * [`A`] `coupon_code` **IS** `[NULL]`
 
    * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-
-     [!UICONTROL 间隔]: `None`
+   * 
+     [！UICONTROL间隔]: `None`
    * [!UICONTROL Chart type]：`Number (scalar)`
 
 * **含优惠券的订单净收入**
-   * &#x200B;
-
-     [!UICONTROL 量度]: `Revenue`
+   * 
+     [！UICONTROL量度]: `Revenue`
       * 添加筛选器：
          * [`A`] `coupon_code` **IS NOT** `[NULL]`
 
    * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-
-     [!UICONTROL 间隔]: `None`
+   * 
+     [！UICONTROL间隔]: `None`
    * [!UICONTROL Chart type]： `Number (scalar)`
 
 * **优惠券折扣**
    * [!UICONTROL Metric]： `Coupon discount amount`
    * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-
-     [!UICONTROL 间隔]: `None`
+   * 
+     [！UICONTROL间隔]: `None`
    * [!UICONTROL Chart type]： `Number (scalar)`
 
 * **平均生命周期收入：已获得优惠券的客户**
@@ -114,9 +107,8 @@ ht-degree: 0%
          * [`A`] `Customer's first order's coupon_code` **IS NOT** `[NULL]`
 
    * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-
-     [!UICONTROL 间隔]: `None`
+   * 
+     [！UICONTROL间隔]: `None`
    * [!UICONTROL Chart type]： `Number (scalar)`
 
 * **平均生命周期收入：未获得优惠券的客户**
@@ -125,9 +117,8 @@ ht-degree: 0%
          * [A] `Customer's first order's coupon_code` **IS**`[NULL]`
 
    * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-
-     [!UICONTROL 间隔]: `None`
+   * 
+     [！UICONTROL间隔]: `None`
    * [!UICONTROL Chart type]： `Number (scalar)`
 
 * **优惠券使用情况详细信息（首次订购）**
@@ -150,29 +141,24 @@ ht-degree: 0%
 
    * 创建公式： `Gross revenue`
       * [!UICONTROL Formula]： `(B – C)`
-      * &#x200B;
-
+      * 
         [!UICONTROL Format]: `Currency`
 
    * 创建公式：**%折扣**
       * 公式： `(C / (B - C))`
-      * &#x200B;
-
+      * 
         [!UICONTROL Format]: `Percentage`
 
    * 创建公式： `Average order discount`
       * [!UICONTROL Formula]： `(C / A)`
-      * &#x200B;
-
+      * 
         [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-
-     [!UICONTROL 间隔]: `None`
-   * &#x200B;
-
-     [!UICONTROL 图表类型]: `Table`
+   * 
+     [！UICONTROL间隔]: `None`
+   * 
+     [！UICONTROL图表类型]: `Table`
 
 * **按第一张订单优惠券计算的平均生命周期收入**
    * [!UICONTROL Metric]：**平均生命周期收入**
@@ -180,9 +166,8 @@ ht-degree: 0%
          * [`A`] `coupon_code` **是**`[NULL]`
 
    * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-
-     [!UICONTROL 间隔]: `None`
+   * 
+     [！UICONTROL间隔]: `None`
    * [!UICONTROL Chart type]： `Number (scalar)`
 
 * **优惠券使用情况详细信息（首次订购）**
@@ -191,13 +176,11 @@ ht-degree: 0%
          * [`A`] `Customer's first order's coupon_code` **IS NOT** `[NULL]`
 
    * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-
-     [!UICONTROL 间隔]: `None`
+   * 
+     [！UICONTROL间隔]: `None`
    * [!UICONTROL Group by]： `Customer's first order's coupon_code`
-   * &#x200B;
-
-     [!UICONTROL 图表类型]: **Column**
+   * 
+     [！UICONTROL图表类型]: **Column**
 
 * **通过优惠券/非优惠券获取的新客户**
    * 量度`1`： `New customers`

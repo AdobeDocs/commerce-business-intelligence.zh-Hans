@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL SQL Report Builder]允许您在任何给定时间查询和迭代这些查询。 当需要修改查询而不必等待更新周期完成才实现您创建的列或报告需要更新时，这将很有用。
 
-在执行查询之前，[[!DNL Commerce Intelligence] 估计其成本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=zh-Hans)。 成本考虑执行查询所需的时间和资源数。 如果该成本过高，或者返回的行数超过[!DNL Commerce Intelligence]限制，则查询失败。 为了查询您的[Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md)（确保您编写的查询尽可能简化），Adobe建议执行以下操作。
+在执行查询之前，[[!DNL Commerce Intelligence] 估计其成本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html)。 成本考虑执行查询所需的时间和资源数。 如果该成本过高，或者返回的行数超过[!DNL Commerce Intelligence]限制，则查询失败。 为了查询您的[Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md)（确保您编写的查询尽可能简化），Adobe建议执行以下操作。
 
 ## 使用SELECT或选择所有列
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 外连接选择所有要连接的两个表，这会增加查询的计算成本。 这意味着您的查询运行时间更长，并且更有可能失败，因为返回结果可能需要比执行限制更长的时间。
 
-请考虑使用内部连接或左连接，而不使用这种类型的连接。 仅当表之间存在列匹配时（例如，典型`customers`和`orders`表中都存在`order_id`），内连接才会返回结果。 左连接会返回左表（第一个）中的所有结果以及右表（第二个）中的匹配结果。
+请考虑使用内部连接或左连接，而不使用这种类型的连接。 仅当表之间存在列匹配时（例如，典型`order_id`和`customers`表中都存在`orders`），内连接才会返回结果。 左连接会返回左表（第一个）中的所有结果以及右表（第二个）中的匹配结果。
 
 查看如何重写FULL OUTER JOIN查询：
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ## 使用多个联接
 
-虽然您可以在查询中包含多个联接，但请记住，这可能会增加查询的开销。 为避免达到成本阈值，Adobe建议尽可能避免多个联接。
+虽然您可以在查询中包含多个联接，但请记住，这可能会增加查询的开销。 为避免达到成本阈值，Adobe建议尽可能避免多个连接。
 
 ## 使用过滤器
 

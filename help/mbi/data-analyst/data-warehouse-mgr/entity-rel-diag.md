@@ -37,7 +37,7 @@ ht-degree: 0%
 >
 >`customer\_entity.entity\_id`不等于`sales\_flat\_order.entity\_id`。 第一个可以视为`customer\_id`，第二个可以视为`order\_id.`
 
-在[!DNL Commerce Intelligence]内，如果这两个表之间的路径不存在，您可以[在“Data Warehouse”选项卡中创建路径](../data-warehouse-mgr/create-paths-calc-columns.md)。 当您准备好创建路径时，其定义如下：
+在[!DNL Commerce Intelligence]内，如果这两个表之间的路径不存在，您可以[在Data Warehouse选项卡中创建路径](../data-warehouse-mgr/create-paths-calc-columns.md)。 当您准备好创建路径时，其定义如下：
 
 ![](../../assets/SFO___CE_path.png)
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 一个订单可以包含许多项目。 这两个表之间的关系是`sales\_flat\_order.entity\_id = sales\_flat\_order\_item.order\_id`。
 
-在[!DNL Commerce Intelligence]内，如果这两个表之间的路径不存在，您可以[在“Data Warehouse”选项卡中创建路径](../data-warehouse-mgr/create-paths-calc-columns.md)。 准备创建路径时，请如下所示定义路径。
+在[!DNL Commerce Intelligence]内，如果这两个表之间的路径不存在，您可以[在Data Warehouse选项卡中创建路径](../data-warehouse-mgr/create-paths-calc-columns.md)。 准备创建路径时，请如下所示定义路径。
 
 ![](../../assets/SFOI___SFO_path.png)
 
@@ -57,6 +57,6 @@ ht-degree: 0%
 
 一个产品可以购买多个项目。 这两个表之间的关系是`catalog\_product\_entity.entity\_id = sales\_flat\_order\_item.product`。
 
-在[!DNL Commerce Intelligence]内，如果这两个表之间的路径不存在，您可以[在“Data Warehouse”选项卡中创建路径](../data-warehouse-mgr/create-paths-calc-columns.md)。 准备创建路径时，请如下所示定义路径。
+在[!DNL Commerce Intelligence]内，如果这两个表之间的路径不存在，您可以[在Data Warehouse选项卡中创建路径](../data-warehouse-mgr/create-paths-calc-columns.md)。 准备创建路径时，请如下所示定义路径。
 
 ![](../../assets/SFOI___CPE_path.png)

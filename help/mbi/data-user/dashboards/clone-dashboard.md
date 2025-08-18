@@ -21,7 +21,7 @@ ht-degree: 0%
 
 1. 在下拉菜单中，单击&#x200B;**[!UICONTROL Save As]**。
 
-1. 出现提示时，输入`New Dashboard Name`。 Adobe会推荐一些名称，以便您一眼就知道仪表板中包含哪些信息。
+1. 出现提示时，输入`New Dashboard Name`。 Adobe推荐的名称会一眼就告诉您仪表板中包含哪些信息。
 
    例如，您正在克隆名为`Customer Activity`的功能板。 该仪表板包含有关您费城位置的客户活动信息，但现在您要为位于纽约市的位置创建一个仪表板。 此仪表板可以命名为`New York City - Customer Activity`。
 

@@ -19,11 +19,11 @@ ht-degree: 0%
 
 ![](../../../assets/Google_Adwords_logo.png)
 
-您完成了调查，创建了广告，启动了[!DNL Google]营销活动。 现在该分析您的广告支出数据了，看看您的资金是否得到了有效花销。 使用广告支出数据，您可通过将广告成本和从营销活动中获得的用户的客户存留期价值(CLV) [&#128279;](../../analysis/roi-ad-camp.md)相匹配来衡量营销活动ROI。
+您完成了调查，创建了广告，启动了[!DNL Google]营销活动。 现在该分析您的广告支出数据了，看看您的资金是否得到了有效花销。 使用广告支出数据，您可通过将广告成本和从营销活动中获得的用户的客户存留期价值(CLV)[相匹配来](../../analysis/roi-ad-camp.md)衡量营销活动ROI。
 
-在[!DNL Commerce Intelligence]中输入您的[!DNL Google Adwords]凭据以开始操作。
+在[!DNL Google Adwords]中输入您的[!DNL Commerce Intelligence]凭据以开始操作。
 
-1. 转到&#x200B;**管理数据>集成**&#x200B;下的`Connections`页面。
+1. 转到`Connections`管理数据>集成&#x200B;**下的**&#x200B;页面。
 1. 单击屏幕右上角的&#x200B;**添加集成**。
 1. 单击&#x200B;**[!DNL Google Adwords]**&#x200B;图标。 这将打开[!DNL Google Adwords]凭据页面。
 1. 输入您的[!DNL Google Analytics]凭据。 授权过程完成后，您将被重定向回[!DNL Commerce Intelligence]。
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 您可能将多个网站连接到单个[!DNL Google Analytics]帐户，并使用其自己的[!DNL Google Analytics]配置文件ID进行标识。 在这种情况下，您可以选择在[!DNL Commerce Intelligence]中包含您的所有配置文件ID。 选中要在用户档案选择步骤中包含的用户档案ID。
 
-**识别特定网站的Google Analytics配置文件ID：**
+**要识别特定网站的Google Analytics配置文件ID：**
 
 1. 登录[!DNL Google Analytics]
 1. 转到特定网站的[!DNL Google Analytics]仪表板
@@ -50,12 +50,12 @@ ht-degree: 0%
 ## 正在断开[!DNL Google Adwords]
 
 1. 访问您的[!DNL Google] [帐户设置](https://www.google.com/account/about/?hl=en)页面。
-1. 在`Security`部分下，单击`Authorizing`应用程序和站点旁边的&#x200B;**[!UICONTROL edit]**。
+1. 在`Security`部分下，单击&#x200B;**[!UICONTROL edit]**&#x200B;应用程序和站点旁边的`Authorizing`。
 1. 单击&#x200B;**[!UICONTROL revoke access]**。
 
 ## 相关
 
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [通过 [!DNL Google ECommerce]跟踪订单反向链接来源](../integrations/google-ecommerce.md)
 * [跟踪数据库中的用户反向链接源](../../analysis/google-track-user-acq.md)
 * [了解您最有价值的客户获取来源和渠道](../../analysis/most-value-source-channel.md)

@@ -27,7 +27,7 @@ ht-degree: 0%
 
 查看[!DNL Google Analytics]广告营销活动以了解从操作角度可以做些什么的示例。 假设您在第四季度有多个名称不同的广告营销活动。 这些营销活动是特定营销计划的结果。 使用仓库数据，您可以创建列以查找相关促销活动名称并返回第四季度计划名称`Operation Dumbo`。
 
-组合方面允许将[!DNL Google Analytics]数据与其他数据连接以进行分析。 例如，获取[!DNL Google Analytics]中的`Total Time On Site By Ad Campaign`数据，并将其与来自[!DNL Facebook Ads]的`Total Spent Per Campaign`数据联接，以完整了解参与度对您造成的成本。
+组合方面允许将[!DNL Google Analytics]数据与其他数据连接以进行分析。 例如，获取`Total Time On Site By Ad Campaign`中的[!DNL Google Analytics]数据，并将其与来自`Total Spent Per Campaign`的[!DNL Facebook Ads]数据联接，以完整了解参与度对您造成的成本。
 
 另一方面，使用[!DNL Google Analytics Live]集成，每个[!DNL Google Analytics]图表都像一个未存储在Data Warehouse中的小思洛存储器。
 
@@ -35,9 +35,9 @@ ht-degree: 0%
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused]是`Premium`集成。 如果您有兴趣将此集成添加到订阅，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+>[!DNL Google Analytics Warehoused]是`Premium`集成。 如果您有兴趣将此集成添加到订阅，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
-1. 转到&#x200B;**[!UICONTROL Admin** > **Integrations]**&#x200B;下的`Connections`页面。
+1. 转到`Connections`下的&#x200B;**[!UICONTROL Admin** > **Integrations]**&#x200B;页面。
 1. 单击右侧的&#x200B;**[!UICONTROL Add an Integration]**。
 1. 单击[!DNL Google Analytics Warehoused]图标。 这将打开[!DNL Google Analytics]凭据页面。
 1. 输入您的[!DNL Google Analytics]凭据。 授权过程完成后，您将被重定向回[!DNL Commerce Intelligence]。
@@ -58,12 +58,12 @@ ht-degree: 0%
 ## 正在断开[!DNL Google Analytics Warehoused]与[!DNL Commerce Intelligence]的连接 {#disconnect}
 
 1. 访问您的[!DNL Google Analytics] [帐户设置](https://myaccount.google.com/intro)页面。
-1. 在`Security`部分下，单击`Authorizing`应用程序和站点旁边的&#x200B;**[!UICONTROL edit]**。
-1. 单击[!DNL Commerce Intelligence]旁边的&#x200B;**[!UICONTROL revoke access]**。
+1. 在`Security`部分下，单击&#x200B;**[!UICONTROL edit]**&#x200B;应用程序和站点旁边的`Authorizing`。
+1. 单击&#x200B;**[!UICONTROL revoke access]**&#x200B;旁边的[!DNL Commerce Intelligence]。
 
 ## 相关文档
 
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [正在连接 [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [分析网站活动和客户转化率](../../analysis/web-act-cust-conversion.md)
 * [使用 [!DNL Google Analytics] Cookie跟踪用户获取数据](../../analysis/google-track-user-acq.md)

@@ -1,6 +1,6 @@
 ---
 title: 连接数据
-description: 了解如何在Data Warehouse管理器中浏览可用于同步的表。
+description: 了解如何在Data Warehouse Manager中浏览可用于同步的表。
 exl-id: 94beba8b-6a86-4af9-87fb-96b1cf8f8fa2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## 集成类型
 
-有四种方法可将数据导入[!DNL Commerce Intelligence]：连接数据库、连接SaaS集成、上传`.csv`文件或使用AdobeAPI。
+有四种方法可将数据导入[!DNL Commerce Intelligence]：连接数据库、连接SaaS集成、上传`.csv`文件或使用Adobe API。
 
 ## 数据库集成
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 [!DNL Commerce Intelligence]支持基于SQL和NoSQL的数据库，如[MySQL](../../importing-data/integrations/mysql-via-ssh-tunnel.md)、[Microsoft SQL](../integrations/microsoft-sql-server.md)、[MongoDB](../integrations/mongodb-via-ssh-tunnel.md)和[PostgreSQL](../integrations/postgresql.md)。
 
-虽然您可以使用数据库凭据直接将数据库连接到[!DNL Commerce Intelligence]，但Adobe建议您使用经验证的加密方法，如SSH通道。 这可确保在数据进入Data Warehouse时保持安全和安全。
+虽然您可以使用数据库凭据直接将数据库连接到[!DNL Commerce Intelligence]，但Adobe建议您使用经验证的加密方法，如SSH通道。 这可确保数据在进入Data Warehouse时保持安全和安全。
 
 根据连接方法和数据库类型，可能需要一些技术专家才能完成设置。
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ## 文件上传
 
-不确定如何将数据从补充源纳入您的Data Warehouse？ [使用`File Upload`功能](../connecting-data/using-file-uploader.md)是一种拉入数据的好方法，您在日常决策中不需要这些数据。 按照格式规则，您可以快速将`.csv`文件上传到您的Data Warehouse中，并将其与其他数据源联接。
+不确定如何将数据从补充源纳入您的Data Warehouse？ [使用`File Upload`功能](../connecting-data/using-file-uploader.md)是一种拉入数据的好方法，您在日常决策中不需要这些数据。 按照格式规则，您可以快速将`.csv`文件上传到Data Warehouse并将其与其他数据源联接。
 
 ## [!DNL Commerce Intelligence] `Import API`
 
@@ -70,6 +70,6 @@ ht-degree: 0%
 * [合并表](../../../best-practices/consolidating-your-tables.md)
 * [限制对数据库的访问](../../../administrator/account-management/restrict-db-access.md)
 
-**没有看到您想要的集成？**&#x200B;必须激活某些集成，才会在您的帐户中显示。 如果您要查找诸如[!DNL Facebook]之类的内容，但该内容未列出，请[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+**没有看到您想要的集成？**&#x200B;必须激活某些集成，才会在您的帐户中显示。 如果您要查找诸如[!DNL Facebook]之类的内容，但该内容未列出，请[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 **如果看到集成**&#x200B;的错误状态，请查看[疑难解答部分](https://support.magento.com/hc/en-us/sections/360003078151)以获取帮助。

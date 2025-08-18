@@ -1,6 +1,6 @@
 ---
 title: 通过SQL查询创建可视化图表
-description: 了解如何熟悉SQLReport Builder中使用的术语，并为创建SQL可视化图表奠定坚实的基础。
+description: 了解如何熟悉SQL Report Builder中使用的术语，并为您创建SQL可视化图表奠定坚实的基础。
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: SQL Report Builder, Data Warehouse Manager, Reports, Data Integration
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 在开始本教程之前，请参阅`SQL Report Builder`中使用的以下术语。
 
-- `Series`：您要测量的列在SQLReport Builder中称为Series。 常见示例为`revenue`、`items sold`和`marketing spend`。 必须至少将一列设置为`Series`才能创建可视化图表。
+- `Series`：您要测量的列在SQL Report Builder中称为序列。 常见示例为`revenue`、`items sold`和`marketing spend`。 必须至少将一列设置为`Series`才能创建可视化图表。
 
-- `Category`：要用于划分数据的列称为`Category`，这与[`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md)中的`Group By`功能类似。 例如，如果要按客户的客户获取来源对客户的存留期收入进行分段，则将包含客户获取来源的列指定为`Category`。 可以将多个列设置为`Category`。
+- `Category`：要用于划分数据的列称为`Category`，这与`Group By`中的[`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md)功能类似。 例如，如果要按客户的客户获取来源对客户的存留期收入进行分段，则将包含客户获取来源的列指定为`Category`。 可以将多个列设置为`Category`。
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 - `EXTRACT`函数非常适合用于解析时间戳的日、周、月或年。 当您要在报表上使用的`time interval`为`daily`、`weekly`、`monthly`或`yearly`时，这将很有用。
 
-若要开始，请单击&#x200B;**[!UICONTROL Report Builder** > **SQL Report Builder]**&#x200B;打开[!DNL SQL Report Builder]。
+若要开始，请单击[!DNL SQL Report Builder]打开&#x200B;**[!UICONTROL Report Builder** > **SQL Report Builder]**。
 
 例如，考虑此查询，该查询返回每个产品每月的销售项目总数：
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 ## 第2步：创建可视化图表
 
-使用这些结果，*您如何创建可视化图表？*&#x200B;若要开始，请单击`Results`窗格中的&#x200B;**[!UICONTROL Chart]**&#x200B;选项卡。 这会显示`Chart settings`选项卡。
+使用这些结果，*您如何创建可视化图表？*&#x200B;若要开始，请单击&#x200B;**[!UICONTROL Chart]**&#x200B;窗格中的`Results`选项卡。 这会显示`Chart settings`选项卡。
 
 首次执行查询时，报告可能看起来不可靠，因为查询中的所有列都绘制为系列：
 
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果标签是`date`/`time`列，查询必须包含标签上的`ORDER BY`子句。
+>如果标签是`ORDER BY`/`date`列，查询必须包含标签上的`time`子句。
 
 下面是您如何创建此可视化图表的概览，从运行查询到设置报表：
 

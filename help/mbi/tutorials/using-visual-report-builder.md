@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ## 步骤3：添加`Formulas`
 
-通过单击位于报表中量度列表正上方的&#x200B;**[!UICONTROL Add Formula]**，可将`Formulas`添加到报表中。 在[公式编辑器](../data-analyst/dev-reports/formulas-in-rpt-bldr.md)中，报表中包含的任何量度都可用作输入。 基本数学运算符用于处理不同的量度。
+通过单击位于报表中量度列表正上方的`Formulas`，可将&#x200B;**[!UICONTROL Add Formula]**&#x200B;添加到报表中。 在[公式编辑器](../data-analyst/dev-reports/formulas-in-rpt-bldr.md)中，报表中包含的任何量度都可用作输入。 基本数学运算符用于处理不同的量度。
 
 假设您要创建一个报表，向我们显示每订单的平均收入。 在这种情况下，您应该将`Revenue`指标除以`Number of orders`指标。
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 在为时间段设置特定日期范围时，请确保开始日期位于间隔的开始日期，结束日期位于间隔的结束日期。
 
-例如，设置从`January 1st`到`March 1st`的时间段并选择`monthly`间隔会将`March`显示为数据点，但在`March`中忽略除`March 1`之外的每一天。 在这种情况下，您应该从`January 1 to March 31`中生成您的`Time Period`。
+例如，设置从`January 1st`到`March 1st`的时间段并选择`monthly`间隔会将`March`显示为数据点，但在`March`中忽略除`March 1`之外的每一天。 在这种情况下，您应该从`Time Period`中生成您的`January 1 to March 31`。
 
 ## 步骤5：`Group by` / `Segmenting the Analysis` {#groupby}
 
@@ -125,9 +125,9 @@ ht-degree: 0%
 
 ## 步骤7：保存报表
 
-创建图表时，单击`Visual Report Builder`右上角的&#x200B;**[!UICONTROL Save]**&#x200B;可保存该图表。
+创建图表时，单击&#x200B;**[!UICONTROL Save]**&#x200B;右上角的`Visual Report Builder`可保存该图表。
 
-您可以选择使用`Type`下拉菜单保存图表、表或数字(`scalar`)，也可以使用`Location`下拉菜单保存报告到仪表板。
+您可以选择使用`scalar`下拉菜单保存图表、表或数字(`Type`)，也可以使用`Location`下拉菜单保存报告到仪表板。
 
 然后，单击&#x200B;**[!UICONTROL Save to Dashboard]**&#x200B;可保存报告。
 

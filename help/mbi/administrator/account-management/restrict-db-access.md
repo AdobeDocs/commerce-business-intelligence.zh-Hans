@@ -23,7 +23,7 @@ ht-degree: 0%
 
 1. 确保执行的shell为`bash -r`
 
-这两项操作都可以在用户主`dir/.ssh`目录中的`authorized_keys`文件内完成，作为用户登录时执行的命令的一部分。 它看起来像这样：
+这两项操作都可以在用户主`authorized_keys`目录中的`dir/.ssh`文件内完成，作为用户登录时执行的命令的一部分。 它看起来像这样：
 
 ```bash
 ... other keys ...

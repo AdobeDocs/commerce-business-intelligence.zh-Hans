@@ -13,14 +13,14 @@ ht-degree: 0%
 
 # 通过VPN连接数据库
 
-虽然Adobe建议使用`SSH tunnel`连接数据库，但也可以使用加密的`VPN`连接来确保安全。 `VPN`可用于您的任何数据库集成，为了简化操作，该过程与设置`SSH tunnel`的过程大致相同：
+虽然Adobe建议您使用`SSH tunnel`连接数据库，但也可以使用加密的`VPN`连接来确保安全。 `VPN`可用于您的任何数据库集成，为了简化操作，该过程与设置`SSH tunnel`的过程大致相同：
 
 1. [创建 [!DNL Commerce Intelligence] 数据库用户](#database)
 1. [创建 [!DNL Commerce Intelligence] VPN用户](#vpn)
 1. [允许访问 [!DNL Commerce Intelligence] IP地址](#allowlist)
 1. [在Commerce Intelligence中输入连接和VPN用户信息](#finish)
 
-除了数据库身份证明之外，还必须为VPN用户输入身份证明以总结经验。 任何VPN用户均可正常工作，但Adobe建议您创建一个[!DNL Commerce Intelligence]用户，因为这样可以更轻松地跟踪您帐户上的用户。
+除了数据库身份证明之外，还必须为VPN用户输入身份证明以总结经验。 任何VPN用户均可工作，但Adobe建议您创建一个[!DNL Commerce Intelligence]用户，因为这样可以更轻松地跟踪您帐户上的用户。
 
 ## 正在为[!DNL Commerce Intelligence]创建数据库用户 {#database}
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 * [MySQL](../integrations/mysql-via-a-direct-connection.md)
 * [PostgreSQL](../integrations/postgresql.md)
 
-## 正在为[!DNL Commerce Intelligence]创建`VPN`用户 {#vpn}
+## 正在为`VPN`创建[!DNL Commerce Intelligence]用户 {#vpn}
 
 如前所述，任何有效的`VPN`用户均可工作 — 但Adobe建议仅创建供[!DNL Commerce Intelligence]使用的用户。
 

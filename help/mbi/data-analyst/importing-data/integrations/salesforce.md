@@ -25,7 +25,7 @@ ht-degree: 0%
 >
 >[!DNL Salesforce]连接器要求您拥有[[!DNL Salesforce] API访问权限](../integrations/salesforce.md)，以作为[!DNL Salesforce]订阅的一部分。 在开始之前，请验证是否已启用此功能。
 
-1. 要将[!DNL Salesforce]集成添加到您的帐户，请导航到&#x200B;**[!UICONTROL Manage Data** > **Connections]**&#x200B;下的`Connections`页面。
+1. 要将[!DNL Salesforce]集成添加到您的帐户，请导航到`Connections`下的&#x200B;**[!UICONTROL Manage Data** > **Connections]**&#x200B;页面。
 1. 单击位于屏幕右侧“数据源”表上方的&#x200B;**[!UICONTROL Add a Data Source]**。
 1. 单击[!DNL Salesforce]图标。
 1. 单击&#x200B;**[!UICONTROL Connect to Salesforce]**。
@@ -36,4 +36,4 @@ ht-degree: 0%
 如果您更懂技术，[[!DNL Salesforce] API文档](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm)可以成为了解有关Salesforce如何与[!DNL Commerce Intelligence]集成的有用资源。
 
 * [需要 [!DNL Salesforce] 数据](../integrations/salesforce-data.md)
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

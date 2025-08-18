@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
 
 # 与其他用户共享功能板
 
-共享功能板是让您的团队保持运行并鼓励协作讨论的绝佳方法。 通过创建和共享中央仪表板，您可以在保持控制的同时为团队提供所需的信息。 [[!DNL Adobe] 建议](../../best-practices/share-dashboard-best-practice.md){： target=&quot;_blank&quot;}您向选定的少数人授予`Edit`权限，以最大限度地减少意外更改。
+共享功能板是让您的团队保持运行并鼓励协作讨论的绝佳方法。 通过创建和共享中央仪表板，您可以在保持控制的同时为团队提供所需的信息。 [[!DNL Adobe] 建议](../../best-practices/share-dashboard-best-practice.md){: target="_blank"}您向选定的少数人授予`Edit`权限，以最大限度地减少意外更改。
 
 >[!NOTE]
 >

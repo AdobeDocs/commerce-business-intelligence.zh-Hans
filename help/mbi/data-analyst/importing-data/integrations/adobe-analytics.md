@@ -19,13 +19,13 @@ ht-degree: 0%
 
 ![](../../../assets/adobe-analytic-slogo.png)
 
-[!DNL Adobe Commerce Intelligence]的[!DNL Adobe Analytics]集成使您能够将[!DNL Adobe Analytics]的端到端客户历程重点与您从[!DNL Commerce Intelligence]依赖的电子商务重点结合起来。 这可让您全面了解商店的整体性能。
+[!DNL Adobe Analytics]的[!DNL Adobe Commerce Intelligence]集成使您能够将[!DNL Adobe Analytics]的端到端客户历程重点与您从[!DNL Commerce Intelligence]依赖的电子商务重点结合起来。 这可让您全面了解商店的整体性能。
 
-更具体地说，[!DNL Commerce Intelligence]的[!DNL Adobe Analytics]集成为商家提供了开始组合其[!DNL Adobe Commerce]和[!DNL Adobe Analytics]数据集的功能。
+更具体地说，[!DNL Adobe Analytics]的[!DNL Commerce Intelligence]集成为商家提供了开始组合其[!DNL Adobe Commerce]和[!DNL Adobe Analytics]数据集的功能。
 
 - 创建从现有[!DNL Adobe Analytics]帐户到[!DNL Commerce Intelligence]的连接。
 
-- 从一个报表包中选择最多25个指标和维度以复制到您的Data Warehouse中。
+- 从一个报表包中选择最多25个指标和维度以复制到Data Warehouse中。
 
 - 使用所有标准[!DNL Commerce Intelligence]功能转换、连接和报告复制的[!DNL Adobe Analytics]数据。
 
@@ -39,9 +39,9 @@ ht-degree: 0%
 
 - 要复制到[!DNL Commerce Intelligence]中的指标和维度列表
 
-## 正在连接[!DNL Commerce Intelligence]的[!DNL Adobe Analytics]集成
+## 正在连接[!DNL Adobe Analytics]的[!DNL Commerce Intelligence]集成
 
-1. 转到&#x200B;**[!DNL Manage Data** > **Integrations]**&#x200B;下的`Integrations`页面。
+1. 转到`Integrations`下的&#x200B;**[!DNL Manage Data** > **Integrations]**&#x200B;页面。
 
 1. 单击&#x200B;**[!UICONTROL Add an Integration]**。
 
@@ -57,6 +57,6 @@ ht-degree: 0%
 
 1. 选定的报表包会显示在表格中。 单击&#x200B;**[!UICONTROL Save]**&#x200B;确认您的选择。
 
-1. 通知[!DNL Commerce Intelligence] [支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)您的集成已获得授权，他们将为您运行初始连接进程。
+1. 通知[!DNL Commerce Intelligence] [支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)您的集成已获得授权，他们将为您运行初始连接进程。
 
-运行初始连接进程后，您的表将在`All Tables`选项卡下的Data Warehouse页中可用。 选择要复制的列，数据将在下次完全更新后显示。
+运行初始连接进程后，您的表将在Data Warehouse页面的`All Tables`选项卡下可用。 选择要复制的列，数据将在下次完全更新后显示。

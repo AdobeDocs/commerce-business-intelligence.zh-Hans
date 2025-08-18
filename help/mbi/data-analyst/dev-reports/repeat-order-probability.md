@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## `Incremental Event Probability`透视何时可用？
 
-仅当过滤器使用的维度对所有订单（例如，用户的`gender`、用户的`age`或用户的`source`）均相等时，`incremental event probability`透视才可用。
+仅当过滤器使用的维度对所有订单（例如，用户的`incremental event probability`、用户的`gender`或用户的`age`）均相等时，`source`透视才可用。
 
 这是因为此透视依赖于名为`User's order number`的维度来进行分段，该维度用于统计用户的购买量（例如，John的第一次、第二次和第三次订单）。
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 在某些情况下，您也许能够将`order-specific`维度转换为`user-specific`维度以添加为`Repeat Order Probability`图表中的筛选器。 在这些情况下，将返回用户第一订单或最新订单的订单属性（例如，用户的第一订单区域名称）。
 
-如果要创建此类新维度，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+如果要创建此类新维度，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ## 不同属性订单重复概率的比较
 

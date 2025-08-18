@@ -13,29 +13,29 @@ ht-degree: 0%
 
 # 创建SQL计算列
 
-本主题概述了`Calculation`列类型的用途和用途，可以使用[Data Warehouse管理器](../data-warehouse-mgr/tour-dwm.md)将其添加到表中。 下面说明了SQL计算的用途、使用它们的原因、创建SQL计算的过程以及两个示例。
+本主题概述了`Calculation`列类型的用途和用途，可以使用[Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md)将其添加到表中。 下面说明了SQL计算的用途、使用它们的原因、创建SQL计算的过程以及两个示例。
 
 **解释**
 
-过去，被视为`advanced`的列只能由[!DNL Adobe Commerce Intelligence]处的客户成功团队分析师完成。 现在，所有权力都掌握在最终用户手中，可以在新的[!DNL Commerce Intelligence]架构上以`SQL Calculation`列的形式创建高级列。
+过去，被视为`advanced`的列只能由[!DNL Adobe Commerce Intelligence]处的客户成功团队分析师完成。 现在，所有权力都掌握在最终用户手中，可以在新的`SQL Calculation`架构上以[!DNL Commerce Intelligence]列的形式创建高级列。
 
-`Calculation`列类型现在作为Data Warehouse管理器中的选项提供，它是一种允许您使用PostgreSQL逻辑转换表上的列的表操作。 可以在PostgreSQL网站[此处](https://www.postgresql.org/docs/9.6/functions.html)找到有关`Calculation`列类型中可用的函数和运算符的文档。
+`Calculation`列类型现在作为Data Warehouse Manager中的选项提供，它和允许您使用PostgreSQL逻辑转换表上的列的表操作是相同的。 可以在PostgreSQL网站`Calculation`此处[找到有关](https://www.postgresql.org/docs/9.6/functions.html)列类型中可用的函数和运算符的文档。
 
 可以使用`Calculation`列创建的不同列几乎不受限制，但大多数列都可以使用IF-THEN语句和基本算术来创建，这些语句用于下面的示例。
 
 **示例1：客户的上次订单是否为？**
 
-大多数帐户的`orders`表中都有一个名为`Is customer's last order?`的列，用于对重复购买率和客户流失率进行分析。 如果您的帐户采用新架构，则此列是使用`Calculation`列构建的，可在下面的屏幕快照中看到：
+大多数帐户的`Is customer's last order?`表中都有一个名为`orders`的列，用于对重复购买率和客户流失率进行分析。 如果您的帐户采用新架构，则此列是使用`Calculation`列构建的，可在下面的屏幕快照中看到：
 
 ![](../../assets/Is_customer_s_last_order.png)
 
-`Is customer's last order?`列使用分别作为`A`和`B`别名的输入`Customer's lifetime number of orders`和`Customer's order number`。
+`Is customer's last order?`列使用分别作为`Customer's lifetime number of orders`和`Customer's order number`别名的输入`A`和`B`。
 
 逐行，PostgreSQL的含义是：
 
 * 用例：这将启动一系列If - Then语句
 * 当`A`为null或`B`为null时为null：如果任一输入为空，则输出也应为空。 这是为了防止SQL错误
-* 当`A=B`时，则`Yes`：如果该行的`Customer's lifetime number of orders`等于`Customer's order number`，则返回`Yes`。 因此，如果客户已下四张订单，则第四张订单的行将返回`Is customer's last order?`的`Yes`
+* 当`A=B`时，则`Yes`：如果该行的`Customer's lifetime number of orders`等于`Customer's order number`，则返回`Yes`。 因此，如果客户已下四张订单，则第四张订单的行将返回`Yes`的`Is customer's last order?`
 * else `No`：如果满足语句时没有其他语句，则返回`No`
 * end：这将结束If - Then语句
 
@@ -45,17 +45,17 @@ ht-degree: 0%
 
 许多客户都喜欢在项目级别分析收入，并按`product name`或`category`等字段对其进行分片。 大多数数据库实际上并不提供订单中产品的收入；而是提供订单中销售的数量和项目的价格。
 
-为了启用产品收入分析，大多数帐户在其`Orders Items`表中都有一个名为`Order item total value (quantity * price)`的列。 如果您的帐户采用新架构，则此列也是使用`Calculation`列构建的，并且可在下面的屏幕快照中看到：
+为了启用产品收入分析，大多数帐户在其`Order item total value (quantity * price)`表中都有一个名为`Orders Items`的列。 如果您的帐户采用新架构，则此列也是使用`Calculation`列构建的，并且可在下面的屏幕快照中看到：
 
 ![](../../assets/Order_item_total_value.png)
 
-在Commerce架构中，`Order item total value (quantity * price)`列使用分别作为`A`和`B`别名的输入`qty ordered`和`base price`。
+在Commerce架构中，`Order item total value (quantity * price)`列使用分别作为`qty ordered`和`base price`别名的输入`A`和`B`。
 
 此新列返回的值以美元和美分表示，因此正确的数据类型为`Decimal(10,2)`。
 
 **机械**
 
-通过导航到&#x200B;**[!DNL Manage Data > Data Warehouse]**，可将新`Calculation`列添加到表中，如下所示：
+通过导航到`Calculation`，可将新&#x200B;**[!DNL Manage Data > Data Warehouse]**&#x200B;列添加到表中，如下所示：
 
 ![](../../assets/blobid2.png)
 

@@ -61,8 +61,8 @@ ht-degree: 0%
 
 ### 为数据列分配数据类型
 
-如果数据列没有分配的[数据类型](https://en.wikipedia.org/wiki/Data_type)，则[!DNL Commerce Intelligence]猜测要使用哪种数据类型。 如果Adobe猜测不正确，则在System支持团队将列调整为正确的数据类型之前，您可能无法执行相关分析。 例如，如果日期列假定为数字数据类型，则可以使用日期维度显示一段时间的趋势。
+如果数据列没有分配的[数据类型](https://en.wikipedia.org/wiki/Data_type)，则[!DNL Commerce Intelligence]猜测要使用哪种数据类型。 如果系统猜测不正确，则在Adobe支持团队将该列调整为适当的数据类型之前，您可能无法执行相关分析。 例如，如果日期列假定为数字数据类型，则可以使用日期维度显示一段时间的趋势。
 
 ### 如果您有多个数据库，请向数据表添加前缀
 
-如果有多个数据库连接到[!DNL Commerce Intelligence]，Adobe建议向表添加前缀以避免混淆。 前缀可帮助您记住量度或数据维度的来源位置。
+如果您有多个数据库连接到[!DNL Commerce Intelligence]，Adobe建议您在表中添加前缀以避免混淆。 前缀可帮助您记住量度或数据维度的来源位置。

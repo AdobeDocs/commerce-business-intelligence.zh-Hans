@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 事件编号计算列
 
-本主题概述了&#x200B;**[!DNL Manage Data > Data Warehouse]**&#x200B;页面中可用的`Event Number`计算列的用途和用途。 下面是它的作用解释，然后是一个示例，以及创建它的机制。
+本主题概述了`Event Number`页面中可用的&#x200B;**[!DNL Manage Data > Data Warehouse]**&#x200B;计算列的用途和用途。 下面是它的作用解释，然后是一个示例，以及创建它的机制。
 
 **解释**
 
@@ -45,7 +45,7 @@ ht-degree: 1%
 
 1. 导航到要在其上创建此列的表。
 
-1. 单击&#x200B;**[!UICONTROL Create a Column]**&#x200B;并选择`Same Table`部分下的`EVENT_NUMBER (…)`列类型。
+1. 单击&#x200B;**[!UICONTROL Create a Column]**&#x200B;并选择`EVENT_NUMBER (…)`部分下的`Same Table`列类型。
 
 1. 第一个下拉列表`Event Owner`指定要确定其排名的实体。 在`Customer's order number`的情况下，客户标识符（如`customer_id`或`customer_email`）将是`Event Owner`。
 

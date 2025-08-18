@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 创建仪表板 {#createdash}
 
-功能板是可共享的、用于您在Report Builder中创建的分析的主题桶。 这就是您如何鼓励您的团队进行协作并在整个组织中维护单一真实来源的方法。
+功能板是可共享的，用于您在Report Builder中创建的分析的主题桶。 这就是您如何鼓励您的团队进行协作并在整个组织中维护单一真实来源的方法。
 
 *如果您是管理员或标准用户*，则可以通过单击`Dashboard Options`下拉菜单并选择`Create New dashboard`来创建仪表板。
 
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 ### 共享您的仪表板 {#sharingdash}
 
-为了真正地在整个组织中扩展[!DNL Commerce Intelligence]并提供有价值的见解，Adobe鼓励您与其他团队成员共享您创建的功能板。 *您可以通过单击页面顶部的`Share Dashboard`选项共享您拥有的仪表板*。
+为了真正地在整个组织中扩展[!DNL Commerce Intelligence]并提供有价值的见解，Adobe鼓励您与其他团队成员共享您创建的功能板。 *您可以通过单击页面顶部的*&#x200B;选项共享您拥有的仪表板`Share Dashboard`。
 
 当您共享功能板时，您可以跨整个组织或单独分配权限，这意味着您可以决定谁可以查看和编辑报表。
 

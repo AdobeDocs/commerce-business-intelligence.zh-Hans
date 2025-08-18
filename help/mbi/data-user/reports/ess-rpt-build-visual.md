@@ -43,7 +43,7 @@ ht-degree: 0%
 
    **`Group By`**
 
-   `Group By`控件允许您按组或区段添加多个维度。 Dimension是表中可用于分组数据的列。
+   `Group By`控件允许您按组或区段添加多个维度。 维度是表中可用于分组数据的列。
 
    * 从`Group By`选项列表中选择一个可用维度。
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
    * 单击&#x200B;**[!UICONTROL Apply]**&#x200B;以关闭“分组依据”详细信息。
 
-     ![多个Dimension](../../assets/magento-bi-report-builder-group-by-dimension-detail.png)
+     ![多个维度](../../assets/magento-bi-report-builder-group-by-dimension-detail.png)
 
    * 将鼠标悬停在每行上的几个数据点上，可查看当月首次订购该优惠券时使用该优惠券的客户数量。
 
@@ -101,7 +101,7 @@ ht-degree: 0%
      | ![](../../assets/magento-bi-btn-chart-vert-bar.png) | 垂直条 |
      | ![](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | 垂直栈叠条形图 |
      | ![](../../assets/magento-bi-btn-chart-pie.png) | 饼图 |
-     | ![](../../assets/magento-bi-btn-chart-area.png) | 面积图 |
+     | ![](../../assets/magento-bi-btn-chart-area.png) | 面积 |
      | ![](../../assets/magento-bi-btn-chart-funnel.png) | 漏斗 |
 
      {style="table-layout:auto"}

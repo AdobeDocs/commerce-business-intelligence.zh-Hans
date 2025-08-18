@@ -1,5 +1,5 @@
 ---
-title: 非基于日期的同类群组的同类群组Report Builder
+title: Report Builder非基于日期的同类群组同类群组
 description: 了解如何按相似的活动或属性对用户进行分组。
 exl-id: c7b85ce9-113c-4ffc-855f-3d53fe2347d8
 role: Admin, Data Architect, Data Engineer, User
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 1. 在左侧选项卡上单击&#x200B;**[!UICONTROL Report Builder]**，或在任意仪表板中单击&#x200B;**[!UICONTROL Add Report** > **Create Report]**。
 
-1. 在`Report Builder Selection`屏幕中，单击`Visual Report Builder`选项旁边的&#x200B;**[!UICONTROL Create Report]**。
+1. 在`Report Builder Selection`屏幕中，单击&#x200B;**[!UICONTROL Create Report]**&#x200B;选项旁边的`Visual Report Builder`。
 
 ### 添加量度
 
@@ -75,13 +75,13 @@ ht-degree: 0%
 
 #### 5. `Time range after cohort occurrence`
 
-是否要按月、周或年查看`cohorts`随时间的变化？ 您可在以下位置进行这些选择。 在该部分下，您将在`cohort action timestamp`发生后选择`time range`。 例如，对于在操作时间范围内下达了第一笔订单的客户，这会向您显示12个月的数据。
+是否要按月、周或年查看`cohorts`随时间的变化？ 您可在以下位置进行这些选择。 在该部分下，您将在`time range`发生后选择`cohort action timestamp`。 例如，对于在操作时间范围内下达了第一笔订单的客户，这会向您显示12个月的数据。
 
 ![cohort-first-action-time-range](../../assets/5-cohort-first-action-time-range.png)<!--{: width="400" height="557"}-->
 
 >[!NOTE]
 >
->当您在`Standard`和`Cohort`视图之间切换时，应用于您的量度的[!UICONTROL Filters]将保持不变。
+>当您在[!UICONTROL Filters]和`Standard`视图之间切换时，应用于您的量度的`Cohort`将保持不变。
 
 ### 相关
 

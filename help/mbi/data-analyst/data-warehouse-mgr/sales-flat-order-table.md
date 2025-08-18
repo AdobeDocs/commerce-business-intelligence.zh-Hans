@@ -27,17 +27,17 @@ ht-degree: 0%
 | `base_subtotal` | 订单中所有项目的商品总值。 不包含税、运费、折扣等 |
 | `base_shipping_amount` | 应用于订单的装运值 |
 | `base_tax_amount` | 应用于订单的税值 |
-| `billing_address_id` | 与`sales_order_address`表关联的`Foreign key`。 加入`sales_order_address.entity_id`以确定与订单关联的帐单地址详细信息 |
+| `billing_address_id` | 与`Foreign key`表关联的`sales_order_address`。 加入`sales_order_address.entity_id`以确定与订单关联的帐单地址详细信息 |
 | `coupon_code` | 订单申请的优惠券。 如果未应用优惠券，则此字段为`NULL` |
 | `created_at` | 订单的创建时间戳，以UTC本地存储。 根据[!DNL Commerce Intelligence]中的配置，此时间戳可能会转换为[!DNL Commerce Intelligence]中与数据库时区不同的报表时区 |
 | `customer_email` | 下订单客户的电子邮件地址。 在所有情况下均会填充该变量，包括通过访客结账处理的订单 |
 | `customer_group_id` | 与`customer_group`表关联的外键。 加入`customer_group.customer_group_id`以确定与订单关联的客户组 |
-| `customer_id` | 与`customer_entity`表关联的`Foreign key`（如果已注册客户）。 加入`customer_entity.entity_id`以确定与订单关联的客户属性。 如果订单是通过访客结帐发出的，则此字段为`NULL` |
+| `customer_id` | 与`Foreign key`表关联的`customer_entity`（如果已注册客户）。 加入`customer_entity.entity_id`以确定与订单关联的客户属性。 如果订单是通过访客结帐发出的，则此字段为`NULL` |
 | `entity_id` (PK) | 表的唯一标识符，通常用于联接Commerce实例中的其他表 |
 | `increment_id` | 订单的唯一标识符，在Adobe Commerce中通常称为`order_id`。 `increment_id`最常用于连接外部源，如[!DNL Google Ecommerce] |
 | `shipping_address_id` | 与`sales_order_address`表关联的外键。 加入`sales_order_address.entity_id`以确定与订单关联的配送地址详细信息 |
 | `status` | 订单状态。 可以返回“完成”、“正在处理”、“已取消”、“已退款”等值，以及在Commerce实例上实现的任何自定义状态。 处理订单时可能会发生更改 |
-| `store_id` | 与`store`表关联的`Foreign key`。 加入`store`。`store_id`以确定哪个Commerce商店视图与订单关联 |
+| `store_id` | 与`Foreign key`表关联的`store`。 加入`store`。`store_id`以确定哪个Commerce商店视图与订单关联 |
 
 {style="table-layout:auto"}
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 | `Customer's order number (previous-current)` | 客户上一订单的排名与此订单的排名关联，以`-`字符分隔。 通过将(“`Customer's order number` - 1”)与“`-`”后接“`Customer's order number`”连接进行计算。 例如，对于与客户第二次购买关联的订单，此列返回值`1-2`。 通常用于表示两个订单事件之间的时间（即，在“订单之间的时间”图表中） |
 | `Is customer's last order?` | 确定订单是对应于客户的上次订单还是最近订单。 通过将`Customer's order number`值与`Customer's lifetime number of orders`进行比较进行计算。 当这两个字段对于给定顺序相等时，此列返回`Yes`；否则，它返回`No` |
 | `Number of items in order` | 订单中包含的物料总数。 通过加入`sales_order`进行计算。`entity_id`到`sales_order_item`。`order_id`并汇总`sales_order_item`。`qty_ordered`字段 |
-| `Seconds between customer's first order date and this order` | 此订单与客户首次订单之间的间隔时间。 通过从每个订单的`created_at`中减去`Customer's first order date`计算，以整数秒数返回 |
+| `Seconds between customer's first order date and this order` | 此订单与客户首次订单之间的间隔时间。 通过从每个订单的`Customer's first order date`中减去`created_at`计算，以整数秒数返回 |
 | `Seconds since previous order` | 此订单与客户之前订单之间的间隔时间。 通过将此顺序的`created_at`减去前一顺序的`created_at`计算，返回整数秒数。 例如，对于与客户第三张订单对应的订单记录，此列返回客户第二张订单与第三张订单之间的秒数。 对于客户的第一个订单，此字段返回`NULL` |
 | `Shipping address city` | 订单的配送城市。 通过加入`sales_order`进行计算。`shipping_address_id`到`sales_order_address`。`entity_id`并返回`city`字段 |
 | `Shipping address country` | 订单的装运国家/地区代码。 通过加入`sales_order`进行计算。`Shipping_address_id`到`sales_order_address`。`entity_id`并返回`country_id` |

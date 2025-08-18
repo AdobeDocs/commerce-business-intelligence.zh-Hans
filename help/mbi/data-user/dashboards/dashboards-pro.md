@@ -1,6 +1,6 @@
 ---
 title: 开箱即用的功能板
-description: 了解现成的功能板，为您的业务提供洞察信息。
+description: 了解现成可用的功能板，以将insight引入您的业务中。
 exl-id: fe61c92e-de87-4317-96d7-01d2a9846bf9
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # 现成仪表板
 
-[!DNL Adobe Commerce Intelligence]包含现成的功能板，可提供对业务的洞察信息。 使用功能板，您可以检查基本指标的运行状况，例如用户生命周期收入、重复购买次数、在给定时间段内购买的热门产品等等。 创建这些预配置的功能板是为了帮助您做出明智的业务决策。
+[!DNL Adobe Commerce Intelligence]包含现成的报告面板，可将insight引入您的业务中。 使用功能板，您可以检查基本指标的运行状况，例如用户生命周期收入、重复购买次数、在给定时间段内购买的热门产品等等。 创建这些预配置的功能板是为了帮助您做出明智的业务决策。
 
 >[!NOTE]
 >
->对这些仪表板的访问取决于您的帐户类型和访问级别。 如果您没有看到这些仪表板，请联系[支持](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+>对这些仪表板的访问取决于您的帐户类型和访问级别。 如果您没有看到这些仪表板，请联系[支持](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ## 报告可用性
 
@@ -133,7 +133,7 @@ ht-degree: 0%
 
 ## 产品
 
-“产品”仪表板显示从订购的产品、它们的商品总价值(GMV)以及购买和退款的热门产品等方面来说明的一般产品表现。 它可以帮助您平衡购买和回报，并确定产品成功和受欢迎程度。 您的商店必须[配置为跟踪退款](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html?lang=zh-Hans)，才能填充这些图表。
+“产品”仪表板显示从订购的产品、它们的商品总价值(GMV)以及购买和退款的热门产品等方面来说明的一般产品表现。 它可以帮助您平衡购买和回报，并确定产品成功和受欢迎程度。 您的商店必须[配置为跟踪退款](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html)，才能填充这些图表。
 
 >[!NOTE]
 >

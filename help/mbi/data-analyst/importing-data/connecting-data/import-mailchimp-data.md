@@ -57,7 +57,7 @@ ht-degree: 0%
 
 ## 导出已发送数据 {#sent}
 
-1. 进入[!DNL Mailchimp]的`Campaigns`选项卡。
+1. 进入`Campaigns`的[!DNL Mailchimp]选项卡。
 
 1. 单击营销活动名称旁边的&#x200B;**[!UICONTROL View Report]**。
 
@@ -73,6 +73,6 @@ ht-degree: 0%
 
 ## 准备上载到[!DNL Commerce Intelligence]的文件 {#upload}
 
-每个文件（`Opens`、`Clicks`和`Sent`）都应作为单独的文件上载到[!DNL Commerce Intelligence]。 Adobe建议您使用以下命名约定来命名文件： `MailChimp\_ACTION\_DATE`。 将`ACTION`替换为`Open`、`Click`或`Sent`，并将`DATE`替换为导出日期。
+每个文件（`Opens`、`Clicks`和`Sent`）都应作为单独的文件上载到[!DNL Commerce Intelligence]。 Adobe建议您使用以下命名惯例来命名文件： `MailChimp\_ACTION\_DATE`。 将`ACTION`替换为`Open`、`Click`或`Sent`，并将`DATE`替换为导出日期。
 
-当您准备好上载文件时，请使用[`File Upload`功能](../connecting-data/using-file-uploader.md)将数据导入您的Data Warehouse。
+当您准备好上载文件时，请使用[`File Upload`功能](../connecting-data/using-file-uploader.md)将数据导入Data Warehouse。

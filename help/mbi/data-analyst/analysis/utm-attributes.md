@@ -1,6 +1,6 @@
 ---
 title: Google Analytics和UTM归因
-description: 了解Google Analytics源归因过程。
+description: 了解Google Analytics源归因流程。
 exl-id: 48b8a3d3-f1ac-4d3f-8f65-db1245c9ae0a
 role: Admin, Data Architect, Data Engineer, User
 feature: Reports
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 理想情况下，每次发生转化事件时，都会记录反向链接来源。 但如何确定来源？
 
-实际上，用户通常在点击/进行微观或宏观转化之前来自许多来源。 例如，他们可能通过有机方式访问网站，然后离开，然后通过付费搜索访问，然后离开，然后直接访问网站本身。 此源跟踪信息通常通过UTM参数提供给站点，但也有更复杂的系统。 出于您的目的，请关注[UTM](https://support.google.com/analytics/answer/1033867?hl=en&amp;ref_topic=1032998)。
+实际上，用户通常在点击/进行微观或宏观转化之前来自许多来源。 例如，他们可能通过有机方式访问网站，然后离开，然后通过付费搜索访问，然后离开，然后直接访问网站本身。 此源跟踪信息通常通过UTM参数提供给站点，但也有更复杂的系统。 出于您的目的，请关注[UTM](https://support.google.com/analytics/answer/1033867?hl=en&ref_topic=1032998)。
 
 ## [!DNL Google Analytics]如何通过UTM参数确定反向链接来源？
 
@@ -31,13 +31,13 @@ ht-degree: 0%
 
 ### 最后点击归因
 
-最后点击归因是[!DNL Google Analytics]使用的最常见归因模型。 在本例中，[!DNL Google Analytics] Cookie表示转换事件之前的最新源的UTM参数，该参数在数据库[&#128279;](../../data-analyst/analysis/google-track-user-acq.md)中记录为。 如果用户单击包含新UTM参数集的新URL，[!DNL Google Analytics] Cookie仅会覆盖以前的UTM参数。
+最后点击归因是[!DNL Google Analytics]使用的最常见归因模型。 在本例中，[!DNL Google Analytics] Cookie表示转换事件之前的最新源的UTM参数，该参数在数据库[中记录为](../../data-analyst/analysis/google-track-user-acq.md)。 如果用户单击包含新UTM参数集的新URL，[!DNL Google Analytics] Cookie仅会覆盖以前的UTM参数。
 
 例如，假定某个用户首先通过[!DNL Google Analytics] *付费搜索*&#x200B;访问网站，然后通过&#x200B;*免费搜索*&#x200B;返回，最后在转化事件之前直接返回&#x200B;*网站*&#x200B;或通过&#x200B;*电子邮件链接* **返回，而不使用UTM参数**。 在此示例中，[!DNL Google Analytics] Cookie显示用户的源是有机的，因为这是转换前的最后一个源。 忽略最终转化事件之前的用户的&#x200B;*路径*。 如果用户改为通过带有UTM的电子邮件链接访问网站，则[!DNL Google Analytics] Cookie将表明源是“电子邮件”。 因此，如果Cookie中存在UTM参数，并且用户通过直接进入，则[!DNL Google Analytics] Cookie会显示UTM参数，而不是“直接”。
 
 >[!NOTE]
 >
->当Cookie [过期](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage)或用户在浏览器中清除其Cookie时，特定用户的[!DNL Google Analytics] Cookie参数将被清除。*
+>当Cookie [!DNL Google Analytics]过期[或用户在浏览器中清除其Cookie时，特定用户的](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage) Cookie参数将被清除。*
 
 ### 首次点击归因
 

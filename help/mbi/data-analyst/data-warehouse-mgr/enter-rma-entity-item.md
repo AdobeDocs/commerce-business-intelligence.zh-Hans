@@ -57,7 +57,7 @@ ht-degree: 0%
 
 `enterprise_rma`
 
-* 通过以下联接在`enterprise_rma_item_entity`表上创建联接列（如`Return date\_requested`）：
+* 通过以下联接在`Return date\_requested`表上创建联接列（如`enterprise_rma_item_entity`）：
 * Commerce 1.x： `enterprise_rma_item_entity.rma_entity_id ` （多个） => `enterprise_rma.entity_id` （一个）
 * Commerce 2.x： `magento_rma_item_entity.rma_entity_id ` （多个）=> `magento_rma.entity_id` （一个）
 

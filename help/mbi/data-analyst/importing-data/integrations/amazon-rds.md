@@ -19,7 +19,7 @@ ht-degree: 0%
 * [[!DNL Microsoft SQL]](../integrations/microsoft-sql-server.md)
 * [[!DNL PostgreSQL]](../integrations/postgresql.md)
 
-根据您使用的数据库类型以及您是否使用加密连接（如[`SSH tunnel for MySQL`](../integrations/mysql-via-ssh-tunnel.md)），连接[!DNL RDS]实例的步骤有所不同，但以下是基础知识。
+根据您使用的数据库类型以及您是否使用加密连接（如[!DNL RDS]），连接[`SSH tunnel for MySQL`](../integrations/mysql-via-ssh-tunnel.md)实例的步骤有所不同，但以下是基础知识。
 
 ## 授权[!DNL Commerce Intelligence]访问您的数据库
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 添加[!DNL Commerce Intelligence] IP地址时，请确保将`/32`添加到地址的末尾，以指示[!DNL Amazon]它是精确的IP地址。 不用担心，AWS界面会明确说明这是必需的。
 
-## 为[!DNL Commerce Intelligence]创建一个`Linux`用户 {#linux}
+## 为`Linux`创建一个[!DNL Commerce Intelligence]用户 {#linux}
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 在您授予实例的[!DNL Commerce Intelligence]访问权限并为我们创建用户后，您最后需要做的就是在[!DNL Commerce Intelligence]中输入连接信息。
 
-通过单击&#x200B;**[!UICONTROL Add Integration]**，可通过`Integrations`页面(**[!UICONTROL Manage Data** > **Integrations]**)访问`MySQL`、`Microsoft SQL`和`PostgreSQL`的凭据页面。 显示集成列表后，单击要用于转至身份证明页的数据库的图标。 如果您当前无权访问所需的集成，请联系您的Adobe客户团队。
+通过单击`MySQL`，可通过`Microsoft SQL`页面(`PostgreSQL`)访问`Integrations`、**[!UICONTROL Manage Data** > **Integrations]**&#x200B;和&#x200B;**[!UICONTROL Add Integration]**&#x200B;的凭据页面。 显示集成列表后，单击要用于转至身份证明页的数据库的图标。 如果您当前无权访问所需的集成，请联系您的Adobe客户团队。
 
 要完成连接创建，您需要以下信息：
 

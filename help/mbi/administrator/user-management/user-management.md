@@ -6,7 +6,7 @@ role: Admin, User
 feature: User Management
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->_您可以限制&#x200B;**[!UICONTROL Standard]**&#x200B;用户访问特定量度[&#128279;](../../administrator/user-management/restrict-metric-access.md)的权限。_
+>_您可以限制&#x200B;**[!UICONTROL Standard]**用户访问特定量度[的](../../administrator/user-management/restrict-metric-access.md)权限。_
 >
 >**[!UICONTROL Standard] _用户可以使用额外的权限设置访问帐单。_
 >
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 ### 计费
 
-`Billing`用户有权访问计费页面，并可以更改付款信息。 此外，Adobe也可能联系他们以询问计费问题。
+`Billing`用户有权访问计费页面，并可以更改付款信息。 此外，Adobe可能会联系他们以询问帐单问题。
 
 默认情况下，`Admin`用户有权访问`Billing`选项卡，但是`Standard`用户如果在配置文件中选中`Billing`复选框，则也可以获得访问权限。
 

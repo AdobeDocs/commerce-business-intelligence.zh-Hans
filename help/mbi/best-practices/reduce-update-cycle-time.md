@@ -19,13 +19,13 @@ ht-degree: 0%
 
 ## 降低重新检查频率
 
-在数据库表中，可以存在具有可变值的数据列。 例如，在&#x200B;**订单**&#x200B;表中可能有一个名为&#x200B;**状态**&#x200B;的列。 最初将订单写入数据库时，状态列可能包含值`pending`。 已在您的[Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md)中使用此`pending`值复制订单。
+在数据库表中，可以存在具有可变值的数据列。 例如，在&#x200B;**订单**&#x200B;表中可能有一个名为&#x200B;**状态**&#x200B;的列。 最初将订单写入数据库时，状态列可能包含值`pending`。 已在您的[Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md)中使用此`pending`值复制该订单。
 
 可更改列必须在一段时间内重新检查[更新的值](../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)。 默认情况下，[!DNL Commerce Intelligence]在每次更新时都会重新检查这些列，但如果要重新检查和复制的数据量很大，则可能会对更新时间产生负面影响。 Adobe建议将重新检查频率设置为每日、每周或每月，而不是在每次更新时运行重新检查。
 
 ## 使用增量复制方法
 
-如上所述，较长的更新时间与必须重新检查和复制的数据量直接相关。 [增量复制方法](../data-analyst/data-warehouse-mgr/cfg-replication-methods.md)可以大大减少在更新周期期间处理的数据量。 在可能的情况下，Adobe建议使用这些方法或修改数据库以支持增量方法。
+如上所述，较长的更新时间与必须重新检查和复制的数据量直接相关。 [增量复制方法](../data-analyst/data-warehouse-mgr/cfg-replication-methods.md)可以大大减少在更新周期期间处理的数据量。 Adobe建议尽可能使用这些方法或修改数据库以支持增量方法。
 
 ## 从功能板中删除未使用的图表
 
@@ -43,4 +43,4 @@ ht-degree: 0%
 
 ## 正在结束
 
-如果在实施这些建议后，您的更新时间似乎仍然很慢，请[联系支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+如果在实施这些建议后，您的更新时间似乎仍然很慢，请[联系支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。

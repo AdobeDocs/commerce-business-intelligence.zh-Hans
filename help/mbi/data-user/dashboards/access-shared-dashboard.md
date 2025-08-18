@@ -21,4 +21,4 @@ ht-degree: 0%
 
 ## 现有用户
 
-若要再次查看共享功能板的列表，用户可以单击`Global Search`菜单中的&#x200B;**[!UICONTROL Find]**。
+若要再次查看共享功能板的列表，用户可以单击&#x200B;**[!UICONTROL Find]**&#x200B;菜单中的`Global Search`。

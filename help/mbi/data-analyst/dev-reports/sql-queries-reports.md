@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # 在Commerce Intelligence中翻译SQL查询
 
-曾想过如何将SQL查询转换为您在[!DNL Commerce Intelligence]中使用的[计算列](../data-warehouse-mgr/creating-calculated-columns.md)、[量度](../../data-user/reports/ess-manage-data-metrics.md)和[报告](../../tutorials/using-visual-report-builder.md)？ 如果您是重型SQL用户，了解如何在[!DNL Commerce Intelligence]中翻译SQL使您能够在[Data Warehouse管理器](../data-warehouse-mgr/tour-dwm.md)中更智能地工作并充分利用[!DNL Commerce Intelligence]平台。
+曾想过如何将SQL查询转换为您在[中使用的](../data-warehouse-mgr/creating-calculated-columns.md)计算列[、](../../data-user/reports/ess-manage-data-metrics.md)量度[和](../../tutorials/using-visual-report-builder.md)报告[!DNL Commerce Intelligence]？ 如果您是重型SQL用户，了解如何在[!DNL Commerce Intelligence]中翻译SQL使您能够在[Data Warehouse管理器](../data-warehouse-mgr/tour-dwm.md)中更智能地工作并充分利用[!DNL Commerce Intelligence]平台。
 
-在本主题结束时，您找到了SQL查询子句和[!DNL Commerce Intelligence]元素的&#x200B;**翻译矩阵**。
+在本主题结束时，您找到了SQL查询子句和&#x200B;**元素的**&#x200B;翻译矩阵[!DNL Commerce Intelligence]。
 
 首先查看常规查询：
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 ## 集合函数
 
-查询中的聚合函数（例如，`count`、`sum`、`average`、`max`、`min`）采用[!DNL Commerce Intelligence]中的&#x200B;**量度聚合**&#x200B;或&#x200B;**列聚合**&#x200B;的形式。 差异因素在于是否需要连接以执行聚合。
+查询中的聚合函数（例如，`count`、`sum`、`average`、`max`、`min`）采用&#x200B;**中的**&#x200B;量度聚合&#x200B;**或**&#x200B;列聚合[!DNL Commerce Intelligence]的形式。 差异因素在于是否需要连接以执行聚合。
 
 查看以上每个内容的示例。
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 聚合`within a single table`时需要指标。 例如，上述查询中的`SUM(b)`聚合函数很可能由对列`B`求和的度量表示。 
 
-查看[!DNL Commerce Intelligence]中如何定义`Total Revenue`量度的具体示例。 查看下面您尝试翻译的查询：
+查看`Total Revenue`中如何定义[!DNL Commerce Intelligence]量度的具体示例。 查看下面您尝试翻译的查询：
 
 | | |
 |--- |--- |
@@ -73,7 +73,7 @@ ht-degree: 0%
 | `ON c.customer_id = o.customer_id` | 路径 |
 | `WHERE o.status = 'success'` | 聚合筛选器 |
 
-在[!DNL Commerce Intelligence]中设置此项需要使用Data Warehouse管理器，其中在`orders`和`customers`表之间生成路径，然后在客户表中创建名为`Customer LTV`的列。
+在[!DNL Commerce Intelligence]中设置此项需要使用Data Warehouse管理器，您可以在其中构建`orders`和`customers`表之间的路径，然后在客户表中创建名为`Customer LTV`的列。
 
 了解如何在`customers`和`orders`之间建立新路径。 最终目标是在`customers`表中创建新的聚合列，因此请首先导航到Data Warehouse中的`customers`表，然后单击&#x200B;**[!UICONTROL Create a Column** > **&#x200B;选择定义&#x200B;**> **SUM]**。
 
@@ -91,7 +91,7 @@ ht-degree: 0%
 
 ![](../../assets/Customer_LTV.gif)
 
-现在，您已在`customers`表中构建了新的`Customer LTV`列，接下来可以使用此列创建一个[指标聚合](#aggregate)（例如，查找每个客户的平均LTV）。 您还可以使用基于`customers`表构建的现有量度，按报表中的计算列`group by`或`filter`。
+现在，您已在`Customer LTV`表中构建了新的`customers`列，接下来可以使用此列创建一个[指标聚合](#aggregate)（例如，查找每个客户的平均LTV）。 您还可以使用基于`group by`表构建的现有量度，按报表中的计算列`filter`或`customers`。
 
 >[!NOTE]
 >

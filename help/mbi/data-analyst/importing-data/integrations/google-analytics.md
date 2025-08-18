@@ -21,7 +21,7 @@ ht-degree: 0%
 
 [!DNL Google Analytics]是Internet上使用最广泛的Web分析服务。 通过在您的网站上实施[!DNL Google Analytics]，您可以跟踪访客如何使用您的网站、哪些内容吸引人、访客的退出位置等。 在[!DNL Commerce Intelligence]中连同其他数据一起分析这些量度，可提高网站的整体运行状况和可用性。
 
-在[!DNL Commerce Intelligence]中输入您的[!DNL Google Analytics]凭据以开始操作：
+在[!DNL Google Analytics]中输入您的[!DNL Commerce Intelligence]凭据以开始操作：
 
 1. 转到&#x200B;**[!UICONTROL Manage Data** > **Integrations]**。
 
@@ -52,12 +52,12 @@ ht-degree: 0%
 ## 正在断开[!DNL Google Analytics]与[!DNL Commerce Intelligence]的连接 {#disconnect}
 
 1. 访问您的[!DNL Google Analytics] [帐户设置](https://accounts.google.com/)页面。
-1. 在`Security`部分下，单击`Authorizing`应用程序和站点旁边的&#x200B;**[!UICONTROL edit]**。
-1. 单击[!DNL Commerce Intelligence]旁边的&#x200B;**[!UICONTROL revoke access]**。
+1. 在`Security`部分下，单击&#x200B;**[!UICONTROL edit]**&#x200B;应用程序和站点旁边的`Authorizing`。
+1. 单击&#x200B;**[!UICONTROL revoke access]**&#x200B;旁边的[!DNL Commerce Intelligence]。
 
 ## 相关：
 
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [正在连接 [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [分析网站活动和客户转化率](../../analysis/web-act-cust-conversion.md)
 * [使用 [!DNL Google Analytics] Cookie跟踪用户获取数据](../../analysis/google-track-user-acq.md)

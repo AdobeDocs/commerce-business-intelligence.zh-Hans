@@ -1,6 +1,6 @@
 ---
 title: 预期的Google Adwords数据
-description: 了解如何使用Data Warehouse管理器轻松地跟踪相关数据字段以供分析。
+description: 了解如何使用Data Warehouse Manager轻松地跟踪相关数据字段以供分析。
 exl-id: b0085683-7bb1-4da2-b343-4309e4796f0c
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 在连接[您的 [!DNL Google Adwords] 帐户](../integrations/google-adwords.md)后，您可以使用[Data Warehouse管理器](../../data-warehouse-mgr/tour-dwm.md)轻松跟踪相关数据字段以供分析。
 
-您在此注意到两个可用于复制到Data Warehouse中的表：
+您在该处注意到两个可用于复制到Data Warehouse中的表：
 
 * `campaigns[account-id]`
 * `adwords[account-id]`
@@ -45,12 +45,12 @@ ht-degree: 0%
 |-----|-----|
 | `\_id` | 表的主键 |
 | `accountId` | 帐户ID |
-| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adclicks) | 当天的点击总数 |
-| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adcost) | 当天营销活动的总成本 |
-| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adwordscampaignid) | [!DNL Adwords]营销活动ID |
-| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=traffic_sources&amp;jump=ga_campaign) | 营销活动名称（例如，[utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)） |
-| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=time&amp;jump=ga_date) | 营销活动运行的日期 |
-| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_impressions) | 当天的展示次数 |
+| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adclicks) | 当天的点击总数 |
+| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adcost) | 当天营销活动的总成本 |
+| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adwordscampaignid) | [!DNL Adwords]营销活动ID |
+| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=traffic_sources&jump=ga_campaign) | 营销活动名称（例如，[utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)） |
+| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=time&jump=ga_date) | 营销活动运行的日期 |
+| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_impressions) | 当天的展示次数 |
 | `profileId` | 用户档案ID |
 | `profileName` | 配置文件名称 |
 | `\_updated\_at` | 此行上次更新的日期和时间 |
@@ -65,12 +65,12 @@ ht-degree: 0%
 |-----|-----|
 | `\_id` | 表的主键 |
 | `accountId` | 帐户ID |
-| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adclicks) | 当天的点击总数 |
-| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adcost) | 当天营销活动的总成本 |
-| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adwordscampaignid) | [!DNL Adwords]营销活动ID |
-| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=traffic_sources&amp;jump=ga_campaign) | 营销活动名称（例如，[utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)） |
-| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=time&amp;jump=ga_date) | 营销活动运行的日期 |
-| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_impressions) | 当天的展示次数 |
+| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adclicks) | 当天的点击总数 |
+| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adcost) | 当天营销活动的总成本 |
+| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adwordscampaignid) | [!DNL Adwords]营销活动ID |
+| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=traffic_sources&jump=ga_campaign) | 营销活动名称（例如，[utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)） |
+| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=time&jump=ga_date) | 营销活动运行的日期 |
+| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_impressions) | 当天的展示次数 |
 | `profileId` | 用户档案ID |
 | `profileName` | 配置文件名称 |
 | `\_updated\_at` | 此行上次更新的日期和时间 |
@@ -89,4 +89,4 @@ ht-degree: 0%
 
 如果您没有合并表，并且在`adwords`表上构建了一个漂亮的仪表板，则需要复制报表或创建重复的量度以将该数据与您的[!DNL Facebook Ads]数据进行比较。 通过使用合并表，您可以将[!DNL Facebook Ads]数据无缝地合并到您现有的[!DNL Adwords]报表中。 您也可以按广告平台进行分段。
 
-如果您已同步上述字段，请[联系我们](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)以整合您的广告支出。
+如果您已同步上述字段，请[联系我们](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)以整合您的广告支出。

@@ -49,21 +49,21 @@ ht-degree: 0%
 
 ## 我需要在[!DNL Commerce Intelligence]中执行什么操作才能使用它？ {#use}
 
-创建完映射表后，必须[将文件](../../data-analyst/importing-data/connecting-data/using-file-uploader.md)上载到[!DNL Commerce Intelligence]和[创建一个联接列](../../data-analyst/data-warehouse-mgr/calc-column-types.md)，该列将新字段重新定位到所需的表中。 将文件同步到Data Warehouse后，即可执行该操作。
+创建完映射表后，必须[将文件](../../data-analyst/importing-data/connecting-data/using-file-uploader.md)上载到[!DNL Commerce Intelligence]和[创建一个联接列](../../data-analyst/data-warehouse-mgr/calc-column-types.md)，该列将新字段重新定位到所需的表中。 将文件同步到Data Warehouse后，您便可以执行该操作。
 
 此示例使用联接列将您在`mapping_state`表(`state_input`)上创建的列移至`customer_address`表。 这允许我们在报表中按干净的`state_input`列而不是`state`列进行分组。
 
 要创建`joined`列，请在Data Warehouse管理器中导航到字段将重新定位到的表。 在此示例中，这将是`customer_address`表。
 
 1. 单击&#x200B;**[!UICONTROL Create a Column]**。
-1. 从`Definition`下拉列表中选择`Joined Column`。
+1. 从`Joined Column`下拉列表中选择`Definition`。
 1. 为该列提供一个名称，使其与数据库中的`state`列不同。 为列`billing state (mapped)`命名，以便您能够在Report Builder中进行分段时了解要使用哪个列。
-1. 连接表所需的路径不存在，因此您需要创建一个路径。 在`Select a table and column`下拉菜单中单击&#x200B;**[!UICONTROL Create new path]**。
+1. 连接表所需的路径不存在，因此您需要创建一个路径。 在&#x200B;**[!UICONTROL Create new path]**&#x200B;下拉菜单中单击`Select a table and column`。
 
    如果您不确定表关系是什么，或者不确定如何正确定义主键和外键，请查看[教程](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md)以获取帮助。
 
    * 在`Many`端，选择您要将该字段重新定位到的表（同样，对我们来说，它是`customer_address`）以及示例中的`Foreign Key`列或`state`列。
-   * 在`One`侧，选择`mapping`表和`Primary key`列。 在这种情况下，应从`mapping_state`表中选择`state_input`列。
+   * 在`One`侧，选择`mapping`表和`Primary key`列。 在这种情况下，应从`state_input`表中选择`mapping_state`列。
    * 以下是路径的外观：
 
      ![](../../assets/State_Mapping_Path.png)
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 ![](../../assets/Clean_State_Segments.png)
 
-无论您何时想要清理Data Warehouse中一些潜在的乱数据，都可以使用映射表。 但是，映射表也可以用于其他酷炫用例，如[在 [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md)中复制 [!DNL Google Analytics channels] 。
+无论您何时想要清理Data Warehouse中一些潜在的乱数据，都可以使用映射表。 但是，映射表也可以用于其他酷炫用例，如[在 [!DNL Google Analytics channels] 中复制 [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md)。
 
 ### 相关
 

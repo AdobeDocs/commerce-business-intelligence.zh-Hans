@@ -15,7 +15,7 @@ ht-degree: 0%
 
 如果[!DNL Commerce Intelligence]中有多个量度需要以类似方式过滤（例如，过滤掉测试订单），您可以创建保存的过滤器集并将它们应用于量度。 这样可节省您的时间，因为在创建或编辑量度时您不必添加单个过滤器。
 
-有关详细信息，请参阅[培训视频](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=zh-Hans)。
+有关详细信息，请参阅[培训视频](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html)。
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 1. 保存`Filter Set`。
 
-保存过滤器集后，您可以将其应用于使用同一表的任何量度。 例如，如果您在`orders`表中创建了`Filter Set`，则可以将其应用于在此表中构建的&#x200B;*任何量度*，如`Revenue`。
+保存过滤器集后，您可以将其应用于使用同一表的任何量度。 例如，如果您在`Filter Set`表中创建了`orders`，则可以将其应用于在此表中构建的&#x200B;*任何量度*，如`Revenue`。
 
 >[!NOTE]
 >

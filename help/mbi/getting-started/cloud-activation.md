@@ -2,7 +2,7 @@
 title: 为Cloud Starter订阅激活您的Commerce Intelligence帐户
 description: 了解如何为Cloud Starter项目激活Commerce Intelligence。
 exl-id: 172439ee-fa1d-4872-b6a9-c61a212a7cbe
-redirect_to: https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/start/onpremise-activation.html?lang=zh-Hans
+redirect_to: https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/start/onpremise-activation.html
 source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
 source-wordcount: '19'

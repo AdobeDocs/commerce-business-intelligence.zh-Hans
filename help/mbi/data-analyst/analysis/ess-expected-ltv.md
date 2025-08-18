@@ -30,7 +30,7 @@ ht-degree: 0%
   >构造此量度的表（可能是`customer_entity`或`sales_order`，具体取决于您的商店接受访客结账的能力。）
 
    * 单击&#x200B;**[!UICONTROL Create New Metric]**&#x200B;并从上方选择表。
-   * 此量度对`Customer's lifetime revenue`列执行&#x200B;**中间值**，按`created_at`排序。
+   * 此量度对&#x200B;**列执行**&#x200B;中间值`Customer's lifetime revenue`，按`created_at`排序。
       * [!UICONTROL Filters]：
          * 添加`Customers we count (Saved Filter Set)`（或`Registered accounts we count`）
 
@@ -48,14 +48,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->在&#x200B;**[!UICONTROL Time Period:]**&#x200B;上，每个报表的时间段均列为`All-time`。 您可以根据分析需求随意更改此设置。 Adobe建议此仪表板上的所有报告都涵盖相同的时间段，如`All time`、`Year-to-date`或`Last 365 days`。
+>在&#x200B;**[!UICONTROL Time Period:]**&#x200B;上，每个报表的时间段均列为`All-time`。 您可以根据分析需求随意更改此设置。 Adobe建议该仪表板上的所有报告都涵盖相同的时间段，如`All time`、`Year-to-date`或`Last 365 days`。
 
 * **[!UICONTROL Average LTV (all)]**
    * [!UICONTROL Metric]： `Avg lifetime revenue`
    * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-
-     [!UICONTROL 间隔]: `None`
+   * 
+     [！UICONTROL间隔]: `None`
    * [!UICONTROL Chart Type]： `Number (scalar)`
 
 * **[!UICONTROL Average LTV (customers / non-guest checkout)]**
@@ -65,9 +64,8 @@ ht-degree: 0%
          * [`B`] `Customer's lifetime number of orders` **大于**`0`
 
    * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-
-     [!UICONTROL 间隔]: `None`
+   * 
+     [！UICONTROL间隔]: `None`
    * [!UICONTROL Chart Type]： `Number (scalar)`
 
 * **[!UICONTROL Average and Median LTV]**
@@ -75,22 +73,19 @@ ht-degree: 0%
    * 量度`2`： `Median lifetime revenue`
    * [!UICONTROL Time period]： `All time`
    * [!UICONTROL Interval]： `By Month`
-   * &#x200B;
-
-     [!UICONTROL 图表类型]: `Line`
+   * 
+     [！UICONTROL图表类型]: `Line`
    * 取消选中`Multiple Y-Axes`
 
 * 按生命周期订单数&#x200B;**LTV**
    * 量度`1`： `Avg lifetime revenue`
    * 量度`2`： `New customers`
    * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-
-     [!UICONTROL 间隔]: `None`
+   * 
+     [！UICONTROL间隔]: `None`
    * [!UICONTROL Group by]： `Customer's lifetime number of orders`
-   * &#x200B;
-
-     [!UICONTROL 图表类型]: `Line`
+   * 
+     [！UICONTROL图表类型]: `Line`
 
   >[!NOTE]
   >

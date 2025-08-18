@@ -21,7 +21,7 @@ ht-degree: 0%
 
 在[!DNL Commerce Intelligence]中，您可以使用量度[创建图表](../../data-user/reports/ess-rpt-build-visual.md)。 例如，量度`revenue`是订单总数。 量度`average customer revenue per order`是客户每次订购的平均花费。
 
-在报表中使用时，可以在指定的时间段内分析量度，并按不同类别筛选或分段[&#128279;](../../best-practices/segment-filter.md)。 考虑分析按性别分组的平均客户收入，在此例中，`average customer revenue per order`是指标，性别是分组。
+在报表中使用时，可以在指定的时间段内分析量度，并按不同类别筛选或分段[](../../best-practices/segment-filter.md)。 考虑分析按性别分组的平均客户收入，在此例中，`average customer revenue per order`是指标，性别是分组。
 
 ## 定义量度 {#define}
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 1. 命名您的量度。
 
-   Adobe推荐的名称，只需一眼即可告知您该指标是什么。 例如： `Average Order Revenue`。
+   Adobe推荐的名称，只需一眼即可让您了解该指标是什么。 例如： `Average Order Revenue`。
 
 1. 下一步是定义量度的用途。 使用下拉菜单，定义量度的操作、`operation`列和`date`维度：
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 * “\[`A`\]和\[`B`\]”仅允许同时满足筛选器\[`A`\]和\[`B`\]的数据
 * “（\[`A`\]和\[`B`\]）或\[`C`\]”仅允许同时满足筛选器\[`A`\]和\[`B`\]的数据，或者仅满足筛选器\[`C`\]的数据
 
-## 添加Dimension {#dimensions}
+## 添加维度 {#dimensions}
 
 [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md)部分显示所有可用于筛选或分组的数据维度；默认情况下，所有可用数据列将作为维度列出。 继续此示例，如果您想按反向链接来源划分收入，可以在此处执行此操作。
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 访问您激活的[!DNL Adobe Commerce Intelligence]帐户
 
-在为[内部部署或云](../getting-started/onpremise-activation.md)激活您的[!DNL Commerce Intelligence]帐户并与Adobe帐户团队合作完成配置步骤后，您现在可以登录您的帐户。
+在为[!DNL Commerce Intelligence]内部部署或云[激活您的](../getting-started/onpremise-activation.md)帐户并与Adobe帐户团队合作完成配置步骤后，您现在可以登录您的帐户。
 
 ## 使用您的[!DNL Adobe ID]登录
 

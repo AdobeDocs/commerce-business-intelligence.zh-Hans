@@ -17,7 +17,7 @@ ht-degree: 0%
 
 想要了解您的业务表现或寻找您最有价值的客户获取来源和渠道？ 将您的[!DNL Spree]数据连接到[!DNL Commerce Intelligence]允许您回答这些问题等。
 
-[!DNL Spree]数据库基于[!DNL PostgreSQL]，您可以使用与普通 [!DNL Postgres] 连接[&#128279;](../integrations/postgresql.md)相同的步骤将其连接到[!DNL Commerce Intelligence]。
+[!DNL Spree]数据库基于[!DNL PostgreSQL]，您可以使用与普通[!DNL Commerce Intelligence]连接[相同的 [!DNL Postgres] 步骤将其连接到](../integrations/postgresql.md)。
 
 ## 相关文档
 

@@ -43,9 +43,9 @@ ht-degree: 0%
 
 1. 创建一段时间内您的总支出的[!UICONTROL Metric]
 1. 转到[!UICONTROL Data > Metrics]
-1. 选择`Add New Metric`并选择正在记录[!DNL AdWords]成本数据的[!DNL `Adwords...`]表。
+1. 选择`Add New Metric`并选择正在记录[!DNL `Adwords...`]成本数据的[!DNL AdWords]表。
 1. 在指标编辑器中，为您的指标提供一个名称（例如，[!UICONTROL AdWord Cost]）
-1. 使用这些下拉列表，对按`date`列排序的[!DNL Adwords...]表（更改）中的`adCost`列执行&#x200B;**Sum**。
+1. 使用这些下拉列表，对按&#x200B;**列排序的**&#x200B;表（更改）中的`adCost`列执行[!DNL Adwords...]Sum`date`。
    ![](../../assets/success-add-new-metric.png)<!--="500" height="303"}-->
 1. 单击顶部的`Back to Metric List`并转到任意仪表板。
 
@@ -99,7 +99,7 @@ ht-degree: 0%
 >
 >此示例假设所有促销活动成本都专门用于生成特定产品的购买。 假设所有成本都花费在生成购买上，则生成的ROI将考虑最坏的情况（每次购买的最高成本）。 您可以确保实际ROI高于此计算。 示例：假设您在一个产生10个新用户和10次购买的营销活动上花费$20，则每次购买的实际成本为$1。 假设所有成本都花在了获取新用户上，则每次购买的成本为2美元。
 
-开始之前，[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)以将以下维度联接到行项目表(`sales\_flat\_order\_item, order\_item`)：
+开始之前，[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)以将以下维度联接到行项目表(`sales\_flat\_order\_item, order\_item`)：
 
 * 订单的来源（如果您仅在用户级别跟踪反向链接来源，则加入用户的来源）
 * 订单的促销活动（如果您仅在用户级别跟踪反向链接来源，则加入用户的促销活动）
@@ -118,7 +118,7 @@ ht-degree: 0%
 
 1. 在任意仪表板中，单击&#x200B;**[!UICONTROL Add Report > Create new report]**
 1. 按照上面特定产品报表的营销活动中的过滤器和分组说明添加`Revenue by items`量度，然后单击量度标量值下方的&#x200B;**[!UICONTROL Hide]**
-1. 现在，按照您在上面`User acquisition campaigns`部分中探索的`Ad cost by campaigns`报表中的筛选器和分组说明添加[!DNL AdWords Cost]指标；然后单击指标标量值下方的&#x200B;**[!UICONTROL Hide]**
+1. 现在，按照您在上面[!DNL AdWords Cost]部分中探索的`Ad cost by campaigns`报表中的筛选器和分组说明添加`User acquisition campaigns`指标；然后单击指标标量值下方的&#x200B;**[!UICONTROL Hide]**
 1. 设定好这些量度后，添加公式：
 1. [!UICONTROL ROI]：输入公式`\[A\]/\[B\]`，如果`\[A\]`表示`Revenue per campaign for specific product(s)`，`\[B\]`表示`Ad cost by campaigns`。 这会返回（特定产品的收入）/（促销活动成本）的比率
 1. [!UICONTROL Return]：输入公式`\[A\]-\[B\]`。 通过计算（平均用户LTV） — （每次购买的平均成本），返回用户的平均利润

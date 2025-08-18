@@ -27,10 +27,10 @@ ht-degree: 0%
 
 - *您使用哪个版本的Commerce？* — 选择您的商店运营所在的`currency`。
 
-- *您的商店是否位于欧盟？* — 如果您回答`Yes`此问题，Adobe将您的Data Warehouse和所有数据托管在欧盟，以符合GDPR。
+- *您的商店是否位于欧盟？* — 如果您回答`Yes`此问题，Adobe将按照GDPR将您的Data Warehouse和所有数据托管在欧盟。
 
 ## 数据库设置
 
-- `Database name` - Commerce事务型数据所在的[!DNL MySQL]数据库&#x200B;*的*&#x200B;名称是什么？
+- `Database name` - Commerce事务型数据所在的&#x200B;*数据库[!DNL MySQL]的*&#x200B;名称是什么？
 
 - `Table prefix (optional)` - Commerce数据库中包含的表是否带有任何前缀（例如，`store_`）？ 通常不会出现这种情况，但可以进行自定义。

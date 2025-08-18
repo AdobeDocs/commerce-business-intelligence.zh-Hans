@@ -6,19 +6,19 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
 
-# 通过[!DNL SSH Tunnel]连接[!DNL PostgreSQL]
+# 通过[!DNL PostgreSQL]连接[!DNL SSH Tunnel]
 
-要通过`SSH tunnel`将您的[!DNL PostgreSQL]数据库连接到[!DNL Commerce Intelligence]，您必须执行以下操作：
+要通过[!DNL PostgreSQL]将您的[!DNL Commerce Intelligence]数据库连接到`SSH tunnel`，您必须执行以下操作：
 
 1. [检索 [!DNL Commerce Intelligence] 公钥](#retrieve)
 1. [允许访问 [!DNL Commerce Intelligence] IP地址](#allowlist)
-1. [为 [!DNL Commerce Intelligence]创建 [!DNL Linux] 用户](#linux)
-1. [为 [!DNL Commerce Intelligence]创建 [!DNL PostgreSQL] 用户](#postgres)
+1. [为 [!DNL Linux] 创建 [!DNL Commerce Intelligence]用户](#linux)
+1. [为 [!DNL PostgreSQL] 创建 [!DNL Commerce Intelligence]用户](#postgres)
 1. [在 [!DNL Commerce Intelligence]中输入连接和用户信息](#finish)
 
 ## 正在检索[!DNL Commerce Intelligence] [!DNL public key] {#retrieve}
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 要使连接成功，必须将防火墙配置为允许从IP地址访问。 它是`54.88.76.97/32`，但它也位于`PostgreSQL`凭据页面上。 请参阅上面GIF中的蓝色方框。
 
-## 正在为[!DNL Commerce Intelligence]创建[!DNL Linux]用户 {#linux}
+## 正在为[!DNL Linux]创建[!DNL Commerce Intelligence]用户 {#linux}
 
 这可以是生产或辅助计算机，只要它包含实时（或经常更新）数据。 您可以按照您喜欢的方式[限制此用户](../../../administrator/account-management/restrict-db-access.md)，只要它保留连接到[!DNL PostgreSQL]服务器的权利即可。
 
@@ -105,4 +105,4 @@ ht-degree: 0%
 
 ### 相关
 
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

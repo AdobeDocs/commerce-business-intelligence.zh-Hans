@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# 通过[!DNL cPanel]连接[!DNL MySQL]
+# 通过[!DNL MySQL]连接[!DNL cPanel]
 
-* [在 [!DNL cPanel]中创建 [!DNL Commerce Intelligence] [!DNL MySQL]用户](#cpanel)
+* [在 [!DNL Commerce Intelligence] [!DNL MySQL]中创建 [!DNL cPanel]用户](#cpanel)
 * [在 [!DNL Commerce Intelligence]中输入连接和用户信息](#finish)
 
 ## 跳转到
@@ -25,17 +25,17 @@ ht-degree: 0%
 >
 >[!DNL Adobe]建议您使用SSH或其他加密形式来保护您的数据！ 如果此选项不可用，则仍可以使用本主题中的说明直接将[!DNL Commerce Intelligence]连接到数据库。
 
-本主题将指导您使用[!DNL cPanel]将[!DNL MySQL]数据库直接连接到[!DNL Commerce Intelligence]。 此进程还可用于将[!DNL Adobe Commerce]和任何其他基于MySQL的电子商务数据库连接到[!DNL Commerce Intelligence]。
+本主题将指导您使用[!DNL MySQL]将[!DNL Commerce Intelligence]数据库直接连接到[!DNL cPanel]。 此进程还可用于将[!DNL Adobe Commerce]和任何其他基于MySQL的电子商务数据库连接到[!DNL Commerce Intelligence]。
 
-1. 在[!DNL cPanel]中创建[!DNL Commerce Intelligence] [!DNL MySQL]用户
+1. 在[!DNL Commerce Intelligence]中创建[!DNL MySQL] [!DNL cPanel]用户
 1. 在[!DNL Commerce Intelligence]中输入连接和用户信息
 
 开始使用。
 
-## 在[!DNL cPanel]中创建[!DNL Commerce Intelligence] [!DNL MySQL]用户 {#cpanel}
+## 在[!DNL Commerce Intelligence]中创建[!DNL MySQL] [!DNL cPanel]用户 {#cpanel}
 
 1. 通过您的托管提供商登录[!DNL cPanel]。
-1. 单击`Database`部分中的&#x200B;**[!UICONTROL [!DNL MySQL] Databases]**。
+1. 单击&#x200B;**[!UICONTROL [!DNL MySQL] Databases]**&#x200B;部分中的`Database`。
 1. 向下滚动到`Add New User`部分并为[!DNL Commerce Intelligence]创建用户：
 
    ![](../../../assets/create-mbi-mysql-user-cpanel.png)
@@ -69,4 +69,4 @@ ht-degree: 0%
 
 ## 相关：
 
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

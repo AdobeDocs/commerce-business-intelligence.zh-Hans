@@ -15,7 +15,7 @@ ht-degree: 0%
 
 你调查了你的受众，你创建了你的营销活动，你投资了几个营销渠道。 一段时间已经过去了，这些渠道的效果如何？ 哪个渠道引入的新用户最多？ 哪个来源对您的总收入贡献最大？
 
-使用[!DNL Adobe Commerce Intelligence]，您可以按反向链接来源轻松对您的收入和用户进行分段，无论该来源是对应于[[!DNL [Google Analytics' UTM fields]]](https://support.google.com/analytics/answer/1191184?hl=en)还是自定义数据字段。 此分段允许您找到表现最佳的渠道并更好地投入营销预算。
+使用[!DNL Adobe Commerce Intelligence]，您可以按反向链接来源轻松对您的收入和用户进行分段，无论该来源是对应于[!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en)还是自定义数据字段。 此分段允许您找到表现最佳的渠道并更好地投入营销预算。
 
 本主题探究了可用于揭示您最有价值的营销渠道的一些报表：
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 评估反向链接来源的表现是确定最有价值渠道的关键。 此报告按客户获取来源显示一段时间内新注册用户的数量，从而允许您跟踪推荐来源在获取新注册用户方面的性能。
 
-要在[Report Builder](../../tutorials/using-visual-report-builder.md)中创建此报告，请将&#x200B;**新用户**&#x200B;指标（或计算一段时间内新用户数的等效指标）添加到报告中。 然后执行以下操作：
+要在[Report Builder](../../tutorials/using-visual-report-builder.md)中创建此报表，请将&#x200B;**新用户**&#x200B;指标（或计算一段时间内新用户数的等效指标）添加到报表中。 然后执行以下操作：
 
 1. 将[!UICONTROL Time Period]设置为要分析的注册期。
 1. 将[!UICONTROL Interval]设置为每月。
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 平均订单值报表显示从特定来源获得的用户在下订单时的平均花费。 但是，此报表不显示这些相同的用户是否为回头客。 但是，通过按用户来源重复订购，您可以查看特定来源的用户是否重复购买。
 
-要在[Report Builder](../../tutorials/using-visual-report-builder.md)中创建此报表，请添加&#x200B;**订单数**&#x200B;指标，然后执行以下操作：
+要在[Report Builder](../../tutorials/using-visual-report-builder.md)中创建此报表，请添加&#x200B;**订单数**&#x200B;量度，然后执行以下操作：
 
 1. 将[!UICONTROL Time Period]设置为要分析的注册期。
 1. 将[!UICONTROL Time Interval]设置为每月。

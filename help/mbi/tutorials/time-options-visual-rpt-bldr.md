@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# 在[!DNL Visual Report Builder]中使用[!DNL Time]选项
+# 在[!DNL Time]中使用[!DNL Visual Report Builder]选项
 
 [!DNL Visual Report Builder]的功能之一是全局`Time Range`和`Interval`设置。 利用这些设置，可分析特定时间段内的报表数据。
 
@@ -42,13 +42,13 @@ ht-degree: 0%
 1. 单击全局&#x200B;**[!UICONTROL Time Range]**&#x200B;选项，然后单击&#x200B;**[!UICONTROL Moving Time Range]**。 将此项设置为`Last Year`。
 1. 单击全局&#x200B;**[!UICONTROL Time Interval]**&#x200B;选项并将其设置为`Monthly`。
 1. Report Builder会自动为第二个量度添加第二个Y轴。 取消选择`Multiple Y-Axes`框。
-1. 接下来，将独立的`Time Interval`应用于第一个量度。 单击`first Revenue metric`右侧的&#x200B;**[!UICONTROL Time Options]** （时钟图标）。
+1. 接下来，将独立的`Time Interval`应用于第一个量度。 单击&#x200B;**[!UICONTROL Time Options]**&#x200B;右侧的`first Revenue metric` （时钟图标）。
 1. 在报表上方显示的展开窗口中单击&#x200B;**[!UICONTROL Time Options]**。
 1. 在下拉菜单中，设置以下内容：
 
    * `Time Interval`：将此项设置为`None`。
 
-   * `Time Range`：通过先单击&#x200B;**[!UICONTROL Custom]**，再单击&#x200B;**[!UICONTROL Moving Range]**，最后选择`Last Year`选项，将此选项设置为`Last Year`。
+   * `Time Range`：通过先单击`Last Year`，再单击&#x200B;**[!UICONTROL Custom]**，最后选择&#x200B;**[!UICONTROL Moving Range]**&#x200B;选项，将此选项设置为`Last Year`。
 
    * 单击&#x200B;**[!UICONTROL Apply]**&#x200B;保存间隔和范围设置。 这将创建一个量度，用于计算上一年的总收入。 接下来，在公式中将此量度用作分母。
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 ## 比较不同时间范围内的相同量度 {#difftimerange}
 
-此示例使用名为`Day number of the month`的自定义维度。 如果要创建此报表，但您的Data Warehouse中还没有此维度，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)寻求帮助。
+此示例使用名为`Day number of the month`的自定义维度。 如果要创建此报表，但您的Data Warehouse中还没有此维度，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)寻求帮助。
 
 此类别中最常见的两个示例是(1)比较增长指标（年收入或月收入）和(2)更好地了解最近的库存或物料销售趋势。
 
@@ -77,13 +77,13 @@ ht-degree: 0%
 1. 将第一个指标重命名为`Items sold last 7 days`，将第二个指标重命名为`Items sold last 28 days`。
 1. 单击&#x200B;**[!UICONTROL Time Range]**，然后单击&#x200B;**[!UICONTROL Moving Time Range]**。 将此项设置为`Last Month`。
 1. 单击&#x200B;**[!UICONTROL Time Interval]**&#x200B;并将其设置为`None`。
-1. 单击第二个`Revenue`量度旁边的&#x200B;**[!UICONTROL Time Options]** （时钟图标）。
+1. 单击第二个&#x200B;**[!UICONTROL Time Options]**&#x200B;量度旁边的`Revenue` （时钟图标）。
 1. 在报表上方显示的展开窗口中单击&#x200B;**[!UICONTROL Time Options]**。
 1. 在下拉菜单中，设置以下内容：
 
    * `Time Interval`：将此项设置为`None`。
 
-   * `Time Range`：通过先单击&#x200B;**[!UICONTROL Custom]**，然后单击&#x200B;**[!UICONTROL Moving Range]**&#x200B;将此项设置为`From 14 Months Ago To 13 Months Ago`。 使用菜单顶部的字段和下拉菜单设置范围。 此设置允许我们查看上个月但上一年度的收入。
+   * `Time Range`：通过先单击`From 14 Months Ago To 13 Months Ago`，然后单击&#x200B;**[!UICONTROL Custom]**&#x200B;将此项设置为&#x200B;**[!UICONTROL Moving Range]**。 使用菜单顶部的字段和下拉菜单设置范围。 此设置允许我们查看上个月但上一年度的收入。
 
    如果量度从报表中消失，请不要担心 — 设置独立时间选项会自动从报表中隐藏该量度。 要重新显示它，请单击量度旁边的&#x200B;**[!UICONTROL Show]**。
 
@@ -91,7 +91,7 @@ ht-degree: 0%
 
    * 单击&#x200B;**[!UICONTROL Apply]**&#x200B;保存间隔和范围设置。
 
-   * 接下来，通过单击&#x200B;**[!UICONTROL Group By]**&#x200B;并选择维度，添加您的自定义`Day number of the month`维度。 这将返回订单当月的日期编号 — 例如，3月2日下单的订单将返回`2`。
+   * 接下来，通过单击`Day number of the month`并选择维度，添加您的自定义&#x200B;**[!UICONTROL Group By]**&#x200B;维度。 这将返回订单当月的日期编号 — 例如，3月2日下单的订单将返回`2`。
 
    * 在`Group By`下拉列表中，选择`Show All`并单击&#x200B;**[!UICONTROL Apply]**。 这将为报表创建X轴值：
 
@@ -110,12 +110,12 @@ ht-degree: 0%
    1. 将第二个量度重命名为`Items sold last 28 days`。
 1. 在`Items sold last 7 days`指标上，单击全局&#x200B;**[!UICONTROL Time Range]**&#x200B;选项，然后单击&#x200B;**[!UICONTROL Moving Time Range]**。 对于此示例，您将其设置为`Last 7 Days`。
 1. 单击&#x200B;**[!UICONTROL Time Interval]**&#x200B;并将其设置为`None`。
-1. 接下来，您为`Items sold last 28 days`量度定义`Time Options`。 单击`second Items sold`量度右侧的&#x200B;**[!UICONTROL Time Options]** （时钟图标）。
+1. 接下来，您为`Time Options`量度定义`Items sold last 28 days`。 单击&#x200B;**[!UICONTROL Time Options]**&#x200B;量度右侧的`second Items sold` （时钟图标）。
 1. 在报表上方显示的展开窗口中单击&#x200B;**[!UICONTROL Time Options]**。
 1. 在下拉菜单中，设置以下内容：
 
    * `Time Interval`：将此项设置为`None`。
-   * `Time Range`：通过先单击&#x200B;**[!UICONTROL Custom]**，然后单击&#x200B;**[!UICONTROL Moving Range]**&#x200B;将此项设置为`From 29 days to 1 day ago`。 使用菜单顶部的字段和下拉菜单设置范围。
+   * `Time Range`：通过先单击`From 29 days to 1 day ago`，然后单击&#x200B;**[!UICONTROL Custom]**&#x200B;将此项设置为&#x200B;**[!UICONTROL Moving Range]**。 使用菜单顶部的字段和下拉菜单设置范围。
    * 单击&#x200B;**[!UICONTROL Apply]**&#x200B;保存间隔和范围设置。
    * 复制`Items sold last 28 days`指标并打开新指标的`Time Options`。 将选项设置为以下内容：
 
@@ -127,14 +127,14 @@ ht-degree: 0%
 
 若要创建公式，请单击&#x200B;**[!UICONTROL Add Formula]**。 输入下面的公式，完成后，单击&#x200B;**[!UICONTROL Apply Changes]**。 对三个时间段中的每一个重复此操作：
 
-* 对于`last 7 days time period`，在`Formula`字段中输入`D / A`。
-* 对于`last 28 days time period`，在`Formula`字段中输入`D / (B/4)`。
+* 对于`last 7 days time period`，在`D / A`字段中输入`Formula`。
+* 对于`last 28 days time period`，在`D / (B/4)`字段中输入`Formula`。
 
   >[!NOTE]
   >
   >请务必在此标准化您选择的时间范围。 在此示例中，将28天划分为四周。 您可能需要对公式应用不同的逻辑。
 
-* 对于`last promo period`，在`Formula`字段中输入`D / C`。
+* 对于`last promo period`，在`D / C`字段中输入`Formula`。
 
   ![](../assets/Different_Time_Ranges_2.png)
 

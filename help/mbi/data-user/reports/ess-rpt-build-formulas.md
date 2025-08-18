@@ -63,7 +63,7 @@ ht-degree: 0%
 
    报表现在为公式`New Customer Revenue`添加了一个新行，侧栏显示新客户产生的收入总额。
 
-   使用公式![&#128279;](../../assets/magento-bi-report-builder-revenue-by-products-formula-report.png)的报告
+   使用公式![的](../../assets/magento-bi-report-builder-revenue-by-products-formula-report.png)报告
 
 ## 步骤3：添加日期范围
 

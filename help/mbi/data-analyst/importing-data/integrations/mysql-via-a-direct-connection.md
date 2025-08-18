@@ -16,7 +16,7 @@ ht-degree: 0%
 ## 在本主题中
 
 * [允许访问 [!DNL Commerce Intelligence] IP地址](#allowlist)
-* [为 [!DNL Commerce Intelligence]创建 [!DNL MySQL] 用户](#steptwo)
+* [为 [!DNL MySQL] 创建 [!DNL Commerce Intelligence]用户](#steptwo)
 * [在 [!DNL Commerce Intelligence]中输入连接信息](#stepthree)
 
 ## 跳转到
@@ -36,9 +36,9 @@ ht-degree: 0%
 
 ![MBI_Allow_Access_IPs.png](../../../assets/MBI_allow_access_IPs.png)
 
-## 为[!DNL Commerce Intelligence]创建一个[!DNL MySQL]用户
+## 为[!DNL MySQL]创建一个[!DNL Commerce Intelligence]用户
 
-为[!DNL Commerce Intelligence]创建`MySQL`用户的最简单方法是在登录具有`GRANT`权限的`MySQL`时执行以下查询。 将`Commerce Intelligence IP Address`替换为[!DNL Commerce Intelligence] IP地址，并将`secure password`替换为您选择的安全密码：
+为`MySQL`创建[!DNL Commerce Intelligence]用户的最简单方法是在登录具有`MySQL`权限的`GRANT`时执行以下查询。 将`Commerce Intelligence IP Address`替换为[!DNL Commerce Intelligence] IP地址，并将`secure password`替换为您选择的安全密码：
 
 ```sql
     GRANT SELECT ON *.* TO 'magentobi'@'<Commerce Intelligence IP address>' IDENTIFIED BY '<secure password>';
@@ -66,4 +66,4 @@ ht-degree: 0%
 
 ## 相关文档
 
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -26,9 +26,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->除了来自[!DNL Google Analytics]的所有指标之外，所有具有&#x200B;**[!UICONTROL Standard]**&#x200B;权限的用户还可以通过“数据导出”访问Data Warehouse中的所有数据。
+>除了来自&#x200B;**[!UICONTROL Standard]**&#x200B;的所有量度之外，所有具有[!DNL Google Analytics]权限的用户还可以通过“数据导出”访问Data Warehouse中的所有数据。
 
-您还可以通过编辑量度并在&#x200B;**[[!UICONTROL User Rights]](../../data-user/reports/ess-manage-data-metrics.md)**&#x200B;部分中选择&#x200B;**[!UICONTROL Standard]**&#x200B;用户来限制对量度的访问。
+您还可以通过编辑量度并在&#x200B;**[!UICONTROL Standard]**&#x200B;部分中选择&#x200B;**[[!UICONTROL User Rights]](../../data-user/reports/ess-manage-data-metrics.md)**&#x200B;用户来限制对量度的访问。
 
 >[!NOTE]
 >

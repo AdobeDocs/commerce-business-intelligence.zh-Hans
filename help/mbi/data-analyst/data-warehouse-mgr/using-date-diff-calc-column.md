@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 日期差异计算列
 
-本主题概述了&#x200B;**[!DNL Manage Data > Data Warehouse]**&#x200B;页面中可用的`Date Difference`计算列的用途和用途。 下面是它的作用解释，然后是一个示例，以及创建它的机制。
+本主题概述了`Date Difference`页面中可用的&#x200B;**[!DNL Manage Data > Data Warehouse]**&#x200B;计算列的用途和用途。 下面是它的作用解释，然后是一个示例，以及创建它的机制。
 
 **解释**
 
@@ -46,7 +46,7 @@ ht-degree: 0%
    * 选择`Starting DATETIME`列** >选择开始日期时间字段，该字段通常是较早发生的事件
 
 1. 为列提供一个名称，然后单击&#x200B;**[!UICONTROL Save]**。
-1. 该列可立即使用&#x200B;*1&rbrace;。*
+1. 该列可立即使用&#x200B;*1}。*
 
 例如，以下示例配置为计算`Seconds between order date and customer's creation date`：
 

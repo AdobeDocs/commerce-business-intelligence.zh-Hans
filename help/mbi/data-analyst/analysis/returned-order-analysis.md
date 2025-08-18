@@ -61,9 +61,9 @@ ht-degree: 0%
 * **`Order's created at`**
 * 选择定义： `Joined Column`
 * [!UICONTROL Create Path]：
-* &#x200B;
+* 
   [!UICONTROL Many]: `enterprise_rma.order_id`
-* &#x200B;
+* 
   [!UICONTROL One]: `sales_flat_order.entity_id`
 
 * 选择[!UICONTROL table]： `sales_flat_order`
@@ -82,11 +82,9 @@ ht-degree: 0%
 * **`return_date_requested`**
 * 选择定义： `Joined Column`
 * [!UICONTROL Create Path]：
-   * &#x200B;
-
+   * 
      [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
-   * &#x200B;
-
+   * 
      [!UICONTROL One]: `enterprise_rma.entity_id`
 
 * 选择[!UICONTROL table]： `enterprise_rma`
@@ -159,25 +157,25 @@ ht-degree: 0%
 
 * 公式：重复订单概率
 * [!UICONTROL Formula]： `B / A`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]： `All time`
-* &#x200B;
-  [!UICONTROL 间隔]: `None`
+* 
+  [！UICONTROL间隔]: `None`
 * [!UICONTROL Group by]： `Customer's order number`
-* &#x200B;
-  [!UICONTROL 图表类型]: `Bar`
+* 
+  [！UICONTROL图表类型]: `Bar`
 
 * **平均返回时间（所有时间）**
 * 量度`A`： `Avg time between order and return`
 * [!UICONTROL Metric]： `Avg time between order and return`
 
 * [!UICONTROL Time period]： `All time`
-* &#x200B;
-  [!UICONTROL 间隔]: `None`
-* &#x200B;
-  [!UICONTROL 图表类型]: `Number`
+* 
+  [！UICONTROL间隔]: `None`
+* 
+  [！UICONTROL图表类型]: `Number`
 
 * **包含退货的订单百分比**
 * 量度`A`： `Number of orders`
@@ -190,12 +188,12 @@ ht-degree: 0%
 
 * 公式：包含退货的订单百分比
 * [!UICONTROL Formula]： `B / A`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]： `All time`
-* &#x200B;
-  [!UICONTROL 间隔]: `None`
+* 
+  [！UICONTROL间隔]: `None`
 * [!UICONTROL Chart Type]： `Number - % of orders with return`
 
 * **按月返回的收入**
@@ -204,8 +202,8 @@ ht-degree: 0%
 
 * [!UICONTROL Time period]： `All time`
 * [!UICONTROL Interval]： `By month`
-* &#x200B;
-  [!UICONTROL 图表类型]: `Line`
+* 
+  [！UICONTROL图表类型]: `Line`
 
 * **已退货且不再购买的客户**
 * 量度`A`： `Number of orders with returns`
@@ -215,12 +213,12 @@ ht-degree: 0%
    * `Is customer's last order? (1=yes/0=no) = 1`
 
 * [!UICONTROL Time period]： `All time`
-* &#x200B;
-  [!UICONTROL 间隔]: `None`
-* &#x200B;
-  [!UICONTROL 分组依据]: `Customer_email`
-* &#x200B;
-  [!UICONTROL 图表类型]: `Table`
+* 
+  [！UICONTROL间隔]: `None`
+* 
+  [！UICONTROL分组依据]: `Customer_email`
+* 
+  [！UICONTROL图表类型]: `Table`
 
 * **返回率（按项目）**
 * 量度`A`： `Returned items` （隐藏）
@@ -232,16 +230,16 @@ ht-degree: 0%
 
 * [!UICONTROL Formula]： `Return %`
 * [!UICONTROL Formula]： `B / A`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]： `All time`
-* &#x200B;
-  [!UICONTROL 间隔]: `None`
+* 
+  [！UICONTROL间隔]: `None`
 * [!UICONTROL Group by]： `product_sku AND/OR product_name`
-* &#x200B;
-  [!UICONTROL 图表类型]: `Table`
+* 
+  [！UICONTROL图表类型]: `Table`
 
 在编译所有报告后，您可以根据需要将报告组织在功能板上。 结果可能类似于上面的示例仪表板。
 
-如果您在构建此分析时遇到任何问题，或者希望与专业服务团队接洽，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+如果您在构建此分析时遇到任何问题，或者希望与专业服务团队接洽，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。

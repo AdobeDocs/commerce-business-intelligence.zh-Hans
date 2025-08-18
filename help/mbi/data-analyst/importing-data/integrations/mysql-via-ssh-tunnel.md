@@ -1,5 +1,5 @@
 ---
-title: 通过SSH通道连接 [!DNL MySQL]
+title: '通过SSH通道连接 [!DNL MySQL] '
 description: 了解如何通过SSH通道连接 [!DNL MySQL] 。
 exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
 role: Admin, Data Architect, Data Engineer, User
@@ -11,12 +11,12 @@ ht-degree: 0%
 
 ---
 
-# 通过[!DNL SSH Tunnel]连接[!DNL MySQL]
+# 通过[!DNL MySQL]连接[!DNL SSH Tunnel]
 
 * [检索 [!DNL Commerce Intelligence] 公钥](#retrieve)
 * [允许访问 [!DNL Commerce Intelligence] IP地址](#allowlist)
 * [为 [!DNL Commerce Intelligence]创建Linux用户](#linux)
-* [为 [!DNL Commerce Intelligence]创建 [!DNL MySQL] 用户](#mysql)
+* [为 [!DNL MySQL] 创建 [!DNL Commerce Intelligence]用户](#mysql)
 * [在 [!DNL Commerce Intelligence]中输入连接和用户信息](#finish)
 
 ## 跳转到
@@ -24,12 +24,12 @@ ht-degree: 0%
 * [[!DNL MySQL]通过 ](../integrations/mysql-via-a-direct-connection.md)
 * [[!DNL MySQL]通过 [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
-要通过`SSH tunnel`将您的[!DNL MySQL]数据库连接到[!DNL Commerce Intelligence]，您必须执行以下操作：
+要通过[!DNL MySQL]将您的[!DNL Commerce Intelligence]数据库连接到`SSH tunnel`，您必须执行以下操作：
 
 1. 检索[!DNL Commerce Intelligence] `public key`
 1. 允许访问[!DNL Commerce Intelligence] `IP address`
-1. 为[!DNL Commerce Intelligence]创建一个`Linux`用户
-1. 为[!DNL Commerce Intelligence]创建一个`MySQL`用户
+1. 为`Linux`创建一个[!DNL Commerce Intelligence]用户
+1. 为`MySQL`创建一个[!DNL Commerce Intelligence]用户
 1. 在[!DNL Commerce Intelligence]中输入连接和用户信息
 
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 要使连接成功，必须将防火墙配置为允许从IP地址访问。 它们是`54.88.76.97`和`34.250.211.151`，但它们也在`MySQL credentials`页面上。 请参阅上面GIF中的蓝色方框。
 
-## 正在为[!DNL Commerce Intelligence]创建[!DNL Linux]用户 {#linux}
+## 正在为[!DNL Linux]创建[!DNL Commerce Intelligence]用户 {#linux}
 
 这可以是生产或辅助计算机，只要它包含实时（或经常更新）数据。 您可以按照您喜欢的方式[限制此用户](../../../administrator/account-management/restrict-db-access.md)，只要它保留连接到`MySQL`服务器的权利即可。
 
@@ -85,7 +85,7 @@ ht-degree: 0%
 >
 >如果与服务器关联的`sshd\_config`文件未设置为默认选项，则只有某些用户具有服务器访问权限 — 这会阻止成功连接到[!DNL Commerce Intelligence]。 在这些情况下，需要运行诸如`AllowUsers`之类的命令以允许`rjmetric`用户访问服务器。
 
-## 正在为[!DNL Commerce Intelligence]创建[!DNL MySQL]用户 {#mysql}
+## 正在为[!DNL MySQL]创建[!DNL Commerce Intelligence]用户 {#mysql}
 
 您的组织可能需要不同的流程，但创建此用户的最简单方法是在以有权授予权限的用户身份登录[!DNL MySQL]时执行以下查询：
 
@@ -120,4 +120,4 @@ ht-degree: 0%
 
 ## 相关：
 
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

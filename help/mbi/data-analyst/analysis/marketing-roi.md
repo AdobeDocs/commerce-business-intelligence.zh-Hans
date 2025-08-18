@@ -15,19 +15,19 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->本主题包含有关使用原始架构和新架构的客户端的说明。 如果您在主工具栏中选择“管理数据”后有“Data Warehouse视图”部分可用，则您位于[新架构](../../administrator/account-management/new-architecture.md)。
+>本主题包含有关使用原始架构和新架构的客户端的说明。 如果您在主工具栏中选择“管理数据”后有“Data Warehouse视图”部分可用，则您位于[新架构](../../administrator/account-management/new-architecture.md)中。
 
 如果您正在在线广告上花钱，则希望跟踪您的投资回报，并在进一步投资方面做出以数据为导向的决策。 本主题将演示如何设置一个功能板来跟踪您的渠道分析，包括汇总的ROI和按促销活动列出的分析。
 
 ![](../../assets/Marketing_dashboard_example.png)
 
-在开始之前，您需要连接您的[[!DNL [Facebook Ads]]](../importing-data/integrations/facebook-ads.md)、[[!DNL [Adwords]]](../importing-data/integrations/google-adwords.md)和[[!DNL [Google Ecommerce]]](../importing-data/integrations/google-ecommerce.md)帐户，并引入任何其他在线广告支出数据。 此分析包含[高级计算列](../data-warehouse-mgr/adv-calc-columns.md)。
+在开始之前，您需要连接您的[!DNL [Facebook Ads]](../importing-data/integrations/facebook-ads.md)、[!DNL [Adwords]](../importing-data/integrations/google-adwords.md)和[!DNL [Google Ecommerce]](../importing-data/integrations/google-ecommerce.md)帐户，并引入任何其他在线广告支出数据。 此分析包含[高级计算列](../data-warehouse-mgr/adv-calc-columns.md)。
 
 ## 统一表
 
-**原始架构：**&#x200B;若要汇总来自各种来源（如[!DNL Facebook Ads]或[!DNL Google Adwords]）的支出，Adobe建议创建所有广告支出的&#x200B;**整合表**。 您需要一名分析师为您完成此步骤。 如果您尚未这样做，请[提交主题为`[MARKETING ROI ANALYSIS]`的支持请求](../../guide-overview.md#Submitting-a-Support-Ticket)，分析人员将创建此表。
+**原始架构：**&#x200B;为了汇总来自各种来源（如[!DNL Facebook Ads]或[!DNL Google Adwords]）的支出，Adobe建议创建您所有广告支出的&#x200B;**整合表**。 您需要一名分析师为您完成此步骤。 如果您尚未这样做，请[提交主题为](../../guide-overview.md#Submitting-a-Support-Ticket)的支持请求`[MARKETING ROI ANALYSIS]`，分析人员将创建此表。
 
-**新架构：**&#x200B;您可以按照[此分析库](../../data-analyst/data-warehouse-mgr/create-dw-views.md)主题中的示例进行操作。 在新体系结构中，统一表现在称为Data Warehouse视图。
+**新架构：**&#x200B;您可以按照[此分析库](../../data-analyst/data-warehouse-mgr/create-dw-views.md)主题中的示例进行操作。 在新架构中，统一表现在称为Data Warehouse视图。
 
 ## 计算列
 
@@ -42,11 +42,9 @@ ht-degree: 0%
    * **`Order's GA campaign`**
       * 选择定义： `Joined Column`
       * [!UICONTROL Create Path]：
-      * &#x200B;
-
+      * 
         [!UICONTROL Many]: `sales_flat_order.increment_id`
-      * &#x200B;
-
+      * 
         [!UICONTROL One]: `ecommerce####.transaction_id`
 
       * 选择[!UICONTROL table]： `ecommerce####`
@@ -144,9 +142,9 @@ ht-degree: 0%
 
 * 量度`A`：广告支出
 * [!UICONTROL Time period]： `All time`
-* &#x200B;
-  [!UICONTROL 间隔]: `None`
-* &#x200B;
+* 
+  [！UICONTROL间隔]: `None`
+* 
   [!UICONTROL Chart Type]: `Scalar`
 
 * **广告客户获取（所有时间）**
@@ -160,9 +158,9 @@ ht-degree: 0%
 
 * 量度`A`： `Ad customer acquisitions`
 * [!UICONTROL Time period]： `All time`
-* &#x200B;
-  [!UICONTROL 间隔]: `None`
-* &#x200B;
+* 
+  [！UICONTROL间隔]: `None`
+* 
   [!UICONTROL Chart Type]: `Scalar`
 
 * **广告ROI**
@@ -185,8 +183,7 @@ ht-degree: 0%
       * 筛选器逻辑： （[`A`]或[`B`]或[`C`]）和[`D`]
 
    * [!UICONTROL Formula]： `((C - (A / B)) / (A / B))`
-   * &#x200B;
-
+   * 
      [!UICONTROL Format]: `Percentage`
 
 * 量度`A`： `Ad Spend (hide)`
@@ -194,21 +191,20 @@ ht-degree: 0%
 * 量度`C`： `Average LTV (hide)`
 * [!UICONTROL Formula]： `Ads ROI`
 * [!UICONTROL Time period]： `All time`
-* &#x200B;
-  [!UICONTROL 间隔]: `None`
-* &#x200B;
+* 
+  [！UICONTROL间隔]: `None`
+* 
   [!UICONTROL Chart Type]: `Scalar`
 
 * **按Ga排列的订单数**
-   * &#x200B;
-
-     [!UICONTROL 量度]: `Orders`
+   * 
+     [！UICONTROL量度]: `Orders`
 
 * 量度`A`： `Orders`
 * [!UICONTROL Time period]： `All time`
 * [!UICONTROL Interval]： `By Month`
 * [!UICONTROL Group by]： `Order's medium`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Area`
 
 * **按营销活动划分的广告ROI**
@@ -239,18 +235,15 @@ ht-degree: 0%
       * 筛选器逻辑： （[`A`]或[`B`]或[`C`]）和[`D`]
 
    * [!UICONTROL Formula]： `(A / B)`
-   * &#x200B;
-
+   * 
      [!UICONTROL Format]: `Currency`
 
    * [!UICONTROL Formula]： `(C - (A / B))`
-   * &#x200B;
-
+   * 
      [!UICONTROL Format]: `Currency`
 
    * [!UICONTROL Formula]： `((C - (A / B)) / (A / B))`
-   * &#x200B;
-
+   * 
      [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Metric]： `Ad Clicks`
@@ -258,38 +251,36 @@ ht-degree: 0%
    * [!UICONTROL Metric]： `Ad Impressions`
 
    * [!UICONTROL Formula]： `(H / I)`
-   * &#x200B;
-
+   * 
      [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Formula]： `(A / H)`
-   * &#x200B;
-
+   * 
      [!UICONTROL Format]: `Currency`
 
 * 量度`A`： `Ad Spend` （隐藏）
 * 量度`B`： `Ad customer acquisitions`
 * 量度`C`： `Average LTV`
 * 量度`D`： `Average lifetime # of orders`
-* &#x200B;
-  [!UICONTROL 公式]: `CAC`
+* 
+  [！UICONTROL公式]: `CAC`
 * [!UICONTROL Formula]： `Avg return`
 * [!UICONTROL Formula]： `Ads ROI`
 * 量度`H`： `adClicks`
 * 量度`I`： `Impressions`
-* &#x200B;
-  [!UICONTROL 公式]: `CTR`
-* &#x200B;
-  [!UICONTROL 公式]: `CPC`
+* 
+  [！UICONTROL公式]: `CTR`
+* 
+  [！UICONTROL公式]: `CPC`
 * [!UICONTROL Time period]： `All time`
-* &#x200B;
-  [!UICONTROL 间隔]: `None`
-* &#x200B;
-  [!UICONTROL 分组依据]: `campaign` (将“客户的第一个订单”促销活动用于非广告支出表量度)
-* &#x200B;
+* 
+  [！UICONTROL间隔]: `None`
+* 
+  [！UICONTROL分组依据]: `campaign` (将“客户的第一个订单”促销活动用于非广告支出表量度)
+* 
   [!UICONTROL Chart Type]: `Table`
 
-如果您在构建此分析时遇到任何问题，或只是想与专业服务团队接洽，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+如果您在构建此分析时遇到任何问题，或只是想与专业服务团队接洽，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ### 相关
 

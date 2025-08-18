@@ -21,7 +21,7 @@ ht-degree: 2%
 
 要讨论这些概念，请参阅以下示例：
 
-`Clothes4U`是一个服装零售商，同时拥有在线和实体店。 它在其网站后使用[!DNL Magento Open Source]来收集和整理数据。
+`Clothes4U`是一个服装retailer，具有在线和实体存在。 它在其网站后使用[!DNL Magento Open Source]来收集和整理数据。
 
 ## `catalog\_product\_entity`
 
@@ -59,7 +59,7 @@ ht-degree: 2%
 * `email` — 此字段由新客户在创建其帐户时输入的电子邮件填充
 * `created_at` — 此列返回每个用户加入时的时间戳
 
-## 如果您有[!DNL Adobe Commerce 2.x]，则为`sales\_flat\_order (or Sales\_order`
+## 如果您有`sales\_flat\_order (or Sales\_order`，则为[!DNL Adobe Commerce 2.x]
 
 帐户创建完成后，`Sammy Customer`可以开始购买。 在网站上，客户将两对`Throwback Bellbottoms`和一对`V-Neck T-Shirt`添加到购物车。 客户对选择感到满意，将移至结帐并提交订单，并在[销售平面订单表](../data-warehouse-mgr/sales-flat-order-table.md)上创建以下条目：
 
@@ -70,7 +70,7 @@ ht-degree: 2%
 * `entity_id` — 这是`sales_flat_order`表的主键。
    * 当Sammy客户下达此订单并将上述行写入`sales_flat_order`表时，已分配该订单`entity_id` = 227。
 * `customer_id` — 此列是下此特定订单的客户的唯一标识符
-   * 与此订单关联的`customer_id`是214，它是`customer_entity`表中Sammy客户的`entity_id`。
+   * 与此订单关联的`customer_id`是214，它是`entity_id`表中Sammy客户的`customer_entity`。
 * `subtotal` — 此列是该订单向客户收取的总金额
    * 两双“Rewback Bellbottoms”和“V领T恤”总共花费94.85美元
 * `created_at` — 此列返回创建每个订单的时间戳
@@ -90,10 +90,10 @@ ht-degree: 2%
    * `Sammy Customer`的订单在此表中创建了两个行，因为该订单包含两个不同的产品
 * `name` — 此列是产品的名称
 * `product_id` — 此列是该行所引用产品的唯一标识符
-   * 上面第一行的`product_id` = 205，因为`Throwback Bellbottoms`在`catalog_product_entity`表上有`entity_id`，即205
+   * 上面第一行的`product_id` = 205，因为`Throwback Bellbottoms`在`entity_id`表上有`catalog_product_entity`，即205
 * `order_id` — 此列是包含这些特定订单项的订单的`entity_id`
-   * 上面两行都具有`order_id` = 227，因为它们都是`Sammy Customer`下达的订单的一部分，该订单在`sales_flat_order`表中具有`entity_id` = 227
+   * 上面两行都具有`order_id` = 227，因为它们都是`Sammy Customer`下达的订单的一部分，该订单在`entity_id`表中具有`sales_flat_order` = 227
 * `qty_ordered` — 此列是此特定订单中包含的产品件数
    * `Sammy Customer`的订单包含两对`Throwback Bellbottoms`
 * `price` — 此列是订单项目的单件价格
-   * `sales_flat_order`表中`Sammy Customer`顺序中的`subtotal`为94.85，即`Throwback Bellbottoms`对（每对$39.95）和1 `V-Neck T-Shirt`对(14.95$14.95)的总和。
+   * `subtotal`表中`Sammy Customer`顺序中的`sales_flat_order`为94.85，即`Throwback Bellbottoms`对（每对$39.95）和1 `V-Neck T-Shirt`对(14.95$14.95)的总和。

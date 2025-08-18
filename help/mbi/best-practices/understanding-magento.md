@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 您的[!DNL Adobe Commerce Intelligence]环境
 
-在分析商业数据时，请注意这些因素和常见的误解。 如果需要有关确保正确使用Commerce架构的帮助，请立即[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+在分析商业数据时，请注意这些因素和常见的误解。 如果需要有关确保正确使用Commerce架构的帮助，请立即[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ## [!DNL entity\_id]
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## [!DNL Guest orders]
 
-如果您允许客户在没有帐户的情况下从您的网站订购（访客订单），则这些客户不会在`customer\_entity`表中填充为行。 此外，来宾下出的每个订单在`sales\_order`表中都有一个null `customer\_id`值。
+如果您允许客户在没有帐户的情况下从您的网站订购（访客订单），则这些客户不会在`customer\_entity`表中填充为行。 此外，来宾下出的每个订单在`customer\_id`表中都有一个null `sales\_order`值。
 
 因此，如果您希望跟踪来宾在一段时间内的行为，则必须在`sales\_order`表中使用客户标识符（如`customer\_email`）计算所有客户级别的列。
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 如果您能够使用`customer\_entity`表，则每行是一个客户，并且该表中每个客户仅存在一次。 因此，当您具有存留期收入列时，您只需创建一个平均量度。 但是，如果您使用`sales\_order`表作为customer表，则客户可能会存在于许多行中。 设置存留期收入列后，给定客户下达的每张订单（行）将显示该客户的存留期收入；但您只想在总体平均量度中包含该客户一次。
 
-这里的技巧是，您必须向量度添加一个过滤器，以确保只包含每个客户一次。 Adobe鼓励您创建并使用名为&#x200B;**客户（我们计算**）的筛选器集，该筛选器集过滤了&#x200B;**客户的订单号= 1**（您可能需要排除不需要的客户的其它筛选器）。 添加此过滤器可确保每个客户在客户级别的量度中仅包含一次。
+这里的技巧是，您必须向量度添加一个过滤器，以确保只包含每个客户一次。 Adobe鼓励您创建并使用名为&#x200B;**我们计算的客户**&#x200B;的筛选器集，该筛选器集过滤了&#x200B;**客户的订单号= 1**（您可能需要排除不需要的客户的其他筛选器）。 添加此过滤器可确保每个客户在客户级别的量度中仅包含一次。
 
 ## 产品和类别
 
@@ -43,4 +43,4 @@ ht-degree: 0%
 
 在移动任何数据之前，必须首先了解正确的连接和过滤器，以确保获取正确的类别。 对于某些分析，您可能需要知道“裤子”，但在其他分析中，“服装”可能更合适。 这些是单独标识的不同类别。 了解每个类别级别的定义方式可确保您将单位销售量归因到特定分析的相应类别。
 
-现在，假设您的网站主页中还有`Our Favorites`顶级类别。 您可能已经实施了Commerce商店，以便将这些牛仔裤同时包含在`Clothing`类别和`Our Favorites`类别中。 如果是这样的话，这条牛仔裤不止一个顶级类别。 在这种情况下，将单个顶级类别移至`sales\_order\_item`表不太合理，因为有多个选项。 为此，Adobe建议创建检查特定类别的“是”/“否”列。 例如，`Is product in Clothing category?`和`Is product in Our Favorites category?`列允许您检查产品是否属于这些特定类别。
+现在，假设您的网站主页中还有`Our Favorites`顶级类别。 您可能已经实施了Commerce商店，以便将这些牛仔裤同时包含在`Clothing`类别和`Our Favorites`类别中。 如果是这样的话，这条牛仔裤不止一个顶级类别。 在这种情况下，将单个顶级类别移至`sales\_order\_item`表不太合理，因为有多个选项。 为此，Adobe建议创建可检查特定类别的“是”/“否”列。 例如，`Is product in Clothing category?`和`Is product in Our Favorites category?`列允许您检查产品是否属于这些特定类别。

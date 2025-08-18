@@ -65,7 +65,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->必须在[!DNL Commerce Intelligence]中跟踪您要过滤或分组依据的任何维度。 如果找不到所需的维度，您可能需要通过[Data Warehouse](../data-warehouse-mgr/tour-dwm.md)页开始跟踪数据库中的新数据列。
+>必须在[!DNL Commerce Intelligence]中跟踪您要过滤或分组依据的任何维度。 如果找不到所需的维度，您可能需要通过[Data Warehouse](../data-warehouse-mgr/tour-dwm.md)页面开始跟踪数据库中的新数据列。
 
 
 **要从量度中删除维度：**
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->即使在删除维度后，它仍作为Data Warehouse中表上的列存在。 您可以将其添加回任何量度，并使用这些维度构建新量度。 要从[!DNL Commerce Intelligence]中删除维度对应的数据列，只需通过[Data Warehouse](../data-warehouse-mgr/tour-dwm.md)页取消跟踪该数据列即可。
+>即使删除某个维度后，它仍作为Data Warehouse中表上的列存在。 您可以将其添加回任何量度，并使用这些维度构建新量度。 要从[!DNL Commerce Intelligence]中删除维度对应的数据列，只需通过[Data Warehouse](../data-warehouse-mgr/tour-dwm.md)页面取消跟踪该数据列即可。
 
 ## 相关文档
 

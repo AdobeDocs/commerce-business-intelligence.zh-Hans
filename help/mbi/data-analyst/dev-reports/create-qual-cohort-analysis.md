@@ -23,7 +23,7 @@ ht-degree: 0%
 
 请参阅[同类群组分析](https://www.cohortanalysis.com/)。
 
-[!DNL Commerce Intelligence]中的大多数`cohort`用户按共同日期一起进行分析（例如，在给定月份中首次购买的所有客户集）。 `qualitative cohort`稍有不同：它是一个由不基于时间的特性定义的用户组。 示例包括：
+`cohort`中的大多数[!DNL Commerce Intelligence]用户按共同日期一起进行分析（例如，在给定月份中首次购买的所有客户集）。 `qualitative cohort`稍有不同：它是一个由不基于时间的特性定义的用户组。 示例包括：
 
 * 从广告营销活动获得的所有用户集
 * 首次购买包含优惠券（或不包含优惠券）的所有用户集
@@ -37,9 +37,9 @@ ht-degree: 0%
 
 ## 我应该向支持人员发送哪些信息才能设置我的分析？ {#support}
 
-在`Report Builder`中创建`qualitative cohort`报告涉及Adobe分析小组在必要的表中创建一些[高级计算列](../data-warehouse-mgr/creating-calculated-columns.md)。
+在`qualitative cohort`中创建`Report Builder`报告涉及Adobe分析团队在必要的表中创建一些[高级计算列](../data-warehouse-mgr/creating-calculated-columns.md)。
 
-要生成这些文件，请提交[支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)（并引用此文章！）。 以下是您需要了解的信息：
+要生成这些文件，请提交[支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)（并引用此文章！）。 以下是您需要了解的信息：
 
 * 您要使用执行同类群组分析的`metric`及其使用的表（示例： `Revenue`，基于`orders`表构建）。
 
@@ -47,9 +47,9 @@ ht-degree: 0%
 
 * 您希望您的分析使用的`cohort date`（示例： `User's first order date`时间戳）。 此示例将允许我们查看每个区段并询问`How does a user's revenue grow in the months following their first order date?`。
 
-* 您希望查看分析的`time interval`（示例： `weeks`、`months`或`User's first order date`之后的`quarters`）。
+* 您希望查看分析的`time interval`（示例： `weeks`、`months`或`quarters`之后的`User's first order date`）。
 
-一旦Adobe分析团队对上述内容做出响应，您就有了几个新的高级计算列来构建您的报表！ 然后，您可以按照以下说明执行此操作。
+Adobe分析团队对上述内容做出响应后，您就有了几个新的高级计算列来构建您的报表！ 然后，您可以按照以下说明执行此操作。
 
 ## 创建定性同类群组分析 {#create}
 
@@ -63,11 +63,11 @@ ht-degree: 0%
 
 1. 将`time range`设置为您希望报告涵盖的时间范围。
 
-在此示例中，您查看了`Revenue`的`all time`视图。 之后，您应该最终会看到一系列圆点：
+在此示例中，您查看了`all time`的`Revenue`视图。 之后，您应该最终会看到一系列圆点：
 
 ![](../../assets/qualcohort2.gif)
 
-第三，您调整以设置`cohorts`。 根据您指定给Adobe分析团队的`cohort date`和`time interval`，您的帐户中有一个维度执行`cohort`约会。 在此示例中，该自定义维度称为`Months between this order and customer's first order date`。 使用此维度，您应：
+第三，您调整以设置`cohorts`。 根据您指定给Adobe分析团队的`cohort date`和`time interval`，您的帐户中有一个执行`cohort`约会的维度。 在此示例中，该自定义维度称为`Months between this order and customer's first order date`。 使用此维度，您应：
 
 * `Group by`包含`group by`选项的维度
 

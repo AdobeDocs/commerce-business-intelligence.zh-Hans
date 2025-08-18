@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ### 重复订购概率给定订购后的月份
 
-此报表显示客户再次订购的可能性，假定自上次订购以来已经过了几个月。 尽管在此报告中没有单一的客户流失阈值定义，但Adobe建议将客户流失定义为概率衰减超过初始重复概率率一半的值。
+此报表显示客户再次订购的可能性，假定自上次订购以来已经过了几个月。 尽管在此报告中没有对流失阈值的唯一定义，但Adobe建议将流失定义为概率衰减超过初始重复概率率一半的值。
 
 由于此示例的初始重复概率率为60%，因此客户流失日期将是重复订单概率低于60%/2 = 30%或大约6个月的时间。 在预计会接到其他订单的60%的订单中，有一半是在前6个月内下达的。
 
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 如果您提供多个产品，您可能会想知道购买特定产品的客户与其他客户相比随着时间的推移表现如何。 想了解更多信息？ 查看本教程，探索客户同类群组（基于他们购买的特定产品）的生命周期购买行为。
 
-此最佳实践由[!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS)提供。 [联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)以获取更多信息。
+此最佳实践由[!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS)提供。 [联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)以获取更多信息。
 
 ### 相关
 

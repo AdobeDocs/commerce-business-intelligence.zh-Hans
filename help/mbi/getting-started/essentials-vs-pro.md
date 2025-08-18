@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '77'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 

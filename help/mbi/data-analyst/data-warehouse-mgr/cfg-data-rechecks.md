@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 配置数据检查
 
-在数据库表中，可以存在具有可变值的数据列。 例如，在`orders`表中可能有一个名为`status`的列。 最初将订单写入数据库时，状态列可能包含值&#x200B;_pending_。 已在您的[Data Warehouse](../data-warehouse-mgr/tour-dwm.md)中使用此`pending`值复制订单。
+在数据库表中，可以存在具有可变值的数据列。 例如，在`orders`表中可能有一个名为`status`的列。 最初将订单写入数据库时，状态列可能包含值&#x200B;_pending_。 已在您的[Data Warehouse](../data-warehouse-mgr/tour-dwm.md)中使用此`pending`值复制该订单。
 
 订单状态可以更改，但它们并不总是处于`pending`状态。 最终它可以变成`complete`或`cancelled`。 要确保Data Warehouse同步此更改，必须重新检查列以查找新值。
 
@@ -27,14 +27,14 @@ ht-degree: 0%
    >
    >审计人员依赖采样过程，并且可能不会立即捕获更改的列。
 
-1. 您可以自行设置这些时间间隔，方法是选中Data Warehouse管理器中该列旁边的复选框，单击&#x200B;**[!UICONTROL Set Recheck Frequency]**，然后为应检查更改的时间选择适当的时间间隔。
+1. 您可以通过以下方式自行设置这些时间间隔：在Data Warehouse管理器中选中列旁边的复选框，单击&#x200B;**[!UICONTROL Set Recheck Frequency]**，然后为应检查更改的时间选择适当的时间间隔。
 
-1. [!DNL Adobe Commerce Intelligence]Data Warehouse团队的成员可以手动标记要在您的Data Warehouse中重新签入的列。 如果您知道可更改列，请与团队联系以请求设置重新检查。 在您的请求中包含列列表以及频率。
+1. [!DNL Adobe Commerce Intelligence] Data Warehouse团队的成员可以在Data Warehouse中手动标记要重新检查的列。 如果您知道可更改列，请与团队联系以请求设置重新检查。 在您的请求中包含列列表以及频率。
 
 ## 重新检查频率 {#frequency}
 
 **您知道吗？**
-对`primary key`列设置重新检查不会检查该列是否有更改的值。 将检查表中是否删除了行，并且所有删除操作都将从Data Warehouse中清除。
+对`primary key`列设置重新检查不会检查该列是否有更改的值。 将检查表中是否包含已删除的行，并且所有已删除行都会从Data Warehouse中清除。
 
 当列被标记为要重新检查时，您还可以设置重新检查的频率。 如果特定列不经常更改，则选择不太频繁的重新检查可以[优化更新周期](../../best-practices/reduce-update-cycle-time.md)。
 
@@ -56,9 +56,9 @@ ht-degree: 0%
 
 ![](../../assets/dwm-recheck.png)
 
-您有时可能会在`Changes?`列中看到`Paused`。 当表的[复制方法](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)设置为`Paused`时，将显示此值。
+您有时可能会在`Paused`列中看到`Changes?`。 当表的[复制方法](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)设置为`Paused`时，将显示此值。
 
-[!DNL Adobe]建议查看这些列以优化更新并确保重新检查可更改的列。 如果根据数据更改的频率，列的重新检查频率很高，Adobe建议将其降低以优化更新。
+[!DNL Adobe]建议查看这些列以优化更新并确保重新检查可更改的列。 如果根据数据更改的频率，列的重新检查频率很高，Adobe建议减少它以优化更新。
 
 如有疑问，请联系我们，或者查询当前的复制方法或重新检查。
 

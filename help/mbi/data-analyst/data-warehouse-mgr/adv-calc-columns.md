@@ -1,22 +1,22 @@
 ---
 title: 高级计算列类型
-description: 了解大多数使用列案例的基础知识 — 但您可能希望计算列比Data Warehouse管理器可以创建的要复杂一些。
+description: 了解大多数使用列案例的基础知识 — 但您可能希望计算列比Data Warehouse Manager可以创建的要复杂一些。
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '930'
 ht-degree: 2%
 
 ---
 
 # 高级计算列类型
 
-您可能要创建的许多分析都涉及使用要`group by`或`filter by`的&#x200B;**新列**。 [创建计算列](../data-warehouse-mgr/creating-calculated-columns.md)教程介绍了大多数用例的基础知识，但您可能希望计算列比Data Warehouse管理器可创建的计算列更复杂。
-{： #top}
+您可能要创建的许多分析都涉及使用要&#x200B;**或**&#x200B;的`group by`新列`filter by`。 [创建计算列](../data-warehouse-mgr/creating-calculated-columns.md)教程介绍了大多数用例的基础知识，但您可能希望计算列比Data Warehouse Manager可创建的列复杂一些。
+{: #top}
 
-这些类型的列可由Data Warehouse分析员的Adobe团队创建。 要定义新的计算列，请提供以下信息：
+这些类型的列可由Data Warehouse分析师的Adobe团队创建。 要定义新的计算列，请提供以下信息：
 
 1. 此列的&#x200B;**`definition`**（包括输入、公式或格式）
 1. 要在其上创建列的&#x200B;**`table`**
@@ -161,7 +161,7 @@ ht-degree: 2%
 
 不用担心。 这里没有列出这并不意味着这是不可能的。 Data Warehouse分析人员的Adobe团队可以提供帮助。
 
-要定义新的计算列，请[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)，其中包含有关要生成的项目的详细信息。
+要定义新的计算列，请[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)，其中包含有关要生成的项目的详细信息。
 
 ## 相关文档
 

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 `Replication`方法和[重新检查](../data-warehouse-mgr/cfg-data-rechecks.md)用于标识数据库表中的新数据或更新数据。 正确设置这些变量对于确保数据准确性和优化的更新时间至关重要。 本主题侧重于复制方法。
 
-在[Data Warehouse管理器](../data-warehouse-mgr/tour-dwm.md)中同步新表时，将自动为该表选择复制方法。 通过了解各种复制方法、表的组织方式以及表数据的行为方式，可以为表选择最佳的复制方法。
+在[Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md)中同步新表时，将自动为该表选择复制方法。 通过了解各种复制方法、表的组织方式以及表数据的行为方式，可以为表选择最佳的复制方法。
 
 ## 复制方法有哪些？
 
@@ -37,9 +37,9 @@ ht-degree: 0%
 * `datetime`列从不为null；
 * 不会从表中删除行
 
-除了这些条件外，Adobe还建议为用于`Modified At`复制的`datetime`列&#x200B;**编制索引**，因为这有助于优化复制速度。
+除了这些条件外，Adobe还建议为用于&#x200B;**复制的**&#x200B;列`datetime`编制索引`Modified At`，因为这有助于优化复制速度。
 
-当更新运行时，通过搜索在最近更新之后发生的`datetime`列中带有值的行来识别新数据或更改的数据。 当发现新行时，会将它们复制到您的Data Warehouse。 如果[Data Warehouse管理器](../data-warehouse-mgr/tour-dwm.md)中存在任何行，则当前数据库值将覆盖这些行。
+当更新运行时，通过搜索在最近更新之后发生的`datetime`列中带有值的行来识别新数据或更改的数据。 当发现新行时，会将它们复制到Data Warehouse。 如果[Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md)中存在任何行，则当前数据库值将覆盖这些行。
 
 例如，一个表可能有一个名为`modified\_at`的列，它指示上次更改数据的时间。 如果最新更新在星期二中午运行，则该更新将搜索星期二中午具有`modified\_at`值大于星期二的所有行。 在星期二中午之后创建或修改的任何发现行都将复制到Data Warehouse。
 
@@ -58,13 +58,13 @@ ht-degree: 0%
 * `primary key`数据类型是`integer`；并且
 * `auto incrementing`主键值。
 
-当表使用`Single Auto Incrementing Primary Key`复制时，通过搜索高于Data Warehouse中当前最高值的主键值来发现新数据。 例如，如果Data Warehouse中的最高主键值为500，则下次更新运行时，它将搜索主键值为501或更高的行。
+当表使用`Single Auto Incrementing Primary Key`复制时，通过搜索高于Data Warehouse中当前最高值的主键值来发现新数据。 例如，如果Data Warehouse中的最高主键值为500，则当下次更新运行时，它将搜索主键值为501或更高的行。
 
 ### 添加日期
 
 `Add Date`方法的功能与`Single Auto Incrementing Primary Key`方法类似。 此方法使用`timestamped`列来检查新行，而不是使用整型作为表的主键。
 
-当表使用`Add Date`复制时，通过搜索时间戳值来发现新数据，这些值大于与您的Data Warehouse同步的最新日期。 例如，如果更新上次运行时间为20/12/2015 09:00:00，则时间戳大于该时间戳的任何行都将标记为新数据并进行复制。
+当表使用`Add Date`复制时，通过搜索时间戳值来发现新数据，这些值大于同步到Data Warehouse的最新日期。 例如，如果更新上次运行时间为20/12/2015 09:00:00，则时间戳大于该时间戳的任何行都将标记为新数据并进行复制。
 
 >[!NOTE]
 >
@@ -101,9 +101,9 @@ ht-degree: 0%
 
 ## 设置复制方法
 
-复制方法是逐表设置的。 要为表设置复制方法，您需要[`Admin`](../../administrator/user-management/user-management.md)权限才能访问Data Warehouse管理器。
+复制方法是逐表设置的。 要为表设置复制方法，您需要[`Admin`](../../administrator/user-management/user-management.md)权限，才能访问Data Warehouse Manager。
 
-1. 进入Data Warehouse管理器后，从`Synced Tables`列表中选择表以显示表的架构。
+1. 进入Data Warehouse Manager后，从`Synced Tables`列表中选择该表以显示该表的架构。
 1. 当前复制方法列在表名下方。 要更改它，请单击链接。
 1. 在显示的弹出窗口中，单击`Incremental`或`Full Table`复制旁边的单选按钮以选择复制类型。
 1. 接下来，单击&#x200B;**[!UICONTROL Replication Method]**&#x200B;下拉菜单以选择方法。 例如，`Paused`或`Modified At`。
@@ -112,7 +112,7 @@ ht-degree: 0%
    >
    >**某些增量方法需要您设置`Replication Key`**。 [!DNL Commerce Intelligence]将使用此键来确定下一个更新周期的开始位置。
    >
-   >例如，如果要为`orders`表使用`modified at`方法，则需要将`date column`设置为复制密钥。 可能存在多个复制密钥选项，但您选择了`created at`或创建订单的时间。 如果上一个更新周期在12/1/2015 00:10:00停止，则下一个周期将开始复制日期大于此日期的`created at`数据。
+   >例如，如果要为`modified at`表使用`orders`方法，则需要将`date column`设置为复制密钥。 可能存在多个复制密钥选项，但您选择了`created at`或创建订单的时间。 如果上一个更新周期在12/1/2015 00:10:00停止，则下一个周期将开始复制日期大于此日期的`created at`数据。
 
 1. 完成后，单击&#x200B;**[!UICONTROL Save]**。
 

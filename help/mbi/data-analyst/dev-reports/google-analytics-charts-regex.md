@@ -1,5 +1,5 @@
 ---
-title: 创建Google Analytics图表
+title: 创建Google Analytics charts
 description: 了解如何根据Google Analytics数据创建图表。
 exl-id: ee80fd0d-e3b1-4331-853d-3c2c11931d3f
 role: Admin, Data Architect, Data Engineer, User

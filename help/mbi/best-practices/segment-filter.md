@@ -1,5 +1,5 @@
 ---
-title: 分段和过滤的推荐数据Dimension
+title: 分段和过滤的建议数据维度
 description: 了解分段和过滤的最佳实践。
 exl-id: 66391bce-bdeb-4e9d-8089-1c796e00d91e
 role: Admin, Data Architect, Data Engineer, User
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 按上述维度划分量度的第一步是确保跟踪数据库中的此数据。 如果未跟踪此数据，请与您的技术团队会面，并找到开始跟踪此数据的方法。
 
-确认在数据库中跟踪数据后，[联系支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)以将维度推送到[!DNL Commerce Intelligence]量度和图表。 您还可以使用&#x200B;*字段管理*&#x200B;工具在[!DNL Commerce Intelligence]中跟踪这些字段。
+确认在数据库中跟踪数据后，[联系支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)以将维度推送到[!DNL Commerce Intelligence]量度和图表。 您还可以使用&#x200B;*字段管理*&#x200B;工具在[!DNL Commerce Intelligence]中跟踪这些字段。
 
 ## 相关
 

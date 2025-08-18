@@ -13,7 +13,7 @@ ht-degree: 6%
 
 # 使用Data Warehouse视图
 
-本文档概述了可通过导航到&#x200B;**[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**&#x200B;访问`Data Warehouse Views`的用途和用途。 以下是其作用以及如何创建视图的解释，以及如何使用`Data Warehouse Views`合并[!DNL Facebook]和[!DNL AdWords]支出数据的示例。
+本文档概述了可通过导航到`Data Warehouse Views` > **[!UICONTROL Manage Data]**&#x200B;访问&#x200B;**[!UICONTROL Data Warehouse Views]**&#x200B;的用途和用途。 以下是其作用以及如何创建视图的解释，以及如何使用`Data Warehouse Views`合并[!DNL Facebook]和[!DNL AdWords]支出数据的示例。
 
 ## 一般目的
 
@@ -23,13 +23,13 @@ ht-degree: 6%
 
 在此处，您的新视图函数与任何其他表类似，使您能够创建新的计算列或在其上构建量度和报表。
 
-`Data Warehouse Views`主要用于将多个相似但不同的表合并在一起，以使所有报表都可以基于单个新表构建。 一些常见示例包括：合并旧数据库和实时数据库中的表以组合历史数据和当前数据，或将多个广告源(如Facebook和AdWords)组合到单个`Consolidated ad spend`表中。
+`Data Warehouse Views`主要用于将多个相似但不同的表合并在一起，以使所有报表都可以基于单个新表构建。 一些常见示例包括：合并旧数据库和实时数据库中的表以组合历史数据和当前数据，或将多个广告源（如Facebook和AdWords）组合到单个`Consolidated ad spend`表中。
 
 如果您熟悉SQL，则这两个合并示例都使用`UNION`函数，但在构建新视图时，您可以使用任何PostgreSQL语法和函数。
 
 ## 创建和管理Data Warehouse视图
 
-通过导航到&#x200B;**[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**，可以创建新`Data Warehouse Views`并删除现有视图，如下所示：
+通过导航到`Data Warehouse Views` > **[!UICONTROL Manage Data]**，可以创建新&#x200B;**[!UICONTROL Data Warehouse Views]**&#x200B;并删除现有视图，如下所示：
 
 ![](../../assets/Data_Warehouse_Views.png)
 
@@ -45,7 +45,7 @@ ht-degree: 6%
 
 1. 完成后，单击&#x200B;**[!UICONTROL Save]**&#x200B;保存视图。 您的视图暂时处于`Pending`状态，直到下一次完整更新周期处理它为止，此时状态将更改为`Active`。 经过更新处理后，您的视图便可在报表中使用。
 
-需要注意的是，保存后，无法编辑用于生成`Data Warehouse View`的基础查询。 如果需要调整`Data Warehouse View`的结构，则必须创建一个视图，并手动将任何计算列、量度或报表从原始视图迁移到新视图。 迁移完成后，您可以安全地删除原始视图。 由于`Data Warehouse Views`不可编辑，因此Adobe建议您在将查询另存为Data Warehouse视图之前，使用`SQL Report Builder`测试查询的输出。
+需要注意的是，保存后，无法编辑用于生成`Data Warehouse View`的基础查询。 如果需要调整`Data Warehouse View`的结构，则必须创建一个视图，并手动将任何计算列、量度或报表从原始视图迁移到新视图。 迁移完成后，您可以安全地删除原始视图。 由于`Data Warehouse Views`不可编辑，因此Adobe建议您在将查询另存为Data Warehouse视图之前，使用`SQL Report Builder`测试查询输出。
 
 ## 示例： [!DNL Facebook]和[!DNL Google AdWords]数据
 
@@ -136,7 +136,7 @@ ht-degree: 6%
 
 **正在寻找其他帮助吗？**
 
-技术支持不包括编写SQL和创建`Data Warehouse Views`。 但是，[服务团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)确实为创建视图提供了帮助。 对于从使用新数据库迁移旧数据库到创建单个Data Warehouse视图以进行特定分析的所有内容，支持团队都可以提供帮助。
+技术支持不包括编写SQL和创建`Data Warehouse Views`。 但是，[服务团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)确实为创建视图提供了帮助。 对于从使用新数据库迁移旧数据库到创建单个Data Warehouse视图以进行特定分析的所有内容，支持团队都可以提供帮助。
 
 通常，为合并2-3个类似结构的表而创建新`Data Warehouse View`需要五小时的服务时间，相当于大约1,250美元的工作时间。 然而，以下是可增加所需预期投资的几个共同因素：
 

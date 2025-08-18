@@ -33,10 +33,10 @@ ht-degree: 0%
 
 | **列名称** | **描述** |
 |---|---|
-| `Customer's first 30 day revenue` | 此客户在第一个订单日期后30天内下达的所有订单的总收入。 通过将`customer_entity.entity_id`加入`sales_order.customer_id`并累加`sales_order.Seconds between customer's first order date and this order`≤2592000的所有订单的`base_grand_total`字段进行计算，即30天内的秒数 |
+| `Customer's first 30 day revenue` | 此客户在第一个订单日期后30天内下达的所有订单的总收入。 通过将`customer_entity.entity_id`加入`sales_order.customer_id`并累加`base_grand_total`≤2592000的所有订单的`sales_order.Seconds between customer's first order date and this order`字段进行计算，即30天内的秒数 |
 | `Customer's first order date` | 此客户下第一个订单的时间戳。 通过将`customer_entity.entity_id`加入`sales_order.customer_id`并返回最小值`sales_order`进行计算。`created_at`值 |
-| `Customer's first order's billing region` | 与客户第一张订单关联的帐单区域。 通过将`customer_entity.entity_id`加入`sales_order.customer_id`并返回`sales_order.Customer's order number` = 1的`Billing address region`进行计算 |
-| `Customer's first order's coupon_code` | 与客户第一张订单关联的优惠券代码。 通过将`customer_entity.entity_id`加入`sales_order.customer_id`并返回`sales_order.Customer's order number` = 1的`sales_order.coupon_code`进行计算 |
+| `Customer's first order's billing region` | 与客户第一张订单关联的帐单区域。 通过将`customer_entity.entity_id`加入`sales_order.customer_id`并返回`Billing address region` = 1的`sales_order.Customer's order number`进行计算 |
+| `Customer's first order's coupon_code` | 与客户第一张订单关联的优惠券代码。 通过将`customer_entity.entity_id`加入`sales_order.customer_id`并返回`sales_order.coupon_code` = 1的`sales_order.Customer's order number`进行计算 |
 | `Customer's group code` | 已注册客户的组名称。 通过将`customer_entity.group_id`加入`customer_group`进行计算。`customer_group_id`并返回`customer_group_code`字段 |
 | `Customer's lifetime number of coupons` | 应用于此客户下达的所有订单的优惠券总数。 通过将`customer_entity.entity_id`加入`sales_order.customer_id`并计算`sales_order.coupon_code`不是`NULL`的订单数进行计算 |
 | `Customer's lifetime number of orders` | 此客户下达的订单总数。 通过将`customer_entity.entity_id`加入`sales_order.customer_id`并计数`sales_order`表中的行数进行计算 |

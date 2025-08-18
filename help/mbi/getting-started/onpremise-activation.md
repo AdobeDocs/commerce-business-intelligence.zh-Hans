@@ -17,13 +17,13 @@ ht-degree: 0%
 
 ## 创建您的[!DNL Commerce Intelligence]帐户
 
-要创建您的帐户，请与您的Adobe客户团队或客户技术顾问联系。
+要创建您的帐户，请联系您的Adobe客户团队或客户技术顾问。
 
 ## 创建密码
 
 创建帐户后，请查看您的电子邮件中是否有来自[!DNL The Magento BI Team@rjmetrics.com]的帐户通知电子邮件。 使用电子邮件中提供的链接访问您的[!DNL Commerce Intelligence]帐户并创建密码。 转到您的收件箱并验证您的电子邮件地址。
 
-如果未收到电子邮件，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+如果未收到电子邮件，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en)。
 
 ![](../assets/create-account-4.png)
 
@@ -39,9 +39,9 @@ ht-degree: 0%
 
 ![](../assets/create-account-5.png)
 
-## 在[!DNL Commerce]管理员中创建专用[!DNL Commerce Intelligence]用户
+## 在[!DNL Commerce Intelligence]管理员中创建专用[!DNL Commerce]用户
 
-要使用[!DNL Commerce Intelligence]，您必须向[!DNL Commerce]项目添加永久和专用用户。 此专用用户充当与[!DNL Commerce]的永久连接，允许提取新数据并将其传输到帐户的[!DNL Commerce Intelligence]Data Warehouse。
+要使用[!DNL Commerce Intelligence]，您必须向[!DNL Commerce]项目添加永久和专用用户。 此专用用户充当与[!DNL Commerce]的永久连接，允许提取新数据并将其传输到帐户的[!DNL Commerce Intelligence] Data Warehouse。
 
 配置专用[!DNL Commerce Intelligence]用户可确保不会停用或删除该帐户，从而停止[!DNL Commerce Intelligence]连接。
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 ## 获取Commerce Intelligence SSH密钥
 
-1. 在[!DNL Commerce Intelligence]设置的[!UICONTROL Connect your database]页面上，向下滚动并选择&#x200B;**[!UICONTROL Encryption settings]**。
+1. 在[!UICONTROL Connect your database]设置的[!DNL Commerce Intelligence]页面上，向下滚动并选择&#x200B;**[!UICONTROL Encryption settings]**。
 
 1. 对于&#x200B;**加密类型**，请选择`SSH Tunnel`。
 
@@ -104,9 +104,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe强烈建议您使用[`SSH tunnel`](../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md)隧道建立数据库连接。 但是，如果此方法不是选项，您仍然可以使用[`direct connection`](../data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md)将[!DNL Commerce Intelligence]链接到数据库。
+>Adobe强烈建议您使用[`SSH tunnel`](../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md)隧道建立数据库连接。 但是，如果此方法不是选项，您仍然可以使用[!DNL Commerce Intelligence]将[`direct connection`](../data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md)链接到数据库。
 
-在[!UICONTROL Connect your Magento Database]屏幕中输入您的[!DNL Commerce Intelligence]信息。
+在[!DNL Commerce Intelligence]屏幕中输入您的[!UICONTROL Connect your Magento Database]信息。
 
 ![](../assets/connect-magento-db.png)
 
@@ -118,7 +118,7 @@ ht-degree: 0%
 
 [!UICONTROL Port]: `3306`
 
-[!UICONTROL 用户名]: `mbi`
+[！UICONTROL用户名]: `mbi`
 
 [!UICONTROL Password]：在上一部分中显示了[输入密码]
 
@@ -170,7 +170,7 @@ ht-degree: 0%
 
 <!---# Activate your [!DNL Commerce Intelligence] Account 
 
-To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans).
+To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 >[!NOTE]
 >
