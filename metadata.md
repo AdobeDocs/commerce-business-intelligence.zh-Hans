@@ -10,9 +10,10 @@ feature-set: Commerce Intelligence
 level: Beginner, Intermediate
 topic: Commerce
 index: true
-source-git-commit: c212256ff32e308cb67a84afd3fd86b0f756ae24
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"
+source-git-commit: aae7508da07dcf464401a4e5681f76cee20f01c9
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: '142'
 ht-degree: 0%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 # 元数据供内部使用
 
-此 `metadata.md` 文件包含可传递给用户指南的存储库级元数据 `TOC.md` 存储库中的文件。 如果要更改任何用户指南的metadata.md内容，请在任意 `TOC.md` 文件。
+`metadata.md`文件包含存储库级别的元数据，这些元数据将传递到存储库中的用户指南`TOC.md`文件。 如果要更改任何用户指南的metadata.md内容，请在任意`TOC.md`文件中进行更改。
 
 | 元数据 | 作用 |
 |--- |--- |
