@@ -25,6 +25,6 @@ ht-degree: 0%
 
    ![显示可用表的表选择下拉列表](../../assets/change-metrics-2.png)
 
-1. 如果新表中没有匹配的列，您可以&#x200B;**在数据表中创建它**，或者[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)（如果它是由[!DNL Commerce Intelligence]创建的计算列或维度）。 您也可以&#x200B;**从指标**&#x200B;中删除维度。 要删除您不再需要的维度，只需返回量度的编辑器，并在`Dimensions`下选择要删除的维度。
+1. 如果新表中没有匹配的列，您可以&#x200B;**在数据表中创建它**，或者[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)（如果它是由[!DNL Commerce Intelligence]创建的计算列或维度）。 您也可以&#x200B;**从指标**&#x200B;中删除维度。 要删除您不再需要的维度，只需返回量度的编辑器，并在`Dimensions`下选择要删除的维度。
 
    ![操作列选择下拉菜单](../../assets/change-metrics-3.png)

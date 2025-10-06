@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL SQL Report Builder]允许您随时运行和更改查询。 如果您需要立即更新查询，而不是等到更新周期完成后再修复列或报告，则此功能非常有用。
 
-在执行查询之前，[[!DNL Commerce Intelligence] 估计其成本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html)。 成本考虑执行查询所需的时间和资源数。 如果该成本过高，或者返回的行数超过[!DNL Commerce Intelligence]限制，则查询失败。 为了查询您的[Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md)（确保您编写的查询尽可能简化），Adobe建议执行以下操作。
+在执行查询之前，[[!DNL Commerce Intelligence] 估计其成本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=zh-Hans)。 成本考虑执行查询所需的时间和资源数。 如果该成本过高，或者返回的行数超过[!DNL Commerce Intelligence]限制，则查询失败。 为了查询您的[Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md)（确保您编写的查询尽可能简化），Adobe建议执行以下操作。
 
 ## 使用SELECT或选择所有列
 

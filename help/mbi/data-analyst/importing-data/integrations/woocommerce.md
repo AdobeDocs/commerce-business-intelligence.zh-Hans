@@ -25,5 +25,5 @@ ht-degree: 0%
 
 ## 相关：
 
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
 * [分段和过滤的建议数据维度](../../../best-practices/segment-filter.md)

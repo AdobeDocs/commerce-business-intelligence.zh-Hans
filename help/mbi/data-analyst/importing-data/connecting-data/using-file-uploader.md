@@ -24,7 +24,7 @@ ht-degree: 0%
 ## 限制和要求 {#require}
 
 1. **唯一支持的文件上传格式为`CSV`或`comma separated values`**。 如果您使用Excel，则可以使用“另存为”功能以`.csv`格式保存文件。
-1. **`CSV`文件必须使用`UTF-8 encoding`**。 大多数情况下，这并不是问题。 如果您在上传文件时遇到此错误，[请参阅此支持文章](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html)。
+1. **`CSV`文件必须使用`UTF-8 encoding`**。 大多数情况下，这并不是问题。 如果您在上传文件时遇到此错误，[请参阅此支持文章](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=zh-Hans)。
 1. **文件不能大于100MB**。 如果文件大于此值，请将表分成块，并将它们另存为单个文件。 您可以在加载初始文件后附加数据。
 1. **所有表都必须有`primary key`**。 您的表中至少需要有一列可用作`primary key`，或者表中每一行的唯一标识符。 任何指定为`primary key`的列都可以&#x200B;*从不*&#x200B;为null。 `primary key`可以简单到为每一行添加一个提供数字的列，也可以是两个串连的列，以组成一个具有唯一值的列（例如，`campaign name`和`date`）。
 

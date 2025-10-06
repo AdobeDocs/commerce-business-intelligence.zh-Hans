@@ -39,7 +39,7 @@ ht-degree: 0%
 
 在`qualitative cohort`中创建`Report Builder`报告涉及Adobe分析团队在必要的表中创建一些[高级计算列](../data-warehouse-mgr/creating-calculated-columns.md)。
 
-要生成这些文件，请提交[支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)（并引用此文章！）。 以下是您需要了解的信息：
+要生成这些文件，请提交[支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)（并引用此文章！）。 以下是您需要了解的信息：
 
 * 您要使用执行同类群组分析的`metric`及其使用的表（示例： `Revenue`，基于`orders`表构建）。
 

@@ -70,6 +70,6 @@ ht-degree: 0%
 * [合并表](../../../best-practices/consolidating-your-tables.md)
 * [限制对数据库的访问](../../../administrator/account-management/restrict-db-access.md)
 
-**没有看到您想要的集成？**&#x200B;必须激活某些集成，才会在您的帐户中显示。 如果您要查找诸如[!DNL Facebook]之类的内容，但该内容未列出，请[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+**没有看到您想要的集成？**&#x200B;必须激活某些集成，才会在您的帐户中显示。 如果您要查找诸如[!DNL Facebook]之类的内容，但该内容未列出，请[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
 
 **如果看到集成**&#x200B;的错误状态，请查看[疑难解答部分](https://support.magento.com/hc/en-us/sections/360003078151)以获取帮助。
