@@ -4,9 +4,9 @@ description: 了解您的企业财务现在如何与销售和营销数据并存�
 exl-id: e100c88c-af59-4185-b2a2-c8e77bfd7277
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 32b1e1be4e372164da757cb339ba1618d33a75ea
+source-git-commit: b6f8a4f533286fad67dc875ebb6f4f3b7022ca5b
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '179'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >需要[管理员权限](../../../administrator/user-management/user-management.md)。
 
-![](../../../assets/Quickbooks.png)
+![QuickBooks标志](../../../assets/Quickbooks.png)
 
 借助[!DNL QuickBooks]集成，您的业务财务现在可以与销售和营销数据一起运行，从而让您快速、轻松地监控支出、识别超支等等。
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 单击&#x200B;**[!UICONTROL Connect to Quickbooks]**&#x200B;后，登录到您的[!DNL Intuit]帐户并授权连接：
 
-![](../../../assets/QuickBooks_App_Store_1.jpg)
+![QuickBooks App Store集成页面](../../../assets/QuickBooks_App_Store_1.jpg)
 
 1. 在`Search for a company`下拉列表中，选择您的公司。
 1. 单击&#x200B;**[!UICONTROL Next]**。 您被重定向到[!DNL Commerce Intelligence]，并且&#x200B;*连接成功！屏幕顶部显示*&#x200B;消息。
@@ -44,4 +44,4 @@ ht-degree: 0%
 ## 相关
 
 * [需要 [!DNL QuickBooks] 数据](../integrations/quickbooks-data.md)
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

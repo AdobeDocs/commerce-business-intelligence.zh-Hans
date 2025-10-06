@@ -4,9 +4,9 @@ description: 了解维度是什么，它可用于根据量度过滤或划分图�
 exl-id: 143a4b1e-2e6f-438a-90e6-bdda13b39cb9
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 1. 在`Choose Metric(s) to Add Dimensions`列中，选择要将维度添加到的量度。 选定后，`Choose Dimensions to Add`列将显示在右侧。 选中要添加到所选量度的维度。
 
-   ![](../../assets/Add_Dimensions.png)
+   ![添加维度对话框，显示可用的维度选项](../../assets/Add_Dimensions.png)
 
 1. 如果要按报表中的任何数据维度进行分段或分组，请确保指示它们是&#x200B;_可分组的_。
 

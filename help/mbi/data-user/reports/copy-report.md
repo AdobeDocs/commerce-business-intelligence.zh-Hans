@@ -4,9 +4,9 @@ description: 了解如何创建报告副本。
 exl-id: c57783b4-32ae-4054-a85a-5ddf63cfd34b
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '88'
+source-wordcount: '101'
 ht-degree: 0%
 
 ---
@@ -17,4 +17,4 @@ ht-degree: 0%
 
 在这些情况下，启动`Chart Editor`并单击右上角的&#x200B;**[!UICONTROL Save As]**。 这将复制现有图表，并使用您选择的新名称将其添加到当前功能板，并允许您立即编辑新图表的设置。
 
-![](../../assets/create-report-copy.png)
+![图表编辑器显示“另存为”选项以创建报告副本](../../assets/create-report-copy.png)

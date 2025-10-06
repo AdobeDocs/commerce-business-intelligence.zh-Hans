@@ -4,9 +4,9 @@ description: 了解一些ER图，以帮助您可视化少数几个通用Commerce
 exl-id: de7d419f-efbe-4d0c-95a8-155a12aa93f3
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 在[!DNL Commerce Intelligence]内，如果这两个表之间的路径不存在，您可以[在Data Warehouse选项卡中创建路径](../data-warehouse-mgr/create-paths-calc-columns.md)。 当您准备好创建路径时，其定义如下：
 
-![](../../assets/SFO___CE_path.png)
+![实体关系图，显示从sales_flat_order到customer_entity的路径](../../assets/SFO___CE_path.png)
 
 ## `sales\_flat\_order & sales\_flat\_order\_item`
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 在[!DNL Commerce Intelligence]内，如果这两个表之间的路径不存在，您可以[在Data Warehouse选项卡中创建路径](../data-warehouse-mgr/create-paths-calc-columns.md)。 准备创建路径时，请如下所示定义路径。
 
-![](../../assets/SFOI___SFO_path.png)
+![实体关系图，显示从sales_flat_order_item到sales_flat_order](../../assets/SFOI___SFO_path.png)的路径
 
 ## `catalog\_product\_entity & sales\_flat\_order\_item`
 
@@ -59,4 +59,4 @@ ht-degree: 0%
 
 在[!DNL Commerce Intelligence]内，如果这两个表之间的路径不存在，您可以[在Data Warehouse选项卡中创建路径](../data-warehouse-mgr/create-paths-calc-columns.md)。 准备创建路径时，请如下所示定义路径。
 
-![](../../assets/SFOI___CPE_path.png)
+![实体关系图，显示从sales_flat_order_item到catalog_product_entity的路径](../../assets/SFOI___CPE_path.png)

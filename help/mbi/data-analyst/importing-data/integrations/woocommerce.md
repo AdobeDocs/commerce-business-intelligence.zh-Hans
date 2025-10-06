@@ -4,9 +4,9 @@ description: 了解如何查看您的业务表现或找到您最有价值的客�
 exl-id: 26ac24e0-087b-4958-873c-2facab22ffb2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '95'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >需要[管理员权限](../../../administrator/user-management/user-management.md)。
 
-![](../../../assets/WooCommerce-Logo.jpg)
+![WooCommerce徽标](../../../assets/WooCommerce-Logo.jpg)
 
 想要了解您的业务表现或寻找您最有价值的客户获取来源和渠道？ 将您的[!DNL WooCommerce]数据连接到[!DNL Commerce Intelligence]允许您回答这些问题等。
 
@@ -25,5 +25,5 @@ ht-degree: 0%
 
 ## 相关：
 
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [分段和过滤的建议数据维度](../../../best-practices/segment-filter.md)

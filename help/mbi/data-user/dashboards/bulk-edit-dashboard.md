@@ -4,9 +4,9 @@ description: 了解如何在 [!DNL Commerce Intelligence]中使用批量编辑�
 exl-id: 576ffabb-5e5d-4251-9662-951e2cd30f31
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## 使用[!DNL Find/Replace] {#findreplace}
 
-1. 单击仪表板名称旁边的齿轮(![](../../assets/gear-icon.png))图标，然后单击[!UICONTROL Bulk Edit Reports]窗口。
+1. 单击仪表板名称旁边的齿轮（![齿轮图标](../../assets/gear-icon.png)）图标，然后单击[!UICONTROL Bulk Edit Reports]窗口。
 
 1. 在弹出窗口中单击&#x200B;**[!UICONTROL Chart Title Find and Replace]**。
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ## 前置词`Chart Names` {#prepend}
 
-1. 单击仪表板名称旁边的齿轮(![](../../assets/gear-icon.png))图标，然后单击[!UICONTROL Bulk Edit Reports]窗口。
+1. 单击仪表板名称旁边的齿轮（![齿轮图标](../../assets/gear-icon.png)）图标，然后单击[!UICONTROL Bulk Edit Reports]窗口。
 
 1. 在弹出窗口中单击&#x200B;**[!UICONTROL Prepend Report Names]**。
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 ## 更改`Dates` {#dates}
 
-1. 单击仪表板名称旁边的齿轮(![](../../assets/gear-icon.png))图标，然后选择[!UICONTROL Bulk Edit Reports]窗口。
+1. 单击仪表板名称旁边的齿轮（![齿轮图标](../../assets/gear-icon.png)）图标，然后选择[!UICONTROL Bulk Edit Reports]窗口。
 
 1. 在弹出窗口中单击&#x200B;**[!UICONTROL Change Dates]**。
 

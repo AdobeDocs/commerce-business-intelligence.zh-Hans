@@ -4,9 +4,9 @@ description: 了解如何构建将您的电子商务数据与您的订单和客�
 exl-id: f8a557ae-01d7-4886-8a1c-c0f245c7bc49
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 如果需要刷新程序，可以快速查看同步表和列：
 
-![](../../assets/Syncing_New_Columns.gif)
+![在Data Warehouse中同步新列的动画演示](../../assets/Syncing_New_Columns.gif)
 
 创建从`orders`表到[!DNL Google eCommerce]表的连接后，您将在下面的列表中创建前三个维度。 接下来，使用这些维度在`customers`表中创建三个用户/客户维度。 若要完成，请将这些列加入`orders`表。
 
@@ -65,7 +65,7 @@ ht-degree: 0%
 1. 在显示的窗口中，将`Many`端设置为`orders.order\_id`，或将`orders`表中包含订单ID的列设置为。
 1. 在`One`端，找到`Google ECommerce`表，然后将该列设置为`transactionID`。
 
-   ![](../../assets/google-ecommerce-table.png)
+   ![显示可用维度的Google电子商务表结构](../../assets/google-ecommerce-table.png)
 
 1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;以创建路径。
 1. 添加路径后，再次单击&#x200B;**[!UICONTROL Select table and column]**&#x200B;下拉列表。
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 下面是整个过程的概况：
 
-![](../../assets/help_center.gif)
+![创建Google Analytics源维度的动画演示](../../assets/help_center.gif)
 
 接下来，尝试创建&#x200B;**订单的[!DNL Google Analytics]媒介**&#x200B;和`campaign`。 这些维度没有多少变化，所以尝试一下。 但是，如果卡住，可以查看[本文结尾](#stuck)以查看其他内容。
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 
 下面是整个过程的概况：
 
-![](../../assets/help_center2.gif)
+![创建客户获取维度的动画演示](../../assets/help_center2.gif)
 
 将`Customer's first order's`媒体和`campaign`维度加入`orders`表即可完成。 加入维度，如果遇到问题，则在需要帮助时查看[文章的结尾](#stuck)。
 

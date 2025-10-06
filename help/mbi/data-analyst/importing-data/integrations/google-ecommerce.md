@@ -4,9 +4,9 @@ description: 了解您最宝贵的转介渠道。
 exl-id: c80f52f3-894a-4084-8c0e-aee618ed77f5
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >需要[管理员权限](../../../administrator/user-management/user-management.md)。
 
-![](../../../assets/google-ecommerce-logo.png)
+![Google电子商务徽标](../../../assets/google-ecommerce-logo.png)
 
 您拥有稳定的流量和订单流，这意味着您可以有效地联系和吸引客户。 但是，您最有价值的推荐渠道是什么？ 从一个来源获得的客户与从另一个来源获得的客户的平均生命周期值是多少？ 通过将您的订单引用源数据从[!DNL Google ECommerce]连接到[!DNL Commerce Intelligence]，您可以构建有助于您识别[最有价值的营销渠道](../../../data-analyst/analysis/most-value-source-channel.md)的分析。
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
    如果您有多个配置文件并且需要帮助来识别哪个，请参阅下面的**连接多个[!DNL Google Analytics]配置文件”部分。
 
-   ![](../../../assets/conn-mult-ga-profiles.png)<!--{: width="500"}-->
+   ![显示用于连接多个Google Analytics配置文件的选项的表单](../../../assets/conn-mult-ga-profiles.png)<!--{: width="500"}-->
 
 1. 更改会自动保存，因此完成时请单击&#x200B;**[!UICONTROL Back to Connections]**。
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 ## 相关：
 
 * [需要 [!DNL Google ECommerce] 数据](../integrations/google-ecommerce-data.md)
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [正在设置 [!DNL Google ECommerce] 跟踪](https://support.google.com/analytics/answer/1009612?hl=en)
 * [了解您最有价值的客户获取来源和渠道](../../analysis/most-value-source-channel.md)
 * [提高广告促销活动的ROI](../../analysis/roi-ad-camp.md)

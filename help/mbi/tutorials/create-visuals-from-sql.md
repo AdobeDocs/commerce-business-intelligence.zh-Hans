@@ -4,9 +4,9 @@ description: 了解如何熟悉SQL Report Builder中使用的术语，并为您�
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: SQL Report Builder, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '665'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 此查询返回此结果表：
 
-![](../assets/SQL_results_table.png)
+![显示SQL查询结果以及按产品、年份和月份销售项目的表](../assets/SQL_results_table.png)
 
 ## 第2步：创建可视化图表
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 首次执行查询时，报告可能看起来不可靠，因为查询中的所有列都绘制为系列：
 
-![](../assets/SQL_initial_report_results.png)
+![所有列均绘制为数列的初始SQL报告](../assets/SQL_initial_report_results.png)
 
 对于此示例，您希望这是一段时间内趋势的折线图。 要创建它，请使用以下设置：
 
@@ -82,13 +82,13 @@ ht-degree: 0%
 
 下面是您如何创建此可视化图表的概览，从运行查询到设置报表：
 
-![](../assets/SQL_report_settings.gif)
+![配置SQL报表可视化设置的动画演示](../assets/SQL_report_settings.gif)
 
 ## 步骤3：选择`Chart Type`
 
 此示例使用`Line`图表类型。 要使用其他`chart type`，请单击图表选项部分上方的图标进行更改：
 
-![](../assets/Chart_types.png)
+![可用的图表类型图标，包括折线图、条形图、面积图和其他可视化选项](../assets/Chart_types.png)
 
 ## 步骤4：保存可视化图表
 

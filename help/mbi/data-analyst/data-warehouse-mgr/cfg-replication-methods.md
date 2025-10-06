@@ -4,9 +4,9 @@ description: 了解表如何组织，以及表数据的行为如何允许您为�
 exl-id: 83895c48-a6ec-4b01-9890-164e0b21dcbc
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Data Import/Export
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: '1442'
 ht-degree: 0%
 
 ---
@@ -118,7 +118,7 @@ ht-degree: 0%
 
 看看整个过程：
 
-![](../../assets/replication_method.gif)<!--{: width="801" height="341"}-->
+![为数据库表配置复制方法的动画演示](../../assets/replication_method.gif)<!--{: width="801" height="341"}-->
 
 ## 正在结束
 

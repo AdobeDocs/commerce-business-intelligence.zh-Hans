@@ -4,9 +4,9 @@ description: 了解分段和过滤的最佳实践。
 exl-id: 66391bce-bdeb-4e9d-8089-1c796e00d91e
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 本主题介绍经常向客户推荐的关键区段。 此外，还详细介绍了这些区段可以帮助您回答的问题。 从技术上讲，区段是数据库中的数据列。 在[!DNL Adobe Commerce Intelligence]中，它们称为维度。
 
-![](../../mbi/assets/mbi-critical-segments.png)
+![显示关键客户区段和过滤器的仪表板](../../mbi/assets/mbi-critical-segments.png)
 
 
 ## 用户区段
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 按上述维度划分量度的第一步是确保跟踪数据库中的此数据。 如果未跟踪此数据，请与您的技术团队会面，并找到开始跟踪此数据的方法。
 
-确认在数据库中跟踪数据后，[联系支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)以将维度推送到[!DNL Commerce Intelligence]量度和图表。 您还可以使用&#x200B;*字段管理*&#x200B;工具在[!DNL Commerce Intelligence]中跟踪这些字段。
+确认在数据库中跟踪数据后，[联系支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)以将维度推送到[!DNL Commerce Intelligence]量度和图表。 您还可以使用&#x200B;*字段管理*&#x200B;工具在[!DNL Commerce Intelligence]中跟踪这些字段。
 
 ## 相关
 

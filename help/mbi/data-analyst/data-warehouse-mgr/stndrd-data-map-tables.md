@@ -4,9 +4,9 @@ description: 了解如何使用映射表。
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '775'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 假设您正在`Report Builder`构建`Revenue by State`报表。 在您尝试将`billing state`分组添加到您的报告并且看到以下内容之前，一切进展顺利：
 
-![](../../assets/Messy_State_Segments.png)
+![显示命名不一致的混乱状态区段的图表](../../assets/Messy_State_Segments.png)
 
 ## 怎么会这样？
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 在第二列中，输入这些值&#x200B;**应为**&#x200B;的值。 继续使用计费状态示例，如果您希望`pa`、`PA`、`Pennsylvania`和`pennsylvania`只是`PA`，则应当在此列中为每个输入值输入`PA`。
 
-![](../../assets/Mapping_table_examples.jpg)
+![显示原始值和标准化值的映射表示例](../../assets/Mapping_table_examples.jpg)
 
 ## 我需要在[!DNL Commerce Intelligence]中执行什么操作才能使用它？ {#use}
 
@@ -66,7 +66,7 @@ ht-degree: 0%
    * 在`One`侧，选择`mapping`表和`Primary key`列。 在这种情况下，应从`state_input`表中选择`mapping_state`列。
    * 以下是路径的外观：
 
-     ![](../../assets/State_Mapping_Path.png)
+     ![Data Warehouse Manager显示状态映射计算路径](../../assets/State_Mapping_Path.png)
 
 1. 完成后，单击&#x200B;**[!UICONTROL Save]**&#x200B;以创建路径。
 1. 路径在保存后可能不会立即填充 — 如果发生这种情况，请单击`Path`框并选择您创建的路径。
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 更新周期完成后，您将能够使用新的联接列正确划分数据，而不是使用数据库中乱七八糟的列。 现在来看看你的分组选项 — 不再有压力混乱：
 
-![](../../assets/Clean_State_Segments.png)
+![显示标准化后状态区段的图表](../../assets/Clean_State_Segments.png)
 
 无论您何时想要清理Data Warehouse中一些潜在的乱数据，都可以使用映射表。 但是，映射表也可以用于其他酷炫用例，如[在 [!DNL Google Analytics channels] 中复制 [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md)。
 

@@ -4,9 +4,9 @@ description: 了解如何将您的广告成本与从您的促销活动中获得�
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '322'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 0%
 >
 >需要[管理员权限](../../../administrator/user-management/user-management.md)。
 
-![](../../../assets/Google_Adwords_logo.png)
+![Google AdWords徽标](../../../assets/Google_Adwords_logo.png)
 
-您完成了调查，创建了广告，启动了[!DNL Google]营销活动。 现在该分析您的广告支出数据了，看看您的资金是否得到了有效花销。 使用广告支出数据，您可通过将广告成本和从营销活动中获得的用户的客户存留期价值(CLV) [相匹配来](../../analysis/roi-ad-camp.md)衡量营销活动ROI。
+您完成了调查，创建了广告，启动了[!DNL Google]营销活动。 现在该分析您的广告支出数据了，看看您的资金是否得到了有效花销。 使用广告支出数据，您可通过将广告成本和从营销活动中获得的用户的客户存留期价值(CLV)[相匹配来](../../analysis/roi-ad-camp.md)衡量营销活动ROI。
 
 在[!DNL Google Adwords]中输入您的[!DNL Commerce Intelligence]凭据以开始操作。
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 1. 输入您的[!DNL Google Analytics]凭据。 授权过程完成后，您将被重定向回[!DNL Commerce Intelligence]。
 1. 此时将显示配置文件ID列表。 检查要连接到[!DNL Commerce Intelligence]的配置文件。
 
-   ![](../../../assets/cnnct-profile.png)
+   ![Google AdWords连接对话框显示配置文件选择](../../../assets/cnnct-profile.png)
 
 1. 更改会自动保存，因此完成时请单击&#x200B;**[!UICONTROL Back to Connections]**。
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 ## 相关
 
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [通过 [!DNL Google ECommerce]跟踪订单反向链接来源](../integrations/google-ecommerce.md)
 * [跟踪数据库中的用户反向链接源](../../analysis/google-track-user-acq.md)
 * [了解您最有价值的客户获取来源和渠道](../../analysis/most-value-source-channel.md)

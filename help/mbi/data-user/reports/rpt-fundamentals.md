@@ -4,9 +4,9 @@ description: 了解如何使用报表数据。
 exl-id: 94d4db27-0e06-4066-9c03-036b109d2d9b
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 * 每次使用从注册到首次购买日期的平均时间。
 
-这显示了注册日期和用户首次购买日期之间经过的平均时间，并提供了有关用户在转化漏斗中完成此最后步骤时的行为方式的信息。
+这显示了注册日期和用户首次购买日期之间经过的平均时间，并提供了关于用户在转化funnel的最后一步中的行为方式的信息。
 
 ## 查找数据
 
@@ -128,4 +128,4 @@ _[的`Time between a customer's registration date and first purchase date`]总�
 
 请参阅下文：
 
-![](../../assets/exp-rep-as-image.gif)
+![将报告导出为图像文件的动画演示](../../assets/exp-rep-as-image.gif)

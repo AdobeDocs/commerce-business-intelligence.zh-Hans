@@ -4,9 +4,9 @@ description: 了解如何在新的Adobe Commerce Intelligence架构上以SQL计�
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, SQL Report Builder, Commerce Tables
-source-git-commit: 8090c2e0f17f0e8d3bdec668ce546206bf024691
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '839'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 大多数帐户的`Is customer's last order?`表中都有一个名为`orders`的列，用于对重复购买率和客户流失率进行分析。 如果您的帐户采用新架构，则此列是使用`Calculation`列构建的，可在下面的屏幕快照中看到：
 
-![](../../assets/Is_customer_s_last_order.png)
+用于标识客户最后订单的![SQL计算列定义](../../assets/Is_customer_s_last_order.png)
 
 `Is customer's last order?`列使用分别作为`Customer's lifetime number of orders`和`Customer's order number`别名的输入`A`和`B`。
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 为了启用产品收入分析，大多数帐户在其`Order item total value (quantity * price)`表中都有一个名为`Orders Items`的列。 如果您的帐户采用新架构，则此列也是使用`Calculation`列构建的，并且可在下面的屏幕快照中看到：
 
-![](../../assets/Order_item_total_value.png)
+订单项合计值的![SQL计算列定义](../../assets/Order_item_total_value.png)
 
 在Commerce架构中，`Order item total value (quantity * price)`列使用分别作为`qty ordered`和`base price`别名的输入`A`和`B`。
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 通过导航到`Calculation`，可将新&#x200B;**[!DNL Manage Data > Data Warehouse]**&#x200B;列添加到表中，如下所示：
 
-![](../../assets/blobid2.png)
+![显示计算列结果的表视图](../../assets/blobid2.png)
 
 在此处，您可以按照以下步骤创建`Calculation`列：
 

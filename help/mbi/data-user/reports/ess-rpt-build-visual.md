@@ -4,9 +4,9 @@ description: 了解如何使用可视化Report Builder。
 exl-id: 1101f43d-e014-4df2-be21-12d90a9d8a56
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '700'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 0%
 
      ![按表数据分组](../../assets/magento-bi-report-builder-group-by-table-data.png)
 
-   * 单击表右上角的转置(![](../../assets/magento-bi-btn-transpose.png))控件以更改数据的方向。
+   * 单击表右上角的转置（![转置图标](../../assets/magento-bi-btn-transpose.png)）控件以更改数据的方向。
 
      数据轴翻转，现在表格中每个优惠券代码对应一列，每个月对应一行。 您可能会发现此方向更易于阅读。
 
@@ -95,14 +95,14 @@ ht-degree: 0%
 
      | | |
      |-----|-----|
-     | ![](../../assets/magento-bi-btn-chart-line.png) | 折线图 |
-     | ![](../../assets/magento-bi-btn-chart-horz-bar.png) | 水平条形图 |
-     | ![](../../assets/magento-bi-btn-chart-horz-stacked-bar.png) | 水平栈叠条形图 |
-     | ![](../../assets/magento-bi-btn-chart-vert-bar.png) | 垂直条 |
-     | ![](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | 垂直栈叠条形图 |
-     | ![](../../assets/magento-bi-btn-chart-pie.png) | 饼图 |
-     | ![](../../assets/magento-bi-btn-chart-area.png) | 面积 |
-     | ![](../../assets/magento-bi-btn-chart-funnel.png) | 漏斗 |
+     | ![折线图图标](../../assets/magento-bi-btn-chart-line.png) | 折线图 |
+     | ![水平条形图标](../../assets/magento-bi-btn-chart-horz-bar.png) | 水平条形图 |
+     | ![水平栈叠条形图标](../../assets/magento-bi-btn-chart-horz-stacked-bar.png) | 水平栈叠条形图 |
+     | ![竖条图标](../../assets/magento-bi-btn-chart-vert-bar.png) | 垂直条 |
+     | ![垂直栈叠条形图标](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | 垂直栈叠条形图 |
+     | ![饼图图标](../../assets/magento-bi-btn-chart-pie.png) | 饼图 |
+     | ![面积图图标](../../assets/magento-bi-btn-chart-area.png) | 面积 |
+     | ![Funnel图表图标](../../assets/magento-bi-btn-chart-funnel.png) | 漏斗 |
 
      {style="table-layout:auto"}
 

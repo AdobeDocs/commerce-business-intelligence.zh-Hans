@@ -4,9 +4,9 @@ description: 了解如何使用过滤器。
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 0854d644cb72b3fc8b8b31a0bf7e8dca4cc99724
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
    在此报表中，每个数据点显示当月客户总数。
 
-1. 在左侧面板中，单击筛选器(![](../../assets/magento-bi-btn-filter.png))图标。
+1. 在左侧面板中，单击筛选器（![筛选器图标](../../assets/magento-bi-btn-filter.png)）图标。
 
    ![添加筛选器](../../assets/magento-bi-report-builder-filter-add.png)
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
    筛选器按字母顺序编号，第一个是`[A]`。 过滤器的前两个部分是下拉列表选项，第三个部分是值。
 
-   ![](../../assets/magento-bi-report-builder-filter-add-a.png)
+   ![显示添加筛选器选项的筛选器界面](../../assets/magento-bi-report-builder-filter-add-a.png)
 
    * 单击过滤器的第一部分，然后选择要用作表达式主体的列。
 

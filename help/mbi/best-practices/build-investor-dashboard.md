@@ -4,9 +4,9 @@ description: 了解如何为投资者构建仪表板。
 exl-id: 917e7628-3498-4413-a7e1-61799989a7dd
 role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards, Data Integration
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
    * 量度 — 收入
 * **[!UICONTROL Revenue from 1st time orders vs repeat orders]**
    * 量度 — 首次订单收入
-   * 过滤器 — 用户的订单号等于1
+      * 过滤器 — 用户的订单号等于1
    * 量度2 — 重复订单收入
       * 筛选器 — 用户的订单号大于1
    * 取消选中多个Y轴的复选框
@@ -77,4 +77,4 @@ ht-degree: 0%
 
 周全地组织报告并关注细节。 完成后，功能板将类似于下图：
 
-![](../../mbi/assets/investor-dboard-example.png)
+![构建投资者信息板](../../mbi/assets/investor-dboard-example.png)

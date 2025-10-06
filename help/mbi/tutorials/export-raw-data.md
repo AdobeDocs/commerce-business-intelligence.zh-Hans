@@ -4,16 +4,16 @@ description: 了解如何从 [!DNL Commerce Intelligence] Data Warehouse导出�
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
 
 # 导出原始数据
 
-使用原始数据导出，您可以从Data Warehouse导出记录，以更详细地了解为您的仪表板提供支持的功能。 此外，原始数据导出还可以帮助您[查明数据差异](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=zh-Hans)。
+使用原始数据导出，您可以从Data Warehouse导出记录，以更详细地了解为您的仪表板提供支持的功能。 此外，原始数据导出还可以帮助您[查明数据差异](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html)。
 
 通过原始数据导出，可访问通过取消标准化和预聚合相关量度生成的其他列和维度。 例如，`User's first order date`是一个维度，您可以为[!DNL Commerce Intelligence]中的每个用户导出该维度，但它可能在数据库中不可用。
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 在图表级别查看整个过程。
 
-![](../assets/Chart-level_export.gif)
+![从图表导出原始数据的动画演示](../assets/Chart-level_export.gif)
 
 ## 步骤2：下载导出 {#download}
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 要检查导出是否已准备就绪，请单击屏幕右上角的&#x200B;**[!UICONTROL Raw Data Exports]**。 单击&#x200B;**[!UICONTROL Download]**&#x200B;可下载导出的压缩`.csv`文件。
 
-![](../assets/Downloading_export.gif)
+![下载导出的CSV文件的动画演示](../assets/Downloading_export.gif)
 
 ## 步骤3：访问历史导出 {#historical}
 

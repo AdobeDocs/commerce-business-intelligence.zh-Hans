@@ -4,9 +4,9 @@ description: 了解如何创建和使用功能板。
 exl-id: a872344b-ac66-41eb-a471-5a69f8802527
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '628'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 1. 在菜单上，单击&#x200B;**[!UICONTROL Dashboards]**。
 
-1. 默认仪表板的名称显示在仪表板标题的左上角。 单击向下箭头(![](../../assets/magento-bi-btn-down.png))显示可用选项。
+1. 默认仪表板的名称显示在仪表板标题的左上角。 单击向下箭头（![向下箭头图标](../../assets/magento-bi-btn-down.png)）以显示可用选项。
 
    ![创建信息板](../../assets/magento-bi-dashboard-create.png)
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
    ![仪表板名称](../../assets/magento-bi-dashboard-create-name.png)
 
-   * 新仪表板的名称将显示在左上角。 单击向下箭头(![](../../assets/magento-bi-btn-down.png))显示选项。 如果创建了组，则新操控板将显示在列表中该组的下方。
+   * 新仪表板的名称将显示在左上角。 单击向下箭头（![向下箭头图标](../../assets/magento-bi-btn-down.png)）显示选项。 如果创建了组，则新操控板将显示在列表中该组的下方。
 
 ### 添加报告
 

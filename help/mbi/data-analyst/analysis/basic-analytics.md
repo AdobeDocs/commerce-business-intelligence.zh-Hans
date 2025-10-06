@@ -4,9 +4,9 @@ description: 了解如何了解和构建基础分析。
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Dashboards, Data Integration
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '3120'
+source-wordcount: '3130'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 **您接受来宾订单吗？**
 
-*如果是，此表可能不包含您的所有客户。 请联系[支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)以确保您的客户分析包括所有客户。*
+*如果是，此表可能不包含您的所有客户。 请联系[支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)以确保您的客户分析包括所有客户。*
 
 *不确定您是否接受来宾订单？ 请参阅[此主题](../data-warehouse-mgr/guest-orders.md)以了解详情！*
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 * **[!UICONTROL Created_at]**：创建或下订单的日期。
 * **[!UICONTROL Customer_email]**：下订单的客户的电子邮件地址。 这也可能是客户的唯一标识符。
 * **[!UICONTROL Customer's lifetime number of orders]**： `Customers`表中同名列的副本。
-* **[!UICONTROL Customer's order number]**：与订单关联的客户连续订单号。 例如，如果您正在查看的行是客户的第一张订单，则此列为“1”；但是，如果这是客户的第十五张订单，则此列显示此订单的“15”。 如果`Customers`表上不存在此维度，请联系[支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)来帮助您构建它。
+* **[!UICONTROL Customer's order number]**：与订单关联的客户连续订单号。 例如，如果您正在查看的行是客户的第一张订单，则此列为“1”；但是，如果这是客户的第十五张订单，则此列显示此订单的“15”。 如果`Customers`表上不存在此维度，请联系[支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)来帮助您构建它。
 * **[!UICONTROL Customer's order number (previous-current)]**： **[!UICONTROL Customer's order number]**&#x200B;列中两个值的连接。 它用在下面的示例报表中，以显示任意两张订单之间经过的时间。 例如，客户第一次订购日期与第二次订购日期之间的时间在此计算中表示为“1-2”。
 * **[!UICONTROL Coupon_code]**：显示每个订单使用了哪些优惠券。
 * **[!UICONTROL Seconds since previous order]**：客户订单之间的时间（以秒为单位）。
@@ -155,7 +155,7 @@ ht-degree: 0%
    * **[!UICONTROL Time Interval]**： `By Month`
    * **[!UICONTROL Group By]**： `Customer's Order Number`，然后选择`2`和`3`
 
-  ![](../../assets/2nd_and_3rd_purchases_last_year.png)
+  ![显示去年第二和第三次购买分析的图表](../../assets/2nd_and_3rd_purchases_last_year.png)
 
 * **报告示例2**：去年的重复客户数量
    * **[!UICONTROL Metric]**： `Distinct Customers`
@@ -244,9 +244,9 @@ ht-degree: 0%
 * **描述**：客户在作为客户的前30天内产生的平均收入额。
 * **量度描述**：此量度执行从&#x200B;**表中按**&#x200B;排序的`Customer's First 30 Day Revenue`平均`customer_entity`（共`created_at`个）。
 * **报表描述**：客户前30天收入的所有时间平均值
-* **[!UICONTROL Metric]**： `Average First 30 Day Revenue`
-* **[!UICONTROL Time Range]**： `All Time`
-* **[!UICONTROL Time Interval]**： `None`
+   * **[!UICONTROL Metric]**： `Average First 30 Day Revenue`
+   * **[!UICONTROL Time Range]**： `All Time`
+   * **[!UICONTROL Time Interval]**： `None`
 
 ![平均前30天收入](../../assets/Avg_first_30_day_revenue.png)<!--{: width="929"}-->
 

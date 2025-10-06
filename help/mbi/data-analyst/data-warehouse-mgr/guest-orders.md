@@ -4,9 +4,9 @@ description: 了解访客订单对您数据的影响，以及在 [!DNL Commerce 
 exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '566'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 * **如果所有客户都已注册**，并且不允许来宾订单，则意味着`orders`表中的每个记录在`customer\_id`列中都有值。 因此，每个订单都会连接回`customers`表。
 
-  ![](../../assets/guest-orders-4.png)
+  ![显示客户信息的访客订单数据表](../../assets/guest-orders-4.png)
 
 * **如果允许来宾订单**，则意味着某些订单在`customer\_id`列中没有任何值。 在`customer\_id`表中，只为已注册客户提供了`orders`列的值。 未注册的客户将收到此列的`NULL`（或空白）值。 因此，并非所有订单记录在`customers`表中都有匹配的记录。
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 您可能会注意到，在此类型的设置中设置的`Customers we count`过滤器具有`Customer's order number = 1`的过滤器。
 
-![](../../assets/guest-orders-filter-set.png)
+![用于排除来宾订单的筛选器集配置](../../assets/guest-orders-filter-set.png)
 
 在没有访客订单的情况下，每个客户在客户表中都作为唯一行存在（请参阅图1）。 诸如`New customers`之类的量度可以简单地根据`created\_at`日期计算此表的ID，以了解根据注册日期的新客户。
 

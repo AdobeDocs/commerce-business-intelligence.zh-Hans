@@ -4,9 +4,9 @@ description: 了解如何合并来自不同来源的数据。
 exl-id: 668cbc77-6a96-4687-9f40-3635b1be5c66
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 如果您在创建计算列时无法记住所有输入，请尝试在构建时方便使用此参考图：
 
-![](../../assets/Calculated_Columns_Example.png)
+![Data Warehouse Manager中的计算列配置示例](../../assets/Calculated_Columns_Example.png)
 
 ## 相关文档
 

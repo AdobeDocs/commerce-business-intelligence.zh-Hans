@@ -4,9 +4,9 @@ description: 了解如何使用可变值配置数据列。
 exl-id: c31ef32e-ba5a-4902-b632-fbab551cc632
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 要更改重新检查频率，请单击要更改的列旁边的复选框。 然后单击&#x200B;**[!UICONTROL Set Recheck Frequency]**&#x200B;下拉菜单并设置所需的频率。
 
-![](../../assets/dwm-recheck.png)
+![Data Warehouse Manager显示重新检查配置选项](../../assets/dwm-recheck.png)
 
 您有时可能会在`Paused`列中看到`Changes?`。 当表的[复制方法](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)设置为`Paused`时，将显示此值。
 

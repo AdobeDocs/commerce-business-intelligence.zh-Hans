@@ -4,9 +4,9 @@ description: 了解什么是定性同类群组，为什么您可能希望构建�
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 在`qualitative cohort`中创建`Report Builder`报告涉及Adobe分析团队在必要的表中创建一些[高级计算列](../data-warehouse-mgr/creating-calculated-columns.md)。
 
-要生成这些文件，请提交[支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)（并引用此文章！）。 以下是您需要了解的信息：
+要生成这些文件，请提交[支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)（并引用此文章！）。 以下是您需要了解的信息：
 
 * 您要使用执行同类群组分析的`metric`及其使用的表（示例： `Revenue`，基于`orders`表构建）。
 
@@ -55,7 +55,7 @@ Adobe分析团队对上述内容做出响应后，您就有了几个新的高级
 
 首先，您要添加感兴趣的量度进行同类群组，即为您正在分析的每个`cohort`添加一次。 在本例中，您希望查看客户在首次订购后的几个月内完成的累积`Revenue`，按`User's referral source`分段。 这意味着对于每个区段，您添加一个`Revenue`量度并为特定区段过滤：
 
-![](../../assets/qualcohort1.gif)
+![创建定性同类群组分析的动画演示](../../assets/qualcohort1.gif)
 
 其次，您应该对报表的时间选项进行两项更改：
 
@@ -65,7 +65,7 @@ Adobe分析团队对上述内容做出响应后，您就有了几个新的高级
 
 在此示例中，您查看了`all time`的`Revenue`视图。 之后，您应该最终会看到一系列圆点：
 
-![](../../assets/qualcohort2.gif)
+![同类群组分组和分析选项的动画演示](../../assets/qualcohort2.gif)
 
 第三，您调整以设置`cohorts`。 根据您指定给Adobe分析团队的`cohort date`和`time interval`，您的帐户中有一个执行`cohort`约会的维度。 在此示例中，该自定义维度称为`Months between this order and customer's first order date`。 使用此维度，您应：
 

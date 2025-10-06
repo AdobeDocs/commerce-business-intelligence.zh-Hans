@@ -4,9 +4,9 @@ description: 增强数据可视性、简化报告、按用户组定制访问、�
 role: Admin, User
 feature: User Management
 exl-id: d96a075d-53ab-48d3-ba83-3ff4298a0cb7
-source-git-commit: df408b8947a62cdb498b56370be965c89c45f6ff
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
@@ -392,7 +392,7 @@ ht-degree: 0%
 
 要配置用户组，请执行以下操作：
 
-1. 转到&#x200B;[!UICONTROL **管理用户**] > [!UICONTROL **User Groups]**&#x200B;以查看现有用户组。
+1. 转到&#x200B;[!UICONTROL **管理用户**] > [!UICONTROL **User Groups]**以查看现有用户组。
 
    ![配置用户组](../../assets/configure-user-groups.png)
 
@@ -460,7 +460,7 @@ ht-degree: 0%
 
 但是，用户可以查看根据用户配置期间映射到他们的存储过滤的仪表板数据。
 
-![查看仪表板管理员](../../assets/view-dashboard-user.png)
+![查看仪表板筛选管理员](../../assets/view-dashboard-user.png)
 
 >[!TIP]
 >

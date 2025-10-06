@@ -4,9 +4,9 @@ description: 了解如何通过cPanel连接MySQL。
 exl-id: 90b0a0b0-8c6b-4144-95b4-f588f18616c7
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 1. 单击&#x200B;**[!UICONTROL [!DNL MySQL] Databases]**&#x200B;部分中的`Database`。
 1. 向下滚动到`Add New User`部分并为[!DNL Commerce Intelligence]创建用户：
 
-   ![](../../../assets/create-mbi-mysql-user-cpanel.png)
+   ![cPanel MySQL数据库界面显示创建用户表单](../../../assets/create-mbi-mysql-user-cpanel.png)
 
 1. 单击&#x200B;**[!UICONTROL Create User]**。
 1. 现在您已经创建了用户，您需要将其关联到数据库。 返回`Add New User`部分 — 查看`Add User to Database?`的设置。这是您所需要的。
@@ -69,4 +69,4 @@ ht-degree: 0%
 
 ## 相关：
 
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -4,9 +4,9 @@ description: 了解如何管理和跟踪贵企业的付款和发票数据。
 exl-id: c038f2a9-b2bd-4e45-93f9-12d2e5077b31
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '151'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >需要[管理员权限](../../../administrator/user-management/user-management.md)。
 
-![](../../../assets/stripe-logo.png)
+![Stripe徽标](../../../assets/stripe-logo.png)
 
 [!DNL Stripe]允许您管理和跟踪公司的付款和发票数据。 将您的[!DNL Stripe]帐户连接到[!DNL Commerce Intelligence]是一个简单的两步过程：
 
@@ -48,4 +48,4 @@ ht-degree: 0%
 [[!DNL Stripe] API文档](https://stripe.com/docs/api)可以成为了解有关[!DNL Stripe]如何与[!DNL Commerce Intelligence]集成的有用资源。
 
 * [需要 [!DNL Stripe] 数据](../integrations/stripe-data.md)
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

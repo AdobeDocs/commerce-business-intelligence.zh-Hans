@@ -4,9 +4,9 @@ description: 了解如何生成和分析Commerce客户流失率。
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '338'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 本主题演示如何计算&#x200B;**商务客户**&#x200B;的&#x200B;**客户流失率**。 与SaaS或传统订阅公司不同，商业客户通常没有具体的&#x200B;**“流失事件”**&#x200B;来向您显示他们不再计入您的活跃客户。 因此，您可以通过下面的说明，根据自上次订购以来经过的时间，将客户定义为“已流失”。
 
-![](../../assets/Churn_rate_image.png)
+![显示一段时间内客户维系情况的客户流失率可视化图表](../../assets/Churn_rate_image.png)
 
 许多客户都希望获得帮助，以便开始根据自己的数据来构想他们应该使用的&#x200B;**时间范围**。 如果要使用历史客户行为来定义此&#x200B;**客户流失时间范围**，您可能需要熟悉[定义流失](../analysis/define-cust-churn.md)主题。 然后，您可以在下面的说明中使用客户流失率公式中的结果。
 
@@ -76,19 +76,19 @@ ht-degree: 2%
 * **客户流失率**
    * [!UICONTROL Metric]：新客户（按第一订单日期）
    * [!UICONTROL Filter]： `Lifetime number of orders Greater Than 0`
-   * &#x200B;
+   * 
      [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric]： `New customers (by last order date)`
    * [!UICONTROL Filter]：
-   * 自客户上次订购日期以来的秒数>= [您为流失客户自定义的截止日期&#x200B;]&#x200B;**`^`**
+   * 自客户上次订购日期以来的秒数>= [您为流失客户自定义的截止日期&#x200B;]**`^`**
    * `Lifetime number of orders Greater Than 0`
 
    * [!UICONTROL Metric]： `New customers (by last order date)`
    * [!UICONTROL Filter]： `Lifetime number of orders Greater Than 0`
-   * &#x200B;
+   * 
      [!UICONTROL Perspective]: Cumulative
    * [!UICONTROL Formula]： `(B / ((A + B) - C)`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: Percentage
 
 * *量度`A`：`New customers cumulative`*

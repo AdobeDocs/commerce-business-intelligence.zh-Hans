@@ -4,9 +4,9 @@ description: 了解如何设置功能板，以帮助您了解客户的存留期�
 exl-id: e353b92a-ff3b-466b-b519-4f86d054c0bc
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 本主题将演示如何设置功能板，以帮助您了解客户的存留期价值增长和预期存留期价值。
 
-![](../../assets/exp-lifetim-value-anyalysis.png)
+![预计生命周期值分析仪表板，显示客户值预测](../../assets/exp-lifetim-value-anyalysis.png)
 
 此分析仅适用于采用新架构的Pro客户。 如果您的帐户有权访问`Persistent Views`侧栏下的`Manage Data`功能，则表明您使用的是新架构，可以按照此处列出的说明自行构建此分析。
 
@@ -27,19 +27,19 @@ ht-degree: 0%
 
 * [!UICONTROL Column name]： `Months between first order and this order`
 * [!UICONTROL Column type]： `Same Table`
-* &#x200B;
+* 
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]： A = `Seconds between customer's first order date and this order`
-* &#x200B;
+* 
   [!UICONTROL Datatype]: `Integer`
 * **定义：**`case when A is null then null when A <= 0 then '1'::int else (ceil(A)/2629800)::int end`
 
 * [!UICONTROL Column name]： `Months since order`
 * [!UICONTROL Column type]： `Same Table`
-* &#x200B;
+* 
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]： A = `created_at`
-* &#x200B;
+* 
   [!UICONTROL Datatype]: `Integer`
 * 定义： `case when created_at is null then null else (ceil((extract(epoch from current_timestamp) - extract(epoch from created_at))/2629800))::int end`
 
@@ -47,31 +47,31 @@ ht-degree: 0%
 
 * [!UICONTROL Column name]： `Calendar months between first order and this order`
 * [!UICONTROL Column type]： `Same Table`
-* &#x200B;
+* 
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column inputs]：
    * `A` = `created_at`
    * `B` = `Customer's first order date`
 
-* &#x200B;
+* 
   [!UICONTROL Datatype]: `Integer`
 * 定义： `case when (A::date is null) or (B::date is null) then null else ((date_part('year',A::date) - date_part('year',B::date))*12 + date_part('month',A::date) - date_part('month',B::date))::int end`
 
 * [!UICONTROL Column name]： `Calendar months since order`
 * [!UICONTROL Column type]： `Same Table`
-* &#x200B;
+* 
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]： `A` = `created_at`
-* &#x200B;
+* 
   [!UICONTROL Datatype]: `Integer`
 * **定义：**`case when A is null then null else ((date_part('year',current_timestamp::date) - date_part('year',A::date))*12 + date_part('month',current_timestamp::date) - date_part('month',A::date))::int end`
 
 * [!UICONTROL Column name]： `Is in current month? (Yes/No)`
 * [!UICONTROL Column type]： `Same Table`
-* &#x200B;
+* 
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]： A = `created_at`
-* &#x200B;
+* 
   [!UICONTROL Datatype]: `String`
 * 定义： `case when A is null then null when (date_trunc('month', current_timestamp::date))::varchar = (date_trunc('month', A::date))::varchar then 'Yes' else 'No' end`
 
@@ -103,8 +103,8 @@ ht-degree: 0%
    * `Calendar months between first order and this order` `<= X` （为X选取一个合理的数字，例如24个月）
    * `Is in current month?` = `No`
 
-* &#x200B;
-  [!UICONTROL 量度]: `Revenue`
+* 
+  [！UICONTROL量度]: `Revenue`
 * [!UICONTROL Filter]：
 
 * 量度`B`： `All time customers (hide)`
@@ -122,7 +122,7 @@ ht-degree: 0%
 
 * [!UICONTROL Formula]： `Expected revenue`
 * [!UICONTROL Formula]： `A / (B - C)`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Currency`
 
 其他图表详细信息
@@ -139,7 +139,7 @@ ht-degree: 0%
 按同类群组&#x200B;**每月平均收入**
 
 * 量度`A`： `Revenue`
-* &#x200B;
+* 
   [!UICONTROL Metric view]: `Cohort`
 * [!UICONTROL Cohort date]： `Customer's first order date`
 * [!UICONTROL Perspective]： `Average value per cohort member`
@@ -147,11 +147,11 @@ ht-degree: 0%
 **按同类群组列出的每月累计平均收入**
 
 * 量度`A`： `Revenue`
-* &#x200B;
+* 
   [!UICONTROL Metric view]: `Cohort`
 * [!UICONTROL Cohort date]： `Customer's first order date`
 * [!UICONTROL Perspective]： `Cumulative average value per cohort member`
 
 在编译所有报告后，您可以根据需要将报告组织在功能板上。 结果可能与页面顶部的图像类似。
 
-如果您在构建此分析时遇到任何问题，或只是想与专业服务团队接洽，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+如果您在构建此分析时遇到任何问题，或只是想与专业服务团队接洽，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。

@@ -4,9 +4,9 @@ description: 了解如何使用SQL Report Builder审核数据和量度，以便�
 exl-id: d1d9e099-4138-43e6-aaec-6f15ebc5c4d4
 role: Admin, Data Architect, Data Engineer, User
 feature: Reports, Data Warehouse Manager, SQL Report Builder
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,13 @@ ht-degree: 0%
 
 要更清楚地查看查询，您可以重新格式化查询字段中的显示方式。 准备就绪后，选择`Run Query`。 结果将作为表格填充到查询下方的报表面板中。
 
-![](../../assets/run-query-results.gif)
+![运行SQL查询和查看结果的动画演示](../../assets/run-query-results.gif)
 
 ## 限制查询
 
 如果尝试查明特定差异或数据集，则应将查询限制为特定示例以对照本地数据库进行检查。 为此，您可以编辑查询以符合所需的限制。 在以下示例中，您将查询限制为仅包含从2013年1月1日或之后开始的收入。 更新查询后，再次选择&#x200B;**[!UICONTROL Run Query]**&#x200B;以更新结果。
 
-![](../../assets/restricting-query.gif)
+![使用筛选器限制查询的动画演示](../../assets/restricting-query.gif)
 
 ## 保存和导出
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 保存报告后，选择`Go to Dashboard`以导航到该仪表板。 从该位置，您可以通过查找报告并选择&#x200B;**[!UICONTROL Options gear > Full `.csv`导出]**&#x200B;或&#x200B;**[!UICONTROL Full Excel Export]**&#x200B;来导出数据。
 
-![](../../assets/export-dboard-data.gif)
+![导出仪表板数据的动画演示](../../assets/export-dboard-data.gif)
 
 ## 自定义查询
 
@@ -48,4 +48,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果审计数据后发现不一致，请查看[联系支持人员：数据差异](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=zh-Hans)支持主题，以了解有关后续操作的更多信息。
+>如果审计数据后发现不一致，请查看[联系支持人员：数据差异](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html)支持主题，以了解有关后续操作的更多信息。

@@ -4,9 +4,9 @@ description: 了解如何创建列以扩充和优化数据以供分析。
 exl-id: 1af79b9e-77ff-4fc6-917a-4e6743b95035
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 以下示例在`Seconds since customer's most recent order`表中创建`customers`。 这可用于构建未在`X days`中进行购买（有时称为流失）的客户的用户列表。
 
-![](../../assets/age.gif)
+![创建年龄计算列的动画演示](../../assets/age.gif)
 
 ### 货币转换器
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 对于Commerce客户端，`base\_currency\_code`字段通常存储本机货币。 `Spot Time`字段应与量度中使用的日期匹配。
 
-![](../../assets/currency_converter.png)
+![货币转换器计算列配置](../../assets/currency_converter.png)
 
 ## 一对多计算列 {#onetomany}
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 在以下示例中，`Customer's group\_id`维度向下联接到`orders`表中。
 
-![](../../assets/joined_column.gif)
+![创建联接列链接表的动画演示](../../assets/joined_column.gif)
 
 ## 多对一计算列 {#manytoone}
 
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 在以下示例中，在`Customer's lifetime number of canceled orders`表上创建维度`customers`（具有`orders.status`的筛选器）。
 
-![](../../assets/many_to_one.gif){: width="699" height="351"}
+![多对一列聚合的动画演示](../../assets/many_to_one.gif){: width="699" height="351"}
 
 ### 总和 {#sum}
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 如果在创建计算列时记住所有输入内容时遇到问题，请在构建时方便使用此参考映射：
 
-![](../../assets/merged_reference_map.png)
+![引用映射显示合并的计算列配置](../../assets/merged_reference_map.png)
 
 ## 高级计算列 {#advanced}
 

@@ -4,9 +4,9 @@ description: 了解如何跟踪访客如何使用您的网站、哪些内容吸�
 exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >需要[管理员权限](../../../administrator/user-management/user-management.md)。
 
-![](../../../assets/google-analytics-logo.png)
+![Google Analytics徽标](../../../assets/google-analytics-logo.png)
 
 [!DNL Google Analytics]是Internet上使用最广泛的Web分析服务。 通过在您的网站上实施[!DNL Google Analytics]，您可以跟踪访客如何使用您的网站、哪些内容吸引人、访客的退出位置等。 [!DNL Google Analytics Warehoused]是独立于您现有[!DNL Google Analytics]集成的集成。 由于您的Data Warehouse中具有[!DNL Google Analytics]数据，这与现有[!DNL Google Analytics]集成的实时信息源不同，因此它允许更好地进行分析。 在[!DNL Commerce Intelligence]中连同其他数据一起分析这些量度，可提高网站的整体运行状况和可用性。
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused]是`Premium`集成。 如果您有兴趣将此集成添加到订阅，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+>[!DNL Google Analytics Warehoused]是`Premium`集成。 如果您有兴趣将此集成添加到订阅，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 1. 转到`Connections`下的&#x200B;**[!UICONTROL Admin** > **Integrations]**&#x200B;页面。
 1. 单击右侧的&#x200B;**[!UICONTROL Add an Integration]**。
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 ## 相关文档
 
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [正在连接 [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [分析网站活动和客户转化率](../../analysis/web-act-cust-conversion.md)
 * [使用 [!DNL Google Analytics] Cookie跟踪用户获取数据](../../analysis/google-track-user-acq.md)

@@ -4,9 +4,9 @@ description: 了解连接RDS实例的步骤。
 exl-id: 02ad29c8-84d6-4b49-9ac1-e5f4feaa7fda
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 在每个数据库的凭据页面(**[!UICONTROL Manage Data** > **Integrations]**)上，您会看到一个包含必须授权才能将R[!DNL RDS]连接到[!DNL Commerce Intelligence]的IP地址的框： `54.88.76.97`和`34.250.211.151`。 以下是`MySQL credentials`页面上的内容，在该页面上，您突出显示了IP地址框：
 
-![](../../../assets/RDS_IP.png)
+![Amazon RDS安全组设置显示IP地址配置](../../../assets/RDS_IP.png)
 
 要使[!DNL Commerce Intelligence]成功连接到[!DNL RDS]实例，必须通过AWS管理控制台将这些IP地址添加到相应的数据库安全组。 可以将这些IP地址添加到现有组，也可以创建一个IP地址 — 重要的是，该组有权访问您要连接到[!DNL Commerce Intelligence]的实例。
 
@@ -55,6 +55,6 @@ ht-degree: 0%
 
 如果您使用的是加密连接，请将数据库凭据页面上的`Encrypted`切换更改为`Yes`。 这将显示一个用于设置加密的额外表单：
 
-![](../../../assets/sql-integration-encrypted-yes.png)
+启用加密的![SQL集成表单显示“是”选项](../../../assets/sql-integration-encrypted-yes.png)
 
 

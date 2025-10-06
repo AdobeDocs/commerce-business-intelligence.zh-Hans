@@ -4,18 +4,18 @@ description: 了解如何优化SQL查询。
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: acc152709c7c66f387f4eded9e6c1c646a83af35
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
 
 # 优化SQL查询
 
-[!DNL SQL Report Builder]允许您在任何给定时间查询和迭代这些查询。 当需要修改查询而不必等待更新周期完成才实现您创建的列或报告需要更新时，这将很有用。
+[!DNL SQL Report Builder]允许您随时运行和更改查询。 如果您需要立即更新查询，而不是等到更新周期完成后再修复列或报告，则此功能非常有用。
 
-在执行查询之前，[[!DNL Commerce Intelligence] 估计其成本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=zh-Hans)。 成本考虑执行查询所需的时间和资源数。 如果该成本过高，或者返回的行数超过[!DNL Commerce Intelligence]限制，则查询失败。 为了查询您的[Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md)（确保您编写的查询尽可能简化），Adobe建议执行以下操作。
+在执行查询之前，[[!DNL Commerce Intelligence] 估计其成本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html)。 成本考虑执行查询所需的时间和资源数。 如果该成本过高，或者返回的行数超过[!DNL Commerce Intelligence]限制，则查询失败。 为了查询您的[Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md)（确保您编写的查询尽可能简化），Adobe建议执行以下操作。
 
 ## 使用SELECT或选择所有列
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 | **代替此……** | **尝试此操作！** |
 |-----|-----|
-| ![](../../mbi/assets/Select_all_1.png) | ![](../../mbi/assets/Select_all_2.png) |
+| 使用SELECT星号![的](../../mbi/assets/Select_all_1.png)SQL查询 | ![选择特定列的SQL查询](../../mbi/assets/Select_all_2.png) |
 
 {style="table-layout:auto"}
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 | **代替此……** | **尝试此操作！** |
 |-----|-----|
-| ![](../../mbi/assets/Full_Outer_Join_1.png) | ![](../../mbi/assets/Full_Outer_Join_2.png) |
+| 具有完全外部联接的![SQL查询](../../mbi/assets/Full_Outer_Join_1.png) | 具有优化联接的![SQL查询](../../mbi/assets/Full_Outer_Join_2.png) |
 
 {style="table-layout:auto"}
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ## 使用过滤器
 
-尽量使用过滤器。 `WHERE`和`HAVING`子句将筛选您的结果，并仅提供您真正需要的数据。
+尽量使用过滤器。 子句`WHERE`和`HAVING`过滤您的结果，只提供您真正需要的数据。
 
 ## 在JOIN子句中使用筛选器
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 | **代替此……** | **尝试此操作！** |
 |-----|-----|
-| ![](../../mbi/assets/Join_filters_1.png) | ![](../../mbi/assets/Join_filters_2.png) |
+| 带有WHERE子句筛选器的![SQL查询](../../mbi/assets/Join_filters_1.png) | 带有ON子句筛选器的![SQL查询](../../mbi/assets/Join_filters_2.png) |
 
 {style="table-layout:auto"}
 
@@ -73,19 +73,19 @@ ht-degree: 0%
 
 使用`EXISTS`与`IN`取决于您尝试返回的结果类型。 如果您只对单个值感兴趣，请使用`EXISTS`子句而不是`IN`。 `IN`与逗号分隔值的列表一起使用，这会增加查询的计算成本。
 
-运行`IN`查询时，系统必须首先处理子查询（`IN`语句），然后根据`IN`语句中指定的关系处理整个查询。 `EXISTS`效率更高，因为不必多次运行查询 — 检查查询中指定的关系时返回true/false值。
+运行`IN`查询时，系统必须首先处理子查询（`IN`语句），然后根据`IN`语句中指定的关系处理整个查询。 `EXISTS`查询效率更高，因为不必多次运行查询 — 检查查询中指定的关系时返回true/false值。
 
 简单地说：使用`EXISTS`时，系统不必处理这么多的工作。
 
 | **代替此……** | **尝试此操作！** |
 |-----|-----|
-| ![](../../mbi/assets/Exists_1.png) | ![](../../mbi/assets/Exists_2.png) |
+| ![使用LEFT JOIN的SQL查询，检查NULL](../../mbi/assets/Exists_1.png) | 使用EXISTS子句的![SQL查询](../../mbi/assets/Exists_2.png) |
 
 {style="table-layout:auto"}
 
 ## 使用ORDER BY
 
-`ORDER BY`在SQL中是一个昂贵的函数，它可能会显着增加查询的成本。 如果收到错误消息，指出查询的EXPLAIN成本过高，请尝试从查询中消除任何`ORDER BY`（除非有必要）。
+`ORDER BY`函数在SQL中成本很高，并且会显着增加查询成本。 如果收到错误消息，指出查询的EXPLAIN成本过高，请尝试从查询中消除任何`ORDER BY`（除非有必要）。
 
 这并不是说不能使用`ORDER BY`，只是说只能在必要时使用。
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 | **代替此……** | **尝试此操作！** |
 |-----|-----|
-| ![](../../mbi/assets/Group_by_2.png) | ![](../../mbi/assets/Group_by_1.png) |
+| ![SQL查询，在筛选前GROUP BY ](../../mbi/assets/Group_by_2.png) | 在GROUP BY![之前使用筛选器的](../../mbi/assets/Group_by_1.png)SQL查询 |
 
 {style="table-layout:auto"}
 

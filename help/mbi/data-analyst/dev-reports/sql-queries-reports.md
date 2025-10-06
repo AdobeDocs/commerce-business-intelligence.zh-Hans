@@ -4,9 +4,9 @@ description: 了解如何将SQL查询转换为计算列(您在Commerce Intellige
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 保存路径后，即可创建`Customer LTV`列！ 请参阅下文：
 
-![](../../assets/Customer_LTV.gif)
+![使用SQL进行客户生命周期值分析的动画演示](../../assets/Customer_LTV.gif)
 
 现在，您已在`Customer LTV`表中构建了新的`customers`列，接下来可以使用此列创建一个[指标聚合](#aggregate)（例如，查找每个客户的平均LTV）。 您还可以使用基于`group by`表构建的现有量度，按报表中的计算列`filter`或`customers`。
 

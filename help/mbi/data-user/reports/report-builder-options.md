@@ -4,9 +4,9 @@ description: 了解如何选择Report Builder。
 exl-id: ec4204ef-975e-45c3-b09e-fb97ffc2c497
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 # 选择一个Report Builder
 
 >[!NOTE]
->&#x200B;>需要[管理员权限](../../administrator/user-management/user-management.md)。
+>>需要[管理员权限](../../administrator/user-management/user-management.md)。
 
 现在，您有了更多创建分析的选项，有时可能很难确切知道哪种Report Builder风格适合您的需求。 本主题将指导您选择构建分析的最佳方法。
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 假设单个产品被视为属于多个产品类别，并且您希望查看与每个产品的每个类别关联的收入。 尝试使用DWM创建此关系可能既繁琐又困难，但编写[!DNL SQL]查询可能更简单一些：
 
-![](../../assets/When_should_I_use_the_RB_2.png)
+![SQL查询显示具有一对多关系的产品类别收入](../../assets/When_should_I_use_the_RB_2.png)
 
 ## 何时应使用传统Report Builder？ {#whentraditionalrb}
 

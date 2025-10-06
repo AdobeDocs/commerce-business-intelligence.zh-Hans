@@ -4,9 +4,9 @@ description: 了解联系谁来激活您的 [!DNL Commerce Intelligence] 帐户�
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: cdd2373c2b9afd85427d437c6d8450f4d4e03350
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
@@ -23,21 +23,21 @@ ht-degree: 0%
 
 创建帐户后，请查看您的电子邮件中是否有来自[!DNL The Magento BI Team@rjmetrics.com]的帐户通知电子邮件。 使用电子邮件中提供的链接访问您的[!DNL Commerce Intelligence]帐户并创建密码。 转到您的收件箱并验证您的电子邮件地址。
 
-如果未收到电子邮件，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+如果未收到电子邮件，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en)。
 
-![](../assets/create-account-4.png)
+![为新的Commerce Intelligence帐户创建密码屏幕](../assets/create-account-4.png)
 
 ## 设置您的商店首选项
 
 在配置数据库连接之前，请填写存储信息表单。 需要此信息才能完成&#x200B;**[!UICONTROL Connect your Database]**&#x200B;安装。
 
-![](../assets/create-account-6.png)
+![存储具有业务名称、货币和时区字段的信息表单](../assets/create-account-6.png)
 
 ## 添加[!DNL Commerce Intelligence]用户
 
 在设置密码并登录[!DNL Commerce Intelligence]后，您可以将其他用户添加到您的[!DNL Commerce Intelligence]帐户。 添加用户时，添加具有适当权限的管理用户以完成激活过程。
 
-![](../assets/create-account-5.png)
+![添加具有电子邮件地址和权限级别字段的用户表单](../assets/create-account-5.png)
 
 ## 在[!DNL Commerce Intelligence]管理员中创建专用[!DNL Commerce]用户
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 在管理员中为[!DNL Commerce Intelligence]创建专用用户后，将同一用户添加到[!DNL Commerce]项目的主环境，其中的&#x200B;**[!UICONTROL Master]**&#x200B;设置为`Contributor`。
 
-![](../assets/commerce-add-user-settings.png)
+![Commerce添加角色设置为“参与者”的用户界面](../assets/commerce-add-user-settings.png)
 
 ## 获取Commerce Intelligence SSH密钥
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 1. 从下拉菜单中，复制提供的公共密钥。
 
-   ![](../assets/encryption-setting-new-account.png)
+   ![显示SSH通道类型和公钥字段的加密设置页面](../assets/encryption-setting-new-account.png)
 
 ## 将您的公钥添加到[!DNL Commerce Intelligence]
 
@@ -72,21 +72,21 @@ ht-degree: 0%
 
 1. 向下滚动并展开&#x200B;**[!UICONTROL SSH Keys]**&#x200B;下拉列表。 然后选择&#x200B;**[!UICONTROL Add a public key]**。
 
-   ![](../assets/add-public-key.png)
+   ![包含SSH密钥的帐户设置页面部分和添加公钥按钮](../assets/add-public-key.png)
 
 1. 粘贴您在上面的[!DNL Encryption Type]步骤中复制的公钥。
 
-   ![](../assets/paste-public-key.png)
+   ![添加带有密钥文本字段和提交按钮的公共密钥表单](../assets/paste-public-key.png)
 
 ## 提供[!DNL Commerce Intelligence] Essentials `MySQL`凭据
 
 1. 更新您的`.magento/services.yaml`。
 
-   ![](../assets/update-magento-services-yaml.png)
+   ![在services.yaml文件中显示MySQL服务配置的代码](../assets/update-magento-services-yaml.png)
 
 1. 更新您的`.magento.app.yaml`。
 
-   ![](../assets/magento-app-yaml-relationships.png)
+   ![显示app.yaml文件中的数据库关系配置的代码](../assets/magento-app-yaml-relationships.png)
 
 ## 获取数据库连接信息
 
@@ -98,7 +98,7 @@ ht-degree: 0%
 
 1. 查看数据库信息，这些信息应该与以下示例类似。
 
-   ![](../assets/example-database-information.png)
+   ![JSON输出显示数据库连接凭据，包括主机、端口和用户名](../assets/example-database-information.png)
 
 ## 使用加密连接将[!DNL Commerce Intelligence]连接到[!DNL Commerce]数据库
 
@@ -108,7 +108,7 @@ ht-degree: 0%
 
 在[!DNL Commerce Intelligence]屏幕中输入您的[!UICONTROL Connect your Magento Database]信息。
 
-![](../assets/connect-magento-db.png)
+![将您的数据库表单与集成名称、主机、端口、用户名、密码和数据库名称的字段连接起来](../assets/connect-magento-db.png)
 
 **输入：**
 
@@ -118,7 +118,7 @@ ht-degree: 0%
 
 [!UICONTROL Port]: `3306`
 
-[!UICONTROL 用户名]: `mbi`
+[！UICONTROL用户名]: `mbi`
 
 [!UICONTROL Password]：在上一部分中显示了[输入密码]
 
@@ -128,7 +128,7 @@ ht-degree: 0%
 
 ## 设置您的&#x200B;[!UICONTROL **时区**]&#x200B;设置
 
-![](../assets/time-zone-settings.png)
+![带有数据库时区和所需时区下拉字段的时区设置表单](../assets/time-zone-settings.png)
 
 **输入：**
 
@@ -140,11 +140,11 @@ ht-degree: 0%
 
 项目UI提供SSH访问字符串。 此字符串可用于收集&#x200B;[!UICONTROL **远程地址**]&#x200B;和&#x200B;[!UICONTROL **用户名**]&#x200B;所需的信息。 通过在项目UI的主分支上选择访问站点按钮，使用SSH访问字符串。 然后，查找您的[!UICONTROL User Name]和[!UICONTROL Remote Address]，如下所示。
 
-![](../assets/master-branch-settings.png)
+![项目UI显示包含用户名和远程地址的SSH访问信息](../assets/master-branch-settings.png)
 
 ## 输入您的[!DNL Encryption]设置
 
-![](../assets/encryption-settings-2.png)
+![带有加密类型、远程地址、用户名和端口字段的加密设置表单](../assets/encryption-settings-2.png)
 
 **输入：**
 
@@ -168,9 +168,9 @@ ht-degree: 0%
 
 完成配置后，请[登录](../getting-started/sign-in.md)您的[!DNL Commerce Intelligence]帐户。
 
-<!---# Activate your [!DNL Commerce Intelligence] Account 
+<!---# Activate your [!DNL Commerce Intelligence] Account
 
-To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans).
+To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 >[!NOTE]
 >

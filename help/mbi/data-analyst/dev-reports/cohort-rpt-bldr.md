@@ -4,9 +4,9 @@ description: 了解对在生命周期内具有相似特征的用户组的分析�
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1607'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 **将指标视图切换为`Cohort`**
 
-![](../../assets/visual-report-builder-cohort-toggle.png)
+![可视化Report Builder显示同类群组分析切换选项](../../assets/visual-report-builder-cohort-toggle.png)
 
 这将打开一个新窗口来配置`Cohort`报告的详细信息。
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 此值的间隔随您在`cohort time period`中选择的任何内容而更改，该值默认设置为`12`；除非单击日历图标对其进行编辑，否则该值不会更改。
 
-![](../../assets/cohort-time-range.png)
+![显示日期选项的同类群组时间范围选择器](../../assets/cohort-time-range.png)
 
 #### 其他注释
 
@@ -105,7 +105,7 @@ ht-degree: 0%
 
 #### 如何创建我自己的`cohort`分析？ {#create}
 
-![](../../assets/create-cohort-analysis.png)
+![使用配置选项创建同类群组分析对话框](../../assets/create-cohort-analysis.png)
 
 `Cohort`分析正在进行中！ 在这里，您可以看到收入在一段时间内以累计和每个用户为单位增长。
 
@@ -155,7 +155,7 @@ ht-degree: 0%
 
 如果您选择按从另一个表中加入的`cohort date`对用户进行分组，则可能会看到`counting members in the … table`选项。
 
-![](../../assets/Cohort_Counting_Members_option.png)
+![显示独立模式和累积模式的同类群组计数成员选项](../../assets/Cohort_Counting_Members_option.png)
 
 请查看示例以了解此设置。 假设您按`Revenue`构建了`Customer's registration date`量度同类群组报表。 您还需要使用透视`Average value per cohort member`来查看一段时间中每位购买者的收入。 要确定每个购买者的平均价值，您需要确定要除以的购买者数量。 是您`customers`表中的已注册客户数，还是您`orders table`中相同期间的不同购买者的数量？
 
@@ -169,7 +169,7 @@ ht-degree: 0%
 
 查看[透视](#perspectives)。
 
-![](../../assets/Cohort_Perspective_Menu.png)
+![显示不同视图选项的“同类群组透视”菜单](../../assets/Cohort_Perspective_Menu.png)
 
 ## 同类群组分析示例 {#examples}
 

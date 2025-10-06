@@ -4,9 +4,9 @@ description: 了解如何设置一个功能板来跟踪您的免运费阈值的�
 exl-id: a90ad89b-96d3-41f4-bfc4-f8c223957113
 role: Admin,  User
 feature: Data Warehouse Manager, Dashboards, Reports
-source-git-commit: 6bdbdbcc652d476fa2a22589ac99678d5855e6fe
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 在开始使用之前，您需要确定两个单独的时间段，在这些时间段中，您的商店的免运费阈值具有不同的值。
 
-![](../../assets/free_shipping_threshold.png)
+![显示免运费阈值分析和订单值分布的图表](../../assets/free_shipping_threshold.png)
 
 此分析包含[高级计算列](../data-warehouse-mgr/adv-calc-columns.md)。
 
@@ -66,9 +66,9 @@ ht-degree: 0%
 
 * 量度`A`： `Average Order Value`
 * [!UICONTROL Time period]： `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Scalar`
 
 * **装运规则为A**&#x200B;的按小计分段列出的订单数
@@ -80,53 +80,53 @@ ht-degree: 0%
 
 * 量度`A`： `Number of orders`
 * [!UICONTROL Time period]： `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]： `Order subtotal (buckets)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Column`
 
 * 装运规则为A **的订单小计的**&#x200B;百分比
    * [!UICONTROL Metric]： `Number of orders`
 
    * [!UICONTROL Metric]： `Number of orders`
-   * &#x200B;
-     [!UICONTROL 分组依据]: `Independent`
+   * 
+     [！UICONTROL分组依据]: `Independent`
    * [!UICONTROL Formula]： `(A / B)`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: `%`
 
 * 量度`A`： `Number of orders by subtotal (hide)`
 * 量度`B`： `Total number of orders (hide)`
 * [!UICONTROL Formula]： `% of orders`
 * [!UICONTROL Time period]： `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]： `Order subtotal (buckets)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 * 小计超过装运规则A **的订单的**&#x200B;百分比
    * [!UICONTROL Metric]： `Number of orders`
-   * &#x200B;
+   * 
      [!UICONTROL Perspective]: `Cumulative`
 
    * [!UICONTROL Metric]： `Number of orders`
-   * &#x200B;
-     [!UICONTROL 分组依据]: `Independent`
+   * 
+     [！UICONTROL分组依据]: `Independent`
 
    * [!UICONTROL Formula]： `1- (A / B)`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: `%`
 
 * 量度`A`： `Number of orders by subtotal`
 * 量度`B`： `Total number of orders (hide)`
 * [!UICONTROL Formula]： `% of orders`
 * [!UICONTROL Time period]： `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]： `Order subtotal (buckets)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 

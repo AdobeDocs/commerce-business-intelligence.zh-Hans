@@ -4,9 +4,9 @@ description: 了解评估营销活动性能的几种不同方法。
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Campaigns
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 0%
 1. 选择`Add New Metric`并选择正在记录[!DNL `Adwords...`]成本数据的[!DNL AdWords]表。
 1. 在指标编辑器中，为您的指标提供一个名称（例如，[!UICONTROL AdWord Cost]）
 1. 使用这些下拉列表，对按&#x200B;**列排序的**&#x200B;表（更改）中的`adCost`列执行[!DNL Adwords...]Sum`date`。
-   ![](../../assets/success-add-new-metric.png)<!--="500" height="303"}-->
+   添加新量度后显示![成功消息](../../assets/success-add-new-metric.png)<!--="500" height="303"}-->
 1. 单击顶部的`Back to Metric List`并转到任意仪表板。
 
 1. 创建按营销活动划分区段的报表
@@ -99,7 +99,7 @@ ht-degree: 0%
 >
 >此示例假设所有促销活动成本都专门用于生成特定产品的购买。 假设所有成本都花费在生成购买上，则生成的ROI将考虑最坏的情况（每次购买的最高成本）。 您可以确保实际ROI高于此计算。 示例：假设您在一个产生10个新用户和10次购买的营销活动上花费$20，则每次购买的实际成本为$1。 假设所有成本都花在了获取新用户上，则每次购买的成本为2美元。
 
-开始之前，[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)以将以下维度联接到行项目表(`sales\_flat\_order\_item, order\_item`)：
+开始之前，[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)以将以下维度联接到行项目表(`sales\_flat\_order\_item, order\_item`)：
 
 * 订单的来源（如果您仅在用户级别跟踪反向链接来源，则加入用户的来源）
 * 订单的促销活动（如果您仅在用户级别跟踪反向链接来源，则加入用户的促销活动）
@@ -122,8 +122,8 @@ ht-degree: 0%
 1. 设定好这些量度后，添加公式：
 1. [!UICONTROL ROI]：输入公式`\[A\]/\[B\]`，如果`\[A\]`表示`Revenue per campaign for specific product(s)`，`\[B\]`表示`Ad cost by campaigns`。 这会返回（特定产品的收入）/（促销活动成本）的比率
 1. [!UICONTROL Return]：输入公式`\[A\]-\[B\]`。 通过计算（平均用户LTV） — （每次购买的平均成本），返回用户的平均利润
-1. （可选） [!UICONTROL Revenue]：取消隐藏`Revenue by items`量度以查看每个营销活动的特定产品的收入
-1. （可选） [!UICONTROL Cost]：取消隐藏`AdWords Cost`量度以查看营销活动的成本
+   1. （可选） [!UICONTROL Revenue]：取消隐藏`Revenue by items`量度以查看每个营销活动的特定产品的收入
+   1. （可选） [!UICONTROL Cost]：取消隐藏`AdWords Cost`量度以查看营销活动的成本
 
 1. 为报表命名，并确保将其另存为表
 

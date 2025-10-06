@@ -4,9 +4,9 @@ description: 了解如何设置仪表板来帮助您定义事务型客户的流�
 exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports, Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 本主题演示如何设置功能板，帮助您定义事务型客户的流失。
 
-![](../../assets/churn-deashboard.png)
+![显示流失率和保留量度的客户流失仪表板](../../assets/churn-deashboard.png)
 
 此分析包含[高级计算列](../data-warehouse-mgr/adv-calc-columns.md)。
 
@@ -69,27 +69,27 @@ ht-degree: 0%
 * [!UICONTROL Metric]：订单数
 
 * [!UICONTROL Formula]：初始重复顺序概率
-* &#x200B;
-  [!UICONTROL 公式]: `A/B`
-* &#x200B;
+* 
+  [！UICONTROL公式]: `A/B`
+* 
   [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]： `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Scalar`
 
 * **重复订单的概率自订单**&#x200B;以来已给定的月份
 * 量度A：按上个订单后间隔的月份重复订单（隐藏）
 * [!UICONTROL Metric]： `Number of orders`
-* &#x200B;
+* 
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]： `Customer's order number greater than 1`
 
 * 量度B：按订购后月份列出的最后订单（隐藏）
 * [!UICONTROL Metric]： `Number of orders`
-* &#x200B;
+* 
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]： `Is customer's last order? (Yes/No) = Yes`
 
@@ -97,29 +97,29 @@ ht-degree: 0%
 * [!UICONTROL Metric]： `Number of orders`
 * [!UICONTROL Filter]： `Customer's order number greater than 1`
 
-* &#x200B;
-  [!UICONTROL 分组依据]: `Independent`
+* 
+  [！UICONTROL分组依据]: `Independent`
 
 * 量度D：所有时间最后订单（隐藏）
 * [!UICONTROL Metric]： `Number of orders`
 * [!UICONTROL Filter]： `Is customer's last order? (Yes/No) = Yes`
 
-* &#x200B;
-  [!UICONTROL 分组依据]: `Independent`
+* 
+  [！UICONTROL分组依据]: `Independent`
 
 * [!UICONTROL Formula]：初始重复顺序概率
-* &#x200B;
-  [!UICONTROL 公式]: `(C-A)/(C+D-A-B)`
-* &#x200B;
+* 
+  [！UICONTROL公式]: `(C-A)/(C+D-A-B)`
+* 
   [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]： `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]： `Months since previous order`
 * 显示top.bottom：前24个类别，按类别名称排序
 
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Line`
 
 初始重复订单概率报表表示“重复订单总数/订单总数”。 每个顺序都是产生重复顺序的机会；重复顺序的数量是那些实际发生的顺序的子集。
@@ -132,4 +132,4 @@ ht-degree: 0%
 
 在编译所有报告后，您可以根据需要将报告组织在功能板上。 结果可能与页面顶部的图像类似
 
-如果您在构建此分析时遇到任何问题，或只是想与专业服务团队接洽，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+如果您在构建此分析时遇到任何问题，或只是想与专业服务团队接洽，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。

@@ -4,9 +4,9 @@ description: 了解如何分析用户如何导航和使用您的网站和应用�
 exl-id: e6a9f08f-1063-4d92-93e6-971280239fdb
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >需要[管理员权限](../../../administrator/user-management/user-management.md)。
 
-![](../../../assets/Mixpanel_logo.png)
+![Mixpanel徽标](../../../assets/Mixpanel_logo.png)
 
 通过[!DNL Mixpanel]，您可以分析用户如何导航和使用您的网站和应用。 仔细研究用户行为数据有助于做出更明智的设计和开发决策，这意味着总体产品会更好。 通过将[!DNL Mixpanel]连接到[!DNL Commerce Intelligence]，您可以分析用户的行为以及该行为如何转化为收入。
 
@@ -65,4 +65,4 @@ ht-degree: 0%
 ### 相关
 
 * [需要 [!DNL Mixpanel] 数据](../integrations/mixpanel-data.md)
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

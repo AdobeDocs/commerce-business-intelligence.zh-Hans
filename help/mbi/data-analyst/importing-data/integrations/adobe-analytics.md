@@ -4,9 +4,9 @@ description: 了解如何将 [!DNL Adobe Analytics] 的端到端客户历程重�
 exl-id: 824e1ee4-6b88-42f7-b265-29330dbc4407
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >需要[管理员权限](../../../administrator/user-management/user-management.md)。
 
-![](../../../assets/adobe-analytic-slogo.png)
+![Adobe Analytics徽标](../../../assets/adobe-analytic-slogo.png)
 
 [!DNL Adobe Analytics]的[!DNL Adobe Commerce Intelligence]集成使您能够将[!DNL Adobe Analytics]的端到端客户历程重点与您从[!DNL Commerce Intelligence]依赖的电子商务重点结合起来。 这可让您全面了解商店的整体性能。
 
@@ -57,6 +57,6 @@ ht-degree: 0%
 
 1. 选定的报表包会显示在表格中。 单击&#x200B;**[!UICONTROL Save]**&#x200B;确认您的选择。
 
-1. 通知[!DNL Commerce Intelligence] [支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)您的集成已获得授权，他们将为您运行初始连接进程。
+1. 通知[!DNL Commerce Intelligence] [支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)您的集成已获得授权，他们将为您运行初始连接进程。
 
 运行初始连接进程后，您的表将在Data Warehouse页面的`All Tables`选项卡下可用。 选择要复制的列，数据将在下次完全更新后显示。

@@ -4,9 +4,9 @@ description: 了解如何在 [!DNL Commerce Intelligence]中合并技术支持�
 exl-id: 1c7f7c5c-4b1c-4bcf-8f1d-2b4cf9cdb0fb
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >需要[管理员权限](../../../administrator/user-management/user-management.md)。
 
-![](../../../assets/Zendesk_logo.png)
+![Zendesk徽标](../../../assets/Zendesk_logo.png)
 
 连接您的[!DNL Zendesk]数据允许您在[!DNL Commerce Intelligence]中合并技术支持报告。 这样，您就可以优化客户支持，并监控服务台绩效以及您的收入。
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ## 在[!DNL Zendesk]中打开[!DNL Commerce Intelligence]凭据页面 {#stepone}
 
-1. 转到`Integrations`数据源&#x200B;**[!UICONTROL Manage Data** > **&#x200B; > &#x200B;** 集成&#x200B;**下的]**&#x200B;页面。
+1. 转到`Integrations`数据源&#x200B;**[!UICONTROL Manage Data** > ** > **集成&#x200B;**下的]**&#x200B;页面。
 1. 单击屏幕右侧的&#x200B;**[!UICONTROL Add Integration]**。
 1. 单击[!DNL Zendesk]图标。 这将打开[!DNL Zendesk]凭据页面。
 
@@ -54,4 +54,4 @@ ht-degree: 0%
 ## 相关：
 
 * [需要 [!DNL Zendesk] 数据](../integrations/exp-zendesk-data.md)
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

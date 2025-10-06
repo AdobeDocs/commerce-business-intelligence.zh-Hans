@@ -4,9 +4,9 @@ description: 了解如何使用并共享您的仪表板。
 exl-id: 73df627f-bc08-45c0-aa5e-410c4fd0642d
 role: Admin, User
 feature: Dashboards
-source-git-commit: d40a04cedb3aee3385a8c34e0919f954431e0897
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 要查看谁拥有仪表板，请单击左上角的仪表板下拉菜单。 任何下面没有名称的功能板都属于您。
 
-![](../../mbi/assets/Dash_ownership.png)
+![仪表板所有权指示器显示创建者和权限](../../mbi/assets/Dash_ownership.png)
 
 要删除所有重复的仪表板，请执行以下操作：
 

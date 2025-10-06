@@ -4,9 +4,9 @@ description: 了解如何使用客户获取源复制Google Analytics渠道。
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '692'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 0%
 
    将其作为[文件上传](../importing-data/connecting-data/using-file-uploader.md)引入您的Data Warehouse。
 
-   ![](../../assets/Setting_Primary_Keys.png)
+   ![Data Warehouse Manager界面显示主键设置](../../assets/Setting_Primary_Keys.png)
 
 1. **在[!DNL Google ECommerce]和映射文件上载**&#x200B;之间建立关系
 
