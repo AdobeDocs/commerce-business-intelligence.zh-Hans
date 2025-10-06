@@ -14,7 +14,7 @@ ht-degree: 0%
 # 选择一个Report Builder
 
 >[!NOTE]
->>需要[管理员权限](../../administrator/user-management/user-management.md)。
+>&#x200B;>需要[管理员权限](../../administrator/user-management/user-management.md)。
 
 现在，您有了更多创建分析的选项，有时可能很难确切知道哪种Report Builder风格适合您的需求。 本主题将指导您选择构建分析的最佳方法。
 

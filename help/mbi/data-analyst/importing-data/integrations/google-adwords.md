@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![Google AdWords徽标](../../../assets/Google_Adwords_logo.png)
 
-您完成了调查，创建了广告，启动了[!DNL Google]营销活动。 现在该分析您的广告支出数据了，看看您的资金是否得到了有效花销。 使用广告支出数据，您可通过将广告成本和从营销活动中获得的用户的客户存留期价值(CLV)[相匹配来](../../analysis/roi-ad-camp.md)衡量营销活动ROI。
+您完成了调查，创建了广告，启动了[!DNL Google]营销活动。 现在该分析您的广告支出数据了，看看您的资金是否得到了有效花销。 使用广告支出数据，您可通过将广告成本和从营销活动中获得的用户的客户存留期价值(CLV) [相匹配来](../../analysis/roi-ad-camp.md)衡量营销活动ROI。
 
 在[!DNL Google Adwords]中输入您的[!DNL Commerce Intelligence]凭据以开始操作。
 
@@ -60,4 +60,4 @@ ht-degree: 0%
 * [跟踪数据库中的用户反向链接源](../../analysis/google-track-user-acq.md)
 * [了解您最有价值的客户获取来源和渠道](../../analysis/most-value-source-channel.md)
 * [提高广告促销活动的ROI](../../analysis/roi-ad-camp.md)
-* [ [!DNL Google Analytics] UTM归因如何工作？](../../analysis/utm-attributes.md)
+* [&#x200B; [!DNL Google Analytics] UTM归因如何工作？](../../analysis/utm-attributes.md)

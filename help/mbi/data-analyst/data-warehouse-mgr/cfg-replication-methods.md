@@ -135,6 +135,6 @@ ht-degree: 0%
 ## 相关文档
 
 * [了解数据重新检查](../data-warehouse-mgr/cfg-data-rechecks.md)
-* [修改数据库以支持 ](../../best-practices/mod-db-inc-replication.md)
+* [修改数据库以支持 &#x200B;](../../best-practices/mod-db-inc-replication.md)
 * [优化数据库以进行分析](../../best-practices/opt-db-analysis.md)
 * [减少更新时间](../../best-practices/reduce-update-cycle-time.md)

@@ -27,19 +27,19 @@ ht-degree: 0%
 
 * [!UICONTROL Column name]： `Months between first order and this order`
 * [!UICONTROL Column type]： `Same Table`
-* 
+* &#x200B;
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]： A = `Seconds between customer's first order date and this order`
-* 
+* &#x200B;
   [!UICONTROL Datatype]: `Integer`
 * **定义：**`case when A is null then null when A <= 0 then '1'::int else (ceil(A)/2629800)::int end`
 
 * [!UICONTROL Column name]： `Months since order`
 * [!UICONTROL Column type]： `Same Table`
-* 
+* &#x200B;
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]： A = `created_at`
-* 
+* &#x200B;
   [!UICONTROL Datatype]: `Integer`
 * 定义： `case when created_at is null then null else (ceil((extract(epoch from current_timestamp) - extract(epoch from created_at))/2629800))::int end`
 
@@ -47,31 +47,31 @@ ht-degree: 0%
 
 * [!UICONTROL Column name]： `Calendar months between first order and this order`
 * [!UICONTROL Column type]： `Same Table`
-* 
+* &#x200B;
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column inputs]：
    * `A` = `created_at`
    * `B` = `Customer's first order date`
 
-* 
+* &#x200B;
   [!UICONTROL Datatype]: `Integer`
 * 定义： `case when (A::date is null) or (B::date is null) then null else ((date_part('year',A::date) - date_part('year',B::date))*12 + date_part('month',A::date) - date_part('month',B::date))::int end`
 
 * [!UICONTROL Column name]： `Calendar months since order`
 * [!UICONTROL Column type]： `Same Table`
-* 
+* &#x200B;
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]： `A` = `created_at`
-* 
+* &#x200B;
   [!UICONTROL Datatype]: `Integer`
 * **定义：**`case when A is null then null else ((date_part('year',current_timestamp::date) - date_part('year',A::date))*12 + date_part('month',current_timestamp::date) - date_part('month',A::date))::int end`
 
 * [!UICONTROL Column name]： `Is in current month? (Yes/No)`
 * [!UICONTROL Column type]： `Same Table`
-* 
+* &#x200B;
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]： A = `created_at`
-* 
+* &#x200B;
   [!UICONTROL Datatype]: `String`
 * 定义： `case when A is null then null when (date_trunc('month', current_timestamp::date))::varchar = (date_trunc('month', A::date))::varchar then 'Yes' else 'No' end`
 
@@ -103,8 +103,8 @@ ht-degree: 0%
    * `Calendar months between first order and this order` `<= X` （为X选取一个合理的数字，例如24个月）
    * `Is in current month?` = `No`
 
-* 
-  [！UICONTROL量度]: `Revenue`
+* &#x200B;
+  [!UICONTROL 量度]: `Revenue`
 * [!UICONTROL Filter]：
 
 * 量度`B`： `All time customers (hide)`
@@ -122,7 +122,7 @@ ht-degree: 0%
 
 * [!UICONTROL Formula]： `Expected revenue`
 * [!UICONTROL Formula]： `A / (B - C)`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Currency`
 
 其他图表详细信息
@@ -139,7 +139,7 @@ ht-degree: 0%
 按同类群组&#x200B;**每月平均收入**
 
 * 量度`A`： `Revenue`
-* 
+* &#x200B;
   [!UICONTROL Metric view]: `Cohort`
 * [!UICONTROL Cohort date]： `Customer's first order date`
 * [!UICONTROL Perspective]： `Average value per cohort member`
@@ -147,7 +147,7 @@ ht-degree: 0%
 **按同类群组列出的每月累计平均收入**
 
 * 量度`A`： `Revenue`
-* 
+* &#x200B;
   [!UICONTROL Metric view]: `Cohort`
 * [!UICONTROL Cohort date]： `Customer's first order date`
 * [!UICONTROL Perspective]： `Cumulative average value per cohort member`

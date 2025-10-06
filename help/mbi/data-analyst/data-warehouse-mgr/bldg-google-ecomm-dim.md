@@ -50,7 +50,7 @@ ht-degree: 0%
 
 ## 构建维度
 
-要创建维度，请单击[ > ](../data-warehouse-mgr/tour-dwm.md)以打开&#x200B;**[!UICONTROL Data]** Data Warehouse Manager **[!UICONTROL Data Warehouse]**。
+要创建维度，请单击[&#x200B; > &#x200B;](../data-warehouse-mgr/tour-dwm.md)以打开&#x200B;**[!UICONTROL Data]** Data Warehouse Manager **[!UICONTROL Data Warehouse]**。
 
 ### 订单表，第1轮
 

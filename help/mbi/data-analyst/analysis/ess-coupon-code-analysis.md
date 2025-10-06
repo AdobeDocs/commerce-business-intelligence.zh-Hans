@@ -59,46 +59,46 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->每个报告的**0}列为[!UICONTROL Time Period]。 `All-time`您可以根据分析需求随意更改此设置。 Adobe建议该仪表板上的所有报告都涵盖相同的时间段，如`All time`、`Year-to-date`或`Last 365 days`。
+>每个报告的**0&rbrace;列为[!UICONTROL Time Period]。 `All-time`您可以根据分析需求随意更改此设置。 Adobe建议该仪表板上的所有报告都涵盖相同的时间段，如`All time`、`Year-to-date`或`Last 365 days`。
 
 * **含优惠券的订单**
-   * 
-     [！UICONTROL量度]: `Orders`
+   * &#x200B;
+     [!UICONTROL 量度]: `Orders`
       * 添加筛选器：
          * [`A`] `coupon_code` **IS NOT** `[NULL]`
 
    * [!UICONTROL Time period]： `All time`
-   * 
-     [！UICONTROL间隔]: `None`
+   * &#x200B;
+     [!UICONTROL 间隔]: `None`
    * [!UICONTROL Chart type]：`Number (scalar)`
 
 * **没有优惠券的订单**
-   * 
-     [！UICONTROL量度]: `Orders`
+   * &#x200B;
+     [!UICONTROL 量度]: `Orders`
       * 添加筛选器：
          * [`A`] `coupon_code` **IS** `[NULL]`
 
    * [!UICONTROL Time period]： `All time`
-   * 
-     [！UICONTROL间隔]: `None`
+   * &#x200B;
+     [!UICONTROL 间隔]: `None`
    * [!UICONTROL Chart type]：`Number (scalar)`
 
 * **含优惠券的订单净收入**
-   * 
-     [！UICONTROL量度]: `Revenue`
+   * &#x200B;
+     [!UICONTROL 量度]: `Revenue`
       * 添加筛选器：
          * [`A`] `coupon_code` **IS NOT** `[NULL]`
 
    * [!UICONTROL Time period]： `All time`
-   * 
-     [！UICONTROL间隔]: `None`
+   * &#x200B;
+     [!UICONTROL 间隔]: `None`
    * [!UICONTROL Chart type]： `Number (scalar)`
 
 * **优惠券折扣**
    * [!UICONTROL Metric]： `Coupon discount amount`
    * [!UICONTROL Time period]： `All time`
-   * 
-     [！UICONTROL间隔]: `None`
+   * &#x200B;
+     [!UICONTROL 间隔]: `None`
    * [!UICONTROL Chart type]： `Number (scalar)`
 
 * **平均生命周期收入：已获得优惠券的客户**
@@ -107,8 +107,8 @@ ht-degree: 0%
          * [`A`] `Customer's first order's coupon_code` **IS NOT** `[NULL]`
 
    * [!UICONTROL Time period]： `All time`
-   * 
-     [！UICONTROL间隔]: `None`
+   * &#x200B;
+     [!UICONTROL 间隔]: `None`
    * [!UICONTROL Chart type]： `Number (scalar)`
 
 * **平均生命周期收入：未获得优惠券的客户**
@@ -117,8 +117,8 @@ ht-degree: 0%
          * [A] `Customer's first order's coupon_code` **IS**`[NULL]`
 
    * [!UICONTROL Time period]： `All time`
-   * 
-     [！UICONTROL间隔]: `None`
+   * &#x200B;
+     [!UICONTROL 间隔]: `None`
    * [!UICONTROL Chart type]： `Number (scalar)`
 
 * **优惠券使用情况详细信息（首次订购）**
@@ -141,24 +141,24 @@ ht-degree: 0%
 
    * 创建公式： `Gross revenue`
       * [!UICONTROL Formula]： `(B – C)`
-      * 
+      * &#x200B;
         [!UICONTROL Format]: `Currency`
 
    * 创建公式：**%折扣**
       * 公式： `(C / (B - C))`
-      * 
+      * &#x200B;
         [!UICONTROL Format]: `Percentage`
 
    * 创建公式： `Average order discount`
       * [!UICONTROL Formula]： `(C / A)`
-      * 
+      * &#x200B;
         [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Time period]： `All time`
-   * 
-     [！UICONTROL间隔]: `None`
-   * 
-     [！UICONTROL图表类型]: `Table`
+   * &#x200B;
+     [!UICONTROL 间隔]: `None`
+   * &#x200B;
+     [!UICONTROL 图表类型]: `Table`
 
 * **按第一张订单优惠券计算的平均生命周期收入**
    * [!UICONTROL Metric]：**平均生命周期收入**
@@ -166,8 +166,8 @@ ht-degree: 0%
          * [`A`] `coupon_code` **是**`[NULL]`
 
    * [!UICONTROL Time period]： `All time`
-   * 
-     [！UICONTROL间隔]: `None`
+   * &#x200B;
+     [!UICONTROL 间隔]: `None`
    * [!UICONTROL Chart type]： `Number (scalar)`
 
 * **优惠券使用情况详细信息（首次订购）**
@@ -176,11 +176,11 @@ ht-degree: 0%
          * [`A`] `Customer's first order's coupon_code` **IS NOT** `[NULL]`
 
    * [!UICONTROL Time period]： `All time`
-   * 
-     [！UICONTROL间隔]: `None`
+   * &#x200B;
+     [!UICONTROL 间隔]: `None`
    * [!UICONTROL Group by]： `Customer's first order's coupon_code`
-   * 
-     [！UICONTROL图表类型]: **Column**
+   * &#x200B;
+     [!UICONTROL 图表类型]: **Column**
 
 * **通过优惠券/非优惠券获取的新客户**
    * 量度`1`： `New customers`

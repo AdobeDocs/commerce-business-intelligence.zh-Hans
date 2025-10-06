@@ -61,7 +61,7 @@ ht-degree: 0%
 
 **删除整个仪表板**
 
-1. 选择&#x200B;**[!UICONTROL Manage Data]**，然后选择**[!UICONTROL Dashboards**]。
+1. 选择&#x200B;**[!UICONTROL Manage Data]**，然后选择&#x200B;**[!UICONTROL Dashboards**]。
 1. 单击要删除的仪表板。
 1. 单击&#x200B;**[!UICONTROL Delete Dashboard]**。
 

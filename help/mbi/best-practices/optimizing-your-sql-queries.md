@@ -95,7 +95,7 @@ ht-degree: 0%
 
 | **代替此……** | **尝试此操作！** |
 |-----|-----|
-| ![SQL查询，在筛选前GROUP BY ](../../mbi/assets/Group_by_2.png) | 在GROUP BY![之前使用筛选器的](../../mbi/assets/Group_by_1.png)SQL查询 |
+| ![SQL查询，在筛选前GROUP BY &#x200B;](../../mbi/assets/Group_by_2.png) | 在GROUP BY![之前使用筛选器的](../../mbi/assets/Group_by_1.png)SQL查询 |
 
 {style="table-layout:auto"}
 

@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![Facebook广告徽标](../../../assets/facebook-ads-logo.png)
 
-你做了调查，做了广告，在[!DNL Facebook]上启动了你的营销活动。 现在该分析您的广告支出数据了，看看您的资金是否得到了有效花销。 使用广告支出数据，您可通过将广告成本和从营销活动中获得的用户的客户存留期价值(CLV)[相匹配来](../../../data-analyst/analysis/roi-ad-camp.md)衡量营销活动ROI。
+你做了调查，做了广告，在[!DNL Facebook]上启动了你的营销活动。 现在该分析您的广告支出数据了，看看您的资金是否得到了有效花销。 使用广告支出数据，您可通过将广告成本和从营销活动中获得的用户的客户存留期价值(CLV) [相匹配来](../../../data-analyst/analysis/roi-ad-camp.md)衡量营销活动ROI。
 
 将您的[!DNL Facebook Ad]数据连接到[!DNL Commerce Intelligence]是一个简单的三步过程：
 
@@ -65,4 +65,4 @@ Commerce Intelligence的![Facebook访问权限对话框](../../../assets/Faceboo
 * [跟踪数据库中的用户设备、浏览器和操作系统数据](../../analysis/track-usr-dev-browser.md)
 * [了解您最有价值的客户获取来源和渠道](../../analysis/most-value-source-channel.md)
 * [提高广告促销活动的ROI](../../analysis/roi-ad-camp.md)
-* [ [!DNL Google Analytics] UTM归因如何工作？](../../analysis/utm-attributes.md)
+* [&#x200B; [!DNL Google Analytics] UTM归因如何工作？](../../analysis/utm-attributes.md)
