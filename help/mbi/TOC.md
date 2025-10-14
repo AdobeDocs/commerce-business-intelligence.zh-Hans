@@ -23,7 +23,7 @@ ht-degree: 0%
    - [Commerce Intelligence Essentials与Commerce Intelligence Pro](getting-started/essentials-vs-pro.md)
 - 管理员 {#administrator}
    - 帐户管理 {#acct-mgmt}
-      - [ [!DNL New Architecture]的优势](../mbi/administrator/account-management/new-architecture.md)
+      - [&#x200B; [!DNL New Architecture]的优势](../mbi/administrator/account-management/new-architecture.md)
       - [在办公室周围显示功能板](../mbi/administrator/account-management/display-dashboards-office.md)
       - [管理您的帐户](administrator/account-management/managing-account-settings.md)
       - [限制数据库访问](../mbi/administrator/account-management/restrict-db-access.md)
@@ -73,19 +73,19 @@ ht-degree: 0%
       - [[!DNL quote_item]](data-analyst/data-warehouse-mgr/sales-flat-quote-item-table.md)
    - SQL REPORT BUILDER {#sql}
       - [使用 [!DNL Cohort Report Builder]](data-analyst/dev-reports/cohort-rpt-bldr.md)
-      - [对非基于日期的同类群组使用 [!DNL Cohort Report Builder] ](data-analyst/dev-reports/cohort-rpt-non-date-based.md)
+      - [对非基于日期的同类群组使用 [!DNL Cohort Report Builder] &#x200B;](data-analyst/dev-reports/cohort-rpt-non-date-based.md)
       - [创建定性同类群组分析](data-analyst/dev-reports/create-qual-cohort-analysis.md)
       - [探索特殊的过滤器运算符](data-analyst/dev-reports/explr-special-filter-ops.md)
       - [导出我的查询的结果](data-analyst/dev-reports/export-query-results.md)
       - [在[Report Builder]中使用公式](../mbi/data-analyst/dev-reports/formulas-in-rpt-bldr.md)
       - [创建 [!DNL Google Analytics] 个图表](data-analyst/dev-reports/google-analytics-charts-regex.md)
-      - [ [!DNL Lifetime Revenue Cohort Analysis]的重要性](data-analyst/dev-reports/lifetime-rev-cohort-analysis.md)
+      - [&#x200B; [!DNL Lifetime Revenue Cohort Analysis]的重要性](data-analyst/dev-reports/lifetime-rev-cohort-analysis.md)
       - [使用 [!DNL Show Top/Bottom] 功能对数据排序](data-analyst/dev-reports/order-data-top-bottom-feat.md)
       - [使用 [!DNL SQL Report Builder]](data-analyst/dev-reports/sql-rpt-bldr.md)
       - [首次购买报告](data-analyst/dev-reports/time-first-purchase-slope-dwnwrd.md)
       - [了解 [!DNL Repeat Order Probability Report]](data-analyst/dev-reports/repeat-order-probability.md)
       - [使用 [!DNL SQL Report Builder]审核指标](data-analyst/dev-reports/audit-metrics-sql.md)
-      - [ [!DNL SQL] 和 [!DNL Data Warehouse Manager]之间的列差异](data-analyst/dev-reports/columns-sql-dwm.md)
+      - [&#x200B; [!DNL SQL] 和 [!DNL Data Warehouse Manager]之间的列差异](data-analyst/dev-reports/columns-sql-dwm.md)
    - 连接数据 {#connecting}
       - [简介](data-analyst/importing-data/connecting-data/connecting-data.md)
       - [格式化和导入电子商务数据](data-analyst/importing-data/connecting-data/format-import-ecom-data.md)
@@ -114,7 +114,7 @@ ht-degree: 0%
       - [需要 [!DNL Google ECommerce] 数据](data-analyst/importing-data/integrations/google-ecommerce-data.md)
       - [正在连接 [!DNL Mixpanel]](data-analyst/importing-data/integrations/mixpanel.md)
       - [需要 [!DNL Mixpanel] 数据](data-analyst/importing-data/integrations/mixpanel-data.md)
-      - [ [!DNL Mixpanel]中的数据验证](data-analyst/importing-data/integrations/mixpanel-data-valid.md)
+      - [&#x200B; [!DNL Mixpanel]中的数据验证](data-analyst/importing-data/integrations/mixpanel-data-valid.md)
       - [正在连接 [!DNL PrestaShop]](data-analyst/importing-data/integrations/prestashop.md)
       - [正在连接 [!DNL Quickbooks]](data-analyst/importing-data/integrations/quickbooks.md)
       - [需要 [!DNL Quickbooks] 数据](data-analyst/importing-data/integrations/quickbooks-data.md)
@@ -216,7 +216,7 @@ ht-degree: 0%
 - 最佳实践 {#best-practices}
    - 使用数据 {#data}
       - [使用数据](best-practices/work-data.md)
-      - [ [!DNL Google Analytics]中的UTM标记](best-practices/utm-tagging-google.md)
+      - [&#x200B; [!DNL Google Analytics]中的UTM标记](best-practices/utm-tagging-google.md)
       - [格式化并导入财务数据](best-practices/format-import-financial-data.md)
       - [分段和过滤的建议数据维度](best-practices/segment-filter.md)
       - [检查更新周期状态](best-practices/check-update-cycle.md)
@@ -226,7 +226,7 @@ ht-degree: 0%
       - [正在优化 [!DNL SQL] 查询](best-practices/optimizing-your-sql-queries.md)
       - [了解 [!DNL Commerce Intelligence] 环境](best-practices/understanding-magento.md)
    - 项目组织 {#project}
-      - [ [!DNL Commerce Intelligence]中的命名报告和元素](best-practices/naming-elements.md)
+      - [&#x200B; [!DNL Commerce Intelligence]中的命名报告和元素](best-practices/naming-elements.md)
       - [合并表](best-practices/consolidating-your-tables.md)
       - [清除你的 [!DNL Commerce Intelligence] 帐户](best-practices/declutter-account.md)
    - 使用功能板 {#working-dashboards}
