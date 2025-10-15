@@ -88,7 +88,7 @@ ht-degree: 0%
 
 ## 营销支出表
 
-在分析营销支出时，您可以在分析中包含[!DNL Facebook]、[!DNL Google AdWords]或其他来源。 如果您有多个营销支出来源，请联系[Managed Services团队](https://business.adobe.com/products/magento/fully-managed-service.html)，以获取有关为您的营销活动设置合并表的帮助。
+在分析营销支出时，您可以在分析中包含[!DNL Facebook]、[!DNL Google AdWords]或其他来源。 如果您有多个营销支出来源，请联系[Managed Services团队](https://business.adobe.com/cn/products/magento/fully-managed-service.html)，以获取有关为您的营销活动设置合并表的帮助。
 
 **维度**
 

@@ -64,7 +64,7 @@ ht-degree: 0%
 * 网站访问
 * 转化率
 
-通过[Commerce数据扩充服务](https://business.adobe.com/products/magento/magento-commerce.html)，您可以包括以下报表：
+通过[Commerce数据扩充服务](https://business.adobe.com/cn/products/magento/magento-commerce.html)，您可以包括以下报表：
 
 * 按州/地区、年龄、性别列出的独特客户。
 
