@@ -4,9 +4,9 @@ description: 了解如何使用客户获取源复制Google Analytics渠道。
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: cb7dd221f3e83be0c7ee01a6af479e5d1bad108c
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '689'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 1. **启用您的[!DNL Google ECommerce]集成**
 
-   [启用时](../importing-data/integrations/google-ecommerce.md)，请确保在Data Warehouse中[同步]&#x200B;(../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) **媒体**&#x200B;和&#x200B;**源**&#x200B;字段。 完成此操作后，媒体和来源客户获取数据将导入您的Data Warehouse。
+   [启用时](../importing-data/integrations/google-ecommerce.md)，请确保在Data Warehouse中[同步](tour-dwm.md#syncing) **媒体**&#x200B;和&#x200B;**源**&#x200B;字段。 完成此操作后，媒体和来源客户获取数据将导入您的Data Warehouse。
 
 1. **上传Google渠道分组的映射**
 
