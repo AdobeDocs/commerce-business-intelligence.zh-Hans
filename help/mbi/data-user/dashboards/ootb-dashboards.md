@@ -4,9 +4,9 @@ description: 了解如何检查关键量度的运行状况，例如用户生命�
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 3a7423c9dd0f957b77baa27b3447a715caad017b
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >某些功能板的可用性取决于您的数据集。
 
-如果您有疑问或有兴趣向帐户添加程序包，请提交[支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)以获取帮助。
+如果您有疑问或有兴趣向帐户添加程序包，请提交[支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)以获取帮助。
 
 ## 执行概述
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 `Retention health`仪表板显示您的用户群的重复购买行为。
 
-`Time between orders`图表显示用户在第一和第二顺序、第二和第三顺序等之间经过的平均时间和/或中间值。 您可以[考虑使用此数据来配置您的电子邮件营销活动](http://blog.rjmetrics.com/acting-on-marketing-data-in-your-rjmetrics-online-dashboard/)。
+`Time between orders`图表显示用户在第一和第二顺序、第二和第三顺序等之间经过的平均时间和/或中间值。 您可以考虑使用此数据来配置电子邮件营销活动。
 
 `Users by lifetime number of orders`图表列出每个生命周期订单数中的用户总数，以提供重复购买行为的概述。  
 
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 * 过去`X`天内活跃的顶级支出者列表（您可能希望奖励哪些人）
 
-使用您的数据导出工具，可以轻松[创建目标营销中具有类似购买行为的用户的电子邮件列表](http://blog.rjmetrics.com/creating-contact-lists-for-top-customers/)。
+您可以使用数据导出工具创建具有类似购买行为的用户的电子邮件列表，以进行目标营销。
 
 ## 用户活动
 
@@ -97,4 +97,4 @@ ht-degree: 0%
 
 `% of cohort members who have purchased`图表很有价值，因为它显示基于用户注册时间的转化率（从0到1）（每行表示用户同类群组）。 它还显示客户首次购买的时间（例如，注册后1、2、3...月）。 该报表可能会显示10%的用户在第1个月激活，而此数字在第2、3、4个月增长……并可能在以后停止增长。
 
-通常，在一段时间后，此图表中的线条会变为水平线。 这表明，在该时间点之后，几乎没有其他同类群组成员会进行有机转化 — 大多数即将购买的用户已经完成了转化。 目前，这些成员国极不可能在没有干预的情况下转化为购买者。 [通过自定义促销活动或定向电子邮件联系他们是一种快速启动此群体转换的低风险方法。](http://blog.rjmetrics.com/acting-on-marketing-data-in-your-rjmetrics-online-dashboard/)
+通常，在一段时间后，此图表中的线条会变为水平线。 这表明，在该时间点之后，几乎没有其他同类群组成员会进行有机转化 — 大多数即将购买的用户已经完成了转化。 目前，这些成员国极不可能在没有干预的情况下转化为购买者。 通过自定义促销活动或有针对性的电子邮件联系他们，是快速启动此群体转化的低风险方法。

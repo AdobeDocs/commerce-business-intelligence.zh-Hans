@@ -4,9 +4,9 @@ description: 了解什么是定性同类群组，为什么您可能希望构建�
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '846'
 ht-degree: 0%
 
 ---
@@ -20,8 +20,6 @@ ht-degree: 0%
 ## 什么是`qualitative cohorts`？ {#whatare}
 
 `Cohort`分析通常可以宽泛地定义为分析在其生命周期内具有相似特征的用户组。 它允许您识别不同用户群组中的行为趋势。
-
-请参阅[同类群组分析](https://www.cohortanalysis.com/)。
 
 `cohort`中的大多数[!DNL Commerce Intelligence]用户按共同日期一起进行分析（例如，在给定月份中首次购买的所有客户集）。 `qualitative cohort`稍有不同：它是一个由不基于时间的特性定义的用户组。 示例包括：
 
@@ -39,7 +37,7 @@ ht-degree: 0%
 
 在`qualitative cohort`中创建`Report Builder`报告涉及Adobe分析团队在必要的表中创建一些[高级计算列](../data-warehouse-mgr/creating-calculated-columns.md)。
 
-要生成这些文件，请提交[支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)（并引用此文章！）。 以下是您需要了解的信息：
+要生成这些文件，请提交[支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)（并引用此文章！）。 以下是您需要了解的信息：
 
 * 您要使用执行同类群组分析的`metric`及其使用的表（示例： `Revenue`，基于`orders`表构建）。
 
