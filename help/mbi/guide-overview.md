@@ -5,7 +5,7 @@ breadcrumb-title: 指南概述
 seo-title: Commerce Intelligence User Guide
 seo-description: Describes how to use Adobe Commerce Intelligence features used to gain insights from Adobe Commerce or Magento Open Source data, along with other third-party data sources.
 exl-id: f62c7a98-1b4c-4abb-9692-50ce0f3ee1fb
-source-git-commit: 2522a1b8784d2cad126bcc796487f6158798a78a
+source-git-commit: bb836eaa0407057ad34bc13f1a74d34acbc6cc67
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 2%
@@ -39,25 +39,25 @@ ht-degree: 2%
 
 ## 如何获取帮助
 
-如果您有问题并想利用某些专业服务，或者您的帐户遇到问题，请联系[支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+如果您有问题并想利用某些专业服务，或者您的帐户遇到问题，请联系[支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ### 服务策略
 
-查看客户支持团队提供的服务的[列表](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+查看客户支持团队提供的服务的[列表](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ### 提交支持票证
 
-需要有关构建高级计算列的帮助吗？ 遇到缺陷或连接问题？ 如果需要联系支持团队，Adobe会要求您使用[支持票证准则](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。 这些指南概述了Adobe解决该问题所需的信息。
+需要有关构建高级计算列的帮助吗？ 遇到缺陷或连接问题？ 如果需要联系支持团队，Adobe会要求您使用[支持票证准则](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。 这些指南概述了Adobe解决该问题所需的信息。
 
 ## 可用文档
 
 | 文档资源 | 描述 |
 |----------------------- | ----------- |
-| [Adobe Commerce 2.4商家文档](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/user-guides/home) | Adobe Commerce和Magento Open Source的以商家为中心的文档 |
-| [Adobe Commerce服务文档](https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/home) | 支持服务集合的文档，可帮助商家将其业务的关键组件与商店集成。 |
-| [Adobe Commerce 2.4操作指南](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/operational-guides/home) | 有关用于开发、部署和维护在Adobe Commerce和Magento Open Source平台上部署的项目所涉及的概念、流程、工具和最佳实践的系统文档。 |
+| [Adobe Commerce 2.4商家文档](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) | Adobe Commerce和Magento Open Source的以商家为中心的文档 |
+| [Adobe Commerce服务文档](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) | 支持服务集合的文档，可帮助商家将其业务的关键组件与商店集成。 |
+| [Adobe Commerce 2.4操作指南](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home) | 有关用于开发、部署和维护在Adobe Commerce和Magento Open Source平台上部署的项目所涉及的概念、流程、工具和最佳实践的系统文档。 |
 | [Adobe Commerce 2.4开发人员文档](https://developer.adobe.com/commerce/) | 用于构建和自定义Adobe Commerce或Magento Open Source的以开发人员为中心的文档 |
 
 {{$include /help/_includes/templated/whats-new.md}}
 
-<!-- Last updated from includes: 2025-09-04 10:40:17 -->
+<!-- Last updated from includes: 2026-01-07 10:11:29 -->
