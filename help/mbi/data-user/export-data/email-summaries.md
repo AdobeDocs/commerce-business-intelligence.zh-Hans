@@ -4,23 +4,23 @@ description: 了解如何创建自动化电子邮件摘要。
 exl-id: a9aea4fc-9193-467f-8554-3ad77ac3fa73
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: a65ededb203b7551fdfcb31cff130ef85b01fbe3
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
 
 # 创建自动化电子邮件摘要
 
-电子邮件摘要是一种功能强大的通信工具，可用于与关键利益相关者分享您的业务状态和趋势。 借助电子邮件摘要，您可以：
+电子邮件摘要是一种功能强大的通信工具，可用于与关键利益相关者分享您的业务状态和趋势。 通过电子邮件摘要，您可以：
 
 * 通过电子邮件发送包含报告的图形摘要
 * 在接收电子邮件时包括或排除电子邮件摘要作者
 * 发送电子邮件的时间安排
 * 编辑、删除和暂停现有的计划电子邮件摘要
 
-## 新建电子邮件摘要
+## 创建新电子邮件摘要
 
 1. 单击侧栏中的&#x200B;**[!DNL Manage Data]**，然后单击&#x200B;**[!UICONTROL Email Summary]**。
 
@@ -34,11 +34,26 @@ ht-degree: 0%
 
 1. 在`Choose Content`部分中，选择要包含在摘要中的报告。
 
+   您可以通过两个选项添加内容：
+
+   * **选择单个报告** — 从您的功能板中选择特定报告
+   * **选择整个仪表板** — 包括仪表板中显示在仪表板布局中的所有报表
+
    您最多可以选择十个您拥有的报表。 选择报告后，使用显示的图标选择希望以表格或图表形式发送该报告。 如果将报表另存为数字，则只能将其作为数字发送。 有关发送包含包含过时数据报告的电子邮件摘要的信息，请参阅[管理帐户设置](../../administrator/account-management/managing-account-settings.md)。
+
+   要添加整个仪表板，可使用以下格式和删除选项：
+
+   * 将报表格式更改为图表或表格
+   * 删除电子邮件中不包含的报告
+   * 选择此项可包含用于表格报表的CSV文件 — 这允许收件人直接从收件箱访问原始可导出数据。
 
    >[!NOTE]
    >
    >`Cohort`报告仅在您使用新架构时可用。
+
+   >[!NOTE]
+   >
+   >大型CSV附件受支持，每封电子邮件的总大小为25 MB。
 
 1. （可选）如果要接收电子邮件，请选择`Send Email To Me`。
 
@@ -84,18 +99,22 @@ ht-degree: 0%
 
 ## 修改现有电子邮件摘要
 
-创建并保存电子邮件摘要后，`Email Summaries`页面会显示所有已保存摘要的列表。 您可以展开每行(`+`)以了解详细信息。 此视图中的列为：
+创建并保存电子邮件摘要后，`Email Summaries`页面会显示所有已保存摘要的列表。 您可以展开每行中的(`+`)以获取更多信息。 此视图中的列为：
 
 * `Email Name` — 电子邮件摘要的名称
-* `Content` — 摘要中的内容类型，如任何报告的名称。 有关发送包含包含过时数据报告的电子邮件摘要的信息，请参阅[管理帐户设置](../../administrator/account-management/managing-account-settings.md)。
+* `Content` — 摘要中的内容类型，如任何报告的名称
 * `Scheduled` — 发送电子邮件摘要的频率、日期和时间
 * `Recipients` — 电子邮件摘要的收件人
 * `Created Date` — 创建电子邮件摘要的日期
 * `Status` - `Paused`或`Active`
 
+>[!NOTE]
+>
+>有关发送包含包含过时数据报告的电子邮件摘要的信息，请参阅[管理帐户设置](../../administrator/account-management/managing-account-settings.md)。
+
 单击每行右侧的齿轮图标可以：
 
-* `Send Now` — 立即向所有指定的收件人发送电子邮件摘要
-* `Edit` — 允许您修改电子邮件摘要的详细信息
-* `Pause/Active` — 允许您根据配置方式暂停发送电子邮件摘要或启用摘要
+* `Send Now` — 立即将电子邮件摘要发送给所有指定的收件人
+* `Edit` — 修改电子邮件摘要的详细信息
+* `Pause/Active` — 暂停或激活电子邮件摘要投放
 * `Delete` — 删除电子邮件摘要
