@@ -1,7 +1,7 @@
 ---
-source-git-commit: 199353c57dd1ca316c2a8b76fee1148d0e342299
+source-git-commit: 98e0c5dbd61d6d0f8d1a6e09d239cb25cbab8f81
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ## 钩子做什么
 
-- **自动检测**&#x200B;暂存的图像文件(PNG、JPG、JPEG、GIF、SVG)
+- **自动检测**&#x200B;个暂存的图像文件(PNG、JPG、JPEG、GIF)
 - **运行`image_optim`**&#x200B;以压缩和优化图像
 - **自动重新存放优化映像**
 - **确保所有已提交的映像**&#x200B;都已正确优化
@@ -85,11 +85,11 @@ Image optimization complete!
 ## 图像准则
 
 - **PNG**：用于屏幕截图和UI元素（将自动优化）
-- **SVG**：用于图标和简单图形（默认情况下禁用优化）
+- **SVG**：用于图标和简单图形（未通过预提交挂接自动优化）
 - **JPEG**：用于照片（将自动优化）
 - **GIF**：用于动画（将自动优化）
 
-预提交挂接将在提交时自动优化所有图像。
+预提交挂接将在提交时自动优化PNG、JPEG和GIF图像。
 
 ## 手动优化
 
@@ -138,10 +138,13 @@ bundle exec rake images:optimize path=../path/to/images
 
 ## 支持的图像格式
 
+预提交挂接会自动处理：
+
 - **PNG** (`.png`) — 无损和有损压缩
 - **JPEG** (`.jpg`， `.jpeg`) — 包含元数据清理的有损压缩
 - **GIF** (`.gif`) — 动画和静态优化
-- **SVG** (`.svg`) — 矢量优化（默认禁用）
+
+**注意**：默认情况下已禁用SVG优化（可能会破坏复杂的矢量图形和动画）。 预提交挂接不会自动处理SVG文件。
 
 ## 最佳实践
 
