@@ -4,9 +4,9 @@ description: 了解如何在Data Warehouse Manager中浏览可用于同步的表
 exl-id: 94beba8b-6a86-4af9-87fb-96b1cf8f8fa2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: d683f1362d87eee16c41ba9a8a83a9ff533b14aa
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '567'
 ht-degree: 0%
 
 ---
@@ -66,10 +66,14 @@ ht-degree: 0%
 要添加集成，请单击&#x200B;**[!UICONTROL Manage Data** > **Connections]**，然后单击&#x200B;**[!UICONTROL Add a New Data Source]**。 单击要添加集成的图标，然后按照帮助主题中的说明进行设置：
 
 * [集成常见问题解答](https://support.magento.com/hc/en-us/sections/360003161871-Integration-FAQ)
-* [可用 &#x200B;](../integrations/integrations.md)
+* [可用 ](../integrations/integrations.md)
 * [合并表](../../../best-practices/consolidating-your-tables.md)
 * [限制对数据库的访问](../../../administrator/account-management/restrict-db-access.md)
 
-**没有看到您想要的集成？**&#x200B;必须激活某些集成，才会在您的帐户中显示。 如果您要查找诸如[!DNL Facebook]之类的内容，但该内容未列出，请[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+**没有看到您想要的集成？**&#x200B;必须激活某些集成，才会在您的帐户中显示。 如果您要查找诸如[!DNL Facebook]之类的内容，但该内容未列出，请[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 **如果看到集成**&#x200B;的错误状态，请查看[疑难解答部分](https://support.magento.com/hc/en-us/sections/360003078151)以获取帮助。
+
+## 监测更新运行状况（可选）
+
+连接源后，您可能需要自动执行基本运行状况检查，以确认完整更新正在完成。 使用开发人员文档中的[更新周期状态API](https://developer.adobe.com/commerce/services/reporting/update-cycle-status-api/)获取客户端最近完成的更新周期，并将其显示在内部功能板或警报中。

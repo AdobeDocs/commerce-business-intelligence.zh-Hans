@@ -4,9 +4,9 @@ description: 了解如何检查更新周期的状态。
 exl-id: a4a2e487-b826-4888-baf0-9d246a8ff153
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: db93e5284950fa9336d0833af24589754c94a8b3
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,13 @@ ht-degree: 0%
 
 由于新数据正在同步到您的Data Warehouse，图表值可能会在一天中发生更改。 此外，由于[重新检查](../data-warehouse-mgr/cfg-data-rechecks.md)，现有数据列的值可能会更改。 重新检查是一个在数据列中查找已更改值的进程，例如从`open`移至`shipped`的订单状态。
 
-有几种不同的方式[可以检查更新周期](../../best-practices/check-update-cycle.md)的状态，具体取决于用户的权限设置。
+根据用户的权限设置，[有几种不同的方法检查更新周期](../../best-practices/check-update-cycle.md)的状态：
+
+* **[!UICONTROL Read-Only]和[!UICONTROL Standard]用户** — 可以将鼠标悬停在页面右上角的图标上，以查看何时提取最后一个数据点。
+* **[!UICONTROL Admin]用户** — 可以查看最后一个数据点和帐户集成状态图标。 有关更多详细信息，请导航到&#x200B;**[!UICONTROL Manage Data]** > **[!UICONTROL Integrations]**，以查看当前更新状态和上次完成更新的时间。
+* **API方法** — 可以使用更新周期状态API检索最近完成的更新周期。
+
+有关检查更新周期状态的完整详细信息，请参阅[检查更新周期状态](../../best-practices/check-update-cycle.md)。
 
 ## 定期更新和强制更新之间有何区别？ {#regularforcedupdates}
 
@@ -36,12 +42,12 @@ ht-degree: 0%
 
 ## 更新周期完成时是否可以通知我？ {#notifyupdate}
 
-如果更新正在进行，则`Connections`页面上有一个链接，您可以在周期完成后使用该链接请求电子邮件通知。
+如果更新正在进行中，**[!UICONTROL Manage Data]** > **[!UICONTROL Integrations]**&#x200B;页面上有一个链接，您可以在周期完成后使用该链接请求电子邮件通知。 如果更新未进行，您会看到强制开始更新的链接。
 
 ## 为什么[!DNL Google ECommerce]数据与我的数据库不同？ {#ecommdatabase}
 
-[!DNL Google Analytics]和数据库之间的差异可能由各种原因引起。 跟踪未正确启用、用户访问无痕以及点击事件未正确工作只是几个示例。 如果您的收入和订单看起来不正确，[请查看此主题](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=zh-Hans)以诊断问题。
+[!DNL Google Analytics]和数据库之间的差异可能由各种原因引起。 跟踪未正确启用、用户访问无痕以及点击事件未正确工作只是几个示例。 如果您的收入和订单看起来不正确，[请查看此主题](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html)以诊断问题。
 
 ## 如何解决数据不一致问题？ {#datadiscrepancy}
 
-Adobe知道，看到不一致的数据可能会让人感到沮丧。 尝试使用[数据差异核对清单](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html?lang=zh-Hans)或[数据导出教程](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=zh-Hans)来诊断问题。 如果您仍然被阻塞，[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+Adobe知道，看到不一致的数据可能会让人感到沮丧。 尝试使用[数据差异核对清单](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html)或[数据导出教程](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html)来诊断问题。 如果您仍然被阻塞，[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
