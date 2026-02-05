@@ -4,7 +4,7 @@ description: 了解如何检查更新周期状态。
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
 role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards
-source-git-commit: d683f1362d87eee16c41ba9a8a83a9ff533b14aa
+source-git-commit: 776b4b666c47775a7b883a3a6f71c16b4b3bfbad
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 为何要检查更新周期状态？
 
-当您审核[!DNL Commerce Intelligence]帐户中的数据时，检查状态更新周期很有用。 如果您看到的[个结果不符合您的预期](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)，例如[!DNL Commerce Intelligence]中的每日销售额与您在电子商务平台或[[!DNL Google] 电子商务收入](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=zh-Hans)中看到的结果不匹配，您可以检查最后一个数据点，以查看在更新完成后问题是否得到解决。
+当您审核[!DNL Commerce Intelligence]帐户中的数据时，检查状态更新周期很有用。 如果您看到的[个结果不符合您的预期](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)，例如[!DNL Commerce Intelligence]中的每日销售额与您在电子商务平台或[[!DNL Google] 电子商务收入](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html)中看到的结果不匹配，您可以检查最后一个数据点，以查看在更新完成后问题是否得到解决。
 
 ## [!UICONTROL Read-Only]和[!UICONTROL Standard]用户
 
@@ -72,4 +72,4 @@ curl -sS -H "X-RJM-API-Key: <EXPORT-API-KEY>" \
 }
 ```
 
-有关参数、身份验证、错误和速率限制，请参阅开发人员文档中的[更新周期状态API](https://developer.adobe.com/commerce/services/reporting/update-cycle-status-api/)。
+有关参数、身份验证、错误和速率限制，请参阅开发人员文档中的[更新周期状态API](https://developer.adobe.com/commerce/services/reporting/update-cycle/)。
