@@ -7,4 +7,4 @@ ht-degree: 0%
 ---
 # 已存档
 
-此存储库已迁移到<https://github.com/Adobe-Enterprise-Docs/commerce-business-intelligence.en>。
+此存储库已迁移到<https://github.com/Adobe-Enterprise-Docs/commerce-business-intelligence.zh-Hans>。
