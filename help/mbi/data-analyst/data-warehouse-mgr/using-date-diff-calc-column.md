@@ -46,7 +46,7 @@ ht-degree: 0%
    * 选择`Starting DATETIME`列** >选择开始日期时间字段，该字段通常是较早发生的事件
 
 1. 为列提供一个名称，然后单击&#x200B;**[!UICONTROL Save]**。
-1. 该列可立即使用&#x200B;*1}。*
+1. 该列可立即使用&#x200B;*1&rbrace;。*
 
 例如，以下示例配置为计算`Seconds between order date and customer's creation date`：
 

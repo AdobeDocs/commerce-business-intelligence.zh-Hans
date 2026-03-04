@@ -48,7 +48,7 @@ ht-degree: 0%
 |---|---|---|
 | `Number of returns` | 请求的返回次数。 | `Operation`列：`entity id`<br>`Operation`：`Count`<br>`Timestamp`列：`date requested` |
 | `Total returned amount` | 返回的货币总金额。 | `Operation `列：`Return's total value`<br>`Operation`： Sum<br>`Timestamp`列：请求的日期 |
-| `Average returned amount` | 平均退货货币金额。 | `Operation`` Column: Return's total value`<br>`Operation`： `Average`<br>`Timestamp`列： `date requested` |
+| `Average returned amount` | 平均退货货币金额。 | `Operation` ` Column: Return's total value`<br>`Operation`： `Average`<br>`Timestamp`列： `date requested` |
 | `Average time to return` | 从订单到退货的平均时间。 | `Operation`列：订单创建日期与请求返回日期之间的秒数<br>`Operation`： `Average`<br>`Timestamp`列： `date requested` |
 
 {style="table-layout:auto"}

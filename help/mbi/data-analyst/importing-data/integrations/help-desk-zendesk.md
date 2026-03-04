@@ -77,7 +77,7 @@ ht-degree: 0%
 
 * **`[!DNL Zendesk] user's`**&#x200B;表
    * `User is agent? (Yes/No) `
-   * 
+   * &#x200B;
       * `Column type` - `Same Table > Calculation`
 
       * `Input columns` - `role`，`email`
@@ -161,19 +161,19 @@ ht-degree: 0%
 * `Ticket's latest solved date`
 * `First agent response date`
 * `Seconds to resolution`
-   * 
+   * &#x200B;
       * `Column type` - `Same Table > Date Difference`
 
       * `Ticket's latest solved date`减去`created_at`
 
 * **`Seconds to first response`**
-   * 
+   * &#x200B;
       * `Column type` - `Same Table > Date Difference`
 
       * `First agent response date`减去`created_at`
 
 * **`Requester's ticket number`**
-   * 
+   * &#x200B;
       * `Column type` - `Same Table > Event Number`
 
       * `Event Owner` - `requester_id`
@@ -181,7 +181,7 @@ ht-degree: 0%
       * `Event Rank` - `created_at`
 
 * **`Ticket created_at (hour of day)`**
-   * 
+   * &#x200B;
       * `Column type` — “相同表>计算”
 
       * `Input columns` - `created_at`
@@ -191,7 +191,7 @@ ht-degree: 0%
       * `Datatype` — 整数
 
 * **`Ticket created_at (day of week)`**
-   * 
+   * &#x200B;
       * `Column type` — “相同表>计算”
 
       * `Input columns` - `created_at`
@@ -204,8 +204,8 @@ ht-degree: 0%
    * 选择定义： `Count`
    * [!UICONTROL Create Path]：
    * [!UICONTROL Many]： `[!DNL Zendesk] tickets.email`
-   * 
-     [！UICONTROL One]: `customer_entity.email`
+   * &#x200B;
+     [!UICONTROL One]: `customer_entity.email`
 
    * 选择[!UICONTROL table]： `[!DNL Zendesk] tickets`
    * [!UICONTROL Path]： `[!DNL Zendesk] tickets.email = customer_entity.email`
@@ -214,7 +214,7 @@ ht-degree: 0%
 
 * **`User's lifetime number of support tickets requested`**
 * **`Has user filed a support ticket? (Yes/No)`**
-   * 
+   * &#x200B;
       * `Column type` — “相同表>计算”
 
       * `Input columns` - `User's lifetime number of support tickets requested`
@@ -401,8 +401,8 @@ ht-degree: 0%
 * `Chart Type`： `Column`
 
 * **[!UICONTROL Number of new users who have and have not filed tickets]**
-   * 
-     [！UICONTROL量度]: Users
+   * &#x200B;
+     [!UICONTROL 量度]: Users
 
 * 量度`A`： `New users`
 * `Time period`： `All time`

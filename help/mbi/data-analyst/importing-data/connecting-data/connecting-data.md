@@ -66,7 +66,7 @@ ht-degree: 0%
 要添加集成，请单击&#x200B;**[!UICONTROL Manage Data** > **Connections]**，然后单击&#x200B;**[!UICONTROL Add a New Data Source]**。 单击要添加集成的图标，然后按照帮助主题中的说明进行设置：
 
 * [集成常见问题解答](https://support.magento.com/hc/en-us/sections/360003161871-Integration-FAQ)
-* [可用 ](../integrations/integrations.md)
+* [可用 &#x200B;](../integrations/integrations.md)
 * [合并表](../../../best-practices/consolidating-your-tables.md)
 * [限制对数据库的访问](../../../administrator/account-management/restrict-db-access.md)
 

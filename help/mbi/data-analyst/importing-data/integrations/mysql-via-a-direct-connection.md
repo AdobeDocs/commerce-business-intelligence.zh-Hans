@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 跳转到
 
-* [[!DNL MySQL]通过 ](../integrations/mysql-via-ssh-tunnel.md)
+* [[!DNL MySQL]通过 &#x200B;](../integrations/mysql-via-ssh-tunnel.md)
 * [[!DNL MySQL]通过 [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
 >[!NOTE]

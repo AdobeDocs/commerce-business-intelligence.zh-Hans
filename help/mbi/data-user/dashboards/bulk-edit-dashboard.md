@@ -15,11 +15,11 @@ ht-degree: 0%
 
 通过批量编辑功能，可以轻松更改功能板中的图表名称和日期。 例如，您希望特定仪表板上的所有图表引用单个商店，并且每月而不是每季度进行报告。 让`bulk-editing`功能完成工作，而不是手动更改所有内容。 在本主题中，您将了解如何使用：
 
-* [ [!DNL Find/Replace] 功能](#findreplace)
+* [&#x200B; [!DNL Find/Replace] 功能](#findreplace)
 
-* [ [!DNL Prepend Name] 功能](#prepend)
+* [&#x200B; [!DNL Prepend Name] 功能](#prepend)
 
-* [ [!DNL Change Dates] 功能](#dates)
+* [&#x200B; [!DNL Change Dates] 功能](#dates)
 
 话虽如此，请考虑此 — *这些更改是否需要永久性？*&#x200B;如果不能，请考虑克隆功能板，然后更改新功能板中的日期。 这允许您保留原始仪表板，同时仍可进行所需的更改。
 

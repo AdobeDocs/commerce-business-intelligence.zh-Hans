@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ## 在[!DNL Zendesk]中打开[!DNL Commerce Intelligence]凭据页面 {#stepone}
 
-1. 转到`Integrations`数据源&#x200B;**[!UICONTROL Manage Data** > ** > **集成&#x200B;**下的]**&#x200B;页面。
+1. 转到`Integrations`数据源&#x200B;**[!UICONTROL Manage Data** > **&#x200B; > &#x200B;** 集成&#x200B;**下的]**&#x200B;页面。
 1. 单击屏幕右侧的&#x200B;**[!UICONTROL Add Integration]**。
 1. 单击[!DNL Zendesk]图标。 这将打开[!DNL Zendesk]凭据页面。
 

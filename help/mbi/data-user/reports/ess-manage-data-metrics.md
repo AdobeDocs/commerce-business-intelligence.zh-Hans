@@ -21,7 +21,7 @@ ht-degree: 0%
 
 在[!DNL Commerce Intelligence]中，您可以使用量度[创建图表](../../data-user/reports/ess-rpt-build-visual.md)。 例如，量度`revenue`是订单总数。 量度`average customer revenue per order`是客户每次订购的平均花费。
 
-在报表中使用时，可以在指定的时间段内分析量度，并按不同类别筛选或分段[](../../best-practices/segment-filter.md)。 考虑分析按性别分组的平均客户收入，在此例中，`average customer revenue per order`是指标，性别是分组。
+在报表中使用时，可以在指定的时间段内分析量度，并按不同类别筛选或分段[&#128279;](../../best-practices/segment-filter.md)。 考虑分析按性别分组的平均客户收入，在此例中，`average customer revenue per order`是指标，性别是分组。
 
 ## 定义量度 {#define}
 
