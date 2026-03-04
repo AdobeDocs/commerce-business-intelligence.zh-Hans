@@ -2,9 +2,9 @@
 title: 高级计算列类型
 description: 了解大多数使用列案例的基础知识 — 但您可能希望计算列比Data Warehouse Manager可以创建的要复杂一些。
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 2%
@@ -161,7 +161,7 @@ ht-degree: 2%
 
 不用担心。 这里没有列出这并不意味着这是不可能的。 Data Warehouse分析人员的Adobe团队可以提供帮助。
 
-要定义新的计算列，请[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)，其中包含有关要生成的项目的详细信息。
+要定义新的计算列，请[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)，其中包含有关要生成的项目的详细信息。
 
 ## 相关文档
 

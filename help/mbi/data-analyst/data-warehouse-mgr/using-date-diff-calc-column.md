@@ -2,9 +2,9 @@
 title: 使用日期差异计算列
 description: 了解日期差异计算列的用途和用法。
 exl-id: 6ecab794-3466-4b3a-a929-3e56287522aa
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 0%
@@ -46,7 +46,7 @@ ht-degree: 0%
    * 选择`Starting DATETIME`列** >选择开始日期时间字段，该字段通常是较早发生的事件
 
 1. 为列提供一个名称，然后单击&#x200B;**[!UICONTROL Save]**。
-1. 该列可立即使用&#x200B;*1&rbrace;。*
+1. 该列可立即使用&#x200B;*1}。*
 
 例如，以下示例配置为计算`Seconds between order date and customer's creation date`：
 

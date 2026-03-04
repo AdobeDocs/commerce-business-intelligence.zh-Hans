@@ -2,9 +2,9 @@
 title: 实体关系图
 description: 了解一些ER图，以帮助您可视化少数几个通用Commerce数据库表之间的关系。
 exl-id: de7d419f-efbe-4d0c-95a8-155a12aa93f3
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 0%

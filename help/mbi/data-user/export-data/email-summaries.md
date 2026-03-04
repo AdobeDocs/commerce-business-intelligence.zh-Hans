@@ -2,9 +2,9 @@
 title: 创建自动化电子邮件摘要
 description: 了解如何创建自动化电子邮件摘要。
 exl-id: a9aea4fc-9193-467f-8554-3ad77ac3fa73
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: a65ededb203b7551fdfcb31cff130ef85b01fbe3
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 0%

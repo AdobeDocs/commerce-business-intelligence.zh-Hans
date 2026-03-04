@@ -2,9 +2,9 @@
 title: 连接Adobe Analytics
 description: 了解如何将 [!DNL Adobe Analytics] 的端到端客户历程重点与您依赖的 [!DNL Commerce Intelligence]的电子商务重点结合起来。
 exl-id: 824e1ee4-6b88-42f7-b265-29330dbc4407
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 0%
@@ -57,6 +57,6 @@ ht-degree: 0%
 
 1. 选定的报表包会显示在表格中。 单击&#x200B;**[!UICONTROL Save]**&#x200B;确认您的选择。
 
-1. 通知[!DNL Commerce Intelligence] [支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)您的集成已获得授权，他们将为您运行初始连接进程。
+1. 通知[!DNL Commerce Intelligence] [支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)您的集成已获得授权，他们将为您运行初始连接进程。
 
 运行初始连接进程后，您的表将在Data Warehouse页面的`All Tables`选项卡下可用。 选择要复制的列，数据将在下次完全更新后显示。

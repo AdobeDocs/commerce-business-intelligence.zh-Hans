@@ -2,9 +2,9 @@
 title: Connect Spree
 description: 了解如何查看您的业务表现或找到您最有价值的客户获取来源和渠道。
 exl-id: d443e6ca-04b0-4090-a3be-14db71819356
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 0%

@@ -2,9 +2,9 @@
 title: 为量度创建过滤器集
 description: 了解如何创建保存的过滤器集并将它们应用于量度。
 exl-id: 6ef8b67c-bebd-45eb-bca7-95832ec34fc8
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 如果[!DNL Commerce Intelligence]中有多个量度需要以类似方式过滤（例如，过滤掉测试订单），您可以创建保存的过滤器集并将它们应用于量度。 这样可节省您的时间，因为在创建或编辑量度时您不必添加单个过滤器。
 
-有关详细信息，请参阅[培训视频](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=zh-Hans)。
+有关详细信息，请参阅[培训视频](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html)。
 
 >[!NOTE]
 >

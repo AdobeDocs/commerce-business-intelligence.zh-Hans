@@ -2,9 +2,9 @@
 title: customer_entity表
 description: 了解如何访问所有已注册帐户的记录。
 exl-id: 24bf0e66-eea0-45ea-8ce6-4ff99b678201
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 0%

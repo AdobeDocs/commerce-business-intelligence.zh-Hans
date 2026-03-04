@@ -2,9 +2,9 @@
 title: '通过SSH通道连接 [!DNL MySQL] '
 description: 了解如何通过SSH通道连接 [!DNL MySQL] 。
 exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 跳转到
 
-* [[!DNL MySQL]通过 &#x200B;](../integrations/mysql-via-a-direct-connection.md)
+* [[!DNL MySQL]通过 ](../integrations/mysql-via-a-direct-connection.md)
 * [[!DNL MySQL]通过 [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
 要通过[!DNL MySQL]将您的[!DNL Commerce Intelligence]数据库连接到`SSH tunnel`，您必须执行以下操作：
@@ -120,4 +120,4 @@ ht-degree: 0%
 
 ## 相关：
 
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

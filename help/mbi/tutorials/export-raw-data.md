@@ -2,9 +2,9 @@
 title: 导出原始数据
 description: 了解如何从 [!DNL Commerce Intelligence] Data Warehouse导出记录，以更详细地了解为您的仪表板提供支持的内容。
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
-role: Admin, Data Architect, Data Engineer, Leader, User
+role: Admin, Developer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 导出原始数据
 
-使用原始数据导出，您可以从Data Warehouse导出记录，以更详细地了解为您的仪表板提供支持的功能。 此外，原始数据导出还可以帮助您[查明数据差异](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=zh-Hans)。
+使用原始数据导出，您可以从Data Warehouse导出记录，以更详细地了解为您的仪表板提供支持的功能。 此外，原始数据导出还可以帮助您[查明数据差异](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html)。
 
 通过原始数据导出，可访问通过取消标准化和预聚合相关量度生成的其他列和维度。 例如，`User's first order date`是一个维度，您可以为[!DNL Commerce Intelligence]中的每个用户导出该维度，但它可能在数据库中不可用。
 

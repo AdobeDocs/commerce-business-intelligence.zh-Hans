@@ -2,9 +2,9 @@
 title: 在仪表板中调整图表大小并重新排列图表
 description: 了解如何调整图表大小并重新排列图表以创建理想的工作区。
 exl-id: 0abbb845-6713-421e-95e0-c0b43cf7dad4
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 0%

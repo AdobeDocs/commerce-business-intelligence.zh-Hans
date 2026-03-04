@@ -2,9 +2,9 @@
 title: 审核Google Adwords数据
 description: 了解导出Google Adwords数据的步骤。
 exl-id: f619801f-e789-44ad-945e-268d430bf583
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 0%
@@ -23,6 +23,6 @@ ht-degree: 0%
 
 1. 将您的帐户添加到[!DNL Google Adwords]编辑器后，选择&#x200B;**[!UICONTROL File** > **&#x200B;导出电子表格(CSV)**> **导出整个帐户]**
 
-这将生成一个`.csv`文件，其中包含存储在您当前[!DNL Google Adwords]帐户中的所有信息。 此时，请提交[支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans) （请确保附加此文件！），以便您可以更仔细地查看数据。 如果文件太大，请通过[!DNL Commerce Intelligence]或[!DNL Dropbox]与[!DNL Google Drive]团队共享。
+这将生成一个`.csv`文件，其中包含存储在您当前[!DNL Google Adwords]帐户中的所有信息。 此时，请提交[支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) （请确保附加此文件！），以便您可以更仔细地查看数据。 如果文件太大，请通过[!DNL Commerce Intelligence]或[!DNL Dropbox]与[!DNL Google Drive]团队共享。
 
 有关[!DNL Google Adwords] `.csv`文件导出的详细信息，请参阅官方的[[!DNL Google Adwords] 文档](https://support.google.com/google-ads/editor/answer/38657?hl=en)。

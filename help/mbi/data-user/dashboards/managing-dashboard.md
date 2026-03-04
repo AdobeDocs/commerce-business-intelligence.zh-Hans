@@ -2,9 +2,9 @@
 title: 管理仪表板
 description: 了解如何管理您拥有的仪表板的用户权限、删除不再需要的仪表板以及设置默认仪表板。
 exl-id: 32c21093-2a7d-4d8e-afc0-19bd702f9b36
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 0%

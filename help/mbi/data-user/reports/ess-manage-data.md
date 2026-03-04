@@ -2,9 +2,9 @@
 title: 管理数据
 description: 了解如何使用管理数据。
 exl-id: 6274eda4-d3ff-47b6-81d9-06ad4f150ef7
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '48'
 ht-degree: 0%

@@ -2,9 +2,9 @@
 title: 在Adobe Commerce中存储数据
 description: 了解如何生成数据、导致插入新行的原因以及如何将操作记录到Adobe Commerce数据库中。
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '964'
 ht-degree: 2%

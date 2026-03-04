@@ -2,9 +2,9 @@
 title: 创建量度
 description: 了解如何使用量度创建图表。
 exl-id: d4c25546-3c51-4d32-b9d8-c424ec103be5
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 在[!DNL Commerce Intelligence]中，您可以使用量度[创建图表](../../data-user/reports/ess-rpt-build-visual.md)。 例如，量度`revenue`是订单总数。 量度`average customer revenue per order`是客户每次订购的平均花费。
 
-在报表中使用时，可以在指定的时间段内分析量度，并按不同类别筛选或分段[&#128279;](../../best-practices/segment-filter.md)。 考虑分析按性别分组的平均客户收入，在此例中，`average customer revenue per order`是指标，性别是分组。
+在报表中使用时，可以在指定的时间段内分析量度，并按不同类别筛选或分段[](../../best-practices/segment-filter.md)。 考虑分析按性别分组的平均客户收入，在此例中，`average customer revenue per order`是指标，性别是分组。
 
 ## 定义量度 {#define}
 

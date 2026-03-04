@@ -2,9 +2,9 @@
 title: 导出图表数据
 description: 了解如何查看图表后的数据。
 exl-id: 3c75ff3c-c4e2-4ff8-a303-6f24ccfca0ff
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 7ad99cbe08f6f6dee82cf804fabe1ea9cf440289
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 0%

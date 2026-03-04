@@ -2,9 +2,9 @@
 title: 连接Salesforce
 description: 了解Salesforce数据如何支持一系列分析，从评分和优化潜在客户到实现转化机会的目标。
 exl-id: 249b2b40-8c8a-4616-9383-17690f07003d
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 0%
@@ -36,4 +36,4 @@ ht-degree: 0%
 如果您更懂技术，[[!DNL Salesforce] API文档](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm)可以成为了解有关Salesforce如何与[!DNL Commerce Intelligence]集成的有用资源。
 
 * [需要 [!DNL Salesforce] 数据](../integrations/salesforce-data.md)
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

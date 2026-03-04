@@ -2,9 +2,9 @@
 title: 连接Stripe
 description: 了解如何管理和跟踪贵企业的付款和发票数据。
 exl-id: c038f2a9-b2bd-4e45-93f9-12d2e5077b31
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 0%
@@ -48,4 +48,4 @@ ht-degree: 0%
 [[!DNL Stripe] API文档](https://stripe.com/docs/api)可以成为了解有关[!DNL Stripe]如何与[!DNL Commerce Intelligence]集成的有用资源。
 
 * [需要 [!DNL Stripe] 数据](../integrations/stripe-data.md)
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

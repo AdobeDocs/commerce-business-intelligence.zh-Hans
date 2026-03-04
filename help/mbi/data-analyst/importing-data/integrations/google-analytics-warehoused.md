@@ -2,9 +2,9 @@
 title: 连接Google Analytics仓库
 description: 了解如何跟踪访客如何使用您的网站、哪些内容吸引人、访客的退出位置等。
 exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused]是`Premium`集成。 如果您有兴趣将此集成添加到订阅，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+>[!DNL Google Analytics Warehoused]是`Premium`集成。 如果您有兴趣将此集成添加到订阅，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 1. 转到`Connections`下的&#x200B;**[!UICONTROL Admin** > **Integrations]**&#x200B;页面。
 1. 单击右侧的&#x200B;**[!UICONTROL Add an Integration]**。
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 ## 相关文档
 
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [正在连接 [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [分析网站活动和客户转化率](../../analysis/web-act-cust-conversion.md)
 * [使用 [!DNL Google Analytics] Cookie跟踪用户获取数据](../../analysis/google-track-user-acq.md)

@@ -2,9 +2,9 @@
 title: 报价表
 description: 了解如何使用报价表。
 exl-id: 3a1e9239-33a7-429e-bfc8-628c68701710
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 0%

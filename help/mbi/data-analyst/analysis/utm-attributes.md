@@ -2,9 +2,9 @@
 title: Google Analytics和UTM归因
 description: 了解Google Analytics源归因流程。
 exl-id: 48b8a3d3-f1ac-4d3f-8f65-db1245c9ae0a
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '760'
 ht-degree: 0%
@@ -69,4 +69,4 @@ ht-degree: 0%
 * [了解您最有价值的客户获取来源和渠道](../analysis/most-value-source-channel.md)
 * [连接你的 [!DNL Google Adwords] 帐户](../importing-data/integrations/google-adwords.md)
 * [提高广告促销活动的ROI](../analysis/roi-ad-camp.md)
-* [&#x200B; [!DNL Google Analytics]中UTM标记的五个最佳实践](../../best-practices/utm-tagging-google.md)
+* [ [!DNL Google Analytics]中UTM标记的五个最佳实践](../../best-practices/utm-tagging-google.md)

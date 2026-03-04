@@ -2,9 +2,9 @@
 title: 包含的仪表板
 description: 了解如何检查关键量度的运行状况，例如用户生命周期收入、重复购买次数等，从而为未来探索奠定坚实的基础。
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 3a7423c9dd0f957b77baa27b3447a715caad017b
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >某些功能板的可用性取决于您的数据集。
 
-如果您有疑问或有兴趣向帐户添加程序包，请提交[支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)以获取帮助。
+如果您有疑问或有兴趣向帐户添加程序包，请提交[支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)以获取帮助。
 
 ## 执行概述
 

@@ -2,9 +2,9 @@
 title: 优化SQL查询
 description: 了解如何优化SQL查询。
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: acc152709c7c66f387f4eded9e6c1c646a83af35
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL SQL Report Builder]允许您随时运行和更改查询。 如果您需要立即更新查询，而不是等到更新周期完成后再修复列或报告，则此功能非常有用。
 
-在执行查询之前，[[!DNL Commerce Intelligence] 估计其成本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=zh-Hans)。 成本考虑执行查询所需的时间和资源数。 如果该成本过高，或者返回的行数超过[!DNL Commerce Intelligence]限制，则查询失败。 为了查询您的[Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md)（确保您编写的查询尽可能简化），Adobe建议执行以下操作。
+在执行查询之前，[[!DNL Commerce Intelligence] 估计其成本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html)。 成本考虑执行查询所需的时间和资源数。 如果该成本过高，或者返回的行数超过[!DNL Commerce Intelligence]限制，则查询失败。 为了查询您的[Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md)（确保您编写的查询尽可能简化），Adobe建议执行以下操作。
 
 ## 使用SELECT或选择所有列
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 | **代替此……** | **尝试此操作！** |
 |-----|-----|
-| ![SQL查询，在筛选前GROUP BY &#x200B;](../../mbi/assets/Group_by_2.png) | 在GROUP BY![之前使用筛选器的](../../mbi/assets/Group_by_1.png)SQL查询 |
+| ![SQL查询，在筛选前GROUP BY ](../../mbi/assets/Group_by_2.png) | 在GROUP BY![之前使用筛选器的](../../mbi/assets/Group_by_1.png)SQL查询 |
 
 {style="table-layout:auto"}
 

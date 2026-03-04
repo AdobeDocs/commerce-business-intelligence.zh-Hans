@@ -2,9 +2,9 @@
 title: 为投资者构建功能板
 description: 了解如何为投资者构建仪表板。
 exl-id: 917e7628-3498-4413-a7e1-61799989a7dd
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Dashboards, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 0%
@@ -64,7 +64,7 @@ ht-degree: 0%
 * 网站访问
 * 转化率
 
-通过[Commerce数据扩充服务](https://business.adobe.com/cn/products/magento/magento-commerce.html)，您可以包括以下报表：
+通过[Commerce数据扩充服务](https://business.adobe.com/products/magento/magento-commerce.html)，您可以包括以下报表：
 
 * 按州/地区、年龄、性别列出的独特客户。
 

@@ -2,9 +2,9 @@
 title: 使用SQL Report Builder
 description: 了解如何使用SQL Report Builder审核数据和量度，以便将结果与本地数据库中的数据进行比较。
 exl-id: d1d9e099-4138-43e6-aaec-6f15ebc5c4d4
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Reports, Data Warehouse Manager, SQL Report Builder
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 0%
@@ -48,4 +48,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果审计数据后发现不一致，请查看[联系支持人员：数据差异](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=zh-Hans)支持主题，以了解有关后续操作的更多信息。
+>如果审计数据后发现不一致，请查看[联系支持人员：数据差异](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html)支持主题，以了解有关后续操作的更多信息。

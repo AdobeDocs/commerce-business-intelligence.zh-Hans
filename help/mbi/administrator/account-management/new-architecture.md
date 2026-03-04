@@ -2,9 +2,9 @@
 title: 新架构
 description: 了解迁移至新架构的好处。
 exl-id: cbb10673-5704-4a90-9574-5ac114f389b9
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Import/Export
-source-git-commit: ddda796c9f32d22b1d679fc245eb11b92cd491cf
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ### 获取帮助
 
-[!DNL Adobe Commerce Intelligence] [服务团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)可以执行重新实施，但需支付额外费用。 请联系您的[Adobe客户团队](../../guide-overview.md#Submitting-a-Support-Ticket)，并准备好提供您希望在新帐户中优先创建的功能板/报告列表
+[!DNL Adobe Commerce Intelligence] [服务团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)可以执行重新实施，但需支付额外费用。 请联系您的[Adobe客户团队](../../guide-overview.md#Submitting-a-Support-Ticket)，并准备好提供您希望在新帐户中优先创建的功能板/报告列表
 
 ### 保持现有体系结构
 

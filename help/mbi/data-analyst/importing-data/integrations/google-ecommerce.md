@@ -2,9 +2,9 @@
 title: 连接Google E-commerce
 description: 了解您最宝贵的转介渠道。
 exl-id: c80f52f3-894a-4084-8c0e-aee618ed77f5
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
@@ -60,7 +60,7 @@ ht-degree: 0%
 ## 相关：
 
 * [需要 [!DNL Google ECommerce] 数据](../integrations/google-ecommerce-data.md)
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [正在设置 [!DNL Google ECommerce] 跟踪](https://support.google.com/analytics/answer/1009612?hl=en)
 * [了解您最有价值的客户获取来源和渠道](../../analysis/most-value-source-channel.md)
 * [提高广告促销活动的ROI](../../analysis/roi-ad-camp.md)

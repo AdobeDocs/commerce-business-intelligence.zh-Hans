@@ -2,9 +2,9 @@
 title: 在可视化Report Builder中使用时间选项
 description: 了解如何分析报告中特定时间段的数据。
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1329'
 ht-degree: 0%
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 ## 比较不同时间范围内的相同量度 {#difftimerange}
 
-此示例使用名为`Day number of the month`的自定义维度。 如果要创建此报表，但您的Data Warehouse中还没有此维度，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)寻求帮助。
+此示例使用名为`Day number of the month`的自定义维度。 如果要创建此报表，但您的Data Warehouse中还没有此维度，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)寻求帮助。
 
 此类别中最常见的两个示例是(1)比较增长指标（年收入或月收入）和(2)更好地了解最近的库存或物料销售趋势。
 

@@ -2,9 +2,9 @@
 title: enterprise_rma表
 description: 了解如何分析有关特定退货请求的信息。
 exl-id: a19cbc9a-e34f-4f4e-820f-9e413d1a552d
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -48,7 +48,7 @@ ht-degree: 0%
 |---|---|---|
 | `Number of returns` | 请求的返回次数。 | `Operation`列：`entity id`<br>`Operation`：`Count`<br>`Timestamp`列：`date requested` |
 | `Total returned amount` | 返回的货币总金额。 | `Operation `列：`Return's total value`<br>`Operation`： Sum<br>`Timestamp`列：请求的日期 |
-| `Average returned amount` | 平均退货货币金额。 | `Operation` ` Column: Return's total value`<br>`Operation`： `Average`<br>`Timestamp`列： `date requested` |
+| `Average returned amount` | 平均退货货币金额。 | `Operation`` Column: Return's total value`<br>`Operation`： `Average`<br>`Timestamp`列： `date requested` |
 | `Average time to return` | 从订单到退货的平均时间。 | `Operation`列：订单创建日期与请求返回日期之间的秒数<br>`Operation`： `Average`<br>`Timestamp`列： `date requested` |
 
 {style="table-layout:auto"}

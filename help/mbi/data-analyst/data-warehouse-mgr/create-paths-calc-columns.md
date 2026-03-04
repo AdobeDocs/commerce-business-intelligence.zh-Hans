@@ -2,9 +2,9 @@
 title: 为计算列创建或删除路径
 description: 了解如何定义一个路径，描述您正在其上创建列的表如何与您正在从中获取信息的表相关。
 exl-id: 734a8046-8058-4f03-93a2-8d59b9be6d2d
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 1. 数据库中的表如何相互关联
 1. 定义此关系的主键和外键
 
-如果您知道此信息，可以按照本主题中的说明轻松创建路径。 您可能需要咨询组织中的技术专家，或联系[专业服务团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+如果您知道此信息，可以按照本主题中的说明轻松创建路径。 您可能需要咨询组织中的技术专家，或联系[专业服务团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ## 刷新表关系和键类型 {#refresher}
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 * **[!DNL Commerce Intelligence]无法猜测主/外键关系**。 您不希望将不正确的数据引入帐户，因此必须手动创建路径。
 
-* **目前，只能在两个不同的表**&#x200B;之间指定路径。 您尝试重新创建的逻辑是否涉及两个以上的表？ 然后，(1)先将列连接到中间表，然后再连接到“最终目标”表，或者(2)咨询[专业服务团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)以找到实现目标的最佳方法，这样做可能会有意义。
+* **目前，只能在两个不同的表**&#x200B;之间指定路径。 您尝试重新创建的逻辑是否涉及两个以上的表？ 然后，(1)先将列连接到中间表，然后再连接到“最终目标”表，或者(2)咨询[专业服务团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)以找到实现目标的最佳方法，这样做可能会有意义。
 
 * **列一次只能是ONE路径的外键引用**。 例如，如果`order_items.order_id`指向`orders.id`，则`order_items.order_id`无法指向任何其他内容。
 

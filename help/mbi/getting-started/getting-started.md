@@ -2,9 +2,9 @@
 title: Adobe Commerce Intelligence简介
 description: 了解Adobe Commerce Intelligence。
 exl-id: 0c960d8c-9bb7-429e-a88e-21678a77b710
-role: Admin, Data Architect, Data Engineer, Leader, User
+role: Admin, Developer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%

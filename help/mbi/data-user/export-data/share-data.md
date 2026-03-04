@@ -2,9 +2,9 @@
 title: 共享数据
 description: 共享数据的概述。
 exl-id: 5c434d3b-0519-4980-a666-60bed122a93b
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 7ad99cbe08f6f6dee82cf804fabe1ea9cf440289
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '51'
 ht-degree: 0%

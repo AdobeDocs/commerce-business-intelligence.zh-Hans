@@ -2,9 +2,9 @@
 title: 通过SSH通道连接PostgreSQL
 description: 了解如何通过SSH通道将PostgreSQL数据库连接到Commerce Intelligence。
 exl-id: da610988-21c1-4f5f-b4e2-e2deb175a2aa
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 0%
@@ -105,4 +105,4 @@ ht-degree: 0%
 
 ### 相关
 
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

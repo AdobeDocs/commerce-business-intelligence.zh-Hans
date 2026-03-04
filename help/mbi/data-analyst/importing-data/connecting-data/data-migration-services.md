@@ -2,9 +2,9 @@
 title: 数据迁移服务
 description: 了解提交请求并开始迁移所需的一切。
 exl-id: 105cd003-98ef-4358-80b9-b3190c2c57b7
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 数据迁移
 
-迁移到新的数据库模式、服务器或报告数据库并不一定有压力。 [[!DNL Adobe] 服务团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)提供迁移帮助。
+迁移到新的数据库模式、服务器或报告数据库并不一定有压力。 [[!DNL Adobe] 服务团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)提供迁移帮助。
 
 为确保过渡尽可能顺利，提交迁移请求时应尽可能详细。 本主题包含提交请求并开始迁移所需的一切。 向我们提供您需求的全面信息，可以确保您的项目范围设定得当，并且估算准确。
 
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 ## 如何提交请求？ {#submitreq}
 
-您可以通过[提交支持请求](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)联系我们。
+您可以通过[提交支持请求](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)联系我们。
 
 如果您按照上一节中的步骤创建列匹配电子表格，请不要忘记附加它。
 

@@ -2,9 +2,9 @@
 title: 创建Google Analytics charts
 description: 了解如何根据Google Analytics数据创建图表。
 exl-id: ee80fd0d-e3b1-4331-853d-3c2c11931d3f
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 0%

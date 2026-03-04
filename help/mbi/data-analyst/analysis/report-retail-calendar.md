@@ -2,9 +2,9 @@
 title: 在零售日历中报告
 description: 了解如何设置结构以在 [!DNL Commerce Intelligence] 帐户中使用4-5-4零售日历。
 exl-id: 3754151c-4b0f-4238-87f2-134b8409e32b
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports, Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 0%
@@ -50,8 +50,8 @@ ht-degree: 0%
    * **当前日期**
       * [!UICONTROL Column type]： `Same table > Calculation`
       * [!UICONTROL Inputs]： `Date Retail`
-      * &#x200B;
-        [!UICONTROL 数据类型]: `Datetime`
+      * 
+        [！UICONTROL数据类型]: `Datetime`
       * [!UICONTROL Calculation]： `case when A is null then null else to\_char(now(), 'YYYY-MM-DD 00:00:00') end`
 
         >[!NOTE]
@@ -62,7 +62,7 @@ ht-degree: 0%
       * [!UICONTROL Column type]： E`vent Counter`
       * [!UICONTROL Local Key]： `Current date`
       * [!UICONTROL Remote Key]： `Retail calendar.Date Retail`
-      * &#x200B;
+      * 
         [!UICONTROL Operation]: `Max`
       * [!UICONTROL Operation value]： `Year Retail`
    * **包含在当前零售年度中？ （是/否）**
@@ -70,16 +70,16 @@ ht-degree: 0%
       * [!UICONTROL Inputs]：
          * `A` - `Year Retail`
          * `B` - `Current retail year`
-      * &#x200B;
-        [!UICONTROL 数据类型]: `String`
+      * 
+        [！UICONTROL数据类型]: `String`
       * [!UICONTROL Calculation]： `case when A is null or B is null then null when A = B then 'Yes' else 'No' end`
    * **包括在上一零售年度中？ （是/否）**
       * [!UICONTROL Column type]： `Same table > Calculation`
       * [!UICONTROL Inputs]：
          * `A` - `Year Retail`
          * `B` - `Current retail year`
-      * &#x200B;
-        [!UICONTROL 数据类型]: String
+      * 
+        [！UICONTROL数据类型]: String
       * [!UICONTROL Calculation]： `case when A is null or B is null then null when (A = (B-1)) then 'Yes' else 'No' end`
 
 * **sales\_order**&#x200B;表
@@ -139,62 +139,62 @@ ht-degree: 0%
       * [!UICONTROL Filter]：
          * `Created\_at (retail Year) = 2015`
    * [!UICONTROL Time period]： `All time`
-   * &#x200B;
+   * 
      [!UICONTROL Interval]: `None`
-   * &#x200B;
+   * 
      [!UICONTROL Group by]: `Created\_at` (retail week)
-   * &#x200B;
+   * 
      [!UICONTROL Chart type]: `Line`
       * 关闭`multiple Y-axes`
 
 * **零售业日历概述（当前零售业年份，按月）**
    * 量度`A`： `Revenue`
-      * &#x200B;
-        [!UICONTROL 量度]: `Revenue`
+      * 
+        [！UICONTROL量度]: `Revenue`
       * [!UICONTROL Filter]：
-         * &#x200B;
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * 量度`B`： `Orders`
       * [!UICONTROL Metric]： `Number of orders`
       * [!UICONTROL Filter]：
-         * &#x200B;
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * 量度`C`： `Avg order value`
       * [!UICONTROL Metric]： `Avg order value`
       * [!UICONTROL Filter]：
-         * &#x200B;
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]： `All time`
-   * &#x200B;
+   * 
      [!UICONTROL Interval]: `None`
-   * &#x200B;
+   * 
      [!UICONTROL Group by]: `Created\_at` (retail month)
-   * &#x200B;
+   * 
      [!UICONTROL Chart type]: `Line`
 
 * **零售日历概述（上一零售年按月）**
    * 量度`A`： `Revenue`
-      * &#x200B;
-        [!UICONTROL 量度]: `Revenue`
+      * 
+        [！UICONTROL量度]: `Revenue`
       * [!UICONTROL Filter]：
-         * &#x200B;
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * 量度`B`： `Orders`
       * [!UICONTROL Metric]：订单数
       * [!UICONTROL Filter]：
-         * &#x200B;
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * 量度`C`： `Avg order value`
       * [!UICONTROL Metric]： `Avg order value`
       * [!UICONTROL Filter]：
-         * &#x200B;
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]： `All time`
-   * &#x200B;
+   * 
      [!UICONTROL Interval]: `None`
-   * &#x200B;
+   * 
      [!UICONTROL Group by]: `Created\_at` (retail month)
-   * &#x200B;
+   * 
      [!UICONTROL Chart type]: `Line`
 
 ## 后续步骤

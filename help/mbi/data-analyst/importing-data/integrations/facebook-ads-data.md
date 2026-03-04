@@ -2,9 +2,9 @@
 title: 预期Facebook广告数据
 description: 了解建议同步到Data Warehouse的表的简要概述
 exl-id: 0c8b907b-1a98-470b-bb2c-55327e88e502
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 0%
@@ -60,4 +60,4 @@ ht-degree: 0%
 ## 相关
 
 * [正在连接 [!DNL Facebook Ads]](../integrations/facebook-ads.md)
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -2,9 +2,9 @@
 title: 连接WooCommerce
 description: 了解如何查看您的业务表现或找到您最有价值的客户获取来源和渠道。
 exl-id: 26ac24e0-087b-4958-873c-2facab22ffb2
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 0%
@@ -25,5 +25,5 @@ ht-degree: 0%
 
 ## 相关：
 
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [分段和过滤的建议数据维度](../../../best-practices/segment-filter.md)

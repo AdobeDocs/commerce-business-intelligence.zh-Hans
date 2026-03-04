@@ -2,9 +2,9 @@
 title: 连接Google Adwords
 description: 了解如何将您的广告成本与从您的促销活动中获得的用户的客户存留期价值(CLV)相结合，以衡量促销活动ROI。
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![Google AdWords徽标](../../../assets/Google_Adwords_logo.png)
 
-您完成了调查，创建了广告，启动了[!DNL Google]营销活动。 现在该分析您的广告支出数据了，看看您的资金是否得到了有效花销。 使用广告支出数据，您可通过将广告成本和从营销活动中获得的用户的客户存留期价值(CLV) [相匹配来](../../analysis/roi-ad-camp.md)衡量营销活动ROI。
+您完成了调查，创建了广告，启动了[!DNL Google]营销活动。 现在该分析您的广告支出数据了，看看您的资金是否得到了有效花销。 使用广告支出数据，您可通过将广告成本和从营销活动中获得的用户的客户存留期价值(CLV)[相匹配来](../../analysis/roi-ad-camp.md)衡量营销活动ROI。
 
 在[!DNL Google Adwords]中输入您的[!DNL Commerce Intelligence]凭据以开始操作。
 
@@ -55,9 +55,9 @@ ht-degree: 0%
 
 ## 相关
 
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [通过 [!DNL Google ECommerce]跟踪订单反向链接来源](../integrations/google-ecommerce.md)
 * [跟踪数据库中的用户反向链接源](../../analysis/google-track-user-acq.md)
 * [了解您最有价值的客户获取来源和渠道](../../analysis/most-value-source-channel.md)
 * [提高广告促销活动的ROI](../../analysis/roi-ad-camp.md)
-* [&#x200B; [!DNL Google Analytics] UTM归因如何工作？](../../analysis/utm-attributes.md)
+* [ [!DNL Google Analytics] UTM归因如何工作？](../../analysis/utm-attributes.md)

@@ -2,9 +2,9 @@
 title: Data Warehouse Manager
 description: 了解如何管理表和列同步设置、深入了解表的架构以及创建计算列以在报告中使用。
 exl-id: b9577919-0db0-47f1-a426-1abe48443ac0
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1237'
 ht-degree: 0%

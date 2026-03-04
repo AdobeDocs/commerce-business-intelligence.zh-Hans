@@ -2,9 +2,9 @@
 title: 确定最有价值的营销来源和渠道
 description: 了解可用于发现您最有价值的营销渠道的一些报表。
 exl-id: 8d25bc80-ea60-47db-b01b-04a23a24c14d
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 你调查了你的受众，你创建了你的营销活动，你投资了几个营销渠道。 一段时间已经过去了，这些渠道的效果如何？ 哪个渠道引入的新用户最多？ 哪个来源对您的总收入贡献最大？
 
-使用[!DNL Adobe Commerce Intelligence]，您可以按反向链接来源轻松对您的收入和用户进行分段，无论该来源是对应于[[!DNL [Google Analytics' UTM fields]]](https://support.google.com/analytics/answer/1191184?hl=en)还是自定义数据字段。 此分段允许您找到表现最佳的渠道并更好地投入营销预算。
+使用[!DNL Adobe Commerce Intelligence]，您可以按反向链接来源轻松对您的收入和用户进行分段，无论该来源是对应于[!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en)还是自定义数据字段。 此分段允许您找到表现最佳的渠道并更好地投入营销预算。
 
 本主题探究了可用于揭示您最有价值的营销渠道的一些报表：
 

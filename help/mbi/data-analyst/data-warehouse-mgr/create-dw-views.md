@@ -2,9 +2,9 @@
 title: 创建和使用Data Warehouse视图
 description: 了解通过修改现有表或使用SQL将多个表连接或合并在一起来创建新的仓库表的方法。
 exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1120'
 ht-degree: 6%
@@ -136,7 +136,7 @@ ht-degree: 6%
 
 **正在寻找其他帮助吗？**
 
-技术支持不包括编写SQL和创建`Data Warehouse Views`。 但是，[服务团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)确实为创建视图提供了帮助。 对于从使用新数据库迁移旧数据库到创建单个Data Warehouse视图以进行特定分析的所有内容，支持团队都可以提供帮助。
+技术支持不包括编写SQL和创建`Data Warehouse Views`。 但是，[服务团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)确实为创建视图提供了帮助。 对于从使用新数据库迁移旧数据库到创建单个Data Warehouse视图以进行特定分析的所有内容，支持团队都可以提供帮助。
 
 通常，为合并2-3个类似结构的表而创建新`Data Warehouse View`需要五小时的服务时间，相当于大约1,250美元的工作时间。 然而，以下是可增加所需预期投资的几个共同因素：
 

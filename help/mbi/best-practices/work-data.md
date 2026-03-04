@@ -2,9 +2,9 @@
 title: 使用数据
 description: 了解组织和处理该数据的最佳实践。
 exl-id: cd898aa0-afec-481a-b800-d156d57aba85
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 0%
