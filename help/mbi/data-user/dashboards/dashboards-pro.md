@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->对这些仪表板的访问取决于您的帐户类型和访问级别。 如果您没有看到这些仪表板，请联系[支持](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+>对这些仪表板的访问取决于您的帐户类型和访问级别。 如果您没有看到这些仪表板，请联系[支持](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
 
 ## 报告可用性
 
@@ -133,7 +133,7 @@ ht-degree: 0%
 
 ## 产品
 
-“产品”仪表板显示从订购的产品、它们的商品总价值(GMV)以及购买和退款的热门产品等方面来说明的一般产品表现。 它可以帮助您平衡购买和回报，并确定产品成功和受欢迎程度。 您的商店必须[配置为跟踪退款](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html)，才能填充这些图表。
+“产品”仪表板显示从订购的产品、它们的商品总价值(GMV)以及购买和退款的热门产品等方面来说明的一般产品表现。 它可以帮助您平衡购买和回报，并确定产品成功和受欢迎程度。 您的商店必须[配置为跟踪退款](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html?lang=zh-Hans)，才能填充这些图表。
 
 >[!NOTE]
 >

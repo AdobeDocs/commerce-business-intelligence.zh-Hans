@@ -58,7 +58,7 @@ Commerce Intelligence的![Facebook访问权限对话框](../../../assets/Faceboo
 
 ## 相关
 
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
 * [连接你的 [!DNL Google Adwords] 帐户](../integrations/google-ecommerce.md)
 * [通过 [!DNL Google eCommerce]跟踪订单反向链接来源](../integrations/google-ecommerce.md)
 * [跟踪数据库中的用户反向链接源](../../analysis/google-track-user-acq.md)

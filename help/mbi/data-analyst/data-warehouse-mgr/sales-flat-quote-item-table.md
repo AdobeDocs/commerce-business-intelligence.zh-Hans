@@ -23,13 +23,13 @@ ht-degree: 0%
 
 | **列名称** | **描述** |
 |---|---|
-| `base_price` | 在应用了[目录价格规则、分层折扣和特殊定价](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html)之后以及在应用任何税、运费或购物车折扣之前，将产品添加到购物车时产品的单件价格。 以存储的基本货币表示。 |
+| `base_price` | 在应用了[目录价格规则、分层折扣和特殊定价](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=zh-Hans)之后以及在应用任何税、运费或购物车折扣之前，将产品添加到购物车时产品的单件价格。 以存储的基本货币表示。 |
 | `created_at` | 购物车项目的创建时间戳，以UTC本地存储。 根据[!DNL Commerce Intelligence]中的配置，此时间戳可能会转换为[!DNL Commerce Intelligence]中与数据库时区不同的报表时区 |
 | `item_id` (PK) | 表的唯一标识符 |
 | `name` | 订单项的文本名称 |
 | `parent_item_id` | 将简单产品与其父捆绑包或可配置产品相关联的`Foreign key`。 加入`quote_item.item_id`以确定与简单产品关联的父产品属性。 对于父购物车项目（即捆绑包或可配置产品类型），`parent_item_id`为`NULL` |
 | `product_id` | 与`Foreign key`表关联的`catalog_product_entity`。 加入`catalog_product_entity.entity_id`以确定与订单项关联的产品属性 |
-| `product_type` | 添加到购物车的产品的类型。 潜在的[产品类型](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html#product-types)包括：简单、可配置、已分组、虚拟、捆绑和可下载 |
+| `product_type` | 添加到购物车的产品的类型。 潜在的[产品类型](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html?lang=zh-Hans#product-types)包括：简单、可配置、已分组、虚拟、捆绑和可下载 |
 | `qty` | 特定购物车项目的购物车中包含的单位数量 |
 | `quote_id` | 与`Foreign key`表关联的`quote`。 加入`quote.entity_id`以确定与购物车项目关联的购物车属性 |
 | `sku` | 购物车项目的唯一标识符 |
@@ -43,7 +43,7 @@ ht-degree: 0%
 |---|---|
 | `Cart creation date` | 与购物车创建日期关联的时间戳。 通过将`quote_item.quote_id`加入`quote.entity_id`并返回`created_at`时间戳进行计算 |
 | `Cart is active? (1/0)` | 如果购物车由客户创建且尚未转换为订单，则返回值为“1”的布尔字段。 对于已转换的购物车或通过管理员创建的购物车，返回“0”。 通过将`quote_item.quote_id`加入`quote.entity_id`并返回`is_active`字段进行计算 |
-| `Cart item total value (qty * base_price)` | 在应用了[目录价格规则、分层折扣和特殊定价](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html)之后且未应用任何税、运费或购物车折扣的情况下，将项目添加到购物车时的项目总值。 通过`qty`乘以`base_price`计算 |
+| `Cart item total value (qty * base_price)` | 在应用了[目录价格规则、分层折扣和特殊定价](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=zh-Hans)之后且未应用任何税、运费或购物车折扣的情况下，将项目添加到购物车时的项目总值。 通过`qty`乘以`base_price`计算 |
 | `Seconds since cart creation` | 从购物车创建日期到现在之间经过的时间。 通过将`quote_item.quote_id`加入`quote.entity_id`并返回`Seconds since cart creation`字段进行计算 |
 | `Store name` | 与订单项目关联的Commerce商店的名称。 通过将`sales_order_item.store_id`加入`store.store_id`并返回`name`字段进行计算 |
 
@@ -72,7 +72,7 @@ ht-degree: 0%
 
 `quote_item`
 
-* 加入`quote_item`以创建将父可配置或捆绑SKU的详细信息与简单产品关联的列。 在Data Warehouse管理器中构建时，[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)以获得配置这些计算的帮助。
+* 加入`quote_item`以创建将父可配置或捆绑SKU的详细信息与简单产品关联的列。 在Data Warehouse管理器中构建时，[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)以获得配置这些计算的帮助。
    * 路径： `quote_item.parent_item_id` （多个） => `quote_item.item_id` （一个）
 
 `store`
