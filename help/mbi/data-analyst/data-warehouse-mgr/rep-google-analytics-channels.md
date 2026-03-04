@@ -2,9 +2,9 @@
 title: 使用客户获取源复制Google Analytics渠道
 description: 了解如何使用客户获取源复制Google Analytics渠道。
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 0%
@@ -32,11 +32,11 @@ ht-degree: 0%
 | 直接 | 直接进入您网站的任何人。 | Source = `Direct`<br>和Medium = `(not set); OR Medium = (none)` |
 | 自然搜索 | 在无偿搜索引擎中已自然排名的流量。 | Medium = `organic` |
 | 反向链接 | 来自非自然搜索外部链接或非社交网络网站的流量。 | Medium = `referral` |
-| 付费搜索 | 具有UTM跟踪代码的流量，其中媒体为“cpc”、“ppc”或“paidsearch”，并且是不匹配“Content”的广告分发网络。 | Medium = `^(cpc|ppc|paidsearch)$`<br>和Ad Distribution Network ≠ `Content` |
-| Social | 来自约400个社交网络中的任意一个且未标记为广告的转介流量。 | 社交Source转介= `Yes`<br>或Medium = `^(social|social-network|social-media|sm|social network|social media)$` |
+| 付费搜索 | 具有UTM跟踪代码的流量，其中媒体为“cpc”、“ppc”或“paidsearch”，并且是不匹配“Content”的广告分发网络。 | Medium = `^(cpc`\|`ppc`\|`paidsearch)$`<br>和广告分发网络≠ `Content` |
+| Social | 来自约400个社交网络中的任何一个，且未被标记为广告的引荐流量。 | 社交Source引用= `Yes`<br>或Medium = `^(social`\|`social-network`\|`social-media`\|`sm`\|`social network`\|`social media)$` |
 | 电子邮件 | 使用“电子邮件”媒介标记的会话流量。 | Medium的UTM跟踪代码= `email` |
-| 显示 | 具有UTM跟踪代码（媒体为显示或cpm）的流量。 此外，还包括广告分发网络与“内容”匹配的AdWords交互 | Medium = `^(display|cpm|banner)$`<br>或广告分发网络= `Content`<br>和广告格式≠ `Text` |
-| 其他 | 来自使用“cpc”、“ppc”、“cpm”、“cpv”、“cpa”、“cpp”、“affiliate”媒介标记的其他广告渠道（不包括付费搜索）的会话。 | Medium = `^(cpv|cpa|cpp|content-text)$` |
+| 显示 | 具有UTM跟踪代码（媒体为显示或cpm）的流量。 此外，还包括广告分发网络与“内容”匹配的AdWords交互 | Medium = `^(display`\|`cpm`\|`banner)$`<br>或广告分发网络= `Content`<br>≠广告格式`Text` |
+| 其他 | 来自使用“cpc”、“ppc”、“cpm”、“cpv”、“cpa”、“cpp”、“affiliate”媒介标记的其他广告渠道（不包括付费搜索）的会话。 | Medium = `^(cpv`\|`cpa`\|`cpp`\|`content-text)$` |
 
 {style="table-layout:auto"}
 

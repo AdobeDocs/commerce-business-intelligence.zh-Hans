@@ -2,9 +2,9 @@
 title: Report Builder中的公式
 description: 了解如何在Report Builder中使用公式。
 exl-id: 7a0ad07a-5bcc-474f-95bc-ccc2b74073b2
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 0%

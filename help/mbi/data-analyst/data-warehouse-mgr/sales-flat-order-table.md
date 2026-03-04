@@ -2,9 +2,9 @@
 title: sales_order表
 description: 了解如何使用sales_order表。
 exl-id: 19a8ab88-de51-48f8-af39-ae4897834afe
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1200'
 ht-degree: 0%

@@ -1,12 +1,13 @@
 ---
 title: Commerce Intelligence
 description: 了解如何使用可用于Adobe Commerce的 [!DNL Commerce Intelligence] 功能。
+user-guide-title: Commerce Intelligence用户指南
 breadcrumb-title: Commerce Intelligence用户指南
-role: Admin, Data Architect, Data Engineer, Leader, User
+role: Admin, Developer, Leader, User
 feature: Business Performance
-source-git-commit: cea314102fb3b2164c1498ce1efa60e83c41b188
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '687'
 ht-degree: 0%
 
 ---

@@ -2,9 +2,9 @@
 title: 特殊筛选运算符
 description: 了解创建报告或创建量度时在筛选器中使用的几个特殊运算符。
 exl-id: 12837490-b9ca-4040-bb71-8988b5dde485
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 0%

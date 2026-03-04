@@ -2,9 +2,9 @@
 title: 格式化并导入财务数据
 description: 了解如何格式化并导入财务数据。
 exl-id: cdbed262-7cf1-4fd6-ad5a-c44d26dffba7
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%

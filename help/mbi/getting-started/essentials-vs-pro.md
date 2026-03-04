@@ -2,9 +2,9 @@
 title: Commerce Intelligence软件包与专业版
 description: 了解Commerce Intelligence Essentials与Commerce Intelligence Pro有何不同。
 exl-id: 624a6285-8497-43d9-a56d-8ae503e0e2dd
-role: Admin, Data Architect, Data Engineer, Leader, User
+role: Admin, Developer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 5%

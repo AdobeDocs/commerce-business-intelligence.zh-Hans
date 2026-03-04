@@ -2,9 +2,9 @@
 title: 配置复制方法
 description: 了解表如何组织，以及表数据的行为如何允许您为表选择最佳的复制方法。
 exl-id: 83895c48-a6ec-4b01-9890-164e0b21dcbc
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1442'
 ht-degree: 0%

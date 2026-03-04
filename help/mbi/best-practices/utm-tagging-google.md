@@ -2,9 +2,9 @@
 title: Google Analytics中的UTM跟踪
 description: 了解Google Analytics中UTM跟踪（标记）的最佳实践。
 exl-id: 70bfd855-3b3f-469b-99bc-deb8251904b7
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%

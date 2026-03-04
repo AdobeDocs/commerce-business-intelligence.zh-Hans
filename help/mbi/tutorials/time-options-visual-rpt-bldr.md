@@ -2,9 +2,9 @@
 title: 在可视化Report Builder中使用时间选项
 description: 了解如何分析报告中特定时间段的数据。
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1329'
 ht-degree: 0%

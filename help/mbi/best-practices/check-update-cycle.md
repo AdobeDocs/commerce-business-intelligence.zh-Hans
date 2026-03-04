@@ -2,9 +2,9 @@
 title: 检查更新周期状态
 description: 了解如何检查更新周期状态。
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Dashboards
-source-git-commit: 776b4b666c47775a7b883a3a6f71c16b4b3bfbad
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 0%

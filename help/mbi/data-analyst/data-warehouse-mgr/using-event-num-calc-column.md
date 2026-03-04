@@ -2,9 +2,9 @@
 title: 事件编号计算列
 description: 了解事件编号计算列的用途和用法。
 exl-id: c234621e-2e68-4e63-8b0d-7034d1b5fe1f
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 1%

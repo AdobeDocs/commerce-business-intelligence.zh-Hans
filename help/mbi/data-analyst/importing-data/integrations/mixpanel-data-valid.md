@@ -2,9 +2,9 @@
 title: Mixpanel中的数据验证
 description: 了解如何确认您已直接在Mixpanel中同步所有可用数据。
 exl-id: d18ce954-26fe-4440-ad8b-4f266c007b2f
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 063112ebbafad195b0a80ee2b119ab32d879ae5b
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 0%
@@ -30,3 +30,4 @@ ht-degree: 0%
    ![菜单中的“Mixpanel导出为CSV”选项](../../../assets/export-csv-mixpanel.png)
 
 1. 将`.csv`文件发送给在此验证过程中与您合作的客户经理或分析师。
+

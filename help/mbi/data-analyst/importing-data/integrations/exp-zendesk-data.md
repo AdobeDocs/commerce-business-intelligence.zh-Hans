@@ -2,9 +2,9 @@
 title: 预期Zendesk数据
 description: 了解可从Zendesk导入Commerce Intelligence的主要数据表，包括指向有关Zendesk数据的其他文档的链接。
 exl-id: 838d8d13-e2e1-44c2-a416-f1792200ee6f
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%

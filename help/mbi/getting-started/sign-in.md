@@ -2,9 +2,9 @@
 title: 访问您的Commerce Intelligence帐户
 description: 了解如何登录到您的Commerce Intelligence帐户。
 exl-id: 3ee36e0e-f447-4be3-afc8-ccc6d3aa4f20
-role: Admin, Data Architect, Data Engineer, Leader, User
+role: Admin, Developer, Leader, User
 feature: Accounts
-source-git-commit: 988a7bee27a0c381d1c84db960e978ca73eb3615
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 0%

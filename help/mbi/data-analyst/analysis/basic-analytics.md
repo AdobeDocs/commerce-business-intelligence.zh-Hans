@@ -2,9 +2,9 @@
 title: 了解和构建基本分析
 description: 了解如何了解和构建基础分析。
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Warehouse Manager, Dashboards, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '3130'
 ht-degree: 0%

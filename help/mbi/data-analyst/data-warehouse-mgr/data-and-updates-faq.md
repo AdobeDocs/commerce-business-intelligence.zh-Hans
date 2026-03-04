@@ -2,9 +2,9 @@
 title: 数据和更新信息
 description: 了解如何检查更新周期的状态。
 exl-id: a4a2e487-b826-4888-baf0-9d246a8ff153
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: db93e5284950fa9336d0833af24589754c94a8b3
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 0%

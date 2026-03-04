@@ -2,9 +2,9 @@
 title: Commerce流失
 description: 了解如何生成和分析Commerce客户流失率。
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 2%

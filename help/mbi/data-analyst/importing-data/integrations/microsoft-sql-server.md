@@ -2,9 +2,9 @@
 title: 连接Microsoft SQL Server
 description: 了解如何通过四步过程将Microsoft SQL数据库连接到 [!DNL Commerce Intelligence] 。
 exl-id: 7f49d1dc-8fbb-4a8c-9d07-9a8195c266f5
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%

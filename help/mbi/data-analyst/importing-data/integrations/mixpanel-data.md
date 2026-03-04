@@ -2,9 +2,9 @@
 title: 预期Mixpanel数据
 description: 浏览可从Mixpanel导入到 [!DNL Commerce Intelligence] 帐户中的主数据表。
 exl-id: 87bd337a-63fa-44cf-b1fe-c2f34ca86029
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 | **表名** | **描述** |
 |-----|-----|
 | [`mixpanel\_export`](https://developer.mixpanel.com/reference/raw-data-export-api#datafeed) | 此表包含原始事件数据，包括事件、事件日期和平台存储段。 |
-| [`mixpanel\_funnels`](https://developer.mixpanel.com/reference/raw-data-export-api#funnels-default) | 此表包含有关漏斗的数据，包括漏斗ID、漏斗长度（用户必须完成漏斗的天数）以及漏斗的开始和结束日期。 |
+| [`mixpanel\_funnels`](https://developer.mixpanel.com/reference/raw-data-export-api#funnels-default) | 此表包含有关您的漏斗的数据，包括funnel ID、funnel时长(用户必须完成funnel的天数)以及funnel的开始和结束日期。 |
 | [`mixpanel\_engage`](https://developer.mixpanel.com/reference/raw-data-export-api#engage-default) | 其中包含来自People Analytics的数据，包括会话ID、页面和用户信息以及上次查看用户的日期/时间。 |
 
 {style="table-layout:auto"}

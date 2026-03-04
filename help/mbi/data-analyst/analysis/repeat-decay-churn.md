@@ -2,9 +2,9 @@
 title: 分析重复概率衰减和流失
 description: 了解订单之间的时间流逝情况以及客户预计何时流失。
 exl-id: ea26052d-ac74-43b7-a4a6-977800d4c719
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports, Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 0%

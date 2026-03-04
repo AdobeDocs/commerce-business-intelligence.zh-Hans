@@ -2,9 +2,9 @@
 title: 功能板范围筛选
 description: 了解如何在特定的仪表板上批量编辑所有报告。
 exl-id: 379d0027-8a7a-4062-a66a-4f06c37b806c
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%

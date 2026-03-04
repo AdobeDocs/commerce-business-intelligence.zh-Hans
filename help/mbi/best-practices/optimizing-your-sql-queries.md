@@ -2,9 +2,9 @@
 title: 优化SQL查询
 description: 了解如何优化SQL查询。
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: acc152709c7c66f387f4eded9e6c1c646a83af35
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 0%

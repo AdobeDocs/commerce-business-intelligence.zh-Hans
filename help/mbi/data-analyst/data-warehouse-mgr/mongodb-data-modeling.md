@@ -2,9 +2,9 @@
 title: MongoDB数据建模
 description: 了解如何避免产生问题的数据模式。
 exl-id: 556c854b-5d7c-4f72-8ed7-5bc08d9ee5b9
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 1%

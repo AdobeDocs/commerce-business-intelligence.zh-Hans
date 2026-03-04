@@ -2,9 +2,9 @@
 title: 激活您的 [!DNL Adobe Commerce Intelligence] 帐户
 description: 了解联系谁来激活您的 [!DNL Commerce Intelligence] 帐户。
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 0%

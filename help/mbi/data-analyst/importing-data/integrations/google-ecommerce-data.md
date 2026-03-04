@@ -2,9 +2,9 @@
 title: 需要[!DNL Google ECommerce]数据
 description: 了解与Google E-commerce共享的数据类型。
 exl-id: 8e5d8863-f003-4c38-95c5-660bcbff48da
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 3f16484f189f6b4a8b072d2e3514d2f170993d60
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 0%

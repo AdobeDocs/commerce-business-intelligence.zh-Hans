@@ -2,9 +2,9 @@
 title: enterprise_rma表
 description: 了解如何分析有关特定退货请求的信息。
 exl-id: a19cbc9a-e34f-4f4e-820f-9e413d1a552d
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%

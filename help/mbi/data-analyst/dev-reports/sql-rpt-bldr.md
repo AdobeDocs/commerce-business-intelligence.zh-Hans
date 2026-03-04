@@ -2,9 +2,9 @@
 title: 使用SQL Report Builder
 description: 了解使用SQL Report Builder的详细情况。
 exl-id: 3a485b00-c59d-4bc5-b78b-57e9e92dd9d6
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1397'
 ht-degree: 0%

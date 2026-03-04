@@ -2,9 +2,9 @@
 title: 分析库存水平
 description: 了解如何分析库存水平。
 exl-id: 620156c5-7bea-4b36-84c7-e0cb4b5cc8be
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Dashboards, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 0%

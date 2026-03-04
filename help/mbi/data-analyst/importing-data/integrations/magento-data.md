@@ -2,9 +2,9 @@
 title: 预期Commerce数据
 description: 浏览Commerce用户导入Commerce Intelligence的主要数据表
 exl-id: b481c8fc-41b6-4094-8901-17d57f26bfc0
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 0%

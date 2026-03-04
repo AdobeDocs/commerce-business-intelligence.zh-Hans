@@ -2,9 +2,9 @@
 title: 为计算列创建或删除路径
 description: 了解如何定义一个路径，描述您正在其上创建列的表如何与您正在从中获取信息的表相关。
 exl-id: 734a8046-8058-4f03-93a2-8d59b9be6d2d
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 0%

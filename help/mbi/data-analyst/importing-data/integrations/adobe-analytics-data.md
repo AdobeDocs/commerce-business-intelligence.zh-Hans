@@ -2,9 +2,9 @@
 title: 需要 [!DNL Adobe Analytics] 数据
 description: 了解连接RDS实例的步骤。
 exl-id: 4df66ec1-c7f3-4b02-8f0f-49cada99c14c
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%

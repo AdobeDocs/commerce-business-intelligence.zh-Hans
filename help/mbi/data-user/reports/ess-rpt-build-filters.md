@@ -2,9 +2,9 @@
 title: 过滤器
 description: 了解如何使用过滤器。
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
