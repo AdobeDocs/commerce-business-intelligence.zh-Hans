@@ -4,7 +4,7 @@ description: 了解Commerce Intelligence Essentials与Commerce Intelligence Pro�
 exl-id: 624a6285-8497-43d9-a56d-8ae503e0e2dd
 role: Admin, Developer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+source-git-commit: ba64de148ad5b3fc44591a10531244cfe670a728
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 5%
@@ -47,7 +47,7 @@ ht-degree: 5%
 * `customer\_group`
 * `store`
 
-<!---
+<!--
 ## Columns Included in Essentials
 
 Items in _italics_ are calculated fields.
