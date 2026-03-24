@@ -4,9 +4,29 @@ description: 了解如何访问所有已注册帐户的记录。
 exl-id: 24bf0e66-eea0-45ea-8ce6-4ff99b678201
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/iTzls4nEtW9ep-3s536ZnRCCr2TeMD6AsDecZc3Cdys
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: 610
 ht-degree: 0%
 
 ---
@@ -33,7 +53,7 @@ ht-degree: 0%
 
 | **列名称** | **描述** |
 |---|---|
-| `Customer's first 30 day revenue` | 此客户在第一个订单日期后30天内下达的所有订单的总收入。 通过将`customer_entity.entity_id`加入`sales_order.customer_id`并累加`base_grand_total`≤2592000的所有订单的`sales_order.Seconds between customer's first order date and this order`字段进行计算，即30天内的秒数 |
+| `Customer's first 30 day revenue` | 此客户在第一个订单日期后30天内下达的所有订单的总收入。 通过将`customer_entity.entity_id`加入`sales_order.customer_id`并累加`base_grand_total`2592000的所有订单的`sales_order.Seconds between customer's first order date and this order`字段进行计算，即30天内的秒数 |
 | `Customer's first order date` | 此客户下第一个订单的时间戳。 通过将`customer_entity.entity_id`加入`sales_order.customer_id`并返回最小值`sales_order`进行计算。`created_at`值 |
 | `Customer's first order's billing region` | 与客户第一张订单关联的帐单区域。 通过将`customer_entity.entity_id`加入`sales_order.customer_id`并返回`Billing address region` = 1的`sales_order.Customer's order number`进行计算 |
 | `Customer's first order's coupon_code` | 与客户第一张订单关联的优惠券代码。 通过将`customer_entity.entity_id`加入`sales_order.customer_id`并返回`sales_order.coupon_code` = 1的`sales_order.Customer's order number`进行计算 |
