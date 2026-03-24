@@ -5,10 +5,20 @@ exl-id: 8f0f08fd-710b-4810-9faf-3d0c3cc0a25d
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 TQID: https://experienceleague.adobe.com/AaRzdTdV7-a4ApO-TA5jbyaJ3sr6sqP9HCToKG--uQ0
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 542
@@ -47,18 +57,18 @@ ht-degree: 0%
 * 已选择[!UICONTROL column]： `created_at`
 * [!UICONTROL Filter]： `Orders we count`
 
-* 
+* &#x200B;
   自客户上次订购日期起    秒
   * [!UICONTROL Column type]： -     “同一张表>年龄
 * 已选择[!UICONTROL column]： `Customer's last order date`
 
 * （输入）计数引用
 * [!UICONTROL Column type]： `Same table > Calculation`
-* 
-  [！UICONTROL输入]: `entity_id`
+* &#x200B;
+  [!UICONTROL 输入]: `entity_id`
 * [!UICONTROL Calculation]： `**case when A is null then null else 1 end**`
-* 
-  [！UICONTROL数据类型]: `Integer`
+* &#x200B;
+  [!UICONTROL 数据类型]: `Integer`
 
 * **计数引用**&#x200B;表（这是您上传的编号为“1”的文件）
 * 客户数量
@@ -81,15 +91,15 @@ ht-degree: 0%
 * [!UICONTROL Column type]： `Same table > Calculation`
 * [!UICONTROL Inputs]： `(input) Ranking by customer lifetime revenue`，`Number of customers`
 * [!UICONTROL Calculation]： `case when A is null then null else (B-(A-1)) end`
-* 
-  [！UICONTROL数据类型]: `Integer`
+* &#x200B;
+  [!UICONTROL 数据类型]: `Integer`
 
 * 客户的货币得分（以百分位数为单位）
 * [!UICONTROL Column type]： `Same table > Calculation`
 * [!UICONTROL Inputs]： `(input) Ranking by customer lifetime revenue`，`Number of customers`
 * [!UICONTROL Calculation]： `Case when round((B-A+1)*100/B,0) <= 20 then 5 when round((B-A+1)*100/B,0) <= 40 then 4 when round((B-A+1)*100/B,0) <= 60 then 3 when round((B-A+1)*100/B,0) <= 80 then 2 when round((B-A+1)*100/B,0) <= 100 then 1 else 0 end`
-* 
-  [！UICONTROL数据类型]: `Integer`
+* &#x200B;
+  [!UICONTROL 数据类型]: `Integer`
 
 * （输入）按客户存留期订单数排名
 * [!UICONTROL Column type]： `Same table > Event Number`
@@ -97,8 +107,8 @@ ht-degree: 0%
 * [!UICONTROL Event rank]： `Customer's lifetime number of orders`
 
 * 按客户存留期订单数排名
-* 
-  [！UICONTROL列类型]: – "相同表>计算"
+* &#x200B;
+  [!UICONTROL 列类型]: – "相同表>计算"
 * [!UICONTROL Inputs]： - **（输入）按客户存留期订单数**&#x200B;排名，**客户数**
 * [!UICONTROL Calculation]： - **当A为null时为null，否则(B-(A-1))结束**
 * [!UICONTROL Datatype]： — 整数
@@ -107,8 +117,8 @@ ht-degree: 0%
 * [!UICONTROL Column type]： `Same table > Calculation`
 * [!UICONTROL Inputs]： `(input) Ranking by customer lifetime number of orders`，`Number of customers`
 * [!UICONTROL Calculation]： `Case when round((B-A+1)*100/B,0) <= 20 then 5 when round((B-A+1)*100/B,0) <= 40 then 4 when round((B-A+1)*100/B,0) <= 60 then 3 when round((B-A+1)*100/B,0) <= 80 then 2 when round((B-A+1)*100/B,0) <= 100 then 1 else 0 end`
-* 
-  [！UICONTROL数据类型]: `Integer`
+* &#x200B;
+  [!UICONTROL 数据类型]: `Integer`
 
 * 自客户上次订购日期以来按秒排名
 * [!UICONTROL Column type]： `Same table > Event Number`
@@ -119,15 +129,15 @@ ht-degree: 0%
 * [!UICONTROL Column type]： `Same table > Calculation`
 * [!UICONTROL Inputs]： `(input) Ranking by customer lifetime number of orders`，`Number of customers`
 * [!UICONTROL Calculation]： `Case when (A * 100/B,0) <= 20 then 5 when (A * 100/B,0) <= 40 then 4 when (A * 100/B,0) <= 60 then 3 when (A * 100/B,0) <= 80 then 2 when (A * 100/B,0) <= 100 then 1 else 0 end`
-* 
-  [！UICONTROL数据类型]: `Integer`
+* &#x200B;
+  [!UICONTROL 数据类型]: `Integer`
 
 * 客户的回访间隔分数（按百分位数）
 * [!UICONTROL Column type]： `Same table > Calculation`
 * [!UICONTROL Inputs]： `Customer's recency score (by percentiles)`，`Customer's frequency score (by percentiles)`，`Customer's monetary score (by percentiles)`
 * [!UICONTROL Calculation]： `case when (A IS NULL or B IS NULL or C IS NULL) then null else concat(A,B,C) end`
-* 
-  [！UICONTROL数据类型]: String
+* &#x200B;
+  [!UICONTROL 数据类型]: String
 
 * **引用计数**&#x200B;表
 * [!UICONTROL Number of customers]： `(RFM > 0)`
@@ -146,8 +156,8 @@ ht-degree: 0%
 * [!UICONTROL Column type]： `Same table > Calculation`
 * [!UICONTROL Inputs]： - `Customer's recency score (by percentiles)`，`Customer's frequency score (by percentiles)`，`Customer's monetary score (by percentiles)`
 * [!UICONTROL Calculation]： `case when (A IS NULL or B IS NULL or C IS NULL) then null else A+B+C end`
-* 
-  [！UICONTROL数据类型]: `Integer`
+* &#x200B;
+  [!UICONTROL 数据类型]: `Integer`
 
 * （输入）按客户的整体RFM得分排名
 * [!UICONTROL Column type]： `Same table > Event Number`
@@ -159,15 +169,15 @@ ht-degree: 0%
 * [!UICONTROL Column type]： `Same table > Calculation`
 * [!UICONTROL Inputs]： `(input) Ranking by customer's overall RFM score`，`Number of customers (RFM > 0)`
 * [!UICONTROL Calculation]： `case when A is null then null else (B-(A-1)) end`
-* 
-  [！UICONTROL数据类型]: `Integer`
+* &#x200B;
+  [!UICONTROL 数据类型]: `Integer`
 
 * 客户的RFM组
 * [!UICONTROL Column type]： `Same table > Calculation`
 * [!UICONTROL Inputs]： `(input) Ranking by customer lifetime revenue`，`Number of customers`
 * [!UICONTROL Calculation]： `Case when round(A * 100/B,0) <= 20 then '5. copper' when round(A * 100/B,0) <= 40 then '4. bronze' when round(A * 100/B,0) <= 60 then '3. silver' when round(A * 100/B,0)<= 80 then '2. gold' else '1. Platinum' end`
-* 
-  [！UICONTROL数据类型]: `Integer`
+* &#x200B;
+  [!UICONTROL 数据类型]: `Integer`
 
 >[!NOTE]
 >
@@ -189,13 +199,13 @@ ht-degree: 0%
 * [!UICONTROL Filter]： `Customer's RFM score (by percentiles) Not Equal to 000`
 
 * [!UICONTROL Time period]： `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * 隐藏图表
 * [!UICONTROL Group by]： `Customer's RFM group`
-* 
-  [！UICONTROL分组依据]: `Email`
-* 
+* &#x200B;
+  [!UICONTROL 分组依据]: `Email`
+* &#x200B;
   [!UICONTROL Chart type]: `Table`
 
 * **有五个回访间隔分数的客户**
@@ -204,15 +214,15 @@ ht-degree: 0%
 * [!UICONTROL Filter]： `Customer's recency score (by percentiles) Equal to 5`
 
 * [!UICONTROL Time period]： `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Scalar`
 * 隐藏图表
-* 
-  [！UICONTROL分组依据]: `Email`
+* &#x200B;
+  [!UICONTROL 分组依据]: `Email`
 * [!UICONTROL Group by]： `Customer's RFM score (R+F+M)`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Table`
 
 * **具有一个回访间隔分数的客户**
@@ -221,15 +231,15 @@ ht-degree: 0%
 * [!UICONTROL Filter]： `Customer's recency score (by percentiles) Equal to 1`
 
 * [!UICONTROL Time period]： `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Scalar`
 * 隐藏图表
-* 
-  [！UICONTROL分组依据]: `Email`
+* &#x200B;
+  [!UICONTROL 分组依据]: `Email`
 * [!UICONTROL Group by]： `Customer's RFM score (R+F+M)`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Table`
 
 在编译所有报告后，您可以根据需要将报告组织在功能板上。 结果可能类似于上面的示例仪表板，但生成的三个表只是您可以执行的客户分段类型的示例。

@@ -5,11 +5,19 @@ exl-id: 2b57d5b3-3bbf-4ec9-86a6-9fa850c1c459
 role: Admin, User
 feature: Reports, Data Integration
 TQID: https://experienceleague.adobe.com/HcoHrBbXXjQGsd80DA06Dwq2dDmhUiuRbRLj-QONlw4
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 756
@@ -25,7 +33,7 @@ ht-degree: 0%
 
 ## 先决条件
 
-**导入您的广告成本数据** — 将[!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md)连接到[!DNL Adobe Commerce Intelligence] — 这会自动同步您在Commerce Intelligence中的[!DNL AdWords]支出。
+**导入您的广告成本数据** — 将[[!DNL [Google AdWords]]](../importing-data/integrations/google-adwords.md)连接到[!DNL Adobe Commerce Intelligence] — 这会自动同步您在Commerce Intelligence中的[!DNL AdWords]支出。
 
 **跟踪用户获取渠道数据** — 若要将[!DNL Google AdWords]数据与数据库中的特定订单绑定，必须[通过](../analysis/google-track-user-acq.md)跟踪用户获取[!DNL Google Analytics E-commerce]。 这样，您就可以将每个订单与utm源和媒介连接。
 

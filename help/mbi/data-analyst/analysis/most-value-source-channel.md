@@ -5,10 +5,19 @@ exl-id: 8d25bc80-ea60-47db-b01b-04a23a24c14d
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports
 TQID: https://experienceleague.adobe.com/aV7qVf-LREVyXEtR2EMJqRSTo-rvfzLIwuulccXrqzE
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 974
@@ -20,7 +29,7 @@ ht-degree: 0%
 
 你调查了你的受众，你创建了你的营销活动，你投资了几个营销渠道。 一段时间已经过去了，这些渠道的效果如何？ 哪个渠道引入的新用户最多？ 哪个来源对您的总收入贡献最大？
 
-使用[!DNL Adobe Commerce Intelligence]，您可以按反向链接来源轻松对您的收入和用户进行分段，无论该来源是对应于[!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en)还是自定义数据字段。 此分段允许您找到表现最佳的渠道并更好地投入营销预算。
+使用[!DNL Adobe Commerce Intelligence]，您可以按反向链接来源轻松对您的收入和用户进行分段，无论该来源是对应于[[!DNL [Google Analytics' UTM fields]]](https://support.google.com/analytics/answer/1191184?hl=en)还是自定义数据字段。 此分段允许您找到表现最佳的渠道并更好地投入营销预算。
 
 本主题探究了可用于揭示您最有价值的营销渠道的一些报表：
 

@@ -5,11 +5,24 @@ exl-id: b6142ef2-2be8-401f-ac35-f86fc68d204e
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/2X87aaT7tJ-Rn6TK7g084p5OB-iML0vPaJlRUYAIesQ
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 392
@@ -83,7 +96,7 @@ ht-degree: 0%
 
 * **`[!DNL Zendesk] user's`**&#x200B;表
    * `User is agent? (Yes/No) `
-   * 
+   * &#x200B;
       * `Column type` - `Same Table > Calculation`
 
       * `Input columns` - `role`，`email`
@@ -167,19 +180,19 @@ ht-degree: 0%
 * `Ticket's latest solved date`
 * `First agent response date`
 * `Seconds to resolution`
-   * 
+   * &#x200B;
       * `Column type` - `Same Table > Date Difference`
 
       * `Ticket's latest solved date`减去`created_at`
 
 * **`Seconds to first response`**
-   * 
+   * &#x200B;
       * `Column type` - `Same Table > Date Difference`
 
       * `First agent response date`减去`created_at`
 
 * **`Requester's ticket number`**
-   * 
+   * &#x200B;
       * `Column type` - `Same Table > Event Number`
 
       * `Event Owner` - `requester_id`
@@ -187,7 +200,7 @@ ht-degree: 0%
       * `Event Rank` - `created_at`
 
 * **`Ticket created_at (hour of day)`**
-   * 
+   * &#x200B;
       * `Column type` — “相同表>计算”
 
       * `Input columns` - `created_at`
@@ -197,7 +210,7 @@ ht-degree: 0%
       * `Datatype` — 整数
 
 * **`Ticket created_at (day of week)`**
-   * 
+   * &#x200B;
       * `Column type` — “相同表>计算”
 
       * `Input columns` - `created_at`
@@ -210,8 +223,8 @@ ht-degree: 0%
    * 选择定义： `Count`
    * [!UICONTROL Create Path]：
    * [!UICONTROL Many]： `[!DNL Zendesk] tickets.email`
-   * 
-     [！UICONTROL One]: `customer_entity.email`
+   * &#x200B;
+     [!UICONTROL One]: `customer_entity.email`
 
    * 选择[!UICONTROL table]： `[!DNL Zendesk] tickets`
    * [!UICONTROL Path]： `[!DNL Zendesk] tickets.email = customer_entity.email`
@@ -220,7 +233,7 @@ ht-degree: 0%
 
 * **`User's lifetime number of support tickets requested`**
 * **`Has user filed a support ticket? (Yes/No)`**
-   * 
+   * &#x200B;
       * `Column type` — “相同表>计算”
 
       * `Input columns` - `User's lifetime number of support tickets requested`
@@ -407,8 +420,8 @@ ht-degree: 0%
 * `Chart Type`： `Column`
 
 * **[!UICONTROL Number of new users who have and have not filed tickets]**
-   * 
-     [！UICONTROL量度]: Users
+   * &#x200B;
+     [!UICONTROL 量度]: Users
 
 * 量度`A`： `New users`
 * `Time period`： `All time`

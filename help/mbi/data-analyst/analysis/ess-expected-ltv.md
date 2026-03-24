@@ -5,10 +5,19 @@ exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
 role: Admin, User
 feature: Data Warehouse Manager, Reports
 TQID: https://experienceleague.adobe.com/bGbpknj6UfM8k995EnptIRfwZsvYTNo8-kzF9HrALQk
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 338
@@ -58,8 +67,8 @@ ht-degree: 0%
 * **[!UICONTROL Average LTV (all)]**
    * [!UICONTROL Metric]： `Avg lifetime revenue`
    * [!UICONTROL Time period]： `All time`
-   * 
-     [！UICONTROL间隔]: `None`
+   * &#x200B;
+     [!UICONTROL 间隔]: `None`
    * [!UICONTROL Chart Type]： `Number (scalar)`
 
 * **[!UICONTROL Average LTV (customers / non-guest checkout)]**
@@ -69,8 +78,8 @@ ht-degree: 0%
          * [`B`] `Customer's lifetime number of orders` **大于**`0`
 
    * [!UICONTROL Time period]： `All time`
-   * 
-     [！UICONTROL间隔]: `None`
+   * &#x200B;
+     [!UICONTROL 间隔]: `None`
    * [!UICONTROL Chart Type]： `Number (scalar)`
 
 * **[!UICONTROL Average and Median LTV]**
@@ -78,19 +87,19 @@ ht-degree: 0%
    * 量度`2`： `Median lifetime revenue`
    * [!UICONTROL Time period]： `All time`
    * [!UICONTROL Interval]： `By Month`
-   * 
-     [！UICONTROL图表类型]: `Line`
+   * &#x200B;
+     [!UICONTROL 图表类型]: `Line`
    * 取消选中`Multiple Y-Axes`
 
 * 按生命周期订单数&#x200B;**LTV**
    * 量度`1`： `Avg lifetime revenue`
    * 量度`2`： `New customers`
    * [!UICONTROL Time period]： `All time`
-   * 
-     [！UICONTROL间隔]: `None`
+   * &#x200B;
+     [!UICONTROL 间隔]: `None`
    * [!UICONTROL Group by]： `Customer's lifetime number of orders`
-   * 
-     [！UICONTROL图表类型]: `Line`
+   * &#x200B;
+     [!UICONTROL 图表类型]: `Line`
 
   >[!NOTE]
   >

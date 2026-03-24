@@ -5,9 +5,16 @@ exl-id: 48b8a3d3-f1ac-4d3f-8f65-db1245c9ae0a
 role: Admin, Developer, User
 feature: Reports
 TQID: https://experienceleague.adobe.com/DIg4HPkxaY4eCXZvTS8j4eO8C-d-yqPgBkrvFD5L0ms
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 760
@@ -73,4 +80,4 @@ ht-degree: 0%
 * [了解您最有价值的客户获取来源和渠道](../analysis/most-value-source-channel.md)
 * [连接你的 [!DNL Google Adwords] 帐户](../importing-data/integrations/google-adwords.md)
 * [提高广告促销活动的ROI](../analysis/roi-ad-camp.md)
-* [ [!DNL Google Analytics]中UTM标记的五个最佳实践](../../best-practices/utm-tagging-google.md)
+* [&#x200B; [!DNL Google Analytics]中UTM标记的五个最佳实践](../../best-practices/utm-tagging-google.md)

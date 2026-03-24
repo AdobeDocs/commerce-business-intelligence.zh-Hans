@@ -5,11 +5,22 @@ exl-id: 6242019f-a6a5-48d3-b214-94acd7842e00
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports, Dashboards
 TQID: https://experienceleague.adobe.com/kayq-ci-AiHHgNoaX09h6dqKQX14MudLvEqFmos3hQE
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 472
@@ -64,7 +75,7 @@ ht-degree: 0%
 * 客户的收入百分位数
 * [!UICONTROL Column type]： - `Same table > Calculation`
 * [!UICONTROL Inputs]： - `(input) Ranking by customer lifetime revenue`，`Number of customers`
-* [!UICONTROL Calculation]： - **当A为null时为null，否则为null (A/B)* 100 end **
+* [!UICONTROL Calculation]： - **当A为null时为null，否则为null (A/B)* 100 end &#x200B;**
 * [!UICONTROL Datatype]： - `Decimal`
 
 * `Sales_flat_order`表
@@ -82,7 +93,7 @@ ht-degree: 0%
 * 客户的收入百分位数
 * [!UICONTROL Column type]： - `Same table > Calculation`
 * [!UICONTROL Inputs]： - `(input) Ranking by customer lifetime revenue`，`Number of customers`
-* [!UICONTROL Calculation]： - **当A为null时为null，否则为null (A/B)* 100 end **
+* [!UICONTROL Calculation]： - **当A为null时为null，否则为null (A/B)* 100 end &#x200B;**
 * [!UICONTROL Datatype]： - `Decimal`
 
 >[!NOTE]
@@ -106,16 +117,16 @@ ht-degree: 0%
 * [!UICONTROL Metric]： `Total customer lifetime value`
 * [!UICONTROL Filter]： `Customer's revenue percentile IS NOT NULL`
 
-* 
-  [！UICONTROL分组依据]: `Independent`
+* &#x200B;
+  [!UICONTROL 分组依据]: `Independent`
 * 量度`A`： `Total customer lifetime revenue by percentile`
 * 量度`B`： `Total customer lifetime revenue (ungrouped)`
 * [!UICONTROL Time period]： `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]： `Customer's revenue percentile`
 * 显示顶端/底端： `100% of Customer's revenue percentile Name`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Line`
 
 * **前10%浓度**
@@ -123,12 +134,12 @@ ht-degree: 0%
 
 * 量度`A`： `Total customer lifetime revenue`
 * [!UICONTROL Time period]： `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * 隐藏图表
-* 
-  [！UICONTROL分组依据]: `Email`
-* 
+* &#x200B;
+  [!UICONTROL 分组依据]: `Email`
+* &#x200B;
   [!UICONTROL Chart type]: `Table`
 
 * **仅购买一次的前50%的集中度**
@@ -139,12 +150,12 @@ ht-degree: 0%
 * [!UICONTROL Filter]：
 
 * [!UICONTROL Time period]： `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * 隐藏图表
-* 
-  [！UICONTROL分组依据]: `Email`
-* 
+* &#x200B;
+  [!UICONTROL 分组依据]: `Email`
+* &#x200B;
   [!UICONTROL Chart type]: `Table`
 
 * **最低的10%浓度**
@@ -152,12 +163,12 @@ ht-degree: 0%
 
 * 量度`A`： `Total customer lifetime revenue`
 * [!UICONTROL Time period]： `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * 隐藏图表
-* 
-  [！UICONTROL分组依据]: `Email`
-* 
+* &#x200B;
+  [!UICONTROL 分组依据]: `Email`
+* &#x200B;
   [!UICONTROL Chart type]: `Table`
 
 在编译所有报告后，您可以根据需要将报告组织在功能板上。 结果可能类似于上面的示例仪表板。

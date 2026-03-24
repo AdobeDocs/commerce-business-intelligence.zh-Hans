@@ -5,10 +5,17 @@ exl-id: 57b1bc45-b139-4370-86ea-2fbd021aa14d
 role: Admin, User
 feature: Reports, Dashboards
 TQID: https://experienceleague.adobe.com/-j-LqjbuqLjdmDWNGxAERaDJNMapTMn7uDar1HsshSc
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 432
@@ -55,4 +62,4 @@ ht-degree: 0%
 * [了解您最有价值的客户获取来源和渠道](../analysis/most-value-source-channel.md)
 * [连接你的 [!DNL Google Adwords] 帐户](../importing-data/integrations/google-adwords.md)
 * [提高广告促销活动的ROI](../analysis/roi-ad-camp.md)
-* [ [!DNL Google Analytics] UTM归因如何工作？](../analysis/utm-attributes.md)
+* [&#x200B; [!DNL Google Analytics] UTM归因如何工作？](../analysis/utm-attributes.md)
