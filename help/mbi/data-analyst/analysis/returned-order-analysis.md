@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ![显示退货率和原因的详细退货仪表板](../../assets/detailed-returns-dboard.png)
 
-在开始之前，您必须是[Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html)客户，并且应确保您的公司正在使用`enterprise\_rma`表进行退货。
+在开始之前，您必须是[Adobe Commerce](https://business.adobe.com/cn/products/magento/magento-commerce.html)客户，并且应确保您的公司正在使用`enterprise\_rma`表进行退货。
 
 此分析包含[高级计算列](../data-warehouse-mgr/adv-calc-columns.md)。
 
@@ -257,4 +257,4 @@ ht-degree: 0%
 
 在编译所有报告后，您可以根据需要将报告组织在功能板上。 结果可能类似于上面的示例仪表板。
 
-如果您在构建此分析时遇到任何问题，或者希望与专业服务团队接洽，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+如果您在构建此分析时遇到任何问题，或者希望与专业服务团队接洽，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
