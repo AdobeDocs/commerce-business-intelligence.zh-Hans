@@ -4,9 +4,14 @@ description: 了解如何管理Commerce Intelligence用户。
 exl-id: 2a5eeabb-3c13-4ca1-b845-ed255b389c9f
 role: Admin, User
 feature: User Management
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+TQID: https://experienceleague.adobe.com/T3ZdoQW35n6CAJmDlOlfDVSI1eUA--e4RKZbOMF1BWY
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: 406
 ht-degree: 0%
 
 ---
@@ -50,7 +55,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->_您可以限制&#x200B;**[!UICONTROL Standard]**&#x200B;用户访问特定量度[的](../../administrator/user-management/restrict-metric-access.md)权限。_
+>_您可以限制&#x200B;**[!UICONTROL Standard]**用户访问特定量度[的](../../administrator/user-management/restrict-metric-access.md)权限。_
 >
 >**[!UICONTROL Standard] _用户可以使用额外的权限设置访问帐单。_
 >

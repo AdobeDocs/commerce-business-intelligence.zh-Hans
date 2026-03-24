@@ -4,16 +4,22 @@ description: 了解如何使用和改进 [!DNL Commerce Intelligence] 环境。
 exl-id: 601b5fba-da02-4cc8-96ed-147c24f326f9
 role: Admin, Developer, User
 feature: Data Warehouse Manager
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/g40BP4Qu-bGgWRDbxWR9BVDY6MzGb5PNIQPdY3ZEFVs
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: 749
 ht-degree: 0%
 
 ---
 
 # 您的[!DNL Adobe Commerce Intelligence]环境
 
-在分析商业数据时，请注意这些因素和常见的误解。 如果需要有关确保正确使用Commerce架构的帮助，请立即[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+在分析商业数据时，请注意这些因素和常见的误解。 如果需要有关确保正确使用Commerce架构的帮助，请立即[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ## [!DNL entity\_id]
 

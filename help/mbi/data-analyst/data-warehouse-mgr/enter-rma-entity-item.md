@@ -4,16 +4,22 @@ description: 了解如何分析请求返回中有关特定项目的信息。
 exl-id: aa71cb3f-3e0b-4b6b-b4cc-dad103f79c51
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/jBMtEluq3XNIzItebuvDQ43PAuW6mAsyG7RkHn8URJ4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: 269
 ht-degree: 0%
 
 ---
 
 # enterprise_rma_item_entity表
 
-`enterprise_rma_item_entity`表(在Commerce 2.x中通常称为`magento_rma_item_entity`，但可以自定义名称)中的每一行都包含有关所请求返回的特定项的信息。
+`enterprise_rma_item_entity`表（在Commerce 2.x中通常称为`magento_rma_item_entity`，但可以自定义名称）中的每一行都包含有关所请求返回的特定项的信息。
 
 >[!NOTE]
 >

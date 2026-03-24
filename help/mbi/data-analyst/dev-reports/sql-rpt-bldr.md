@@ -4,9 +4,15 @@ description: 了解使用SQL Report Builder的详细情况。
 exl-id: 3a485b00-c59d-4bc5-b78b-57e9e92dd9d6
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/AH2H26Tjo9EXQdXg3fckTOgVkSbA6yqPJdVuO1Yzw2A
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c32adafa-ed01-4b31-997e-2413013911b0
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: 1397
 ht-degree: 0%
 
 ---
@@ -17,13 +23,13 @@ ht-degree: 0%
 >
 >需要[管理员权限](../../administrator/user-management/user-management.md)才能创建和编辑SQL图表。 `Standard`用户可以在功能板上重新排列这些图表，并且`Read-only`用户具有与传统图表相同的体验。 此外，`Read-only`用户无权访问查询的文本。
 
-请观看[培训视频](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=zh-Hans)以了解更多信息。
+请观看[培训视频](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html)以了解更多信息。
 
 [!DNL SQL]或结构化查询语言是一种用于与数据库通信的编程语言。 在[!DNL Commerce Intelligence]中，[!DNL SQL]用于从Data Warehouse中查询或检索数据。 查看仪表板上的报告 — 幕后，每个报告都由[!DNL SQL]查询提供支持。
 
 您可以使用[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md)直接查询您的Data Warehouse、查看结果并将其转换为图表。 您可以通过单击[!DNL SQL Report Builder]开始使用&#x200B;**[!UICONTROL Report Builder** > **[!DNL SQL Report Builder]]**&#x200B;创建报告。
 
-请观看[培训视频](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=zh-Hans)以了解更多信息。
+请观看[培训视频](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html)以了解更多信息。
 
 [!DNL SQL Report Builder]允许您直接查询Data Warehouse、查看结果并快速将其转换为图表。 使用[!DNL SQL]生成报告的最好部分是您不需要等待更新周期来迭代您创建的列。 如果结果不正确，您可以快速编辑并重新运行查询，直到符合您的预期为止。
 
@@ -133,7 +139,7 @@ ht-degree: 0%
 
 大多数情况下，结果的差异可归因于更新周期。 如果[!DNL Commerce Intelligence]正在将数据从数据库复制到Data Warehouse，则即使使用相同的查询，您也可能会看到不同的结果。
 
-连接问题也会导致不一致。 通过单击`Connections`导航到&#x200B;**[!DNL Manage Data** > **Connections]**&#x200B;页面以将其签出 — 相关数据库集成是否存在错误？ 如果出现这种情况，您可能需要[重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)才能使集成重新运行。
+连接问题也会导致不一致。 通过单击`Connections`导航到&#x200B;**[!DNL Manage Data** > **Connections]**&#x200B;页面以将其签出 — 相关数据库集成是否存在错误？ 如果出现这种情况，您可能需要[重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)才能使集成重新运行。
 
 如果所有集成都连接成功，并且您未处于更新周期中，则可能有其他错误。
 

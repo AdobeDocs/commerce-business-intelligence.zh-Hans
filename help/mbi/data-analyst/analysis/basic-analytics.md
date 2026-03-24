@@ -4,9 +4,15 @@ description: 了解如何了解和构建基础分析。
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Dashboards, Data Integration
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/5AOJMiHxtu-nt3cWP-lF5g4Zufa2MuZr7xA8pX3OgB8
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '3130'
+source-wordcount: 3130
 ht-degree: 0%
 
 ---
@@ -46,7 +52,7 @@ ht-degree: 0%
 
 **您接受来宾订单吗？**
 
-*如果是，此表可能不包含您的所有客户。 请联系[支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)以确保您的客户分析包括所有客户。*
+*如果是，此表可能不包含您的所有客户。 请联系[支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)以确保您的客户分析包括所有客户。*
 
 *不确定您是否接受来宾订单？ 请参阅[此主题](../data-warehouse-mgr/guest-orders.md)以了解详情！*
 
@@ -60,7 +66,7 @@ ht-degree: 0%
 * **[!UICONTROL Created_at]**：创建或下订单的日期。
 * **[!UICONTROL Customer_email]**：下订单的客户的电子邮件地址。 这也可能是客户的唯一标识符。
 * **[!UICONTROL Customer's lifetime number of orders]**： `Customers`表中同名列的副本。
-* **[!UICONTROL Customer's order number]**：与订单关联的客户连续订单号。 例如，如果您正在查看的行是客户的第一张订单，则此列为“1”；但是，如果这是客户的第十五张订单，则此列显示此订单的“15”。 如果`Customers`表上不存在此维度，请联系[支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)来帮助您构建它。
+* **[!UICONTROL Customer's order number]**：与订单关联的客户连续订单号。 例如，如果您正在查看的行是客户的第一张订单，则此列为“1”；但是，如果这是客户的第十五张订单，则此列显示此订单的“15”。 如果`Customers`表上不存在此维度，请联系[支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)来帮助您构建它。
 * **[!UICONTROL Customer's order number (previous-current)]**： **[!UICONTROL Customer's order number]**&#x200B;列中两个值的连接。 它用在下面的示例报表中，以显示任意两张订单之间经过的时间。 例如，客户第一次订购日期与第二次订购日期之间的时间在此计算中表示为“1-2”。
 * **[!UICONTROL Coupon_code]**：显示每个订单使用了哪些优惠券。
 * **[!UICONTROL Seconds since previous order]**：客户订单之间的时间（以秒为单位）。
@@ -88,7 +94,7 @@ ht-degree: 0%
 
 ## 营销支出表
 
-在分析营销支出时，您可以在分析中包含[!DNL Facebook]、[!DNL Google AdWords]或其他来源。 如果您有多个营销支出来源，请联系[Managed Services团队](https://business.adobe.com/cn/products/magento/fully-managed-service.html)，以获取有关为您的营销活动设置合并表的帮助。
+在分析营销支出时，您可以在分析中包含[!DNL Facebook]、[!DNL Google AdWords]或其他来源。 如果您有多个营销支出来源，请联系[Managed Services团队](https://business.adobe.com/products/magento/fully-managed-service.html)，以获取有关为您的营销活动设置合并表的帮助。
 
 **维度**
 

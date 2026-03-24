@@ -4,9 +4,15 @@ description: 了解迁移至新架构的好处。
 exl-id: cbb10673-5704-4a90-9574-5ac114f389b9
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Import/Export
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/EtbKFT7OKaTZQ55XNz0NwpxQNSXyazk47dGwKhETNjM
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: 390
 ht-degree: 0%
 
 ---
@@ -45,7 +51,7 @@ ht-degree: 0%
 
 ### 获取帮助
 
-[!DNL Adobe Commerce Intelligence] [服务团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)可以执行重新实施，但需支付额外费用。 请联系您的[Adobe客户团队](../../guide-overview.md#Submitting-a-Support-Ticket)，并准备好提供您希望在新帐户中优先创建的功能板/报告列表
+[!DNL Adobe Commerce Intelligence] [服务团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)可以执行重新实施，但需支付额外费用。 请联系您的[Adobe客户团队](../../guide-overview.md#Submitting-a-Support-Ticket)，并准备好提供您希望在新帐户中优先创建的功能板/报告列表
 
 ### 保持现有体系结构
 

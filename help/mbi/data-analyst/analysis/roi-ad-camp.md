@@ -4,9 +4,15 @@ description: 了解评估营销活动性能的几种不同方法。
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Campaigns
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+TQID: https://experienceleague.adobe.com/teo53W9N30xpRRE1nUupBLKJnl1kUK4zt-roFGiulGU
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: 1253
 ht-degree: 0%
 
 ---
@@ -99,7 +105,7 @@ ht-degree: 0%
 >
 >此示例假设所有促销活动成本都专门用于生成特定产品的购买。 假设所有成本都花费在生成购买上，则生成的ROI将考虑最坏的情况（每次购买的最高成本）。 您可以确保实际ROI高于此计算。 示例：假设您在一个产生10个新用户和10次购买的营销活动上花费$20，则每次购买的实际成本为$1。 假设所有成本都花在了获取新用户上，则每次购买的成本为2美元。
 
-开始之前，[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)以将以下维度联接到行项目表(`sales\_flat\_order\_item, order\_item`)：
+开始之前，[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)以将以下维度联接到行项目表(`sales\_flat\_order\_item, order\_item`)：
 
 * 订单的来源（如果您仅在用户级别跟踪反向链接来源，则加入用户的来源）
 * 订单的促销活动（如果您仅在用户级别跟踪反向链接来源，则加入用户的促销活动）
@@ -136,5 +142,5 @@ ht-degree: 0%
 * [跟踪数据库中的用户设备、浏览器和操作系统数据](../analysis/track-usr-dev-browser.md)
 * [了解您最有价值的客户获取来源和渠道](../analysis/most-value-source-channel.md)
 * [连接你的 [!DNL Google Adwords] 帐户](../importing-data/integrations/google-adwords.md)
-* [&#x200B; [!DNL Google Analytics] UTM归因如何工作？](../analysis/utm-attributes.md)
-* [&#x200B; [!DNL Google Analytics]中UTM标记的五个最佳实践](../../best-practices/utm-tagging-google.md)
+* [ [!DNL Google Analytics] UTM归因如何工作？](../analysis/utm-attributes.md)
+* [ [!DNL Google Analytics]中UTM标记的五个最佳实践](../../best-practices/utm-tagging-google.md)

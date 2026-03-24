@@ -4,9 +4,15 @@ description: 了解连接RDS实例的步骤。
 exl-id: 4df66ec1-c7f3-4b02-8f0f-49cada99c14c
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/vA-1cABpxQNwI8xTF4Elkgv2geudkp5tnBH1l6-PZiY
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: 400
 ht-degree: 0%
 
 ---
@@ -48,6 +54,6 @@ ht-degree: 0%
 | 限制 | 描述 |
 | --- | --- |
 | `Historical data period` | 与其他第三方集成一样，[!DNL Adobe Analytics]集成提取有限数量的历史数据，然后继续保持数据更新。 历史时段配置为2周。 |
-| `Empty component combinations` | 某些量度和维度组合不包含数据。 如果选择了此类组合进行复制，[!DNL Commerce Intelligence]会从复制表中排除该列。 要避免选择此类组合，您可以首先在[[!DNL Adobe Analytics] Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans)中创建报告，以验证您是否获得了预期的数据。 |
+| `Empty component combinations` | 某些量度和维度组合不包含数据。 如果选择了此类组合进行复制，[!DNL Commerce Intelligence]会从复制表中排除该列。 要避免选择此类组合，您可以首先在[[!DNL Adobe Analytics] Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html)中创建报告，以验证您是否获得了预期的数据。 |
 | `Re-authorization cadence` | 每两周需要重新授权[!DNL Adobe Analytics]集成。 要重新授权，请转到集成的“编辑”页面并单击&#x200B;**[!UICONTROL Re-Authorize with [!DNL Adobe Analytics]]**。 |
 | `One dimension per row` | [!DNL Adobe Analytics]一次为一个维度提供量度数据。 如果在设置期间选择多个维度，则[!DNL Commerce Intelligence]表中的每一行都包含一个维度值，并且每个维度都为null。 |

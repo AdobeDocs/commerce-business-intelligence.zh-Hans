@@ -5,13 +5,18 @@ breadcrumb-title: 指南概述
 seo-title: Commerce Intelligence User Guide
 seo-description: Describes how to use Adobe Commerce Intelligence features used to gain insights from Adobe Commerce or Magento Open Source data, along with other third-party data sources.
 exl-id: f62c7a98-1b4c-4abb-9692-50ce0f3ee1fb
-source-git-commit: bb836eaa0407057ad34bc13f1a74d34acbc6cc67
+TQID: https://experienceleague.adobe.com/VOTO62g3Z13NyaT1T-QK98eHc9EVuIBt7OsW8ssEaNI
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: 424
 ht-degree: 2%
 
 ---
-
 
 # [!DNL Adobe Commerce Intelligence]用户指南
 
@@ -39,23 +44,23 @@ ht-degree: 2%
 
 ## 如何获取帮助
 
-如果您有问题并想利用某些专业服务，或者您的帐户遇到问题，请联系[支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+如果您有问题并想利用某些专业服务，或者您的帐户遇到问题，请联系[支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ### 服务策略
 
-查看客户支持团队提供的服务的[列表](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+查看客户支持团队提供的服务的[列表](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ### 提交支持票证
 
-需要有关构建高级计算列的帮助吗？ 遇到缺陷或连接问题？ 如果需要联系支持团队，Adobe会要求您使用[支持票证准则](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。 这些指南概述了Adobe解决该问题所需的信息。
+需要有关构建高级计算列的帮助吗？ 遇到缺陷或连接问题？ 如果需要联系支持团队，Adobe会要求您使用[支持票证准则](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。 这些指南概述了Adobe解决该问题所需的信息。
 
 ## 可用文档
 
 | 文档资源 | 描述 |
 |----------------------- | ----------- |
-| [Adobe Commerce 2.4商家文档](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/user-guides/home) | Adobe Commerce和Magento Open Source的以商家为中心的文档 |
-| [Adobe Commerce服务文档](https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/home) | 支持服务集合的文档，可帮助商家将其业务的关键组件与商店集成。 |
-| [Adobe Commerce 2.4操作指南](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/operational-guides/home) | 有关用于开发、部署和维护在Adobe Commerce和Magento Open Source平台上部署的项目所涉及的概念、流程、工具和最佳实践的系统文档。 |
+| [Adobe Commerce 2.4商家文档](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) | Adobe Commerce和Magento Open Source的以商家为中心的文档 |
+| [Adobe Commerce服务文档](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) | 支持服务集合的文档，可帮助商家将其业务的关键组件与商店集成。 |
+| [Adobe Commerce 2.4操作指南](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home) | 有关用于开发、部署和维护在Adobe Commerce和Magento Open Source平台上部署的项目所涉及的概念、流程、工具和最佳实践的系统文档。 |
 | [Adobe Commerce 2.4开发人员文档](https://developer.adobe.com/commerce/) | 用于构建和自定义Adobe Commerce或Magento Open Source的以开发人员为中心的文档 |
 
 {{$include /help/_includes/templated/whats-new.md}}

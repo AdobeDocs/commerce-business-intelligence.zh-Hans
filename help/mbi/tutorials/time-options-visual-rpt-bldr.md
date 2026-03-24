@@ -4,9 +4,15 @@ description: 了解如何分析报告中特定时间段的数据。
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/efTZeMr5AuiCzREc1J-3SdoZk39wJfzTyYyG-5wQwss
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: 1329
 ht-degree: 0%
 
 ---
@@ -66,7 +72,7 @@ ht-degree: 0%
 
 ## 比较不同时间范围内的相同量度 {#difftimerange}
 
-此示例使用名为`Day number of the month`的自定义维度。 如果要创建此报表，但您的Data Warehouse中还没有此维度，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)寻求帮助。
+此示例使用名为`Day number of the month`的自定义维度。 如果要创建此报表，但您的Data Warehouse中还没有此维度，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)寻求帮助。
 
 此类别中最常见的两个示例是(1)比较增长指标（年收入或月收入）和(2)更好地了解最近的库存或物料销售趋势。
 

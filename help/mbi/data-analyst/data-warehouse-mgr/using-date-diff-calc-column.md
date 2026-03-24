@@ -4,9 +4,15 @@ description: 了解日期差异计算列的用途和用法。
 exl-id: 6ecab794-3466-4b3a-a929-3e56287522aa
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/5SElfBoU6vqCNthFdj96eCNH26dC54ucjqknnhQXQy8
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: 272
 ht-degree: 0%
 
 ---
@@ -46,7 +52,7 @@ ht-degree: 0%
    * 选择`Starting DATETIME`列** >选择开始日期时间字段，该字段通常是较早发生的事件
 
 1. 为列提供一个名称，然后单击&#x200B;**[!UICONTROL Save]**。
-1. 该列可立即使用&#x200B;*1&rbrace;。*
+1. 该列可立即使用&#x200B;*1}。*
 
 例如，以下示例配置为计算`Seconds between order date and customer's creation date`：
 

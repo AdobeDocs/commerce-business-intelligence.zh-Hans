@@ -4,9 +4,15 @@ description: 了解数据库和SQL编辑器之间的结果。
 exl-id: f31f3eef-791a-4984-901e-bc10554031bd
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/pScH-yKW8hbSNZzsJ537CN7rxhcuygaLmCu3fdVaYgk
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: 257
 ht-degree: 0%
 
 ---
@@ -31,4 +37,4 @@ ht-degree: 0%
 为了检查来自&#x200B;*特定表*&#x200B;的数据的刷新情况，Adobe建议创建一个快速的[[!DNL SQL] 报告](../../dev-reports/sql-rpt-bldr.md)，对您帐户上最重要的表执行`MAX(timestamp)`。 将此时间戳与`Last Data Point`进行比较可指示该问题影响整个帐户还是表的子集。 Adobe建议对三到四个常用重要表执行此操作。
 
 - 如果`MAX(timestamp)`值比`Last Data Point Received`更新，则意味着表的子集受到影响，但整个帐户的更新周期是稳定的。
-- 如果`MAX(timestamp)`值等于或早于`Last Data Point Received`，则意味着帐户的更新周期受到影响。 在这种情况下，[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+- 如果`MAX(timestamp)`值等于或早于`Last Data Point Received`，则意味着帐户的更新周期受到影响。 在这种情况下，[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
