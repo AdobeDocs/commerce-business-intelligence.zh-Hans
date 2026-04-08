@@ -19,7 +19,7 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: ad4dda927f0b1b2eba9596d7adfd1419676cf03d
 workflow-type: tm+mt
 source-wordcount: 267
 ht-degree: 0%
@@ -38,11 +38,11 @@ ht-degree: 0%
 
 | **列名称** | **描述** |
 |---|---|
-| `entity\_id` | 表的唯一标识符。 每个`entity\_id`表示一个返回请求。 |
-| `date\_requested` | 请求返回的日期。 |
+| `entity_id` | 表的唯一标识符。 每个`entity_id`表示一个返回请求。 |
+| `date_requested` | 请求返回的日期。 |
 | `status` | 返回的状态。 值包括“received”、“pending”、“authorized”等。 |
-| `order\_id` | 与`sales\_flat\_order`表关联的外键。 |
-| `customer\_id` | 与`customer\_entity`表关联的外键。 |
+| `order_id` | 与`sales_flat_order`表关联的外键。 |
+| `customer_id` | 与`customer_entity`表关联的外键。 |
 
 {style="table-layout:auto"}
 
@@ -50,9 +50,9 @@ ht-degree: 0%
 
 | **列名称** | **描述** |
 |---|---|
-| `Order's created\_at` | 这是原始订单的日期。 这可用于获取订单与退货请求之间的间隔时间。 |
+| `Order's created_at` | 这是原始订单的日期。 这可用于获取订单与退货请求之间的间隔时间。 |
 | `Customer's order number` | 这是与原始订单关联的客户订单编号。 |
-| `Seconds between order's created\_at and return's date\_requested` | 从订单日期到退货请求的秒数。 |
+| `Seconds between order's created_at and return's date_requested` | 从订单日期到退货请求的秒数。 |
 | `Return's total value` | 这是返回的总货币金额。 这是每个退货项目的单独退货金额的总和。 |
 
 {style="table-layout:auto"}
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 | **量度名称** | **描述** | **构造** |
 |---|---|---|
-| `Number of returns` | 请求的返回次数。 | `Operation`列：`entity id`<br>`Operation`：`Count`<br>`Timestamp`列：`date requested` |
+| `Number of returns` | 请求的返回次数。 | `Operation`列：`entity_id`<br>`Operation`：`Count`<br>`Timestamp`列：`date requested` |
 | `Total returned amount` | 返回的货币总金额。 | `Operation `列：`Return's total value`<br>`Operation`： Sum<br>`Timestamp`列：请求的日期 |
 | `Average returned amount` | 平均退货货币金额。 | `Operation` ` Column: Return's total value`<br>`Operation`： `Average`<br>`Timestamp`列： `date requested` |
 | `Average time to return` | 从订单到退货的平均时间。 | `Operation`列：订单创建日期与请求返回日期之间的秒数<br>`Operation`： `Average`<br>`Timestamp`列： `date requested` |

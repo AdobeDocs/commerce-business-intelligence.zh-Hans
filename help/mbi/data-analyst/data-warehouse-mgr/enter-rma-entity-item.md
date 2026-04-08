@@ -19,7 +19,7 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 08a466710b782238003c6bdb8cefacd07134291c
 workflow-type: tm+mt
 source-wordcount: 269
 ht-degree: 0%
@@ -38,14 +38,14 @@ ht-degree: 0%
 
 | **列名称** | **描述** |
 |---|---|
-| `entity\_id` | 表的唯一标识符。 每个`entity\_id`表示已请求返回的项。 |
-| `rma\_entity\_id` | 与`enterprise\_rma`表关联的外键。 |
+| `entity_id` | 表的唯一标识符。 每个`entity_id`表示已请求返回的项。 |
+| `rma_entity_id` | 与`enterprise_rma`表关联的外键。 |
 | `status` | 项目返回的状态。 值包括“received”、“pending”、“authorized”等。 此状态的值可能与总体返回状态的值不匹配。 |
-| `qty\_requested` | 客户请求的退货数量。 |
-| `qty\_approved` | 批准退货的数量。 |
-| `qty\_returned` | 退回的数量。 |
-| `order\_item\_id` | 与`sales\_flat\_order\_item`表关联的外键。 |
-| `product\_sku` | 返回的SKU。 |
+| `qty_requested` | 客户请求的退货数量。 |
+| `qty_approved` | 批准退货的数量。 |
+| `qty_returned` | 退回的数量。 |
+| `order_item_id` | 与`sales_flat_order_item`表关联的外键。 |
+| `product_sku` | 返回的SKU。 |
 
 {style="table-layout:auto"}
 
@@ -53,9 +53,9 @@ ht-degree: 0%
 
 | **列名称** | **描述** |
 |---|---|
-| `Return date\_requested` | 这是客户请求退货的日期。 |
+| `Return date_requested` | 这是客户请求退货的日期。 |
 | `Item price` | 项目的价格。 |
-| `Return item's total value (qty\_returned * price)` | 这是返回的项目的货币总值。 用于计算`enterprise\_rma`表上的总退货金额。 |
+| `Return item's total value (qty_returned * price)` | 这是返回的项目的货币总值。 用于计算`enterprise_rma`表上的总退货金额。 |
 
 {style="table-layout:auto"}
 
@@ -72,7 +72,7 @@ ht-degree: 0%
 
 `enterprise_rma`
 
-* 通过以下联接在`Return date\_requested`表上创建联接列（如`enterprise_rma_item_entity`）：
+* 通过以下联接在`Return date_requested`表上创建联接列（如`enterprise_rma_item_entity`）：
 * Commerce 1.x： `enterprise_rma_item_entity.rma_entity_id ` （多个） => `enterprise_rma.entity_id` （一个）
 * Commerce 2.x： `magento_rma_item_entity.rma_entity_id ` （多个）=> `magento_rma.entity_id` （一个）
 
