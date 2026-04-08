@@ -5,21 +5,12 @@ exl-id: aa71cb3f-3e0b-4b6b-b4cc-dad103f79c51
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 TQID: https://experienceleague.adobe.com/jBMtEluq3XNIzItebuvDQ43PAuW6mAsyG7RkHn8URJ4
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 08a466710b782238003c6bdb8cefacd07134291c
 workflow-type: tm+mt
 source-wordcount: 269
 ht-degree: 0%
@@ -38,14 +29,14 @@ ht-degree: 0%
 
 | **列名称** | **描述** |
 |---|---|
-| `entity\_id` | 表的唯一标识符。 每个`entity\_id`表示已请求返回的项。 |
-| `rma\_entity\_id` | 与`enterprise\_rma`表关联的外键。 |
+| `entity_id` | 表的唯一标识符。 每个`entity_id`表示已请求返回的项。 |
+| `rma_entity_id` | 与`enterprise_rma`表关联的外键。 |
 | `status` | 项目返回的状态。 值包括“received”、“pending”、“authorized”等。 此状态的值可能与总体返回状态的值不匹配。 |
-| `qty\_requested` | 客户请求的退货数量。 |
-| `qty\_approved` | 批准退货的数量。 |
-| `qty\_returned` | 退回的数量。 |
-| `order\_item\_id` | 与`sales\_flat\_order\_item`表关联的外键。 |
-| `product\_sku` | 返回的SKU。 |
+| `qty_requested` | 客户请求的退货数量。 |
+| `qty_approved` | 批准退货的数量。 |
+| `qty_returned` | 退回的数量。 |
+| `order_item_id` | 与`sales_flat_order_item`表关联的外键。 |
+| `product_sku` | 返回的SKU。 |
 
 {style="table-layout:auto"}
 
@@ -53,9 +44,9 @@ ht-degree: 0%
 
 | **列名称** | **描述** |
 |---|---|
-| `Return date\_requested` | 这是客户请求退货的日期。 |
+| `Return date_requested` | 这是客户请求退货的日期。 |
 | `Item price` | 项目的价格。 |
-| `Return item's total value (qty\_returned * price)` | 这是返回的项目的货币总值。 用于计算`enterprise\_rma`表上的总退货金额。 |
+| `Return item's total value (qty_returned * price)` | 这是返回的项目的货币总值。 用于计算`enterprise_rma`表上的总退货金额。 |
 
 {style="table-layout:auto"}
 
@@ -72,7 +63,7 @@ ht-degree: 0%
 
 `enterprise_rma`
 
-* 通过以下联接在`Return date\_requested`表上创建联接列（如`enterprise_rma_item_entity`）：
+* 通过以下联接在`Return date_requested`表上创建联接列（如`enterprise_rma_item_entity`）：
 * Commerce 1.x： `enterprise_rma_item_entity.rma_entity_id ` （多个） => `enterprise_rma.entity_id` （一个）
 * Commerce 2.x： `magento_rma_item_entity.rma_entity_id ` （多个）=> `magento_rma.entity_id` （一个）
 
