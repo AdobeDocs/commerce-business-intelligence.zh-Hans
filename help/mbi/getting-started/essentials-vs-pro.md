@@ -22,7 +22,7 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: b6ae8fb1a1a7f30e3d56740986f9366e7d1e7f1a
+source-git-commit: 44cbb31e240df013303e5cadeb601c550fa91547
 workflow-type: tm+mt
 source-wordcount: 77
 ht-degree: 5%
@@ -58,11 +58,11 @@ ht-degree: 5%
 
 **包含的表**
 
-* `sales\_order`
-* `sales\_order\_item`
-* `sales\_order\_address`
-* `customer\_entity`
-* `customer\_group`
+* `sales_order`
+* `sales_order_item`
+* `sales_order_address`
+* `customer_entity`
+* `customer_group`
 * `store`
 
 <!--
