@@ -1,21 +1,22 @@
 ---
 solution: Commerce, Commerce Intelligence
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: cc9c1b69-d771-4a04-84d3-df2e3989418f
 landing-page-name: commerce
 landing-page-breadcrumb-title: Commerce
 product: magento
 type: Documentation
 audience: end-user
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/commerce-business-intelligence.zh-Hans
+git-repo: https://github.com/AdobeDocs/commerce-business-intelligence.en
 role: User
 feature-set: Commerce Intelligence
 level: Beginner, Intermediate
 topic: Commerce
 index: true
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"
-source-git-commit: 75aa9f4212e48280c6e1cc96fca3b7f1d203c444
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+source-git-commit: 121bfdb4e07eadaac09f6fda74f4fd4f582180c9
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: 173
 ht-degree: 0%
 
 ---
