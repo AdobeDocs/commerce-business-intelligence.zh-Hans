@@ -1,6 +1,8 @@
 ---
 solution: Commerce, Commerce Intelligence
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
 usetq: true
 landing-page-name: commerce
 landing-page-breadcrumb-title: Commerce
