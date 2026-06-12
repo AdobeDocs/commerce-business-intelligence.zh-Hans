@@ -20,16 +20,16 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 400
+source-wordcount: 414
 ht-degree: 0%
 
 ---
 
 # 通过VPN连接数据库
 
-虽然Adobe建议您使用`SSH tunnel`连接数据库，但也可以使用加密的`VPN`连接来确保安全。 `VPN`可用于您的任何数据库集成，为了简化操作，该过程与设置`SSH tunnel`的过程大致相同：
+虽然Adobe建议您使用`SSH tunnel`连接数据库，但也可以使用加密的`VPN`连接来确保安全。 有关SSH通道连接的SSH主机密钥注册、错误和疑难解答，请参阅[SSH主机密钥验证](ssh-host-key-verification.md)。 `VPN`可用于您的任何数据库集成，为了简化操作，该过程与设置`SSH tunnel`的过程大致相同：
 
 1. [创建 [!DNL Commerce Intelligence] 数据库用户](#database)
 1. [创建 [!DNL Commerce Intelligence] VPN用户](#vpn)
@@ -47,7 +47,7 @@ ht-degree: 0%
 * [MySQL](../integrations/mysql-via-a-direct-connection.md)
 * [PostgreSQL](../integrations/postgresql.md)
 
-## 正在为`VPN`创建[!DNL Commerce Intelligence]用户 {#vpn}
+## 正在为[!DNL Commerce Intelligence]创建`VPN`用户 {#vpn}
 
 如前所述，任何有效的`VPN`用户均可工作 — 但Adobe建议仅创建供[!DNL Commerce Intelligence]使用的用户。
 
@@ -66,10 +66,10 @@ ht-degree: 0%
 * `Username`： [!DNL Commerce Intelligence]数据库用户的用户名
 * `Password`： [!DNL Commerce Intelligence]数据库用户的密码
 * `Port`：您服务器上的数据库端口。 默认为：
-   * `MicrosoftSQL`： `1433`
-   * `MongoDB`： `27017`
-   * `MySQL`： `3306`
-   * `PostgreSQL`： `5432`
+   * `MicrosoftSQL`: `1433`
+   * `MongoDB`: `27017`
+   * `MySQL`: `3306`
+   * `PostgreSQL`: `5432`
 * `Host`：默认情况下，这是localhost `127.0.0.1`，但它也可以是服务器的公共IP地址或局域网地址。
 * `Database Name (optional)`：如果只允许访问一个数据库（在数据库用户创建步骤中指定），请在此处输入该数据库的名称。
 

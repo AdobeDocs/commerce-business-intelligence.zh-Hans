@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 661
+source-wordcount: 686
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 ![MBI_Allow_Access_IPs.png](../../../assets/MBI_allow_access_IPs.png)
 
-## 正在为`Linux`创建[!DNL Commerce Intelligence]用户 {#linux}
+## 正在为[!DNL Commerce Intelligence]创建`Linux`用户 {#linux}
 
 >[!IMPORTANT]
 >
@@ -145,7 +145,7 @@ ht-degree: 0%
 
 在此页面中输入以下信息，从`Database Connection`部分开始：
 
-* `Host`： `127.0.0.1`
+* `Host`: `127.0.0.1`
 * `Username`： [!DNL Commerce Intelligence] [!DNL MongoDB]用户名（应为`rjmetric`）
 * `Password`： [!DNL Commerce Intelligence] [!DNL MongoDB]密码
 * `Port`：您的服务器上的MongoDB端口（默认为`27017`）
@@ -157,8 +157,13 @@ ht-degree: 0%
 * `Username`： [!DNL Commerce Intelligence] Linux (SSH)用户名（应为rjmetric）
 * `SSH Port`：服务器上的SSH端口（默认为22）
 
-完成后，单击&#x200B;**[!UICONTROL Save Test]**&#x200B;以完成设置。
+完成后，单击&#x200B;**[!UICONTROL Save & Test]**&#x200B;以完成设置。
 
-### 相关
+>[!NOTE]
+>
+>有关SSH主机密钥注册、刷新、错误消息和疑难解答，请参阅[SSH主机密钥验证](ssh-host-key-verification.md)。
 
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+## 相关 {#related}
+
+* [SSH主机密钥验证](ssh-host-key-verification.md)
+* [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)

@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 100
+source-wordcount: 110
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 想要了解您的业务表现或寻找您最有价值的客户获取来源和渠道？ 将您的[!DNL Adobe Commerce]数据连接到[!DNL Commerce Intelligence]允许您回答这些问题等。
 
-由于[!DNL Adobe Commerce]数据库基于MySQL，您可以通过[!DNL Commerce Intelligence]直接连接[、](../integrations/mysql-via-a-direct-connection.md)或[[!DNL cPanel]](../integrations/mysql-via-cpanel.md)通过SSH通道[将其连接到](../integrations/mysql-via-ssh-tunnel.md)。 推荐使用SSH方法，因为它是最安全的。
+由于[!DNL Adobe Commerce]数据库基于MySQL，您可以通过[直接连接](../integrations/mysql-via-a-direct-connection.md)、[[!DNL cPanel]](../integrations/mysql-via-cpanel.md)或[通过SSH通道](../integrations/mysql-via-ssh-tunnel.md)将其连接到[!DNL Commerce Intelligence]。 推荐使用SSH方法，因为它是最安全的。 有关SSH主机密钥验证，请参阅[SSH主机密钥验证](../integrations/ssh-host-key-verification.md)。
 
 ## 相关信息
 
