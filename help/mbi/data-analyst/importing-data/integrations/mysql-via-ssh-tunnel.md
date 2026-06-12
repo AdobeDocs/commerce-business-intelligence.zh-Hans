@@ -5,46 +5,37 @@ exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
 TQID: https://experienceleague.adobe.com/WhcwNz65oubtSKnVGeoHfbEVbPvo1fq-RvpAcP96NEc
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 615
+source-wordcount: 642
 ht-degree: 0%
 
 ---
 
-# 通过[!DNL MySQL]连接[!DNL SSH Tunnel]
+# 通过[!DNL SSH Tunnel]连接[!DNL MySQL]
 
 * [检索 [!DNL Commerce Intelligence] 公钥](#retrieve)
 * [允许访问 [!DNL Commerce Intelligence] IP地址](#allowlist)
 * [为 [!DNL Commerce Intelligence]创建Linux用户](#linux)
-* [为 [!DNL MySQL] 创建 [!DNL Commerce Intelligence]用户](#mysql)
+* [为 [!DNL Commerce Intelligence]创建 [!DNL MySQL] 用户](#mysql)
 * [在 [!DNL Commerce Intelligence]中输入连接和用户信息](#finish)
 
 ## 跳转到
 
-* [[!DNL MySQL]通过 &#x200B;](../integrations/mysql-via-a-direct-connection.md)
+* [[!DNL MySQL]通过`direct connection`](../integrations/mysql-via-a-direct-connection.md)
 * [[!DNL MySQL]通过 [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
-要通过[!DNL MySQL]将您的[!DNL Commerce Intelligence]数据库连接到`SSH tunnel`，您必须执行以下操作：
+要通过`SSH tunnel`将您的[!DNL MySQL]数据库连接到[!DNL Commerce Intelligence]，您必须执行以下操作：
 
 1. 检索[!DNL Commerce Intelligence] `public key`
 1. 允许访问[!DNL Commerce Intelligence] `IP address`
-1. 为`Linux`创建一个[!DNL Commerce Intelligence]用户
-1. 为`MySQL`创建一个[!DNL Commerce Intelligence]用户
+1. 为[!DNL Commerce Intelligence]创建一个`Linux`用户
+1. 为[!DNL Commerce Intelligence]创建一个`MySQL`用户
 1. 在[!DNL Commerce Intelligence]中输入连接和用户信息
 
 
@@ -67,7 +58,7 @@ ht-degree: 0%
 
 要使连接成功，必须将防火墙配置为允许从IP地址访问。 它们是`54.88.76.97`和`34.250.211.151`，但它们也在`MySQL credentials`页面上。 请参阅上面GIF中的蓝色方框。
 
-## 正在为[!DNL Linux]创建[!DNL Commerce Intelligence]用户 {#linux}
+## 正在为[!DNL Commerce Intelligence]创建[!DNL Linux]用户 {#linux}
 
 这可以是生产或辅助计算机，只要它包含实时（或经常更新）数据。 您可以按照您喜欢的方式[限制此用户](../../../administrator/account-management/restrict-db-access.md)，只要它保留连接到`MySQL`服务器的权利即可。
 
@@ -100,7 +91,7 @@ ht-degree: 0%
 >
 >如果与服务器关联的`sshd\_config`文件未设置为默认选项，则只有某些用户具有服务器访问权限 — 这会阻止成功连接到[!DNL Commerce Intelligence]。 在这些情况下，需要运行诸如`AllowUsers`之类的命令以允许`rjmetric`用户访问服务器。
 
-## 正在为[!DNL MySQL]创建[!DNL Commerce Intelligence]用户 {#mysql}
+## 正在为[!DNL Commerce Intelligence]创建[!DNL MySQL]用户 {#mysql}
 
 您的组织可能需要不同的流程，但创建此用户的最简单方法是在以有权授予权限的用户身份登录[!DNL MySQL]时执行以下查询：
 
@@ -133,6 +124,11 @@ ht-degree: 0%
 
 完成后，单击&#x200B;**[!UICONTROL Save & Test]**&#x200B;以完成设置。
 
-## 相关：
+>[!NOTE]
+>
+>有关SSH主机密钥注册、刷新、错误消息和疑难解答，请参阅[SSH主机密钥验证](ssh-host-key-verification.md)。
 
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+## 相关 {#related}
+
+* [SSH主机密钥验证](ssh-host-key-verification.md)
+* [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

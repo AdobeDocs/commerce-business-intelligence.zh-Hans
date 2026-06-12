@@ -5,27 +5,14 @@ exl-id: 02ad29c8-84d6-4b49-9ac1-e5f4feaa7fda
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/KAjnETtFvi9EHUDY8SJ-TSEhP3zooQel5ZlN-E3QxIg
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c32adafa-ed01-4b31-997e-2413013911b0id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 503
+source-wordcount: 516
 ht-degree: 0%
 
 ---
@@ -38,7 +25,7 @@ ht-degree: 0%
 * [[!DNL Microsoft SQL]](../integrations/microsoft-sql-server.md)
 * [[!DNL PostgreSQL]](../integrations/postgresql.md)
 
-根据您使用的数据库类型以及您是否使用加密连接（如[!DNL RDS]），连接[`SSH tunnel for MySQL`](../integrations/mysql-via-ssh-tunnel.md)实例的步骤有所不同，但以下是基础知识。
+根据您使用的数据库类型以及您是否使用加密连接（如[`SSH tunnel for MySQL`](../integrations/mysql-via-ssh-tunnel.md)），连接[!DNL RDS]实例的步骤有所不同，但以下是基础知识。
 
 ## 授权[!DNL Commerce Intelligence]访问您的数据库
 
@@ -50,11 +37,11 @@ ht-degree: 0%
 
 添加[!DNL Commerce Intelligence] IP地址时，请确保将`/32`添加到地址的末尾，以指示[!DNL Amazon]它是精确的IP地址。 不用担心，AWS界面会明确说明这是必需的。
 
-## 为`Linux`创建一个[!DNL Commerce Intelligence]用户 {#linux}
+## 为[!DNL Commerce Intelligence]创建一个`Linux`用户 {#linux}
 
 >[!NOTE]
 >
->仅当使用加密连接时，才需要执行此步骤。 有关如何执行此操作的说明，请参阅正在使用的数据库的设置主题（例如：MySQL）。 `Linux`用户允许我们创建`SSH tunnel`，这是通过Internet发送数据的最安全方法。
+>仅当使用加密连接时，才需要执行此步骤。 有关如何执行此操作的说明，请参阅正在使用的数据库的设置主题（例如：MySQL）。 `Linux`用户允许我们创建`SSH tunnel`，这是通过Internet发送数据的最安全方法。 有关SSH主机密钥注册、错误和疑难解答，请参阅[SSH主机密钥验证](ssh-host-key-verification.md)。
 
 ## 为[!DNL Commerce Intelligence]创建数据库用户
 
@@ -64,7 +51,7 @@ ht-degree: 0%
 
 在您授予实例的[!DNL Commerce Intelligence]访问权限并为我们创建用户后，您最后需要做的就是在[!DNL Commerce Intelligence]中输入连接信息。
 
-通过单击`MySQL`，可通过`Microsoft SQL`页面(`PostgreSQL`)访问`Integrations`、**[!UICONTROL Manage Data** > **Integrations]**&#x200B;和&#x200B;**[!UICONTROL Add Integration]**&#x200B;的凭据页面。 显示集成列表后，单击要用于转至身份证明页的数据库的图标。 如果您当前无权访问所需的集成，请联系您的Adobe客户团队。
+通过单击&#x200B;**[!UICONTROL Add Integration]**，可通过`Integrations`页面(**[!UICONTROL Manage Data** > **Integrations]**)访问`MySQL`、`Microsoft SQL`和`PostgreSQL`的凭据页面。 显示集成列表后，单击要用于转至身份证明页的数据库的图标。 如果您当前无权访问所需的集成，请联系您的Adobe客户团队。
 
 要完成连接创建，您需要以下信息：
 

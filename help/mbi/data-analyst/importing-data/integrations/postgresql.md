@@ -5,35 +5,26 @@ exl-id: da610988-21c1-4f5f-b4e2-e2deb175a2aa
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
 TQID: https://experienceleague.adobe.com/IsDW3nNBF840BAd4zIhCDmHvFAFJv-1oQmrJw5MKh0Q
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 541
+source-wordcount: 566
 ht-degree: 0%
 
 ---
 
-# 通过[!DNL PostgreSQL]连接[!DNL SSH Tunnel]
+# 通过[!DNL SSH Tunnel]连接[!DNL PostgreSQL]
 
-要通过[!DNL PostgreSQL]将您的[!DNL Commerce Intelligence]数据库连接到`SSH tunnel`，您必须执行以下操作：
+要通过`SSH tunnel`将您的[!DNL PostgreSQL]数据库连接到[!DNL Commerce Intelligence]，您必须执行以下操作：
 
 1. [检索 [!DNL Commerce Intelligence] 公钥](#retrieve)
 1. [允许访问 [!DNL Commerce Intelligence] IP地址](#allowlist)
-1. [为 [!DNL Linux] 创建 [!DNL Commerce Intelligence]用户](#linux)
-1. [为 [!DNL PostgreSQL] 创建 [!DNL Commerce Intelligence]用户](#postgres)
+1. [为 [!DNL Commerce Intelligence]创建 [!DNL Linux] 用户](#linux)
+1. [为 [!DNL Commerce Intelligence]创建 [!DNL PostgreSQL] 用户](#postgres)
 1. [在 [!DNL Commerce Intelligence]中输入连接和用户信息](#finish)
 
 ## 正在检索[!DNL Commerce Intelligence] [!DNL public key] {#retrieve}
@@ -55,7 +46,7 @@ ht-degree: 0%
 
 要使连接成功，必须将防火墙配置为允许从IP地址访问。 它是`54.88.76.97/32`，但它也位于`PostgreSQL`凭据页面上。 请参阅上面GIF中的蓝色方框。
 
-## 正在为[!DNL Linux]创建[!DNL Commerce Intelligence]用户 {#linux}
+## 正在为[!DNL Commerce Intelligence]创建[!DNL Linux]用户 {#linux}
 
 这可以是生产或辅助计算机，只要它包含实时（或经常更新）数据。 您可以按照您喜欢的方式[限制此用户](../../../administrator/account-management/restrict-db-access.md)，只要它保留连接到[!DNL PostgreSQL]服务器的权利即可。
 
@@ -108,7 +99,7 @@ ht-degree: 0%
 * `Username`： RJMetrics Postgres用户名（应为rjmetric）
 * `Password`： RJMetrics Postgres密码
 * `Port`：您服务器上的PostgreSQL端口（默认为5432）
-* `Host`： 127.0.0.1
+* `Host`: 127.0.0.1
 
 在`SSH Connection`下：
 
@@ -116,8 +107,13 @@ ht-degree: 0%
 * `Username`：您的SSH登录名（应为rjmetric）
 * `SSH Port`：服务器上的SSH端口（默认为22）
 
-完成后，单击&#x200B;**保存并测试**&#x200B;以完成设置。
+完成后，单击&#x200B;**[!UICONTROL Save & Test]**&#x200B;以完成设置。
 
-### 相关
+>[!NOTE]
+>
+>有关SSH主机密钥注册、刷新、错误消息和疑难解答，请参阅[SSH主机密钥验证](ssh-host-key-verification.md)。
 
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+## 相关 {#related}
+
+* [SSH主机密钥验证](ssh-host-key-verification.md)
+* [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -5,26 +5,14 @@ exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
 TQID: https://experienceleague.adobe.com/V34xz5uwqrCn716FqG5byQ6wnLwkZUccBXgJMqiSdR4
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: b6ae8fb1a1a7f30e3d56740986f9366e7d1e7f1a
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 732
+source-wordcount: 761
 ht-degree: 0%
 
 ---
@@ -41,7 +29,7 @@ ht-degree: 0%
 
 创建帐户后，请查看您的电子邮件中是否有来自[!DNL The Magento BI Team@rjmetrics.com]的帐户通知电子邮件。 使用电子邮件中提供的链接访问您的[!DNL Commerce Intelligence]帐户并创建密码。 转到您的收件箱并验证您的电子邮件地址。
 
-如果未收到电子邮件，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+如果未收到电子邮件，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ![为新的Commerce Intelligence帐户创建密码屏幕](../assets/create-account-4.png)
 
@@ -57,7 +45,7 @@ ht-degree: 0%
 
 ![添加具有电子邮件地址和权限级别字段的用户表单](../assets/create-account-5.png)
 
-## 在[!DNL Commerce Intelligence]管理员中创建专用[!DNL Commerce]用户
+## 在[!DNL Commerce]管理员中创建专用[!DNL Commerce Intelligence]用户
 
 要使用[!DNL Commerce Intelligence]，您必须向[!DNL Commerce]项目添加永久和专用用户。 此专用用户充当与[!DNL Commerce]的永久连接，允许提取新数据并将其传输到帐户的[!DNL Commerce Intelligence] Data Warehouse。
 
@@ -74,7 +62,7 @@ ht-degree: 0%
 
 ## 获取Commerce Intelligence SSH密钥
 
-1. 在[!UICONTROL Connect your database]设置的[!DNL Commerce Intelligence]页面上，向下滚动并选择&#x200B;**[!UICONTROL Encryption settings]**。
+1. 在[!DNL Commerce Intelligence]设置的[!UICONTROL Connect your database]页面上，向下滚动并选择&#x200B;**[!UICONTROL Encryption settings]**。
 
 1. 对于&#x200B;**加密类型**，请选择`SSH Tunnel`。
 
@@ -122,9 +110,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe强烈建议您使用[`SSH tunnel`](../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md)隧道建立数据库连接。 但是，如果此方法不是选项，您仍然可以使用[!DNL Commerce Intelligence]将[`direct connection`](../data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md)链接到数据库。
+>Adobe强烈建议您使用[`SSH tunnel`](../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md)隧道建立数据库连接。 有关SSH主机密钥注册、错误和疑难解答，请参阅[SSH主机密钥验证](../data-analyst/importing-data/integrations/ssh-host-key-verification.md)。 但是，如果此方法不是选项，您仍然可以使用[`direct connection`](../data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md)将[!DNL Commerce Intelligence]链接到数据库。
 
-在[!DNL Commerce Intelligence]屏幕中输入您的[!UICONTROL Connect your Magento Database]信息。
+在[!UICONTROL Connect your Magento Database]屏幕中输入您的[!DNL Commerce Intelligence]信息。
 
 ![将您的数据库表单与集成名称、主机、端口、用户名、密码和数据库名称的字段连接起来](../assets/connect-magento-db.png)
 
@@ -136,7 +124,7 @@ ht-degree: 0%
 
 [!UICONTROL Port]: `3306`
 
-[!UICONTROL 用户名]: `mbi`
+[！UICONTROL用户名]: `mbi`
 
 [!UICONTROL Password]：在上一部分中显示了[输入密码]
 
@@ -166,7 +154,7 @@ ht-degree: 0%
 
 **输入：**
 
-[!UICONTROL Encryption Type]： `SSH Tunnel`
+[!UICONTROL Encryption Type]: `SSH Tunnel`
 
 [!UICONTROL Remote Address]： `ssh.us-3.magento.cloud` [来自上一步]
 
@@ -189,7 +177,7 @@ ht-degree: 0%
 <!--
 # Activate your [!DNL Commerce Intelligence] Account
 
-To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans).
+To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 >[!NOTE]
 >

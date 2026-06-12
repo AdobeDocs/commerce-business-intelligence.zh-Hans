@@ -5,23 +5,14 @@ exl-id: 53765844-c9bb-4a16-b00c-ce9672f87415
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/HkKVLKV9RpLIWN-YY5GggdnlHeBB2Xg9odAbSZklHGE
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 376
+source-wordcount: 399
 ht-degree: 0%
 
 ---
@@ -31,17 +22,18 @@ ht-degree: 0%
 ## 在本主题中
 
 * [允许访问 [!DNL Commerce Intelligence] IP地址](#allowlist)
-* [为 [!DNL MySQL] 创建 [!DNL Commerce Intelligence]用户](#steptwo)
+* [为 [!DNL Commerce Intelligence]创建 [!DNL MySQL] 用户](#steptwo)
 * [在 [!DNL Commerce Intelligence]中输入连接信息](#stepthree)
 
 ## 跳转到
 
-* [[!DNL MySQL]通过 &#x200B;](../integrations/mysql-via-ssh-tunnel.md)
+* [[!DNL MySQL]通过`SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md)
+* [SSH主机密钥验证](../integrations/ssh-host-key-verification.md)
 * [[!DNL MySQL]通过 [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
 >[!NOTE]
 >
->[!DNL Adobe]建议您使用[SSH](../integrations/mysql-via-ssh-tunnel.md)或其他某种加密形式来保护您的数据！ 如果此选项不可用，则仍可以使用本主题中的说明直接将[!DNL Commerce Intelligence]连接到数据库。
+>[!DNL Adobe]建议您使用[SSH](../integrations/mysql-via-ssh-tunnel.md)或其他某种加密形式来保护您的数据！ 有关SSH主机密钥验证，请参阅[SSH主机密钥验证](../integrations/ssh-host-key-verification.md)。 如果此选项不可用，则仍可以使用本主题中的说明直接将[!DNL Commerce Intelligence]连接到数据库。
 
 本主题将指导您直接将[!DNL MySQL]数据库连接到[!DNL Commerce Intelligence]。 这些设置也可以与[!DNL Adobe Commerce]或使用MySQL的任何其他电子商务数据库一起使用。
 
@@ -51,9 +43,9 @@ ht-degree: 0%
 
 ![MBI_Allow_Access_IPs.png](../../../assets/MBI_allow_access_IPs.png)
 
-## 为[!DNL MySQL]创建一个[!DNL Commerce Intelligence]用户
+## 为[!DNL Commerce Intelligence]创建一个[!DNL MySQL]用户
 
-为`MySQL`创建[!DNL Commerce Intelligence]用户的最简单方法是在登录具有`MySQL`权限的`GRANT`时执行以下查询。 将`Commerce Intelligence IP Address`替换为[!DNL Commerce Intelligence] IP地址，并将`secure password`替换为您选择的安全密码：
+为[!DNL Commerce Intelligence]创建`MySQL`用户的最简单方法是在登录具有`GRANT`权限的`MySQL`时执行以下查询。 将`Commerce Intelligence IP Address`替换为[!DNL Commerce Intelligence] IP地址，并将`secure password`替换为您选择的安全密码：
 
 ```sql
     GRANT SELECT ON *.* TO 'magentobi'@'<Commerce Intelligence IP address>' IDENTIFIED BY '<secure password>';
@@ -81,4 +73,4 @@ ht-degree: 0%
 
 ## 相关文档
 
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
