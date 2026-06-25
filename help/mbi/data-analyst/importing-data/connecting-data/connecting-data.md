@@ -5,25 +5,12 @@ exl-id: 94beba8b-6a86-4af9-87fb-96b1cf8f8fa2
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
 TQID: https://experienceleague.adobe.com/WwUCbK9dC39RSVL8Nf0PdL10wAdxje-9deR20JScqj0
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c32adafa-ed01-4b31-997e-2413013911b0id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
 workflow-type: tm+mt
 source-wordcount: 628
 ht-degree: 0%
@@ -89,10 +76,11 @@ ht-degree: 0%
 * [合并表](../../../best-practices/consolidating-your-tables.md)
 * [限制对数据库的访问](../../../administrator/account-management/restrict-db-access.md)
 
-**没有看到您想要的集成？** 必须激活某些集成，才会在您的帐户中显示。 如果您要查找诸如[!DNL Facebook]之类的内容，但该内容未列出，请[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+**没有看到您想要的集成？** 必须激活某些集成，才会在您的帐户中显示。 如果您要查找诸如[!DNL Facebook]之类的内容，但该内容未列出，请[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 **如果看到集成**&#x200B;的错误状态，请查看[疑难解答部分](https://support.magento.com/hc/en-us/sections/360003078151)以获取帮助。
 
 ## 监测更新运行状况（可选）
 
 连接源后，您可能需要自动执行基本运行状况检查，以确认完整更新正在完成。 使用开发人员文档中的[更新周期状态API](https://developer.adobe.com/commerce/services/reporting/update-cycle-status-api/)获取客户端最近完成的更新周期，并将其显示在内部功能板或警报中。
+
