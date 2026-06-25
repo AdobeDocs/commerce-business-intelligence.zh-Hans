@@ -23,7 +23,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
+source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
 workflow-type: tm+mt
 source-wordcount: 628
 ht-degree: 0%
@@ -96,3 +96,4 @@ ht-degree: 0%
 ## 监测更新运行状况（可选）
 
 连接源后，您可能需要自动执行基本运行状况检查，以确认完整更新正在完成。 使用开发人员文档中的[更新周期状态API](https://developer.adobe.com/commerce/services/reporting/update-cycle-status-api/)获取客户端最近完成的更新周期，并将其显示在内部功能板或警报中。
+

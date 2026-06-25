@@ -20,7 +20,7 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
 workflow-type: tm+mt
 source-wordcount: 86
 ht-degree: 0%
@@ -40,3 +40,4 @@ ht-degree: 0%
 * [生成报表](../mbi/data-user/reports/rpt-fundamentals.md)
 * [构建仪表板](../mbi/data-user/dashboards/ess-dashboards.md)
 * [共享数据](../mbi/data-user/export-data/share-data.md)
+

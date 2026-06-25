@@ -23,9 +23,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4e01225a6bd285afbe988b9c24e07e2ea34649fc
+source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
 workflow-type: tm+mt
-source-wordcount: 948
+source-wordcount: 877
 ht-degree: 0%
 
 ---
@@ -183,7 +183,7 @@ ht-degree: 0%
     <td></td>
   </tr>
   <tr>
-    <td rowspan="4">仪表板   — 共享</td>
+    <td rowspan="4">功能板 — 共享</td>
     <td>跨角色与用户共享功能板</td>
     <td></td>
     <td>✓</td>
@@ -490,3 +490,4 @@ ht-degree: 0%
 [!DNL Advanced User Management]将数据筛选功能扩展到电子邮件摘要。 根据受众的不同，管理员用户可以指定必须筛选选定报表的用户组。
 
 ![计划电子邮件摘要](../../assets/schedule-email-summary.png)
+
