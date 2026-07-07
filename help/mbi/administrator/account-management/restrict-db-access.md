@@ -16,7 +16,7 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
+source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
 workflow-type: tm+mt
 source-wordcount: 225
 ht-degree: 0%
@@ -44,4 +44,5 @@ command="env PATH="" /bin/bash -r" <rjmetrics public key goes here>
 ```
 
 完成后，您为[!DNL Commerce Intelligence]创建的用户无法更改您的系统。
+
 

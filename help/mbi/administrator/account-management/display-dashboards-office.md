@@ -18,7 +18,7 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
+source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
 workflow-type: tm+mt
 source-wordcount: 229
 ht-degree: 0%
@@ -40,4 +40,5 @@ ht-degree: 0%
 1. **一个浏览器扩展程序，可同时在多个选项卡之间旋转。** 这允许您设置显示在唯一选项卡中的任何选定功能板。 如果您使用[!DNL Chrome]，Adobe建议使用[Revolver Tables](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en)扩展。
 
 一旦有了上述硬件，您就可以在屏幕上打开一个浏览器窗口，其中包含您希望显示在每个选项卡中的特定仪表板。 最后，将浏览器配置为按所需的频率在每个功能板中旋转。
+
 

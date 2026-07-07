@@ -19,7 +19,7 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
+source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
 workflow-type: tm+mt
 source-wordcount: 88
 ht-degree: 0%
@@ -33,4 +33,5 @@ ht-degree: 0%
 此外，您还可以使用&#x200B;**[!UICONTROL Personal Settings]**&#x200B;页面在[!DNL Commerce Intelligence]中更改密码。
 
 如果您重置密码并且仍被锁定在帐户之外，请按照[这些提示](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html?lang=zh-Hans)帮助查明问题。
+
 

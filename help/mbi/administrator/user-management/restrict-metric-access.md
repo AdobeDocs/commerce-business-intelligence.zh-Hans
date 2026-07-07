@@ -18,7 +18,7 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
+source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
 workflow-type: tm+mt
 source-wordcount: 242
 ht-degree: 0%
@@ -47,4 +47,5 @@ ht-degree: 0%
 >[!NOTE]
 >
 >如果您复制了一个量度，[!DNL Commerce Intelligence]将复制原始量度中设置的用户权限。
+
 
