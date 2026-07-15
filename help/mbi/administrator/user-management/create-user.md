@@ -1,7 +1,6 @@
 ---
 title: 添加新的Adobe Commerce Intelligence用户
 description: 了解如何添加新 [!DNL Commerce Intelligence] 用户，以及如何更新您的用户名或密码。
-exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
 role: Admin, User
 feature: User Management
 TQID: https://experienceleague.adobe.com/-cMJHvHlodd05-Np22qtxxS8lHMi4StXOz1iD83xWkU
@@ -18,12 +17,14 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
+exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
+source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
 workflow-type: tm+mt
 source-wordcount: 245
 ht-degree: 0%
 
 ---
+
 
 # 添加新[!DNL Adobe Commerce Intelligence]用户
 
@@ -55,5 +56,3 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >每个帐户都有合同数量的许可证或名额。 如果您已达到限制或想了解更多信息，请[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
-
-

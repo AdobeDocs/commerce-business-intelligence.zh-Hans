@@ -1,7 +1,6 @@
 ---
 title: 限制对数据库的访问
 description: 了解如何限制访问，限制对存放数据库的服务器的访问。
-exl-id: 7a0bc0d7-086e-4a6e-b1dd-6db13814710e
 role: Admin, User
 feature: Accounts, User Management
 TQID: https://experienceleague.adobe.com/O2cS-hbhjqktc4LpJD6agxgIwabrypgCY9fnJTCR2XM
@@ -16,12 +15,14 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
+exl-id: 7a0bc0d7-086e-4a6e-b1dd-6db13814710e
+source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
 workflow-type: tm+mt
 source-wordcount: 225
 ht-degree: 0%
 
 ---
+
 
 # 限制访问
 
@@ -32,7 +33,6 @@ ht-degree: 0%
 要限制[!DNL Commerce Intelligence Linux]用户，您必须执行两项操作：
 
 1. 将PATH环境变量更改为空字符串。 这意味着用户无法访问系统可执行文件。
-
 1. 确保执行的shell为`bash -r`
 
 这两项操作都可以在用户主`dir/.ssh`目录中的`authorized_keys`文件内完成，作为用户登录时执行的命令的一部分。 它看起来像这样：
@@ -44,5 +44,3 @@ command="env PATH="" /bin/bash -r" <rjmetrics public key goes here>
 ```
 
 完成后，您为[!DNL Commerce Intelligence]创建的用户无法更改您的系统。
-
-

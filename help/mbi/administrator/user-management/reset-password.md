@@ -1,7 +1,6 @@
 ---
 title: 重置密码
 description: 了解如何重置用户密码。
-exl-id: 4de90da3-9846-4c3a-a31e-8b379f207618
 role: Admin, User
 feature: User Management
 product_v2:
@@ -19,12 +18,14 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
+exl-id: 4de90da3-9846-4c3a-a31e-8b379f207618
+source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
 workflow-type: tm+mt
-source-wordcount: 88
+source-wordcount: 89
 ht-degree: 0%
 
 ---
+
 
 # 重置密码
 
@@ -32,6 +33,4 @@ ht-degree: 0%
 
 此外，您还可以使用&#x200B;**[!UICONTROL Personal Settings]**&#x200B;页面在[!DNL Commerce Intelligence]中更改密码。
 
-如果您重置密码并且仍被锁定在帐户之外，请按照[这些提示](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html?lang=zh-Hans)帮助查明问题。
-
-
+如果您重置密码并且仍被锁定在帐户之外，请按照[这些提示](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout)帮助查明问题。

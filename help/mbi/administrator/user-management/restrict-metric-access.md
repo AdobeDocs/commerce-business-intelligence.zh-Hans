@@ -1,7 +1,6 @@
 ---
 title: 限制指标访问
 description: 了解如何使用量度访问和限制。
-exl-id: 88f5ca7a-8073-4968-9685-95f141b2a87f
 role: Admin, User
 feature: User Management
 product_v2:
@@ -18,12 +17,14 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
+exl-id: 88f5ca7a-8073-4968-9685-95f141b2a87f
+source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
 workflow-type: tm+mt
 source-wordcount: 242
 ht-degree: 0%
 
 ---
+
 
 # 管理指标用户
 
@@ -47,5 +48,3 @@ ht-degree: 0%
 >[!NOTE]
 >
 >如果您复制了一个量度，[!DNL Commerce Intelligence]将复制原始量度中设置的用户权限。
-
-
