@@ -3,12 +3,25 @@ title: 高级用户管理
 description: 增强数据可视性、简化报告、按用户组定制访问、简化仪表板共享并确保组织的安全性和可扩展性。
 role: Admin, User
 feature: User Management
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b6935462-7263-4ced-a703-60de6a5aeb2did: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-subfeature_v2: id: d971c7be-3e54-4af9-807c-8d1f9f7b22df
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b6935462-7263-4ced-a703-60de6a5aeb2d
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+subfeature_v2:
+  - id: d971c7be-3e54-4af9-807c-8d1f9f7b22df
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 exl-id: d96a075d-53ab-48d3-ba83-3ff4298a0cb7
 source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
 workflow-type: tm+mt
@@ -399,7 +412,7 @@ ht-degree: 0%
 
 要配置用户组，请执行以下操作：
 
-1. 转到&#x200B;[!UICONTROL **管理用户**] > [!UICONTROL **User Groups]**以查看现有用户组。
+1. 转到&#x200B;[!UICONTROL **管理用户**] > [!UICONTROL **User Groups]**&#x200B;以查看现有用户组。
 
    ![配置用户组](../../assets/configure-user-groups.png)
 
