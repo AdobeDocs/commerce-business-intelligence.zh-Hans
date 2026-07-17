@@ -18,7 +18,7 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 exl-id: aabe5c8f-0809-467c-9713-099aed6926b9
-source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
+source-git-commit: 8dadc431bf2aa7e353c7aeea31db7fef75a011f0
 workflow-type: tm+mt
 source-wordcount: 229
 ht-degree: 0%
@@ -37,4 +37,4 @@ ht-degree: 0%
 1. **USB键盘和鼠标**&#x200B;来控制转换器。
 1. **一个浏览器扩展程序，可同时在多个选项卡之间旋转。** 这允许您设置显示在唯一选项卡中的任何选定功能板。 如果您使用[!DNL Chrome]，Adobe建议使用[Revolver Tables](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en)扩展。
 
-一旦有了上述硬件，您就可以在屏幕上打开一个浏览器窗口，其中包含您希望显示在每个选项卡中的特定仪表板。 最后，将浏览器配置为按所需的频率在每个功能板中旋转。
+获得所需的硬件后，您可以在屏幕上打开一个浏览器窗口，其中包含要在每个选项卡中显示的特定仪表板。 最后，将浏览器配置为按所需的频率在每个功能板中旋转。
