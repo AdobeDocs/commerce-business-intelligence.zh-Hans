@@ -23,7 +23,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>新的<a href="https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/integration/ssh-host-key-verification">SSH主机密钥验证</a>主题文档保存并测试注册、刷新SSH主机密钥、迁移行为、错误故障排除以及何时联系支持人员。 SSH通道集成主题现在链接到本指南。</p>
+      <td><p>新的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-business-intelligence/mbi/analyze/integration/ssh-host-key-verification">SSH主机密钥验证</a>主题文档保存并测试注册、刷新SSH主机密钥、迁移行为、错误故障排除以及何时联系支持人员。 SSH通道集成主题现在链接到本指南。</p>
 </td>
       <td>
         反馈
