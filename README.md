@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4557430537492370a52030b60750950db8b245da
+source-git-commit: aa7acd0d863a3cd48ff83675b72c2a96eae02b4d
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 6%
+source-wordcount: '692'
+ht-degree: 0%
 
 ---
 # Adobe Commerce Intelligence技术文档
@@ -11,17 +11,17 @@ ht-degree: 6%
 
 ## Adobe Open Source行为准则
 
-本项目已采用 [Adobe 开源行为准则](code-of-conduct.md)或 [.NET Foundation 行为准则](https://dotnetfoundation.org/code-of-conduct)。有关更多信息，请参阅[贡献](contributing.md)文章。
+该项目采用了[Adobe Open Source行为准则](code-of-conduct.md)或[.NET Foundation行为准则](https://dotnetfoundation.org/code-of-conduct)。 有关详细信息，请参阅[参与](contributing.md)一文。
 
 ## 关于您对Adobe内容的投稿
 
-请参阅[Adobe文档参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hans)。
+请参阅[Adobe文档参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 您的参与方式取决于您的身份以及您想参与的更改类型：
 
 ### 次要更改
 
-如果您要提供较小的更新，请访问文章，然后单击文章底部显示的反馈区域，单击&#x200B;**详细的反馈选项**，然后单击&#x200B;**建议编辑**&#x200B;以转到GitHub上的Markdown源文件。 使用GitHub UI进行更新。 有关详细信息，请参阅常规的[Adobe Docs参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hans)。
+如果您要提供较小的更新，请访问文章，然后单击文章底部显示的反馈区域，单击&#x200B;**详细的反馈选项**，然后单击&#x200B;**建议编辑**&#x200B;以转到GitHub上的Markdown源文件。 使用GitHub UI进行更新。 有关详细信息，请参阅常规的[Adobe Docs参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 您为此存储库中的文档和代码示例提交的小幅度更正或说明受Adobe使用条款的约束。
 
@@ -31,13 +31,13 @@ ht-degree: 6%
 
 ### Adobe员工做出的主要更改
 
-如果您是来自Adobe Experience Cloud解决方案产品团队的技术文档撰稿人、项目经理或开发人员，并且您的工作就是撰写或创作技术文章，那么您应当使用GHEC的专用存储库。
+如果您是产品团队中负责提供Adobe Experience Cloud解决方案的技术作家、项目经理或开发人员，并且您的工作是撰写或创作技术文章，则应使用GHEC上的专用存储库。
 
 ## 工具和设置
 
 社区参与者可以使用GitHub UI进行基本编辑或创建存储库分支以进行重大更改。
 
-有关详细信息，请参阅[Adobe Docs参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hans)。
+有关详细信息，请参阅[Adobe Docs参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 ## 如何使用Markdown格式化主题
 
@@ -60,10 +60,11 @@ ht-degree: 6%
 
 ### 钩子做什么
 
-- 自动检测暂存的图像文件(PNG、JPG、JPEG、GIF、SVG)
-- 运行`image_optim`以压缩和优化图像
+- 自动检测暂存的图像文件(`.png`、`.jpeg`、`.jpg`、`.gif`、`.svg`)
+- 运行`image_optim`以压缩和优化光栅图像(`.png`， `.jpeg`， `.jpg`， `.gif`)
 - 自动重新存放优化的图像
-- 确保所有提交的映像都得到了正确优化
+- 确保所有已提交的光栅图像都已正确优化
+- 根据大小限制检查暂存的SVG，如果从`help/`引用了超大的SVG，则中止提交（否则仅警告）
 
 ### 优点
 
@@ -74,18 +75,18 @@ ht-degree: 6%
 
 有关详细的设置说明、疑难解答和配置，请参阅[`.githooks/README.md`](.githooks/README.md)。
 
-## Experience League 创作指南
+## Experience League Authoring指南
 
 ### 快速入门
 
-- [入门概述](https://experienceleague.adobe.com/en/docs/authoring-guide/using/getting-started/getting-started)
+- [入门指南概述](https://experienceleague.adobe.com/en/docs/authoring-guide/using/getting-started/getting-started)
 - [Git设置](https://experienceleague.adobe.com/en/docs/authoring-guide/using/setup/tools/git-setup)
 - [Git和GitHub文档要点](https://experienceleague.adobe.com/en/docs/authoring-guide/using/setup/tools/git-fundamentals)
 - [快速入门视频](https://experienceleague.adobe.com/en/docs/authoring-guide/using/getting-started/quick-start-guides/quick-start-overview)
 
 ### 工作流
 
-- [非频繁参与者的工作流](https://experienceleague.adobe.com/en/docs/authoring-guide/using/editing/git-workflow-infrequent-user)
+- [针对不常见投稿人的工作流](https://experienceleague.adobe.com/en/docs/authoring-guide/using/editing/git-workflow-infrequent-user)
 - [GitHub拉取请求](https://experienceleague.adobe.com/en/docs/authoring-guide/using/editing/public-github)
 
 ### 创作
@@ -93,6 +94,6 @@ ht-degree: 6%
 - [创作最佳实践](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/authoring-best-practices)
 - [Markdown语法指南](https://experienceleague.adobe.com/en/docs/authoring-guide/using/markdown/markdown-syntax)
 - [Markdown语法速查表](https://experienceleague.adobe.com/en/docs/authoring-guide/using/markdown/cheatsheet)
-- [处理表](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/tables)
-- [正在添加链接](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/linking)
-- [移动和重新调整内容](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/restructure-new)
+- [使用表](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/tables)
+- [添加链接](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/linking)
+- [移动和重组内容](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/restructure-new)
