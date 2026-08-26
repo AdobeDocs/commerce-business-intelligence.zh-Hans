@@ -5,11 +5,20 @@ exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 TQID: https://experienceleague.adobe.com/vEHbYcJUPlGk2eZsKvak9nSYBqOVvnKNSYDEutHMt3g
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
 source-wordcount: 601
@@ -67,10 +76,10 @@ ht-degree: 25%
 * **`Order's created at`**
 * 选择定义： `Joined Column`
 * [!UICONTROL Create Path]:
-* 
-  [!UICONTROL Many]: `enterprise_rma.order_id`
-* 
-  [!UICONTROL One]: `sales_flat_order.entity_id`
+* &#x200B;
+  [!UICONTROL Many]&#x200B;: `enterprise_rma.order_id`
+* &#x200B;
+  [!UICONTROL One]&#x200B;: `sales_flat_order.entity_id`
 
 * 选择[!UICONTROL table]： `sales_flat_order`
 * 选择[!UICONTROL column]： `created_at`
@@ -88,10 +97,10 @@ ht-degree: 25%
 * **`return_date_requested`**
 * 选择定义： `Joined Column`
 * [!UICONTROL Create Path]:
-  * 
-    [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
-  * 
-    [!UICONTROL One]: `enterprise_rma.entity_id`
+  * &#x200B;
+    [!UICONTROL Many]&#x200B;: `enterprise_rma_item_entity.rma_entity_id`
+  * &#x200B;
+    [!UICONTROL One]&#x200B;: `enterprise_rma.entity_id`
 
 * 选择[!UICONTROL table]： `enterprise_rma`
 * 选择[!UICONTROL column]： `date_requested`
@@ -119,28 +128,28 @@ ht-degree: 25%
 * 此量度执行&#x200B;**计数**
 * 在&#x200B;**`entity_id`**&#x200B;列上
 * 按&#x200B;**`date_requested`**&#x200B;排序
-* [!UICONTROL Filter]: `Returns we count`
+* [!UICONTROL Filter]&#x200B;: `Returns we count`
 
 * **返回的项目**
 * 在&#x200B;**`enterprise_rma_item_entity`**&#x200B;表中
 * 此量度执行&#x200B;**总和**
 * 在&#x200B;**`qty_approved`**&#x200B;列上
 * 按&#x200B;**`return date_requested`**&#x200B;排序
-* [!UICONTROL Filter]: `Returns we count`
+* [!UICONTROL Filter]&#x200B;: `Returns we count`
 
 * **返回项总计值**
 * 在&#x200B;**`enterprise_rma_item_entity`**&#x200B;表中
 * 此量度执行&#x200B;**总和**
 * 在&#x200B;**`Returned item total value (qty_returned * price)`**&#x200B;列上
 * 按&#x200B;**`return date_requested`**&#x200B;排序
-* [!UICONTROL Filter]: `Returns we count`
+* [!UICONTROL Filter]&#x200B;: `Returns we count`
 
 * **订单与退货之间的平均间隔时间**
 * 在&#x200B;**`enterprise_rma`**&#x200B;表中
 * 此量度执行&#x200B;**平均值**
 * 在&#x200B;**`Time between order's created_at and date_requested`**&#x200B;列上
 * 按&#x200B;**`date_requested`**&#x200B;排序
-* [!UICONTROL Filter]: `Returns we count`
+* [!UICONTROL Filter]&#x200B;: `Returns we count`
 
 >[!NOTE]
 >
@@ -150,101 +159,101 @@ ht-degree: 25%
 
 * 返回后&#x200B;**重复排序概率**
 * 量度`A`： `Number of orders with returns`
-* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
 * [!UICONTROL Filter]:
   * `Order contains a return? (1=yes/0=No) = 1`
   * `Is in current month? = No`
 
 * 量度`B`： `Non-last orders with returns`
-* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
 * [!UICONTROL Filter]:
   * `Is customer's last order? (1=yes/0=no) = 0`
   * `Order contains a return? (1=yes/0=No) = 1`
 
 * 公式：重复订单概率
-* [!UICONTROL Formula]: `B / A`
-* 
-  [!UICONTROL Format]: `Percentage`
+* [!UICONTROL Formula]&#x200B;: `B / A`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Percentage`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [！UICONTROL间隔]: `None`
-* [!UICONTROL Group by]: `Customer's order number`
-* 
-  [！UICONTROL图表类型]: `Bar`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL 间隔]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Customer's order number`
+* &#x200B;
+  [!UICONTROL 图表类型]&#x200B;: `Bar`
 
 * **平均返回时间（所有时间）**
 * 量度`A`： `Avg time between order and return`
-* [!UICONTROL Metric]: `Avg time between order and return`
+* [!UICONTROL Metric]&#x200B;: `Avg time between order and return`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [！UICONTROL间隔]: `None`
-* 
-  [！UICONTROL图表类型]: `Number`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL 间隔]&#x200B;: `None`
+* &#x200B;
+  [!UICONTROL 图表类型]&#x200B;: `Number`
 
 * **包含退货的订单百分比**
 * 量度`A`： `Number of orders`
-* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
 
 * 量度`B`： `Orders w/ return`
-* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
 * [!UICONTROL Filter]:
   * `Order contains a return? (1=yes/0=No) = 1`
 
 * 公式：包含退货的订单百分比
-* [!UICONTROL Formula]: `B / A`
-* 
-  [!UICONTROL Format]: `Percentage`
+* [!UICONTROL Formula]&#x200B;: `B / A`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Percentage`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [！UICONTROL间隔]: `None`
-* [!UICONTROL Chart Type]: `Number - % of orders with return`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL 间隔]&#x200B;: `None`
+* [!UICONTROL Chart Type]&#x200B;: `Number - % of orders with return`
 
 * **按月返回的收入**
 * 量度`A`： `Returned item total value`
-* [!UICONTROL Metric]: `Returned item total value`
+* [!UICONTROL Metric]&#x200B;: `Returned item total value`
 
-* [!UICONTROL Time period]: `All time`
-* [!UICONTROL Interval]: `By month`
-* 
-  [！UICONTROL图表类型]: `Line`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* [!UICONTROL Interval]&#x200B;: `By month`
+* &#x200B;
+  [!UICONTROL 图表类型]&#x200B;: `Line`
 
 * **已退货且不再购买的客户**
 * 量度`A`： `Number of orders with returns`
-* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
 * [!UICONTROL Filter]:
   * `Order contains a return? (1=yes/0=No) = 1`
   * `Is customer's last order? (1=yes/0=no) = 1`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [！UICONTROL间隔]: `None`
-* 
-  [！UICONTROL分组依据]: `Customer_email`
-* 
-  [！UICONTROL图表类型]: `Table`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL 间隔]&#x200B;: `None`
+* &#x200B;
+  [!UICONTROL 分组依据]&#x200B;: `Customer_email`
+* &#x200B;
+  [!UICONTROL 图表类型]&#x200B;: `Table`
 
 * **返回率（按项目）**
 * 量度`A`： `Returned items` （隐藏）
 * [!UICONTROL Metric]：返回的项目
 
 * 量度`B`： `Items sold` （隐藏）
-* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
 * [!UICONTROL Filter]:
 
-* [!UICONTROL Formula]: `Return %`
-* [!UICONTROL Formula]: `B / A`
-* 
-  [!UICONTROL Format]: `Percentage`
+* [!UICONTROL Formula]&#x200B;: `Return %`
+* [!UICONTROL Formula]&#x200B;: `B / A`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Percentage`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [！UICONTROL间隔]: `None`
-* [!UICONTROL Group by]: `product_sku AND/OR product_name`
-* 
-  [！UICONTROL图表类型]: `Table`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL 间隔]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `product_sku AND/OR product_name`
+* &#x200B;
+  [!UICONTROL 图表类型]&#x200B;: `Table`
 
 在编译所有报告后，您可以根据需要将报告组织在功能板上。 结果可能类似于上面的示例仪表板。
 

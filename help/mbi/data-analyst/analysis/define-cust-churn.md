@@ -5,11 +5,21 @@ exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports, Dashboards
 TQID: https://experienceleague.adobe.com/eDJBh7FlhuKjBa5ft4sqAfZavmBk4V9m-Iu-26cG2VI
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
 source-wordcount: 593
@@ -43,8 +53,8 @@ ht-degree: 16%
 * 选择定义：联接列
 * 选择[!UICONTROL table]： `customer_entity`
 * 选择[!UICONTROL column]： `Customer's lifetime number of orders`
-* [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
-* [!UICONTROL Filter]: `Orders we count`
+* [!UICONTROL Path]&#x200B;: `sales_flat_order.customer_id = customer_entity.entity_id`
+* [!UICONTROL Filter]&#x200B;: `Orders we count`
 
 * `Seconds since created_at`
 * 选择定义： `Age`
@@ -68,65 +78,65 @@ ht-degree: 16%
 
 * **初始重复顺序概率**
 * 指标A：所有时间重复订单
-* [!UICONTROL Metric]: `Number of orders`
-* [!UICONTROL Filter]: `Customer's order number greater than 1`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
 
 * 量度B：所有时间订单
 * [!UICONTROL Metric]：订单数
 
 * [!UICONTROL Formula]：初始重复顺序概率
-* 
-  [！UICONTROL公式]: `A/B`
-* 
-  [!UICONTROL Format]: `Percent`
+* &#x200B;
+  [!UICONTROL 公式]&#x200B;: `A/B`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Percent`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
-* 
-  [!UICONTROL Chart type]: `Scalar`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* &#x200B;
+  [!UICONTROL Chart type]&#x200B;: `Scalar`
 
 * **重复订单的概率自订单**&#x200B;以来已给定的月份
 * 量度A：按上个订单后间隔的月份重复订单（隐藏）
-* [!UICONTROL Metric]: `Number of orders`
-* 
-  [!UICONTROL Perspective]: `Cumulative`
-* [!UICONTROL Filter]: `Customer's order number greater than 1`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* &#x200B;
+  [!UICONTROL Perspective]&#x200B;: `Cumulative`
+* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
 
 * 量度B：按订购后月份列出的最后订单（隐藏）
-* [!UICONTROL Metric]: `Number of orders`
-* 
-  [!UICONTROL Perspective]: `Cumulative`
-* [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* &#x200B;
+  [!UICONTROL Perspective]&#x200B;: `Cumulative`
+* [!UICONTROL Filter]&#x200B;: `Is customer's last order? (Yes/No) = Yes`
 
 * 量度C：所有时间重复订单（隐藏）
-* [!UICONTROL Metric]: `Number of orders`
-* [!UICONTROL Filter]: `Customer's order number greater than 1`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
 
-* 
-  [！UICONTROL分组依据]: `Independent`
+* &#x200B;
+  [!UICONTROL 分组依据]&#x200B;: `Independent`
 
 * 量度D：所有时间最后订单（隐藏）
-* [!UICONTROL Metric]: `Number of orders`
-* [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Filter]&#x200B;: `Is customer's last order? (Yes/No) = Yes`
 
-* 
-  [！UICONTROL分组依据]: `Independent`
+* &#x200B;
+  [!UICONTROL 分组依据]&#x200B;: `Independent`
 
 * [!UICONTROL Formula]：初始重复顺序概率
-* 
-  [！UICONTROL公式]: `(C-A)/(C+D-A-B)`
-* 
-  [!UICONTROL Format]: `Percent`
+* &#x200B;
+  [!UICONTROL 公式]&#x200B;: `(C-A)/(C+D-A-B)`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Percent`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `Months since previous order`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Months since previous order`
 * 显示top.bottom：前24个类别，按类别名称排序
 
-* 
-  [!UICONTROL Chart type]: `Line`
+* &#x200B;
+  [!UICONTROL Chart type]&#x200B;: `Line`
 
 初始重复订单概率报表表示“重复订单总数/订单总数”。 每个顺序都是产生重复顺序的机会；重复顺序的数量是那些实际发生的顺序的子集。
 

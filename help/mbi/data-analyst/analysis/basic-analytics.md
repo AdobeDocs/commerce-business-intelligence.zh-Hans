@@ -5,11 +5,23 @@ exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Dashboards, Data Integration
 TQID: https://experienceleague.adobe.com/5AOJMiHxtu-nt3cWP-lF5g4Zufa2MuZr7xA8pX3OgB8
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
 source-wordcount: 3891
@@ -199,7 +211,7 @@ ht-degree: 18%
 
 ### 按同类群组列出的平均生命周期收入
 
-* **描述**：跟踪一段时间内不同同类群组](../dev-reports/lifetime-rev-cohort-analysis.md)用户的[平均生命周期收入，以确定表现最佳的同类群组。 同类群组按通用日期（如首次订购日期或创建日期）分组。
+* **描述**：跟踪一段时间内不同同类群组[&#128279;](../dev-reports/lifetime-rev-cohort-analysis.md)用户的平均生命周期收入，以确定表现最佳的同类群组。 同类群组按通用日期（如首次订购日期或创建日期）分组。
 * **使用的量度**： `Revenue`
 * **报告示例**：按同类群组划分的平均客户存留期收入
   * **[!UICONTROL Metric]**: `Revenue`
