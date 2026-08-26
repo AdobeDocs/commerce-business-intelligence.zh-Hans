@@ -80,4 +80,4 @@ ht-degree: 0%
 ### 相关
 
 * [需要 [!DNL Mixpanel] 数据](../integrations/mixpanel-data.md)
-* [重新验证集成](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [重新验证集成](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

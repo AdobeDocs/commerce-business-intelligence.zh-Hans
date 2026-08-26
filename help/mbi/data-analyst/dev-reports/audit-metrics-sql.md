@@ -64,4 +64,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果审计数据后发现不一致，请查看[联系支持人员：数据差异](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies)支持主题，以了解有关后续操作的更多信息。
+>如果审计数据后发现不一致，请查看[联系支持人员：数据差异](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies)支持主题，以了解有关后续操作的更多信息。

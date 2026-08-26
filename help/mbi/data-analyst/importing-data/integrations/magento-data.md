@@ -46,4 +46,4 @@ ht-degree: 0%
 ## 相关
 
 * [正在连接 [!DNL Adobe Commerce]](../integrations/magento.md)
-* [重新验证集成](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [重新验证集成](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
