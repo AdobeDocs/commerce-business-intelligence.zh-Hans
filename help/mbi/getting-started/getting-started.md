@@ -1,33 +1,18 @@
 ---
 title: Adobe Commerce Intelligence简介
-description: 了解Adobe Commerce Intelligence。
+description: 开始使用Adobe Commerce Intelligence（以前称为Magento Business Intelligence）。 了解平台提供的功能以及如何开始探索您的数据。
 exl-id: 0c960d8c-9bb7-429e-a88e-21678a77b710
 role: Admin, Developer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
 TQID: https://experienceleague.adobe.com/gszPpebCdsdnu1iMruPLD8fA79rJH5L8Prd5eTX-YPc
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 252
+source-wordcount: 275
 ht-degree: 0%
 
 ---
@@ -46,4 +31,4 @@ ht-degree: 0%
 
 标准功能板包括营销ROI、客户存留期值、客户细分、高管和投资者KPI、同类群组分析和促销分析。
 
-当您[激活](../getting-started/onpremise-activation.md)您的[!DNL Commerce Intelligence]帐户时，您正在将您的[!DNL Adobe Commerce]数据库连接到[!DNL Commerce Intelligence]，并立即获得对包含大约100个报告的五个仪表板的访问权限。 这些报表旨在提供有关您数据的洞察信息，并回答诸如&#x200B;*我的订单环比增长如何？*，*谁是我最忠诚的客户？*&#x200B;和&#x200B;*我的优惠券策略是否有效？*。
+当您[激活](../getting-started/onpremise-activation.md)您的[!DNL Commerce Intelligence]帐户时，您正在将您的[!DNL Adobe Commerce]数据库连接到[!DNL Commerce Intelligence]，并立即获得对包含大约100个报告的五个仪表板的访问权限。 这些报表旨在提供有关您数据的洞察信息，并回答诸如&#x200B;*我的订单环比增长如何？*、*谁是我最忠诚的客户？*&#x200B;以及&#x200B;*我的优惠券策略是否有效？*&#x200B;之类的问题。

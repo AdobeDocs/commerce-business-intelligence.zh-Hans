@@ -5,28 +5,14 @@ exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/fmI-RG3Ba7s--6-Qve8xzcBLAKcbAqfaMAb7hNiKciU
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080bid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 489
+source-wordcount: 514
 ht-degree: 0%
 
 ---
@@ -47,7 +33,7 @@ ht-degree: 0%
 
 查看[!DNL Google Analytics]广告营销活动以了解从操作角度可以做些什么的示例。 假设您在第四季度有多个名称不同的广告营销活动。 这些营销活动是特定营销计划的结果。 使用仓库数据，您可以创建列以查找相关促销活动名称并返回第四季度计划名称`Operation Dumbo`。
 
-组合方面允许将[!DNL Google Analytics]数据与其他数据连接以进行分析。 例如，获取`Total Time On Site By Ad Campaign`中的[!DNL Google Analytics]数据，并将其与来自`Total Spent Per Campaign`的[!DNL Facebook Ads]数据联接，以完整了解参与度对您造成的成本。
+组合方面允许将[!DNL Google Analytics]数据与其他数据连接以进行分析。 例如，获取[!DNL Google Analytics]中的`Total Time On Site By Ad Campaign`数据，并将其与来自[!DNL Facebook Ads]的`Total Spent Per Campaign`数据联接，以完整了解参与度对您造成的成本。
 
 另一方面，使用[!DNL Google Analytics Live]集成，每个[!DNL Google Analytics]图表都像一个未存储在Data Warehouse中的小思洛存储器。
 
@@ -55,9 +41,9 @@ ht-degree: 0%
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused]是`Premium`集成。 如果您有兴趣将此集成添加到订阅，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+>[!DNL Google Analytics Warehoused]是`Premium`集成。 如果您有兴趣将此集成添加到订阅，请[联系支持人员](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
 
-1. 转到`Connections`下的&#x200B;**[!UICONTROL Admin** > **Integrations]**&#x200B;页面。
+1. 转到&#x200B;**[!UICONTROL Admin** > **Integrations]**&#x200B;下的`Connections`页面。
 1. 单击右侧的&#x200B;**[!UICONTROL Add an Integration]**。
 1. 单击[!DNL Google Analytics Warehoused]图标。 这将打开[!DNL Google Analytics]凭据页面。
 1. 输入您的[!DNL Google Analytics]凭据。 授权过程完成后，您将被重定向回[!DNL Commerce Intelligence]。
@@ -78,12 +64,12 @@ ht-degree: 0%
 ## 正在断开[!DNL Google Analytics Warehoused]与[!DNL Commerce Intelligence]的连接 {#disconnect}
 
 1. 访问您的[!DNL Google Analytics] [帐户设置](https://myaccount.google.com/intro)页面。
-1. 在`Security`部分下，单击&#x200B;**[!UICONTROL edit]**&#x200B;应用程序和站点旁边的`Authorizing`。
-1. 单击&#x200B;**[!UICONTROL revoke access]**&#x200B;旁边的[!DNL Commerce Intelligence]。
+1. 在`Security`部分下，单击`Authorizing`应用程序和站点旁边的&#x200B;**[!UICONTROL edit]**。
+1. 单击[!DNL Commerce Intelligence]旁边的&#x200B;**[!UICONTROL revoke access]**。
 
 ## 相关文档
 
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [重新验证集成](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
 * [正在连接 [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [分析网站活动和客户转化率](../../analysis/web-act-cust-conversion.md)
 * [使用 [!DNL Google Analytics] Cookie跟踪用户获取数据](../../analysis/google-track-user-acq.md)

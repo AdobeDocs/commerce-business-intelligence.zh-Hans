@@ -5,33 +5,21 @@ exl-id: 105cd003-98ef-4358-80b9-b3190c2c57b7
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/q8FzCjuqcQC57WLd0201CV46es2CrbAjZx9FGFX-RFw
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 685
+source-wordcount: 711
 ht-degree: 0%
 
 ---
 
 # 数据迁移
 
-迁移到新的数据库模式、服务器或报告数据库并不一定有压力。 [[!DNL Adobe] 服务团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)提供迁移帮助。
+迁移到新的数据库模式、服务器或报告数据库并不一定有压力。 [[!DNL Adobe] 服务团队](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)提供迁移帮助。
 
 为确保过渡尽可能顺利，提交迁移请求时应尽可能详细。 本主题包含提交请求并开始迁移所需的一切。 向我们提供您需求的全面信息，可以确保您的项目范围设定得当，并且估算准确。
 
@@ -39,9 +27,9 @@ ht-degree: 0%
 
 在开始之前，您必须知道以下问题的答案：
 
-* **新数据库是否位于新服务器上？**&#x200B;在提交请求之前，请在&#x200B;**[!UICONTROL Manage Data** > **Connections]**&#x200B;下更新数据连接的设置。 如果需要有关如何执行此操作的更新程序，请转到[`Integrations`](../integrations/integrations.md)部分并查找有关您正在使用的数据库类型的说明。
+* **新数据库是否位于新服务器上？** 在提交请求之前，请更新&#x200B;**[!UICONTROL Manage Data** > **Connections]**&#x200B;下的数据连接设置。 如果需要有关如何执行此操作的更新程序，请转到[`Integrations`](../integrations/integrations.md)部分并查找有关您正在使用的数据库类型的说明。
 
-* **您的所有历史数据是否都存在于新数据库中，还是需要迁移？**&#x200B;您可以在迁移过程中合并历史数据和新数据。 即使您不需要整合，也可以在您的请求中告知我们。
+* **您的所有历史数据是否都存在于新数据库中，还是需要迁移？** 您可以在迁移过程中整合历史数据和新数据。 即使您不需要整合，也可以在您的请求中告知我们。
 
 获得上述答案后，您需要知道迁移的类型。 新数据库是具有[`same`](#sameschema)架构，还是具有[`different`](#newschema)架构？ 在下面的讨论中，您可以找到每种迁移类型的详细说明。
 
@@ -85,7 +73,7 @@ ht-degree: 0%
 
 ## 如何提交请求？ {#submitreq}
 
-您可以通过[提交支持请求](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)联系我们。
+您可以通过[提交支持请求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)联系我们。
 
 如果您按照上一节中的步骤创建列匹配电子表格，请不要忘记附加它。
 

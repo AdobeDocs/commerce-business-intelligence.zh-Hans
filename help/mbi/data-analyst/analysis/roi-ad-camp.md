@@ -5,24 +5,14 @@ exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Campaigns
 TQID: https://experienceleague.adobe.com/teo53W9N30xpRRE1nUupBLKJnl1kUK4zt-roFGiulGU
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1253
+source-wordcount: 1265
 ht-degree: 0%
 
 ---
@@ -34,9 +24,9 @@ ht-degree: 0%
 ## 先决条件
 
 * 导入您的广告成本数据：
-   * [将您的 [!DNL Google AdWords] 连接到 [!DNL Commerce Intelligence]](../importing-data/integrations/google-adwords.md)：这将同步您的[!DNL Adwords]在[!DNL Commerce Intelligence]中的花费
-   * [上载其他广告成本数据](../importing-data/connecting-data/import-offline-ad-data.md)：建议对没有直接连接到[!DNL Commerce Intelligence]的渠道执行此操作
-   * 如果从多个来源导入成本数据，则可以[合并](../../best-practices/consolidating-your-tables.md)在[!DNL Commerce Intelligence]中的数据。 只需[提交支持票证](../../guide-overview.md#Submitting-a-Support-Ticket)。
+  * [将您的 [!DNL Google AdWords] 连接到 [!DNL Commerce Intelligence]](../importing-data/integrations/google-adwords.md)：这将同步您的[!DNL Adwords]在[!DNL Commerce Intelligence]中的花费
+  * [上载其他广告成本数据](../importing-data/connecting-data/import-offline-ad-data.md)：建议对没有直接连接到[!DNL Commerce Intelligence]的渠道执行此操作
+  * 如果从多个来源导入成本数据，则可以[合并](../../best-practices/consolidating-your-tables.md)在[!DNL Commerce Intelligence]中的数据。 只需[提交支持票证](../../guide-overview.md#Submitting-a-Support-Ticket)。
 * [跟踪用户获取渠道数据](../analysis/google-track-user-acq.md)
 
 ## 用户获取促销活动
@@ -59,9 +49,9 @@ ht-degree: 0%
 
 1. 创建一段时间内您的总支出的[!UICONTROL Metric]
 1. 转到[!UICONTROL Data > Metrics]
-1. 选择`Add New Metric`并选择正在记录[!DNL `Adwords...`]成本数据的[!DNL AdWords]表。
+1. 选择`Add New Metric`并选择正在记录[!DNL AdWords]成本数据的[!DNL `Adwords...`]表。
 1. 在指标编辑器中，为您的指标提供一个名称（例如，[!UICONTROL AdWord Cost]）
-1. 使用这些下拉列表，对按&#x200B;**列排序的**&#x200B;表（更改）中的`adCost`列执行[!DNL Adwords...]Sum`date`。
+1. 使用这些下拉列表，对按`date`列排序的[!DNL Adwords...]表（更改）中的`adCost`列执行&#x200B;**Sum**。
    添加新量度后显示![成功消息](../../assets/success-add-new-metric.png)<!--="500" height="303"}-->
 1. 单击顶部的`Back to Metric List`并转到任意仪表板。
 
@@ -72,7 +62,7 @@ ht-degree: 0%
 1. 在`Group by`选项卡下，将`campaign`添加为[!UICONTROL grouping field]，然后在框中单击`Add All`。
 1. 此报表按营销活动显示您的全时[!DNL AdWords]成本
 
-**2。 创建按营销活动计数新用户的报告：**
+**2. 创建按营销活动计数新用户的报告：**
 
 1. 在任意仪表板中，单击&#x200B;**[!UICONTROL Add Report > Create report]**
 1. 选择计算一段时间内新注册用户数的`New users`指标
@@ -80,7 +70,7 @@ ht-degree: 0%
 1. 在`Group by`选项卡下，将`campaign`添加为`grouping field`，然后在框中单击&#x200B;**`Add All`**
 1. 此报表可按营销活动显示您的所有时间注册用户
 
-**3。 创建按促销活动划分平均用户LTV的报表：**
+**3. 创建按促销活动划分平均用户LTV的报表：**
 
 1. 在任意仪表板中，单击&#x200B;**[!UICONTROL Add Report > Create report]**
 1. 选择用于计算平均用户生命周期收入的`Average lifetime revenue`量度
@@ -115,7 +105,7 @@ ht-degree: 0%
 >
 >此示例假设所有促销活动成本都专门用于生成特定产品的购买。 假设所有成本都花费在生成购买上，则生成的ROI将考虑最坏的情况（每次购买的最高成本）。 您可以确保实际ROI高于此计算。 示例：假设您在一个产生10个新用户和10次购买的营销活动上花费$20，则每次购买的实际成本为$1。 假设所有成本都花在了获取新用户上，则每次购买的成本为2美元。
 
-开始之前，[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)以将以下维度联接到行项目表(`sales\_flat\_order\_item, order\_item`)：
+开始之前，[提交支持票证](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)以将以下维度联接到行项目表(`sales\_flat\_order\_item, order\_item`)：
 
 * 订单的来源（如果您仅在用户级别跟踪反向链接来源，则加入用户的来源）
 * 订单的促销活动（如果您仅在用户级别跟踪反向链接来源，则加入用户的促销活动）
@@ -126,15 +116,15 @@ ht-degree: 0%
 1. 在任意仪表板中，单击&#x200B;**[!UICONTROL Add Report > Create new report]**
 1. 选择在行项目级别计算收入的`Revenue by items`指标
 1. 将[!UICONTROL Time period]设置为`All-time`，将[!UICONTROL Interval]设置为`None`
-1. 在`Filter by`选项卡下，添加`product name 'IN'`产品`A`、产品`B`、产品`C`...&quot;，并包含营销活动以逗号分隔的所有产品名称（例如，`product name 'IN' yellow t-shirt`、`red t-shirt, blue t-shirt`）
+1. 在`Filter by`选项卡下，添加`product name 'IN'`产品`A`、产品`B`、产品`C`...” 并包含您的营销活动以逗号分隔的所有目标产品名称（例如，`product name 'IN' yellow t-shirt`，`red t-shirt, blue t-shirt`）
 1. 在`Group by`选项卡下，添加`order's campaign`或`order's utm\_campaign`作为`grouping`字段，然后单击框中的&#x200B;**[!UICONTROL Add All]**
 1. 此报表可按营销活动显示特定产品的收入
 
-**2。 要计算ROI，请再次将指标合并到一个报表中：**
+**2. 要计算ROI，请再次将指标合并到一个报表中：**
 
 1. 在任意仪表板中，单击&#x200B;**[!UICONTROL Add Report > Create new report]**
 1. 按照上面特定产品报表的营销活动中的过滤器和分组说明添加`Revenue by items`量度，然后单击量度标量值下方的&#x200B;**[!UICONTROL Hide]**
-1. 现在，按照您在上面[!DNL AdWords Cost]部分中探索的`Ad cost by campaigns`报表中的筛选器和分组说明添加`User acquisition campaigns`指标；然后单击指标标量值下方的&#x200B;**[!UICONTROL Hide]**
+1. 现在，按照您在上面`User acquisition campaigns`部分中探索的`Ad cost by campaigns`报表中的筛选器和分组说明添加[!DNL AdWords Cost]指标；然后单击指标标量值下方的&#x200B;**[!UICONTROL Hide]**
 1. 设定好这些量度后，添加公式：
 1. [!UICONTROL ROI]：输入公式`\[A\]/\[B\]`，如果`\[A\]`表示`Revenue per campaign for specific product(s)`，`\[B\]`表示`Ad cost by campaigns`。 这会返回（特定产品的收入）/（促销活动成本）的比率
 1. [!UICONTROL Return]：输入公式`\[A\]-\[B\]`。 通过计算（平均用户LTV） — （每次购买的平均成本），返回用户的平均利润
@@ -143,7 +133,7 @@ ht-degree: 0%
 
 1. 为报表命名，并确保将其另存为表
 
-**3。 对每个广告的产品或产品组重复上述步骤1和2。**
+**3. 对每个广告的产品或产品组重复上述步骤1和2。**
 
 ## 相关文档
 
@@ -152,5 +142,5 @@ ht-degree: 0%
 * [跟踪数据库中的用户设备、浏览器和操作系统数据](../analysis/track-usr-dev-browser.md)
 * [了解您最有价值的客户获取来源和渠道](../analysis/most-value-source-channel.md)
 * [连接你的 [!DNL Google Adwords] 帐户](../importing-data/integrations/google-adwords.md)
-* [&#x200B; [!DNL Google Analytics] UTM归因如何工作？](../analysis/utm-attributes.md)
-* [&#x200B; [!DNL Google Analytics]中UTM标记的五个最佳实践](../../best-practices/utm-tagging-google.md)
+* [ [!DNL Google Analytics] UTM归因如何工作？](../analysis/utm-attributes.md)
+* [ [!DNL Google Analytics]中UTM标记的五个最佳实践](../../best-practices/utm-tagging-google.md)

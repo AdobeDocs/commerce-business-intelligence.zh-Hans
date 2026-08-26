@@ -1,28 +1,18 @@
 ---
 title: 使用报表
-description: 了解如何使用报表数据。
+description: 使用Commerce Intelligence报表回答各种业务问题，从跟踪去年的月收入到衡量促销活动客户获取成本。
 exl-id: 94d4db27-0e06-4066-9c03-036b109d2d9b
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
 TQID: https://experienceleague.adobe.com/e-QGaopbnpaXeP94RbjiD3SVKUcFutb-37ClyKValk8
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 995
+source-wordcount: 1012
 ht-degree: 0%
 
 ---
@@ -91,13 +81,13 @@ ht-degree: 0%
 在这里，您要执行以下计算：
 
 
-_[的`Time between a customer's registration date and first purchase date`]总和/[注册并购买的客户总数]_
+`Time between a customer's registration date and first purchase date`]的&#x200B;_[总和/[注册并购买的客户总数]_
 
-您希望看到根据客户的注册日期绘制的计算随时间变化或趋势。 以下是如何[在](../../data-user/reports/ess-manage-data-metrics.md)中创建此量度[!DNL Commerce Intelligence]：
+您希望看到根据客户的注册日期绘制的计算随时间变化或趋势。 以下是如何[在[!DNL Commerce Intelligence]中创建此量度](../../data-user/reports/ess-manage-data-metrics.md)：
 
 1. 转到&#x200B;**[!UICONTROL Data]**&#x200B;并选择`Metrics`选项卡。
 1. 单击&#x200B;**[!UICONTROL Add New Metric]**&#x200B;并选择`user`表（您在其中创建了上述维度）。
-1. 从下拉列表中，选择按`Average`列排序的`Time between a customer's registration date and first purchase date`表中`user`列的`Customer's registration date`。
+1. 从下拉列表中，选择按`Customer's registration date`列排序的`user`表中`Time between a customer's registration date and first purchase date`列的`Average`。
 1. 添加任何相关的过滤器或过滤器集。
 
 此量度现已准备就绪。

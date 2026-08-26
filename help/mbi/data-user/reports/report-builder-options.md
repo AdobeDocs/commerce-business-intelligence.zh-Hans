@@ -1,27 +1,18 @@
 ---
 title: 选择一个Report Builder
-description: 了解如何选择Report Builder。
+description: 比较Commerce Intelligence中可用的Report Builder，了解哪些适合您的报表需求，从可视化生成器到基于SQL的选项。
 exl-id: ec4204ef-975e-45c3-b09e-fb97ffc2c497
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
 TQID: https://experienceleague.adobe.com/xXSDN9dKTWp8SdeZHBmDYZhnNbxn8F-D6UvKa4qJlCI
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 644
+source-wordcount: 724
 ht-degree: 0%
 
 ---
@@ -29,13 +20,13 @@ ht-degree: 0%
 # 选择一个Report Builder
 
 >[!NOTE]
->&#x200B;>需要[管理员权限](../../administrator/user-management/user-management.md)。
+>>需要[管理员权限](../../administrator/user-management/user-management.md)。
 
 现在，您有了更多创建分析的选项，有时可能很难确切知道哪种Report Builder风格适合您的需求。 本主题将指导您选择构建分析的最佳方法。
 
 ## 何时应使用[!DNL SQL Report Builder]？ {#whensql}
 
-查看一些在[!DNL SQL Report Builder]上使用[!DNL traditional Report Builder]的更常见原因。
+查看一些在[!DNL traditional Report Builder]上使用[!DNL SQL Report Builder]的更常见原因。
 
 ### 如果要使用特定于[!DNL SQL]的函数……
 
@@ -50,7 +41,7 @@ ht-degree: 0%
 * [`MONTHS_BETWEEN`](https://docs.aws.amazon.com/redshift/latest/dg/r_MONTHS_BETWEEN_function.html)
 * [`REPLACE`](https://docs.aws.amazon.com/redshift/latest/dg/r_REPLACE.html)
 * [`SQRT`](https://docs.aws.amazon.com/redshift/latest/dg/r_SQRT.html)
-* [`concatenation`操作员](https://docs.aws.amazon.com/redshift/latest/dg/r_concat_op.html)
+* [`concatenation`运算符](https://docs.aws.amazon.com/redshift/latest/dg/r_concat_op.html)
 
 ### 如果你想做些测试……
 
@@ -80,7 +71,7 @@ ht-degree: 0%
 
 ### 如果您正在与其他用户共享您的工作……
 
-贵组织中的用户是否使用/查看此分析？ 根据您正在与谁共享您的工作，有时候使用可视化Report Builder可能会更好。 与读取可能较长的[!DNL Visual Report Builder]查询相比，用户可以快速查看[!DNL SQL]中的定义。
+贵组织中的用户是否使用/查看此分析？ 根据您正在与谁共享您的工作，有时候使用可视化Report Builder可能会更好。 与读取可能较长的[!DNL SQL]查询相比，用户可以快速查看[!DNL Visual Report Builder]中的定义。
 
 如果有人需要报告但不熟悉[!DNL SQL]，Adobe建议使用Report Builder的原始风格。 这样他们就可以轻松办事。
 

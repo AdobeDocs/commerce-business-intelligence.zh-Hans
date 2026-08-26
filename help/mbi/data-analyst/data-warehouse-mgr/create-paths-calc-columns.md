@@ -5,25 +5,14 @@ exl-id: 734a8046-8058-4f03-93a2-8d59b9be6d2d
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
 TQID: https://experienceleague.adobe.com/UXIfQT9NxvKnefTMVWxjTYEMDpmCRITyzlFpNcU-y90
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1007
+source-wordcount: 1032
 ht-degree: 0%
 
 ---
@@ -37,7 +26,7 @@ ht-degree: 0%
 1. 数据库中的表如何相互关联
 1. 定义此关系的主键和外键
 
-如果您知道此信息，可以按照本主题中的说明轻松创建路径。 您可能需要咨询组织中的技术专家，或联系[专业服务团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+如果您知道此信息，可以按照本主题中的说明轻松创建路径。 您可能需要咨询组织中的技术专家，或联系[专业服务团队](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
 
 ## 刷新表关系和键类型 {#refresher}
 
@@ -59,9 +48,9 @@ ht-degree: 0%
 
 ### 主键和外键 {#keys}
 
-`Primary Key`是未更改的列或列集，在表中生成唯一值。 例如，当客户在网站上订购时，购物车中的`orders`表中会添加一个新行，其中包含新的`order_id`。 此`order_id`允许客户和公司跟踪该特定订单的进度。 由于订单ID是唯一的，因此它通常是`Primary Key`表的`orders`。
+`Primary Key`是未更改的列或列集，在表中生成唯一值。 例如，当客户在网站上订购时，购物车中的`orders`表中会添加一个新行，其中包含新的`order_id`。 此`order_id`允许客户和公司跟踪该特定订单的进度。 由于订单ID是唯一的，因此它通常是`orders`表的`Primary Key`。
 
-`Foreign Key`是在链接到另一个表的`Primary Key`列的表中创建的列。 外键可在表之间创建引用，使分析人员能够轻松地查找记录并将记录链接到一起。 假设您想了解哪些订单属于您的每个客户。 `customer id`列（`Primary Key`表的`customers`）和`order_id`列（`Foreign Key`表中的`customers`，引用`Primary Key`表的`orders`）允许我们链接和分析此信息。 创建路径时，需要您同时定义`Primary Key`和`Foreign Key`。
+`Foreign Key`是在链接到另一个表的`Primary Key`列的表中创建的列。 外键可在表之间创建引用，使分析人员能够轻松地查找记录并将记录链接到一起。 假设您想了解哪些订单属于您的每个客户。 `customer id`列（`customers`表的`Primary Key`）和`order_id`列（`customers`表中的`Foreign Key`，引用`orders`表的`Primary Key`）允许我们链接和分析此信息。 创建路径时，需要您同时定义`Primary Key`和`Foreign Key`。
 
 ## 创建路径 {#createpath}
 
@@ -70,8 +59,8 @@ ht-degree: 0%
 使用&#x200B;**客户**&#x200B;和&#x200B;**订单**&#x200B;之间的关系来向您说明如何完成此操作。 划分：
 
 * 关系为`one-to-many` — 一个客户可以有多个订单，但一个订单只能有一个客户。 这告诉我们关系的方向，或应在何处创建计算列。 在这种情况下，这意味着可以将`orders`表中的信息引入`customers`表中。
-* 您要使用的`primary key`是`customers.customerid`或`customer ID`表中的`customers`列。
-* 您要使用的`foreign key`是`orders.customerid`或`customer ID`表中的`orders`列。
+* 您要使用的`primary key`是`customers.customerid`或`customers`表中的`customer ID`列。
+* 您要使用的`foreign key`是`orders.customerid`或`orders`表中的`customer ID`列。
 
 现在，您可以创建路径。
 
@@ -96,7 +85,7 @@ ht-degree: 0%
 
 * **[!DNL Commerce Intelligence]无法猜测主/外键关系**。 您不希望将不正确的数据引入帐户，因此必须手动创建路径。
 
-* **目前，只能在两个不同的表**&#x200B;之间指定路径。 您尝试重新创建的逻辑是否涉及两个以上的表？ 然后，(1)先将列连接到中间表，然后再连接到“最终目标”表，或者(2)咨询[专业服务团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)以找到实现目标的最佳方法，这样做可能会有意义。
+* **目前，只能在两个不同的表**&#x200B;之间指定路径。 您尝试重新创建的逻辑是否涉及两个以上的表？ 然后，(1)先将列连接到中间表，然后再连接到“最终目标”表，或者(2)咨询[专业服务团队](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)以找到实现目标的最佳方法，这样做可能会有意义。
 
 * **列一次只能是ONE路径的外键引用**。 例如，如果`order_items.order_id`指向`orders.id`，则`order_items.order_id`无法指向任何其他内容。
 
@@ -110,7 +99,7 @@ ht-degree: 0%
 
 ## 正在结束 {#wrapup}
 
-现在，您已熟悉如何在Data Warehouse中为计算列创建路径。 如果您仍不确定特定路径，请记住，您始终可以在&#x200B;**[!UICONTROL Support]**&#x200B;帐户中单击[!DNL Commerce Intelligence]以获取帮助。
+现在，您已熟悉如何在Data Warehouse中为计算列创建路径。 如果您仍不确定特定路径，请记住，您始终可以在[!DNL Commerce Intelligence]帐户中单击&#x200B;**[!UICONTROL Support]**&#x200B;以获取帮助。
 
 ## 相关
 

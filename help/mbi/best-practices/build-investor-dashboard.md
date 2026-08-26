@@ -1,27 +1,18 @@
 ---
 title: 为投资者构建功能板
-description: 了解如何为投资者构建仪表板。
+description: 在Commerce Intelligence中构建一个可供投资者使用的仪表板。 了解最佳实践，以清晰、全面地了解与日常操作仪表板不同的情况。
 exl-id: 917e7628-3498-4413-a7e1-61799989a7dd
 role: Admin, Developer, User
 feature: Dashboards, Data Integration
 TQID: https://experienceleague.adobe.com/0G3u84SK-CvA7Pvb5bI-uEkUkbi9oiYvWwJHRwd-568
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 289
+source-wordcount: 315
 ht-degree: 0%
 
 ---
@@ -43,34 +34,34 @@ ht-degree: 0%
 ## 可视化报表
 
 * **[!UICONTROL Revenue by quarter]**
-   * 量度 — 收入
+  * 量度 — 收入
 * **[!UICONTROL Revenue from 1st time orders vs repeat orders]**
-   * 量度 — 首次订单收入
-      * 过滤器 — 用户的订单号等于1
-   * 量度2 — 重复订单收入
-      * 筛选器 — 用户的订单号大于1
-   * 取消选中多个Y轴的复选框
-   * 更改为栈叠式柱状图
+  * 量度 — 首次订单收入
+    * 过滤器 — 用户的订单号等于1
+  * 量度2 — 重复订单收入
+    * 筛选器 — 用户的订单号大于1
+  * 取消选中多个Y轴的复选框
+  * 更改为栈叠式柱状图
 * **[!UICONTROL AOV by quarter]**
-   * 量度1 — 收入
-      * 隐藏此量度
-   * 量度2 — 订单数
-      * 隐藏此量度
-   * 公式 — AOV
-      * A/B
+  * 量度1 — 收入
+    * 隐藏此量度
+  * 量度2 — 订单数
+    * 隐藏此量度
+  * 公式 — AOV
+    * A/B
 * **[!UICONTROL All-time revenue by source]**
-   * 量度 — 收入
-   * 按客户的`utm_source`分组
+  * 量度 — 收入
+  * 按客户的`utm_source`分组
 * **[!UICONTROL Revenue from top 10 products]**
-   * 量度 — 产品收入
-      * 隐藏图表
-      * 按产品名称分组。 选择所有产品。
-      * 将时间范围设置为“全时”
-      * 将时间间隔设置为“无”
-      * 在“显示排名最前的/最低的”中，仅显示按产品利润排列的排名前10位
+  * 量度 — 产品收入
+    * 隐藏图表
+    * 按产品名称分组。 选择所有产品。
+    * 将时间范围设置为“全时”
+    * 将时间间隔设置为“无”
+    * 在“显示排名最前的/最低的”中，仅显示按产品利润排列的排名前10位
 * **[!UICONTROL Cumulative distinct buyers by quarter]**
-   * 量度 — 不同的购买者
-      * 透视 — 累积
+  * 量度 — 不同的购买者
+    * 透视 — 累积
 * **[!UICONTROL Site visits - New vs. repeat by month]**
 * 会话
 
@@ -79,7 +70,7 @@ ht-degree: 0%
 * 网站访问
 * 转化率
 
-通过[Commerce数据扩充服务](https://business.adobe.com/cn/products/magento/magento-commerce.html)，您可以包括以下报表：
+通过[Commerce数据扩充服务](https://business.adobe.com/products/magento/magento-commerce.html)，您可以包括以下报表：
 
 * 按州/地区、年龄、性别列出的独特客户。
 

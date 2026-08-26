@@ -5,23 +5,14 @@ exl-id: e6a9f08f-1063-4d92-93e6-971280239fdb
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/ap-nWiPVnPSpvUT4uiimZ7iC4fiuKvKH0ZMVkOTDcK8
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 246
+source-wordcount: 256
 ht-degree: 0%
 
 ---
@@ -38,9 +29,9 @@ ht-degree: 0%
 
 将您的[!DNL Mixpanel]数据连接到[!DNL Commerce Intelligence]一个简单的三步过程：
 
-1. [在 [!DNL Mixpanel] 中打开 [!DNL Commerce Intelligence]凭据页面](#stepone)
+1. [在 [!DNL Commerce Intelligence]中打开 [!DNL Mixpanel] 凭据页面](#stepone)
 1. [检索 [!DNL Mixpanel] API凭据](#steptwo)
-1. [在 [!DNL Mixpanel] 中输入您的 [!DNL Commerce Intelligence]API凭据](#stepthree)
+1. [在 [!DNL Commerce Intelligence]中输入您的 [!DNL Mixpanel] API凭据](#stepthree)
 
 要完成此过程，您需要打开两个浏览器窗口或选项卡，一个用于[!DNL Commerce Intelligence]，另一个用于[!DNL Mixpanel]帐户。
 
@@ -48,7 +39,7 @@ ht-degree: 0%
 
 开始使用：
 
-1. 转到`Connections`下的&#x200B;**[!DNL Manage Data** > **Connections]**&#x200B;页面。
+1. 转到&#x200B;**[!DNL Manage Data** > **Connections]**&#x200B;下的`Connections`页面。
 
 1. 单击&#x200B;**[!UICONTROL Add a New Source]**，它位于屏幕右侧的`Data Sources`表上方。
 
@@ -70,14 +61,14 @@ ht-degree: 0%
 
 保持此打开状态，你需要它来结束此过程。
 
-## 在[!DNL Mixpanel]中输入您的[!DNL Commerce Intelligence] API凭据 {#stepthree}
+## 在[!DNL Commerce Intelligence]中输入您的[!DNL Mixpanel] API凭据 {#stepthree}
 
-1. 将`API Key`和`Secret`复制到[!DNL Mixpanel]中的[!DNL Commerce Intelligence]凭据页面。
+1. 将`API Key`和`Secret`复制到[!DNL Commerce Intelligence]中的[!DNL Mixpanel]凭据页面。
 1. 单击&#x200B;**[!UICONTROL Connect to Mixpanel]**&#x200B;以完成设置。
 
-如果连接成功，则&#x200B;_成功！_&#x200B;消息将显示在页面顶部。
+如果连接成功，_成功！_ 消息将显示在页面顶部。
 
 ### 相关
 
 * [需要 [!DNL Mixpanel] 数据](../integrations/mixpanel-data.md)
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [重新验证集成](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
