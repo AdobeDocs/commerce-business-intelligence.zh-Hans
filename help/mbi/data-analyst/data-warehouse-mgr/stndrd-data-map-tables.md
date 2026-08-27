@@ -1,6 +1,6 @@
 ---
 title: 使用映射表标准化数据
-description: 了解如何使用映射表。
+description: 使用Commerce Intelligence Data Warehouse Manager中的映射表标准化不一致的值（如计费状态格式），以保持报表的准确性。
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 775
+source-wordcount: 788
 ht-degree: 0%
 
 ---
@@ -71,14 +71,14 @@ ht-degree: 0%
 要创建`joined`列，请在Data Warehouse管理器中导航到字段将重新定位到的表。 在此示例中，这将是`customer_address`表。
 
 1. 单击&#x200B;**[!UICONTROL Create a Column]**。
-1. 从`Joined Column`下拉列表中选择`Definition`。
+1. 从`Definition`下拉列表中选择`Joined Column`。
 1. 为该列提供一个名称，使其与数据库中的`state`列不同。 为列`billing state (mapped)`命名，以便您能够在Report Builder中进行分段时了解要使用哪个列。
-1. 连接表所需的路径不存在，因此您需要创建一个路径。 在&#x200B;**[!UICONTROL Create new path]**&#x200B;下拉菜单中单击`Select a table and column`。
+1. 连接表所需的路径不存在，因此您需要创建一个路径。 在`Select a table and column`下拉菜单中单击&#x200B;**[!UICONTROL Create new path]**。
 
    如果您不确定表关系是什么，或者不确定如何正确定义主键和外键，请查看[教程](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md)以获取帮助。
 
    * 在`Many`端，选择您要将该字段重新定位到的表（同样，对我们来说，它是`customer_address`）以及示例中的`Foreign Key`列或`state`列。
-   * 在`One`侧，选择`mapping`表和`Primary key`列。 在这种情况下，应从`state_input`表中选择`mapping_state`列。
+   * 在`One`侧，选择`mapping`表和`Primary key`列。 在这种情况下，应从`mapping_state`表中选择`state_input`列。
    * 以下是路径的外观：
 
      ![Data Warehouse Manager显示状态映射计算路径](../../assets/State_Mapping_Path.png)
@@ -93,7 +93,7 @@ ht-degree: 0%
 
 ![显示标准化后状态区段的图表](../../assets/Clean_State_Segments.png)
 
-无论您何时想要清理Data Warehouse中一些潜在的乱数据，都可以使用映射表。 但是，映射表也可以用于其他酷炫用例，如[在 [!DNL Google Analytics channels] 中复制 [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md)。
+无论您何时想要清理Data Warehouse中一些潜在的乱数据，都可以使用映射表。 但是，映射表也可以用于其他酷炫用例，如[在 [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md)中复制 [!DNL Google Analytics channels] 。
 
 ### 相关
 

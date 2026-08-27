@@ -1,6 +1,6 @@
 ---
 title: 克隆功能板
-description: 了解如何克隆功能板。
+description: 克隆Commerce Intelligence功能板以将其所有报表复制到新功能板中，可在您需要其他受众的类似视图时节省时间。
 exl-id: f0bfa786-ab01-4c55-9d8a-ed002c2321b6
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
@@ -17,9 +17,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 196
+source-wordcount: 220
 ht-degree: 0%
 
 ---

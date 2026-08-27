@@ -20,9 +20,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 952
+source-wordcount: 969
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ ht-degree: 0%
 
 如果您提供多个产品，您可能会想知道购买特定产品的客户与其他客户相比随着时间的推移表现如何。 想了解更多信息？ 查看本教程，探索客户同类群组（基于他们购买的特定产品）的生命周期购买行为。
 
-此最佳实践由[!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS)提供。 [联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)以获取更多信息。
+此最佳实践由[!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS)提供。 [联系支持人员](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)以获取更多信息。
 
 ### 相关
 

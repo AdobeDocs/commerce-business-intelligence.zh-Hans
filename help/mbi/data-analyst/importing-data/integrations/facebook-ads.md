@@ -20,9 +20,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 313
+source-wordcount: 321
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ![Facebook广告徽标](../../../assets/facebook-ads-logo.png)
 
-你做了调查，做了广告，在[!DNL Facebook]上启动了你的营销活动。 现在该分析您的广告支出数据了，看看您的资金是否得到了有效花销。 使用广告支出数据，您可通过将广告成本和从营销活动中获得的用户的客户存留期价值(CLV) [相匹配来](../../../data-analyst/analysis/roi-ad-camp.md)衡量营销活动ROI。
+你做了调查，做了广告，在[!DNL Facebook]上启动了你的营销活动。 现在该分析您的广告支出数据了，看看您的资金是否得到了有效花销。 使用广告支出数据，您可通过将广告成本和从营销活动中获得的用户的客户存留期价值(CLV) [&#128279;](../../../data-analyst/analysis/roi-ad-camp.md)相匹配来衡量营销活动ROI。
 
 将您的[!DNL Facebook Ad]数据连接到[!DNL Commerce Intelligence]是一个简单的三步过程：
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ## 将[!DNL Facebook]添加为[!DNL Commerce Intelligence]中的数据源 {#stepone}
 
-1. 要将[!DNL Facebook]集成添加到您的[!DNL Commerce Intelligence]帐户，请导航到`Connections`下的&#x200B;**[!UICONTROL Manage Data** > **Integrations]**&#x200B;页面。
+1. 要将[!DNL Facebook]集成添加到您的[!DNL Commerce Intelligence]帐户，请导航到&#x200B;**[!UICONTROL Manage Data** > **Integrations]**&#x200B;下的`Connections`页面。
 1. 单击右侧的&#x200B;**[!UICONTROL Add Integration]**。
 1. 单击[!DNL Facebook]图标。 这将显示[!DNL Facebook]授权页面。
 1. 单击&#x200B;**[!UICONTROL Authorize]**。
@@ -66,15 +66,15 @@ Commerce Intelligence的![Facebook访问权限对话框](../../../assets/Faceboo
 
 1. 单击&#x200B;**[!UICONTROL Save Connections]**。
 
-   如果连接成功，*连接成功！*&#x200B;消息将显示在页面顶部。
+   如果连接成功，*连接成功！* 消息将显示在页面顶部。
 
 ## 接下来呢？ {#next}
 
-确保您在[!DNL Facebook]中跟踪[!DNL Google Analytics]营销活动。 这可确保为您的`utm\_campaign`营销活动正确填充[!DNL Google Analytics]中的[!DNL Facebook]字段。
+确保您在[!DNL Google Analytics]中跟踪[!DNL Facebook]营销活动。 这可确保为您的[!DNL Facebook]营销活动正确填充[!DNL Google Analytics]中的`utm\_campaign`字段。
 
 ## 相关
 
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [重新验证集成](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
 * [连接你的 [!DNL Google Adwords] 帐户](../integrations/google-ecommerce.md)
 * [通过 [!DNL Google eCommerce]跟踪订单反向链接来源](../integrations/google-ecommerce.md)
 * [跟踪数据库中的用户反向链接源](../../analysis/google-track-user-acq.md)

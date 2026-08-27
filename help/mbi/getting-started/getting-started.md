@@ -1,6 +1,6 @@
 ---
 title: Adobe Commerce Intelligence简介
-description: 了解Adobe Commerce Intelligence。
+description: 开始使用Adobe Commerce Intelligence（以前称为Magento Business Intelligence）。 了解平台提供的功能以及如何开始探索您的数据。
 exl-id: 0c960d8c-9bb7-429e-a88e-21678a77b710
 role: Admin, Developer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
@@ -25,9 +25,9 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 252
+source-wordcount: 275
 ht-degree: 0%
 
 ---
@@ -46,4 +46,4 @@ ht-degree: 0%
 
 标准功能板包括营销ROI、客户存留期值、客户细分、高管和投资者KPI、同类群组分析和促销分析。
 
-当您[激活](../getting-started/onpremise-activation.md)您的[!DNL Commerce Intelligence]帐户时，您正在将您的[!DNL Adobe Commerce]数据库连接到[!DNL Commerce Intelligence]，并立即获得对包含大约100个报告的五个仪表板的访问权限。 这些报表旨在提供有关您数据的洞察信息，并回答诸如&#x200B;*我的订单环比增长如何？*，*谁是我最忠诚的客户？*&#x200B;和&#x200B;*我的优惠券策略是否有效？*。
+当您[激活](../getting-started/onpremise-activation.md)您的[!DNL Commerce Intelligence]帐户时，您正在将您的[!DNL Adobe Commerce]数据库连接到[!DNL Commerce Intelligence]，并立即获得对包含大约100个报告的五个仪表板的访问权限。 这些报表旨在提供有关您数据的洞察信息，并回答诸如&#x200B;*我的订单环比增长如何？*、*谁是我最忠诚的客户？*&#x200B;以及&#x200B;*我的优惠券策略是否有效？*&#x200B;之类的问题。

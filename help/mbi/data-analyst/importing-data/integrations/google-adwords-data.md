@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 436
+source-wordcount: 603
 ht-degree: 0%
 
 ---
@@ -107,4 +107,4 @@ ht-degree: 0%
 
 如果您没有合并表，并且在`adwords`表上构建了一个漂亮的仪表板，则需要复制报表或创建重复的量度以将该数据与您的[!DNL Facebook Ads]数据进行比较。 通过使用合并表，您可以将[!DNL Facebook Ads]数据无缝地合并到您现有的[!DNL Adwords]报表中。 您也可以按广告平台进行分段。
 
-如果您已同步上述字段，请[联系我们](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)以整合您的广告支出。
+如果您已同步上述字段，请[联系我们](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)以整合您的广告支出。

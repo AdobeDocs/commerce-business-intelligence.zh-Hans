@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 187
+source-wordcount: 220
 ht-degree: 0%
 
 ---
@@ -47,4 +47,4 @@ ht-degree: 0%
 ## 相关文档
 
 * [正在连接 [!DNL Mixpanel]](../integrations/mixpanel.md)
-* [正在重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [重新验证集成](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

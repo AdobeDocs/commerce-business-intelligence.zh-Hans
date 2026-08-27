@@ -1,6 +1,6 @@
 ---
 title: 导出图表数据
-description: 了解如何查看图表后的数据。
+description: 使用图表的齿轮图标查看并导出任何Commerce Intelligence图表后的数据，以便深入了解驱动仪表板的数字。
 exl-id: 3c75ff3c-c4e2-4ff8-a303-6f24ccfca0ff
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 103
+source-wordcount: 122
 ht-degree: 0%
 
 ---
@@ -37,6 +37,6 @@ ht-degree: 0%
 - `Full Excel Export`
 - `Raw Export`
 
-您还可以定义要包含在导出[中的](../../tutorials/export-raw-data.md)表和列。
+您还可以定义要包含在导出[&#128279;](../../tutorials/export-raw-data.md)中的表和列。
 
 如果您需要在演示文稿或文档中包含图表，可以将图表导出为PNG、PDF或SVG格式的图像。 单击任何图表右上角的齿轮图标。 在下拉列表中选择`Enlarge`选项，然后单击&#x200B;**[!UICONTROL Download]**&#x200B;以完成导出。

@@ -22,16 +22,16 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 685
+source-wordcount: 711
 ht-degree: 0%
 
 ---
 
 # 数据迁移
 
-迁移到新的数据库模式、服务器或报告数据库并不一定有压力。 [[!DNL Adobe] 服务团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)提供迁移帮助。
+迁移到新的数据库模式、服务器或报告数据库并不一定有压力。 [[!DNL Adobe] 服务团队](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)提供迁移帮助。
 
 为确保过渡尽可能顺利，提交迁移请求时应尽可能详细。 本主题包含提交请求并开始迁移所需的一切。 向我们提供您需求的全面信息，可以确保您的项目范围设定得当，并且估算准确。
 
@@ -39,9 +39,9 @@ ht-degree: 0%
 
 在开始之前，您必须知道以下问题的答案：
 
-* **新数据库是否位于新服务器上？**&#x200B;在提交请求之前，请在&#x200B;**[!UICONTROL Manage Data** > **Connections]**&#x200B;下更新数据连接的设置。 如果需要有关如何执行此操作的更新程序，请转到[`Integrations`](../integrations/integrations.md)部分并查找有关您正在使用的数据库类型的说明。
+* **新数据库是否位于新服务器上？** 在提交请求之前，请更新&#x200B;**[!UICONTROL Manage Data** > **Connections]**&#x200B;下的数据连接设置。 如果需要有关如何执行此操作的更新程序，请转到[`Integrations`](../integrations/integrations.md)部分并查找有关您正在使用的数据库类型的说明。
 
-* **您的所有历史数据是否都存在于新数据库中，还是需要迁移？**&#x200B;您可以在迁移过程中合并历史数据和新数据。 即使您不需要整合，也可以在您的请求中告知我们。
+* **您的所有历史数据是否都存在于新数据库中，还是需要迁移？** 您可以在迁移过程中整合历史数据和新数据。 即使您不需要整合，也可以在您的请求中告知我们。
 
 获得上述答案后，您需要知道迁移的类型。 新数据库是具有[`same`](#sameschema)架构，还是具有[`different`](#newschema)架构？ 在下面的讨论中，您可以找到每种迁移类型的详细说明。
 
@@ -85,7 +85,7 @@ ht-degree: 0%
 
 ## 如何提交请求？ {#submitreq}
 
-您可以通过[提交支持请求](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)联系我们。
+您可以通过[提交支持请求](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)联系我们。
 
 如果您按照上一节中的步骤创建列匹配电子表格，请不要忘记附加它。
 

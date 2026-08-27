@@ -22,9 +22,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 761
+source-wordcount: 767
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 创建帐户后，请查看您的电子邮件中是否有来自[!DNL The Magento BI Team@rjmetrics.com]的帐户通知电子邮件。 使用电子邮件中提供的链接访问您的[!DNL Commerce Intelligence]帐户并创建密码。 转到您的收件箱并验证您的电子邮件地址。
 
-如果未收到电子邮件，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+如果未收到电子邮件，请[联系支持人员](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
 
 ![为新的Commerce Intelligence帐户创建密码屏幕](../assets/create-account-4.png)
 
@@ -132,15 +132,15 @@ ht-degree: 0%
 
 [!UICONTROL Integration Name]： [为您的[!DNL Commerce Intelligence]实例选择一个名称]
 
-[!UICONTROL Host]: `mbi.internal`
+[!UICONTROL Host]&#x200B;: `mbi.internal`
 
-[!UICONTROL Port]: `3306`
+[!UICONTROL Port]&#x200B;: `3306`
 
-[!UICONTROL 用户名]: `mbi`
+[!UICONTROL 用户名]&#x200B;: `mbi`
 
 [!UICONTROL Password]：在上一部分中显示了[输入密码]
 
-[!UICONTROL Database Name]: `main`
+[!UICONTROL Database Name]&#x200B;: `main`
 
 [!UICONTROL Table Prefixes]：如果没有表前缀，[留空]
 
@@ -150,7 +150,7 @@ ht-degree: 0%
 
 **输入：**
 
-[!UICONTROL Database Timezone]: `UTC`
+[!UICONTROL Database Timezone]&#x200B;: `UTC`
 
 [!UICONTROL Desired Timezone]： [选择您希望数据显示的时区]
 
@@ -166,13 +166,13 @@ ht-degree: 0%
 
 **输入：**
 
-[!UICONTROL Encryption Type]: `SSH Tunnel`
+[!UICONTROL Encryption Type]&#x200B;: `SSH Tunnel`
 
 [!UICONTROL Remote Address]： `ssh.us-3.magento.cloud` [来自上一步]
 
 [!UICONTROL Username]： `vfbfui4vmfez6-master-7rqtwti—mymagento` [来自上一步]
 
-[!UICONTROL Port]: `22`
+[!UICONTROL Port]&#x200B;: `22`
 
 ## 保存您的集成。
 
@@ -189,7 +189,7 @@ ht-degree: 0%
 <!--
 # Activate your [!DNL Commerce Intelligence] Account
 
-To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans).
+To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 >[!NOTE]
 >

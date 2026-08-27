@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 449
+source-wordcount: 481
 ht-degree: 0%
 
 ---
@@ -59,11 +59,11 @@ ht-degree: 0%
 
 ## 存储筛选器
 
-要分析特定商店的执行方式，请单击右上角的商店图标（![商店筛选器](../../assets/store-filter.png)）。 默认情况下，`Store Filter`设置为`All Stores`，这将显示您的Commerce站点中可用的所有[存储视图](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html?lang=zh-Hans)中的数据。
+要分析特定商店的执行方式，请单击右上角的商店图标（![商店筛选器](../../assets/store-filter.png)）。 默认情况下，`Store Filter`设置为`All Stores`，这将显示您的Commerce站点中可用的所有[存储视图](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/site-store/store-views)中的数据。
 
 >[!NOTE]
 >
->已为整个[!DNL Commerce Intelligence]帐户启用或禁用商店筛选器。 如果仪表板包含不受筛选器影响的报表（例如未基于任何[!DNL Adobe Commerce]数据构建的报告），则在应用商店筛选器时，这些报表不会更新。 如果您认为报表应该根据存储选择进行更新，或者您认为您的帐户存储筛选器被错误地禁用，您可以[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+>已为整个[!DNL Commerce Intelligence]帐户启用或禁用商店筛选器。 如果仪表板包含不受筛选器影响的报表（例如未基于任何[!DNL Adobe Commerce]数据构建的报告），则在应用商店筛选器时，这些报表不会更新。 如果您认为报表应该根据存储选择进行更新，或者您认为您的帐户存储筛选器被错误地禁用，您可以[联系支持人员](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
 
 当您从`Store Filter`中选择商店时，当您在功能板之间导航时，筛选器将保留您的选择。 保留您的选择允许您查看所选存储的所有位置的数据，直到您选择`All Stores`为止。
 

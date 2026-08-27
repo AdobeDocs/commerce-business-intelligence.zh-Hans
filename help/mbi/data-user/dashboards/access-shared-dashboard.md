@@ -1,6 +1,6 @@
 ---
 title: 访问共享报告面板
-description: 了解如何访问共享的功能板。
+description: 了解新用户如何能够快速访问在Commerce Intelligence中与他们共享的仪表板，以便您的团队无需额外的设置步骤即可快速掌握。
 exl-id: 528b8a2e-f13c-4ce8-ab8e-13864f50761a
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
@@ -17,9 +17,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 67
+source-wordcount: 86
 ht-degree: 0%
 
 ---
@@ -34,4 +34,4 @@ ht-degree: 0%
 
 ## 现有用户
 
-若要再次查看共享功能板的列表，用户可以单击&#x200B;**[!UICONTROL Find]**&#x200B;菜单中的`Global Search`。
+若要再次查看共享功能板的列表，用户可以单击`Global Search`菜单中的&#x200B;**[!UICONTROL Find]**。

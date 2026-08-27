@@ -20,23 +20,23 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 491
+source-wordcount: 511
 ht-degree: 0%
 
 ---
 
 # 导出原始数据
 
-使用原始数据导出，您可以从Data Warehouse导出记录，以更详细地了解为您的仪表板提供支持的功能。 此外，原始数据导出还可以帮助您[查明数据差异](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=zh-Hans)。
+使用原始数据导出，您可以从Data Warehouse导出记录，以更详细地了解为您的仪表板提供支持的功能。 此外，原始数据导出还可以帮助您[查明数据差异](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies)。
 
 通过原始数据导出，可访问通过取消标准化和预聚合相关量度生成的其他列和维度。 例如，`User's first order date`是一个维度，您可以为[!DNL Commerce Intelligence]中的每个用户导出该维度，但它可能在数据库中不可用。
 
 本教程涵盖以下内容：
 
 * [选择要导出的数据](#select)
-* [正在下载导出(](#download)
+* [正在下载导出（`.csv`文件）](#download)
 * [访问历史导出](#historical)
 
 ## 步骤1：选择要导出的数据 {#select}

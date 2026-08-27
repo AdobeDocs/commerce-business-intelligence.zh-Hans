@@ -23,9 +23,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1950
+source-wordcount: 1989
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->对这些仪表板的访问取决于您的帐户类型和访问级别。 如果您没有看到这些仪表板，请联系[支持](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+>对这些仪表板的访问取决于您的帐户类型和访问级别。 如果您没有看到这些仪表板，请联系[支持](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
 
 ## 报告可用性
 
@@ -152,7 +152,7 @@ ht-degree: 0%
 
 ## 产品
 
-“产品”仪表板显示从订购的产品、它们的商品总价值(GMV)以及购买和退款的热门产品等方面来说明的一般产品表现。 它可以帮助您平衡购买和回报，并确定产品成功和受欢迎程度。 您的商店必须[配置为跟踪退款](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html?lang=zh-Hans)，才能填充这些图表。
+“产品”仪表板显示从订购的产品、它们的商品总价值(GMV)以及购买和退款的热门产品等方面来说明的一般产品表现。 它可以帮助您平衡购买和回报，并确定产品成功和受欢迎程度。 您的商店必须[配置为跟踪退款](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure)，才能填充这些图表。
 
 >[!NOTE]
 >

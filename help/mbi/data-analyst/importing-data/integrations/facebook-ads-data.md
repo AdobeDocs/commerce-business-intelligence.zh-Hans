@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: c8d7097b4f841a4fe8c5777f207ea0ea53202a0f
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 342
+source-wordcount: 343
 ht-degree: 0%
 
 ---
@@ -84,4 +84,4 @@ ht-degree: 0%
 ## 相关
 
 * [正在连接 [!DNL Facebook Ads]](../integrations/facebook-ads.md)
-* [重新验证集成](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hans)
+* [重新验证集成](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

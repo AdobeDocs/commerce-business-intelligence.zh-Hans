@@ -1,6 +1,6 @@
 ---
 title: 共享数据
-description: 共享数据的概述。
+description: 了解如何将Commerce Intelligence数据导出为CSV或Excel文件并进行共享，以及配置自动电子邮件摘要以随时向利益相关者通报情况。
 exl-id: 5c434d3b-0519-4980-a666-60bed122a93b
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 51
+source-wordcount: 70
 ht-degree: 0%
 
 ---

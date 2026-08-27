@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 544
+source-wordcount: 560
 ht-degree: 0%
 
 ---
@@ -82,4 +82,4 @@ ht-degree: 0%
 
 您是否注意到上述示例中公式的`timestamp`、`groupings`、`perspectives`和`filters`继承自其输入量度？ 请记住，公式可用于使用`perspectives`和[独立的时间选项](../../tutorials/time-options-visual-rpt-bldr.md){: target="_blank"}，就像量度一样。
 
-如果您对在`Report Builder`中使用公式有任何其他问题，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+如果您对在`Report Builder`中使用公式有任何其他问题，请[联系支持人员](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。

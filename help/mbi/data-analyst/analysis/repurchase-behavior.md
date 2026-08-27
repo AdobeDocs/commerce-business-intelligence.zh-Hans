@@ -19,10 +19,10 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 849
-ht-degree: 0%
+source-wordcount: 866
+ht-degree: 1%
 
 ---
 
@@ -63,9 +63,9 @@ ht-degree: 0%
 
 | **产品名称** | **重复订购概率** | **平均生命周期订单数** | **平均生命周期收入** | **下一订单的中位时间** |
 |-----|-----|-----|-----|-----|
-| 单杯咖啡机 | 94.98% | 7.92 | 549.82美元 | 57.01天 |
-| 咖啡胶囊 | 93.82% | 8.68 | 479.98美元 | 63.48天 |
-| 咖啡豆 | 41.92% | 6.07 | 99.82美元 | 27.31天 |
+| 单杯咖啡机 | 94.98% | 7.92 | $549.82 | 57.01天 |
+| 咖啡胶囊 | 93.82% | 8.68 | $479.98 | 63.48天 |
+| 咖啡豆 | 41.92% | 6.07 | $99.82 | 27.31天 |
 
 {style="table-layout:auto"}
 
@@ -97,4 +97,4 @@ ht-degree: 0%
 
 确定发生流失的原因后，您可以使用分析构建`reactivation`营销活动。 利用此数据，您可以识别处于不活跃状态的用户、自上次访问以来已经过的时间、上次购买的内容等等。 这样，您就可以做出切实可行的决策，以吸引客户回访。
 
-有关分析的帮助，[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+有关分析的帮助，[联系支持人员](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。

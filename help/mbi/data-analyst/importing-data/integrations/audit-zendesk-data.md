@@ -1,6 +1,6 @@
 ---
 title: 审核Zendesk数据
-description: 了解导出Zendesk数据的步骤。
+description: 通过将您的Zendesk数据导出到可下载的文件，在Commerce Intelligence中对其进行审核。 使用导出可查明差异并验证准确性。
 exl-id: 3c8dcc72-3623-4c4e-a941-f431a97571e0
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 269
+source-wordcount: 323
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 ## 启用数据导出
 
-当前未为所有[!DNL Zendesk]帐户启用数据导出。 要激活此功能，请[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)，并提及您的[!DNL Zendesk]子域名。
+当前未为所有[!DNL Zendesk]帐户启用数据导出。 要激活此功能，请[提交支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)，并提及您的[!DNL Zendesk]子域名。
 
 >[!NOTE]
 >
@@ -55,6 +55,6 @@ ht-degree: 0%
 
    此下载链接的有效期至少为3天。
 
-此过程将生成一个XML文件，其中包含存储在当前[!DNL Zendesk]帐户中的所有信息，包括票证数据（包含注释）、用户数据和帐户数据。 此时，您可以[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)（请确保附加此文件！），以便更仔细地查看您的数据。 如果文件太大，请通过[!DNL Commerce Intelligence]或[!DNL Dropbox]与[!DNL Google Drive]团队共享。
+此过程将生成一个XML文件，其中包含存储在当前[!DNL Zendesk]帐户中的所有信息，包括票证数据（包含注释）、用户数据和帐户数据。 此时，您可以[提交支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)（请确保附加此文件！） 以便更仔细地查看您的数据。 如果文件太大，请通过[!DNL Dropbox]或[!DNL Google Drive]与[!DNL Commerce Intelligence]团队共享。
 
 有关[!DNL Zendesk]文件导出的详细信息，请参阅官方的[[!DNL Zendesk] 导出文档](https://support.zendesk.com/hc/en-us/articles/4408886165402-Exporting-data-to-a-JSON-CSV-or-XML-file)。

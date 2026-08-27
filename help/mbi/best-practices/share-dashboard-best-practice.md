@@ -1,6 +1,6 @@
 ---
 title: 共享报告面板
-description: 了解如何使用并共享您的仪表板。
+description: 遵循与团队共享Commerce Intelligence功能板的最佳实践。 保持有效的协作，同时保持帐户井然有序。
 exl-id: 73df627f-bc08-45c0-aa5e-410c4fd0642d
 role: Admin, User
 feature: Dashboards
@@ -16,9 +16,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 377
+source-wordcount: 391
 ht-degree: 0%
 
 ---

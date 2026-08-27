@@ -1,6 +1,6 @@
 ---
 title: 检查更新周期状态
-description: 了解如何检查更新周期状态。
+description: 直接从仪表板检查上次Commerce Intelligence更新周期的状态。 了解帐户权限如何影响您可以查看的内容。
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
 role: Admin, Developer, User
 feature: Dashboards
@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 336
+source-wordcount: 373
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ## 为何要检查更新周期状态？
 
-当您审核[!DNL Commerce Intelligence]帐户中的数据时，检查状态更新周期很有用。 如果您看到的[个结果不符合您的预期](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)，例如[!DNL Commerce Intelligence]中的每日销售额与您在电子商务平台或[[!DNL Google] 电子商务收入](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=zh-Hans)中看到的结果不匹配，您可以检查最后一个数据点，以查看在更新完成后问题是否得到解决。
+当您审核[!DNL Commerce Intelligence]帐户中的数据时，检查状态更新周期很有用。 如果您看到的[个结果不符合您的预期](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)，例如[!DNL Commerce Intelligence]中的每日销售额与您在电子商务平台或[[!DNL Google] 电子商务收入](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies)中看到的结果不匹配，您可以检查最后一个数据点，以查看在更新完成后问题是否得到解决。
 
 ## [!UICONTROL Read-Only]和[!UICONTROL Standard]用户
 

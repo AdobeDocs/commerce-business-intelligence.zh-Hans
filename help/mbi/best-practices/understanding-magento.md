@@ -21,16 +21,16 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 749
+source-wordcount: 770
 ht-degree: 0%
 
 ---
 
 # 您的[!DNL Adobe Commerce Intelligence]环境
 
-在分析商业数据时，请注意这些因素和常见的误解。 如果需要有关确保正确使用Commerce架构的帮助，请立即[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+在分析商业数据时，请注意这些因素和常见的误解。 如果需要有关确保正确使用Commerce架构的帮助，请立即[联系支持人员](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
 
 ## [!DNL entity\_id]
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ## [!DNL Guest orders]
 
-如果您允许客户在没有帐户的情况下从您的网站订购（访客订单），则这些客户不会在`customer\_entity`表中填充为行。 此外，来宾下出的每个订单在`customer\_id`表中都有一个null `sales\_order`值。
+如果您允许客户在没有帐户的情况下从您的网站订购（访客订单），则这些客户不会在`customer\_entity`表中填充为行。 此外，来宾下出的每个订单在`sales\_order`表中都有一个null `customer\_id`值。
 
 因此，如果您希望跟踪来宾在一段时间内的行为，则必须在`sales\_order`表中使用客户标识符（如`customer\_email`）计算所有客户级别的列。
 

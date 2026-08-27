@@ -1,6 +1,6 @@
 ---
 title: 更改对共享功能板的访问权限
-description: 了解如何更改对共享功能板的访问权限。
+description: 随时更新共享Commerce Intelligence功能板的权限。 了解如何从共享功能板菜单调整用户和组织访问权限。
 exl-id: 0041281a-0a3c-49f8-9a5f-39a02c3acf26
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
@@ -17,9 +17,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 56
+source-wordcount: 72
 ht-degree: 0%
 
 ---

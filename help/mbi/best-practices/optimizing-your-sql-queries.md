@@ -1,6 +1,6 @@
 ---
 title: 优化SQL查询
-description: 了解如何优化SQL查询。
+description: 在Commerce Intelligence SQL Report Builder中优化SQL查询。 了解减少查询成本并避免因结果过大而导致失败的最佳实践。
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
 role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 826
+source-wordcount: 847
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 [!DNL SQL Report Builder]允许您随时运行和更改查询。 如果您需要立即更新查询，而不是等到更新周期完成后再修复列或报告，则此功能非常有用。
 
-在执行查询之前，[[!DNL Commerce Intelligence] 估计其成本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=zh-Hans)。 成本考虑执行查询所需的时间和资源数。 如果该成本过高，或者返回的行数超过[!DNL Commerce Intelligence]限制，则查询失败。 为了查询您的[Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md)（确保您编写的查询尽可能简化），Adobe建议执行以下操作。
+在执行查询之前，[!DNL Commerce Intelligence]估计其成本。 成本考虑执行查询所需的时间和资源数。 如果该成本过高，或者返回的行数超过[!DNL Commerce Intelligence]限制，则查询失败。 为了查询您的[Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md)（确保您编写的查询尽可能简化），Adobe建议执行以下操作。
 
 ## 使用SELECT或选择所有列
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 | **代替此……** | **尝试此操作！** |
 |-----|-----|
-| 使用SELECT星号![的](../../mbi/assets/Select_all_1.png)SQL查询 | ![选择特定列的SQL查询](../../mbi/assets/Select_all_2.png) |
+| 使用SELECT星号![&#128279;](../../mbi/assets/Select_all_1.png)的SQL查询 | ![选择特定列的SQL查询](../../mbi/assets/Select_all_2.png) |
 
 {style="table-layout:auto"}
 
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 外连接选择所有要连接的两个表，这会增加查询的计算成本。 这意味着您的查询运行时间更长，并且更有可能失败，因为返回结果可能需要比执行限制更长的时间。
 
-请考虑使用内部连接或左连接，而不使用这种类型的连接。 仅当表之间存在列匹配时（例如，典型`order_id`和`customers`表中都存在`orders`），内连接才会返回结果。 左连接会返回左表（第一个）中的所有结果以及右表（第二个）中的匹配结果。
+请考虑使用内部连接或左连接，而不使用这种类型的连接。 仅当表之间存在列匹配时（例如，典型`customers`和`orders`表中都存在`order_id`），内连接才会返回结果。 左连接会返回左表（第一个）中的所有结果以及右表（第二个）中的匹配结果。
 
 查看如何重写FULL OUTER JOIN查询：
 
@@ -84,7 +84,7 @@ ht-degree: 0%
 
 在编写查询时，请考虑使用尽可能便宜的运算符。 每个查询都有计算开销，计算开销由组成查询的函数、运算符和过滤器决定。 有些算子需要较少的计算量，因此与其他算子相比成本较低。
 
-比较运算符（>、&lt;、=等）开销最小，其次是[LIKE。 SIMILAR TO和POSIX运算符](https://www.postgresql.org/docs/9.5/functions-matching.html)是最昂贵的运算符。
+比较运算符（>、&lt;、=等）开销最小，其后是[LIKE。 SIMILAR TO和POSIX运算符](https://www.postgresql.org/docs/9.5/functions-matching.html)是最昂贵的运算符。
 
 ## 使用EXISTS与IN
 
@@ -112,7 +112,7 @@ ht-degree: 0%
 
 | **代替此……** | **尝试此操作！** |
 |-----|-----|
-| ![SQL查询，在筛选前GROUP BY &#x200B;](../../mbi/assets/Group_by_2.png) | 在GROUP BY![之前使用筛选器的](../../mbi/assets/Group_by_1.png)SQL查询 |
+| ![SQL查询，在筛选前GROUP BY &#x200B;](../../mbi/assets/Group_by_2.png) | 在GROUP BY![&#128279;](../../mbi/assets/Group_by_1.png)之前使用筛选器的SQL查询 |
 
 {style="table-layout:auto"}
 

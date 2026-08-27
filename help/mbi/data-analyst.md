@@ -1,6 +1,6 @@
 ---
 title: 数据分析师
-description: 数据分析师
+description: 探索Commerce Intelligence中的“数据分析师”角色。 设计自定义查询、构建计算列并为您的团队启用自助报表。
 exl-id: e7c4e0ba-f8fd-4a35-a9b1-1c2c43a1773d
 role: Admin, Developer, Leader, User
 feature: Data Warehouse Manager, Reports, Data Integration, Data Integration
@@ -20,9 +20,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 74
+source-wordcount: 96
 ht-degree: 0%
 
 ---

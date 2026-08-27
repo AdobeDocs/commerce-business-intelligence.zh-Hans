@@ -1,6 +1,6 @@
 ---
 title: 缩短更新周期
-description: 了解如何缩短更新周期时间。
+description: 缩短Commerce Intelligence更新周期，以便您的仪表板更快地反映最新数据。 了解影响同步速度的因素以及如何提高同步速度。
 exl-id: 0b211e2d-770f-480d-a7fb-8d10e3e7272e
 role: Admin, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager, Dashboards
@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 398
+source-wordcount: 427
 ht-degree: 0%
 
 ---
@@ -59,4 +59,4 @@ ht-degree: 0%
 
 ## 正在结束
 
-如果在实施这些建议后，您的更新时间似乎仍然很慢，请[联系支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+如果在实施这些建议后，您的更新时间似乎仍然很慢，请[联系支持团队](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。

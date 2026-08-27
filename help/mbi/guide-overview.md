@@ -25,9 +25,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 last-update: 2026-08-14
-source-git-commit: a02a389e329acf9bf10b85687e5f877cab992337
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 489
+source-wordcount: 492
 ht-degree: 2%
 
 ---
@@ -58,15 +58,15 @@ ht-degree: 2%
 
 ## 如何获取帮助
 
-如果您有问题并想利用某些专业服务，或者您的帐户遇到问题，请联系[支持团队](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+如果您有问题并想利用某些专业服务，或者您的帐户遇到问题，请联系[支持团队](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
 
 ### 服务策略
 
-查看客户支持团队提供的服务的[列表](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+查看客户支持团队提供的服务的[列表](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
 
 ### 提交支持票证
 
-需要有关构建高级计算列的帮助吗？ 遇到缺陷或连接问题？ 如果需要联系支持团队，Adobe会要求您使用[支持票证准则](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。 这些指南概述了Adobe解决该问题所需的信息。
+需要有关构建高级计算列的帮助吗？ 遇到缺陷或连接问题？ 如果需要联系支持团队，Adobe会要求您使用[支持票证准则](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。 这些指南概述了Adobe解决该问题所需的信息。
 
 ## 可用文档
 

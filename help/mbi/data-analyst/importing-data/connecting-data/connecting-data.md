@@ -23,9 +23,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 628
+source-wordcount: 627
 ht-degree: 0%
 
 ---
@@ -89,11 +89,11 @@ ht-degree: 0%
 * [合并表](../../../best-practices/consolidating-your-tables.md)
 * [限制对数据库的访问](../../../administrator/account-management/restrict-db-access.md)
 
-**没有看到您想要的集成？** 必须激活某些集成，才会在您的帐户中显示。 如果您要查找诸如[!DNL Facebook]之类的内容，但该内容未列出，请[提交支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+**没有看到您想要的集成？** 必须激活某些集成，才会在您的帐户中显示。 如果您要查找诸如[!DNL Facebook]之类的内容，但该内容未列出，请[提交支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
 
 **如果看到集成**&#x200B;的错误状态，请查看[疑难解答部分](https://support.magento.com/hc/en-us/sections/360003078151)以获取帮助。
 
 ## 监测更新运行状况（可选）
 
-连接源后，您可能需要自动执行基本运行状况检查，以确认完整更新正在完成。 使用开发人员文档中的[更新周期状态API](https://developer.adobe.com/commerce/services/reporting/update-cycle-status-api/)获取客户端最近完成的更新周期，并将其显示在内部功能板或警报中。
+连接源后，您可能需要自动执行基本运行状况检查，以确认完整更新正在完成。 使用开发人员文档中的[更新周期状态API](https://developer.adobe.com/commerce/services/reporting/update-cycle/)获取客户端最近完成的更新周期，并将其显示在内部功能板或警报中。
 

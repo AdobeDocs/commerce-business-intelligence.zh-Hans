@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 846
+source-wordcount: 861
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 `Cohort`分析通常可以宽泛地定义为分析在其生命周期内具有相似特征的用户组。 它允许您识别不同用户群组中的行为趋势。
 
-`cohort`中的大多数[!DNL Commerce Intelligence]用户按共同日期一起进行分析（例如，在给定月份中首次购买的所有客户集）。 `qualitative cohort`稍有不同：它是一个由不基于时间的特性定义的用户组。 示例包括：
+[!DNL Commerce Intelligence]中的大多数`cohort`用户按共同日期一起进行分析（例如，在给定月份中首次购买的所有客户集）。 `qualitative cohort`稍有不同：它是一个由不基于时间的特性定义的用户组。 示例包括：
 
 * 从广告营销活动获得的所有用户集
 * 首次购买包含优惠券（或不包含优惠券）的所有用户集
@@ -52,9 +52,9 @@ ht-degree: 0%
 
 ## 我应该向支持人员发送哪些信息才能设置我的分析？ {#support}
 
-在`qualitative cohort`中创建`Report Builder`报告涉及Adobe分析团队在必要的表中创建一些[高级计算列](../data-warehouse-mgr/creating-calculated-columns.md)。
+在`Report Builder`中创建`qualitative cohort`报告涉及Adobe分析团队在必要的表中创建一些[高级计算列](../data-warehouse-mgr/creating-calculated-columns.md)。
 
-要生成这些文件，请提交[支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)（并引用此文章！）。 以下是您需要了解的信息：
+要生成这些文件，请提交[支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)（并引用此文章！）。 以下是您需要了解的信息：
 
 * 您要使用执行同类群组分析的`metric`及其使用的表（示例： `Revenue`，基于`orders`表构建）。
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 * 您希望您的分析使用的`cohort date`（示例： `User's first order date`时间戳）。 此示例将允许我们查看每个区段并询问`How does a user's revenue grow in the months following their first order date?`。
 
-* 您希望查看分析的`time interval`（示例： `weeks`、`months`或`quarters`之后的`User's first order date`）。
+* 您希望查看分析的`time interval`（示例： `weeks`、`months`或`User's first order date`之后的`quarters`）。
 
 Adobe分析团队对上述内容做出响应后，您就有了几个新的高级计算列来构建您的报表！ 然后，您可以按照以下说明执行此操作。
 
@@ -78,7 +78,7 @@ Adobe分析团队对上述内容做出响应后，您就有了几个新的高级
 
 1. 将`time range`设置为您希望报告涵盖的时间范围。
 
-在此示例中，您查看了`all time`的`Revenue`视图。 之后，您应该最终会看到一系列圆点：
+在此示例中，您查看了`Revenue`的`all time`视图。 之后，您应该最终会看到一系列圆点：
 
 ![同类群组分组和分析选项的动画演示](../../assets/qualcohort2.gif)
 

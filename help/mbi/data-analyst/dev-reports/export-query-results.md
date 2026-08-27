@@ -1,6 +1,6 @@
 ---
 title: 导出我的查询结果
-description: 了解如何导出数据结果。
+description: 将Commerce Intelligence中的SQL查询结果导出到可下载的CSV文件，以便您能够在平台之外分析和共享数据。
 exl-id: 7c5672af-ca60-47c5-9054-ff36e2887497
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
@@ -17,13 +17,13 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 26
+source-wordcount: 45
 ht-degree: 0%
 
 ---
 
 # 导出我的查询结果
 
-单击&#x200B;**[!UICONTROL Export Data]**&#x200B;窗格中的`Results`将结果导出到`.csv`文件。
+单击`Results`窗格中的&#x200B;**[!UICONTROL Export Data]**&#x200B;将结果导出到`.csv`文件。

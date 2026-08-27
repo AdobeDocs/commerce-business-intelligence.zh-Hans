@@ -20,10 +20,10 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 482
-ht-degree: 0%
+source-wordcount: 593
+ht-degree: 16%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 * 选择[!UICONTROL table]： `sales_flat_order`
 * 选择[!UICONTROL column]： **`entity_id`**
 * [!UICONTROL Path]： sales_flat_order.customer_id = customer_entity.entity_id
-* [!UICONTROL Filter]：
+* [!UICONTROL Filter]:
 * 已计数的订单
 
 * `sales_flat_order`表
@@ -53,8 +53,8 @@ ht-degree: 0%
 * 选择定义：联接列
 * 选择[!UICONTROL table]： `customer_entity`
 * 选择[!UICONTROL column]： `Customer's lifetime number of orders`
-* [!UICONTROL Path]： `sales_flat_order.customer_id = customer_entity.entity_id`
-* [!UICONTROL Filter]： `Orders we count`
+* [!UICONTROL Path]&#x200B;: `sales_flat_order.customer_id = customer_entity.entity_id`
+* [!UICONTROL Filter]&#x200B;: `Orders we count`
 
 * `Seconds since created_at`
 * 选择定义： `Age`
@@ -78,65 +78,65 @@ ht-degree: 0%
 
 * **初始重复顺序概率**
 * 指标A：所有时间重复订单
-* [!UICONTROL Metric]： `Number of orders`
-* [!UICONTROL Filter]： `Customer's order number greater than 1`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
 
 * 量度B：所有时间订单
 * [!UICONTROL Metric]：订单数
 
 * [!UICONTROL Formula]：初始重复顺序概率
 * &#x200B;
-  [!UICONTROL 公式]: `A/B`
+  [!UICONTROL 公式]&#x200B;: `A/B`
 * &#x200B;
-  [!UICONTROL Format]: `Percent`
+  [!UICONTROL Format]&#x200B;: `Percent`
 
-* [!UICONTROL Time period]： `All time`
+* [!UICONTROL Time period]&#x200B;: `All time`
 * &#x200B;
-  [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]&#x200B;: `None`
 * &#x200B;
-  [!UICONTROL Chart type]: `Scalar`
+  [!UICONTROL Chart type]&#x200B;: `Scalar`
 
 * **重复订单的概率自订单**&#x200B;以来已给定的月份
 * 量度A：按上个订单后间隔的月份重复订单（隐藏）
-* [!UICONTROL Metric]： `Number of orders`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
 * &#x200B;
-  [!UICONTROL Perspective]: `Cumulative`
-* [!UICONTROL Filter]： `Customer's order number greater than 1`
+  [!UICONTROL Perspective]&#x200B;: `Cumulative`
+* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
 
 * 量度B：按订购后月份列出的最后订单（隐藏）
-* [!UICONTROL Metric]： `Number of orders`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
 * &#x200B;
-  [!UICONTROL Perspective]: `Cumulative`
-* [!UICONTROL Filter]： `Is customer's last order? (Yes/No) = Yes`
+  [!UICONTROL Perspective]&#x200B;: `Cumulative`
+* [!UICONTROL Filter]&#x200B;: `Is customer's last order? (Yes/No) = Yes`
 
 * 量度C：所有时间重复订单（隐藏）
-* [!UICONTROL Metric]： `Number of orders`
-* [!UICONTROL Filter]： `Customer's order number greater than 1`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
 
 * &#x200B;
-  [!UICONTROL 分组依据]: `Independent`
+  [!UICONTROL 分组依据]&#x200B;: `Independent`
 
 * 量度D：所有时间最后订单（隐藏）
-* [!UICONTROL Metric]： `Number of orders`
-* [!UICONTROL Filter]： `Is customer's last order? (Yes/No) = Yes`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Filter]&#x200B;: `Is customer's last order? (Yes/No) = Yes`
 
 * &#x200B;
-  [!UICONTROL 分组依据]: `Independent`
+  [!UICONTROL 分组依据]&#x200B;: `Independent`
 
 * [!UICONTROL Formula]：初始重复顺序概率
 * &#x200B;
-  [!UICONTROL 公式]: `(C-A)/(C+D-A-B)`
+  [!UICONTROL 公式]&#x200B;: `(C-A)/(C+D-A-B)`
 * &#x200B;
-  [!UICONTROL Format]: `Percent`
+  [!UICONTROL Format]&#x200B;: `Percent`
 
-* [!UICONTROL Time period]： `All time`
+* [!UICONTROL Time period]&#x200B;: `All time`
 * &#x200B;
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]： `Months since previous order`
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Months since previous order`
 * 显示top.bottom：前24个类别，按类别名称排序
 
 * &#x200B;
-  [!UICONTROL Chart type]: `Line`
+  [!UICONTROL Chart type]&#x200B;: `Line`
 
 初始重复订单概率报表表示“重复订单总数/订单总数”。 每个顺序都是产生重复顺序的机会；重复顺序的数量是那些实际发生的顺序的子集。
 
@@ -144,8 +144,8 @@ ht-degree: 0%
 
 构建功能板后，最常见的问题是：如何使用它来确定流失阈值？
 
-**对此没有“一个正确答案”。**&#x200B;但是，Adobe建议查找直线与初始重复概率的一半值相交的点。 在这个时候，您可以说“如果用户要重复订单，他们现在可能已经完成了。” 最终，目标是选择适合从“保留”工作切换到“重新激活”工作的阈值。
+**对此没有“一个正确答案”。** 但是，Adobe建议找出直线与初始重复概率的一半值相交的点。 在这个时候，您可以说“如果用户要重复订单，他们现在可能已经完成了。” 最终，目标是选择适合从“保留”工作切换到“重新激活”工作的阈值。
 
 在编译所有报告后，您可以根据需要将报告组织在功能板上。 结果可能与页面顶部的图像类似
 
-如果您在构建此分析时遇到任何问题，或只是想与专业服务团队接洽，请[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)。
+如果您在构建此分析时遇到任何问题，或只是想与专业服务团队接洽，请[联系支持人员](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。

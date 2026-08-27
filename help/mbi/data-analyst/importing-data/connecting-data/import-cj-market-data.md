@@ -16,16 +16,16 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 141
+source-wordcount: 155
 ht-degree: 0%
 
 ---
 
 # 导入[!DNL CJ Affiliate]数据
 
-要将[!DNL CJ Affiliate (Commission Junction)]数据导入[!DNL Adobe Commerce Intelligence]，只需执行以下步骤并将结果文件附加到[支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hans)即可。 Adobe将为您的帐户设置数据表，并允许您继续独立上传数据。
+要将[!DNL CJ Affiliate (Commission Junction)]数据导入[!DNL Adobe Commerce Intelligence]，只需执行以下步骤并将结果文件附加到[支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)即可。 Adobe将为您的帐户设置数据表，并允许您继续独立上传数据。
 
 ## 导出[!DNL CJ Affiliate]数据
 
