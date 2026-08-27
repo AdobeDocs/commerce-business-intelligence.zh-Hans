@@ -24,8 +24,8 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-last-update: 2026-08-14
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+last-update: 2026-08-26
+source-git-commit: 71a0a842742fed73aa749653ec0ef8c2834b7e60
 workflow-type: tm+mt
 source-wordcount: 492
 ht-degree: 2%
