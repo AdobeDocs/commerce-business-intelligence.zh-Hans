@@ -7,26 +7,35 @@ feature: Commerce Tables, Data Warehouse Manager, Reports
 TQID: https://experienceleague.adobe.com/SJ-Wbd0AU-cmliKRZgK4g60KuhVRIP9LfAEJ--IyugY
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: 5f3efe67f45baea20445cc78e12cf6d0d2b59563
 workflow-type: tm+mt
-source-wordcount: 1597
+source-wordcount: '1604'
 ht-degree: 0%
-
 ---
-
 # Report Builder同类群组
 
 您是否曾想过研究用户的不同子集在一段时间内的行为？ 例如，您是否曾想知道，在促销期间注册的用户平均终生收入是否比没有注册的用户高？ 如果答案是`Yes`，则`Cohort Report Builder`是您的最佳工具。 [!DNL Adobe Commerce Intelligence]已优化为执行此分析，并使其与您的业务相关。
@@ -35,7 +44,7 @@ ht-degree: 0%
 
 `Cohort`分析可以宽泛地定义为分析在其生命周期内具有相似特征的用户组。 它允许您识别不同用户群组中的行为趋势。
 
-在您的[!DNL Commerce Intelligence]仪表板中，可以轻松根据帐户中的`cohorts`日期和量度创建用户`cohort`。
+在您的[!DNL Commerce Intelligence]仪表板中，可以轻松根据帐户中的`cohort`日期和量度创建用户`cohorts`。
 
 ## 为什么同类群组分析很重要？ {#important}
 
@@ -45,11 +54,11 @@ ht-degree: 0%
 
 ### 新架构
 
-以下是在`Cohort Report Builder`新架构[上使用](../../administrator/account-management/new-architecture.md)的说明。
+以下是在[新架构](../../administrator/account-management/new-architecture.md)上使用`Cohort Report Builder`的说明。
 
 1. 在左侧选项卡上单击&#x200B;**[!UICONTROL Report Builder]**，或在任意仪表板中单击&#x200B;**[!UICONTROL Add Report** > **Create Report]**。
 
-1. 在`Report Builder`选择屏幕中，单击&#x200B;**[!UICONTROL Create Report]**&#x200B;选项旁边的`Visual Report Builder`。
+1. 在`Report Builder`选择屏幕中，单击`Visual Report Builder`选项旁边的&#x200B;**[!UICONTROL Create Report]**。
 
 **添加指标**
 
@@ -73,7 +82,7 @@ ht-degree: 0%
 1. 每个`cohort`必须包含的最小数据量
 1. `cohort`发生次数之后的时间范围
 
-#### 1.分组`cohorts`
+#### &#x200B;1. 分组`cohorts`
 
 `Cohorts`按时间戳分组，如&#x200B;**注册日期**&#x200B;或&#x200B;**首次订购日期**。
 
@@ -85,15 +94,15 @@ ht-degree: 0%
 
 选择对`cohorts`进行分组所依据的时间段。 换句话说，您在上面选择的时间戳的哪一部分最重要；`week`、`month`、`quarter`或`year`？ 您的报表以您在此处选择的任意间隔显示数据
 
-#### 3.和4. 设置要查看的`cohorts`的数目以及每个`cohort`必须拥有的数据量
+#### &#x200B;3. 和4. 设置要查看的`cohorts`的数目以及每个`cohort`必须拥有的数据量
 
 这些参数可帮助您仅查看感兴趣的`cohorts`，并且窗口底部的方便的`Preview`框准确地显示了报表中显示的同类群组。
 
 默认情况下，不包括当前`cohort`，除非您将每个`cohort`所需的最小数据量更改为`0`。 在这种情况下，当前时间段的`cohort`仅包括部分数据。
 
-#### 5.发生`Cohort`次之后的时间范围
+#### &#x200B;5. `Cohort`发生次数之后的时间范围
 
-此功能允许您为所选`cohorts`设置查看数据的时间范围。 例如，如果您要根据`cohorts`查看24个月的月度`customer's first order date`，但您只对每个`cohort`的前3个月的数据感兴趣，则可以将`number of cohorts to view`设置为`24`，将`time range after cohort occurrence`设置为`3`。
+此功能允许您为所选`cohorts`设置查看数据的时间范围。 例如，如果您要根据`customer's first order date`查看24个月的月度`cohorts`，但您只对每个`cohort`的前3个月的数据感兴趣，则可以将`number of cohorts to view`设置为`24`，将`time range after cohort occurrence`设置为`3`。
 
 此值的间隔随您在`cohort time period`中选择的任何内容而更改，该值默认设置为`12`；除非单击日历图标对其进行编辑，否则该值不会更改。
 
@@ -127,7 +136,7 @@ ht-degree: 0%
 
 1. 在左侧选项卡上单击&#x200B;**[!UICONTROL Report Builder]**，或在任意仪表板中单击&#x200B;**[!UICONTROL Add Report** > **Create Report]**。
 
-1. 在`Report Builder Selection`屏幕中，单击&#x200B;**[!UICONTROL Create Report]**&#x200B;选项旁边的`Cohort Analysis`。
+1. 在`Report Builder Selection`屏幕中，单击`Cohort Analysis`选项旁边的&#x200B;**[!UICONTROL Create Report]**。
 
 #### 添加量度
 
@@ -143,14 +152,14 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您不能将生成量度的日期与`created at`一起使用（例如： `cohort date`）。
+>您不能将生成量度的日期与`cohort date`一起使用（例如： `created at`）。
 
 #### 设置间隔和时间段
 
 接下来，设置`Interval`和`Time Period`。
 
 `Interval`
-`Interval`选项允许您设置`length`的`cohorts`。 例如，如果将此值设置为`Month`，则报表将以月为单位进行测量。
+`Interval`选项允许您设置`cohorts`的`length`。 例如，如果将此值设置为`Month`，则报表将以月为单位进行测量。
 
 您可以使用&#x200B;**持续时间**&#x200B;菜单更改这些间隔在x轴上的显示方式。
 
@@ -171,7 +180,7 @@ ht-degree: 0%
 
 ![显示独立模式和累积模式的同类群组计数成员选项](../../assets/Cohort_Counting_Members_option.png)
 
-请查看示例以了解此设置。 假设您按`Revenue`构建了`Customer's registration date`量度同类群组报表。 您还需要使用透视`Average value per cohort member`来查看一段时间中每位购买者的收入。 要确定每个购买者的平均价值，您需要确定要除以的购买者数量。 是您`customers`表中的已注册客户数，还是您`orders table`中相同期间的不同购买者的数量？
+请查看示例以了解此设置。 假设您按`Customer's registration date`构建了`Revenue`量度同类群组报表。 您还需要使用透视`Average value per cohort member`来查看一段时间中每位购买者的收入。 要确定每个购买者的平均价值，您需要确定要除以的购买者数量。 是您`customers`表中的已注册客户数，还是您`orders table`中相同期间的不同购买者的数量？
 
 此设置回答该问题。 对`customers`表中的成员进行计数将平均包括所有客户（无论他们是否进行了购买）。 对`orders`表中的成员进行计数只包括购买过的客户。
 
@@ -214,13 +223,13 @@ ht-degree: 0%
 这将`Standard cohort`分析以(1)除以每个`cohort`组中的用户数。 这对于根据苹果对苹果来比较同类群组性能非常有用，因为并非所有同类群组都可能包含相同数量的用户。 例如，来自特定`cohort`的每位用户平均第6周收入。
 
 `Cumulative`
-此`perspective`显示基于`cohort`的传统`cumulative`分析。 换句话说，它显示了给定同类群组在生命周期中任何给定时间至今的总贡献。 例如，某个同类群组中用户连续六周后的累计收入。
+此`perspective`显示基于`cumulative`的传统`cohort`分析。 换句话说，它显示了给定同类群组在生命周期中任何给定时间至今的总贡献。 例如，某个同类群组中用户连续六周后的累计收入。
 
 `Cumulative Average Value per Cohort Member`
-这会将(3)中的`Cumulative`分析除以每个`cohort`组中的用户数。 它显示`cohort`生命中每个期间每个`cohort's`成员的平均生命周期贡献（通常为平均生命周期收入）。 例如，6月份加入的用户在六个月后的平均生命周期收入。
+这会将(3)中的`Cumulative`分析除以每个`cohort`组中的用户数。 它显示`cohort's`生命中每个期间每个`cohort`成员的平均生命周期贡献（通常为平均生命周期收入）。 例如，6月份加入的用户在六个月后的平均生命周期收入。
 
 `Percent of First Value (show first value)`
-这会分析`cohort`生命周期中特定时间的聚合`cohort's`贡献占其第一个周期中贡献的百分比。 例如，第6个月收入除以在6月加入的用户的第1个月收入。
+这会分析`cohort's`生命周期中特定时间的聚合`cohort`贡献占其第一个周期中贡献的百分比。 例如，第6个月收入除以在6月加入的用户的第1个月收入。
 
 `Percent of First Value (hide first value)`
 这与上述`perspective`相同，不同之处在于隐藏了第一个时间段值100%。
