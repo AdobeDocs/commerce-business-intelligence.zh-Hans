@@ -4,30 +4,45 @@ description: 了解如何与您的Google Analytics存储数据交互。
 exl-id: 2b1305cd-5f34-43d9-b77f-a4f5b1d82c66
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-TQID: https://experienceleague.adobe.com/-Pulnv7J-TmXxL0msB6nhuMKIWbCpS0163rewp9BOvc
+TQID: 'https://experienceleague.adobe.com/-Pulnv7J-TmXxL0msB6nhuMKIWbCpS0163rewp9BOvc'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 355
-ht-degree: 0%
-
+source-wordcount: '378'
+ht-degree: 1%
 ---
-
 # 预期[!DNL Google Analytics Warehoused]数据
 
 >[!NOTE]
@@ -38,11 +53,11 @@ ht-degree: 0%
 >
 >在[[!DNL Stitch]](https://www.stitchdata.com/docs/integrations/saas/google-analytics)的朋友允许下使用了某些信息。
 
-[!DNL Google Analytics Warehoused]中的[!DNL Commerce Intelligence]集成使用[!DNL Google Analytics] [核心报表API](https://developers.google.com/analytics/devguides/reporting/core/v3/)。
+[!DNL Commerce Intelligence]中的[!DNL Google Analytics Warehoused]集成使用[!DNL Google Analytics] [核心报表API](https://developers.google.com/analytics/devguides/reporting/core/v3/)。
 
 >[!NOTE]
 >
->为避免出现意外或无意义的结果，请确认您使用的任何维度都与您在[中使用的一个或多个量度](https://ga-dev-tools.google/dimensions-metrics-explorer/)兼容。`Report Builder`
+>为避免出现意外或无意义的结果，请确认您使用的任何维度都与您在`Report Builder`中使用的一个或多个量度[&#128279;](https://ga-dev-tools.google/dimensions-metrics-explorer/)兼容。
 
 在您的Data Warehouse中创建一个名为`report`的表。
 
@@ -50,8 +65,8 @@ ht-degree: 0%
 
 例如，如果在设置期间选择了以下量度和维度：
 
-* `Metrics`： `ga:users`
-* `Dimensions`： `ga:month`
+* `Metrics`: `ga:users`
+* `Dimensions`: `ga:month`
 
 该表将类似于下面的示例。
 
@@ -73,7 +88,7 @@ ht-degree: 0%
 
 查看[!DNL Google Analytics]广告营销活动以了解从操作角度可以做些什么的示例。 假设您在第四季度有多个名称不同的广告营销活动。 这些营销活动是特定营销计划的结果。 使用仓储数据，您可以创建一个列，以查找相关促销活动名称并返回`Operation Dumbo`的第4季度计划名称。
 
-组合方面允许将[!DNL Google Analytics]数据与其他数据连接以进行分析。 例如，获取`Total Time On Site By Ad Campaign`中的[!DNL Google Analytics]数据，并将其与来自`Total Spent Per Campaign`的[!DNL Facebook Ads]数据联接，以完整了解参与度对您造成的成本。
+组合方面允许将[!DNL Google Analytics]数据与其他数据连接以进行分析。 例如，获取[!DNL Google Analytics]中的`Total Time On Site By Ad Campaign`数据，并将其与来自[!DNL Facebook Ads]的`Total Spent Per Campaign`数据联接，以完整了解参与度对您造成的成本。
 
 另一方面，使用[!DNL Google Analytics Live]集成，每个[!DNL Google Analytics]图表都像一个未存储在[!DNL Commerce Intelligence] Data Warehouse中的小思洛存储器。
 

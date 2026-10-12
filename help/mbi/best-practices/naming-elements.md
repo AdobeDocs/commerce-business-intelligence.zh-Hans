@@ -1,28 +1,35 @@
 ---
 title: 在Commerce Intelligence中命名报表和元素
-description: 了解在 [!DNL Commerce Intelligence]中命名报告和元素的最佳实践。
+description: 了解在[!DNL Commerce Intelligence]中命名报告和元素的最佳实践。
 exl-id: c662cedd-c779-4254-b04b-f3092a538c85
 role: Admin, User
 feature: Reports
-TQID: https://experienceleague.adobe.com/qa6daoMCZ4amPkvXatm77q-wwLpzweOQS5aGVYccqLU
+TQID: 'https://experienceleague.adobe.com/qa6daoMCZ4amPkvXatm77q-wwLpzweOQS5aGVYccqLU'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 725
+source-wordcount: '728'
 ht-degree: 0%
-
 ---
-
 # 为报表和元素命名
 
 在[!DNL Adobe Commerce Intelligence]中开始生成之前，Adobe希望共享一些密钥以取得成功。 了解如何创建量度、过滤器等内容非常重要，但是，如果您无法找到所需内容或存在歧义，则所有工作都可能徒劳无功。

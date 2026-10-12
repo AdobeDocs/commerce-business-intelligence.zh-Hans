@@ -4,28 +4,39 @@ description: 了解如何创建和使用功能板。
 exl-id: a872344b-ac66-41eb-a471-5a69f8802527
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-TQID: https://experienceleague.adobe.com/Gtb2JIULI8lFIu5uqgN2NlCg-p9Djfy6swWtCkzClUc
+TQID: 'https://experienceleague.adobe.com/Gtb2JIULI8lFIu5uqgN2NlCg-p9Djfy6swWtCkzClUc'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: 06e518d4-11ae-5c20-98b0-ce8ab05d7166
+    internal-label: Dashboards
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Insights
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 628
+source-wordcount: '631'
 ht-degree: 0%
-
 ---
-
 # 仪表板
 
 [!DNL Adobe Commerce Intelligence]功能板让您快速了解商店的绩效和销售活动。 单个功能板可以与其他用户共享并组织到逻辑组中。 您还可以为其他用户设置不同级别的权限。
@@ -92,7 +103,7 @@ ht-degree: 0%
 
 ### 共享您的仪表板 {#sharingdash}
 
-为了真正地在整个组织中扩展[!DNL Commerce Intelligence]并提供有价值的见解，Adobe鼓励您与其他团队成员共享您创建的功能板。 *您可以通过单击页面顶部的*&#x200B;选项共享您拥有的仪表板`Share Dashboard`。
+为了真正地在整个组织中扩展[!DNL Commerce Intelligence]并提供有价值的见解，Adobe鼓励您与其他团队成员共享您创建的功能板。 *您可以通过单击页面顶部的`Share Dashboard`选项共享您拥有的仪表板*。
 
 当您共享功能板时，您可以跨整个组织或单独分配权限，这意味着您可以决定谁可以查看和编辑报表。
 

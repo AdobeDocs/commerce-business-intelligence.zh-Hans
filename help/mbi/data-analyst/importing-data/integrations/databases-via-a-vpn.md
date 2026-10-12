@@ -4,29 +4,43 @@ description: 了解如何通过VPN而不是SSH通道连接数据库。
 exl-id: c7aa564d-42de-426e-92e9-f6e250a6abba
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-TQID: https://experienceleague.adobe.com/0B7swwGIgBemitnx8Q4tyN8VtqwzcA-DYZdXHqzyNAk
+TQID: 'https://experienceleague.adobe.com/0B7swwGIgBemitnx8Q4tyN8VtqwzcA-DYZdXHqzyNAk'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 414
-ht-degree: 0%
-
+source-wordcount: '422'
+ht-degree: 1%
 ---
-
 # 通过VPN连接数据库
 
 虽然Adobe建议您使用`SSH tunnel`连接数据库，但也可以使用加密的`VPN`连接来确保安全。 有关SSH通道连接的SSH主机密钥注册、错误和疑难解答，请参阅[SSH主机密钥验证](ssh-host-key-verification.md)。 `VPN`可用于您的任何数据库集成，为了简化操作，该过程与设置`SSH tunnel`的过程大致相同：
@@ -66,10 +80,10 @@ ht-degree: 0%
 * `Username`： [!DNL Commerce Intelligence]数据库用户的用户名
 * `Password`： [!DNL Commerce Intelligence]数据库用户的密码
 * `Port`：您服务器上的数据库端口。 默认为：
-   * `MicrosoftSQL`: `1433`
-   * `MongoDB`: `27017`
-   * `MySQL`: `3306`
-   * `PostgreSQL`: `5432`
+  * `MicrosoftSQL`: `1433`
+  * `MongoDB`: `27017`
+  * `MySQL`: `3306`
+  * `PostgreSQL`: `5432`
 * `Host`：默认情况下，这是localhost `127.0.0.1`，但它也可以是服务器的公共IP地址或局域网地址。
 * `Database Name (optional)`：如果只允许访问一个数据库（在数据库用户创建步骤中指定），请在此处输入该数据库的名称。
 

@@ -4,33 +4,51 @@ description: 了解如何管理表和列同步设置、深入了解表的架构�
 exl-id: b9577919-0db0-47f1-a426-1abe48443ac0
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/h1abSvMbiLAovsl4YtlBHmLTOW03Bk6WlMOwYvh4cIk
+TQID: 'https://experienceleague.adobe.com/h1abSvMbiLAovsl4YtlBHmLTOW03Bk6WlMOwYvh4cIk'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+    internal-label: Data integration
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Insights
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1237
+source-wordcount: '1244'
 ht-degree: 0%
-
 ---
-
 # Data Warehouse Manager
 
 >[!NOTE]
@@ -83,7 +101,7 @@ Data Warehouse Manager不仅让您能够轻松查看和管理数据源，而且�
    如果您正在同步直接来自数据库的表，则可能无法表示`Primary Keys`。 在这种情况下，请与数据库管理员联系以请求向表中添加一个或多个主键。
 1. 完成后，单击![按钮](../../assets/button.png)按钮。
 
-*成功！显示*&#x200B;消息，选定列的状态更改为`Pending`。 下次完全更新完成后，新同步的表和列将可用于报告中。 您还可以在初始同步后设置新的[复制方法](./cfg-replication-methods.md)。
+*成功！* 对于选定的列，消息显示且状态更改为`Pending`。 下次完全更新完成后，新同步的表和列将可用于报告中。 您还可以在初始同步后设置新的[复制方法](./cfg-replication-methods.md)。
 
 下面快速了解一下整个过程：
 
@@ -135,7 +153,7 @@ Data Warehouse Manager不仅让您能够轻松查看和管理数据源，而且�
 
 ## 那么，我什么时候可以使用我的新栏呢？ {#when}
 
-新的同步列和新的/更新的计算列将在下次完全更新完成后准备使用。 如果更新尚未进行，您可以通过单击&#x200B;**[!UICONTROL Force update]**&#x200B;或`Data Warehouse`页面顶部显示的`Integrations`来强制进行更新。 您还可以在更新完成后单击&#x200B;**[!UICONTROL Email me when complete]**&#x200B;以计划电子邮件通知。
+新的同步列和新的/更新的计算列将在下次完全更新完成后准备使用。 如果更新尚未进行，您可以通过单击`Data Warehouse`或`Integrations`页面顶部显示的&#x200B;**[!UICONTROL Force update]**&#x200B;来强制进行更新。 您还可以在更新完成后单击&#x200B;**[!UICONTROL Email me when complete]**&#x200B;以计划电子邮件通知。
 
 当您准备在报表中使用新列时，[您需要先将它们添加到量度](../data-warehouse-mgr/manage-data-dimensions-metrics.md)。 虽然在更新完成之前数据不可用，但您仍可以在报表中使用新列。 更新完成后，将显示报表中的数据。
 

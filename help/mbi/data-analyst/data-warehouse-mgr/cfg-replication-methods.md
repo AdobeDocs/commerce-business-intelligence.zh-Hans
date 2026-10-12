@@ -4,29 +4,41 @@ description: 了解表如何组织，以及表数据的行为如何允许您为�
 exl-id: 83895c48-a6ec-4b01-9890-164e0b21dcbc
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Data Import/Export
-TQID: https://experienceleague.adobe.com/zP44fYttORVvVtWgnykRswpsh9VwdqYbfwt1aJqWJdE
+TQID: 'https://experienceleague.adobe.com/zP44fYttORVvVtWgnykRswpsh9VwdqYbfwt1aJqWJdE'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1442
+source-wordcount: '1464'
 ht-degree: 0%
-
 ---
-
 # 配置复制方法
 
 `Replication`方法和[重新检查](../data-warehouse-mgr/cfg-data-rechecks.md)用于标识数据库表中的新数据或更新数据。 正确设置这些变量对于确保数据准确性和优化的更新时间至关重要。 本主题侧重于复制方法。
@@ -53,7 +65,7 @@ ht-degree: 0%
 * `datetime`列从不为null；
 * 不会从表中删除行
 
-除了这些条件外，Adobe还建议为用于&#x200B;**复制的**&#x200B;列`datetime`编制索引`Modified At`，因为这有助于优化复制速度。
+除了这些条件外，Adobe还建议为用于`Modified At`复制的`datetime`列&#x200B;**编制索引**，因为这有助于优化复制速度。
 
 当更新运行时，通过搜索在最近更新之后发生的`datetime`列中带有值的行来识别新数据或更改的数据。 当发现新行时，会将它们复制到Data Warehouse。 如果[Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md)中存在任何行，则当前数据库值将覆盖这些行。
 
@@ -128,7 +140,7 @@ ht-degree: 0%
    >
    >**某些增量方法需要您设置`Replication Key`**。 [!DNL Commerce Intelligence]将使用此键来确定下一个更新周期的开始位置。
    >
-   >例如，如果要为`modified at`表使用`orders`方法，则需要将`date column`设置为复制密钥。 可能存在多个复制密钥选项，但您选择了`created at`或创建订单的时间。 如果上一个更新周期在12/1/2015 00:10:00停止，则下一个周期将开始复制日期大于此日期的`created at`数据。
+   >例如，如果要为`orders`表使用`modified at`方法，则需要将`date column`设置为复制密钥。 可能存在多个复制密钥选项，但您选择了`created at`或创建订单的时间。 如果上一个更新周期在12/1/2015 00:10:00停止，则下一个周期将开始复制日期大于此日期的`created at`数据。
 
 1. 完成后，单击&#x200B;**[!UICONTROL Save]**。
 
@@ -151,6 +163,6 @@ ht-degree: 0%
 ## 相关文档
 
 * [了解数据重新检查](../data-warehouse-mgr/cfg-data-rechecks.md)
-* [修改数据库以支持 &#x200B;](../../best-practices/mod-db-inc-replication.md)
+* [正在修改数据库以支持`Incremental`复制](../../best-practices/mod-db-inc-replication.md)
 * [优化数据库以进行分析](../../best-practices/opt-db-analysis.md)
 * [减少更新时间](../../best-practices/reduce-update-cycle-time.md)

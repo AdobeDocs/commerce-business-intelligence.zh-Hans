@@ -4,29 +4,41 @@ description: 了解Google Analytics中UTM跟踪（标记）的最佳实践。
 exl-id: 70bfd855-3b3f-469b-99bc-deb8251904b7
 role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-TQID: https://experienceleague.adobe.com/IX5oaIr8tbUUeA3ZrIQNUMnG8ApXMBS1hcpecqFW8kg
+TQID: 'https://experienceleague.adobe.com/IX5oaIr8tbUUeA3ZrIQNUMnG8ApXMBS1hcpecqFW8kg'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
+    internal-label: Email marketing
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 450
-ht-degree: 0%
-
+source-wordcount: '461'
+ht-degree: 1%
 ---
-
 # UTM跟踪
 
 `UTM`跟踪是URL的标记约定，它使您能够分析用户的来源。 如果您查看在大多数营销电子邮件或横幅广告中单击的URL，则会看到UTM标记。 是那些以`utm\_source`和`utm\_medium`之类的内容结尾的长链接。
@@ -37,23 +49,23 @@ ht-degree: 0%
 
 下面列出了使用`UTM`标记设置URL时要记住的五大要点。
 
-### 1.旨在标记您可以控制的每个访问您网站的URL
+### &#x200B;1. 旨在标记您可以控制的每个访问您网站的URL
 
 每次要求用户单击链接时，您都应设置`UTM`标记。 这包括您的所有电子邮件链接（您的电子邮件服务提供商可能会自动标记您的URL）、广告链接、新闻文章、博客文章。
 
-### 2.使用工具创建URL
+### &#x200B;2. 使用工具创建URL
 
 `UTM`标记的URL可能会很麻烦。 请使用类似于[的工具](https://support.google.com/analytics/answer/1033867?hl=en)来帮助您，而不是尝试键入它们。 这可确保您考虑向URL添加所有合理的参数，并且您会从该URL中直接获得要复制粘贴的URL。 为了管理社交链接，诸如[!DNL Hootsuite]之类的工具包括向所有链接添加自定义URL参数的选项。
 
-### 3.确保参数值区分大小写
+### &#x200B;3. 确保参数值区分大小写
 
 请务必记住，标记`utm\_source=adwords`与`utm\_source=Adwords`是不同的标记。 考虑将所有内容变为小写。
 
-### 4.将UTM参数值存储在数据库中
+### &#x200B;4. 将UTM参数值存储在数据库中
 
 每次发生交易或事件时，您都要评估营销活动的效果。 为此，您可以将[[!DNL Google Analytics] Cookie中的UTM参数值读入数据库](../data-analyst/analysis/google-track-user-acq.md)。
 
-### 5.考虑如何命名营销活动
+### &#x200B;5. 考虑如何命名营销活动
 
 为了跟踪营销工作如何随时间的推移而改善，您需要对命名惯例保持警惕。 保持简单，并尽可能减少工作量。 复杂的命名系统更难维护。
 

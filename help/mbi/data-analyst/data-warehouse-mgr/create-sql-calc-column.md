@@ -4,57 +4,76 @@ description: 了解如何在新的Adobe Commerce Intelligence架构上以SQL计�
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, SQL Report Builder, Commerce Tables
-TQID: https://experienceleague.adobe.com/DePK-zuSTUhzOSCc121Yev7BXUhjEkwEGYtAgdSaguM
+TQID: 'https://experienceleague.adobe.com/DePK-zuSTUhzOSCc121Yev7BXUhjEkwEGYtAgdSaguM'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: c38ccf61-5a4f-5140-ad2b-c3434e82ed6d
+    internal-label: SQL Report Builder
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 839
+source-wordcount: '846'
 ht-degree: 0%
-
 ---
-
 # 创建SQL计算列
 
 本主题概述了`Calculation`列类型的用途和用途，可以使用[Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md)将其添加到表中。 下面说明了SQL计算的用途、使用它们的原因、创建SQL计算的过程以及两个示例。
 
 **解释**
 
-过去，被视为`advanced`的列只能由[!DNL Adobe Commerce Intelligence]处的客户成功团队分析师完成。 现在，所有权力都掌握在最终用户手中，可以在新的`SQL Calculation`架构上以[!DNL Commerce Intelligence]列的形式创建高级列。
+过去，被视为`advanced`的列只能由[!DNL Adobe Commerce Intelligence]处的客户成功团队分析师完成。 现在，所有权力都掌握在最终用户手中，可以在新的[!DNL Commerce Intelligence]架构上以`SQL Calculation`列的形式创建高级列。
 
-`Calculation`列类型现在作为Data Warehouse Manager中的选项提供，它和允许您使用PostgreSQL逻辑转换表上的列的表操作是相同的。 可以在PostgreSQL网站`Calculation`此处[找到有关](https://www.postgresql.org/docs/9.6/functions.html)列类型中可用的函数和运算符的文档。
+`Calculation`列类型现在作为Data Warehouse Manager中的选项提供，它和允许您使用PostgreSQL逻辑转换表上的列的表操作是相同的。 可以在PostgreSQL网站[此处](https://www.postgresql.org/docs/9.6/functions.html)找到有关`Calculation`列类型中可用的函数和运算符的文档。
 
 可以使用`Calculation`列创建的不同列几乎不受限制，但大多数列都可以使用IF-THEN语句和基本算术来创建，这些语句用于下面的示例。
 
 **示例1：客户的上次订单是否为？**
 
-大多数帐户的`Is customer's last order?`表中都有一个名为`orders`的列，用于对重复购买率和客户流失率进行分析。 如果您的帐户采用新架构，则此列是使用`Calculation`列构建的，可在下面的屏幕快照中看到：
+大多数帐户的`orders`表中都有一个名为`Is customer's last order?`的列，用于对重复购买率和客户流失率进行分析。 如果您的帐户采用新架构，则此列是使用`Calculation`列构建的，可在下面的屏幕快照中看到：
 
 用于标识客户最后订单的![SQL计算列定义](../../assets/Is_customer_s_last_order.png)
 
-`Is customer's last order?`列使用分别作为`Customer's lifetime number of orders`和`Customer's order number`别名的输入`A`和`B`。
+`Is customer's last order?`列使用分别作为`A`和`B`别名的输入`Customer's lifetime number of orders`和`Customer's order number`。
 
 逐行，PostgreSQL的含义是：
 
 * 用例：这将启动一系列If - Then语句
 * 当`A`为null或`B`为null时为null：如果任一输入为空，则输出也应为空。 这是为了防止SQL错误
-* 当`A=B`时，则`Yes`：如果该行的`Customer's lifetime number of orders`等于`Customer's order number`，则返回`Yes`。 因此，如果客户已下四张订单，则第四张订单的行将返回`Yes`的`Is customer's last order?`
+* 当`A=B`时，则`Yes`：如果该行的`Customer's lifetime number of orders`等于`Customer's order number`，则返回`Yes`。 因此，如果客户已下四张订单，则第四张订单的行将返回`Is customer's last order?`的`Yes`
 * else `No`：如果满足语句时没有其他语句，则返回`No`
 * end：这将结束If - Then语句
 
@@ -64,17 +83,17 @@ ht-degree: 0%
 
 许多客户都喜欢在项目级别分析收入，并按`product name`或`category`等字段对其进行分片。 大多数数据库实际上并不提供订单中产品的收入；而是提供订单中销售的数量和项目的价格。
 
-为了启用产品收入分析，大多数帐户在其`Order item total value (quantity * price)`表中都有一个名为`Orders Items`的列。 如果您的帐户采用新架构，则此列也是使用`Calculation`列构建的，并且可在下面的屏幕快照中看到：
+为了启用产品收入分析，大多数帐户在其`Orders Items`表中都有一个名为`Order item total value (quantity * price)`的列。 如果您的帐户采用新架构，则此列也是使用`Calculation`列构建的，并且可在下面的屏幕快照中看到：
 
 订单项合计值的![SQL计算列定义](../../assets/Order_item_total_value.png)
 
-在Commerce架构中，`Order item total value (quantity * price)`列使用分别作为`qty ordered`和`base price`别名的输入`A`和`B`。
+在Commerce架构中，`Order item total value (quantity * price)`列使用分别作为`A`和`B`别名的输入`qty ordered`和`base price`。
 
 此新列返回的值以美元和美分表示，因此正确的数据类型为`Decimal(10,2)`。
 
 **机械**
 
-通过导航到`Calculation`，可将新&#x200B;**[!DNL Manage Data > Data Warehouse]**&#x200B;列添加到表中，如下所示：
+通过导航到&#x200B;**[!DNL Manage Data > Data Warehouse]**，可将新`Calculation`列添加到表中，如下所示：
 
 ![显示计算列结果的表视图](../../assets/blobid2.png)
 

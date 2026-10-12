@@ -1,31 +1,44 @@
 ---
 title: 常用Commerce表
-description: 了解 [!DNL Commerce Intelligence] 客户使用的一些更常见的表。
+description: 了解[!DNL Commerce Intelligence]客户使用的一些更常见的表。
 exl-id: 8b316130-55c6-4771-ae6e-97ac605fc6cc
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/uYdgYNMbJGRz8kQ3mCF2McpZpflHSAa37Lk-CLaDlBw
+TQID: 'https://experienceleague.adobe.com/uYdgYNMbJGRz8kQ3mCF2McpZpflHSAa37Lk-CLaDlBw'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 461
+source-wordcount: '465'
 ht-degree: 0%
-
 ---
-
 # 常用Commerce表
 
 首次将[!DNL Adobe Commerce]实例连接到[[!DNL Adobe Commerce Intelligence]](../importing-data/integrations/magento.md)时，[!DNL Commerce Intelligence]会自动从某些商务表（通常为4-6个表）复制数据以配置仪表板和报表的初始集。 虽然这是一个很好的起点，但大多数存储实例都会生成数十个（如果不是数百个）额外的表，这些表可以为您的业务性能提供关键的insight。
@@ -41,7 +54,7 @@ ht-degree: 0%
 | `quote` | [`quote`](../data-warehouse-mgr/sales-flat-quote-table.md)表中的每一行都表示在结帐过程中创建的购物车，无论该购物车最终是否转换为订单。 鉴于此表的潜在大小，Adobe建议您在满足某些条件时定期删除记录，例如存在任何超过60天的未转化购物车时。 |
 | `quote_item` | [`quote_item`](../data-warehouse-mgr/sales-flat-quote-item-table.md)表中的每一行都表示添加到购物车的项目，无论购物车最终是否转换为订单。 鉴于此表的潜在大小，Adobe建议您在满足某些条件时定期删除记录，例如存在任何超过60天的未转化购物车时。 |
 | `sales_order` | [`sales_order`](../data-warehouse-mgr/sales-flat-order-table.md)表中的每一行都表示您网站上的订单。 此表包含订单级别的信息，如订单日期、下订单的客户、订单总额以及折扣和优惠券代码用途。 |
-| `sales_order_address` | `sales_order_address`表中的每一行都包含特定订单的装运和帐单信息。 在`sales_order`表中，给定订单的`billing_address_id`和`shipping_address_id`引用了`entity_id`表上的特定行（由`sales_order_address`标识）。 |
+| `sales_order_address` | `sales_order_address`表中的每一行都包含特定订单的装运和帐单信息。 在`sales_order`表中，给定订单的`billing_address_id`和`shipping_address_id`引用了`sales_order_address`表上的特定行（由`entity_id`标识）。 |
 | `sales_order_item` | [`sales_order_item`](../data-warehouse-mgr/sales-flat-quote-item-table.md)表中的每一行都从特定顺序中标识一个特定项。 每一行都包含产品、购买数量和与给定项目关联的订单等详细信息。 |
 
 {style="table-layout:auto"}
