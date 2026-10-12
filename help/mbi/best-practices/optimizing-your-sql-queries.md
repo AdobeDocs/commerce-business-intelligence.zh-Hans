@@ -55,7 +55,7 @@ ht-degree: 0%
 
 | **代替此……** | **尝试此操作！** |
 |-----|-----|
-| 使用SELECT星号](../../mbi/assets/Select_all_1.png)的![SQL查询 | ![选择特定列的SQL查询](../../mbi/assets/Select_all_2.png) |
+| 使用SELECT星号![&#128279;](../../mbi/assets/Select_all_1.png)的SQL查询 | ![选择特定列的SQL查询](../../mbi/assets/Select_all_2.png) |
 
 {style="table-layout:auto"}
 
@@ -125,7 +125,7 @@ ht-degree: 0%
 
 | **代替此……** | **尝试此操作！** |
 |-----|-----|
-| ![SQL查询，在筛选前GROUP BY ](../../mbi/assets/Group_by_2.png) | 在GROUP BY](../../mbi/assets/Group_by_1.png)之前使用筛选器的![SQL查询 |
+| ![SQL查询，在筛选前GROUP BY &#x200B;](../../mbi/assets/Group_by_2.png) | 在GROUP BY![&#128279;](../../mbi/assets/Group_by_1.png)之前使用筛选器的SQL查询 |
 
 {style="table-layout:auto"}
 

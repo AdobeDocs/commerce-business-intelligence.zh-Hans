@@ -148,15 +148,15 @@ ht-degree: 0%
 
 [!UICONTROL Integration Name]： [为您的[!DNL Commerce Intelligence]实例选择一个名称]
 
-[!UICONTROL Host]: `mbi.internal`
+[!UICONTROL Host]&#x200B;: `mbi.internal`
 
-[!UICONTROL Port]: `3306`
+[!UICONTROL Port]&#x200B;: `3306`
 
-[！UICONTROL用户名]: `mbi`
+[!UICONTROL 用户名]&#x200B;: `mbi`
 
 [!UICONTROL Password]：在上一部分中显示了[输入密码]
 
-[!UICONTROL Database Name]: `main`
+[!UICONTROL Database Name]&#x200B;: `main`
 
 [!UICONTROL Table Prefixes]：如果没有表前缀，[留空]
 
@@ -166,7 +166,7 @@ ht-degree: 0%
 
 **输入：**
 
-[!UICONTROL Database Timezone]: `UTC`
+[!UICONTROL Database Timezone]&#x200B;: `UTC`
 
 [!UICONTROL Desired Timezone]： [选择您希望数据显示的时区]
 
@@ -182,13 +182,13 @@ ht-degree: 0%
 
 **输入：**
 
-[!UICONTROL Encryption Type]: `SSH Tunnel`
+[!UICONTROL Encryption Type]&#x200B;: `SSH Tunnel`
 
 [!UICONTROL Remote Address]： `ssh.us-3.magento.cloud` [来自上一步]
 
 [!UICONTROL Username]： `vfbfui4vmfez6-master-7rqtwti—mymagento` [来自上一步]
 
-[!UICONTROL Port]: `22`
+[!UICONTROL Port]&#x200B;: `22`
 
 ## 保存您的集成。
 

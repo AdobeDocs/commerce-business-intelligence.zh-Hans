@@ -113,7 +113,7 @@ ht-degree: 54%
 
 * **`[!DNL Zendesk] user's`**&#x200B;表
   * `User is agent? (Yes/No) `
-  * 
+  * &#x200B;
     * `Column type` - `Same Table > Calculation`
 
     * `Input columns` - `role`, `email`
@@ -127,23 +127,23 @@ ht-degree: 54%
 * **`[!DNL Zendesk] audits_~_events`**&#x200B;表
   * 选择定义： `Joined Column`
   * [!UICONTROL Create Path]:
-  * [!UICONTROL Many]: `[!DNL Zendesk] audits_~_events.author_id8`
-  * [!UICONTROL One]: `[!DNL Zendesk] users.id`
+  * [!UICONTROL Many]&#x200B;: `[!DNL Zendesk] audits_~_events.author_id8`
+  * [!UICONTROL One]&#x200B;: `[!DNL Zendesk] users.id`
 
   * 选择[!UICONTROL table]： `[!DNL Zendesk] users`
   * 选择[!UICONTROL column]： `User is agent? (Yes/No)`
-  * [!UICONTROL Path]: `[!DNL Zendesk] audits_~_events.author_id = [!DNL Zendesk] users.id`
+  * [!UICONTROL Path]&#x200B;: `[!DNL Zendesk] audits_~_events.author_id = [!DNL Zendesk] users.id`
 
 * **`Author is agent? (Yes/No)`**
 
 * **`[!DNL Zendesk] audits`**&#x200B;表
   * 选择定义： `Exists`
   * [!UICONTROL Create Path]:
-  * [!UICONTROL Many]: `[!DNL Zendesk] audits_~_events._id_of_parent`
-  * [!UICONTROL One]: `[!DNL Zendesk] audits._id`
+  * [!UICONTROL Many]&#x200B;: `[!DNL Zendesk] audits_~_events._id_of_parent`
+  * [!UICONTROL One]&#x200B;: `[!DNL Zendesk] audits._id`
 
   * 选择[!UICONTROL table]： `[!DNL Zendesk] audits_~_events`
-  * [!UICONTROL Path]: `[!DNL Zendesk] audits_~_events._id_of_parent = [!DNL Zendesk] audits._id`
+  * [!UICONTROL Path]&#x200B;: `[!DNL Zendesk] audits_~_events._id_of_parent = [!DNL Zendesk] audits._id`
   * [!UICONTROL Filter]:
   * `field_name` = `status`
   * `type` = `Change`
@@ -151,8 +151,8 @@ ht-degree: 54%
 
   * 选择定义： `Exists`
   * 选择[!UICONTROL table]： `[!DNL Zendesk] audits_~_events`
-  * [!UICONTROL Path]: `[!DNL Zendesk] audits_~_events._id_of_parent = [!DNL Zendesk] audits._id`
-  * [!UICONTROL Filter]: `Author is agent? (Yes/No)`
+  * [!UICONTROL Path]&#x200B;: `[!DNL Zendesk] audits_~_events._id_of_parent = [!DNL Zendesk] audits._id`
+  * [!UICONTROL Filter]&#x200B;: `Author is agent? (Yes/No)`
   * `type` = `Comment`
   * `public` = `1`
 
@@ -162,33 +162,33 @@ ht-degree: 54%
 * **`[!DNL Zendesk] Tickets`**&#x200B;表
   * 选择定义： `Joined Column`
   * [!UICONTROL Create Path]:
-  * [!UICONTROL Many]: `[!DNL Zendesk] tickets.requester_id`
-  * [!UICONTROL One]: `[!DNL Zendesk] users.id`
+  * [!UICONTROL Many]&#x200B;: `[!DNL Zendesk] tickets.requester_id`
+  * [!UICONTROL One]&#x200B;: `[!DNL Zendesk] users.id`
 
   * 选择[!UICONTROL table]： `[!DNL Zendesk] users`
   * 选择[!UICONTROL column]： `email`
-  * [!UICONTROL Path]: `[!DNL Zendesk] tickets.requester_id = [!DNL Zendesk] users.id`
+  * [!UICONTROL Path]&#x200B;: `[!DNL Zendesk] tickets.requester_id = [!DNL Zendesk] users.id`
 
   * 选择定义： `Joined Column`
   * 选择[!UICONTROL table]： `[!DNL Zendesk] users`
   * 选择[!UICONTROL column]： `role`
-  * [!UICONTROL Path]: `[!DNL Zendesk] tickets.requester_id = [!DNL Zendesk] users.id`
+  * [!UICONTROL Path]&#x200B;: `[!DNL Zendesk] tickets.requester_id = [!DNL Zendesk] users.id`
 
   * 选择定义： `Max`
   * [!UICONTROL Create Path]:
-  * [!UICONTROL Many]: `[!DNL Zendesk] audits.ticket_id`
-  * [!UICONTROL One]: `[!DNL Zendesk] tickets.id`
+  * [!UICONTROL Many]&#x200B;: `[!DNL Zendesk] audits.ticket_id`
+  * [!UICONTROL One]&#x200B;: `[!DNL Zendesk] tickets.id`
 
   * 选择[!UICONTROL table]： `[!DNL Zendesk] audits`
   * 选择[!UICONTROL column]： `created_at`
-  * [!UICONTROL Path]: `[!DNL Zendesk] audits.ticket_id = [!DNL Zendesk] tickets.id`
+  * [!UICONTROL Path]&#x200B;: `[!DNL Zendesk] audits.ticket_id = [!DNL Zendesk] tickets.id`
   * [!UICONTROL Filter]:
   * `status`已更改为`solved = 1`
 
   * 选择定义： `Min`
   * 选择[!UICONTROL table]： `[!DNL Zendesk] audits`
   * 选择[!UICONTROL column]： `created_at`
-  * [!UICONTROL Path]: `[!DNL Zendesk] audits.ticket_id = [!DNL Zendesk] tickets.id`
+  * [!UICONTROL Path]&#x200B;: `[!DNL Zendesk] audits.ticket_id = [!DNL Zendesk] tickets.id`
   * [!UICONTROL Filter]:
   * `Is agent comment? = 1`
 
@@ -197,19 +197,19 @@ ht-degree: 54%
 * `Ticket's latest solved date`
 * `First agent response date`
 * `Seconds to resolution`
-  * 
+  * &#x200B;
     * `Column type` - `Same Table > Date Difference`
 
     * `Ticket's latest solved date`减去`created_at`
 
 * **`Seconds to first response`**
-  * 
+  * &#x200B;
     * `Column type` - `Same Table > Date Difference`
 
     * `First agent response date`减去`created_at`
 
 * **`Requester's ticket number`**
-  * 
+  * &#x200B;
     * `Column type` - `Same Table > Event Number`
 
     * `Event Owner` - `requester_id`
@@ -217,7 +217,7 @@ ht-degree: 54%
     * `Event Rank` - `created_at`
 
 * **`Ticket created_at (hour of day)`**
-  * 
+  * &#x200B;
     * `Column type` — “相同表>计算”
 
     * `Input columns` - `created_at`
@@ -227,7 +227,7 @@ ht-degree: 54%
     * `Datatype` — 整数
 
 * **`Ticket created_at (day of week)`**
-  * 
+  * &#x200B;
     * `Column type` — “相同表>计算”
 
     * `Input columns` - `created_at`
@@ -239,18 +239,18 @@ ht-degree: 54%
 * **`customer_entity`**&#x200B;表
   * 选择定义： `Count`
   * [!UICONTROL Create Path]:
-  * [!UICONTROL Many]: `[!DNL Zendesk] tickets.email`
-  * 
-    [！UICONTROL One]: `customer_entity.email`
+  * [!UICONTROL Many]&#x200B;: `[!DNL Zendesk] tickets.email`
+  * &#x200B;
+    [!UICONTROL One]&#x200B;: `customer_entity.email`
 
   * 选择[!UICONTROL table]： `[!DNL Zendesk] tickets`
-  * [!UICONTROL Path]: `[!DNL Zendesk] tickets.email = customer_entity.email`
+  * [!UICONTROL Path]&#x200B;: `[!DNL Zendesk] tickets.email = customer_entity.email`
   * [!UICONTROL Filter]:
   * `Tickets we count`
 
 * **`User's lifetime number of support tickets requested`**
 * **`Has user filed a support ticket? (Yes/No)`**
-  * 
+  * &#x200B;
     * `Column type` — “相同表>计算”
 
     * `Input columns` - `User's lifetime number of support tickets requested`
@@ -263,7 +263,7 @@ ht-degree: 54%
   * 选择定义： `Joined Column`
   * 选择[!UICONTROL table]： `customer_entity`
   * 选择[!UICONTROL column]： `User's lifetime number of support tickets requested`
-  * [!UICONTROL Path]: `[!DNL Zendesk] tickets.email = customer_entity.email`
+  * [!UICONTROL Path]&#x200B;: `[!DNL Zendesk] tickets.email = customer_entity.email`
 
 * **`Requester's lifetime number of support tickets`**
 
@@ -324,7 +324,7 @@ ht-degree: 54%
 ### 报告
 
 * **[!UICONTROL New/Open/Pending tickets]**
-  * [!UICONTROL Metric]: `New Tickets`
+  * [!UICONTROL Metric]&#x200B;: `New Tickets`
   * [!UICONTROL Filter]:
   * `new, open, pending`中的状态
 
@@ -334,7 +334,7 @@ ht-degree: 54%
 * `Chart Type`: `Scalar`
 
 * **[!UICONTROL Closed/Solved tickets]**
-  * [!UICONTROL Metric]: `New Tickets`
+  * [!UICONTROL Metric]&#x200B;: `New Tickets`
   * [!UICONTROL Filter]:
   * `solved, closed`中的状态
 
@@ -344,7 +344,7 @@ ht-degree: 54%
 * `Chart Type`: `Scalar`
 
 * **[!UICONTROL Average time to first response]**
-  * [!UICONTROL Metric]: `Average time to first response`
+  * [!UICONTROL Metric]&#x200B;: `Average time to first response`
 
 * 量度`A`： `Average time to first response`
 * `Time period`: `All time`
@@ -352,7 +352,7 @@ ht-degree: 54%
 * `Chart Type`: `Scalar`
 
 * **[!UICONTROL Average time to resolution]**
-  * [!UICONTROL Metric]: `Average time to resolution`
+  * [!UICONTROL Metric]&#x200B;: `Average time to resolution`
   * [!UICONTROL Filter]:
   * `solved, closed`中的状态
 
@@ -362,7 +362,7 @@ ht-degree: 54%
 * `Chart Type`: `Scalar`
 
 * **[!UICONTROL Tickets by status]**
-  * [!UICONTROL Metric]: `New Tickets`
+  * [!UICONTROL Metric]&#x200B;: `New Tickets`
 
 * 量度`A`： `New tickets`
 * `Time period`: `All time`
@@ -371,9 +371,9 @@ ht-degree: 54%
 * `Chart Type`: `Stacked Column`
 
 * **[!UICONTROL Number of new and solved tickets]**
-  * [!UICONTROL Metric]: `New Tickets`
+  * [!UICONTROL Metric]&#x200B;: `New Tickets`
 
-  * [!UICONTROL Metric]: `New Tickets`
+  * [!UICONTROL Metric]&#x200B;: `New Tickets`
 
 * 量度`A`： `New tickets`
 * 量度`B`： `Solved tickets`
@@ -382,7 +382,7 @@ ht-degree: 54%
 * `Chart Type`: `Line`
 
 * **[!UICONTROL Time to first response]**
-  * [!UICONTROL Metric]: `Average time to first response`
+  * [!UICONTROL Metric]&#x200B;: `Average time to first response`
 
 * 量度`A`： `Average time to first response`
 * `Time period`: `All time`
@@ -390,7 +390,7 @@ ht-degree: 54%
 * `Chart Type`: `Column`
 
 * **[!UICONTROL Time to resolution]**
-  * [!UICONTROL Metric]: `Average time to resolution`
+  * [!UICONTROL Metric]&#x200B;: `Average time to resolution`
   * [!UICONTROL Filter]:
   * `solved, closed`中的状态
 
@@ -400,7 +400,7 @@ ht-degree: 54%
 * `Chart Type`: `Column`
 
 * **[!UICONTROL Distinct users filing tickets]**
-  * [!UICONTROL Metric]: `Distinct users filing tickets`
+  * [!UICONTROL Metric]&#x200B;: `Distinct users filing tickets`
 
 * 量度`A`： `Distinct users filing tickets`
 * `Time period`: `All time`
@@ -408,7 +408,7 @@ ht-degree: 54%
 * `Chart Type`: `Column`
 
 * **[!UICONTROL Peak ticket days]**
-  * [!UICONTROL Metric]: `New Tickets`
+  * [!UICONTROL Metric]&#x200B;: `New Tickets`
 
 * 量度`A`： `New tickets`
 * `Time period`: `All time`
@@ -417,7 +417,7 @@ ht-degree: 54%
 * `Chart Type`: `Pie`
 
 * **[!UICONTROL Peak ticket hours]**
-  * [!UICONTROL Metric]:`New Tickets`
+  * [!UICONTROL Metric]&#x200B;:`New Tickets`
 
   * `Show top/bottom`: `Top 100% sorted by created_at (hour of the day)`
 
@@ -428,7 +428,7 @@ ht-degree: 54%
 * `Chart Type`: `Pie`
 
 * **[!UICONTROL Avg LTV of users who have and have not filed tickets]**
-  * [!UICONTROL Metric]: `Average lifetime revenue`
+  * [!UICONTROL Metric]&#x200B;: `Average lifetime revenue`
 
 * 量度`A`： `Average lifetime revenue`
 * `Time period`: `All time`
@@ -437,8 +437,8 @@ ht-degree: 54%
 * `Chart Type`: `Column`
 
 * **[!UICONTROL Number of new users who have and have not filed tickets]**
-  * 
-    [！UICONTROL量度]: Users
+  * &#x200B;
+    [!UICONTROL 量度]&#x200B;: Users
 
 * 量度`A`： `New users`
 * `Time period`: `All time`

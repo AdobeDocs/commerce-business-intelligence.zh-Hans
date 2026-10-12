@@ -80,48 +80,48 @@ ht-degree: 6%
 
 * 剩余&#x200B;**收入以实现目标**
 * 量度`A`： `Revenue`
-* 
-  [！UICONTROL量度]: `Revenue`
+* &#x200B;
+  [!UICONTROL 量度]&#x200B;: `Revenue`
 
 * 量度`B`： `Target Revenue`
-* [!UICONTROL Metric]: `Monthly Revenue Target`
+* [!UICONTROL Metric]&#x200B;: `Monthly Revenue Target`
 
-* [!UICONTROL Formula]: `Revenue left to achieve target`
-* 
-  [！UICONTROL公式]: `(B-A)`
-* 
-  [!UICONTROL Format]: `Number`
+* [!UICONTROL Formula]&#x200B;: `Revenue left to achieve target`
+* &#x200B;
+  [!UICONTROL 公式]&#x200B;: `(B-A)`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Number`
 
 * [!UICONTROL Time period]：（无论您需要什么相关时间段）
-* 
-  [!UICONTROL Interval]: `Month`
-* 
-  [！UICONTROL图表类型]: `Scalar`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `Month`
+* &#x200B;
+  [!UICONTROL 图表类型]&#x200B;: `Scalar`
 
 * **收入目标**
 * 量度`A`： `Revenue`
-* 
-  [！UICONTROL量度]: `Revenue`
+* &#x200B;
+  [!UICONTROL 量度]&#x200B;: `Revenue`
 
 * 量度`B`： `Target Revenue`
-* [!UICONTROL Metric]: `Monthly Revenue Target`
+* [!UICONTROL Metric]&#x200B;: `Monthly Revenue Target`
 
 * 量度`C`： `Revenue (amount change since previous year)` （隐藏）
-* 
-  [！UICONTROL量度]: `Revenue`
-* [!UICONTROL Perspective]: `Amount change vs. Previous year`
+* &#x200B;
+  [!UICONTROL 量度]&#x200B;: `Revenue`
+* [!UICONTROL Perspective]&#x200B;: `Amount change vs. Previous year`
 
 * [!UICONTROL Formula]：（去年这个月）
-* 
-  [！UICONTROL公式]: `(A-C)`
-* 
-  [!UICONTROL Format]: `Currency`
+* &#x200B;
+  [!UICONTROL 公式]&#x200B;: `(A-C)`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Currency`
 
 * 关闭`Multiple Y-Axes`
 * [!UICONTROL Time period]：（无论您需要什么相关时间段）*
-* 
-  [!UICONTROL Interval]: `Month`
-* [!UICONTROL Chart Type]: `Line Chart`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `Month`
+* [!UICONTROL Chart Type]&#x200B;: `Line Chart`
 
 完成上述收入目标报表后，您可以针对订单、注册帐户或已包括在目标文件上传中的任何其他值，创建相同的目标报表。
 

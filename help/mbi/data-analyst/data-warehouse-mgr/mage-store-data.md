@@ -93,7 +93,7 @@ ht-degree: 4%
 
 帐户创建完成后，`Sammy Customer`可以开始购买。 在网站上，客户将两对`Throwback Bellbottoms`和一对`V-Neck T-Shirt`添加到购物车。 客户对选择感到满意，将移至结帐并提交订单，并在[销售平面订单表](../data-warehouse-mgr/sales-flat-order-table.md)上创建以下条目：
 
-| **`entity id`** | **`customer id**` | **`subtotal`** | **`created at`** |
+| **`entity id`** | **`customer id**` | &#x200B;**`subtotal`**&#x200B; | &#x200B;**`created at`** |
 |---|---|---|---|
 | 227 | 214 | 94.85 | 2016/09/23 15:41:39 |
 

@@ -74,7 +74,7 @@ Report Builder允许您轻松查看一段时间的趋势，并更改您可能希
   * `created_at (month)` [!UICONTROL Calculation]： **to_char(A， &#39;mm-month&#39;)**
   * `created_at (day of the month)`&lt; [!UICONTROL Calculation]： **to_char(A， &#39;dd&#39;)**
   * `created_at (day of the week)` [!UICONTROL Calculation]： **to_char(A， &#39;d-Day&#39;)**
-  * **`created_at (hour of the day)` [!UICONTROL Calculation]： **to_char(A， &#39;hh24&#39;)**
+  * **`created_at (hour of the day)` [!UICONTROL Calculation]： &#x200B;** to_char(A， &#39;hh24&#39;)**
     ![在Data Warehouse Manager中创建计算列接口](../../assets/new-arch-create-calc.png)
 
 ## 量度
@@ -88,26 +88,26 @@ Report Builder允许您轻松查看一段时间的趋势，并更改您可能希
 ## 报告
 
 * **按年图表**
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
 
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
   * [!UICONTROL Time options]: `Time range (Custom)`: `2 years ago to 1 year ago`
 
   * [!UICONTROL Show top/bottom]：前100%按&#x200B;**`created_at (month-day)`**&#x200B;排序*
 
 * 量度`A`： `This year`
 * 量度`B`： `Last year`
-* [!UICONTROL Time period]: `1 year ago to 0 years ago`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `created_at (month-day)`
-* 
-  [!UICONTROL Chart Type]: `Line`
+* [!UICONTROL Time period]&#x200B;: `1 year ago to 0 years ago`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `created_at (month-day)`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Line`
 
 * **MoM图表**
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
 
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
   * 时间选项： `Time range (Custom)`： `2 months ago to 1 month ago`
 
   * 显示前/后：前100%按&#x200B;**`created_at (day of month)`**&#x200B;排序*
@@ -115,44 +115,44 @@ Report Builder允许您轻松查看一段时间的趋势，并更改您可能希
 * 量度`A`：本月*
 * 量度`B`：上个月*
 * [!UICONTROL Time period]：一个月前至0个月前
-* 
-  [!UICONTROL Interval]: None
-* [!UICONTROL Group by]: `created_at (day of month)`
-* 
-  [!UICONTROL Chart Type]: Line
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: None
+* [!UICONTROL Group by]&#x200B;: `created_at (day of month)`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: Line
 
 * **WoW图表**
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
 
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
   * [!UICONTROL Time options]: `Time range (Custom)`: `2 weeks ago to 1 week ago`
 
   * [!UICONTROL Show top/bottom]：前100%按`created_at (day of week)`排序
 
 * 量度`A`： `This week`
 * 量度`B`： `Last week`
-* [!UICONTROL Time period]: `1 week ago to 0 weeks ago`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `created_at (day of week)`
-* 
-  [!UICONTROL Chart Type]: `Line`
+* [!UICONTROL Time period]&#x200B;: `1 week ago to 0 weeks ago`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `created_at (day of week)`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Line`
 
 * **DoD图表**
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
 
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
   * [!UICONTROL Time options]: `Time range (Custom)`: `2 days ago to 1 day ago`
 
   * [!UICONTROL Show top/bottom]：前100%按`created_at (hour of day)`排序
 
 * 量度`A`： `Today`
 * 指标B： `Yesterday`
-* [!UICONTROL Time period]: `1 day ago to 0 days ago`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `created_at (hour of day)`
-* 
-  [!UICONTROL Chart Type]: `Line`
+* [!UICONTROL Time period]&#x200B;: `1 day ago to 0 days ago`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `created_at (hour of day)`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Line`
 
 在编译所有报告后，您可以根据需要将报告组织在功能板上。 结果可能类似于此页面顶部的图像。
