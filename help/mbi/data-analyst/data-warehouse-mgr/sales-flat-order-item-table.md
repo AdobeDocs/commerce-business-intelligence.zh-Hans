@@ -4,44 +4,62 @@ description: 了解如何使用sales_order_item表。
 exl-id: 5c48e985-3ba2-414b-bd1f-555b3da763bd
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/oIuu3bNkmZMRrwa6V76fQPgKUWr4IsG3Madq46ar0Tk
+TQID: 'https://experienceleague.adobe.com/oIuu3bNkmZMRrwa6V76fQPgKUWr4IsG3Madq46ar0Tk'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 896
+source-wordcount: '896'
 ht-degree: 0%
-
 ---
-
 # `sales_order_item`表
 
 `sales_order_item`表（ M1上的`sales_flat_order_item`）包含订单中购买的所有产品的记录。 每一行表示一个订单中包含的唯一`sku`。 为特定`sku`购买的单位数量通常由`qty_ordered`字段表示。
 
 ## 产品类型
 
-`sales_order_item`捕获已购买的所有[产品类型](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/products/product-create#product-types)的详细信息。 [!DNL Adobe Commerce]中的常见做法是提供可配置的产品，换句话说，就是根据大小、颜色和其他产品属性自定义的产品。 虽然可配置产品具有自己的`sku`，但它可以关联到多个简单产品，其中每个简单产品代表一个独特的产品配置。 有关详细信息，请参阅[配置产品](https://developer.adobe.com/commerce/webapi/rest/tutorials/configurable-product/)。
+`sales_order_item`捕获已购买的所有[产品类型](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/product-create#product-types)的详细信息。 [!DNL Adobe Commerce]中的常见做法是提供可配置的产品，换句话说，就是根据大小、颜色和其他产品属性自定义的产品。 虽然可配置产品具有自己的`sku`，但它可以关联到多个简单产品，其中每个简单产品代表一个独特的产品配置。 有关详细信息，请参阅[配置产品](https://developer.adobe.com/commerce/webapi/rest/tutorials/configurable-product/)。
 
 例如，假定可配置产品为T恤。 客户结账时，会选择相应的选项来更改颜色和大小。 如果客户选择`blue`的颜色和`small`的大小，则他们最终会购买与`t-shirt`的父产品相关的简单产品，例如`t-shirt-blue-small`。
 
-当可配置产品包含在订单中时，`sales_order_item`表中将生成两行：一行用于[simple](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/products/types/product-create-simple) `sku`，另一行用于[configurable](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/products/types/product-create-configurable)父级。 `sales_order_item`表中的这两个记录可以通过以下连接相互关联：
+当可配置产品包含在订单中时，`sales_order_item`表中将生成两行：一行用于[simple](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/types/product-create-simple) `sku`，另一行用于[configurable](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/types/product-create-configurable)父级。 `sales_order_item`表中的这两个记录可以通过以下连接相互关联：
 
 * （简单） `sales_order_item.parent_item_id` => （可配置） `sales_order_item.item_id`
 
@@ -51,14 +69,14 @@ ht-degree: 0%
 
 | **列名称** | **描述** |
 |----|----|
-| `base_price` | 在应用[目录价格规则、分层折扣和特殊定价](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/products/pricing/pricing-advanced)之后且未应用任何税费、运费或购物车折扣之前，销售时产品的单个单位的价格。 以存储的基本货币表示。 |
+| `base_price` | 在应用[目录价格规则、分层折扣和特殊定价](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/pricing-advanced)之后且未应用任何税费、运费或购物车折扣之前，销售时产品的单个单位的价格。 以存储的基本货币表示。 |
 | `created_at` | 订单项的创建时间戳，以UTC本地存储。 根据[!DNL Commerce Intelligence]中的配置，此时间戳可能会转换为[!DNL Commerce Intelligence]中与数据库时区不同的报表时区。 |
 | `item_id` (PK) | 表的唯一标识符。 |
 | `name` | 订单项的文本名称。 |
 | `order_id` | 与`sales_order`表关联的`Foreign key`。 加入`sales_order.entity_id`以确定与订单项关联的订单属性。 |
 | `parent_item_id` | 将简单产品与其父捆绑包或可配置产品相关联的`Foreign key`。 加入`sales_order_item.item_id`以确定与简单产品关联的父产品属性。 对于父订单项（即捆绑包或可配置产品类型），`parent_item_id`为`NULL`。 |
 | `product_id` | 与`catalog_product_entity`表关联的`Foreign key`。 加入`catalog_product_entity.entity_id`以确定与订单项关联的产品属性。 |
-| `product_type` | 已销售产品的类型。 潜在的[产品类型](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/products/product-create#product-types)包括：简单、可配置、已分组、虚拟、捆绑和可下载。 |
+| `product_type` | 已销售产品的类型。 潜在的[产品类型](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/product-create#product-types)包括：简单、可配置、已分组、虚拟、捆绑和可下载。 |
 | `qty_ordered` | 销售时特定订单项目购物车中包含的单位数量。 |
 | `sku` | 已购订单项目的唯一标识符。 |
 | `store_id` | 与`store`表关联的`Foreign key`。 加入`store.store_id`以确定与订单项关联的Commerce商店视图。 |
@@ -73,7 +91,7 @@ ht-degree: 0%
 | `Customer's lifetime number of orders` | 此客户下达的订单总数。 通过将`sales_order_item.order_id`加入`sales_order.entity_id`并返回`Customer's lifetime number of orders`字段进行计算。 |
 | `Customer's lifetime revenue` | 此客户下达的所有订单的总收入。 通过将`sales_order_item.order_id`加入`sales_order.entity_id`并返回`Customer's lifetime revenue`字段进行计算。 |
 | `Customer's order number` | 此客户订单的连续订单排名。 通过将`sales_order_item.order_id`加入`sales_order.entity_id`并返回`Customer's order number`字段进行计算。 |
-| `Order item total value (quantity * price)` | 在应用了[目录价格规则、分层折扣和特殊定价](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/products/pricing/pricing-advanced)之后且未应用任何税、运费或购物车折扣之前，订单项目在销售时的总值。 通过`qty_ordered`乘以`base_price`计算。 |
+| `Order item total value (quantity * price)` | 在应用了[目录价格规则、分层折扣和特殊定价](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/pricing-advanced)之后且未应用任何税、运费或购物车折扣之前，订单项目在销售时的总值。 通过`qty_ordered`乘以`base_price`计算。 |
 | `Order's coupon_code` | 应用于订单的优惠券。 通过将`sales_order_item.order_id`加入`sales_order.entity_id`并返回`coupon_code`字段进行计算。 |
 | `Order's increment_id` | 订单的唯一标识符。 通过将`sales_order_item.order_id`加入`sales_order.entity_id`并返回`increment_id`字段进行计算。 |
 | `Order's status` | 订单的状态。 通过将`sales_order_item.order_id`加入`sales_order.entity_id`并返回`status`字段进行计算。 |
@@ -104,7 +122,7 @@ ht-degree: 0%
 
 `sales_order_item`
 
-* 加入`sales_order_item`以创建将父可配置或捆绑SKU的详细信息与简单产品关联的列。 在Data Warehouse管理器中构建时，[联系支持人员](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)以获得配置这些计算的帮助。
+* 加入`sales_order_item`以创建将父可配置或捆绑SKU的详细信息与简单产品关联的列。 在Data Warehouse管理器中构建时，[联系支持人员](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)以获得配置这些计算的帮助。
   * 路径： `sales_order_item.parent_item_id` （多个） => `sales_order_item.item_id` （一个）
 
 `store`

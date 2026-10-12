@@ -4,33 +4,49 @@ description: 了解通过修改现有表或使用SQL将多个表连接或合并�
 exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-TQID: https://experienceleague.adobe.com/vYwWxyLRBA-ZG6IZv9Xw1nYqdYG2nfucHNB6rF8qAsM
+TQID: 'https://experienceleague.adobe.com/vYwWxyLRBA-ZG6IZv9Xw1nYqdYG2nfucHNB6rF8qAsM'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+    internal-label: Data integration
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Insights
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1156
+source-wordcount: '1156'
 ht-degree: 13%
-
 ---
-
 # 使用Data Warehouse视图
 
 本文档概述了可通过导航到&#x200B;**[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**&#x200B;访问`Data Warehouse Views`的用途和用途。 以下是其作用以及如何创建视图的解释，以及如何使用`Data Warehouse Views`合并[!DNL Facebook]和[!DNL AdWords]支出数据的示例。
@@ -156,7 +172,7 @@ ht-degree: 13%
 
 **正在寻找其他帮助吗？**
 
-技术支持不包括编写SQL和创建`Data Warehouse Views`。 但是，[服务团队](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)确实为创建视图提供了帮助。 对于从使用新数据库迁移旧数据库到创建单个Data Warehouse视图以进行特定分析的所有内容，支持团队都可以提供帮助。
+技术支持不包括编写SQL和创建`Data Warehouse Views`。 但是，[服务团队](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)确实为创建视图提供了帮助。 对于从使用新数据库迁移旧数据库到创建单个Data Warehouse视图以进行特定分析的所有内容，支持团队都可以提供帮助。
 
 通常，为合并2-3个类似结构的表而创建新`Data Warehouse View`需要五小时的服务时间，相当于大约1,250美元的工作时间。 然而，以下是可增加所需预期投资的几个共同因素：
 

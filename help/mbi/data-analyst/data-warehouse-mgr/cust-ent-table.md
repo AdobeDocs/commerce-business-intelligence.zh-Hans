@@ -4,33 +4,51 @@ description: 了解如何访问所有已注册帐户的记录。
 exl-id: 24bf0e66-eea0-45ea-8ce6-4ff99b678201
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/iTzls4nEtW9ep-3s536ZnRCCr2TeMD6AsDecZc3Cdys
+TQID: 'https://experienceleague.adobe.com/iTzls4nEtW9ep-3s536ZnRCCr2TeMD6AsDecZc3Cdys'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 610
+source-wordcount: '604'
 ht-degree: 0%
-
 ---
-
 # customer_entity表
 
 `customer_entity`表包含所有已注册帐户的记录。 无论客户是否完成购买，只要他们注册了一个帐户，该帐户即被视为已注册。 每一行对应于一个唯一的注册帐户，由该帐户的`entity_id`标识。
@@ -45,7 +63,7 @@ ht-degree: 0%
 | `email` | 与帐户关联的电子邮件地址 |
 | `entity_id` (PK) | 表的唯一标识符，通常用于实例内其他表中与`customer_id`的联接 |
 | `group_id` | 与`customer_group`表关联的外键。 加入`customer_group.customer_group_id`以确定与注册帐户关联的客户组 |
-| `store_id` | 与`store`表关联的外键。 加入`store`。`store_id`以确定哪个Commerce商店视图与注册的帐户关联 |
+| `store_id` | 与`store`表关联的外键。 加入`store`.`store_id` 以确定哪个Commerce商店视图与注册的帐户关联 |
 
 {style="table-layout:auto"}
 
@@ -53,11 +71,11 @@ ht-degree: 0%
 
 | **列名称** | **描述** |
 |---|---|
-| `Customer's first 30 day revenue` | 此客户在第一个订单日期后30天内下达的所有订单的总收入。 通过将`customer_entity.entity_id`加入`sales_order.customer_id`并累加`base_grand_total`2592000的所有订单的`sales_order.Seconds between customer's first order date and this order`字段进行计算，即30天内的秒数 |
-| `Customer's first order date` | 此客户下第一个订单的时间戳。 通过将`customer_entity.entity_id`加入`sales_order.customer_id`并返回最小值`sales_order`进行计算。`created_at`值 |
-| `Customer's first order's billing region` | 与客户第一张订单关联的帐单区域。 通过将`customer_entity.entity_id`加入`sales_order.customer_id`并返回`Billing address region` = 1的`sales_order.Customer's order number`进行计算 |
-| `Customer's first order's coupon_code` | 与客户第一张订单关联的优惠券代码。 通过将`customer_entity.entity_id`加入`sales_order.customer_id`并返回`sales_order.coupon_code` = 1的`sales_order.Customer's order number`进行计算 |
-| `Customer's group code` | 已注册客户的组名称。 通过将`customer_entity.group_id`加入`customer_group`进行计算。`customer_group_id`并返回`customer_group_code`字段 |
+| `Customer's first 30 day revenue` | 此客户在第一个订单日期后30天内下达的所有订单的总收入。 通过将`customer_entity.entity_id`加入`sales_order.customer_id`并累加`sales_order.Seconds between customer's first order date and this order`2592000的所有订单的`base_grand_total`字段进行计算，即30天内的秒数 |
+| `Customer's first order date` | 此客户下第一个订单的时间戳。 通过将`customer_entity.entity_id`加入`sales_order.customer_id`并返回最小值`sales_order`.`created_at`进行计算 值 |
+| `Customer's first order's billing region` | 与客户第一张订单关联的帐单区域。 通过将`customer_entity.entity_id`加入`sales_order.customer_id`并返回`sales_order.Customer's order number` = 1的`Billing address region`进行计算 |
+| `Customer's first order's coupon_code` | 与客户第一张订单关联的优惠券代码。 通过将`customer_entity.entity_id`加入`sales_order.customer_id`并返回`sales_order.Customer's order number` = 1的`sales_order.coupon_code`进行计算 |
+| `Customer's group code` | 已注册客户的组名称。 通过将`customer_entity.group_id`加入`customer_group`计算。`customer_group_id` 并返回`customer_group_code`字段 |
 | `Customer's lifetime number of coupons` | 应用于此客户下达的所有订单的优惠券总数。 通过将`customer_entity.entity_id`加入`sales_order.customer_id`并计算`sales_order.coupon_code`不是`NULL`的订单数进行计算 |
 | `Customer's lifetime number of orders` | 此客户下达的订单总数。 通过将`customer_entity.entity_id`加入`sales_order.customer_id`并计数`sales_order`表中的行数进行计算 |
 | `Customer's lifetime revenue` | 此客户下达的所有订单的总收入。 通过将`customer_entity.entity_id`加入`sales_order.customer_id`并汇总该客户下达的所有订单的`base_grand_total`字段进行计算 |
@@ -84,9 +102,9 @@ ht-degree: 0%
 `customer_group`
 
 * 加入`customer_group`表以创建返回注册帐户的客户组名称的列。
-   * 路径： `customer_entity.group_id` （多个） => `customer_group.customer_group_id` （一个）
+  * 路径： `customer_entity.group_id` （多个） => `customer_group.customer_group_id` （一个）
 
 `store`
 
 * 加入`store`表以创建列，这些列返回与已注册帐户关联的存储相关的详细信息。
-   * 路径： `customer_entity.store_id` （多个） => `store.store_id` （一个）
+  * 路径： `customer_entity.store_id` （多个） => `store.store_id` （一个）

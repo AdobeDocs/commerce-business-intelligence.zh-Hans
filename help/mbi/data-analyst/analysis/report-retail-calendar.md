@@ -1,36 +1,49 @@
 ---
 title: 在零售日历中报告
-description: 了解如何设置结构以在 [!DNL Commerce Intelligence] 帐户中使用4-5-4零售日历。
+description: 了解如何设置结构以在[!DNL Commerce Intelligence]帐户中使用4-5-4零售日历。
 exl-id: 3754151c-4b0f-4238-87f2-134b8409e32b
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports, Dashboards
-TQID: https://experienceleague.adobe.com/fXws4NU5bBiAnWU5F9B7mNPts3d-e5D41zSUCpJDomE
+TQID: 'https://experienceleague.adobe.com/fXws4NU5bBiAnWU5F9B7mNPts3d-e5D41zSUCpJDomE'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 06e518d4-11ae-5c20-98b0-ce8ab05d7166
+    internal-label: Dashboards
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Reporting
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 651
-ht-degree: 0%
-
+source-wordcount: '966'
+ht-degree: 30%
 ---
-
 # 在零售业日历中报告
 
-本主题演示如何设置结构以在您的[帐户中使用](https://nrf.com/resources/4-5-4-calendar)4-5-4零售日历[!DNL Adobe Commerce Intelligence]。 可视化Report Builder提供了极其灵活的时间范围、间隔和独立的设置。 但是，所有这些设置都可以与传统每月日历配合使用。
+本主题演示如何设置结构以在您的[!DNL Adobe Commerce Intelligence]帐户中使用[4-5-4零售日历](https://nrf.com/resources/4-5-4-calendar)。 可视化Report Builder提供了极其灵活的时间范围、间隔和独立的设置。 但是，所有这些设置都可以与传统每月日历配合使用。
 
 由于许多客户会更改其日历以使用零售日期或会计日期，因此以下步骤说明了如何使用您的数据并使用零售日期创建报表。 尽管下面的说明引用了4-5-4零售日历，但您可以为您的团队使用的任何特定日历更改它们，无论是财务日历还是自定义时间范围。
 
@@ -57,84 +70,84 @@ ht-degree: 0%
 ## 要创建的列
 
 * **sales\_order**&#x200B;表
-   * `INPUT` `created\_at` (yyyy-mm-dd 00:00:00)
-      * [!UICONTROL Column type]： - `Same table > Calculation`
-      * [!UICONTROL Inputs]： - `created\_at`
-      * [!UICONTROL Datatype]： - `Datetime`
-      * [!UICONTROL Calculation]： - ` case when A is null then null else to\_char(A, 'YYYY-MM-DD 00:00:00') end`
+  * `INPUT` `created\_at` (yyyy-mm-dd 00:00:00)
+    * [!UICONTROL Column type]： - `Same table > Calculation`
+    * [!UICONTROL Inputs]： - `created\_at`
+    * [!UICONTROL Datatype]： - `Datetime`
+    * [!UICONTROL Calculation]: - ` case when A is null then null else to\_char(A, 'YYYY-MM-DD 00:00:00') end`
 
 * **零售日历**&#x200B;文件上传表
-   * **当前日期**
-      * [!UICONTROL Column type]： `Same table > Calculation`
-      * [!UICONTROL Inputs]： `Date Retail`
-      * &#x200B;
-        [!UICONTROL 数据类型]: `Datetime`
-      * [!UICONTROL Calculation]： `case when A is null then null else to\_char(now(), 'YYYY-MM-DD 00:00:00') end`
+  * **当前日期**
+    * [!UICONTROL Column type]: `Same table > Calculation`
+    * [!UICONTROL Inputs]: `Date Retail`
+    * 
+      [！UICONTROL数据类型]: `Datetime`
+    * [!UICONTROL Calculation]: `case when A is null then null else to\_char(now(), 'YYYY-MM-DD 00:00:00') end`
 
-        >[!NOTE]
-        >
-        >上述`now()`函数特定于PostgreSQL。 尽管大多数[!DNL Commerce Intelligence]数据仓库都托管在PostgreSQL上，但某些数据仓库可能托管在Redshift上。 如果以上计算返回错误，您可能需要使用Redshift函数`getdate()`而不是`now()`。
+      >[!NOTE]
+      >
+      >上述`now()`函数特定于PostgreSQL。 尽管大多数[!DNL Commerce Intelligence]数据仓库都托管在PostgreSQL上，但某些数据仓库可能托管在Redshift上。 如果以上计算返回错误，您可能需要使用Redshift函数`getdate()`而不是`now()`。
 
-   * **当前零售年度**（必须由支持分析人员创建）
-      * [!UICONTROL Column type]： E`vent Counter`
-      * [!UICONTROL Local Key]： `Current date`
-      * [!UICONTROL Remote Key]： `Retail calendar.Date Retail`
-      * &#x200B;
-        [!UICONTROL Operation]: `Max`
-      * [!UICONTROL Operation value]： `Year Retail`
-   * **包含在当前零售年度中？ （是/否）**
-      * [!UICONTROL Column type]： `Same table > Calculation`
-      * [!UICONTROL Inputs]：
-         * `A` - `Year Retail`
-         * `B` - `Current retail year`
-      * &#x200B;
-        [!UICONTROL 数据类型]: `String`
-      * [!UICONTROL Calculation]： `case when A is null or B is null then null when A = B then 'Yes' else 'No' end`
-   * **包括在上一零售年度中？ （是/否）**
-      * [!UICONTROL Column type]： `Same table > Calculation`
-      * [!UICONTROL Inputs]：
-         * `A` - `Year Retail`
-         * `B` - `Current retail year`
-      * &#x200B;
-        [!UICONTROL 数据类型]: String
-      * [!UICONTROL Calculation]： `case when A is null or B is null then null when (A = (B-1)) then 'Yes' else 'No' end`
+  * **当前零售年度**（必须由支持分析人员创建）
+    * [!UICONTROL Column type]： E`vent Counter`
+    * [!UICONTROL Local Key]: `Current date`
+    * [!UICONTROL Remote Key]: `Retail calendar.Date Retail`
+    * 
+      [!UICONTROL Operation]: `Max`
+    * [!UICONTROL Operation value]: `Year Retail`
+  * **包含在当前零售年度中？ （是/否）**
+    * [!UICONTROL Column type]: `Same table > Calculation`
+    * [!UICONTROL Inputs]:
+      * `A` - `Year Retail`
+      * `B` - `Current retail year`
+    * 
+      [！UICONTROL数据类型]: `String`
+    * [!UICONTROL Calculation]: `case when A is null or B is null then null when A = B then 'Yes' else 'No' end`
+  * **包括在上一零售年度中？ （是/否）**
+    * [!UICONTROL Column type]: `Same table > Calculation`
+    * [!UICONTROL Inputs]:
+      * `A` - `Year Retail`
+      * `B` - `Current retail year`
+    * 
+      [！UICONTROL数据类型]: String
+    * [!UICONTROL Calculation]: `case when A is null or B is null then null when (A = (B-1)) then 'Yes' else 'No' end`
 
 * **sales\_order**&#x200B;表
-   * **创建\_at （零售年）**
-      * [!UICONTROL Column type]： `One to Many > JOINED\_COLUMN`
-      * 路径 — 
-         * [!UICONTROL Many]： `sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`
-         * [!UICONTROL One]： `Retail Calendar.Date Retail`
-      * 选择[!UICONTROL table]： `Retail Calendar`
-      * 选择[!UICONTROL column]： `Year Retail`
-   * **创建\_at（零售周）**
-      * [!UICONTROL Column type]： `One to Many > JOINED\_COLUMN`
-      * 路径 — 
-         * [!UICONTROL Many]： sales\_order。\[INPUT\]已创建\_at (yyyy-mm-dd 00:00:00
-         * [!UICONTROL One]： Retail Calendar.Date Retail
-      * 选择[!UICONTROL table]： `Retail Calendar`
-      * 选择[!UICONTROL column]： `Week Retail`
-   * **创建\_at （零售月份）**
-      * [!UICONTROL Column type]： `One to Many > JOINED\_COLUMN`
-      * 路径
-         * [!UICONTROL Many]： `sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`
-         * [!UICONTROL One]： `Retail Calendar.Date Retail`
-      * 选择[!UICONTROL table]： `Retail Calendar`
-      * 选择[!UICONTROL column]： `Month Number Retail`
-   * **是否包含在上一个零售年度？ （是/否）**
-      * [!UICONTROL Column type]： `One to Many > JOINED\_COLUMN`
-      * 路径 — 
-         * [!UICONTROL Many]： `sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`
-         * [!UICONTROL One]：零售业`Calendar.Date Retail`
-      * 选择[!UICONTROL table]： `Retail Calendar`
-      * 选择[!UICONTROL column]： `Include in previous retail year? (Yes/No)`
-   * **是否包含在当前零售年度中？ （是/否）**
-      * [!UICONTROL Column type]： `One to Many > JOINED\_COLUMN`
-      * 路径 — 
-         * [!UICONTROL Many]： `sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`
-         * [!UICONTROL One]：零售业`Calendar.Date Retail`
-      * 选择[!UICONTROL table]： `Retail Calendar`
-      * 选择[!UICONTROL column]： `Include in current retail year? (Yes/No)`
+  * **创建\_at （零售年）**
+    * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
+    * 路径 — 
+      * [!UICONTROL Many]: `sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`
+      * [!UICONTROL One]: `Retail Calendar.Date Retail`
+    * 选择[!UICONTROL table]： `Retail Calendar`
+    * 选择[!UICONTROL column]： `Year Retail`
+  * **创建\_at（零售周）**
+    * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
+    * 路径 — 
+      * [!UICONTROL Many]： sales\_order.\[INPUT\]已创建\_at (yyyy-mm-dd 00:00:00
+      * [!UICONTROL One]： Retail Calendar.Date Retail
+    * 选择[!UICONTROL table]： `Retail Calendar`
+    * 选择[!UICONTROL column]： `Week Retail`
+  * **创建\_at （零售月份）**
+    * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
+    * 路径
+      * [!UICONTROL Many]: `sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`
+      * [!UICONTROL One]: `Retail Calendar.Date Retail`
+    * 选择[!UICONTROL table]： `Retail Calendar`
+    * 选择[!UICONTROL column]： `Month Number Retail`
+  * **是否包含在上一个零售年度？ （是/否）**
+    * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
+    * 路径 — 
+      * [!UICONTROL Many]: `sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`
+      * [!UICONTROL One]：零售业`Calendar.Date Retail`
+    * 选择[!UICONTROL table]： `Retail Calendar`
+    * 选择[!UICONTROL column]： `Include in previous retail year? (Yes/No)`
+  * **是否包含在当前零售年度中？ （是/否）**
+    * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
+    * 路径 — 
+      * [!UICONTROL Many]: `sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`
+      * [!UICONTROL One]：零售业`Calendar.Date Retail`
+    * 选择[!UICONTROL table]： `Retail Calendar`
+    * 选择[!UICONTROL column]： `Include in current retail year? (Yes/No)`
 
 ## 量度
 
@@ -143,81 +156,81 @@ ht-degree: 0%
 ## 报告
 
 * **每周订单 — 零售日历（按年）**
-   * 量度`A`： `2017`
-      * [!UICONTROL Metric]：订单数
-      * [!UICONTROL Filter]：
-         * 创建时间\_at（零售业年份）= 2017
-   * 量度`B`： `2016`
-      * [!UICONTROL Metric]：订单数
-      * [!UICONTROL Filter]：
-         * 创建时间\_at（零售业年份）= 2016
-   * 量度`C`： `2015`
-      * [!UICONTROL Metric]： `Number of orders`
-      * [!UICONTROL Filter]：
-         * `Created\_at (retail Year) = 2015`
-   * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-     [!UICONTROL Interval]: `None`
-   * &#x200B;
-     [!UICONTROL Group by]: `Created\_at` (retail week)
-   * &#x200B;
-     [!UICONTROL Chart type]: `Line`
-      * 关闭`multiple Y-axes`
+  * 量度`A`： `2017`
+    * [!UICONTROL Metric]：订单数
+    * [!UICONTROL Filter]:
+      * 创建时间\_at（零售业年份）= 2017
+  * 量度`B`： `2016`
+    * [!UICONTROL Metric]：订单数
+    * [!UICONTROL Filter]:
+      * 创建时间\_at（零售业年份）= 2016
+  * 量度`C`： `2015`
+    * [!UICONTROL Metric]: `Number of orders`
+    * [!UICONTROL Filter]:
+      * `Created\_at (retail Year) = 2015`
+  * [!UICONTROL Time period]: `All time`
+  * 
+    [!UICONTROL Interval]: `None`
+  * 
+    [!UICONTROL Group by]: `Created\_at` (retail week)
+  * 
+    [!UICONTROL Chart type]: `Line`
+    * 关闭`multiple Y-axes`
 
 * **零售业日历概述（当前零售业年份，按月）**
-   * 量度`A`： `Revenue`
-      * &#x200B;
-        [!UICONTROL 量度]: `Revenue`
-      * [!UICONTROL Filter]：
-         * &#x200B;
-           [!UICONTROL Include current retail year?]: `Yes`
-   * 量度`B`： `Orders`
-      * [!UICONTROL Metric]： `Number of orders`
-      * [!UICONTROL Filter]：
-         * &#x200B;
-           [!UICONTROL Include current retail year?]: `Yes`
-   * 量度`C`： `Avg order value`
-      * [!UICONTROL Metric]： `Avg order value`
-      * [!UICONTROL Filter]：
-         * &#x200B;
-           [!UICONTROL Include current retail year?]: `Yes`
-   * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-     [!UICONTROL Interval]: `None`
-   * &#x200B;
-     [!UICONTROL Group by]: `Created\_at` (retail month)
-   * &#x200B;
-     [!UICONTROL Chart type]: `Line`
+  * 量度`A`： `Revenue`
+    * 
+      [！UICONTROL量度]: `Revenue`
+    * [!UICONTROL Filter]:
+      * 
+        [!UICONTROL Include current retail year?]: `Yes`
+  * 量度`B`： `Orders`
+    * [!UICONTROL Metric]: `Number of orders`
+    * [!UICONTROL Filter]:
+      * 
+        [!UICONTROL Include current retail year?]: `Yes`
+  * 量度`C`： `Avg order value`
+    * [!UICONTROL Metric]: `Avg order value`
+    * [!UICONTROL Filter]:
+      * 
+        [!UICONTROL Include current retail year?]: `Yes`
+  * [!UICONTROL Time period]: `All time`
+  * 
+    [!UICONTROL Interval]: `None`
+  * 
+    [!UICONTROL Group by]: `Created\_at` (retail month)
+  * 
+    [!UICONTROL Chart type]: `Line`
 
 * **零售日历概述（上一零售年按月）**
-   * 量度`A`： `Revenue`
-      * &#x200B;
-        [!UICONTROL 量度]: `Revenue`
-      * [!UICONTROL Filter]：
-         * &#x200B;
-           [!UICONTROL Include current retail year?]: `Yes`
-   * 量度`B`： `Orders`
-      * [!UICONTROL Metric]：订单数
-      * [!UICONTROL Filter]：
-         * &#x200B;
-           [!UICONTROL Include current retail year?]: `Yes`
-   * 量度`C`： `Avg order value`
-      * [!UICONTROL Metric]： `Avg order value`
-      * [!UICONTROL Filter]：
-         * &#x200B;
-           [!UICONTROL Include current retail year?]: `Yes`
-   * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-     [!UICONTROL Interval]: `None`
-   * &#x200B;
-     [!UICONTROL Group by]: `Created\_at` (retail month)
-   * &#x200B;
-     [!UICONTROL Chart type]: `Line`
+  * 量度`A`： `Revenue`
+    * 
+      [！UICONTROL量度]: `Revenue`
+    * [!UICONTROL Filter]:
+      * 
+        [!UICONTROL Include current retail year?]: `Yes`
+  * 量度`B`： `Orders`
+    * [!UICONTROL Metric]：订单数
+    * [!UICONTROL Filter]:
+      * 
+        [!UICONTROL Include current retail year?]: `Yes`
+  * 量度`C`： `Avg order value`
+    * [!UICONTROL Metric]: `Avg order value`
+    * [!UICONTROL Filter]:
+      * 
+        [!UICONTROL Include current retail year?]: `Yes`
+  * [!UICONTROL Time period]: `All time`
+  * 
+    [!UICONTROL Interval]: `None`
+  * 
+    [!UICONTROL Group by]: `Created\_at` (retail month)
+  * 
+    [!UICONTROL Chart type]: `Line`
 
 ## 后续步骤
 
 以上描述了如何配置零售日历，使其与在`sales\_order`表上构建的任何量度（如`Revenue`或`Orders`）兼容。 您还可以对其进行扩展，以支持基于任何表构建的量度的零售日历。 唯一要求是此表必须有一个有效的日期时间字段，可用于联接Retail Calendar表。
 
-例如，要在4-5-4零售日历上查看客户级别量度，请在`Same Table`表中创建一个`customer\_entity`计算，类似于上面描述的`\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`。 然后，您可以使用此列通过将`One to Many`表连接到`Created_at (retail year)`表来重现`Include in previous retail year? (Yes/No)` JOINED\_COLUMN计算（如`customer\_entity`）和`Retail Calendar`。
+例如，要在4-5-4零售日历上查看客户级别量度，请在`customer\_entity`表中创建一个`Same Table`计算，类似于上面描述的`\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`。 然后，您可以使用此列通过将`customer\_entity`表连接到`Retail Calendar`表来重现`One to Many` JOINED\_COLUMN计算（如`Created_at (retail year)`）和`Include in previous retail year? (Yes/No)`。
 
 在生成新报告之前，不要忘记[将所有新列作为维度添加到量度](../data-warehouse-mgr/manage-data-dimensions-metrics.md)。

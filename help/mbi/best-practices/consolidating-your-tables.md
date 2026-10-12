@@ -4,33 +4,44 @@ description: 了解如何整合表和数据库。
 exl-id: 6065bed3-fb84-4147-a223-92dc3e1b15a5
 role: Admin, User
 feature: Commerce Tables, Data Integration
-TQID: https://experienceleague.adobe.com/HC5REx483htdfFigZPxcrZeD5byyJKk-beQqnEARt1E
+TQID: 'https://experienceleague.adobe.com/HC5REx483htdfFigZPxcrZeD5byyJKk-beQqnEARt1E'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 469
+source-wordcount: '469'
 ht-degree: 0%
-
 ---
-
 # 合并表
 
 如果您在多个商店前线或市场中进行操作，则可能会单独存储类似的数据库。 在[!DNL Adobe Commerce Intelligence]中，将不同数据库中的相似表合并到一起很容易。
 
-例如，您可能有针对`orders`的`Market A`表以及针对`orders`的类似`Market B`表。 [!DNL Commerce Intelligence]可以合并两个表，并允许您查看来自`Market A`和`B`的汇总订单数据，以及按特定市场进行分段。
+例如，您可能有针对`Market A`的`orders`表以及针对`Market B`的类似`orders`表。 [!DNL Commerce Intelligence]可以合并两个表，并允许您查看来自`Market A`和`B`的汇总订单数据，以及按特定市场进行分段。
 
 若要合并表，输入表必须具有&#x200B;**相似的结构**。 换言之，所有输入表都必须包含统一表中所需的数据列。
 
@@ -44,7 +55,7 @@ ht-degree: 0%
 
 如果您在不同品牌和网站下销售产品，则每个品牌或网站的表格结构可能类似。
 
-例如，您可能有网站`orders`的`A`表和网站`orders`的单独但类似的`B`表。 在这种情况下，合并网站`orders`和`A`中的`B`表可能很有用。 这样，除了能够按网站`A`和`B`划分量度外，您还可以查看这两个网站的合并收入和订单数。
+例如，您可能有网站`A`的`orders`表和网站`B`的单独但类似的`orders`表。 在这种情况下，合并网站`A`和`B`中的`orders`表可能很有用。 这样，除了能够按网站`A`和`B`划分量度外，您还可以查看这两个网站的合并收入和订单数。
 
 ### 集成旧版数据
 

@@ -4,29 +4,43 @@ description: 了解如何生成数据、导致插入新行的原因以及如何�
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/IUTQdZYcHkue-29jNZOxONAK4u5plphslzqtUXJ5JAs
+TQID: 'https://experienceleague.adobe.com/IUTQdZYcHkue-29jNZOxONAK4u5plphslzqtUXJ5JAs'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 964
-ht-degree: 2%
-
+source-wordcount: '964'
+ht-degree: 4%
 ---
-
 # 在[!DNL Adobe Commerce]中存储数据
 
 [!DNL Adobe Commerce]平台记录并整理了数百个表中的各种有价值的商业数据。 本主题介绍：
@@ -52,11 +66,11 @@ ht-degree: 2%
 | 207 | 4 | 12 | 衬衫6 | 2016/09/22 09:24:02 |
 
 * `entity_id` — 这是`catalog_product_entity`表的主键，这意味着该表的每一行必须具有不同的`entity_id`。 此表上的每个`entity_id`只能与一个产品关联，并且每个产品只能与一个`entity_id`关联
-   * 上表的顶行，`entity_id` = 205，是为“Rewback Bellbottoms”创建的新行。 在Commerce平台中出现的`entity_id` = 205处，即指产品“Rewback Bellbottoms”
+  * 上表的顶行，`entity_id` = 205，是为“Rewback Bellbottoms”创建的新行。 在Commerce平台中出现的`entity_id` = 205处，即指产品“Rewback Bellbottoms”
 * `entity_type_id` - Commerce具有多种对象类别（如客户、地址和产品，仅举几例），此列用于表示此特定行所属的类别。
-   * 这是`catalog_product_entity`表，每行具有相同的实体类型： product。 在Adobe Commerce中，产品的`entity_type_id`为4，因此创建的全部三个新产品都会为此列返回4。
+  * 这是`catalog_product_entity`表，每行具有相同的实体类型： product。 在Adobe Commerce中，产品的`entity_type_id`为4，因此创建的全部三个新产品都会为此列返回4。
 * `attribute_set_id` — 属性集用于标识描述符相同的产品。
-   * 表的前两行是`Throwback Bellbottoms`和`Straight Leg Jeans`产品，它们都是裤子。 这些产品将具有相同的描述符（例如，name、inseam、waisline），因此具有相同的`attribute_set_id`。 第三个项目`V-Neck T-Shirt`具有不同的`attribute_set_id`，因为它没有与裤子相同的描述符；衬衫没有腰围或内衬。
+  * 表的前两行是`Throwback Bellbottoms`和`Straight Leg Jeans`产品，它们都是裤子。 这些产品将具有相同的描述符（例如，name、inseam、waisline），因此具有相同的`attribute_set_id`。 第三个项目`V-Neck T-Shirt`具有不同的`attribute_set_id`，因为它没有与裤子相同的描述符；衬衫没有腰围或内衬。
 * `sku` — 这些是用户在Adobe Commerce中创建产品时分配给每个产品的唯一值。
 * `created_at` — 此列返回每个产品的创建时间戳
 
@@ -69,13 +83,13 @@ ht-degree: 2%
 | `214` | `1` | `sammy.customer@gmail.com` | `2016/09/23 15:27:12` |
 
 * `entity_id` — 与上一个表一样，`entity_id`是`customer_entity`表的主键。
-   * 当`Sammy Customer`创建帐户并将上述行写入`customer_entity`表时，为客户分配了`entity_id` = 214。 在所有表中，标识为`entity_id` = 214的客户始终引用用户Sammy Customer
+  * 当`Sammy Customer`创建帐户并将上述行写入`customer_entity`表时，为客户分配了`entity_id` = 214。 在所有表中，标识为`entity_id` = 214的客户始终引用用户Sammy Customer
 * `entity_type_id` — 此列标识此表中列出的实体类型，其功能与在`catalog_product_entity`表中相同
-   * `customer_entity`表中的每一行都是客户，Commerce默认将客户定义为`entity_type_id` 1
+  * `customer_entity`表中的每一行都是客户，Commerce默认将客户定义为`entity_type_id` 1
 * `email` — 此字段由新客户在创建其帐户时输入的电子邮件填充
 * `created_at` — 此列返回每个用户加入时的时间戳
 
-## 如果您有`sales\_flat\_order (or Sales\_order`，则为[!DNL Adobe Commerce 2.x]
+## 如果您有[!DNL Adobe Commerce 2.x]，则为`sales\_flat\_order (or Sales\_order`
 
 帐户创建完成后，`Sammy Customer`可以开始购买。 在网站上，客户将两对`Throwback Bellbottoms`和一对`V-Neck T-Shirt`添加到购物车。 客户对选择感到满意，将移至结帐并提交订单，并在[销售平面订单表](../data-warehouse-mgr/sales-flat-order-table.md)上创建以下条目：
 
@@ -84,11 +98,11 @@ ht-degree: 2%
 | 227 | 214 | 94.85 | 2016/09/23 15:41:39 |
 
 * `entity_id` — 这是`sales_flat_order`表的主键。
-   * 当Sammy客户下达此订单并将上述行写入`sales_flat_order`表时，已分配该订单`entity_id` = 227。
+  * 当Sammy客户下达此订单并将上述行写入`sales_flat_order`表时，已分配该订单`entity_id` = 227。
 * `customer_id` — 此列是下此特定订单的客户的唯一标识符
-   * 与此订单关联的`customer_id`是214，它是`entity_id`表中Sammy客户的`customer_entity`。
+  * 与此订单关联的`customer_id`是214，它是`customer_entity`表中Sammy客户的`entity_id`。
 * `subtotal` — 此列是该订单向客户收取的总金额
-   * 两双“Rewback Bellbottoms”和“V领T恤”总共花费94.85美元
+  * 两双“Rewback Bellbottoms”和“V领T恤”总共花费94.85美元
 * `created_at` — 此列返回创建每个订单的时间戳
 
 ## `sales\_flat\_order\_item ( or Sales\_order\_item`
@@ -103,13 +117,13 @@ ht-degree: 2%
 | 823 | `V-Neck T-Shirt` | 207 | 227 | 1 | 14.95 |
 
 * `item_id` — 此列是`sales_flat_order_item`表的主键
-   * `Sammy Customer`的订单在此表中创建了两个行，因为该订单包含两个不同的产品
+  * `Sammy Customer`的订单在此表中创建了两个行，因为该订单包含两个不同的产品
 * `name` — 此列是产品的名称
 * `product_id` — 此列是该行所引用产品的唯一标识符
-   * 上面第一行的`product_id` = 205，因为`Throwback Bellbottoms`在`entity_id`表上有`catalog_product_entity`，即205
+  * 上面第一行的`product_id` = 205，因为`Throwback Bellbottoms`在`catalog_product_entity`表上有`entity_id`，即205
 * `order_id` — 此列是包含这些特定订单项的订单的`entity_id`
-   * 上面两行都具有`order_id` = 227，因为它们都是`Sammy Customer`下达的订单的一部分，该订单在`entity_id`表中具有`sales_flat_order` = 227
+  * 上面两行都具有`order_id` = 227，因为它们都是`Sammy Customer`下达的订单的一部分，该订单在`sales_flat_order`表中具有`entity_id` = 227
 * `qty_ordered` — 此列是此特定订单中包含的产品件数
-   * `Sammy Customer`的订单包含两对`Throwback Bellbottoms`
+  * `Sammy Customer`的订单包含两对`Throwback Bellbottoms`
 * `price` — 此列是订单项目的单件价格
-   * `subtotal`表中`Sammy Customer`顺序中的`sales_flat_order`为94.85，即`Throwback Bellbottoms`对（每对$39.95）和1 `V-Neck T-Shirt`对(14.95$14.95)的总和。
+  * `sales_flat_order`表中`Sammy Customer`顺序中的`subtotal`为94.85，即`Throwback Bellbottoms`对（每对$39.95）和1 `V-Neck T-Shirt`对(14.95$14.95)的总和。

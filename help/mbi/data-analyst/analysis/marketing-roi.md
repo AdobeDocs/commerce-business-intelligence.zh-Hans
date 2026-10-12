@@ -4,29 +4,41 @@ description: 了解如何设置一个仪表板来跟踪您的渠道分析，包�
 exl-id: 5de83998-e6cf-478d-bb6a-7a3dc77c2c0c
 role: Admin,  User
 feature: Reports, Dashboards
-TQID: https://experienceleague.adobe.com/TJ0KsU551M5PkQcY-Ic0PuExtC9SCkO0MhZGdHL4N6g
+TQID: 'https://experienceleague.adobe.com/TJ0KsU551M5PkQcY-Ic0PuExtC9SCkO0MhZGdHL4N6g'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 06e518d4-11ae-5c20-98b0-ce8ab05d7166
+    internal-label: Dashboards
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Troubleshooting
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 691
+source-wordcount: '691'
 ht-degree: 21%
-
 ---
-
 # 营销ROI
 
 >[!NOTE]
@@ -37,7 +49,7 @@ ht-degree: 21%
 
 ![显示ROI指标和营销活动绩效的营销仪表板](../../assets/Marketing_dashboard_example.png)
 
-在开始之前，您需要连接您的[[!DNL [Facebook Ads]]](../importing-data/integrations/facebook-ads.md)、[[!DNL [Adwords]]](../importing-data/integrations/google-adwords.md)和[[!DNL [Google Ecommerce]]](../importing-data/integrations/google-ecommerce.md)帐户，并引入任何其他在线广告支出数据。 此分析包含[高级计算列](../data-warehouse-mgr/adv-calc-columns.md)。
+在开始之前，您需要连接您的[!DNL [Facebook Ads]](../importing-data/integrations/facebook-ads.md)、[!DNL [Adwords]](../importing-data/integrations/google-adwords.md)和[!DNL [Google Ecommerce]](../importing-data/integrations/google-ecommerce.md)帐户，并引入任何其他在线广告支出数据。 此分析包含[高级计算列](../data-warehouse-mgr/adv-calc-columns.md)。
 
 ## 统一表
 
@@ -58,14 +70,14 @@ ht-degree: 21%
   * **`Order's GA campaign`**
     * 选择定义： `Joined Column`
     * [!UICONTROL Create Path]:
-    * &#x200B;
-      [!UICONTROL Many]&#x200B;: `sales_flat_order.increment_id`
-    * &#x200B;
-      [!UICONTROL One]&#x200B;: `ecommerce####.transaction_id`
+    * 
+      [!UICONTROL Many]: `sales_flat_order.increment_id`
+    * 
+      [!UICONTROL One]: `ecommerce####.transaction_id`
 
     * 选择[!UICONTROL table]： `ecommerce####`
     * 选择[!UICONTROL column]： `campaign`
-    * [!UICONTROL Path]&#x200B;: `sales_flat_order.increment_id = ecommerce#####.transactionID`
+    * [!UICONTROL Path]: `sales_flat_order.increment_id = ecommerce#####.transactionID`
 
   * **`Order's GA medium`**
     * 选择定义：联接列
@@ -85,7 +97,7 @@ ht-degree: 21%
   * 选择定义： `Max`
   * 选择[!UICONTROL table]： `sales_flat_order`
   * 选择[!UICONTROL column]： `Order's GA campaign`
-  * [!UICONTROL Path]&#x200B;: `sales_flat_order.customer_id = customer_entity.entity_id`
+  * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
   * [!UICONTROL Filter]:
     * `Orders we count`
     * `Customer's order number = 1`
@@ -103,7 +115,7 @@ ht-degree: 21%
   * 选择定义： `Max`
   * 选择[!UICONTROL table]： `sales_flat_order`
   * 选择[!UICONTROL column]： `Order's GA medium`
-  * [!UICONTROL Path]&#x200B;: `sales_flat_order.customer_id = customer_entity.entity_id`
+  * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
   * [!UICONTROL Filter]:
     * `Orders we count`
     * `Customer's order number = 1`
@@ -113,19 +125,19 @@ ht-degree: 21%
   * 选择定义： `Joined Column`
   * 选择[!UICONTROL table]： `customer_entity`
   * 选择[!UICONTROL column]： `Customer's first order GA campaign`
-  * [!UICONTROL Path]&#x200B;: `sales_flat_order.customer_id = customer_entity.entity_id`
+  * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
 
 * **`Customer's first order GA source`**
   * 选择定义：联接列
   * 选择[!UICONTROL table]： `customer_entity`
   * 选择[!UICONTROL column]： `Customer's first order GA source`
-  * [!UICONTROL Path]&#x200B;: `sales_flat_order.customer_id = customer_entity.entity_id`
+  * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
 
 * **`Customer's first order GA medium`**
   * 选择定义： `Joined Column`
   * 选择[!UICONTROL table]： `customer_entity`
   * 选择[!UICONTROL column]： `Customer's first order GA medium`
-  * [!UICONTROL Path]&#x200B;: `sales_flat_order.customer_id = customer_entity.entity_id`
+  * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
 
 ## 量度
 
@@ -157,14 +169,14 @@ ht-degree: 21%
   * [!UICONTROL Metric]：广告支出
 
 * 量度`A`：广告支出
-* [!UICONTROL Time period]&#x200B;: `All time`
-* &#x200B;
-  [!UICONTROL 间隔]&#x200B;: `None`
-* &#x200B;
-  [!UICONTROL Chart Type]&#x200B;: `Scalar`
+* [!UICONTROL Time period]: `All time`
+* 
+  [！UICONTROL间隔]: `None`
+* 
+  [!UICONTROL Chart Type]: `Scalar`
 
 * **广告客户获取（所有时间）**
-  * [!UICONTROL Metric]&#x200B;: `New customers`
+  * [!UICONTROL Metric]: `New customers`
   * [!UICONTROL Filters]:
     * `User's first order's source LIKE %google%`
     * `User's first order's source LIKE %facebook%`
@@ -173,16 +185,16 @@ ht-degree: 21%
     * 筛选器逻辑： （[`A`]或[`B`]或[`C`]）和[`D`]
 
 * 量度`A`： `Ad customer acquisitions`
-* [!UICONTROL Time period]&#x200B;: `All time`
-* &#x200B;
-  [!UICONTROL 间隔]&#x200B;: `None`
-* &#x200B;
-  [!UICONTROL Chart Type]&#x200B;: `Scalar`
+* [!UICONTROL Time period]: `All time`
+* 
+  [！UICONTROL间隔]: `None`
+* 
+  [!UICONTROL Chart Type]: `Scalar`
 
 * **广告ROI**
   * [!UICONTROL Metric]：广告支出
 
-  * [!UICONTROL Metric]&#x200B;: `New customers`
+  * [!UICONTROL Metric]: `New customers`
   * [!UICONTROL Filters]:
     * `User's first order's source LIKE %google%`
     * `User's first order's source LIKE %facebook%`
@@ -198,35 +210,35 @@ ht-degree: 21%
     * `User's first order's medium IN cpc, ppc`
     * 筛选器逻辑： （[`A`]或[`B`]或[`C`]）和[`D`]
 
-  * [!UICONTROL Formula]&#x200B;: `((C - (A / B)) / (A / B))`
-  * &#x200B;
-    [!UICONTROL Format]&#x200B;: `Percentage`
+  * [!UICONTROL Formula]: `((C - (A / B)) / (A / B))`
+  * 
+    [!UICONTROL Format]: `Percentage`
 
 * 量度`A`： `Ad Spend (hide)`
 * 量度`B`： `Ad customer acquisitions (hide)`
 * 量度`C`： `Average LTV (hide)`
-* [!UICONTROL Formula]&#x200B;: `Ads ROI`
-* [!UICONTROL Time period]&#x200B;: `All time`
-* &#x200B;
-  [!UICONTROL 间隔]&#x200B;: `None`
-* &#x200B;
-  [!UICONTROL Chart Type]&#x200B;: `Scalar`
+* [!UICONTROL Formula]: `Ads ROI`
+* [!UICONTROL Time period]: `All time`
+* 
+  [！UICONTROL间隔]: `None`
+* 
+  [!UICONTROL Chart Type]: `Scalar`
 
 * **按Ga排列的订单数**
-  * &#x200B;
-    [!UICONTROL 量度]&#x200B;: `Orders`
+  * 
+    [！UICONTROL量度]: `Orders`
 
 * 量度`A`： `Orders`
-* [!UICONTROL Time period]&#x200B;: `All time`
-* [!UICONTROL Interval]&#x200B;: `By Month`
-* [!UICONTROL Group by]&#x200B;: `Order's medium`
-* &#x200B;
-  [!UICONTROL Chart Type]&#x200B;: `Area`
+* [!UICONTROL Time period]: `All time`
+* [!UICONTROL Interval]: `By Month`
+* [!UICONTROL Group by]: `Order's medium`
+* 
+  [!UICONTROL Chart Type]: `Area`
 
 * **按营销活动划分的广告ROI**
-  * [!UICONTROL Metric]&#x200B;: `Ad Spend`
+  * [!UICONTROL Metric]: `Ad Spend`
 
-  * [!UICONTROL Metric]&#x200B;:`New customers`
+  * [!UICONTROL Metric]:`New customers`
   * [!UICONTROL Filters]:
     * `User's first order's source LIKE %google%`
     * `User's first order's source LIKE %facebook%`
@@ -250,55 +262,55 @@ ht-degree: 21%
     * `User's first order's medium IN cpc, ppc`
     * 筛选器逻辑： （[`A`]或[`B`]或[`C`]）和[`D`]
 
-  * [!UICONTROL Formula]&#x200B;: `(A / B)`
-  * &#x200B;
-    [!UICONTROL Format]&#x200B;: `Currency`
+  * [!UICONTROL Formula]: `(A / B)`
+  * 
+    [!UICONTROL Format]: `Currency`
 
-  * [!UICONTROL Formula]&#x200B;: `(C - (A / B))`
-  * &#x200B;
-    [!UICONTROL Format]&#x200B;: `Currency`
+  * [!UICONTROL Formula]: `(C - (A / B))`
+  * 
+    [!UICONTROL Format]: `Currency`
 
-  * [!UICONTROL Formula]&#x200B;: `((C - (A / B)) / (A / B))`
-  * &#x200B;
-    [!UICONTROL Format]&#x200B;: `Percentage`
+  * [!UICONTROL Formula]: `((C - (A / B)) / (A / B))`
+  * 
+    [!UICONTROL Format]: `Percentage`
 
-  * [!UICONTROL Metric]&#x200B;: `Ad Clicks`
+  * [!UICONTROL Metric]: `Ad Clicks`
 
-  * [!UICONTROL Metric]&#x200B;: `Ad Impressions`
+  * [!UICONTROL Metric]: `Ad Impressions`
 
-  * [!UICONTROL Formula]&#x200B;: `(H / I)`
-  * &#x200B;
-    [!UICONTROL Format]&#x200B;: `Percentage`
+  * [!UICONTROL Formula]: `(H / I)`
+  * 
+    [!UICONTROL Format]: `Percentage`
 
-  * [!UICONTROL Formula]&#x200B;: `(A / H)`
-  * &#x200B;
-    [!UICONTROL Format]&#x200B;: `Currency`
+  * [!UICONTROL Formula]: `(A / H)`
+  * 
+    [!UICONTROL Format]: `Currency`
 
 * 量度`A`： `Ad Spend` （隐藏）
 * 量度`B`： `Ad customer acquisitions`
 * 量度`C`： `Average LTV`
 * 量度`D`： `Average lifetime # of orders`
-* &#x200B;
-  [!UICONTROL 公式]&#x200B;: `CAC`
-* [!UICONTROL Formula]&#x200B;: `Avg return`
-* [!UICONTROL Formula]&#x200B;: `Ads ROI`
+* 
+  [！UICONTROL公式]: `CAC`
+* [!UICONTROL Formula]: `Avg return`
+* [!UICONTROL Formula]: `Ads ROI`
 * 量度`H`： `adClicks`
 * 量度`I`： `Impressions`
-* &#x200B;
-  [!UICONTROL 公式]&#x200B;: `CTR`
-* &#x200B;
-  [!UICONTROL 公式]&#x200B;: `CPC`
-* [!UICONTROL Time period]&#x200B;: `All time`
-* &#x200B;
-  [!UICONTROL 间隔]&#x200B;: `None`
-* &#x200B;
-  [!UICONTROL 分组依据]: `campaign` (将“客户的第一个订单”促销活动用于非广告支出表量度)
-* &#x200B;
-  [!UICONTROL Chart Type]&#x200B;: `Table`
+* 
+  [！UICONTROL公式]: `CTR`
+* 
+  [！UICONTROL公式]: `CPC`
+* [!UICONTROL Time period]: `All time`
+* 
+  [！UICONTROL间隔]: `None`
+* 
+  [！UICONTROL分组依据]: `campaign` (将“客户的第一个订单”促销活动用于非广告支出表量度)
+* 
+  [!UICONTROL Chart Type]: `Table`
 
-如果您在构建此分析时遇到任何问题，或只是想与专业服务团队接洽，请[联系支持人员](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
+如果您在构建此分析时遇到任何问题，或只是想与专业服务团队接洽，请[联系支持人员](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
 
 ### 相关
 
 * [在 [!DNL Google Analytics]中进行UTM标记的最佳实践](../../best-practices/utm-tagging-google.md)
-* [&#x200B; [!DNL Google Analytics] UTM归因如何工作？](../analysis/utm-attributes.md)
+* [ [!DNL Google Analytics] UTM归因如何工作？](../analysis/utm-attributes.md)

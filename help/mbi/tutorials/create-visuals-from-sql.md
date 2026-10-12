@@ -4,30 +4,45 @@ description: 了解如何熟悉SQL Report Builder中使用的术语，并为您�
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
 role: Admin, Developer, Leader, User
 feature: SQL Report Builder, Data Warehouse Manager, Reports, Data Integration
-TQID: https://experienceleague.adobe.com/xWv7O8UJ6gXxysl6oG1t24ygF-PE4LTanwyrrvoJzQ4
+TQID: 'https://experienceleague.adobe.com/xWv7O8UJ6gXxysl6oG1t24ygF-PE4LTanwyrrvoJzQ4'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
+  - id: c38ccf61-5a4f-5140-ad2b-c3434e82ed6d
+    internal-label: SQL Report Builder
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 665
+source-wordcount: '676'
 ht-degree: 0%
-
 ---
-
 # 通过SQL查询创建可视化图表
 
 本教程的目标是熟悉[!DNL SQL Report Builder]中使用的术语，并为您创建`SQL visualizations`奠定坚实的基础。
@@ -40,7 +55,7 @@ ht-degree: 0%
 
 - `Series`：您要测量的列在SQL Report Builder中称为序列。 常见示例为`revenue`、`items sold`和`marketing spend`。 必须至少将一列设置为`Series`才能创建可视化图表。
 
-- `Category`：要用于划分数据的列称为`Category`，这与`Group By`中的[`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md)功能类似。 例如，如果要按客户的客户获取来源对客户的存留期收入进行分段，则将包含客户获取来源的列指定为`Category`。 可以将多个列设置为`Category`。
+- `Category`：要用于划分数据的列称为`Category`，这与[`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md)中的`Group By`功能类似。 例如，如果要按客户的客户获取来源对客户的存留期收入进行分段，则将包含客户获取来源的列指定为`Category`。 可以将多个列设置为`Category`。
 
 >[!NOTE]
 >
@@ -58,7 +73,7 @@ ht-degree: 0%
 
 - `EXTRACT`函数非常适合用于解析时间戳的日、周、月或年。 当您要在报表上使用的`time interval`为`daily`、`weekly`、`monthly`或`yearly`时，这将很有用。
 
-若要开始，请单击[!DNL SQL Report Builder]打开&#x200B;**[!UICONTROL Report Builder** > **SQL Report Builder]**。
+若要开始，请单击&#x200B;**[!UICONTROL Report Builder** > **SQL Report Builder]**&#x200B;打开[!DNL SQL Report Builder]。
 
 例如，考虑此查询，该查询返回每个产品每月的销售项目总数：
 
@@ -79,7 +94,7 @@ ht-degree: 0%
 
 ## 第2步：创建可视化图表
 
-使用这些结果，*您如何创建可视化图表？*&#x200B;若要开始，请单击&#x200B;**[!UICONTROL Chart]**&#x200B;窗格中的`Results`选项卡。 这会显示`Chart settings`选项卡。
+使用这些结果，*您如何创建可视化图表？* 要开始操作，请单击`Results`窗格中的&#x200B;**[!UICONTROL Chart]**&#x200B;选项卡。 这会显示`Chart settings`选项卡。
 
 首次执行查询时，报告可能看起来不可靠，因为查询中的所有列都绘制为系列：
 
@@ -95,7 +110,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果标签是`ORDER BY`/`date`列，查询必须包含标签上的`time`子句。
+>如果标签是`date`/`time`列，查询必须包含标签上的`ORDER BY`子句。
 
 下面是您如何创建此可视化图表的概览，从运行查询到设置报表：
 

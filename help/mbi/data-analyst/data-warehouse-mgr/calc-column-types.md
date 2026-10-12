@@ -4,30 +4,43 @@ description: 了解如何创建列以扩充和优化数据以供分析。
 exl-id: 1af79b9e-77ff-4fc6-917a-4e6743b95035
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
-TQID: https://experienceleague.adobe.com/41EjlLtffc-ZE-LO6oKMyXcs9Lnv35yxj8BgM6iIWsQ
+TQID: 'https://experienceleague.adobe.com/41EjlLtffc-ZE-LO6oKMyXcs9Lnv35yxj8BgM6iIWsQ'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 741
+source-wordcount: '756'
 ht-degree: 0%
-
 ---
-
 # 计算列类型
 
 * [相同的表计算](#sametable)
@@ -36,7 +49,7 @@ ht-degree: 0%
 * [方便的参考地图](#map)
 * [高级计算列](#advanced)
 
-在[Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md)中，您可以创建列以扩充和优化数据以供分析。 [可以通过选择Data Warehouse管理器中的任何表并单击](../data-warehouse-mgr/creating-calculated-columns.md)来访问此功能&#x200B;**[!UICONTROL Create New Column]**。
+在[Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md)中，您可以创建列以扩充和优化数据以供分析。 [可以通过选择Data Warehouse管理器中的任何表并单击&#x200B;**[!UICONTROL Create New Column]**&#x200B;来访问此功能](../data-warehouse-mgr/creating-calculated-columns.md)。
 
 本主题介绍可使用Data Warehouse Manager创建的列类型。 它还涵盖了说明、该列的视觉浏览以及创建列所需的所有输入的[引用映射](#map)。 有三种方法可创建计算列：
 
@@ -52,7 +65,7 @@ ht-degree: 0%
 
 年龄计算列返回当前时间和某个输入时间之间的秒数。
 
-以下示例在`Seconds since customer's most recent order`表中创建`customers`。 这可用于构建未在`X days`中进行购买（有时称为流失）的客户的用户列表。
+以下示例在`customers`表中创建`Seconds since customer's most recent order`。 这可用于构建未在`X days`中进行购买（有时称为流失）的客户的用户列表。
 
 ![创建年龄计算列的动画演示](../../assets/age.gif)
 
@@ -60,7 +73,7 @@ ht-degree: 0%
 
 货币转换器计算列将列的本机货币转换为所需的新货币。
 
-下面的示例创建了`base\_grand\_total In AED`，在`base\_grand\_total`表中将`sales\_flat\_order`从本机货币转换为AED。 此列非常适用于具有多种货币、希望以当地货币进行报告的商店。
+下面的示例创建了`base\_grand\_total In AED`，在`sales\_flat\_order`表中将`base\_grand\_total`从本机货币转换为AED。 此列非常适用于具有多种货币、希望以当地货币进行报告的商店。
 
 对于Commerce客户端，`base\_currency\_code`字段通常存储本机货币。 `Spot Time`字段应与量度中使用的日期匹配。
 
@@ -86,7 +99,7 @@ ht-degree: 0%
 
 此类型的计算列返回多个表&#x200B;*上的值的计数*&#x200B;到同一个表。
 
-在以下示例中，在`Customer's lifetime number of canceled orders`表上创建维度`customers`（具有`orders.status`的筛选器）。
+在以下示例中，在`customers`表上创建维度`Customer's lifetime number of canceled orders`（具有`orders.status`的筛选器）。
 
 ![多对一列聚合的动画演示](../../assets/many_to_one.gif){: width="699" height="351"}
 

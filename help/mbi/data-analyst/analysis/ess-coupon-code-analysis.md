@@ -4,29 +4,39 @@ description: 了解业务的优惠券表现对于细分您的订单和更好地�
 exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
 role: Admin, User
 feature: Data Warehouse Manager, Reports
-TQID: https://experienceleague.adobe.com/Wr-Lx6N-regGfzW3olk2hya-AybetR0w4Z2yFTWHeDM
+TQID: 'https://experienceleague.adobe.com/Wr-Lx6N-regGfzW3olk2hya-AybetR0w4Z2yFTWHeDM'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Insights
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 532
-ht-degree: 0%
-
+source-wordcount: '676'
+ht-degree: 21%
 ---
-
 # 基本优惠券代码分析
 
 了解业务的优惠券表现对于细分订单和更好地了解客户习惯是一种有趣的方式。
@@ -45,7 +55,7 @@ ht-degree: 0%
 
 从Commerce 2.4.7开始，客户可以向订单应用多个优惠券代码。 在本例中：
 
-* 应用的所有优惠券代码都存储在`coupon_code`的`sales_order_coupons`字段中。 应用的第一个优惠券代码也存储在`coupon_code`的`sales_order`字段中。 如果此字段为NULL（空），则该订单没有与其关联的优惠券。
+* 应用的所有优惠券代码都存储在`sales_order_coupons`的`coupon_code`字段中。 应用的第一个优惠券代码也存储在`sales_order`的`coupon_code`字段中。 如果此字段为NULL（空），则该订单没有与其关联的优惠券。
 
 ## 构建量度
 
@@ -55,17 +65,17 @@ ht-degree: 0%
 
 * 选择`sales_order`。
 * 此量度对&#x200B;**base_discount_amount**&#x200B;列执行&#x200B;**Sum**，排序依据为&#x200B;**created_at**。
-   * [!UICONTROL Filters]：
-      * 添加`Orders we count`（保存的筛选器集）
-      * 添加以下内容：
-         * `coupon_code`**不是**`[NULL]`
-      * 为该量度提供一个名称，如`Coupon discount amount`。
+  * [!UICONTROL Filters]:
+    * 添加`Orders we count`（保存的筛选器集）
+    * 添加以下内容：
+      * `coupon_code`**不是**`[NULL]`
+    * 为该量度提供一个名称，如`Coupon discount amount`。
 
 ## 创建功能板
 
 * 创建量度后：
-   * 导航到[!UICONTROL Dashboards > Dashboard Options > Create New Dashboard]**。
-   * 为仪表板指定名称，如`_Coupon Analysis_`。
+  * 导航到[!UICONTROL Dashboards > Dashboard Options > Create New Dashboard]**。
+  * 为仪表板指定名称，如`_Coupon Analysis_`。
 
 * 您可以在此处创建和添加所有报表。
 
@@ -75,145 +85,145 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->每个报告的**0&rbrace;列为[!UICONTROL Time Period]。 `All-time`您可以根据分析需求随意更改此设置。 Adobe建议该仪表板上的所有报告都涵盖相同的时间段，如`All time`、`Year-to-date`或`Last 365 days`。
+>每个报告的**0}列为`All-time`。 [!UICONTROL Time Period]您可以根据分析需求随意更改此设置。 Adobe建议该仪表板上的所有报告都涵盖相同的时间段，如`All time`、`Year-to-date`或`Last 365 days`。
 
 * **含优惠券的订单**
-   * &#x200B;
-     [!UICONTROL 量度]: `Orders`
-      * 添加筛选器：
-         * [`A`] `coupon_code` **IS NOT** `[NULL]`
+  * 
+    [！UICONTROL量度]: `Orders`
+    * 添加筛选器：
+      * [`A`] `coupon_code` **IS NOT** `[NULL]`
 
-   * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-     [!UICONTROL 间隔]: `None`
-   * [!UICONTROL Chart type]：`Number (scalar)`
+  * [!UICONTROL Time period]: `All time`
+  * 
+    [！UICONTROL间隔]: `None`
+  * [!UICONTROL Chart type]:`Number (scalar)`
 
 * **没有优惠券的订单**
-   * &#x200B;
-     [!UICONTROL 量度]: `Orders`
-      * 添加筛选器：
-         * [`A`] `coupon_code` **IS** `[NULL]`
+  * 
+    [！UICONTROL量度]: `Orders`
+    * 添加筛选器：
+      * [`A`] `coupon_code` **IS** `[NULL]`
 
-   * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-     [!UICONTROL 间隔]: `None`
-   * [!UICONTROL Chart type]：`Number (scalar)`
+  * [!UICONTROL Time period]: `All time`
+  * 
+    [！UICONTROL间隔]: `None`
+  * [!UICONTROL Chart type]:`Number (scalar)`
 
 * **含优惠券的订单净收入**
-   * &#x200B;
-     [!UICONTROL 量度]: `Revenue`
-      * 添加筛选器：
-         * [`A`] `coupon_code` **IS NOT** `[NULL]`
+  * 
+    [！UICONTROL量度]: `Revenue`
+    * 添加筛选器：
+      * [`A`] `coupon_code` **IS NOT** `[NULL]`
 
-   * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-     [!UICONTROL 间隔]: `None`
-   * [!UICONTROL Chart type]： `Number (scalar)`
+  * [!UICONTROL Time period]: `All time`
+  * 
+    [！UICONTROL间隔]: `None`
+  * [!UICONTROL Chart type]: `Number (scalar)`
 
 * **优惠券折扣**
-   * [!UICONTROL Metric]： `Coupon discount amount`
-   * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-     [!UICONTROL 间隔]: `None`
-   * [!UICONTROL Chart type]： `Number (scalar)`
+  * [!UICONTROL Metric]: `Coupon discount amount`
+  * [!UICONTROL Time period]: `All time`
+  * 
+    [！UICONTROL间隔]: `None`
+  * [!UICONTROL Chart type]: `Number (scalar)`
 
 * **平均生命周期收入：已获得优惠券的客户**
-   * [!UICONTROL Metric]： `Avg lifetime revenue`
-      * 添加筛选器：
-         * [`A`] `Customer's first order's coupon_code` **IS NOT** `[NULL]`
+  * [!UICONTROL Metric]: `Avg lifetime revenue`
+    * 添加筛选器：
+      * [`A`] `Customer's first order's coupon_code` **IS NOT** `[NULL]`
 
-   * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-     [!UICONTROL 间隔]: `None`
-   * [!UICONTROL Chart type]： `Number (scalar)`
+  * [!UICONTROL Time period]: `All time`
+  * 
+    [！UICONTROL间隔]: `None`
+  * [!UICONTROL Chart type]: `Number (scalar)`
 
 * **平均生命周期收入：未获得优惠券的客户**
-   * [!UICONTROL Metric]： `Avg lifetime revenue`
-      * 添加筛选器：
-         * [A] `Customer's first order's coupon_code` **IS**`[NULL]`
+  * [!UICONTROL Metric]: `Avg lifetime revenue`
+    * 添加筛选器：
+      * [A] `Customer's first order's coupon_code` **IS**`[NULL]`
 
-   * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-     [!UICONTROL 间隔]: `None`
-   * [!UICONTROL Chart type]： `Number (scalar)`
+  * [!UICONTROL Time period]: `All time`
+  * 
+    [！UICONTROL间隔]: `None`
+  * [!UICONTROL Chart type]: `Number (scalar)`
 
 * **优惠券使用情况详细信息（首次订购）**
-   * 量度`1`： `Orders`
-      * 添加筛选器：
-         * [`A`] `coupon_code` **不是**`[NULL]`
-         * [`B`] `Customer's order number` **等于** `1`
+  * 量度`1`： `Orders`
+    * 添加筛选器：
+      * [`A`] `coupon_code` **不是**`[NULL]`
+      * [`B`] `Customer's order number` **等于** `1`
 
-   * 量度`2`： `Revenue`
-      * 添加筛选器：
-         * [`A`] `coupon_code` **不是**`[NULL]`
-         * [`B`] `Customer's order number` **等于** `1`
+  * 量度`2`： `Revenue`
+    * 添加筛选器：
+      * [`A`] `coupon_code` **不是**`[NULL]`
+      * [`B`] `Customer's order number` **等于** `1`
 
-      * 重命名： `Net revenue`
+    * 重命名： `Net revenue`
 
-   * 量度`3`： `Coupon discount amount`
-      * 添加筛选器：
-         * [`A`] `coupon_code` **不是**`[NULL]`
-         * [`B`] `Customer's order number` **等于** `1`
+  * 量度`3`： `Coupon discount amount`
+    * 添加筛选器：
+      * [`A`] `coupon_code` **不是**`[NULL]`
+      * [`B`] `Customer's order number` **等于** `1`
 
-   * 创建公式： `Gross revenue`
-      * [!UICONTROL Formula]： `(B – C)`
-      * &#x200B;
-        [!UICONTROL Format]: `Currency`
+  * 创建公式： `Gross revenue`
+    * [!UICONTROL Formula]: `(B – C)`
+    * 
+      [!UICONTROL Format]: `Currency`
 
-   * 创建公式：**%折扣**
-      * 公式： `(C / (B - C))`
-      * &#x200B;
-        [!UICONTROL Format]: `Percentage`
+  * 创建公式：**%折扣**
+    * 公式： `(C / (B - C))`
+    * 
+      [!UICONTROL Format]: `Percentage`
 
-   * 创建公式： `Average order discount`
-      * [!UICONTROL Formula]： `(C / A)`
-      * &#x200B;
-        [!UICONTROL Format]: `Percentage`
+  * 创建公式： `Average order discount`
+    * [!UICONTROL Formula]: `(C / A)`
+    * 
+      [!UICONTROL Format]: `Percentage`
 
-   * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-     [!UICONTROL 间隔]: `None`
-   * &#x200B;
-     [!UICONTROL 图表类型]: `Table`
+  * [!UICONTROL Time period]: `All time`
+  * 
+    [！UICONTROL间隔]: `None`
+  * 
+    [！UICONTROL图表类型]: `Table`
 
 * **按第一张订单优惠券计算的平均生命周期收入**
-   * [!UICONTROL Metric]：**平均生命周期收入**
-      * 添加筛选器：
-         * [`A`] `coupon_code` **是**`[NULL]`
+  * [!UICONTROL Metric]：**平均生命周期收入**
+    * 添加筛选器：
+      * [`A`] `coupon_code` **是**`[NULL]`
 
-   * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-     [!UICONTROL 间隔]: `None`
-   * [!UICONTROL Chart type]： `Number (scalar)`
+  * [!UICONTROL Time period]: `All time`
+  * 
+    [！UICONTROL间隔]: `None`
+  * [!UICONTROL Chart type]: `Number (scalar)`
 
 * **优惠券使用情况详细信息（首次订购）**
-   * [!UICONTROL Metric]： `Avg lifetime revenue`
-      * 添加筛选器：
-         * [`A`] `Customer's first order's coupon_code` **IS NOT** `[NULL]`
+  * [!UICONTROL Metric]: `Avg lifetime revenue`
+    * 添加筛选器：
+      * [`A`] `Customer's first order's coupon_code` **IS NOT** `[NULL]`
 
-   * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-     [!UICONTROL 间隔]: `None`
-   * [!UICONTROL Group by]： `Customer's first order's coupon_code`
-   * &#x200B;
-     [!UICONTROL 图表类型]: **Column**
+  * [!UICONTROL Time period]: `All time`
+  * 
+    [！UICONTROL间隔]: `None`
+  * [!UICONTROL Group by]: `Customer's first order's coupon_code`
+  * 
+    [！UICONTROL图表类型]: **Column**
 
 * **通过优惠券/非优惠券获取的新客户**
-   * 量度`1`： `New customers`
-      * 添加筛选器：
-         * [`A`] `Customer's first order's coupon_code` **IS NOT** `[NULL]`
+  * 量度`1`： `New customers`
+    * 添加筛选器：
+      * [`A`] `Customer's first order's coupon_code` **IS NOT** `[NULL]`
 
-      * [!UICONTROL Rename]： `Coupon acquisition customer`
+    * [!UICONTROL Rename]: `Coupon acquisition customer`
 
-   * 量度`2`： `New customers`
-      * 添加筛选器：
-         * [`A`] `coupon_code` **是**`[NULL]`
+  * 量度`2`： `New customers`
+    * 添加筛选器：
+      * [`A`] `coupon_code` **是**`[NULL]`
 
-      * [!UICONTROL Rename]： `Non-coupon acquisition customer`
+    * [!UICONTROL Rename]: `Non-coupon acquisition customer`
 
-   * [!UICONTROL Time period]： `All time`
-   * [!UICONTROL Interval]： `By Month`
-   * [!UICONTROL Chart type]： `Stacked Column`
+  * [!UICONTROL Time period]: `All time`
+  * [!UICONTROL Interval]: `By Month`
+  * [!UICONTROL Chart type]: `Stacked Column`
 
 构建报表后，请参阅本主题顶部的图像，了解如何在功能板上组织报表。
 

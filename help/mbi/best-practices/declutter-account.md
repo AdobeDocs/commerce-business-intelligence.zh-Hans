@@ -1,34 +1,42 @@
 ---
-title: 清空您的 [!DNL Commerce Intelligence] 帐户
-description: 了解如何清理 [!DNL Commerce Intelligence] 帐户。
+title: 清空您的[!DNL Commerce Intelligence]帐户
+description: 了解如何清理[!DNL Commerce Intelligence]帐户。
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
 role: Admin, User
 feature: Accounts
-TQID: https://experienceleague.adobe.com/cybn11Z5oXnfc6Oz34Dk1syw4w0o03vA-TRNMjHeifE
+TQID: 'https://experienceleague.adobe.com/cybn11Z5oXnfc6Oz34Dk1syw4w0o03vA-TRNMjHeifE'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+  - id: 9e444628-408e-5d74-8cd4-c552f0d5d47f
+    internal-label: Accounts
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 904
+source-wordcount: '909'
 ht-degree: 0%
-
 ---
-
 # 清理[!DNL Adobe Commerce Intelligence]帐户
 
 无论您已经与[!DNL Commerce Intelligence]合作六个月还是六年，保持良好的帐户对于您的组织充分利用平台至关重要。 随着时间的推移，用户、功能板、报表、量度和列自然而然地不再需要。 您可能创建了报表供一次性使用并忘记了该报表，或者离开您公司的用户从未停用过其帐户。
 
-通过[帐户的所有元素](../best-practices/naming-elements.md))的[!DNL Commerce Intelligence]标准化、清晰的命名，以下帐户审核步骤可帮助您减少用户的混乱和不必要的分析。 另一个优势包括[可能更快的更新周期](../best-practices/reduce-update-cycle-time.md)。
+通过[!DNL Commerce Intelligence]帐户的所有元素](../best-practices/naming-elements.md))的[标准化、清晰的命名，以下帐户审核步骤可帮助您减少用户的混乱和不必要的分析。 另一个优势包括[可能更快的更新周期](../best-practices/reduce-update-cycle-time.md)。
 
 ## 步骤1：识别非活动用户
 
@@ -74,7 +82,7 @@ ht-degree: 0%
 
 **删除整个仪表板**
 
-1. 选择&#x200B;**[!UICONTROL Manage Data]**，然后选择&#x200B;**[!UICONTROL Dashboards**]。
+1. 选择&#x200B;**[!UICONTROL Manage Data]**，然后选择**[!UICONTROL Dashboards**]。
 1. 单击要删除的仪表板。
 1. 单击&#x200B;**[!UICONTROL Delete Dashboard]**。
 
@@ -108,7 +116,7 @@ ht-degree: 0%
 
 ![报告依赖关系对话框，显示哪些报告使用所选列](../../mbi/assets/report_dependecies.png)
 
-如果您决定不再需要该量度，请单击&#x200B;**[!UICONTROL Metrics]**&#x200B;以导航回&#x200B;**[!UICONTROL Back to Metric List]**&#x200B;页面，查找要删除的量度。 单击&#x200B;**[!UICONTROL Delete]**。
+如果您决定不再需要该量度，请单击&#x200B;**[!UICONTROL Back to Metric List]**&#x200B;以导航回&#x200B;**[!UICONTROL Metrics]**&#x200B;页面，查找要删除的量度。 单击&#x200B;**[!UICONTROL Delete]**。
 
 ## 步骤4：评估已同步的列
 

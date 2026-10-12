@@ -1,32 +1,46 @@
 ---
 title: 连接Adobe Analytics
-description: 了解如何将 [!DNL Adobe Analytics] 的端到端客户历程重点与您依赖的 [!DNL Commerce Intelligence]的电子商务重点结合起来。
+description: 了解如何将[!DNL Adobe Analytics]的端到端客户历程重点与您依赖的[!DNL Commerce Intelligence]的电子商务重点结合起来。
 exl-id: 824e1ee4-6b88-42f7-b265-29330dbc4407
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-TQID: https://experienceleague.adobe.com/KkiKySM2q8ewqhQ1kdUjLuTM4iOpzrZb5Ok-UvBBpJE
+TQID: 'https://experienceleague.adobe.com/KkiKySM2q8ewqhQ1kdUjLuTM4iOpzrZb5Ok-UvBBpJE'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 327
+source-wordcount: '328'
 ht-degree: 0%
-
 ---
-
 # 连接[!DNL Adobe Analytics]
 
 >[!NOTE]
@@ -73,6 +87,6 @@ ht-degree: 0%
 
 1. 选定的报表包会显示在表格中。 单击&#x200B;**[!UICONTROL Save]**&#x200B;确认您的选择。
 
-1. 通知[!DNL Commerce Intelligence] [支持团队](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)您的集成已获得授权，他们将为您运行初始连接进程。
+1. 通知[!DNL Commerce Intelligence] [支持团队](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)您的集成已获得授权，他们将为您运行初始连接进程。
 
 运行初始连接进程后，您的表将在Data Warehouse页面的`All Tables`选项卡下可用。 选择要复制的列，数据将在下次完全更新后显示。

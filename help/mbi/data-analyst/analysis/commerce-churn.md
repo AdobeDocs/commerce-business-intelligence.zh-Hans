@@ -4,27 +4,36 @@ description: 了解如何生成和分析Commerce客户流失率。
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports
-TQID: https://experienceleague.adobe.com/jtS4f7MMpKa8LrKDOvGOqNJfrl-MhR9vhEMQZa-B42o
+TQID: 'https://experienceleague.adobe.com/jtS4f7MMpKa8LrKDOvGOqNJfrl-MhR9vhEMQZa-B42o'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 338
-ht-degree: 2%
-
+source-wordcount: '409'
+ht-degree: 19%
 ---
-
 # 客户流失率
 
 本主题演示如何计算&#x200B;**商务客户**&#x200B;的&#x200B;**客户流失率**。 与SaaS或传统订阅公司不同，商业客户通常没有具体的&#x200B;**“流失事件”**&#x200B;来向您显示他们不再计入您的活跃客户。 因此，您可以通过下面的说明，根据自上次订购以来经过的时间，将客户定义为“已流失”。
@@ -39,15 +48,15 @@ ht-degree: 2%
 
 * **`customer_entity`**&#x200B;表
 * **`Customer's last order date`**
-   * 选择[!UICONTROL definition]： `Max`
-   * 选择[!UICONTROL table]： `sales_flat_order`
-   * 选择[!UICONTROL column]： `created_at`
-   * `sales_flat_order.customer_id = customer_entity.entity_id`
-   * [!UICONTROL Filter]： `Orders we count`
+  * 选择[!UICONTROL definition]： `Max`
+  * 选择[!UICONTROL table]： `sales_flat_order`
+  * 选择[!UICONTROL column]： `created_at`
+  * `sales_flat_order.customer_id = customer_entity.entity_id`
+  * [!UICONTROL Filter]: `Orders we count`
 
 * **`Seconds since customer's last order date`**
-   * 选择[!UICONTROL definition]： `Age`
-   * 选择[!UICONTROL column]： `Customer's last order date`
+  * 选择[!UICONTROL definition]： `Age`
+  * 选择[!UICONTROL column]： `Customer's last order date`
 
 >[!NOTE]
 >
@@ -56,7 +65,7 @@ ht-degree: 2%
 ## 量度
 
 * **新客户（按第一订单日期）**
-   * 被计数的客户
+  * 被计数的客户
 
 >[!NOTE]
 >
@@ -66,10 +75,10 @@ ht-degree: 2%
 * 此量度执行&#x200B;**计数**
 * 在&#x200B;**`entity_id`**&#x200B;列上
 * 按&#x200B;**`Customer's first order date`**&#x200B;时间戳排序
-* [!UICONTROL Filter]：
+* [!UICONTROL Filter]:
 
 * **新客户（按上次订购日期）**
-   * 被计数的客户
+  * 被计数的客户
 
   >[!NOTE]
   >
@@ -79,7 +88,7 @@ ht-degree: 2%
 * 此量度执行&#x200B;**计数**
 * 在&#x200B;**`entity_id`**&#x200B;列上
 * 按&#x200B;**`Customer's last order date`**&#x200B;时间戳排序
-* [!UICONTROL Filter]：
+* [!UICONTROL Filter]:
 
 >[!NOTE]
 >
@@ -88,30 +97,30 @@ ht-degree: 2%
 ## 报告
 
 * **客户流失率**
-   * [!UICONTROL Metric]：新客户（按第一订单日期）
-   * [!UICONTROL Filter]： `Lifetime number of orders Greater Than 0`
-   * &#x200B;
-     [!UICONTROL Perspective]: `Cumulative`
-   * [!UICONTROL Metric]： `New customers (by last order date)`
-   * [!UICONTROL Filter]：
-   * 自客户上次订购日期以来的秒数>= [您为流失客户自定义的截止日期&#x200B;]&#x200B;**`^`**
-   * `Lifetime number of orders Greater Than 0`
+  * [!UICONTROL Metric]：新客户（按第一订单日期）
+  * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
+  * 
+    [!UICONTROL Perspective]: `Cumulative`
+  * [!UICONTROL Metric]: `New customers (by last order date)`
+  * [!UICONTROL Filter]:
+  * 自客户上次订购日期以来的秒数>= [您为流失客户自定义的截止日期&#x200B;]**`^`**
+  * `Lifetime number of orders Greater Than 0`
 
-   * [!UICONTROL Metric]： `New customers (by last order date)`
-   * [!UICONTROL Filter]： `Lifetime number of orders Greater Than 0`
-   * &#x200B;
-     [!UICONTROL Perspective]: Cumulative
-   * [!UICONTROL Formula]： `(B / ((A + B) - C)`
-   * &#x200B;
-     [!UICONTROL Format]: Percentage
+  * [!UICONTROL Metric]: `New customers (by last order date)`
+  * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
+  * 
+    [!UICONTROL Perspective]: Cumulative
+  * [!UICONTROL Formula]: `(B / ((A + B) - C)`
+  * 
+    [!UICONTROL Format]: Percentage
 
 * *量度`A`：`New customers cumulative`*
 * *量度`B`：`Churned customers by last order date`*
 * *量度`C`：`Customers by last order date cumulative`*
-* *`Formula`：`Repeat order probability`*
-* *`Time period`：`All time (or custom range)`*
-* *`Group by`：`Customer's order number`*
-* *`Chart Type`：`Column`*
+* *`Formula`:`Repeat order probability`*
+* *`Time period`:`All time (or custom range)`*
+* *`Group by`:`Customer's order number`*
+* *`Chart Type`:`Column`*
 
 以下是一些常见的月>秒转化，但google提供了其他值，包括您可能要查找的任何自定义值的周>秒转化。
 

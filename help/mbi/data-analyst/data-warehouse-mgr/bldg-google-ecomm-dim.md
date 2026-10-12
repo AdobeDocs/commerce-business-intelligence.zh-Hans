@@ -4,29 +4,39 @@ description: 了解如何构建将您的电子商务数据与您的订单和客�
 exl-id: f8a557ae-01d7-4886-8a1c-c0f245c7bc49
 role: Admin, Developer, User
 feature: Data Integration, Data Warehouse Manager
-TQID: https://experienceleague.adobe.com/K5PKexwI5oIb0WFtT47gQ2wEuF-TYUQrntRq1yJ4Vlc
+TQID: 'https://experienceleague.adobe.com/K5PKexwI5oIb0WFtT47gQ2wEuF-TYUQrntRq1yJ4Vlc'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1023
+source-wordcount: '1024'
 ht-degree: 0%
-
 ---
-
 # 生成[!DNL Google ECommerce]维度
 
 >[!NOTE]
@@ -35,11 +45,11 @@ ht-degree: 0%
 
 现在您已完成[连接[!DNL Google ECommerce]帐户](../../data-analyst/importing-data/integrations/google-ecommerce.md)，在[!DNL Commerce Intelligence]中可以如何处理这些数据？ 本主题将指导您构建将电子商务数据与订单和客户数据关联的维度。
 
-所涵盖的维度使您能够构建分析，这些分析可[回答有关您的营销渠道和营销活动的重要问题](../../data-analyst/analysis/most-value-source-channel.md)。 每个来源占收入的百分比是多少？ 与从[!DNL Facebook]获得的客户相比，[!DNL Google]获得的客户的生命周期值如何？
+所涵盖的维度使您能够构建分析，这些分析可[回答有关您的营销渠道和营销活动的重要问题](../../data-analyst/analysis/most-value-source-channel.md)。 每个来源占收入的百分比是多少？ 与从[!DNL Google]获得的客户相比，[!DNL Facebook]获得的客户的生命周期值如何？
 
 ## 先决条件和概述
 
-要在此主题中创建维度，您需要一个[!DNL Google ECommerce]表、`orders`表和`customers`表。 在生成维度之前，这些表必须[同步到Data Warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md)。 已同步的表显示在`Synced Tables`的`Data Warehouse Manager`部分中。
+要在此主题中创建维度，您需要一个[!DNL Google ECommerce]表、`orders`表和`customers`表。 在生成维度之前，这些表必须[同步到Data Warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md)。 已同步的表显示在`Data Warehouse Manager`的`Synced Tables`部分中。
 
 如果需要刷新程序，可以快速查看同步表和列：
 
@@ -66,7 +76,7 @@ ht-degree: 0%
 
 ## 构建维度
 
-要创建维度，请单击[&#x200B; > &#x200B;](../data-warehouse-mgr/tour-dwm.md)以打开&#x200B;**[!UICONTROL Data]** Data Warehouse Manager **[!UICONTROL Data Warehouse]**。
+要创建维度，请单击&#x200B;**[!UICONTROL Data]** > **[!UICONTROL Data Warehouse]**&#x200B;以打开[Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md)。
 
 ### 订单表，第1轮
 
@@ -75,7 +85,7 @@ ht-degree: 0%
 1. 从Data Warehouse中的表列表中，单击包含订单信息的表（在本例中为`orders`）。
 1. 单击&#x200B;**[!UICONTROL Create a Column]**。
 1. 命名列。
-1. 从`Joined Column`定义下拉列表[中选择](../data-warehouse-mgr/calc-column-types.md)。 此示例适用于[一对一关系](../data-warehouse-mgr/table-relationships.md)，将`eCommerce.transactionID`列与`orders`表的一行完全匹配。
+1. 从[定义下拉列表](../data-warehouse-mgr/calc-column-types.md)中选择`Joined Column`。 此示例适用于[一对一关系](../data-warehouse-mgr/table-relationships.md)，将`eCommerce.transactionID`列与`orders`表的一行完全匹配。
 1. 接下来，您需要定义路径，或者定义正在使用的表和列的连接方式。 单击`Select a table and column`下拉菜单。
 1. 您需要的路径不可用，因此需要创建一个新路径。 单击&#x200B;**[!UICONTROL Create new Path]**。
 1. 在显示的窗口中，将`Many`端设置为`orders.order\_id`，或将`orders`表中包含订单ID的列设置为。
@@ -101,7 +111,7 @@ ht-degree: 0%
 1. 从Data Warehouse中的表列表中，单击包含客户信息的表（在本例中为`customers`）。
 1. 单击&#x200B;**[!UICONTROL Create a Column]**。
 1. 命名列。
-1. 对于此示例，请从`is MAX`定义下拉列表[中选择](../../data-analyst/data-warehouse-mgr/calc-column-types.md)定义。 如果应用于只有一个可能值的文本列，`is MIN`定义也可以正常工作。 重要的部分是确保设置正确的过滤器，您稍后可以这样做。
+1. 对于此示例，请从[定义下拉列表](../../data-analyst/data-warehouse-mgr/calc-column-types.md)中选择`is MAX`定义。 如果应用于只有一个可能值的文本列，`is MIN`定义也可以正常工作。 重要的部分是确保设置正确的过滤器，您稍后可以这样做。
 1. 单击&#x200B;**[!UICONTROL Select a table and column]**&#x200B;下拉菜单并选择`orders`表，然后选择`Order's [!DNL Google Analytics] source`列。
 1. 单击&#x200B;**[!UICONTROL Save]**。
 1. 返回表架构后，单击`Options`下拉列表，然后单击`Filters`。
@@ -117,7 +127,7 @@ ht-degree: 0%
 
 ### 奖励：订单表，第2轮
 
-如果需要，可以在此处停止，但此部分通过将您在&#x200B;**最后一个部分[!DNL Google Analytics]中创建的**&#x200B;客户第一订单的[维度](#customers)引入`orders`表支持进一步分析。 在此部分中创建维度允许您使用客户第一订单的`orders`属性分析在您的`Revenue`表（`Number of orders`、`Distinct buyers`、[!DNL Google Analytics]等）上构建的所有量度。
+如果需要，可以在此处停止，但此部分通过将您在[最后一个部分](#customers)中创建的&#x200B;**客户第一订单的[!DNL Google Analytics]维度**&#x200B;引入`orders`表支持进一步分析。 在此部分中创建维度允许您使用客户第一订单的[!DNL Google Analytics]属性分析在您的`orders`表（`Revenue`、`Number of orders`、`Distinct buyers`等）上构建的所有量度。
 
 此示例将`Customer's first order's [!DNL Google Analytics] source`维度联接到`orders`表。
 

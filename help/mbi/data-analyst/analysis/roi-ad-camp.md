@@ -4,29 +4,41 @@ description: 了解评估营销活动性能的几种不同方法。
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Campaigns
-TQID: https://experienceleague.adobe.com/teo53W9N30xpRRE1nUupBLKJnl1kUK4zt-roFGiulGU
+TQID: 'https://experienceleague.adobe.com/teo53W9N30xpRRE1nUupBLKJnl1kUK4zt-roFGiulGU'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 1cf9e104-5756-5a15-85a5-38be6a065d7f
+    internal-label: Campaigns
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Troubleshooting
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1265
+source-wordcount: '1265'
 ht-degree: 0%
-
 ---
-
 # Advertising促销活动和ROI
 
 [!DNL Adobe Commerce Intelligence]允许您从数据库中[将广告成本数据和收入数据](../../data-analyst/importing-data/integrations/google-adwords.md)轻松合并。 这有助于您确定哪些营销活动具有最高的投资回报(ROI)。 本主题探讨了评估活动性能的几种不同方法。
@@ -115,7 +127,7 @@ ht-degree: 0%
 >
 >此示例假设所有促销活动成本都专门用于生成特定产品的购买。 假设所有成本都花费在生成购买上，则生成的ROI将考虑最坏的情况（每次购买的最高成本）。 您可以确保实际ROI高于此计算。 示例：假设您在一个产生10个新用户和10次购买的营销活动上花费$20，则每次购买的实际成本为$1。 假设所有成本都花在了获取新用户上，则每次购买的成本为2美元。
 
-开始之前，[提交支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)以将以下维度联接到行项目表(`sales\_flat\_order\_item, order\_item`)：
+开始之前，[提交支持票证](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)以将以下维度联接到行项目表(`sales\_flat\_order\_item, order\_item`)：
 
 * 订单的来源（如果您仅在用户级别跟踪反向链接来源，则加入用户的来源）
 * 订单的促销活动（如果您仅在用户级别跟踪反向链接来源，则加入用户的促销活动）
@@ -152,5 +164,5 @@ ht-degree: 0%
 * [跟踪数据库中的用户设备、浏览器和操作系统数据](../analysis/track-usr-dev-browser.md)
 * [了解您最有价值的客户获取来源和渠道](../analysis/most-value-source-channel.md)
 * [连接你的 [!DNL Google Adwords] 帐户](../importing-data/integrations/google-adwords.md)
-* [&#x200B; [!DNL Google Analytics] UTM归因如何工作？](../analysis/utm-attributes.md)
-* [&#x200B; [!DNL Google Analytics]中UTM标记的五个最佳实践](../../best-practices/utm-tagging-google.md)
+* [ [!DNL Google Analytics] UTM归因如何工作？](../analysis/utm-attributes.md)
+* [ [!DNL Google Analytics]中UTM标记的五个最佳实践](../../best-practices/utm-tagging-google.md)

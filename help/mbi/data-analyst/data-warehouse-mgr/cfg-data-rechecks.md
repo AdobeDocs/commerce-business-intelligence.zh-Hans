@@ -4,30 +4,43 @@ description: 了解如何使用可变值配置数据列。
 exl-id: c31ef32e-ba5a-4902-b632-fbab551cc632
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-TQID: https://experienceleague.adobe.com/aw43nDwCdBOJ-9D2BKJGV7PV-7c3jGXxhUEgE2utY5A
+TQID: 'https://experienceleague.adobe.com/aw43nDwCdBOJ-9D2BKJGV7PV-7c3jGXxhUEgE2utY5A'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 569
+source-wordcount: '571'
 ht-degree: 0%
-
 ---
-
 # 配置数据检查
 
 在数据库表中，可以存在具有可变值的数据列。 例如，在`orders`表中可能有一个名为`status`的列。 最初将订单写入数据库时，状态列可能包含值&#x200B;_pending_。 已在您的[Data Warehouse](../data-warehouse-mgr/tour-dwm.md)中使用此`pending`值复制该订单。
@@ -67,13 +80,13 @@ ht-degree: 0%
 
 ## 管理重新检查频率 {#manage}
 
-通过单击表名称，然后检查各个列，可以在Data Warehouse中管理重新检查频率。 同步状态和重新检查频率(**是否更改？**&#x200B;列)。
+通过单击表名称，然后检查各个列，可以在Data Warehouse中管理重新检查频率。 正在同步状态和重新检查频率(**更改？** 列)，为表中的每一列显示。
 
 要更改重新检查频率，请单击要更改的列旁边的复选框。 然后单击&#x200B;**[!UICONTROL Set Recheck Frequency]**&#x200B;下拉菜单并设置所需的频率。
 
 ![Data Warehouse Manager显示重新检查配置选项](../../assets/dwm-recheck.png)
 
-您有时可能会在`Paused`列中看到`Changes?`。 当表的[复制方法](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)设置为`Paused`时，将显示此值。
+您有时可能会在`Changes?`列中看到`Paused`。 当表的[复制方法](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)设置为`Paused`时，将显示此值。
 
 [!DNL Adobe]建议查看这些列以优化更新并确保重新检查可更改的列。 如果根据数据更改的频率，列的重新检查频率很高，Adobe建议减少它以优化更新。
 

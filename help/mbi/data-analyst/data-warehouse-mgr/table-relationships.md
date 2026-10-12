@@ -4,29 +4,43 @@ description: 了解如何了解一个表中可能属于另一个实体出现的�
 exl-id: e7256f46-879a-41da-9919-b700f2691013
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/5McSfB1jtpVbDci4wIqtMS4iUPqm2bOH2V6ciroFelU
+TQID: 'https://experienceleague.adobe.com/5McSfB1jtpVbDci4wIqtMS4iUPqm2bOH2V6ciroFelU'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1041
+source-wordcount: '1066'
 ht-degree: 0%
-
 ---
-
 # 了解和评估表关系
 
 评估两个给定表之间的关系时，您需要了解一个表中可能属于另一个实体的实例数量，反之亦然。 例如，使用`users`表和`orders`表。 在这种情况下，您希望了解给定&#x200B;**用户**&#x200B;下了&#x200B;**个订单**&#x200B;个，以及&#x200B;**个订单**&#x200B;可能属于多少个&#x200B;**用户**。
@@ -37,9 +51,9 @@ ht-degree: 0%
 
 两个表之间可以存在三种类型的关系：
 
-1. [&#39;一对一&#39;](#onetoone)
-1. [&#39;一对多&#39;](#onetomany)
-1. [&#39;多对多&#39;](#manytomany)
+1. [`one-to-one`](#onetoone)
+1. [`one-to-many`](#onetomany)
+1. [`many-to-many`](#manytomany)
 
 ### `One-to-One` {#onetoone}
 
@@ -129,7 +143,7 @@ ht-degree: 0%
 >
 >你接受客人订单吗？ 请参阅[访客订单](../data-warehouse-mgr/guest-orders.md)，了解访客订单如何影响您的表关系。
 
-当使用指向`Foreign key`的`primary key`链接表时，此设置描述了`one-to-many`关系。 一侧是包含`primary key`的表，多侧是包含`foreign key`的表。
+当使用指向`primary key`的`Foreign key`链接表时，此设置描述了`one-to-many`关系。 一侧是包含`primary key`的表，多侧是包含`foreign key`的表。
 
 ![架构图显示使用外键的一对多关系](../../assets/one-to-many1.png)
 

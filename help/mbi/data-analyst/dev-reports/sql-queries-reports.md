@@ -4,35 +4,50 @@ description: 了解如何将SQL查询转换为计算列（您在Commerce Intelli
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
-TQID: https://experienceleague.adobe.com/-VQfwFZeSlEcD053XRQ4mWF51jnTGaV04tUAqLu7-U8
+TQID: 'https://experienceleague.adobe.com/-VQfwFZeSlEcD053XRQ4mWF51jnTGaV04tUAqLu7-U8'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: c38ccf61-5a4f-5140-ad2b-c3434e82ed6d
+    internal-label: SQL Report Builder
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Reporting
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 942
+source-wordcount: '942'
 ht-degree: 0%
-
 ---
-
 # 在Commerce Intelligence中翻译SQL查询
 
-曾想过如何将SQL查询转换为您在[中使用的](../data-warehouse-mgr/creating-calculated-columns.md)计算列[、](../../data-user/reports/ess-manage-data-metrics.md)量度[和](../../tutorials/using-visual-report-builder.md)报告[!DNL Commerce Intelligence]？ 如果您是重型SQL用户，了解如何在[!DNL Commerce Intelligence]中翻译SQL使您能够在[Data Warehouse管理器](../data-warehouse-mgr/tour-dwm.md)中更智能地工作并充分利用[!DNL Commerce Intelligence]平台。
+曾想过如何将SQL查询转换为您在[!DNL Commerce Intelligence]中使用的[计算列](../data-warehouse-mgr/creating-calculated-columns.md)、[量度](../../data-user/reports/ess-manage-data-metrics.md)和[报告](../../tutorials/using-visual-report-builder.md)？ 如果您是重型SQL用户，了解如何在[!DNL Commerce Intelligence]中翻译SQL使您能够在[Data Warehouse管理器](../data-warehouse-mgr/tour-dwm.md)中更智能地工作并充分利用[!DNL Commerce Intelligence]平台。
 
-在本主题结束时，您找到了SQL查询子句和&#x200B;**元素的**&#x200B;翻译矩阵[!DNL Commerce Intelligence]。
+在本主题结束时，您找到了SQL查询子句和[!DNL Commerce Intelligence]元素的&#x200B;**翻译矩阵**。
 
 首先查看常规查询：
 
@@ -51,7 +66,7 @@ ht-degree: 0%
 
 ## 集合函数
 
-查询中的聚合函数（例如，`count`、`sum`、`average`、`max`、`min`）采用&#x200B;**中的**&#x200B;量度聚合&#x200B;**或**&#x200B;列聚合[!DNL Commerce Intelligence]的形式。 差异因素在于是否需要连接以执行聚合。
+查询中的聚合函数（例如，`count`、`sum`、`average`、`max`、`min`）采用[!DNL Commerce Intelligence]中的&#x200B;**量度聚合**&#x200B;或&#x200B;**列聚合**&#x200B;的形式。 差异因素在于是否需要连接以执行聚合。
 
 查看以上每个内容的示例。
 
@@ -59,7 +74,7 @@ ht-degree: 0%
 
 聚合`within a single table`时需要指标。 例如，上述查询中的`SUM(b)`聚合函数很可能由对列`B`求和的度量表示。 
 
-查看`Total Revenue`中如何定义[!DNL Commerce Intelligence]量度的具体示例。 查看下面您尝试翻译的查询：
+查看[!DNL Commerce Intelligence]中如何定义`Total Revenue`量度的具体示例。 查看下面您尝试翻译的查询：
 
 | | |
 |--- |--- |
@@ -108,7 +123,7 @@ ht-degree: 0%
 
 ![使用SQL进行客户生命周期值分析的动画演示](../../assets/Customer_LTV.gif)
 
-现在，您已在`Customer LTV`表中构建了新的`customers`列，接下来可以使用此列创建一个[指标聚合](#aggregate)（例如，查找每个客户的平均LTV）。 您还可以使用基于`group by`表构建的现有量度，按报表中的计算列`filter`或`customers`。
+现在，您已在`customers`表中构建了新的`Customer LTV`列，接下来可以使用此列创建一个[指标聚合](#aggregate)（例如，查找每个客户的平均LTV）。 您还可以使用基于`customers`表构建的现有量度，按报表中的计算列`group by`或`filter`。
 
 >[!NOTE]
 >

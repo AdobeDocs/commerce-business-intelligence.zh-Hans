@@ -4,27 +4,37 @@ description: 了解如何设置一个功能板来跟踪您的网站活动（包�
 exl-id: 2b57d5b3-3bbf-4ec9-86a6-9fa850c1c459
 role: Admin, User
 feature: Reports, Data Integration
-TQID: https://experienceleague.adobe.com/HcoHrBbXXjQGsd80DA06Dwq2dDmhUiuRbRLj-QONlw4
+TQID: 'https://experienceleague.adobe.com/HcoHrBbXXjQGsd80DA06Dwq2dDmhUiuRbRLj-QONlw4'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 756
+source-wordcount: '756'
 ht-degree: 0%
-
 ---
-
 # 分析网站活动
 
 [!DNL Adobe Commerce Intelligence]允许您轻松地将广告成本数据与您的其余数据集成。 这不仅使您能够了解网站活动，而且使您能够推导出网站上成为注册用户或进行购买的访客百分比。
@@ -33,9 +43,9 @@ ht-degree: 0%
 
 ## 先决条件
 
-**导入您的广告成本数据** — 将[[!DNL [Google AdWords]]](../importing-data/integrations/google-adwords.md)连接到[!DNL Adobe Commerce Intelligence] — 这会自动同步您在Commerce Intelligence中的[!DNL AdWords]支出。
+**导入您的广告成本数据** — 将[!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md)连接到[!DNL Adobe Commerce Intelligence] — 这会自动同步您在Commerce Intelligence中的[!DNL AdWords]支出。
 
-**跟踪用户获取渠道数据** — 若要将[!DNL Google AdWords]数据与数据库中的特定订单绑定，必须[通过](../analysis/google-track-user-acq.md)跟踪用户获取[!DNL Google Analytics E-commerce]。 这样，您就可以将每个订单与utm源和媒介连接。
+**跟踪用户获取渠道数据** — 若要将[!DNL Google AdWords]数据与数据库中的特定订单绑定，必须[通过[!DNL Google Analytics E-commerce]跟踪用户获取](../analysis/google-track-user-acq.md)。 这样，您就可以将每个订单与utm源和媒介连接。
 
 ## 用户获取促销活动
 
@@ -93,25 +103,25 @@ ht-degree: 0%
 1. 添加以下量度：
 
 * `New users`
-   * 单击量度名称下方的&#x200B;**[!UICONTROL Hide]**
+  * 单击量度名称下方的&#x200B;**[!UICONTROL Hide]**
 
 * `Number of orders`
-   * 为`Customer's order number` = 1添加筛选器并单击&#x200B;**[!UICONTROL Apply]**
-   * 通过单击量度名称，将其命名为`Number of first orders`，然后单击&#x200B;**[!UICONTROL Hide]**&#x200B;来重命名该量度
+  * 为`Customer's order number` = 1添加筛选器并单击&#x200B;**[!UICONTROL Apply]**
+  * 通过单击量度名称，将其命名为`Number of first orders`，然后单击&#x200B;**[!UICONTROL Hide]**&#x200B;来重命名该量度
 
 * `Number of orders`
-   * **[!UICONTROL Hide]**&#x200B;指标
+  * **[!UICONTROL Hide]**&#x200B;指标
 
 * `Users`
-   * **[!UICONTROL Hide]**&#x200B;指标
-   * 将时间段更改为`24 months ago to now`，并将时间间隔调整为`by month`。
-   * 通过单击&#x200B;**[!UICONTROL Formula]**&#x200B;添加以下公式。
-   * A/D，然后单击&#x200B;**[!UICONTROL Apply]**
-   * 重命名公式`Registration conversion`
-   * B/D ，然后单击&#x200B;**[!UICONTROL Apply]**
-   * 重命名公式`First order conversion`
-   * C/D，然后单击&#x200B;**[!UICONTROL Apply]**
-   * 重命名公式`Any order conversion`
+  * **[!UICONTROL Hide]**&#x200B;指标
+  * 将时间段更改为`24 months ago to now`，并将时间间隔调整为`by month`。
+  * 通过单击&#x200B;**[!UICONTROL Formula]**&#x200B;添加以下公式。
+  * A/D，然后单击&#x200B;**[!UICONTROL Apply]**
+  * 重命名公式`Registration conversion`
+  * B/D ，然后单击&#x200B;**[!UICONTROL Apply]**
+  * 重命名公式`First order conversion`
+  * C/D，然后单击&#x200B;**[!UICONTROL Apply]**
+  * 重命名公式`Any order conversion`
 
 * 现在，为您的报表提供一个名称，如`Conversion by month`，然后单击&#x200B;**[!UICONTROL Save]**。
 

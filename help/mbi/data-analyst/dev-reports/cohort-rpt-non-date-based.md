@@ -4,27 +4,38 @@ description: 了解如何按相似的活动或属性对用户进行分组。
 exl-id: c7b85ce9-113c-4ffc-855f-3d53fe2347d8
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-TQID: https://experienceleague.adobe.com/2JOFQPEaz-wQd4Ml-9vc0ZkmSIDD10e6xX-XkodZtXc
+TQID: 'https://experienceleague.adobe.com/2JOFQPEaz-wQd4Ml-9vc0ZkmSIDD10e6xX-XkodZtXc'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 462
-ht-degree: 0%
-
+source-wordcount: '474'
+ht-degree: 1%
 ---
-
 # 非基于日期的同类群组的[!DNL Cohort Report Builder]
 
 [`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md)非常有助于商家研究用户在不同时间内的行为方式。 过去，`Cohort Report Builder`已针对按公共`cohort date`对用户进行分组进行了优化（例如，在给定月份首次购买的所有客户集）。 `Non-Date Based Cohort`功能现在允许您按类似的活动或属性对用户进行分组。 查看此功能的几个用例。
@@ -41,7 +52,7 @@ ht-degree: 0%
 
 1. 在左侧选项卡上单击&#x200B;**[!UICONTROL Report Builder]**，或在任意仪表板中单击&#x200B;**[!UICONTROL Add Report** > **Create Report]**。
 
-1. 在`Report Builder Selection`屏幕中，单击&#x200B;**[!UICONTROL Create Report]**&#x200B;选项旁边的`Visual Report Builder`。
+1. 在`Report Builder Selection`屏幕中，单击`Visual Report Builder`选项旁边的&#x200B;**[!UICONTROL Create Report]**。
 
 ### 添加量度
 
@@ -69,11 +80,11 @@ ht-degree: 0%
 
 
 
-#### 1.分组`cohorts`
+#### &#x200B;1. 分组`cohorts`
 
 `Cohorts`按行为特征分组，在本例中为`Customer's first order GA source`。 此处可用的选项是已指定为指标的`groupable`的列。
 
-#### 2.选择同类群组
+#### &#x200B;2. 选择同类群组
 
 可以显示给定特征的所有结果。 由于这会产生多个`cohorts`，因此您可以选择所需的特定`cohorts` （对应于可用于`Customer's first order GA source`的各种值）。
 
@@ -89,13 +100,13 @@ ht-degree: 0%
 
 #### 5. `Time range after cohort occurrence`
 
-是否要按月、周或年查看`cohorts`随时间的变化？ 您可在以下位置进行这些选择。 在该部分下，您将在`time range`发生后选择`cohort action timestamp`。 例如，对于在操作时间范围内下达了第一笔订单的客户，这会向您显示12个月的数据。
+是否要按月、周或年查看`cohorts`随时间的变化？ 您可在以下位置进行这些选择。 在该部分下，您将在`cohort action timestamp`发生后选择`time range`。 例如，对于在操作时间范围内下达了第一笔订单的客户，这会向您显示12个月的数据。
 
 ![cohort-first-action-time-range](../../assets/5-cohort-first-action-time-range.png)<!--{: width="400" height="557"}-->
 
 >[!NOTE]
 >
->当您在[!UICONTROL Filters]和`Standard`视图之间切换时，应用于您的量度的`Cohort`将保持不变。
+>当您在`Standard`和`Cohort`视图之间切换时，应用于您的量度的[!UICONTROL Filters]将保持不变。
 
 ### 相关
 

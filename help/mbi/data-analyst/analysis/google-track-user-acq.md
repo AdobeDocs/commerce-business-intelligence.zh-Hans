@@ -4,26 +4,36 @@ description: 了解如何按用户获取源划分您的数据。
 exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
-TQID: https://experienceleague.adobe.com/nqiC-AsuhdcOrxqFsW9ZqRZvlL8Ndu9xmNrTi-pvgv8
+TQID: 'https://experienceleague.adobe.com/nqiC-AsuhdcOrxqFsW9ZqRZvlL8Ndu9xmNrTi-pvgv8'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 06e518d4-11ae-5c20-98b0-ce8ab05d7166
+    internal-label: Dashboards
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 751
-ht-degree: 1%
-
+source-wordcount: '791'
+ht-degree: 3%
 ---
-
 # 按用户获取源分段
 
 >[!NOTE]
@@ -40,7 +50,7 @@ ht-degree: 1%
 
 ### （选项1）通过[!DNL Google Analytics E-Commerce]跟踪订单引用源数据
 
-如果您使用[!DNL Google Analytics E-Commerce]跟踪您的订单和销售数据，则可以使用[[!DNL [Google Analytics E-Commerce Connector]]](../importing-data/integrations/google-ecommerce.md)同步每个订单的转介源数据。 这允许您按反向链接来源（例如，`utm_source`或`utm_medium`）对收入和订单进行分段。 您还可以通过[!DNL Commerce Intelligence]自定义维度（如`User's first order source`）了解客户获取来源。
+如果您使用[!DNL Google Analytics E-Commerce]跟踪您的订单和销售数据，则可以使用[!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md)同步每个订单的转介源数据。 这允许您按反向链接来源（例如，`utm_source`或`utm_medium`）对收入和订单进行分段。 您还可以通过[!DNL Commerce Intelligence]自定义维度（如`User's first order source`）了解客户获取来源。
 
 ### （选项2）将[!DNL Google Analytics]的客户获取源数据保存在数据库中
 
@@ -64,7 +74,7 @@ ht-degree: 1%
 
 显然有一些客户获取源数据已编码到字符串中。 测试以确认这是访客的最新客户获取来源和相关联的活动数据。 现在您需要知道如何提取数据。
 
-此代码已转换为github[上托管的](https://github.com/RJMetrics/referral-grabber-php)PHP库。 要使用库，`include`引用`ReferralGrabber.php`，然后调用
+此代码已转换为github](https://github.com/RJMetrics/referral-grabber-php)上托管的[PHP库。 要使用库，`include`引用`ReferralGrabber.php`，然后调用
 
 `$data = ReferralGrabber::parseGoogleCookie($_COOKIE['__utmz']);`
 
