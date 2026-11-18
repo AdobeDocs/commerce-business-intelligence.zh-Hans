@@ -37,14 +37,12 @@ topic_v2:
     internal-label: Troubleshooting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-last-update: 2026-08-26
-source-git-commit: 71a0a842742fed73aa749653ec0ef8c2834b7e60
+last-update: 2026-11-09
+source-git-commit: b9bb82c5896429e1669b0020efcb4ce103c581a6
 workflow-type: tm+mt
-source-wordcount: 492
+source-wordcount: '492'
 ht-degree: 2%
-
 ---
-
 # [!DNL Adobe Commerce Intelligence]用户指南
 
 >[!NOTE]
